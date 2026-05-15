@@ -3,7 +3,7 @@ title: "Google Ads Management"
 slug: "google-ads-management"
 date: "2024-01-17"
 author: "Canadian Web Designs"
-description: "Google Ads Management"
+description: "Introduction to Google Ads Google Ads emerges as a potent digital advertising solution, crafted by Google to support the development and dissemination..."
 keywords: ["google ads management","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/PPC-google-ads.jpg"

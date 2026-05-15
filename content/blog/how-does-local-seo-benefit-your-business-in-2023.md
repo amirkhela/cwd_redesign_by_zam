@@ -3,7 +3,7 @@ title: "How Does Local SEO Benefit Your Business in 2023?"
 slug: "how-does-local-seo-benefit-your-business-in-2023"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "How Does Local SEO Benefit Your Business in 2023?"
+description: "Introduction In an era dominated by digitalization, small and large businesses alike have come to realize the power of online visibility. Local Search..."
 keywords: ["how does local seo benefit your business in 2023","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/local-seo1.jpg"

@@ -3,7 +3,7 @@ title: "Custom Web Design Toronto: Websites That Convert"
 slug: "custom-web-design-toronto-building-websites-that-convert"
 date: "2025-11-05"
 author: "Canadian Web Designs"
-description: "Custom Web Design Toronto: Websites That Convert"
+description: "In Toronto’s competitive digital landscape, a website is more than an online presence — it’s your most valuable business asset. Whether you’re a..."
 keywords: ["custom web design toronto building websites that convert","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Websites-that-convert.png"

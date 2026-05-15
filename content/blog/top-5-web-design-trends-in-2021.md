@@ -3,7 +3,7 @@ title: "Top 5 Unique Web Design Trends to Watch out in 2021"
 slug: "top-5-web-design-trends-in-2021"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Top 5 Unique Web Design Trends to Watch out in 2021"
+description: "Web Designs Trends for 2021 Web designs with amazing content and structures build a strong impression on the online audience. Presentation of offered..."
 keywords: ["top 5 web design trends in 2021","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Canadian-Web-Design-Unique-Trends-.png"

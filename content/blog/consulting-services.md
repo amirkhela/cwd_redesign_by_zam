@@ -3,7 +3,7 @@ title: "Consulting Services for Startups"
 slug: "consulting-services"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Consulting Services for Startups"
+description: "Consulting Services for New Businesses The global business ecosystem has experienced tremendous flux in the last decade. With an increased spurt in..."
 keywords: ["consulting services","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Consulting-Services-for-Startups.png"

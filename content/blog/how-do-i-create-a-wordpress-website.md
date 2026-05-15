@@ -3,7 +3,7 @@ title: "How Do I Create A WordPress Website For Beginners?"
 slug: "how-do-i-create-a-wordpress-website"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "How Do I Create A WordPress Website For Beginners?"
+description: "7 Steps To Create A WordPress Site? Creating a WordPress website is not difficult, especially for those with some basic technical knowledge. To get..."
 keywords: ["how do i create a wordpress website","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Wordpress.jpg"

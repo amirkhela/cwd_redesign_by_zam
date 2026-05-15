@@ -3,7 +3,7 @@ title: "How to Migrate from Shopify to WooCommerce"
 slug: "how-to-migrate-from-shopify-to-woocommerce"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "How to Migrate from Shopify to WooCommerce"
+description: "Taking Your eCommerce to the Next Level with WooCommerce The global marketplace is shifting, and by 2023, nearly a quarter of all retail purchases will..."
 keywords: ["how to migrate from shopify to woocommerce","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/shopify-migrate-to-woocommerce.jpg"

@@ -3,7 +3,7 @@ title: "Top 7 Different Unique Styles in Creating Stunning Website Design"
 slug: "top-7-different-unique-styles-in-creating-stunning-website-design"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Top 7 Different Unique Styles in Creating Stunning Website Design"
+description: "After classifying a stunning website design you want to have, plan the possible appearance you want to achieve. Presentable online presence with..."
 keywords: ["top 7 different unique styles in creating stunning website design","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/web-1668927_1920.jpg"

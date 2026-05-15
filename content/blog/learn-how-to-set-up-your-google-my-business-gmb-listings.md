@@ -3,7 +3,7 @@ title: "Learn How to Set Up Your Google My Business (GMB) Listings"
 slug: "learn-how-to-set-up-your-google-my-business-gmb-listings"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Learn How to Set Up Your Google My Business (GMB) Listings"
+description: "If you’re an entrepreneur and you want to expand the visibility of your business to attract more potential customers, the best advice is to set your..."
 keywords: ["learn how to set up your google my business gmb listings","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/online-shopping-SU32AVJ-2-scaled-1.jpg"

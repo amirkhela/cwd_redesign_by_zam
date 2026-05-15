@@ -3,7 +3,7 @@ title: "Website Design Near Me: Local Experts for Small Businesses"
 slug: "website-design-near-me-finding-the-right-team-for-your-business"
 date: "2025-09-23"
 author: "Canadian Web Designs"
-description: "Website Design Near Me: Local Experts for Small Businesses"
+description: "Finding a reliable website design team near you is essential for growing your business online. At Canadian Web Designs , we specialize in creating..."
 keywords: ["website design near me finding the right team for your business","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/3-1.png"

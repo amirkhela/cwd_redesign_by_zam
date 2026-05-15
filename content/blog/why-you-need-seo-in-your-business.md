@@ -3,7 +3,7 @@ title: "Why You Need SEO in Your Business?"
 slug: "why-you-need-seo-in-your-business"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Why You Need SEO in Your Business?"
+description: "Owning a business with a lot of goals and aspects to look into isn’t easy nowadays. Digital marketing is a big part of the way your business faces the..."
 keywords: ["why you need seo in your business","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/SEO-for-Small-businesses-e1674226071184.png"

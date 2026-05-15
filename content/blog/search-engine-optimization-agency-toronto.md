@@ -3,7 +3,7 @@ title: "Search Engine Optimization Agency Toronto: Dominating Local Search in th
 slug: "search-engine-optimization-agency-toronto"
 date: "2025-10-20"
 author: "Canadian Web Designs"
-description: "Search Engine Optimization Agency Toronto: Dominating Local Search in the GTA"
+description: "In a city as dynamic and densely populated as Toronto, standing out online isn't just about having a website it’s about having a strategic digital..."
 keywords: ["search engine optimization agency toronto","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/2-1.png"

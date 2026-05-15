@@ -3,7 +3,7 @@ title: "Why Is It Important to Get Website Development in Your Business?"
 slug: "why-is-it-important-to-get-website-development"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Why Is It Important to Get Website Development in Your Business?"
+description: "Why is it important? You can be a business owner hiring a developer to build a website or a digital marketer pitching a design to your development..."
 keywords: ["why is it important to get website development","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/domenico-loia-hGV2TfOh0ns-unsplash-1.jpg"

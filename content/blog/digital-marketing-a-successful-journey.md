@@ -3,7 +3,7 @@ title: "Digital Marketing: A Successful Journey for Entrepreneurship"
 slug: "digital-marketing-a-successful-journey"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Digital Marketing: A Successful Journey for Entrepreneurship"
+description: "The digital world is becoming more advanced nowadays due to the boost of modern technology compared to the past decades. Laptops, tablets, smartphones,..."
 keywords: ["digital marketing a successful journey","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/digital-marketing-media-in-virtual-icon-globe-shap-UW9Q4EY-1-scaled-1.jpg"

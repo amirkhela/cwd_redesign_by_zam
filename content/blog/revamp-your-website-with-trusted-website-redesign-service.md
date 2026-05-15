@@ -3,7 +3,7 @@ title: "Revamp Your Website with Trusted Website Redesign Service"
 slug: "revamp-your-website-with-trusted-website-redesign-service"
 date: "2025-07-17"
 author: "Canadian Web Designs"
-description: "Revamp Your Website with Trusted Website Redesign Service"
+description: "What is a Website Revamp? A website redesign involves more than just updating colors and visuals. It’s a comprehensive process of rebuilding and..."
 keywords: ["revamp your website with trusted website redesign service","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/ui-ux-representation-with-hand-typing-scaled.jpeg"

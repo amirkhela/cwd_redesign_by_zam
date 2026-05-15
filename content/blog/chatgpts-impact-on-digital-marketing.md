@@ -3,7 +3,7 @@ title: "ChatGPT's Impact on Digital Marketing Success"
 slug: "chatgpts-impact-on-digital-marketing"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "ChatGPT's Impact on Digital Marketing Success"
+description: "Revolutionizing Digital Marketing with Artificial Intelligence and Language Models The world of digital marketing is fast changing due to artificial..."
 keywords: ["chatgpts impact on digital marketing","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/chatgpt.jpg"

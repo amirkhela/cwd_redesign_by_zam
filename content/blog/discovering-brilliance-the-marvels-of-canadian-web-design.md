@@ -3,7 +3,7 @@ title: "Discovering Brilliance: The Marvels of Canadian Web Design"
 slug: "discovering-brilliance-the-marvels-of-canadian-web-design"
 date: "2024-04-15"
 author: "Canadian Web Designs"
-description: "Discovering Brilliance: The Marvels of Canadian Web Design"
+description: "The importance of web design cannot be stressed in today's digital age, where first impressions are frequently formed online. A well-designed website,..."
 keywords: ["discovering brilliance the marvels of canadian web design","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/online-web-design-1-scaled.jpg"

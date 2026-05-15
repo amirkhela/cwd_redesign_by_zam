@@ -3,7 +3,7 @@ title: "Integrated Marketing Tools"
 slug: "integrated-marketing-tools"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Integrated Marketing Tools"
+description: "Marketing Tools Canadian Web Designs specializes in cohesive advertising across sales promotion, telemarketing, outdoor advertising, email, social..."
 keywords: ["integrated marketing tools","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Integrated-Marketing-Tools.png"

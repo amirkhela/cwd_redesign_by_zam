@@ -3,7 +3,7 @@ title: "The Hidden Costs of Web Design: What Canadian Businesses Should Know"
 slug: "the-hidden-costs-of-web-design-what-canadian-businesses-should-know"
 date: "2024-12-18"
 author: "Canadian Web Designs"
-description: "The Hidden Costs of Web Design: What Canadian Businesses Should Know"
+description: "When it comes to creating a website, many Canadian businesses focus primarily on the upfront costs of hiring a web design company or agency. While this..."
 keywords: ["the hidden costs of web design what canadian businesses should know","Uncategorized"]
 category: "Uncategorized"
 featuredImage: "/blog/posts/7358.jpg"

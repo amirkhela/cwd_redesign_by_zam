@@ -3,7 +3,7 @@ title: "Progressive Web Apps"
 slug: "progressive-web-apps"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Progressive Web Apps"
+description: "A Progressive Web App (PWA) is a web app that delivers an app-like experience to users using web compatibilities. These apps meet certain requirements..."
 keywords: ["progressive web apps","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Progressive-Web-Apps-1024x647-1024x585-1.jpg"

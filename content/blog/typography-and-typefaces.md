@@ -3,7 +3,7 @@ title: "Typography and Typefaces"
 slug: "typography-and-typefaces"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Typography and Typefaces"
+description: "Have you ever noticed the wordmarks of some famous big companies? Like Coca-Cola, Instagram, Cadbury, etc., some are curvy, and some are plain and..."
 keywords: ["typography and typefaces","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/pile-of-wooden-letters-PDZ25RE-scaled-1.jpg"

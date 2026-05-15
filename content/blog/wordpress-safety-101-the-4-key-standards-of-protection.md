@@ -3,7 +3,7 @@ title: "WordPress Safety 101: The 4 Key Standards of Protection"
 slug: "wordpress-safety-101-the-4-key-standards-of-protection"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "WordPress Safety 101: The 4 Key Standards of Protection"
+description: "To simplify the understanding of WordPress security , we can categorize it into four essential components. These components guide website..."
 keywords: ["wordpress safety 101 the 4 key standards of protection","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Web-security-cursor-pointing-to-security.jpg"

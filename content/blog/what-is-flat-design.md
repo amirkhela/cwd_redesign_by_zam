@@ -3,7 +3,7 @@ title: "What Is Flat Design?"
 slug: "what-is-flat-design"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "What Is Flat Design?"
+description: "Overview of Flat Design Canada Flat design features simple, two-dimensional elements and bright colors. It stands in contrast to the skeuomorphic..."
 keywords: ["what is flat design","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Flat-Design-1024x585-1.jpeg"

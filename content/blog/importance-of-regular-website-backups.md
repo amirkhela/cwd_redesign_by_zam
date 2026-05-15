@@ -3,7 +3,7 @@ title: "Importance of Regular Website Backup"
 slug: "importance-of-regular-website-backups"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Importance of Regular Website Backup"
+description: "Why Regular Website Backup is Essential In an age where websites have become the beating heart of businesses and personal brands, ensuring their safety..."
 keywords: ["importance of regular website backups","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/duplicator.jpg"

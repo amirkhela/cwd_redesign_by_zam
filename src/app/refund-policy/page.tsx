@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Refund Policy",
   description: `Refund Policy for ${config.businessName} services.`,
   alternates: { canonical: "/refund-policy" },
+  robots: { index: false, follow: true },
 };
 
 export default function RefundPolicyPage() {

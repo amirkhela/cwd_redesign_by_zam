@@ -3,7 +3,7 @@ title: "Chatbots And Its Importance"
 slug: "chatbots-and-its-importance"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Chatbots And Its Importance"
+description: "What is a chatbot? It is an artificial intelligence (AI) software or a computer program that conducts a conversation through audio or textual methods...."
 keywords: ["chatbots and its importance","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Chatbots-And-Its-Importance-scaled.jpg"

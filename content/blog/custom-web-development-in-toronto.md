@@ -3,7 +3,7 @@ title: "Custom Web Development in Toronto"
 slug: "custom-web-development-in-toronto"
 date: "2023-11-20"
 author: "Canadian Web Designs"
-description: "Custom Web Development in Toronto"
+description: "Introduction to Custom Web Development Custom web development is a process where websites or web applications are built to meet specific, individual..."
 keywords: ["custom web development in toronto","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Custome-Web-Devlopment-in-Toronto.jpg"

@@ -3,7 +3,7 @@ title: "Canada Web Design: Elevating Your Online Presence"
 slug: "canada-web-design-elevating-your-online-presence"
 date: "2024-03-01"
 author: "Canadian Web Designs"
-description: "Canada Web Design: Elevating Your Online Presence"
+description: "Table of contents Understanding the Importance of Quality Web Design Mobile Responsiveness: A Non-Negotiable Feature Speed Optimization: Keeping Your..."
 keywords: ["canada web design elevating your online presence","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Canada-Web-Design.png"

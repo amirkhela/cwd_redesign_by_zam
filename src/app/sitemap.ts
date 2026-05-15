@@ -16,9 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog` },
     { url: `${BASE_URL}/faq` },
     { url: `${BASE_URL}/careers` },
-    { url: `${BASE_URL}/privacy-policy` },
-    { url: `${BASE_URL}/terms-and-conditions` },
-    { url: `${BASE_URL}/refund-policy` },
   ];
 
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({

@@ -3,7 +3,7 @@ title: "Kijiji Ads Marketing the Best Strategy for Local Businesses"
 slug: "kijiji-ads-marketing-strategy-for-local-businesses"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Kijiji Ads Marketing the Best Strategy for Local Businesses"
+description: "Learn to expand your home service business by using the Kijiji marketing tool. Connect your brand with the Canadian community to attract leads and hike..."
 keywords: ["kijiji ads marketing strategy for local businesses","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Untitled-design.jpg"

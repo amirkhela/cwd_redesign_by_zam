@@ -3,7 +3,7 @@ title: "Local SEO and GMB Optimization - Why It’s Helpful to Your Local Busine
 slug: "local-seo-and-gmb-optimization"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Local SEO and GMB Optimization - Why It’s Helpful to Your Local Business"
+description: "What is GMB? Google My Business is a free feature that enables you to use Google Search and Maps to advertise your business profile and website. You..."
 keywords: ["local seo and gmb optimization","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Local-SEO1.jpg"

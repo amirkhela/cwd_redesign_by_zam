@@ -3,7 +3,7 @@ title: "Programmatic Advertising"
 slug: "programmatic-advertising"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Programmatic Advertising"
+description: "What is programmatic advertising? “Programmatic” ad buying typically refers to the use of software to purchase digital advertising, instead of the..."
 keywords: ["programmatic advertising","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Programmatic-Advertising-scaled.jpg"

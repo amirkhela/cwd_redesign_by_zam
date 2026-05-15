@@ -19,7 +19,7 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
       >
         {/* Background image */}
-        <Image src="/blog/web-design-company.png" alt="" fill className="object-cover object-center" priority />
+        <Image src="/blog/web-design-company.png" alt="Canadian web design and digital marketing agency team" fill className="object-cover object-center" priority />
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.92) 0%, rgba(1,12,30,0.82) 50%, rgba(1,12,30,0.72) 100%)" }} />
 
@@ -164,6 +164,80 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
           </div>
         </div>
       </section>
+
+      {/* =============================================
+          RELATED READING
+          ============================================= */}
+      {(() => {
+        const relatedMap: Record<string, { title: string; slug: string }[]> = {
+          "web-design-development": [
+            { title: "Custom Web Design vs. Website Templates: Which Is Right?", slug: "custom-web-design-vs-website-templates-which-is-right-for-your-business" },
+            { title: "How a Professional Website Design Company Can Transform Your Business", slug: "how-a-professional-website-design-company-can-transform-your-business-online" },
+            { title: "5 Essential Web Design Trends from Canada to Upgrade Your Website", slug: "5-essential-web-design-trends-from-canada-to-upgrade-your-website" },
+            { title: "Mastering Web Design Fundamentals", slug: "mastering-web-design-fundamentals" },
+          ],
+          "seo": [
+            { title: "Affordable SEO Services for Small Businesses", slug: "affordable-seo-services-for-small-businesses" },
+            { title: "How Does Local SEO Benefit Your Business?", slug: "how-does-local-seo-benefit-your-business-in-2023" },
+            { title: "Black Hat SEO vs. White Hat SEO: What You Need to Know", slug: "black-hat-seo-vs-white-hat-seo" },
+            { title: "Top 10 Tips for Boosting SEO in 2024", slug: "top-10-tips-for-boosting-seo-for-2023" },
+          ],
+          "graphic-design": [
+            { title: "Elevating Your Brand: The Essential Role of Canadian Graphic Design", slug: "elevating-your-brand-the-essential-role-of-canadian-graphic-design" },
+            { title: "Banner Design Services: How to Stand Out", slug: "banner-design-services" },
+            { title: "The Power of Infographics in Marketing", slug: "infographics" },
+            { title: "Best Graphic Design Service in Canada", slug: "best-graphic-design-service-canada" },
+          ],
+          "social-media-optimization": [
+            { title: "Tips and Tricks for Effective Social Media Optimization in 2024", slug: "tips-and-tricks-for-effective-social-media-optimization-in-2023" },
+            { title: "Strategic Social Media Marketing for Canadian Businesses", slug: "strategic-social-media-marketing-for-canadian-web-designs" },
+            { title: "Social Proof Marketing in Social Media", slug: "social-proof-marketing-in-social-media" },
+            { title: "ChatGPT's Impact on Digital Marketing", slug: "chatgpts-impact-on-digital-marketing" },
+          ],
+          "website-maintenance": [
+            { title: "The Importance of Regular Website Backups", slug: "importance-of-regular-website-backups" },
+            { title: "How Much Does Website Maintenance Really Cost?", slug: "how-much-does-website-maintenance-really-cost" },
+            { title: "Website Maintenance: Keep Your Website Secure, Fast, and Updated", slug: "website-maintenance-keep-your-website-secure-fast-and-updated" },
+            { title: "Toronto Website Maintenance & SEO: Keeping Your Site Google-Ready", slug: "toronto-website-maintenance-seo-optimization-keeping-your-site-fast-secure-and-google-ready" },
+          ],
+          "ai-consultation": [
+            { title: "5 Best Strategies for Incorporating ChatGPT Into Your Business", slug: "5-best-strategies-for-incorporating-chatgpt-into-your-business" },
+            { title: "What Is the Importance of AI Automation?", slug: "what-is-the-importance-of-ai-automation" },
+            { title: "Top 10 AI Tools for Digital Marketing", slug: "top-10-ai-tools-for-digital-marketing" },
+            { title: "ChatGPT's Impact on Digital Marketing", slug: "chatgpts-impact-on-digital-marketing" },
+          ],
+        };
+        const posts = relatedMap[service.slug];
+        if (!posts) return null;
+        return (
+          <section className="py-14 bg-gray-50 border-t border-gray-100">
+            <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+              <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-3">Further Reading</span>
+              <h2 className="text-2xl lg:text-3xl font-black text-gray-900 mb-8">Related Articles</h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {posts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="group flex flex-col gap-3 bg-white rounded-xl p-5 border border-gray-100 hover:border-[#00AADF]/40 hover:shadow-md transition-all duration-200"
+                    style={{ boxShadow: "0 1px 8px rgba(0,0,0,0.04)" }}
+                  >
+                    <span className="text-sm font-semibold text-gray-800 group-hover:text-[#00AADF] leading-snug transition-colors">
+                      {post.title}
+                    </span>
+                    <span className="mt-auto flex items-center gap-1 text-xs font-bold text-[#00AADF]">
+                      Read more
+                      <svg className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* =============================================
           CTA BAND

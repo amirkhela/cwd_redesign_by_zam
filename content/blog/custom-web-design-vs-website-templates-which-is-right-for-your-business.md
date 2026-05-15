@@ -3,7 +3,7 @@ title: "Custom Web Design vs Website Templates: Which Is Right for Your Business
 slug: "custom-web-design-vs-website-templates-which-is-right-for-your-business"
 date: "2026-02-27"
 author: "Canadian Web Designs"
-description: "Custom Web Design vs Website Templates: Which Is Right for Your Business?"
+description: "When it comes to building a website, businesses face a crucial decision: choose a pre-made template or invest in a custom web design . While templates..."
 keywords: ["custom web design vs website templates which is right for your business","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Custom-web-design-2.png"
@@ -59,7 +59,7 @@ featuredImage: "/blog/posts/Custom-web-design-2.png"
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 
-<figure class="wp-block-image size-large"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/02/Custom-web-design-advantage-1024x559.png" alt="" class="wp-image-14632"/></figure>
+<figure class="wp-block-image size-large"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/02/Custom-web-design-advantage-1024x559.png" alt="Custom web design advantage 1024x559" class="wp-image-14632"/></figure>
 
 <h2 class="wp-block-heading"><strong>Custom Web Design vs Website Templates</strong></h2>
 

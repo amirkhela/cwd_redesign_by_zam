@@ -3,7 +3,7 @@ title: "Social Media Optimization - Effective Strategies to Follow"
 slug: "social-media-optimization-effective-strategies-to-follow"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Social Media Optimization - Effective Strategies to Follow"
+description: "In this modern generation, digital technology advancement such as social media platforms and websites is becoming beneficial to small businesses. The..."
 keywords: ["social media optimization effective strategies to follow","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/social-media.jpg"

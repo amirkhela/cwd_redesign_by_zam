@@ -3,7 +3,7 @@ title: "Website Designs: Using Social Proofing Techniques"
 slug: "website-designs-using-social-proofing-techniques"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Website Designs: Using Social Proofing Techniques"
+description: "Building a website design with a dull appearance cannot attract customers to buy the services you offer. But creating an impressive innovative design..."
 keywords: ["website designs using social proofing techniques","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/igor-miske-Px3iBXV-4TU-unsplash-1.jpg"

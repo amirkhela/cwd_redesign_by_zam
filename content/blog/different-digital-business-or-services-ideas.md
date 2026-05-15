@@ -3,7 +3,7 @@ title: "Different Digital Businesses or Services Ideas"
 slug: "different-digital-business-or-services-ideas"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Different Digital Businesses or Services Ideas"
+description: "Do you have an actual job, but your salary is not enough to sustain your needs, and are looking for a sideline as another way of earning passive..."
 keywords: ["different digital business or services ideas","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/photo-1531534809446-724fcafe9e97.jpg"

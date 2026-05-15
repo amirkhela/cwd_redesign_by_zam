@@ -3,7 +3,7 @@ title: "Best Web Design Companies Near Me: How to Choose the Right One"
 slug: "best-web-design-companies-near-me-how-to-choose-the-right-one"
 date: "2026-02-10"
 author: "Canadian Web Designs"
-description: "Best Web Design Companies Near Me: How to Choose the Right One"
+description: "If you’ve ever searched for “web design companies near me,” you’re likely looking for a reliable agency that can build a professional, high-converting..."
 keywords: ["best web design companies near me how to choose the right one","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/web-design-company.png"
@@ -57,7 +57,7 @@ featuredImage: "/blog/posts/web-design-company.png"
 
 <p>At <strong>Canadian Web Designs</strong>, we provide all these services under one roof — ensuring your website not only looks great but performs exceptionally.</p>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/02/Web-design-company-near-me.png" alt="" class="wp-image-14612" style="object-fit:cover;width:600px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/02/Web-design-company-near-me.png" alt="Web design company near me" class="wp-image-14612" style="object-fit:cover;width:600px;height:400px"/></figure>
 
 <h2 class="wp-block-heading">Key Factors to Consider When Choosing a Web Design Company</h2>
 

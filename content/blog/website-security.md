@@ -3,7 +3,7 @@ title: "Fortifying Your Online Presence: A Comprehensive Guide to Website Securi
 slug: "website-security"
 date: "2024-01-16"
 author: "Canadian Web Designs"
-description: "Fortifying Your Online Presence: A Comprehensive Guide to Website Security"
+description: "In an era where digital presence is synonymous with brand identity, the security of a website transcends mere data protection; it is a critical..."
 keywords: ["website security","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/construction-design-project-renovation-concept-scaled.jpg"

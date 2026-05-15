@@ -3,7 +3,7 @@ title: "Online Presence: How does this work?"
 slug: "online-presence-how-this-works"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Online Presence: How does this work?"
+description: "Launching or expanding a business is an incredibly demanding journey that requires focused, strategic planning —but it's a journey well worth taking...."
 keywords: ["online presence how this works","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/male-gamer-gaming-lifestyle-cybersport-ADWBQ4A-scaled-1.jpg"

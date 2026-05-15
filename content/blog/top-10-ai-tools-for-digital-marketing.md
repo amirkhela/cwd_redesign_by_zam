@@ -3,7 +3,7 @@ title: "Top 10 AI Tools for Digital Marketing"
 slug: "top-10-ai-tools-for-digital-marketing"
 date: "2023-11-11"
 author: "Canadian Web Designs"
-description: "Top 10 AI Tools for Digital Marketing"
+description: "AI Tools For Marketing 1. Jasper.ai The conversational artificial intelligence platform known as Jasper.ai enables businesses to build and deploy their..."
 keywords: ["top 10 ai tools for digital marketing","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/digital-marketing-tools.jpg"

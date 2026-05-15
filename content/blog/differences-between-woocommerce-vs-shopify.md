@@ -3,7 +3,7 @@ title: "Differences Between WooCommerce vs Shopify"
 slug: "differences-between-woocommerce-vs-shopify"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Differences Between WooCommerce vs Shopify"
+description: "E-commerce is not just about selling; it's about the experience, the journey, and the toolset that makes an online store thrive. In this realm,..."
 keywords: ["differences between woocommerce vs shopify","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/shopify-vs-woocommerce.jpg"

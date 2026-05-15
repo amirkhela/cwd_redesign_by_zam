@@ -3,7 +3,7 @@ title: "Which Website CMS is Better for SEO?"
 slug: "which-website-cms-is-better-for-seo"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Which Website CMS is Better for SEO?"
+description: "SEO is one of the most important parts of Internet marketing. Any website's ability to draw organic traffic largely depends on its SEO compatibility...."
 keywords: ["which website cms is better for seo","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/purpose-of-landing-page.jpg"

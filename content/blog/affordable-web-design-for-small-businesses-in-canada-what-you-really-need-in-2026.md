@@ -3,13 +3,13 @@ title: "Affordable Web Design for Small Businesses in Canada: What You Really Ne
 slug: "affordable-web-design-for-small-businesses-in-canada-what-you-really-need-in-2026"
 date: "2026-01-02"
 author: "Canadian Web Designs"
-description: "Affordable Web Design for Small Businesses in Canada: What You Really Need in 2026"
+description: "Table of Contents Introduction Why Affordable Web Design Matters for Canadian Small Businesses What Affordable Web Design Should Include (Not Cheap..."
 keywords: ["affordable web design for small businesses in canada what you really need in 2026","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Website-design.png"
 ---
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/01/Web-Design.png" alt="" class="wp-image-14555" style="object-fit:cover;width:600px;height:600px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/01/Web-Design.png" alt="Web Design" class="wp-image-14555" style="object-fit:cover;width:600px;height:600px"/></figure>
 
 <h2 class="wp-block-heading">Table of Contents</h2>
 
@@ -95,7 +95,7 @@ featuredImage: "/blog/posts/Website-design.png"
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/01/Website-design.png" alt="" class="wp-image-14556" style="object-fit:cover;width:600px;height:600px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/01/Website-design.png" alt="Website design" class="wp-image-14556" style="object-fit:cover;width:600px;height:600px"/></figure>
 
 <h2 class="wp-block-heading">Common Mistakes Small Businesses Make When Choosing a Web Designer</h2>
 

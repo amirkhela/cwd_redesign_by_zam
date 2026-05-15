@@ -3,7 +3,7 @@ title: "Why Canadian Web Designs is the Go-To Web Design Company for Your Digita
 slug: "why-canadian-web-designs-is-the-go-to-web-design-company-for-your-digital-success"
 date: "2024-08-20"
 author: "Canadian Web Designs"
-description: "Why Canadian Web Designs is the Go-To Web Design Company for Your Digital Success"
+description: "In the rapidly evolving digital landscape, having a strong online presence is no longer optional; it’s a necessity. Whether you're a small business..."
 keywords: ["why canadian web designs is the go to web design company for your digital success","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/25068.jpg"

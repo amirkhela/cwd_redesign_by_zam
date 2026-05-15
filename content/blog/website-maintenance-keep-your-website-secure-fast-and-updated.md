@@ -3,7 +3,7 @@ title: "Website Maintenance: Keep Your Website Secure, Fast, and Updated"
 slug: "website-maintenance-keep-your-website-secure-fast-and-updated"
 date: "2026-02-20"
 author: "Canadian Web Designs"
-description: "Website Maintenance: Keep Your Website Secure, Fast, and Updated"
+description: "Your website is the face of your business online, and like any digital asset, it requires regular website maintenance to stay secure, fast, and fully..."
 keywords: ["website maintenance keep your website secure fast and updated","Uncategorized"]
 category: "Uncategorized"
 featuredImage: "/blog/posts/Website-maintenance.png"
@@ -73,7 +73,7 @@ featuredImage: "/blog/posts/Website-maintenance.png"
 <li>Better rankings in search engines</li>
 </ul>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/02/Web-maintenance.png" alt="" class="wp-image-14624" style="object-fit:cover;width:600px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/02/Web-maintenance.png" alt="Web maintenance" class="wp-image-14624" style="object-fit:cover;width:600px;height:400px"/></figure>
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 

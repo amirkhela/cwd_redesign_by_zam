@@ -3,7 +3,7 @@ title: "Discover the Best in Canadian Web Design &amp; Digital Innovation"
 slug: "discover-the-best-in-canadian-web-design-digital-innovation"
 date: "2024-02-06"
 author: "Canadian Web Designs"
-description: "Discover the Best in Canadian Web Design &amp; Digital Innovation"
+description: "Table of contents Crafting Digital Excellence in Canada The Magic Behind Custom Web Design and Development Real-life Success Stories A Commitment to..."
 keywords: ["discover the best in canadian web design digital innovation","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/163260.jpg"

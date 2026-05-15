@@ -3,7 +3,7 @@ title: "Webflow vs Squarespace vs WordPress"
 slug: "webflow-vs-squarespace-vs-wordpress"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Webflow vs Squarespace vs WordPress"
+description: "Introduction : When it comes to building a website, the myriad of platform choices can be overwhelming. Among the heavyweights are Webflow,..."
 keywords: ["webflow vs squarespace vs wordpress","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/launchpresso-IOM28XWsk-g-unsplash.jpg"

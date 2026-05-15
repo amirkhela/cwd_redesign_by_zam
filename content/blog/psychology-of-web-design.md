@@ -3,7 +3,7 @@ title: "Psychology of Web Design"
 slug: "psychology-of-web-design"
 date: "2023-11-09"
 author: "Canadian Web Designs"
-description: "Psychology of Web Design"
+description: "The Mind's Eye: Decoding the Psychology of Web Design The digital landscape is not just about code and aesthetics; it's a psychological playground..."
 keywords: ["psychology of web design","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/cropped-view-of-smiling-designer-showing-mobile.jpg"

@@ -3,7 +3,7 @@ title: "10 Fun Facts About The Digital History"
 slug: "10-fun-facts-about-the-digital-history"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "10 Fun Facts About The Digital History"
+description: "Year by year, people around the world are becoming modernized in advanced digital technology. Even young to old people are turning to tech-savvy ones...."
 keywords: ["10 fun facts about the digital history","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/featured.png"
@@ -27,7 +27,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/Xyd3KfjbzJwAwbqlPIMc0tt0aoZLExUu_X0RuvqZXPqLxZNQym8fdo7dkKwO43GpK_yzL-i480WH-8eqphYyyG7bG1MdSiZNsG3CtKAdLVtfvvT3zB-S0oMkokw1A147n5VgyCoh" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/Xyd3KfjbzJwAwbqlPIMc0tt0aoZLExUu_X0RuvqZXPqLxZNQym8fdo7dkKwO43GpK_yzL-i480WH-8eqphYyyG7bG1MdSiZNsG3CtKAdLVtfvvT3zB-S0oMkokw1A147n5VgyCoh" alt="Xyd3KfjbzJwAwbqlPIMc0tt0aoZLExUu X0RuvqZXPqLxZNQym8fdo7dkKwO43GpK yzL i480WH 8eqphYyyG7bG1MdSiZNsG3CtKAdLVtfvvT3zB S0oMkokw1A147n5VgyCoh" /></figure>
 
 </p>
 
@@ -39,7 +39,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/SG2CvKddbtoVBcEV9o0AYQ_MhYaUc4IltDXgZCLV0VKHJu3OH4hf0uzD_SDontOWU8B3VZzAu8qfywGVjIHo_idPMDhn1Bqm3U4WTeZ5oMPDJZRTQxJdM0PX2brV1gc8mluLFI4Q" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/SG2CvKddbtoVBcEV9o0AYQ_MhYaUc4IltDXgZCLV0VKHJu3OH4hf0uzD_SDontOWU8B3VZzAu8qfywGVjIHo_idPMDhn1Bqm3U4WTeZ5oMPDJZRTQxJdM0PX2brV1gc8mluLFI4Q" alt="SG2CvKddbtoVBcEV9o0AYQ MhYaUc4IltDXgZCLV0VKHJu3OH4hf0uzD SDontOWU8B3VZzAu8qfywGVjIHo idPMDhn1Bqm3U4WTeZ5oMPDJZRTQxJdM0PX2brV1gc8mluLFI4Q" /></figure>
 
 </p>
 
@@ -63,7 +63,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/kYIgaoJ5tZql33lnLqiNU2MbzvBvkMHq9m-mdBTERtfrlNVS4hpsYyeERoUsDwwN_kqt6tcEuqlWRPMmDabmBYoK40IHwjXmfsvPvC0NDzJ0fM9VIyz9yi9PRsSmOss1RXR7NWu3" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/kYIgaoJ5tZql33lnLqiNU2MbzvBvkMHq9m-mdBTERtfrlNVS4hpsYyeERoUsDwwN_kqt6tcEuqlWRPMmDabmBYoK40IHwjXmfsvPvC0NDzJ0fM9VIyz9yi9PRsSmOss1RXR7NWu3" alt="kYIgaoJ5tZql33lnLqiNU2MbzvBvkMHq9m mdBTERtfrlNVS4hpsYyeERoUsDwwN kqt6tcEuqlWRPMmDabmBYoK40IHwjXmfsvPvC0NDzJ0fM9VIyz9yi9PRsSmOss1RXR7NWu3" /></figure>
 
 </p>
 
@@ -75,7 +75,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/GpoTErr6b1Ak9aDQMQboqk0oOnPEUFQ8zYpvLzoUuVJQQV2FWbN-L5H4_6RbEWApEYV3-i7oFLiZ5HNCp8V8SpykonkqTguC6S5ba0uhKtqBIFu_su1aTcHAvKMrxjzBThlw0aID" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/GpoTErr6b1Ak9aDQMQboqk0oOnPEUFQ8zYpvLzoUuVJQQV2FWbN-L5H4_6RbEWApEYV3-i7oFLiZ5HNCp8V8SpykonkqTguC6S5ba0uhKtqBIFu_su1aTcHAvKMrxjzBThlw0aID" alt="GpoTErr6b1Ak9aDQMQboqk0oOnPEUFQ8zYpvLzoUuVJQQV2FWbN L5H4 6RbEWApEYV3 i7oFLiZ5HNCp8V8SpykonkqTguC6S5ba0uhKtqBIFu su1aTcHAvKMrxjzBThlw0aID" /></figure>
 
 </p>
 
@@ -87,7 +87,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/g3VNqrKOKoT0kdkckKzm5znQQXXJdDGIJAuji8YsQIUjfEpcx9MwzN77RNsMXWSFsTh59nnhSypo3L7wvZOaQadnWqBIfUax-T0VM4alIhkm0t7hUELxF3qe3hCLOMxYQgHopdwx" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/g3VNqrKOKoT0kdkckKzm5znQQXXJdDGIJAuji8YsQIUjfEpcx9MwzN77RNsMXWSFsTh59nnhSypo3L7wvZOaQadnWqBIfUax-T0VM4alIhkm0t7hUELxF3qe3hCLOMxYQgHopdwx" alt="g3VNqrKOKoT0kdkckKzm5znQQXXJdDGIJAuji8YsQIUjfEpcx9MwzN77RNsMXWSFsTh59nnhSypo3L7wvZOaQadnWqBIfUax T0VM4alIhkm0t7hUELxF3qe3hCLOMxYQgHopdwx" /></figure>
 
 </p>
 
@@ -99,7 +99,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/RWmeM7NpIU3Z2Fn18bn1i1k7axicWyKah1s7E_NfO4Y8CgFAnu0Y1-H3yYIhj8kBTZjQ2_WNKeJjapT6Qo5DaCpr8qL53wR8YaCdo-tSGnOe9jTUSjSGU8-zyJ_WCdZSW81QICiT" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/RWmeM7NpIU3Z2Fn18bn1i1k7axicWyKah1s7E_NfO4Y8CgFAnu0Y1-H3yYIhj8kBTZjQ2_WNKeJjapT6Qo5DaCpr8qL53wR8YaCdo-tSGnOe9jTUSjSGU8-zyJ_WCdZSW81QICiT" alt="RWmeM7NpIU3Z2Fn18bn1i1k7axicWyKah1s7E NfO4Y8CgFAnu0Y1 H3yYIhj8kBTZjQ2 WNKeJjapT6Qo5DaCpr8qL53wR8YaCdo tSGnOe9jTUSjSGU8 zyJ WCdZSW81QICiT" /></figure>
 
 </p>
 
@@ -111,7 +111,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/5M-A_utL99MVwxGtOpXKMyHePoF8mcz3qUAHcGPqSDCWxtuAM8EWrT7ErxHytxFwPgFpPZADrsqYFc9-6CiftbAjjFb4zwWkwFDSLCVl6UlyHzxaP4EEU942d7hODpYgNIU_pcoT" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/5M-A_utL99MVwxGtOpXKMyHePoF8mcz3qUAHcGPqSDCWxtuAM8EWrT7ErxHytxFwPgFpPZADrsqYFc9-6CiftbAjjFb4zwWkwFDSLCVl6UlyHzxaP4EEU942d7hODpYgNIU_pcoT" alt="5M A utL99MVwxGtOpXKMyHePoF8mcz3qUAHcGPqSDCWxtuAM8EWrT7ErxHytxFwPgFpPZADrsqYFc9 6CiftbAjjFb4zwWkwFDSLCVl6UlyHzxaP4EEU942d7hODpYgNIU pcoT" /></figure>
 
 </p>
 
@@ -123,7 +123,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/_LvrO9xUS-qkb8poiDVBaEDaY8DyG3BJU9H8hKrhZoEuYvSYBgoED39ZskljR-3HFbj4-2NyPfY9-3H7Hw6z_BuoNJoFEh5vE1DGkphKKBmMJTt9a2F5_mfLSTVsKEM6la_VL-Q1" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh5.googleusercontent.com/_LvrO9xUS-qkb8poiDVBaEDaY8DyG3BJU9H8hKrhZoEuYvSYBgoED39ZskljR-3HFbj4-2NyPfY9-3H7Hw6z_BuoNJoFEh5vE1DGkphKKBmMJTt9a2F5_mfLSTVsKEM6la_VL-Q1" alt="LvrO9xUS qkb8poiDVBaEDaY8DyG3BJU9H8hKrhZoEuYvSYBgoED39ZskljR 3HFbj4 2NyPfY9 3H7Hw6z BuoNJoFEh5vE1DGkphKKBmMJTt9a2F5 mfLSTVsKEM6la VL Q1" /></figure>
 
 </p>
 
@@ -135,7 +135,7 @@ featuredImage: "/blog/posts/featured.png"
 
 </p>
 
-<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/9Q3eTCvaIigXGiZF7ROn6wqqqwo8q_jZsYVhPH8gzVLbiAOxRaA1O9bHdjIEaa1JXAJoQCkz2QeMOEqaSLLoKCTqEWkUSDZ0e--69yEw8bFIfqiI6WpYgGr3iqi6joryDDvDG8Q_" alt=""/></figure>
+<figure class="wp-block-image"><img src="https://lh4.googleusercontent.com/9Q3eTCvaIigXGiZF7ROn6wqqqwo8q_jZsYVhPH8gzVLbiAOxRaA1O9bHdjIEaa1JXAJoQCkz2QeMOEqaSLLoKCTqEWkUSDZ0e--69yEw8bFIfqiI6WpYgGr3iqi6joryDDvDG8Q_" alt="9Q3eTCvaIigXGiZF7ROn6wqqqwo8q jZsYVhPH8gzVLbiAOxRaA1O9bHdjIEaa1JXAJoQCkz2QeMOEqaSLLoKCTqEWkUSDZ0e 69yEw8bFIfqiI6WpYgGr3iqi6joryDDvDG8Q" /></figure>
 
 </p>
 

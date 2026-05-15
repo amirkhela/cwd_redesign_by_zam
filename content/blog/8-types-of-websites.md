@@ -3,7 +3,7 @@ title: "Website Designs: 8 Types of Website You Have Seen In The Internet World 
 slug: "8-types-of-websites"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Website Designs: 8 Types of Website You Have Seen In The Internet World and What Are Their Functions"
+description: "Types of Website In this current modern generation, the digital population around the world is expanding. Many businesses, entrepreneurs, and career..."
 keywords: ["8 types of websites","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/diverse-people-thinking-planning-marketing-brand-concept-scaled-1.jpg"

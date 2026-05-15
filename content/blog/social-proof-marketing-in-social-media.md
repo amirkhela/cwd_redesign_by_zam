@@ -3,7 +3,7 @@ title: "Social Proof Marketing In Social Media"
 slug: "social-proof-marketing-in-social-media"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Social Proof Marketing In Social Media"
+description: "Social Proof Marketing Nowadays, social media platforms like Instagram, Twitter, and Facebook play a big role in growing your business by putting..."
 keywords: ["social proof marketing in social media","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/featured-image-1.png"

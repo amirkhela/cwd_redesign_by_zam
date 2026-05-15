@@ -3,7 +3,7 @@ title: "Best Photo Editing in Canada"
 slug: "best-photo-editing-services"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Best Photo Editing in Canada"
+description: "Websites, media campaigns, e-mail signatures, advertisements, and almost every other business collateral require cutting-edge images to make..."
 keywords: ["best photo editing services","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Photo-Editing-in-Canada.png"

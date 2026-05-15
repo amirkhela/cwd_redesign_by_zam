@@ -3,7 +3,7 @@ title: "5 Tips on How To Enhance Website Security"
 slug: "5-tips-on-how-to-enhance-website-security"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "5 Tips on How To Enhance Website Security"
+description: "A 2007 study found out that hacker attacks of computers with Internet access every 39 seconds, on average. There were approximately 2,500 times attacks..."
 keywords: ["5 tips on how to enhance website security","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Web-security-cursor-pointing-to-security.jpg"

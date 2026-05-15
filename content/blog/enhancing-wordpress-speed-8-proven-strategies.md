@@ -3,7 +3,7 @@ title: "Enhancing WordPress Speed: 8 Proven Strategies for Peak Performance"
 slug: "enhancing-wordpress-speed-8-proven-strategies"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Enhancing WordPress Speed: 8 Proven Strategies for Peak Performance"
+description: "How to Make Your WordPress Site Faster in 8 Steps Website load time directly impacts user retention. As page load time increases from one to five..."
 keywords: ["enhancing wordpress speed 8 proven strategies","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/pasted-image-0.png"

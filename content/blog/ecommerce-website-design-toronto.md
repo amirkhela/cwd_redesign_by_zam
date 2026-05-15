@@ -3,7 +3,7 @@ title: "Ecommerce Website Design - Reason Why You Need One"
 slug: "ecommerce-website-design-toronto"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Ecommerce Website Design - Reason Why You Need One"
+description: "E-commerce website designs imply utilizing the Internet and the web for deals and business exchanges, which normally include the trading of significant..."
 keywords: ["ecommerce website design toronto","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Ecommerce-Website-Design-Reason-Why-You-Need-One-1.png"

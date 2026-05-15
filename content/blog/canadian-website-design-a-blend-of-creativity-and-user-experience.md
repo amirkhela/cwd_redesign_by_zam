@@ -3,7 +3,7 @@ title: "Canadian Website Design: A Blend of Creativity and User Experience"
 slug: "canadian-website-design-a-blend-of-creativity-and-user-experience"
 date: "2024-03-27"
 author: "Canadian Web Designs"
-description: "Canadian Website Design: A Blend of Creativity and User Experience"
+description: "In the vast and ever-evolving digital landscape, Canadian website design stands out as a beacon of innovation and user-centric approaches. As..."
 keywords: ["canadian website design a blend of creativity and user experience","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Canadian-Website-Design-Toronto.png"
@@ -21,7 +21,7 @@ featuredImage: "/blog/posts/Canadian-Website-Design-Toronto.png"
 
 <p>In Canadian website design, there is a harmonious balance between aesthetic appeal and functionality. Designers leverage the latest trends, such as minimalism, bold typography, and dynamic animations, to create engaging and easy-to-navigate websites. However, the beauty of these websites goes beyond their visual appeal. They are meticulously crafted to provide seamless user experiences, with intuitive navigation and fast loading times being paramount. This dual focus ensures that websites not only capture but also retain user attention.</p>
 
-<figure class="wp-block-image size-full"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2024/03/Canadian-Website-Design.png" alt="" class="wp-image-13446"/></figure>
+<figure class="wp-block-image size-full"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2024/03/Canadian-Website-Design.png" alt="Canadian Website Design" class="wp-image-13446"/></figure>
 
 <h3 class="wp-block-heading">Mobile-First Design: A Necessity</h3>
 

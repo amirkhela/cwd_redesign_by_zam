@@ -3,7 +3,7 @@ title: "Who Truly Benefits from Having a Website?"
 slug: "who-truly-benefits-from-having-a-website"
 date: "2024-11-22"
 author: "Canadian Web Designs"
-description: "Who Truly Benefits from Having a Website?"
+description: "In today’s fast-paced digital landscape, a website is an essential tool for businesses and individuals striving to succeed in a competitive market. At..."
 keywords: ["who truly benefits from having a website","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/web-site-design.png"
@@ -37,7 +37,7 @@ featuredImage: "/blog/posts/web-site-design.png"
 
 <p>Your website is a powerful sales tool. Studies show that a well-optimized website not only influences purchasing decisions but also helps reduce perceived risks for customers. By implementing SEO practices, your website can rank higher on search engines, drawing in more traffic and increasing the likelihood of conversions. Think of it as your virtual storefront—always open and ready to generate revenue.</p>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2024/11/small-business-owner.png" alt="" class="wp-image-13806" style="width:840px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2024/11/small-business-owner.png" alt="small business owner" class="wp-image-13806" style="width:840px;height:auto"/></figure>
 
 <h3 class="wp-block-heading"><strong>Why Wait?</strong></h3>
 

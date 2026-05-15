@@ -3,7 +3,7 @@ title: "Responsive Web Design: How to Overcome 9 Common Mistakes"
 slug: "responsive-web-design-how-to-overcome-9-common-mistakes"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Responsive Web Design: How to Overcome 9 Common Mistakes"
+description: "The Imperative of Adaptive Web Design In today's digital age, having a flexible website that caters to various devices is paramount. The adaptability..."
 keywords: ["responsive web design how to overcome 9 common mistakes","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/website-layout.jpg"

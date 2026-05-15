@@ -3,7 +3,7 @@ title: "Mastering Web Design Fundamentals"
 slug: "mastering-web-design-fundamentals"
 date: "2023-12-28"
 author: "Canadian Web Designs"
-description: "Mastering Web Design Fundamentals"
+description: "Web Design Fundamentals in Toronto The digital era has transformed web design into an essential element of success for businesses and individuals..."
 keywords: ["mastering web design fundamentals","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/UX.jpg"

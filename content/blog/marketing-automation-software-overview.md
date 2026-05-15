@@ -3,7 +3,7 @@ title: "Overview of Marketing Automation Software Tools"
 slug: "marketing-automation-software-overview"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Overview of Marketing Automation Software Tools"
+description: "Marketing Automation refers to the software platform which automates the marketing actions or processes. Canadian Website Designs will surely help with..."
 keywords: ["marketing automation software overview","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Overview-of-Marketing-Automation-Software-Tools.png"

@@ -3,7 +3,7 @@ title: "Wix to WordPress: A Comprehensive Migration Tutorial for Beginners"
 slug: "wix-to-wordpress-migration-tutorial-for-beginners"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Wix to WordPress: A Comprehensive Migration Tutorial for Beginners"
+description: "Brief Overview of the Migration Process The migration process refers to the systematic transfer of data, applications, or other essential elements from..."
 keywords: ["wix to wordpress migration tutorial for beginners","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/wiz-to-wordpress.jpg"

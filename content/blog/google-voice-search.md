@@ -3,7 +3,7 @@ title: "Here’s What You Need To Know About Google Voice Search"
 slug: "google-voice-search"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Here’s What You Need To Know About Google Voice Search"
+description: "Google Voice Search: Unveiling the Future of Internet Browsing As we stride deeper into the digital age, the way we interact with technology is..."
 keywords: ["google voice search","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Heres-What-You-Need-To-Know-About-Google-Voice-Search-scaled.jpg"

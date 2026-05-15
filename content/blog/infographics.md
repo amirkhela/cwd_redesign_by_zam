@@ -3,7 +3,7 @@ title: "Infographics"
 slug: "infographics"
 date: "2024-01-16"
 author: "Canadian Web Designs"
-description: "Infographics"
+description: "What is Infographics? Infographics are a set of visual presentations of ideas, data, or knowledge designed to educate readers by presenting graphic..."
 keywords: ["infographics","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/pasted-image-0.png"

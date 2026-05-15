@@ -3,7 +3,7 @@ title: "Canadian Web Designs Introducing Their Marketing Strategies for Home Ser
 slug: "canadian-web-designs-marketing-strategies-for-home-service-business"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Canadian Web Designs Introducing Their Marketing Strategies for Home Service Business"
+description: "Are you ready to take your Canadian home service business to the next level? I am excited about what I have to share with you. Every marketing service..."
 keywords: ["canadian web designs marketing strategies for home service business","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/minimalist-web-design-1024x585-1.jpg"

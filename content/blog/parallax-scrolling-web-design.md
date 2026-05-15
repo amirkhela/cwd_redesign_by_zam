@@ -3,7 +3,7 @@ title: "Parallax Scrolling In Web Design"
 slug: "parallax-scrolling-web-design"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Parallax Scrolling In Web Design"
+description: "What is Parallax Scrolling? Parallax Scrolling is a scrolling technique that is used on many websites which creates an illusion of depth. Parallax..."
 keywords: ["parallax scrolling web design","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/parallax-scrolling-1024x683-1024x585-1.jpg"

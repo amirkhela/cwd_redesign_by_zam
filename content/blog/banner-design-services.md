@@ -3,7 +3,7 @@ title: "Banner Design Services"
 slug: "banner-design-services"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Banner Design Services"
+description: "Businesses are constantly in need of aesthetic and appealing content, infographics and banners to attract and retain browsers. Visual marketing is..."
 keywords: ["banner design services","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/photo-1567789733718-254c719b4974.jpg"

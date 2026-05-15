@@ -3,7 +3,7 @@ title: "Elevate Your Brand with Strategic Social Media Marketing for Canadian We
 slug: "strategic-social-media-marketing-for-canadian-web-designs"
 date: "2024-05-21"
 author: "Canadian Web Designs"
-description: "Elevate Your Brand with Strategic Social Media Marketing for Canadian Web Designs"
+description: "In the digital age, a robust online presence is crucial for businesses, and at the heart of this presence is an engaging, well-crafted website. For..."
 keywords: ["strategic social media marketing for canadian web designs","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/hand-holding-smartphone-social-media-concept-scaled.jpg"

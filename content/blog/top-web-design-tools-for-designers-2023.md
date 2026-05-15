@@ -3,7 +3,7 @@ title: "The Ultimate List of Top Web Design Tools for Designers 2023"
 slug: "top-web-design-tools-for-designers-2023"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "The Ultimate List of Top Web Design Tools for Designers 2023"
+description: "The best web design tools that every designer needs have been discussed in this post. Web design tools for creating beautiful website designs,..."
 keywords: ["top web design tools for designers 2023","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Wordpress-Featured-image-1.jpg"

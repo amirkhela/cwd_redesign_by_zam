@@ -3,7 +3,7 @@ title: "Your Holy Grail For Classified Marketing"
 slug: "holy-grail-for-classified-marketing"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Your Holy Grail For Classified Marketing"
+description: "Classified Marketing is two words you don’t normally read in the same sentence as they are not the usual click for the average reader, it’s classified..."
 keywords: ["holy grail for classified marketing","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Your-Holy-Grail-For-Classified-Marketing.png"

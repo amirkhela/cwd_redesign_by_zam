@@ -3,7 +3,7 @@ title: "Google Analytics 4 vs. Universal Analytics"
 slug: "google-analytics-4-vs-universal-analytics"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Google Analytics 4 vs. Universal Analytics"
+description: "Analyzing the Future: Navigating the Analytics Landscape In the digital era, data-driven decision-making is crucial. Businesses of all sizes rely..."
 keywords: ["google analytics 4 vs universal analytics","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Google-Analytics-4-vs-Universal-Analytics1.jpg"

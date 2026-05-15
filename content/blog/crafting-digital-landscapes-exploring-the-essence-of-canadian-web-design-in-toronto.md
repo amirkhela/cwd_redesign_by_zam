@@ -3,7 +3,7 @@ title: "Crafting Digital Landscapes: Exploring the Essence of Canadian Web Desig
 slug: "crafting-digital-landscapes-exploring-the-essence-of-canadian-web-design-in-toronto"
 date: "2024-04-01"
 author: "Canadian Web Designs"
-description: "Crafting Digital Landscapes: Exploring the Essence of Canadian Web Design in Toronto"
+description: "Sustainability and ethical design: a Canadian priority. In recent years, environmental and ethical considerations have taken center stage in the..."
 keywords: ["crafting digital landscapes exploring the essence of canadian web design in toronto","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/day-office-travel-agency.jpg"

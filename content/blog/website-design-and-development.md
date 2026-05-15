@@ -3,7 +3,7 @@ title: "Website Design and Development"
 slug: "website-design-and-development"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Website Design and Development"
+description: "A stunning website provides impact to your online market. You take care of your physical face when you conduct business, yet most don’t care about..."
 keywords: ["website design and development","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/website-designs-canadian.jpg"

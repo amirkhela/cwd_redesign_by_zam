@@ -3,7 +3,7 @@ title: "Minimalist Website Design"
 slug: "minimalist-website-design"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Minimalist Website Design"
+description: "What is Minimalist Web Design? You've heard the phrase \"less is more,\" and when it comes to web design, that couldn't be more true. Minimalist web..."
 keywords: ["minimalist website design","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/minimalist-web-design-1024x585-1.jpg"

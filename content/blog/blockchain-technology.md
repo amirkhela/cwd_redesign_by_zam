@@ -3,7 +3,7 @@ title: "Blockchain Technology"
 slug: "blockchain-technology"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Blockchain Technology"
+description: "Introduction Blockchain technology deals with distributed public ledgers that have data and ensure that transactions can never be altered. The most..."
 keywords: ["blockchain technology","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Blockchain-Technology-1024x585-1.jpg"

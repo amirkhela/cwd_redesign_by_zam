@@ -3,7 +3,7 @@ title: "How WordPress Themes Influence Your Site's SEO"
 slug: "how-wordpress-themes-influence-your-sites-seo"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "How WordPress Themes Influence Your Site's SEO"
+description: "Introduction: In the world of online marketing and SEO, every tiny detail can play a significant role in determining the success of a website. For..."
 keywords: ["how wordpress themes influence your sites seo","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/SEO-for-Small-businesses-e1674226071184.png"

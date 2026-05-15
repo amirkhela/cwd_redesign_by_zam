@@ -3,7 +3,7 @@ title: "Toronto SEO Web Design: Building Websites That Rank and Convert"
 slug: "toronto-seo-web-design-building-websites-that-rank-and-convert"
 date: "2025-11-12"
 author: "Canadian Web Designs"
-description: "Toronto SEO Web Design: Building Websites That Rank and Convert"
+description: "Design Meets SEO: The Secret to Online Success A stunning website means nothing if no one finds it. That’s why successful Toronto businesses are..."
 keywords: ["toronto seo web design building websites that rank and convert","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Building-website-rank.png"
@@ -15,7 +15,7 @@ featuredImage: "/blog/posts/Building-website-rank.png"
 
 <p>At <strong>Canadian Web Designs</strong>, we don’t just design; we build digital experiences that attract, engage, and convert. Every layout, tag, and image is crafted with search optimization in mind — ensuring your site not only looks great but performs where it matters most: on Google.</p>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/11/Building-website-rank.png" alt="" class="wp-image-14457" style="object-fit:cover;width:500px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/11/Building-website-rank.png" alt="Building website rank" class="wp-image-14457" style="object-fit:cover;width:500px;height:400px"/></figure>
 
 <h3 class="wp-block-heading"><strong>Why SEO-Driven Design Matters for Toronto Businesses</strong></h3>
 
@@ -65,7 +65,7 @@ featuredImage: "/blog/posts/Building-website-rank.png"
 
 <p>From Etobicoke to Scarborough, we’ve helped businesses climb to page one — and stay there.</p>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/11/Website-Rank-and-Convert.png" alt="" class="wp-image-14458" style="object-fit:cover;width:500px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/11/Website-Rank-and-Convert.png" alt="Website Rank and Convert" class="wp-image-14458" style="object-fit:cover;width:500px;height:400px"/></figure>
 
 <h3 class="wp-block-heading"><strong>Let’s Build Your SEO-Optimized Website Today</strong></h3>
 

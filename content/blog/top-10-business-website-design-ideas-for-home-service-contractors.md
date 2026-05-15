@@ -3,7 +3,7 @@ title: "Top 10 Business Website Design Ideas for Home Service Contractors"
 slug: "top-10-business-website-design-ideas-for-home-service-contractors"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Top 10 Business Website Design Ideas for Home Service Contractors"
+description: "Why Online Presence is Crucial for Home Services The demand for home care assistance —from structural repairs and home decorations to specialized..."
 keywords: ["top 10 business website design ideas for home service contractors","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/clint-patterson-knxuAKpRoxs-unsplash.jpg"

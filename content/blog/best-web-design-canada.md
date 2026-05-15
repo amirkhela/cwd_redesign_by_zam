@@ -3,7 +3,7 @@ title: "Best Web Design in Canada"
 slug: "best-web-design-canada"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Best Web Design in Canada"
+description: "We at Canadian Web Designs understand the significance of a stellar website in facilitating business success and hence create not just websites, but..."
 keywords: ["best web design canada","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Web-Design-in-Canada.png"

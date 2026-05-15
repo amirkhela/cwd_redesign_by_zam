@@ -3,7 +3,7 @@ title: "WordPress for E-commerce: A Toolbox for Building Your Online Store"
 slug: "wordpress-for-e-commerce-a-toolbox-for-building-your-online-store"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "WordPress for E-commerce: A Toolbox for Building Your Online Store"
+description: "WordPress for E-commerce: Exploring plugins and themes for online stores When it comes to setting up an online store, WordPress stands out as a robust..."
 keywords: ["wordpress for e commerce a toolbox for building your online store","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/WordPress-for-E-commerce.jpg"

@@ -3,7 +3,7 @@ title: "Create a magnificent entrepreneurial journey with Canadian Website Desig
 slug: "create-a-magnificent-entrepreneurial-journey-with-canadian-website-designs"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Create a magnificent entrepreneurial journey with Canadian Website Designs."
+description: "How to promote your brand and perform effective digital marketing strategies to get more leads to call you from your website? Are you a Canadian home..."
 keywords: ["create a magnificent entrepreneurial journey with canadian website designs","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/image.png"

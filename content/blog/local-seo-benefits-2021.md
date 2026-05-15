@@ -3,7 +3,7 @@ title: "How does local SEO benefit your business?"
 slug: "local-seo-benefits-2021"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "How does local SEO benefit your business?"
+description: "The primary benefit that your business obtains after you do a decent local SEO strategy is improving your website's ranking and position when the users..."
 keywords: ["local seo benefits 2021","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/local-seo-business-1.jpg"

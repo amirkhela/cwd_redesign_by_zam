@@ -3,7 +3,7 @@ title: "How to Create a High-Converting Landing Page"
 slug: "how-to-create-a-high-converting-landing-page"
 date: "2025-03-03"
 author: "Canadian Web Designs"
-description: "How to Create a High-Converting Landing Page"
+description: "Expert Tips from a Leading Website Design Company in Toronto In the digital world, your website is frequently the first impression potential customers..."
 keywords: ["how to create a high converting landing page","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/landing-page-1.jpg"

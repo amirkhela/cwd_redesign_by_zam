@@ -3,7 +3,7 @@ title: "Search Engine Optimization: How It Can Affect Your Business Website?"
 slug: "search-engine-optimization-how-it-can-affect-your-business-website"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Search Engine Optimization: How It Can Affect Your Business Website?"
+description: "Brief Overview of SEO In this generation, building your business website is the most essential thing to have for growing your business. This digital..."
 keywords: ["search engine optimization how it can affect your business website","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/SEARCH-ENGINE-OPTIMIZATION-1.png"

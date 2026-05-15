@@ -3,7 +3,7 @@ title: "Canadian Web Designs: Your Local Website Design Experts"
 slug: "canadian-web-designs-your-local-website-design-experts"
 date: "2024-06-21"
 author: "Canadian Web Designs"
-description: "Canadian Web Designs: Your Local Website Design Experts"
+description: "In today's digital age, having a robust online presence is essential for businesses of all sizes. Whether you're a small local shop or a large..."
 keywords: ["canadian web designs your local website design experts","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/1861.jpg"

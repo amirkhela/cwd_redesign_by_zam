@@ -3,7 +3,7 @@ title: "Brand Authority and Review Management"
 slug: "brand-authority-and-review-management"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Brand Authority and Review Management"
+description: "Today, what buyers do and will do, is to research before making buying decisions. They will search for your company name and try to find reviews. They..."
 keywords: ["brand authority and review management","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Brand-speak.jpg"

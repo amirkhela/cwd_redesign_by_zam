@@ -3,7 +3,7 @@ title: "10 Common Web Hosting Myths Debunked"
 slug: "10-common-web-hosting-myths-debunked"
 date: "2025-02-04"
 author: "Canadian Web Designs"
-description: "10 Common Web Hosting Myths Debunked"
+description: "Web hosting plays a crucial role in the performance, security, and success of your website. However, many businesses and individuals fall for common..."
 keywords: ["10 common web hosting myths debunked","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Untitled-design.png"

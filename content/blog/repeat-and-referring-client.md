@@ -3,7 +3,7 @@ title: "Repeat and Referring Client"
 slug: "repeat-and-referring-client"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Repeat and Referring Client"
+description: "What it takes to gain repeat and referral clients? Communication between you and your clients is very crucial in terms of customer satisfaction. You..."
 keywords: ["repeat and referring client","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/sebastian-herrmann-NbtIDoFKGO8-unsplash-1-1.jpg"

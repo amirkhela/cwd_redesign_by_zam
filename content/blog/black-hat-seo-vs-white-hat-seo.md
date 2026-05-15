@@ -3,7 +3,7 @@ title: "Black Hat SEO vs. White Hat SEO"
 slug: "black-hat-seo-vs-white-hat-seo"
 date: "2024-01-16"
 author: "Canadian Web Designs"
-description: "Black Hat SEO vs. White Hat SEO"
+description: "Navigating the Complex World of SEO: Strategies and Practices Introduction to SEO Search Engine Optimization (SEO) is a critical aspect of digital..."
 keywords: ["black hat seo vs white hat seo","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/header2.png"

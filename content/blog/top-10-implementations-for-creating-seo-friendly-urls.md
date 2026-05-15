@@ -3,7 +3,7 @@ title: "Top 10 Implementations for Creating SEO-Friendly URLs"
 slug: "top-10-implementations-for-creating-seo-friendly-urls"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Top 10 Implementations for Creating SEO-Friendly URLs"
+description: "Introduction In the digital realm, where online visibility is paramount, the success of a website is significantly influenced by search engine..."
 keywords: ["top 10 implementations for creating seo friendly urls","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/seo-2.png"

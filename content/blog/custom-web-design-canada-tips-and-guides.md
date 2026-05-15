@@ -3,7 +3,7 @@ title: "Custom Web Design Canada: Tips and Guides"
 slug: "custom-web-design-canada-tips-and-guides"
 date: "2024-11-01"
 author: "Canadian Web Designs"
-description: "Custom Web Design Canada: Tips and Guides"
+description: "In today's digital age, having a unique and tailored website is crucial for businesses to stand out and engage their audience. Custom web design , as..."
 keywords: ["custom web design canada tips and guides","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Untitled-design.jpg"

@@ -3,7 +3,7 @@ title: "How to Choose a Web Design Company for Your Business"
 slug: "choose-a-web-design-company-for-your-business"
 date: "2024-09-17"
 author: "Canadian Web Designs"
-description: "How to Choose a Web Design Company for Your Business"
+description: "Hiring the correct web design company is crucial for every company trying to build or improve its online presence. A well-designed website draws in..."
 keywords: ["choose a web design company for your business","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/programming-background-with-html-scaled.jpg"

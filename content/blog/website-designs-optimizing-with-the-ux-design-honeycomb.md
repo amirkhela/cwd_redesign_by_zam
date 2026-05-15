@@ -3,7 +3,7 @@ title: "Website Designs: Optimizing with the UX Design Honeycomb"
 slug: "website-designs-optimizing-with-the-ux-design-honeycomb"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Website Designs: Optimizing with the UX Design Honeycomb"
+description: "Website design is important since it drives the impact of your business. The design it prompts on your screen is the first impression that the audience..."
 keywords: ["website designs optimizing with the ux design honeycomb","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/ux-indonesia-pqzRfBhd9r0-unsplash.jpg"

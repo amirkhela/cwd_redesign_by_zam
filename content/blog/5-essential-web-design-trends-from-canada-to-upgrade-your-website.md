@@ -3,7 +3,7 @@ title: "5 Essential Web Design Trends from Canada to Upgrade Your Website"
 slug: "5-essential-web-design-trends-from-canada-to-upgrade-your-website"
 date: "2025-10-14"
 author: "Canadian Web Designs"
-description: "5 Essential Web Design Trends from Canada to Upgrade Your Website"
+description: "Tired of websites that look like they were built in the dial-up era? Ready for a refresh that feels modern, trustworthy, and incredibly polished? Look..."
 keywords: ["5 essential web design trends from canada to upgrade your website","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/pexels-asphotography-106344-scaled.webp"

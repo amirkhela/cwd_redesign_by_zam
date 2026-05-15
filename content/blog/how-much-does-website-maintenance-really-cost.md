@@ -3,7 +3,7 @@ title: "How Much Does Website Maintenance Really Cost?"
 slug: "how-much-does-website-maintenance-really-cost"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "How Much Does Website Maintenance Really Cost?"
+description: "Introduction In the digital world, your website is your first impression. It's your storefront, the face of your brand, and often the initial point of..."
 keywords: ["how much does website maintenance really cost","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Website-maintenance-near-me1jpg.jpg"

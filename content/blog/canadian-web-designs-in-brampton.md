@@ -3,7 +3,7 @@ title: "Canadian Web Designs: A Local Website Design in Brampton"
 slug: "canadian-web-designs-in-brampton"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Canadian Web Designs: A Local Website Design in Brampton"
+description: "Your website represents your brand on the digital platform. Creating Brampton's responsive web design improves viewers' confidence in the brand's..."
 keywords: ["canadian web designs in brampton","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Local-website-design.jpg"

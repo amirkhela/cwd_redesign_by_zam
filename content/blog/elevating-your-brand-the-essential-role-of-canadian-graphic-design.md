@@ -3,7 +3,7 @@ title: "Elevating Your Brand: The Essential Role of Canadian Graphic Design"
 slug: "elevating-your-brand-the-essential-role-of-canadian-graphic-design"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Elevating Your Brand: The Essential Role of Canadian Graphic Design"
+description: "In today's competitive business landscape, Canadian graphic design stands as the bridge between artistry and strategy, fundamentally shaping the way..."
 keywords: ["elevating your brand the essential role of canadian graphic design","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/graphics-designs-1.jpg"

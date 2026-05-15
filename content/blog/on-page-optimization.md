@@ -3,7 +3,7 @@ title: "Win With On-page Optimization"
 slug: "on-page-optimization"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Win With On-page Optimization"
+description: "As every Internet user knows, search engine optimization, or SEO, is incredibly important. You can’t get visitors without a high ranking with the..."
 keywords: ["on page optimization","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Win-With-On-page-Optimization-1.png"

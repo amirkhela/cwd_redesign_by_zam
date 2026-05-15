@@ -3,7 +3,7 @@ title: "Common Mistakes in Website Designs You Should Know and How to Fix Them"
 slug: "common-mistakes-in-website-designs-you-should-know-and-how-to-fix-them"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Common Mistakes in Website Designs You Should Know and How to Fix Them"
+description: "Mistakes in Website Designs Being artistic in website designs is not bad, but too many decorative features will bring unpleasant looks. Web devs..."
 keywords: ["common mistakes in website designs you should know and how to fix them","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/sebastian-herrmann-oMpknr7yi7g-unsplash.jpg"

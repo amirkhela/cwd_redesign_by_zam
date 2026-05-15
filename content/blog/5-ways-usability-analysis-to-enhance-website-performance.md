@@ -3,7 +3,7 @@ title: "5 Ways Usability Analysis to Enhance Website Performance"
 slug: "5-ways-usability-analysis-to-enhance-website-performance"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "5 Ways Usability Analysis to Enhance Website Performance"
+description: "The Power of Data: 5 Ways Usability Analysis and Data Analytics Enhance Website Performance and User Experience The ever-evolving digital landscape has..."
 keywords: ["5 ways usability analysis to enhance website performance","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/analytics.jpg"

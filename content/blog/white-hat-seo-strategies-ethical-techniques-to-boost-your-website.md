@@ -3,7 +3,7 @@ title: "White Hat SEO Strategies: Ethical Techniques to Boost Your Website"
 slug: "white-hat-seo-strategies-ethical-techniques-to-boost-your-website"
 date: "2026-01-12"
 author: "Canadian Web Designs"
-description: "White Hat SEO Strategies: Ethical Techniques to Boost Your Website"
+description: "In today’s digital landscape, white hat SEO is essential for sustainable online growth. Unlike black hat tactics that attempt to manipulate search..."
 keywords: ["white hat seo strategies ethical techniques to boost your website","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/White-Hat-SEO-Strategies.png"
@@ -55,7 +55,7 @@ featuredImage: "/blog/posts/White-Hat-SEO-Strategies.png"
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/01/SEO-White-hat.png" alt="" class="wp-image-14577" style="object-fit:cover;width:700px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2026/01/SEO-White-hat.png" alt="SEO White hat" class="wp-image-14577" style="object-fit:cover;width:700px;height:400px"/></figure>
 
 <h2 class="wp-block-heading"><strong>Benefits of White Hat SEO</strong></h2>
 

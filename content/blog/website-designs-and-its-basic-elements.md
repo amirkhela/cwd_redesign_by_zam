@@ -3,7 +3,7 @@ title: "Website Designs and Its Basic Elements"
 slug: "website-designs-and-its-basic-elements"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Website Designs and Its Basic Elements"
+description: "Before building an innovative modern online presence for your clients, determining website designs ' essential elements is a need. Every web developer..."
 keywords: ["website designs and its basic elements","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/absolutvision-82TpEld0_e4-unsplash.jpg"

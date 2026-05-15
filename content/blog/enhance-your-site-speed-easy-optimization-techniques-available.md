@@ -3,7 +3,7 @@ title: "Enhance Your Site Speed: Easy Optimization Techniques Available"
 slug: "enhance-your-site-speed-easy-optimization-techniques-available"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Enhance Your Site Speed: Easy Optimization Techniques Available"
+description: "Techniques to boost your site's speed and performance are readily available to you. In the realm of digital technology, speed is of utmost importance...."
 keywords: ["enhance your site speed easy optimization techniques available","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Google-Page-Speed-Insights.png"

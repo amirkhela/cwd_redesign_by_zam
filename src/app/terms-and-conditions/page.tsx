@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Terms & Conditions",
   description: `Terms and Conditions for ${config.businessName} services.`,
   alternates: { canonical: "/terms-and-conditions" },
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {

@@ -1,9 +1,9 @@
 ---
-title: "Toronto Small Business Website Care: Why Regular Updates Keep Your Brand Credible &amp; Google-Friendly"
+title: "Website Care for Toronto Small Businesses: Stay Credible &amp; Google-Friendly"
 slug: "toronto-small-business-website-care-why-regular-updates-keep-your-brand-credible-google-friendly"
 date: "2025-12-02"
 author: "Canadian Web Designs"
-description: "Toronto Small Business Website Care: Why Regular Updates Keep Your Brand Credible &amp; Google-Friendly"
+description: "Why Toronto small businesses need regular website updates — keep your brand credible, improve Google rankings, and prevent security risks year-round."
 keywords: ["toronto small business website care why regular updates keep your brand credible google friendly","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Website-care.png"
@@ -15,7 +15,7 @@ featuredImage: "/blog/posts/Website-care.png"
 
 <p>At Canadian Web Designs, we help small businesses across Toronto maintain strong, optimized websites that support their growth year-round.</p>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/12/Toronto-Small-Business-Website-Care.png" alt="" class="wp-image-14490" style="object-fit:cover;width:500px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/12/Toronto-Small-Business-Website-Care.png" alt="Toronto Small Business Website Care" class="wp-image-14490" style="object-fit:cover;width:500px;height:400px"/></figure>
 
 <h2 class="wp-block-heading"><strong>Why Ongoing Website Maintenance Matters for Toronto Small Businesses</strong></h2>
 
@@ -75,7 +75,7 @@ featuredImage: "/blog/posts/Website-care.png"
 
 <p>This is not just maintenance — it’s full-scale digital care for your Toronto business.</p>
 
-<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/12/Small-Business-Website-Care.png" alt="" class="wp-image-14491" style="object-fit:cover;width:500px;height:400px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/12/Small-Business-Website-Care.png" alt="Small Business Website Care" class="wp-image-14491" style="object-fit:cover;width:500px;height:400px"/></figure>
 
 <h2 class="wp-block-heading"><strong>Why Toronto Small Businesses Benefit From Professional Website Maintenance</strong></h2>
 

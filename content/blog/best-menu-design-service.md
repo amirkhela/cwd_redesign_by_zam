@@ -3,7 +3,7 @@ title: "Best Menu Design Service"
 slug: "best-menu-design-service"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Best Menu Design Service"
+description: "Thinking about opening a new spot or just giving your current restaurant a fresh look? The menu is often the first thing people see, so it's gotta be..."
 keywords: ["best menu design service","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Menu-Design-Service.png"

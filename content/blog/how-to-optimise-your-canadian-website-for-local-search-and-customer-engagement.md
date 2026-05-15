@@ -3,7 +3,7 @@ title: "How to Optimise Your Canadian Website for Local Search and Customer Enga
 slug: "how-to-optimise-your-canadian-website-for-local-search-and-customer-engagement"
 date: "2025-10-02"
 author: "Canadian Web Designs"
-description: "How to Optimise Your Canadian Website for Local Search and Customer Engagement"
+description: "In the vast and diverse Canadian market, simply having a website isn't enough. To truly connect with consumers—whether they’re in downtown Toronto, a..."
 keywords: ["how to optimise your canadian website for local search and customer engagement","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/1.png"

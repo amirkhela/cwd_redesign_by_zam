@@ -3,7 +3,7 @@ title: "What is a landing page?"
 slug: "what-is-a-landing-page"
 date: "2023-12-06"
 author: "Canadian Web Designs"
-description: "What is a landing page?"
+description: "What Is a Landing Page and How It Works Today Digital Marketing is filled with options that allow entrepreneurs to boost their sales on various..."
 keywords: ["what is a landing page","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/landingpage-e1675884446462.png"

@@ -6,6 +6,31 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const config = getConfig();
 
+const cityBlurbs: Record<string, string> = {
+  toronto: "As Canada's largest city and business capital, Toronto businesses face fierce online competition. We help Toronto companies rank on Google, convert visitors, and grow sustainably — with 200+ five-star reviews to back it up.",
+  mississauga: "One of the GTA's largest business hubs, Mississauga is home to thousands of SMBs in finance, healthcare, logistics, and tech. A professional website that ranks locally is essential to stand out in this competitive market.",
+  brampton: "Brampton is one of Canada's fastest-growing cities with a diverse business community spanning trucking, food, retail, and healthcare. Local search dominance starts with a great, fast-loading website.",
+  edmonton: "As Alberta's capital city, Edmonton's economy spans oil & gas, government, retail, and a growing tech sector. We help Edmonton businesses build websites that capture local search traffic and convert visitors into customers.",
+  surrey: "Surrey is one of BC's fastest-growing cities, with a booming real estate, construction, and retail sector. We help Surrey businesses build an online presence that ranks on Google and drives consistent leads.",
+  vancouver: "Vancouver's tech-forward business culture means customers expect polished, fast-loading websites. We build Vancouver businesses websites that compete with larger agencies at a fraction of the cost.",
+  "richmond-hill": "A thriving business community north of Toronto, Richmond Hill is home to restaurants, clinics, law firms, and contractors all competing for local customers. A strong web presence separates you from the competition.",
+  oshawa: "Known as the 'Motor City' of Canada, Oshawa is seeing rapid commercial growth beyond auto manufacturing. Local service businesses here benefit enormously from a well-optimized website that captures Durham Region searches.",
+  vaughan: "One of Canada's fastest-growing cities, Vaughan is packed with construction, landscaping, restaurants, and professional services all competing for the same local customers online.",
+  calgary: "Calgary's business landscape ranges from energy sector professionals to retail and hospitality. With the city's ongoing diversification, a strong digital presence has never been more important.",
+  ottawa: "The nation's capital has a unique business environment blending government contractors, tech startups, and local retail. Ottawa businesses trust us for SEO-ready websites that drive measurable results.",
+  montreal: "Montreal's bilingual market presents unique SEO opportunities. We build websites for Montreal businesses that capture both English and French search traffic across the city.",
+  kitchener: "The Kitchener-Waterloo tech corridor is growing fast. Whether you're a startup or an established local business, a high-performing website is your most powerful growth tool.",
+  halifax: "Halifax is a thriving maritime hub with strong tourism, seafood, and professional services sectors. We help Halifax businesses build credibility online and attract more local customers.",
+  barrie: "Barrie's growing population and proximity to Toronto make it an attractive market for local service businesses. We help Barrie companies capture search traffic from across Simcoe County.",
+  london: "London, Ontario's diverse economy spans education, healthcare, manufacturing, and finance. Our web design and SEO services help London businesses dominate local search results.",
+  windsor: "As a border city with strong ties to the auto industry, Windsor businesses have a unique opportunity to serve both Canadian and American customers online.",
+  "north-york": "North York's dense commercial strips and diverse business community require a hyper-local SEO strategy. We help North York businesses get found by nearby customers searching on Google.",
+  burnaby: "Burnaby is home to some of BC's largest tech companies and a growing SMB ecosystem. We build websites that help Burnaby businesses compete effectively in Metro Vancouver's digital marketplace.",
+  saskatoon: "Saskatoon is Saskatchewan's economic engine, with strong agriculture, mining, and health sectors. A professionally designed website puts your Saskatoon business on the map — literally and on Google.",
+  victoria: "Victoria's tourism-driven economy and thriving local business scene mean customers research everything online. We help Victoria businesses make a strong first impression and rank for local searches.",
+  ladner: "Ladner's tight-knit community and local businesses thrive on word-of-mouth — but a strong website and local SEO extend your reach well beyond the neighbourhood.",
+};
+
 function getCityBySlug(slug: string) {
   return config.cities.find((c) => c.slug === slug);
 }
@@ -28,6 +53,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
   const cityData = getCityBySlug(params.city);
   const city = cityData?.name ?? params.city;
   const province = cityData?.province ?? "ON";
+  const cityBlurb = cityBlurbs[params.city] ?? `${city} businesses rely on us for custom websites, local SEO, and digital marketing that drives real leads. We've served clients across ${province} and all of Canada — and we know what it takes to rank locally.`;
   const primaryAddress = Object.values(config.addresses)[0];
 
   const services = [
@@ -50,7 +76,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
         className="relative overflow-hidden py-14 md:py-20 flex items-center"
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
       >
-        <Image src="/blog/web-design-company.png" alt="" fill className="object-cover object-center" priority />
+        <Image src="/blog/web-design-company.png" alt="Web design services for Canadian businesses" fill className="object-cover object-center" priority />
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.94) 0%, rgba(1,12,30,0.85) 50%, rgba(1,12,30,0.75) 100%)" }} />
 
@@ -151,13 +177,25 @@ export default function LocationPage({ params }: { params: { city: string } }) {
       </section>
 
       {/* =============================================
+          CITY BLURB
+          ============================================= */}
+      <section className="py-10" style={{ background: "#f8fafc" }}>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center reveal">
+            <h2 className="text-2xl font-black text-gray-900 mb-4">Web Design for {city} Businesses</h2>
+            <p className="text-gray-600 text-lg leading-relaxed">{cityBlurb}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* =============================================
           CTA BAND
           ============================================= */}
       <section
         className="relative overflow-hidden py-20"
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
       >
-        <Image src="/blog/seo-services-london-ontario.png" alt="" fill className="object-cover object-center" />
+        <Image src="/blog/seo-services-london-ontario.png" alt="Professional SEO and digital marketing services across Canada" fill className="object-cover object-center" />
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.92) 0%, rgba(1,12,30,0.85) 50%, rgba(1,12,30,0.80) 100%)" }} />
         <div className="absolute top-0 left-1/3 w-80 h-80 rounded-full pointer-events-none animate-orb"

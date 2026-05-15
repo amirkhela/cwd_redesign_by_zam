@@ -1,10 +1,10 @@
 ---
-title: "Understanding Website Maintenance Costs in Toronto: A Comprehensive Guide"
+title: "Website Maintenance Costs in Toronto: Full Guide 2026"
 slug: "understanding-website-maintenance-costs-in-toronto-a-comprehensive-guide"
 date: "2026-03-12"
 author: "Canadian Web Designs"
-description: "Understanding Website Maintenance Costs in Toronto: A Comprehensive Guide"
-keywords: ["understanding website maintenance costs in toronto a comprehensive guide","Website Maintenance"]
+description: "A complete 2026 breakdown of website maintenance costs in Toronto — hosting, security, content updates, and support pricing for businesses of all sizes."
+keywords: ["website maintenance costs toronto 2026","Website Maintenance"]
 category: "Website Maintenance"
 
 ---

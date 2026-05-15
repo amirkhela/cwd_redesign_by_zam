@@ -3,7 +3,7 @@ title: "What Do We Do as Digital Marketers?"
 slug: "what-do-we-do-as-digital-marketers"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "What Do We Do as Digital Marketers?"
+description: "Any marketing effort involving an electronic device or the internet is referred to as digital marketing. Businesses use digital platforms such as..."
 keywords: ["what do we do as digital marketers","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/alexander-shatov-mr4JG4SYOF8-unsplash.jpg"

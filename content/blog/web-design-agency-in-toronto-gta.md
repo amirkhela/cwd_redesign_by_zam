@@ -3,7 +3,7 @@ title: "Why Canadian Web Designs is Your Go-To Web Design Agency in Toronto &amp
 slug: "web-design-agency-in-toronto-gta"
 date: "2024-10-01"
 author: "Canadian Web Designs"
-description: "Why Canadian Web Designs is Your Go-To Web Design Agency in Toronto &amp; GTA"
+description: "Your website represents your company in the fast-paced digital world of today. Having a good online presence is essential for growth, visibility, and..."
 keywords: ["web design agency in toronto gta","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/1.jpg"

@@ -3,7 +3,7 @@ title: "Top 10 Strategies for Enhancing E-E-A-T and Boosting SEO Performance 202
 slug: "top-10-tips-for-boosting-seo-for-2023"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Top 10 Strategies for Enhancing E-E-A-T and Boosting SEO Performance 2023"
+description: "SEO is crucial for online visibility; without ranking on Google, your website might go unnoticed. The key to higher rankings lies in understanding..."
 keywords: ["top 10 tips for boosting seo for 2023","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/seo-2.png"

@@ -3,7 +3,7 @@ title: "Best Graphic Design Service in Canada"
 slug: "best-graphic-design-service-canada"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Best Graphic Design Service in Canada"
+description: "Graphic Design Service in Canada The digital era has ushered in a heightened appreciation for aesthetic appeal and effective visual communication...."
 keywords: ["best graphic design service canada","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/best-graphic-design-service-in-canada.png"

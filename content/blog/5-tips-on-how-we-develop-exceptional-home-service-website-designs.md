@@ -3,7 +3,7 @@ title: "5 Tips on How We Develop Exceptional Home Service Website Designs"
 slug: "5-tips-on-how-we-develop-exceptional-home-service-website-designs"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "5 Tips on How We Develop Exceptional Home Service Website Designs"
+description: "As we have tackled the Top 10 Business Website Design Ideas for Home Service Contractors in the recent article we covered. This article will talk about..."
 keywords: ["5 tips on how we develop exceptional home service website designs","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/domenico-loia-hGV2TfOh0ns-unsplash-1.jpg"

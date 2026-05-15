@@ -3,7 +3,7 @@ title: "Affordable SEO Services for Small Businesses"
 slug: "affordable-seo-services-for-small-businesses"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Affordable SEO Services for Small Businesses"
+description: "In today's digital era, having an online presence is indispensable for businesses of all sizes. While big corporations can shell out vast amounts on..."
 keywords: ["affordable seo services for small businesses","SEO"]
 category: "SEO"
 featuredImage: "/blog/posts/SEO-CWD.jpg"

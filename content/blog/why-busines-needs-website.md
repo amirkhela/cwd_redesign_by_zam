@@ -3,7 +3,7 @@ title: "5 Compelling Reasons Your Business Needs a Website"
 slug: "why-busines-needs-website"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "5 Compelling Reasons Your Business Needs a Website"
+description: "As an entrepreneur, you might find yourself asking, \"Why do I need a website for my business?\" While some advantages are obvious, others require a..."
 keywords: ["why busines needs website","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/5-Reasons-Having-a-Website-for-Your-Business-is-a-Good-Idea.png"

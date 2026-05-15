@@ -3,7 +3,7 @@ title: "Best Web Hosting Provider"
 slug: "web-hosting-provider"
 date: "2023-12-22"
 author: "Canadian Web Designs"
-description: "Best Web Hosting Provider"
+description: "Web Hosting Web hosting is a necessity for any and every organization today. Most organization understands the importance of having a digital presence...."
 keywords: ["web hosting provider","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Web-Hosting-Provider.png"
