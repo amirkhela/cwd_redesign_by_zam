@@ -21,20 +21,20 @@ const config = getConfig();
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${config.domain}`),
   title: {
-    default: `Web Design & Digital Marketing Across Canada | Canadian Web Designs`,
+    default: `Canadian Web Design Agency | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     template: `%s | ${config.businessName}`,
   },
   description:
-    `Professional web design, SEO, and digital marketing services across Canada. Custom websites built for results.`,
+    `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Get a free quote today.`,
   authors: [{ name: config.businessName }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_CA",
     siteName: config.businessName,
-    title: `Affordable Web Design in Toronto | Canadian Web Designs`,
+    title: `Canadian Web Design Agency | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     description:
-      `Professional web design, SEO, and digital marketing services across Canada. Custom websites built for results.`,
+      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Get a free quote today.`,
     url: `https://${config.domain}`,
     images: [
       {
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@canadianwebdesigns",
     creator: "@canadianwebdesigns",
-    title: `Affordable Web Design in Toronto | Canadian Web Designs`,
+    title: `Canadian Web Design Agency | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     description:
-      `Professional web design, SEO, and digital marketing services across Canada. Custom websites built for results.`,
+      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Get a free quote today.`,
     images: ["/images/hero-leading-web-design.jpg"],
   },
   robots: {

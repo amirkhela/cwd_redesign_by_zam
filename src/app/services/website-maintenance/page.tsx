@@ -5,8 +5,8 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 const service = getConfig().services.find((s) => s.slug === "website-maintenance")!;
 
 export const metadata: Metadata = {
-  title: "Website Maintenance",
-  description: "Keep your website secure, fast, and up-to-date with Canadian Web Designs' website maintenance plans. Affordable monthly packages for Canadian businesses.",
+  title: "Website Maintenance Plans for Canadian Businesses",
+  description: "Affordable monthly website maintenance plans in Canada. Security updates, backups, speed optimization & support — all handled for you. 200+ five-star reviews. Get a free quote.",
   alternates: { canonical: "/services/website-maintenance" },
 };
 

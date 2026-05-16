@@ -6,29 +6,112 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const config = getConfig();
 
-const cityBlurbs: Record<string, string> = {
-  toronto: "As Canada's largest city and business capital, Toronto businesses face fierce online competition. We help Toronto companies rank on Google, convert visitors, and grow sustainably — with 200+ five-star reviews to back it up.",
-  mississauga: "One of the GTA's largest business hubs, Mississauga is home to thousands of SMBs in finance, healthcare, logistics, and tech. A professional website that ranks locally is essential to stand out in this competitive market.",
-  brampton: "Brampton is one of Canada's fastest-growing cities with a diverse business community spanning trucking, food, retail, and healthcare. Local search dominance starts with a great, fast-loading website.",
-  edmonton: "As Alberta's capital city, Edmonton's economy spans oil & gas, government, retail, and a growing tech sector. We help Edmonton businesses build websites that capture local search traffic and convert visitors into customers.",
-  surrey: "Surrey is one of BC's fastest-growing cities, with a booming real estate, construction, and retail sector. We help Surrey businesses build an online presence that ranks on Google and drives consistent leads.",
-  vancouver: "Vancouver's tech-forward business culture means customers expect polished, fast-loading websites. We build Vancouver businesses websites that compete with larger agencies at a fraction of the cost.",
-  "richmond-hill": "A thriving business community north of Toronto, Richmond Hill is home to restaurants, clinics, law firms, and contractors all competing for local customers. A strong web presence separates you from the competition.",
-  oshawa: "Known as the 'Motor City' of Canada, Oshawa is seeing rapid commercial growth beyond auto manufacturing. Local service businesses here benefit enormously from a well-optimized website that captures Durham Region searches.",
-  vaughan: "One of Canada's fastest-growing cities, Vaughan is packed with construction, landscaping, restaurants, and professional services all competing for the same local customers online.",
-  calgary: "Calgary's business landscape ranges from energy sector professionals to retail and hospitality. With the city's ongoing diversification, a strong digital presence has never been more important.",
-  ottawa: "The nation's capital has a unique business environment blending government contractors, tech startups, and local retail. Ottawa businesses trust us for SEO-ready websites that drive measurable results.",
-  montreal: "Montreal's bilingual market presents unique SEO opportunities. We build websites for Montreal businesses that capture both English and French search traffic across the city.",
-  kitchener: "The Kitchener-Waterloo tech corridor is growing fast. Whether you're a startup or an established local business, a high-performing website is your most powerful growth tool.",
-  halifax: "Halifax is a thriving maritime hub with strong tourism, seafood, and professional services sectors. We help Halifax businesses build credibility online and attract more local customers.",
-  barrie: "Barrie's growing population and proximity to Toronto make it an attractive market for local service businesses. We help Barrie companies capture search traffic from across Simcoe County.",
-  london: "London, Ontario's diverse economy spans education, healthcare, manufacturing, and finance. Our web design and SEO services help London businesses dominate local search results.",
-  windsor: "As a border city with strong ties to the auto industry, Windsor businesses have a unique opportunity to serve both Canadian and American customers online.",
-  "north-york": "North York's dense commercial strips and diverse business community require a hyper-local SEO strategy. We help North York businesses get found by nearby customers searching on Google.",
-  burnaby: "Burnaby is home to some of BC's largest tech companies and a growing SMB ecosystem. We build websites that help Burnaby businesses compete effectively in Metro Vancouver's digital marketplace.",
-  saskatoon: "Saskatoon is Saskatchewan's economic engine, with strong agriculture, mining, and health sectors. A professionally designed website puts your Saskatoon business on the map — literally and on Google.",
-  victoria: "Victoria's tourism-driven economy and thriving local business scene mean customers research everything online. We help Victoria businesses make a strong first impression and rank for local searches.",
-  ladner: "Ladner's tight-knit community and local businesses thrive on word-of-mouth — but a strong website and local SEO extend your reach well beyond the neighbourhood.",
+const cityContent: Record<string, {
+  blurb: string;
+  facts: string[];
+  industries: string[];
+  faq: { q: string; a: string }[];
+}> = {
+  toronto: {
+    blurb: `Toronto is Canada's most competitive digital market — with over 3 million people and hundreds of thousands of businesses all fighting for the same Google searches. A generic website won't cut it here. Canadian Web Designs builds custom, conversion-focused websites for Toronto businesses that are engineered to rank, load fast, and turn visitors into paying customers. From Etobicoke to Scarborough, from Yorkville boutiques to North York clinics, we understand the Toronto market deeply. Our local SEO strategies are tailored to Toronto's neighbourhoods and business verticals — so you're not just getting traffic, you're getting the right traffic. With ${config.reviewCount}+ five-star reviews and clients across every major Toronto industry, we're the agency that Toronto businesses trust to grow online.`,
+    facts: ["Canada's largest city — most competitive SEO market in the country", "3M+ residents and hundreds of thousands of SMBs all competing on Google", "Google local pack and map listings are critical for Toronto service businesses", "Mobile-first searches dominate — 70%+ of Toronto searches happen on smartphones"],
+    industries: ["Healthcare & Clinics", "Law Firms", "Real Estate", "Restaurants & Hospitality", "Contractors & Trades", "Retail & eCommerce"],
+    faq: [
+      { q: "How long does it take to rank in Toronto?", a: "For competitive Toronto keywords ('web design toronto', 'lawyer toronto'), expect 4–8 months of consistent SEO. For less competitive long-tail terms and location-specific searches, we often see movement in 6–12 weeks." },
+      { q: "Do you work with small businesses in Toronto?", a: "Absolutely — the majority of our clients are small to mid-size Toronto businesses. We have packages starting at $1,500 for a custom website and SEO-ready launch." },
+      { q: "Can you help my Toronto business show up in Google Maps?", a: "Yes. Google Business Profile optimization is included in all our Toronto SEO packages. We optimize your listing, build local citations, and help you generate more reviews to dominate the local pack." },
+    ],
+  },
+  burnaby: {
+    blurb: `Burnaby is home to some of BC's largest employers — from tech giants like Electronic Arts and BCIT to a thriving small business community in Metrotown, Brentwood, and beyond. With Metro Vancouver's massive consumer base on your doorstep, web design and local SEO are the single most powerful growth tools available to Burnaby businesses. Canadian Web Designs builds fast, mobile-optimized websites for Burnaby companies that rank on Google and convert visitors into booked appointments, phone calls, and sales. We understand the Burnaby market — the competition from Vancouver, the opportunity in hyper-local searches, and the need to stand out in BC's most diverse suburban economy. Whether you're a trades contractor, a health clinic, a restaurant, or a retail shop, we build websites that work as hard as you do.`,
+    facts: ["Burnaby has one of BC's most diverse business ecosystems — tech, retail, healthcare, trades", "Metro Vancouver's digital market is highly competitive but Burnaby-specific searches have low difficulty", "Metrotown is BC's second-largest shopping destination — retail businesses need strong local SEO", "BCIT and SFU create a young, tech-savvy consumer base with high online purchase intent"],
+    industries: ["Tech & Software", "Retail & Shopping", "Healthcare & Wellness", "Restaurants & Food", "Contractors & Construction", "Education & Training"],
+    faq: [
+      { q: "Why should I choose a web design agency that knows Burnaby?", a: "Local market knowledge matters. We know that Burnaby searches often compete with Vancouver results — so we build geo-targeted content and local citations specifically for Burnaby neighbourhoods like Brentwood, Metrotown, and Lougheed." },
+      { q: "What's the cost of a website for a Burnaby small business?", a: "Most Burnaby small business websites run $1,500–$5,000 depending on complexity. We offer transparent pricing with no hidden fees — and all sites include SEO optimization from day one." },
+      { q: "How quickly can you rank my Burnaby business on Google?", a: "Burnaby has relatively low keyword difficulty compared to Vancouver. Most of our Burnaby clients see meaningful ranking improvements within 30–60 days for location-specific searches." },
+    ],
+  },
+  surrey: {
+    blurb: `Surrey is one of Canada's fastest-growing cities — and one of BC's most exciting markets for small business. With over 600,000 residents and growing, Surrey's economy spans real estate, construction, retail, healthcare, and a booming professional services sector. But growth also means competition: Surrey businesses are fighting for the same Google searches, and only the websites with strong local SEO win. Canadian Web Designs builds websites for Surrey businesses that are engineered for performance — mobile-fast, Google-optimized, and designed to generate consistent leads. We create city-specific content, optimize your Google Business Profile, and build the local authority your Surrey business needs to rank above competitors. From Newton to Cloverdale, from South Surrey to Guildford, we know the Surrey market.`,
+    facts: ["Surrey is BC's second-largest city by population with 600,000+ residents and growing fast", "Real estate, construction, and trades are the dominant business categories — all highly searchable", "South Surrey/White Rock is a premium market — professional services businesses thrive here", "Surrey searches often have lower difficulty than Vancouver but similar buyer intent"],
+    industries: ["Real Estate & Mortgage", "Construction & Trades", "Healthcare & Clinics", "Restaurants & Catering", "Law Firms", "Retail & Services"],
+    faq: [
+      { q: "Can you help my Surrey business rank above competitors in Google?", a: "Yes — Surrey keywords like 'web design surrey' and '[service] surrey' have relatively low difficulty. With proper on-page optimization and local SEO, most Surrey businesses see page 1 movement within 60–90 days." },
+      { q: "Do you build websites for Surrey trades and contractors?", a: "Trades are one of our most common Surrey clients. We build fast-loading, mobile-first sites with click-to-call, quote forms, and Google Maps integration — everything a Surrey contractor needs to win more jobs online." },
+      { q: "Do you offer ongoing SEO for Surrey businesses?", a: "Yes — we offer monthly SEO retainers starting at $500/month that include ranking reports, content updates, citation building, and Google Business Profile management for Surrey businesses." },
+    ],
+  },
+  kitchener: {
+    blurb: `Kitchener-Waterloo is Canada's fastest-growing tech ecosystem — home to Google, Shopify alumni, and hundreds of startups — but it's also a city of manufacturers, trades, healthcare providers, restaurants, and professional services businesses all competing online. Whether you're a KW-area startup or an established Kitchener SMB, a fast, well-optimized website is your most valuable growth asset. Canadian Web Designs builds conversion-focused websites for Kitchener businesses that rank in Google, load in under 2 seconds, and turn visits into inquiries. We specialize in local SEO for the KW corridor — optimizing for neighbourhood-specific searches in Kitchener, Waterloo, Cambridge, and surrounding communities. Our clients in KW consistently see 3–5x more organic traffic within the first 6 months.`,
+    facts: ["The KW tech corridor is one of Canada's most innovative business environments", "Google, Shopify, and dozens of Fortune 500 companies have Waterloo offices", "Manufacturing, trades, and professional services remain the backbone of Kitchener's economy", "KW has lower keyword difficulty than Toronto — same buyer intent, easier to rank"],
+    industries: ["Tech & SaaS", "Manufacturing & Engineering", "Healthcare & Clinics", "Professional Services", "Retail & Restaurants", "Contractors & Trades"],
+    faq: [
+      { q: "Is web design in Kitchener-Waterloo competitive?", a: "Less so than Toronto — keyword difficulty for KW searches is significantly lower, meaning a well-optimized website can reach page 1 faster and with less budget than major urban centres." },
+      { q: "Do you work with KW startups and tech companies?", a: "Yes — we work with early-stage startups through to established Kitchener-Waterloo companies. We build scalable web platforms that grow with your business, from MVP landing pages to full enterprise sites." },
+      { q: "Can you help my Kitchener business appear in Google Maps?", a: "Absolutely. Local pack visibility is critical for Kitchener service businesses. We optimize your Google Business Profile, build local citations across Canadian directories, and help generate authentic reviews." },
+    ],
+  },
+  london: {
+    blurb: `London, Ontario is a city with remarkable diversity — university students and professors, healthcare workers at one of Canada's largest hospital networks, manufacturers, trades professionals, lawyers, and entrepreneurs. Every one of these groups searches Google before making a buying decision. Canadian Web Designs builds websites for London, Ontario businesses that capture that search traffic and convert it into real customers. Our London SEO strategies target the keywords your ideal clients are actually searching — 'web design london ontario', '[your service] london ontario' — and we build the on-page and off-page authority to rank for them. We've helped London businesses in healthcare, professional services, trades, and retail consistently grow their organic traffic and inbound leads.`,
+    facts: ["London is home to Western University, Fanshawe College, and one of Ontario's largest hospital networks", "Healthcare, education, manufacturing, and professional services are London's dominant sectors", "'London ontario' qualifier is essential — differentiating from London, UK in search", "London has significantly lower keyword difficulty than Toronto — ideal for aggressive SEO growth"],
+    industries: ["Healthcare & Medical", "Legal Services", "Education & Training", "Manufacturing", "Contractors & Trades", "Retail & Hospitality"],
+    faq: [
+      { q: "How important is it to include 'Ontario' in SEO for London businesses?", a: "Critical. Google often confuses London, ON with London, UK. We build geo-signals into every page — using 'London, Ontario', schema markup with province data, and local citations — to ensure your site ranks in the right market." },
+      { q: "Do you work with healthcare businesses in London, ON?", a: "Yes — healthcare is one of our most common London verticals. We understand PIPEDA compliance requirements and build clinic, dental, and medical websites that are professional, accessible, and optimized for local search." },
+      { q: "What does a website cost for a London Ontario small business?", a: "Most London small business websites are $1,500–$4,500. We provide detailed quotes with no surprise costs — and all sites include mobile optimization, SEO foundation, and Google Analytics setup." },
+    ],
+  },
+  brampton: {
+    blurb: `Brampton is one of Canada's most diverse and fastest-growing cities — a hub for trucking and logistics, healthcare, food manufacturing, retail, and a booming small business community. With Pearson Airport nearby and Highway 410 running through the city, Brampton businesses serve both local customers and the broader GTA market. Canadian Web Designs has deep roots in Brampton — we've built websites for dozens of Brampton businesses across trucking companies, healthcare clinics, food businesses, and professional services. We build fast, mobile-first websites with local SEO baked in from day one — because Brampton customers search on their phones, and your website needs to be ready. Our Brampton clients consistently rank in Google's top 3 for their core service keywords.`,
+    facts: ["Brampton is the 9th-largest city in Canada with one of the country's most diverse business communities", "Trucking, logistics, healthcare, and food manufacturing are dominant Brampton industries", "Brampton searches have lower competition than Toronto — easier to rank, similar buyer intent", "The majority of Brampton searches happen on mobile — fast-loading sites are non-negotiable"],
+    industries: ["Trucking & Logistics", "Healthcare & Clinics", "Food Manufacturing & Retail", "Professional Services", "Trades & Construction", "Auto & Mechanical"],
+    faq: [
+      { q: "Do you build websites for trucking and logistics companies in Brampton?", a: "Yes — trucking is one of our most common Brampton verticals. We build professional websites for carriers, freight brokers, and logistics companies that rank for Brampton and GTA-wide searches." },
+      { q: "How does SEO work differently in Brampton vs Toronto?", a: "Brampton-specific keywords have significantly lower competition than Toronto keywords. A Brampton business with a well-optimized website can rank on page 1 faster and maintain that ranking with less ongoing effort." },
+      { q: "Can you help my Brampton clinic or healthcare practice get more patients online?", a: "Absolutely — we've built websites for medical clinics, dental practices, physiotherapy, and mental health providers in Brampton. We understand healthcare SEO and patient privacy requirements." },
+    ],
+  },
+  calgary: {
+    blurb: `Calgary is Alberta's economic engine — a city reinventing itself from energy-dependent to tech-forward, with a growing startup ecosystem, booming construction, strong professional services, and one of Canada's most active real estate markets. Businesses in Calgary need digital strategies that reflect the city's ambition and pace. Canadian Web Designs builds websites for Calgary businesses that load fast, rank in Google, and convert visitors into clients. We understand the Calgary market — the energy sector, the real estate boom, the growing tech community, and the city's entrepreneurial spirit. Our local SEO strategies are calibrated for Calgary's search landscape, helping you rank for the keywords your ideal clients are searching right now.`,
+    facts: ["Calgary has one of Canada's highest average household incomes — buyers have strong purchasing power", "Energy, real estate, tech, and construction are Calgary's dominant growth sectors", "Web design Calgary has 590 monthly searches with moderate difficulty — a major opportunity", "Calgary businesses often need to rank province-wide (Alberta) AND locally — our SEO covers both"],
+    industries: ["Energy & Engineering", "Real Estate & Mortgage", "Construction & Trades", "Tech & Software", "Professional Services", "Healthcare & Wellness"],
+    faq: [
+      { q: "Do you work with energy sector companies in Calgary?", a: "Yes — we've built websites for oil field services companies, environmental consultants, and engineering firms in Calgary. We understand the professional standards expected in the energy sector." },
+      { q: "How competitive is web design SEO in Calgary?", a: "Web design Calgary has about 590 monthly searches and moderate difficulty — more achievable than Toronto but still competitive. Our Calgary clients typically reach page 1 within 90–120 days with our full SEO program." },
+      { q: "Can you help my Calgary real estate business rank on Google?", a: "Real estate is one of our Calgary specialties. We build IDX-integrated real estate websites with hyperlocal SEO targeting Calgary neighbourhoods — Beltline, Kensington, Inglewood, Mission, and beyond." },
+    ],
+  },
+  winnipeg: {
+    blurb: `Winnipeg is Manitoba's beating heart — a city of manufacturers, agricultural businesses, government contractors, healthcare providers, retailers, and a fast-growing tech scene. But Winnipeg businesses often fly under the radar online: the competition for local Google searches is lower here than in Toronto or Vancouver, which means a well-optimized website can reach page 1 faster and with less effort. Canadian Web Designs builds websites for Winnipeg businesses that are fast, mobile-first, and engineered to rank for local searches. Whether you're a Winnipeg trades company, a healthcare clinic on McPhillips, a restaurant on Corydon, or a professional services firm downtown, we build the digital presence that puts you in front of Winnipeg customers when they search for your services.`,
+    facts: ["Winnipeg has one of Canada's lowest cost-per-click and keyword difficulty scores — massive opportunity", "Manufacturing, agriculture, healthcare, and government are Manitoba's strongest sectors", "Web design Winnipeg gets 590 searches/month — most local businesses have weak online presences", "Winnipeg is a bilingual market — English and French language signals matter for local SEO"],
+    industries: ["Manufacturing & Industrial", "Agriculture & Food", "Healthcare & Clinics", "Government & Non-Profit", "Retail & Hospitality", "Professional Services"],
+    faq: [
+      { q: "Is it worth investing in SEO for a Winnipeg business?", a: "Absolutely — and arguably more so than in Toronto or Vancouver. Winnipeg keyword difficulty is low, meaning your investment goes further. Most Winnipeg businesses see page 1 results for core service keywords within 60–90 days." },
+      { q: "Do you build websites for Winnipeg manufacturing and agricultural businesses?", a: "Yes — industrial and agricultural clients are a specialty. We build professional, authoritative websites for Winnipeg manufacturers, agricultural suppliers, and food processing companies." },
+      { q: "Can you help my Winnipeg business show up in Google Maps?", a: "Yes — Google Business Profile optimization is part of every Winnipeg SEO package. We build your local citations, optimize your listing, and help generate reviews so you appear in the Winnipeg local pack." },
+    ],
+  },
+  hamilton: {
+    blurb: `Hamilton is one of Ontario's most exciting cities for business — a post-industrial city reinventing itself with a booming arts scene, a growing tech and creative economy, a strong healthcare and education sector anchored by McMaster University, and a thriving trades and manufacturing base. Hamilton businesses are increasingly aware that a strong online presence is essential to compete — not just locally, but with Toronto businesses that target Hamilton searches. Canadian Web Designs builds websites for Hamilton businesses that are designed to win: fast-loading, mobile-optimized, and rank-ready for local Google searches. We know the Hamilton market from Stoney Creek to Dundas, and we build digital strategies that connect you with Hamilton customers at the exact moment they're searching.`,
+    facts: ["McMaster University and Hamilton Health Sciences make healthcare and education dominant sectors", "Hamilton's steel and manufacturing heritage is evolving — tech and creative industries are growing fast", "Hamilton is within an hour of Toronto — businesses compete with GTA companies for the same searches", "Hamilton keyword difficulty is low — strong opportunity for businesses willing to invest in SEO"],
+    industries: ["Healthcare & Medical", "Manufacturing & Steel", "Education & Training", "Arts & Creative", "Trades & Construction", "Restaurants & Hospitality"],
+    faq: [
+      { q: "How does Hamilton web design SEO compare to Toronto?", a: "Hamilton searches have significantly lower keyword difficulty than Toronto — which means your website can rank faster and maintain rankings with less ongoing investment. It's one of Ontario's best-value SEO markets." },
+      { q: "Do you work with McMaster-affiliated businesses and startups in Hamilton?", a: "Yes — we work with university spin-offs, student entrepreneurs, and McMaster-affiliated health and research businesses. We understand the academic and startup environment and build sites that grow with early-stage companies." },
+      { q: "What industries do you serve in Hamilton?", a: "Our Hamilton clients span healthcare, trades, restaurants, professional services, manufacturing, and creative industries. If you're a Hamilton business that wants more customers from Google, we can help." },
+    ],
+  },
+  "north-york": {
+    blurb: `North York is one of Toronto's most densely populated and commercially active districts — with major business corridors along Yonge Street, Sheppard Avenue, and Wilson Avenue. From Yonge-Eglinton to Bayview Village, North York businesses compete intensely for local customers who search Google before spending. Canadian Web Designs builds websites for North York businesses that are optimized for hyper-local searches — 'web design north york', '[service] north york' — so you appear when customers near you are looking. We combine fast, conversion-focused web design with a local SEO strategy specifically tuned to North York's diverse business landscape: medical clinics, law firms, restaurants, contractors, and retail shops.`,
+    facts: ["North York is one of Toronto's most commercially active districts — Yonge-Sheppard, Wilson, and Bayview corridors are major business hubs", "North York web design has difficulty of just 9 — one of the easiest local keywords to rank for in the GTA", "Dense residential population means strong foot traffic intent — local searches are high-converting", "Competition from downtown Toronto agencies makes local positioning critical for North York businesses"],
+    industries: ["Healthcare & Clinics", "Law Firms", "Restaurants & Food", "Contractors & Trades", "Real Estate", "Retail & Services"],
+    faq: [
+      { q: "Why is hyper-local SEO important for North York businesses?", a: "North York searches are often neighbourhood-specific — 'dentist near Yonge and Sheppard', 'contractor North York', etc. We optimize for these hyper-local queries that have high buyer intent and lower competition than broad Toronto keywords." },
+      { q: "How fast can a North York business rank on Google?", a: "North York keywords have very low difficulty — we've seen new clients reach page 1 for North York-specific searches within 30–45 days of launch with proper on-page SEO and Google Business Profile optimization." },
+      { q: "Do you offer website packages for North York small businesses?", a: "Yes — we have packages starting at $1,500 for small North York businesses that include custom design, mobile optimization, local SEO setup, and Google Analytics. No hidden fees." },
+    ],
+  },
 };
 
 function getCityBySlug(slug: string) {
@@ -44,7 +127,7 @@ export function generateMetadata({ params }: { params: { city: string } }): Meta
   const cityName = cityData?.name ?? params.city;
   return {
     title: `Web Design ${cityName} | ${config.businessName}`,
-    description: `Professional web design, SEO, and digital marketing services in ${cityName}. ${config.businessName} — ${config.reviewCount}+ five-star reviews. Call ${config.phone}.`,
+    description: `Professional web design, SEO & digital marketing in ${cityName}. ${config.reviewCount}+ five-star reviews. Custom websites that rank on Google and convert visitors. Call ${config.phone}.`,
     alternates: { canonical: `/locations/${params.city}` },
   };
 }
@@ -53,33 +136,50 @@ export default function LocationPage({ params }: { params: { city: string } }) {
   const cityData = getCityBySlug(params.city);
   const city = cityData?.name ?? params.city;
   const province = cityData?.province ?? "ON";
-  const cityBlurb = cityBlurbs[params.city] ?? `${city} businesses rely on us for custom websites, local SEO, and digital marketing that drives real leads. We've served clients across ${province} and all of Canada — and we know what it takes to rank locally.`;
+  const content = cityContent[params.city];
   const primaryAddress = Object.values(config.addresses)[0];
+
+  const defaultBlurb = `${city} businesses rely on us for custom websites, local SEO, and digital marketing that drives real leads. We've served clients across ${province} and all of Canada — and we know what it takes to rank locally and convert visitors into customers.`;
+  const blurb = content?.blurb ?? defaultBlurb;
+  const facts = content?.facts ?? [`${city} businesses need fast, mobile-optimized websites to compete online`, "Local SEO puts you in front of customers actively searching for your services", "Google Business Profile optimization drives calls and map traffic", "All our sites are built with SEO and conversions as the primary goals"];
+  const industries = content?.industries ?? ["Professional Services", "Healthcare", "Retail", "Trades & Construction", "Restaurants", "Technology"];
+  const faq = content?.faq ?? [
+    { q: `How long does it take to rank in ${city}?`, a: `Most ${city} businesses start seeing meaningful ranking movement within 60–90 days of launch with our full SEO program. Less competitive keywords often move faster.` },
+    { q: "What's included in your website packages?", a: "All our packages include custom design, mobile optimization, SEO foundation setup, Google Analytics, and ongoing support. We never use templates — every site is built specifically for your business." },
+    { q: `Do you serve businesses across ${province}?`, a: `Yes — we serve businesses across ${province} and all of Canada. While we have offices in Toronto and Brampton, we work remotely with clients from coast to coast.` },
+  ];
 
   const services = [
     { title: "Web Design", desc: `Custom, conversion-focused websites built for ${city} businesses. Mobile-first, fast, and SEO-ready from day one.` },
-    { title: "SEO", desc: `Rank on the first page of Google in ${city}. Local SEO strategies that drive real leads and calls.` },
-    { title: "Digital Marketing", desc: `Full-service digital marketing in ${city} — social media, paid ads, content, and more.` },
-    { title: "Graphic Design", desc: `Logos, branding, and print collateral that make your ${city} business stand out.` },
+    { title: "Local SEO", desc: `Rank on the first page of Google in ${city}. Local SEO strategies that drive real leads and phone calls.` },
+    { title: "Digital Marketing", desc: `Full-service digital marketing in ${city} — social media, Google Ads, content, and more.` },
+    { title: "Graphic Design", desc: `Logos, branding, and print collateral that make your ${city} business stand out from the crowd.` },
     { title: "Website Maintenance", desc: `Keep your site fast, secure, and up-to-date with our monthly maintenance packages.` },
-    { title: "AI Consultation", desc: `Leverage AI tools to automate operations and grow your ${city} business smarter.` },
+    { title: "AI Consultation", desc: `Leverage AI tools to automate operations and grow your ${city} business smarter and faster.` },
   ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
 
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Locations", href: "/locations/toronto" }, { name: city, href: `/locations/${params.city}` }]} />
 
-      {/* =============================================
-          HERO
-          ============================================= */}
+      {/* ─── HERO ─── */}
       <section
         className="relative overflow-hidden py-14 md:py-20 flex items-center"
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
       >
-        <Image src="/blog/web-design-company.png" alt="Web design services for Canadian businesses" fill className="object-cover object-center" priority />
+        <Image src="/blog/web-design-company.png" alt={`Web design services for ${city} businesses`} fill className="object-cover object-center" priority />
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.94) 0%, rgba(1,12,30,0.85) 50%, rgba(1,12,30,0.75) 100%)" }} />
-
         <div className="absolute top-0 left-[8%] w-[500px] h-[500px] rounded-full pointer-events-none animate-orb"
           style={{ background: "#00AADF", filter: "blur(140px)", opacity: 0.22 }} />
         <div className="absolute bottom-0 right-[5%] w-80 h-80 rounded-full pointer-events-none animate-orb"
@@ -93,31 +193,23 @@ export default function LocationPage({ params }: { params: { city: string } }) {
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">{city}, {province} — {config.reviewCount}+ Five-Star Reviews</span>
             </div>
-            <h1
-              className="hero-fade-up-1 font-black text-white mb-5"
-              style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", lineHeight: 1.05 }}
-            >
-              Web Design in{" "}
-              <span className="gradient-text-animated">{city}</span>
+            <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", lineHeight: 1.05 }}>
+              Web Design in{" "}<span className="gradient-text-animated">{city}</span>
             </h1>
             <p className="hero-fade-up-2 text-xl text-white/60 leading-relaxed mb-8">
-              Professional web design, SEO, and digital marketing for businesses in {city}. Results guaranteed.
+              Custom websites, local SEO & digital marketing for {city} businesses. Results guaranteed — or we keep working until you see them.
             </p>
             <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
+              <Link href="/contact"
                 className="btn-shimmer group inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-bold rounded-btn text-base transition-all duration-300"
-                style={{ background: "#00AADF", boxShadow: "0 4px 28px rgba(0,170,223,0.45)" }}
-              >
+                style={{ background: "#00AADF", boxShadow: "0 4px 28px rgba(0,170,223,0.45)" }}>
                 Get a Free Quote
                 <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
-              <a
-                href={`tel:${config.phone}`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300"
-              >
+              <a href={`tel:${config.phone}`}
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">
                 {config.phone}
               </a>
             </div>
@@ -125,30 +217,22 @@ export default function LocationPage({ params }: { params: { city: string } }) {
         </div>
       </section>
 
-      {/* =============================================
-          SERVICES GRID
-          ============================================= */}
+      {/* ─── SERVICES GRID ─── */}
       <section className="py-14 relative" style={{ background: "#ffffff" }}>
         <div className="absolute inset-0 pointer-events-none"
           style={{ backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
-
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12 reveal">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">What We Offer in {city}</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Growing Businesses in {city}</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Everything Your {city} Business Needs to Grow Online</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
             {services.map((s, i) => (
-              <div
-                key={s.title}
+              <div key={s.title}
                 className="group bg-white rounded-2xl p-7 reveal border border-gray-100 hover:border-[#00AADF]/30 hover:shadow-xl transition-all duration-300"
-                style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)", transitionDelay: `${(i % 3) * 0.1}s` }}
-              >
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
-                  style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
-                >
+                style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)", transitionDelay: `${(i % 3) * 0.1}s` }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
+                  style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>
                   <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
@@ -158,14 +242,9 @@ export default function LocationPage({ params }: { params: { city: string } }) {
               </div>
             ))}
           </div>
-
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-3 gap-6 text-center">
-              {[
-                { value: `${config.reviewCount}+`, label: "Five-Star Reviews" },
-                { value: `${config.cities.length}+`, label: "Cities Served" },
-                { value: "100%", label: "Results Guaranteed" },
-              ].map((s) => (
+              {[{ value: `${config.reviewCount}+`, label: "Five-Star Reviews" }, { value: `${config.cities.length}+`, label: "Cities Served" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
                 <div key={s.label}>
                   <p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p>
                   <p className="text-gray-500 text-sm">{s.label}</p>
@@ -176,59 +255,105 @@ export default function LocationPage({ params }: { params: { city: string } }) {
         </div>
       </section>
 
-      {/* =============================================
-          CITY BLURB
-          ============================================= */}
-      <section className="py-10" style={{ background: "#f8fafc" }}>
+      {/* ─── CITY CONTENT ─── */}
+      <section className="py-14" style={{ background: "#f8fafc" }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center reveal">
-            <h2 className="text-2xl font-black text-gray-900 mb-4">Web Design for {city} Businesses</h2>
-            <p className="text-gray-600 text-lg leading-relaxed">{cityBlurb}</p>
+          <div className="grid lg:grid-cols-[3fr_2fr] gap-12 items-start">
+            <div className="reveal">
+              <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">About {city}</span>
+              <h2 className="text-3xl font-black text-gray-900 mb-6" style={{ lineHeight: 1.15 }}>
+                Web Design & SEO for {city} Businesses
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed mb-8">{blurb}</p>
+              <h3 className="text-xl font-black text-gray-900 mb-4">Industries We Serve in {city}</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {industries.map((ind) => (
+                  <div key={ind} className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 border border-gray-100"
+                    style={{ boxShadow: "0 1px 6px rgba(0,0,0,0.04)" }}>
+                    <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: "#00AADF" }} />
+                    <span className="text-sm font-semibold text-gray-700">{ind}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="reveal delay-2">
+              <div className="bg-white rounded-2xl p-7 border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
+                <h3 className="text-gray-900 font-black text-xl mb-5">Why {city} Businesses Choose CWD</h3>
+                <div className="space-y-4">
+                  {facts.map((fact, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5"
+                        style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>
+                        <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                      </div>
+                      <p className="text-gray-600 text-sm leading-relaxed">{fact}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 pt-5 border-t border-gray-100">
+                  <Link href="/contact"
+                    className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-white font-bold text-sm transition-all duration-300 hover:opacity-90"
+                    style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>
+                    Get a Free {city} Quote
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* =============================================
-          CTA BAND
-          ============================================= */}
-      <section
-        className="relative overflow-hidden py-20"
-        style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
-      >
-        <Image src="/blog/seo-services-london-ontario.png" alt="Professional SEO and digital marketing services across Canada" fill className="object-cover object-center" />
+      {/* ─── FAQ ─── */}
+      <section className="py-14 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-10 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">FAQs</span>
+            <h2 className="text-3xl font-black text-gray-900">Common Questions from {city} Businesses</h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faq.map(({ q, a }, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl p-7 reveal border border-gray-100">
+                <h3 className="font-black text-gray-900 text-lg mb-3">{q}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── CTA BAND ─── */}
+      <section className="relative overflow-hidden py-20"
+        style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}>
+        <Image src="/blog/seo-services-london-ontario.png" alt={`Grow your ${city} business online with Canadian Web Designs`} fill className="object-cover object-center" />
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.92) 0%, rgba(1,12,30,0.85) 50%, rgba(1,12,30,0.80) 100%)" }} />
         <div className="absolute top-0 left-1/3 w-80 h-80 rounded-full pointer-events-none animate-orb"
           style={{ background: "#00AADF", filter: "blur(110px)", opacity: 0.25 }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
-
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 text-center">
-          <h2
-            className="font-black text-white mb-6 reveal"
-            style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.1 }}
-          >
-            Ready to Grow Your{" "}
-            <span className="gradient-text-animated">{city} Business?</span>
+          <h2 className="font-black text-white mb-6 reveal" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.1 }}>
+            Ready to Grow Your{" "}<span className="gradient-text-animated">{city} Business?</span>
           </h2>
           <p className="text-lg text-white/60 max-w-xl mx-auto mb-10 reveal delay-1">
-            Free consultation, no commitment. We&apos;ll show you exactly how we&apos;ll get you results.
+            Free consultation, no commitment. We&apos;ll show you exactly how we&apos;ll get you more customers from Google.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center reveal delay-2">
-            <Link
-              href="/contact"
+            <Link href="/contact"
               className="btn-shimmer group inline-flex items-center justify-center gap-2 px-10 py-5 text-white font-black rounded-btn text-lg transition-all duration-300"
-              style={{ background: "#00AADF", boxShadow: "0 4px 32px rgba(0,170,223,0.5)" }}
-            >
+              style={{ background: "#00AADF", boxShadow: "0 4px 32px rgba(0,170,223,0.5)" }}>
               Get Your Free Quote
               <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
-            <a
-              href={`tel:${config.phone}`}
-              className="inline-flex items-center justify-center gap-2 px-10 py-5 glass text-white font-bold rounded-btn text-lg hover:bg-white/15 transition-all duration-300"
-            >
+            <a href={`tel:${config.phone}`}
+              className="inline-flex items-center justify-center gap-2 px-10 py-5 glass text-white font-bold rounded-btn text-lg hover:bg-white/15 transition-all duration-300">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
               </svg>
@@ -238,36 +363,34 @@ export default function LocationPage({ params }: { params: { city: string } }) {
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: `${config.businessName} - ${city} Web Design`,
-            description: `Affordable website design and development for small businesses in ${city}, ${province}`,
-            url: `https://${config.domain}/locations/${params.city}`,
-            telephone: config.phone,
-            email: config.emails.sales,
-            areaServed: { "@type": "City", name: city, containedInPlace: { "@type": "AdministrativeArea", name: province } },
-            address: primaryAddress ? {
-              "@type": "PostalAddress",
-              streetAddress: primaryAddress.street,
-              addressLocality: primaryAddress.city,
-              addressRegion: primaryAddress.province,
-              postalCode: primaryAddress.postalCode,
-              addressCountry: "CA",
-            } : undefined,
-            priceRange: "$$",
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: String(config.rating),
-              reviewCount: String(config.reviewCount),
-            },
-            sameAs: config.socialLinks.map((link) => link.href),
-          }),
-        }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: `${config.businessName} - ${city} Web Design`,
+          description: `Professional web design, SEO, and digital marketing for businesses in ${city}, ${province}`,
+          url: `https://${config.domain}/locations/${params.city}`,
+          telephone: config.phone,
+          email: config.emails.sales,
+          areaServed: { "@type": "City", name: city, containedInPlace: { "@type": "AdministrativeArea", name: province } },
+          address: primaryAddress ? {
+            "@type": "PostalAddress",
+            streetAddress: primaryAddress.street,
+            addressLocality: primaryAddress.city,
+            addressRegion: primaryAddress.province,
+            postalCode: primaryAddress.postalCode,
+            addressCountry: "CA",
+          } : undefined,
+          priceRange: "$$",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: String(config.rating),
+            reviewCount: String(config.reviewCount),
+          },
+          sameAs: config.socialLinks.map((link) => link.href),
+        }),
+      }} />
     </>
   );
 }

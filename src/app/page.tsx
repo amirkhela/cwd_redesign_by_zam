@@ -197,7 +197,7 @@ export default function HomePage() {
               </h1>
 
               <p className="hero-fade-up-2 text-lg text-white leading-relaxed max-w-lg mb-10">
-                Canada&rsquo;s trusted web design &amp; digital marketing agency.{" "}
+                The web design agency Canada trusts for results.{" "}
                 <span className="font-semibold">{config.reviewCount}+ five-star reviews</span>{" "}
                 across {config.cities.length} cities nationwide since {config.founded}.
               </p>
@@ -419,13 +419,13 @@ export default function HomePage() {
               </h2>
               <div className="prose prose-gray max-w-none text-gray-600 space-y-4 leading-relaxed">
                 <p>
-                  Since 2014, Canadian Web Designs has helped hundreds of small and medium businesses across Canada build a powerful online presence. From Toronto to Vancouver, Brampton to Calgary, our team of 25+ designers, developers, and marketers delivers websites that don&apos;t just look great — they drive real revenue.
+                  Since 2014, Canadian Web Designs has been the web design company Canada&apos;s small and medium businesses rely on to build a powerful online presence. From Toronto to Vancouver, Brampton to Calgary, our team of 25+ designers, developers, and marketers delivers websites that don&apos;t just look great — they drive real revenue.
                 </p>
                 <p>
-                  We believe every Canadian business deserves a professional website at an affordable price. That&apos;s why we offer transparent, flat-rate pricing with no hidden fees and no long-term contracts. Whether you need a brand-new website, an SEO overhaul, or a complete digital marketing strategy, we have a solution that fits your budget.
+                  We believe every Canadian business deserves a professional website at an affordable price. That&apos;s why we offer transparent, flat-rate pricing with no hidden fees and no long-term contracts. Whether you need a brand-new website, an SEO overhaul, or a complete digital marketing strategy, we have a solution that fits your budget and your market.
                 </p>
                 <p>
-                  Our web design process starts with understanding your business goals, your industry, and your customers. We then craft a custom website strategy built around converting visitors into leads — not just a pretty design. Every website we build is mobile-first, fast-loading, and optimized for search engines from day one.
+                  As a full-service web design agency, Canada-wide, our process starts with understanding your business goals, your industry, and your customers. We then craft a custom website strategy built around converting visitors into leads — not just a pretty design. Every website we build is mobile-first, fast-loading, and optimized for search engines from day one.
                 </p>
                 <p>
                   Beyond web design, we offer a full suite of digital marketing services: search engine optimization (SEO), Google Ads management, social media marketing, graphic design, and AI-powered business consultation. We&apos;re your one-stop shop for digital growth — so you never have to juggle multiple vendors again.

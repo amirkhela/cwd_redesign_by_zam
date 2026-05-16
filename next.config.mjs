@@ -174,6 +174,27 @@ const nextConfig = {
       },
 
       // ============================================
+      // Old WordPress Landing Pages — redirect to service pages
+      // ============================================
+      { source: "/web-designers-near-me",          destination: "/services/web-design-development", permanent: true },
+      { source: "/web-designers-near-me/",         destination: "/services/web-design-development", permanent: true },
+      { source: "/mobile-web-design-in-toronto",   destination: "/services/web-design-development", permanent: true },
+      { source: "/mobile-web-design-in-toronto/",  destination: "/services/web-design-development", permanent: true },
+      { source: "/ecommerce-website-design-toronto",  destination: "/services/web-design-development", permanent: true },
+      { source: "/ecommerce-website-design-toronto/", destination: "/services/web-design-development", permanent: true },
+
+      // ============================================
+      // Old /seo/:city/ pages → /locations/:city
+      // ============================================
+      { source: "/seo/:city",  destination: "/locations/:city", permanent: true },
+      { source: "/seo/:city/", destination: "/locations/:city", permanent: true },
+
+      // ============================================
+      // Old WooCommerce /items/ product URLs
+      // ============================================
+      { source: "/items/:path*", destination: "/", permanent: true },
+
+      // ============================================
       // Location Pages — /web-designs/:city → /locations/:city
       // ============================================
       {

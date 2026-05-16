@@ -156,6 +156,8 @@ export const cwdConfig: ClientConfig = {
     { name: "Ladner", province: "BC", slug: "ladner" },
     { name: "Saskatoon", province: "SK", slug: "saskatoon" },
     { name: "Barrie", province: "ON", slug: "barrie" },
+    { name: "Winnipeg", province: "MB", slug: "winnipeg" },
+    { name: "Hamilton", province: "ON", slug: "hamilton" },
   ],
 
   // Navigation
