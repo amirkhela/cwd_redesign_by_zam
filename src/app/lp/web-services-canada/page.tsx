@@ -33,10 +33,10 @@ const serviceCards = [
 ];
 
 const field =
-  "w-full px-4 py-3 rounded-xl text-sm text-white placeholder-white/40 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
+  "w-full px-4 py-3 rounded-xl text-sm text-gray-800 placeholder-gray-400 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
 const fieldStyle = {
-  background: "rgba(255,255,255,0.08)",
-  border: "1px solid rgba(255,255,255,0.15)",
+  background: "#fff",
+  border: "1px solid #e2e8f0",
 };
 
 function fireConversion() {
@@ -96,19 +96,18 @@ function LpForm() {
       <div
         className="rounded-2xl p-8 flex flex-col items-center justify-center text-center"
         style={{
-          background: "rgba(0,15,35,0.82)",
-          backdropFilter: "blur(24px)",
-          border: "1px solid rgba(0,170,223,0.3)",
-          boxShadow: "0 32px 80px rgba(0,0,0,0.5)",
+          background: "#fff",
+          border: "1px solid #e2e8f0",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
           minHeight: 320,
         }}
       >
         <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-5"
-          style={{ background: "rgba(0,208,132,0.15)", border: "2px solid rgba(0,208,132,0.4)" }}>
+          style={{ background: "rgba(0,208,132,0.12)", border: "2px solid rgba(0,208,132,0.4)" }}>
           ✓
         </div>
-        <h3 className="text-white font-black text-xl mb-2">We Got Your Request!</h3>
-        <p className="text-white/60 text-sm leading-relaxed max-w-xs">
+        <h3 className="text-gray-900 font-black text-xl mb-2">We Got Your Request!</h3>
+        <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
           Our team will reach out within 24 hours with a custom quote.
         </p>
       </div>
@@ -124,10 +123,9 @@ function LpForm() {
         onSubmit={submit}
         className="rounded-2xl p-6"
         style={{
-          background: "rgba(0,15,35,0.82)",
-          backdropFilter: "blur(24px)",
-          border: "1px solid rgba(0,170,223,0.3)",
-          boxShadow: "0 32px 80px rgba(0,0,0,0.5), 0 0 50px rgba(0,170,223,0.08)",
+          background: "#fff",
+          border: "1px solid #e2e8f0",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
         }}
       >
         {/* Honeypot */}
@@ -139,8 +137,8 @@ function LpForm() {
             <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#00AADF" }} />
             <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "#00AADF" }}>Free Quote</span>
           </div>
-          <h2 className="text-white font-black text-lg leading-tight">Get Your Project Started</h2>
-          <p className="text-white/45 text-xs mt-1">No obligation ✌ Reply within 24 hrs</p>
+          <h2 className="text-gray-900 font-black text-lg leading-tight">Get Your Project Started</h2>
+          <p className="text-gray-400 text-xs mt-1">No obligation ✌ Reply within 24 hrs</p>
         </div>
 
         <div className="space-y-3">
@@ -174,15 +172,15 @@ function LpForm() {
             value={form.service}
             onChange={set("service")}
             className={field}
-            style={{ ...fieldStyle, color: form.service ? "#fff" : "rgba(255,255,255,0.4)" }}
+            style={{ ...fieldStyle, color: form.service ? "#1a202c" : "#9ca3af" }}
           >
-            <option value="" style={{ background: "#0a1628" }}>Select a Service</option>
-            <option value="Web Design & Development" style={{ background: "#0a1628" }}>Web Design &amp; Development</option>
-            <option value="SEO" style={{ background: "#0a1628" }}>SEO</option>
-            <option value="Website Maintenance" style={{ background: "#0a1628" }}>Website Maintenance</option>
-            <option value="Graphic Design" style={{ background: "#0a1628" }}>Graphic Design</option>
-            <option value="Social Media" style={{ background: "#0a1628" }}>Social Media</option>
-            <option value="AI Consultation" style={{ background: "#0a1628" }}>AI Consultation</option>
+            <option value="">Select a Service</option>
+            <option value="Web Design & Development">Web Design &amp; Development</option>
+            <option value="SEO">SEO</option>
+            <option value="Website Maintenance">Website Maintenance</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Social Media">Social Media</option>
+            <option value="AI Consultation">AI Consultation</option>
           </select>
 
           <button
@@ -203,7 +201,7 @@ function LpForm() {
           )}
         </div>
 
-        <p className="text-white/25 text-xs text-center mt-4">🔒 Protected by reCAPTCHA. No spam.</p>
+        <p className="text-gray-400 text-xs text-center mt-4">🔒 Protected by reCAPTCHA. No spam.</p>
       </form>
     </>
   );
