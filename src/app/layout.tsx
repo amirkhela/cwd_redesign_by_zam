@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SiteShell from "@/components/SiteShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Preloader from "@/components/Preloader";
 import { getConfig } from "@/lib/client-config";
@@ -201,29 +200,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col bg-white text-dark antialiased font-sans">
         <Preloader />
         <GoogleAnalytics />
-        <Header />
-        <main className="flex-1 pt-header-h">{children}</main>
-
-        {/* Awards & Recognition — above footer on every page */}
-        <section className="py-10 border-t border-gray-100" style={{ background: "#ffffff" }}>
-          <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-            <p className="text-center text-[#00AADF] text-xs font-bold tracking-[0.2em] uppercase mb-7">Awards &amp; Recognition</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-14">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img loading="lazy" src="/badges/designrush.png" alt="DesignRush Accredited Agency" height="50" className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img loading="lazy" src="/badges/reliable.png" alt="Reliable Business" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img loading="lazy" src="/badges/clever-canadian.png" alt="Canada Best" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img loading="lazy" src="/badges/clutch.png" alt="Clutch Top Rated" height="40" className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img loading="lazy" src="/badges/bbb.png" alt="BBB Accredited" height="55" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-            </div>
-          </div>
-        </section>
-
-        <Footer />
+        <SiteShell
+          awards={
+            <section className="py-10 border-t border-gray-100" style={{ background: "#ffffff" }}>
+              <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+                <p className="text-center text-[#00AADF] text-xs font-bold tracking-[0.2em] uppercase mb-7">Awards &amp; Recognition</p>
+                <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-14">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img loading="lazy" src="/badges/designrush.png" alt="DesignRush Accredited Agency" height="50" className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img loading="lazy" src="/badges/reliable.png" alt="Reliable Business" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img loading="lazy" src="/badges/clever-canadian.png" alt="Canada Best" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img loading="lazy" src="/badges/clutch.png" alt="Clutch Top Rated" height="40" className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img loading="lazy" src="/badges/bbb.png" alt="BBB Accredited" height="55" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                </div>
+              </div>
+            </section>
+          }
+        >
+          {children}
+        </SiteShell>
         <ConditionalSchemas
           localBusiness={localBusinessSchema}
           website={websiteSchema}
