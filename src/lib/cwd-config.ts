@@ -10,7 +10,7 @@ export const cwdConfig: ClientConfig = {
 
   // Reputation
   rating: 5,
-  reviewCount: 150,
+  reviewCount: 180,
 
   // Contact
   phone: "647-689-6069",

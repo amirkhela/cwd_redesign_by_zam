@@ -1,71 +1,43 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
 
-const services = [
-  "Web Design & Development",
-  "SEO Services",
-  "Website Maintenance",
-  "Graphic Design",
-  "Social Media Management",
-  "AI Consultation",
-  "Other",
-];
-
-const cities = ["Brampton", "Burnaby", "Winnipeg", "Toronto", "Calgary", "Ottawa", "Other"];
-
 const testimonials = [
   {
     name: "Sharanya K.",
     city: "Toronto, ON",
-    text: "Canadian Web Designs completely transformed our online presence. The team was professional, responsive, and delivered a stunning website that exceeded our expectations. Our leads have increased significantly since launch!",
+    text: "Canadian Web Designs completely transformed our online presence. Professional, responsive, and delivered a stunning website that exceeded our expectations. Our leads have increased significantly!",
   },
   {
     name: "Shawn M.",
     city: "Brampton, ON",
-    text: "Best web design agency in Toronto! They built our e-commerce site from scratch and the results have been incredible. The SEO work they did has us ranking on the first page of Google. Highly recommend.",
+    text: "Best web design agency in Toronto! They built our e-commerce site from scratch and the results have been incredible. The SEO work has us ranking on the first page of Google.",
   },
   {
     name: "Dorota W.",
     city: "Calgary, AB",
-    text: "I was blown away by the quality of work and speed of delivery. Canadian Web Designs understood our brand perfectly and created a website that truly represents who we are. Great value for money.",
+    text: "Blown away by the quality and speed of delivery. Canadian Web Designs understood our brand perfectly and created a website that truly represents who we are. Great value for money.",
   },
 ];
 
 const serviceCards = [
   { icon: "💻", title: "Web Design & Development", desc: "Custom, mobile-first websites that load fast, rank high, and convert visitors into customers." },
-  { icon: "📈", title: "SEO Services", desc: "Local SEO strategies that put your business on page 1 of Google in your city — guaranteed results." },
-  { icon: "🔧", title: "Website Maintenance", desc: "Keep your site secure, updated, and running at peak performance with our monthly maintenance plans." },
+  { icon: "📈", title: "SEO Services", desc: "Local SEO strategies that put your business on page 1 of Google in your city." },
+  { icon: "🔧", title: "Website Maintenance", desc: "Keep your site secure, updated, and running at peak performance." },
   { icon: "🎨", title: "Graphic Design", desc: "Logos, branding, and marketing materials that make your business unforgettable." },
 ];
 
-const inputClass =
-  "w-full px-4 py-3 rounded-xl outline-none transition-all duration-200 text-gray-900 placeholder:text-gray-400 font-medium bg-gray-50 border border-gray-200 focus:border-[#00AADF] focus:bg-white focus:ring-2 focus:ring-[#00AADF]/20";
-
-async function getRecaptchaToken(siteKey: string): Promise<string> {
-  try {
-    const gc = (window as any).grecaptcha;
-    if (!gc) return "";
-    return await new Promise<string>((resolve) => {
-      try {
-        const run = () => {
-          try {
-            const result = gc.execute(siteKey, { action: "lp_contact" });
-            if (result && typeof result.then === "function") {
-              result.then((token: string) => resolve(token)).catch(() => resolve(""));
-            } else { resolve(""); }
-          } catch { resolve(""); }
-        };
-        if (typeof gc.ready === "function") { gc.ready(run); } else { run(); }
-      } catch { resolve(""); }
-    });
-  } catch { return ""; }
-}
+const field =
+  "w-full px-4 py-3 rounded-xl text-sm text-white placeholder-white/40 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
+const fieldStyle = {
+  background: "rgba(255,255,255,0.08)",
+  border: "1px solid rgba(255,255,255,0.15)",
+};
 
 function fireConversion() {
   try {
@@ -76,58 +48,177 @@ function fireConversion() {
   } catch { /* silent */ }
 }
 
-export default function LandingPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState(false);
+function LpForm() {
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [form, setForm] = useState({ name: "", email: "", phone: "", service: "" });
 
-  const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
+  const set = (k: keyof typeof form) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
+      setForm((f) => ({ ...f, [k]: e.target.value }));
+
+  async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (submitting) return;
-    setSubmitting(true);
-    setError(false);
-
+    if (status === "sending") return;
+    setStatus("sending");
     try {
       let recaptchaToken = "";
-      if (RECAPTCHA_SITE_KEY && typeof window !== "undefined") {
-        recaptchaToken = await getRecaptchaToken(RECAPTCHA_SITE_KEY);
+      if (RECAPTCHA_SITE_KEY && typeof window !== "undefined" && (window as any).grecaptcha) {
+        recaptchaToken = await (window as any).grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "lp_quote" });
       }
-
-      const formData = new FormData(e.currentTarget);
-      const data = Object.fromEntries(formData.entries());
-
-      const response = await fetch("/api/contact", {
+      const [firstName, ...rest] = form.name.trim().split(" ");
+      const lastName = rest.join(" ") || "-";
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, recaptchaToken, source: "google-ads-lp" }),
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email: form.email,
+          phone: form.phone,
+          service: form.service,
+          message: `Google Ads landing page lead.\nService: ${form.service || "General"}`,
+          source: "google-ads-lp",
+          recaptchaToken,
+          _hp: "",
+        }),
       });
-
-      if (response.ok) {
-        fireConversion();
-        setSubmitted(true);
-      } else {
-        setError(true);
-        setSubmitting(false);
-      }
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      if (data.success) { fireConversion(); setStatus("done"); }
+      else setStatus("error");
     } catch {
-      setError(true);
-      setSubmitting(false);
+      setStatus("error");
     }
-  }, [submitting]);
+  }
+
+  if (status === "done") {
+    return (
+      <div
+        className="rounded-2xl p-8 flex flex-col items-center justify-center text-center"
+        style={{
+          background: "rgba(0,15,35,0.82)",
+          backdropFilter: "blur(24px)",
+          border: "1px solid rgba(0,170,223,0.3)",
+          boxShadow: "0 32px 80px rgba(0,0,0,0.5)",
+          minHeight: 320,
+        }}
+      >
+        <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-5"
+          style={{ background: "rgba(0,208,132,0.15)", border: "2px solid rgba(0,208,132,0.4)" }}>
+          ✓
+        </div>
+        <h3 className="text-white font-black text-xl mb-2">We Got Your Request!</h3>
+        <p className="text-white/60 text-sm leading-relaxed max-w-xs">
+          Our team will reach out within 24 hours with a custom quote.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <>
       {RECAPTCHA_SITE_KEY && (
-        <Script src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`} strategy="afterInteractive" />
+        <Script src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`} strategy="lazyOnload" />
       )}
+      <form
+        onSubmit={submit}
+        className="rounded-2xl p-6"
+        style={{
+          background: "rgba(0,15,35,0.82)",
+          backdropFilter: "blur(24px)",
+          border: "1px solid rgba(0,170,223,0.3)",
+          boxShadow: "0 32px 80px rgba(0,0,0,0.5), 0 0 50px rgba(0,170,223,0.08)",
+        }}
+      >
+        {/* Honeypot */}
+        <input type="text" name="_hp" autoComplete="off" tabIndex={-1} aria-hidden="true"
+          style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }} />
 
+        <div className="mb-5">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#00AADF" }} />
+            <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "#00AADF" }}>Free Quote</span>
+          </div>
+          <h2 className="text-white font-black text-lg leading-tight">Get Your Project Started</h2>
+          <p className="text-white/45 text-xs mt-1">No obligation ✌ Reply within 24 hrs</p>
+        </div>
+
+        <div className="space-y-3">
+          <input
+            type="text"
+            placeholder="Your Name *"
+            required
+            value={form.name}
+            onChange={set("name")}
+            className={field}
+            style={fieldStyle}
+          />
+          <input
+            type="email"
+            placeholder="Email Address *"
+            required
+            value={form.email}
+            onChange={set("email")}
+            className={field}
+            style={fieldStyle}
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            value={form.phone}
+            onChange={set("phone")}
+            className={field}
+            style={fieldStyle}
+          />
+          <select
+            value={form.service}
+            onChange={set("service")}
+            className={field}
+            style={{ ...fieldStyle, color: form.service ? "#fff" : "rgba(255,255,255,0.4)" }}
+          >
+            <option value="" style={{ background: "#0a1628" }}>Select a Service</option>
+            <option value="Web Design & Development" style={{ background: "#0a1628" }}>Web Design &amp; Development</option>
+            <option value="SEO" style={{ background: "#0a1628" }}>SEO</option>
+            <option value="Website Maintenance" style={{ background: "#0a1628" }}>Website Maintenance</option>
+            <option value="Graphic Design" style={{ background: "#0a1628" }}>Graphic Design</option>
+            <option value="Social Media" style={{ background: "#0a1628" }}>Social Media</option>
+            <option value="AI Consultation" style={{ background: "#0a1628" }}>AI Consultation</option>
+          </select>
+
+          <button
+            type="submit"
+            disabled={status === "sending"}
+            className="btn-shimmer w-full py-3.5 rounded-xl text-white font-black text-sm transition-all duration-300"
+            style={{
+              background: status === "sending" ? "rgba(0,170,223,0.5)" : "linear-gradient(135deg, #005B9A, #00AADF)",
+              boxShadow: "0 4px 24px rgba(0,170,223,0.35)",
+              cursor: status === "sending" ? "not-allowed" : "pointer",
+            }}
+          >
+            {status === "sending" ? "Sending…" : "Get My Free Quote 🎯"}
+          </button>
+
+          {status === "error" && (
+            <p className="text-red-400 text-xs text-center">Something went wrong — please call 647-689-6069.</p>
+          )}
+        </div>
+
+        <p className="text-white/25 text-xs text-center mt-4">🔒 Protected by reCAPTCHA. No spam.</p>
+      </form>
+    </>
+  );
+}
+
+export default function LandingPage() {
+  return (
+    <>
       {/* ── Minimal Top Bar ── */}
-      <div className="w-full py-3 px-6 flex items-center justify-between border-b border-gray-100 bg-white sticky top-0 z-50 shadow-sm">
-        <Image src="/logos/logo.webp" alt="Canadian Web Designs" width={140} height={36} className="h-8 w-auto object-contain" priority />
+      <div className="w-full py-3 px-6 flex items-center justify-between border-b border-white/10 bg-[#010C1E] sticky top-0 z-50">
+        <Image src="/logos/logo.webp" alt="Canadian Web Designs" width={160} height={42} className="h-9 w-auto object-contain" priority />
         <a
           href="tel:647-689-6069"
-          className="inline-flex items-center gap-2 px-5 py-2 text-white font-bold rounded-xl text-sm transition-all duration-200"
-          style={{ background: "#00AADF" }}
+          className="inline-flex items-center gap-2 px-5 py-2 text-white font-bold rounded-xl text-sm transition-all duration-200 btn-shimmer"
+          style={{ background: "#00AADF", boxShadow: "0 4px 16px rgba(0,170,223,0.4)" }}
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -136,60 +227,86 @@ export default function LandingPage() {
         </a>
       </div>
 
-      {/* ── Hero + Form ── */}
+      {/* ── Hero — exact homepage style ── */}
       <section
-        className="relative overflow-hidden py-14 md:py-20"
-        style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
+        className="relative overflow-hidden flex items-center"
+        style={{ minHeight: "calc(100vh - 57px)", background: "#010C1E" }}
       >
-        <div className="absolute top-0 left-[5%] w-[500px] h-[500px] rounded-full pointer-events-none"
-          style={{ background: "#00AADF", filter: "blur(150px)", opacity: 0.2 }} />
-        <div className="absolute bottom-0 right-[5%] w-80 h-80 rounded-full pointer-events-none"
-          style={{ background: "#003B6F", filter: "blur(120px)", opacity: 0.28 }} />
+        {/* Background image */}
+        <Image
+          src="/images/hero-leading-web-design.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.92) 0%, rgba(1,12,30,0.65) 50%, rgba(1,12,30,0.40) 100%)" }}
+        />
+
+        {/* Animated orbs */}
+        <div className="absolute animate-orb pointer-events-none"
+          style={{ top: "5%", left: "2%", width: 600, height: 600, borderRadius: "50%", background: "#00AADF", filter: "blur(130px)", opacity: 0.35 }} />
+        <div className="absolute animate-orb pointer-events-none"
+          style={{ bottom: "0%", right: "0%", width: 480, height: 480, borderRadius: "50%", background: "#00AADF", filter: "blur(110px)", opacity: 0.22, animationDelay: "2.5s" }} />
+        <div className="absolute animate-orb pointer-events-none"
+          style={{ top: "40%", right: "30%", width: 300, height: 300, borderRadius: "50%", background: "#33C2E8", filter: "blur(90px)", opacity: 0.18, animationDelay: "1.2s" }} />
+
+        {/* Dot grid */}
         <div className="absolute inset-0 pointer-events-none"
-          style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+          style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
 
-        <div className="relative max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[1fr_420px] gap-12 items-start">
+        <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 py-24 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
 
-            {/* Left — Copy */}
+            {/* LEFT: Text */}
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-                style={{ background: "rgba(0,170,223,0.15)", border: "1px solid rgba(0,170,223,0.3)" }}>
-                <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF" }} />
-                <span className="text-white/80 text-sm font-medium">Free Quote — No Commitment</span>
+              {/* Trust badge */}
+              <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-8">
+                <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
+                <span className="text-white/80 text-sm font-medium tracking-wide">Canada&rsquo;s Most Trusted Web Agency</span>
               </div>
 
-              <h1 className="font-black text-white mb-5 leading-tight" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)" }}>
-                Web Design, SEO &amp; Digital Marketing{" "}
-                <span style={{ color: "#00AADF" }}>Across Canada</span>
+              <h1
+                className="hero-fade-up-1 font-black text-white leading-tight mb-6"
+                style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", lineHeight: 1.05 }}
+              >
+                Web Design, SEO &amp; Digital Marketing<br />
+                <span className="gradient-text-animated">Across Canada</span>
               </h1>
 
-              <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-lg">
-                Serving Brampton, Burnaby, Winnipeg, Toronto, Calgary &amp; Ottawa. Get a custom website or SEO strategy built for your city and your budget.
+              <p className="hero-fade-up-2 text-lg text-white leading-relaxed max-w-lg mb-10">
+                Serving Brampton, Burnaby, Winnipeg, Toronto, Calgary &amp; Ottawa.{" "}
+                <span className="font-semibold">180+ five-star Google reviews.</span>{" "}
+                Custom websites from $1,499 — no templates, no lock-in contracts.
               </p>
 
-              {/* Trust bullets */}
-              <div className="space-y-3 mb-8">
-                {[
-                  "150+ five-star reviews across Canada",
-                  "Custom websites from $1,499 — no templates",
-                  "30-day average launch time",
-                  "No long-term contracts — cancel anytime",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-                      style={{ background: "rgba(0,170,223,0.25)" }}>
-                      <svg className="w-3 h-3" style={{ color: "#00AADF" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                    </div>
-                    <span className="text-white/75 text-sm">{item}</span>
-                  </div>
-                ))}
+              <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4 mb-12">
+                {/* Scroll to form on mobile */}
+                <a
+                  href="#lp-form"
+                  className="btn-shimmer group inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-bold rounded-btn text-base transition-all duration-300 lg:hidden"
+                  style={{ background: "#00AADF", boxShadow: "0 4px 28px rgba(0,170,223,0.45)" }}
+                >
+                  Get a Free Quote
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+                <Link
+                  href="/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300"
+                >
+                  View Our Portfolio ↗
+                </Link>
               </div>
 
               {/* Stars */}
-              <div className="flex items-center gap-2">
+              <div className="hero-fade-up-4 flex items-center gap-3">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5" style={{ color: "#FFB800" }} fill="currentColor" viewBox="0 0 20 20">
@@ -197,109 +314,27 @@ export default function LandingPage() {
                     </svg>
                   ))}
                 </div>
-                <span className="text-white/60 text-sm">5.0 — 150+ Google Reviews</span>
+                <span className="text-white/50 text-sm">180+ Five Star Reviews on Google</span>
               </div>
             </div>
 
-            {/* Right — Form */}
-            <div className="bg-white rounded-2xl p-7 shadow-2xl" style={{ boxShadow: "0 8px 60px rgba(0,0,0,0.35)" }}>
-              {submitted ? (
-                <div className="py-10 text-center">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ background: "rgba(0,170,223,0.12)" }}>
-                    <svg className="w-7 h-7" style={{ color: "#00AADF" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-black text-gray-900 mb-2">We Got Your Request!</h3>
-                  <p className="text-gray-500 text-sm">Our team will reach out within 24 hours with a custom quote.</p>
-                </div>
-              ) : (
-                <>
-                  <h2 className="text-xl font-black text-gray-900 mb-1">Get a Free Quote</h2>
-                  <p className="text-gray-400 text-sm mb-6">We reply within 24 hours — usually much sooner.</p>
-
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    {/* Honeypot */}
-                    <input type="text" name="_hp" autoComplete="off" tabIndex={-1} aria-hidden="true"
-                      style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }} />
-
-                    <div className="grid grid-cols-2 gap-3">
-                      <div>
-                        <label htmlFor="lp-firstName" className="block text-xs font-semibold text-gray-600 mb-1">First Name *</label>
-                        <input type="text" id="lp-firstName" name="firstName" required placeholder="John" className={inputClass} />
-                      </div>
-                      <div>
-                        <label htmlFor="lp-lastName" className="block text-xs font-semibold text-gray-600 mb-1">Last Name *</label>
-                        <input type="text" id="lp-lastName" name="lastName" required placeholder="Smith" className={inputClass} />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="lp-email" className="block text-xs font-semibold text-gray-600 mb-1">Email *</label>
-                      <input type="email" id="lp-email" name="email" required placeholder="john@company.com" className={inputClass} />
-                    </div>
-
-                    <div>
-                      <label htmlFor="lp-phone" className="block text-xs font-semibold text-gray-600 mb-1">Phone</label>
-                      <input type="tel" id="lp-phone" name="phone" placeholder="+1 (416) 000-0000" className={inputClass} />
-                    </div>
-
-                    <div>
-                      <label htmlFor="lp-city" className="block text-xs font-semibold text-gray-600 mb-1">Your City *</label>
-                      <select id="lp-city" name="city" required className={inputClass}>
-                        <option value="">Select your city</option>
-                        {cities.map((c) => <option key={c} value={c}>{c}</option>)}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label htmlFor="lp-service" className="block text-xs font-semibold text-gray-600 mb-1">Service Needed *</label>
-                      <select id="lp-service" name="service" required className={inputClass}>
-                        <option value="">Select a service</option>
-                        {services.map((s) => <option key={s} value={s}>{s}</option>)}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label htmlFor="lp-message" className="block text-xs font-semibold text-gray-600 mb-1">Tell Us About Your Project</label>
-                      <textarea id="lp-message" name="message" rows={3} placeholder="Brief description of what you need..."
-                        className={`${inputClass} resize-none`} />
-                    </div>
-
-                    {error && (
-                      <p className="text-sm text-red-500 font-medium">Something went wrong. Please try again or call 647-689-6069.</p>
-                    )}
-
-                    <button
-                      type="submit"
-                      disabled={submitting}
-                      className="w-full py-4 text-white font-black rounded-xl text-base transition-all duration-300 disabled:opacity-60"
-                      style={{ background: "#00AADF", boxShadow: "0 4px 20px rgba(0,170,223,0.4)" }}
-                    >
-                      {submitting ? "Sending..." : "Get My Free Quote →"}
-                    </button>
-
-                    <p className="text-xs text-gray-400 text-center">
-                      No spam. No commitment. We reply within 24 hrs.
-                    </p>
-                  </form>
-                </>
-              )}
+            {/* RIGHT: Form — desktop only inline, mobile scrolls to section below */}
+            <div id="lp-form" className="relative">
+              <LpForm />
             </div>
           </div>
         </div>
       </section>
 
       {/* ── Trust Bar ── */}
-      <section className="py-5 border-b border-gray-100 bg-gray-50">
+      <section className="py-5 border-b border-gray-100 bg-white">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-12">
+          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-14">
             {[
-              { num: "150+", label: "5-Star Reviews" },
+              { num: "180+", label: "5-Star Google Reviews" },
               { num: "500+", label: "Websites Launched" },
-              { num: "10+", label: "Years in Business" },
-              { num: "24+", label: "Cities Served" },
+              { num: "10+",  label: "Years in Business" },
+              { num: "24+",  label: "Cities Served" },
             ].map((s) => (
               <div key={s.label} className="text-center">
                 <div className="text-2xl font-black" style={{ color: "#00AADF" }}>{s.num}</div>
@@ -333,7 +368,7 @@ export default function LandingPage() {
               href="/portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-base border-2 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-base border-2 transition-all duration-200 hover:bg-[#00AADF] hover:text-white"
               style={{ borderColor: "#00AADF", color: "#00AADF" }}
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -354,14 +389,14 @@ export default function LandingPage() {
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">What Our Clients Say</h2>
-            <div className="flex items-center justify-center gap-1 mb-2">
+            <div className="flex items-center justify-center gap-1 mb-1">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-5 h-5" style={{ color: "#FFB800" }} fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
               ))}
             </div>
-            <p className="text-gray-400 text-sm">5.0 average — 150+ verified Google reviews</p>
+            <p className="text-gray-400 text-sm">5.0 average — 180+ verified Google reviews</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {testimonials.map((t) => (
@@ -391,11 +426,11 @@ export default function LandingPage() {
             Ready to Grow Your Business Online?
           </h2>
           <p className="text-white/60 mb-8">
-            Fill out the form above or call us directly. We reply within 24 hours with a free, no-obligation quote tailored to your city and budget.
+            Fill out the form above or call us directly. We reply within 24 hours with a free, no-obligation quote.
           </p>
           <a
             href="tel:647-689-6069"
-            className="inline-flex items-center gap-2 px-8 py-4 text-white font-black rounded-xl text-lg transition-all duration-200"
+            className="inline-flex items-center gap-2 px-8 py-4 text-white font-black rounded-xl text-lg transition-all duration-200 btn-shimmer"
             style={{ background: "#00AADF", boxShadow: "0 4px 24px rgba(0,170,223,0.4)" }}
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -406,7 +441,6 @@ export default function LandingPage() {
           <p className="text-white/30 text-xs mt-4">Mon–Fri, 8am–6pm EST</p>
         </div>
       </section>
-
     </>
   );
 }
