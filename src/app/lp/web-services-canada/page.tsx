@@ -214,7 +214,7 @@ export default function LandingPage() {
     <>
       {/* ── Minimal Top Bar ── */}
       <div className="w-full py-4 px-6 flex items-center justify-center border-b border-gray-100 bg-white sticky top-0 z-50 shadow-sm">
-        <Image src="/logos/logo.webp" alt="Canadian Web Designs" width={220} height={58} className="h-12 w-auto object-contain" priority />
+        <Image src="/logos/logo.png" unoptimized alt="Canadian Web Designs" width={200} height={52} style={{ height: "48px", width: "auto" }} priority />
       </div>
 
       {/* ── Hero — exact homepage style ── */}
