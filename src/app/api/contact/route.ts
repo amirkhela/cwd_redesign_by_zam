@@ -100,7 +100,7 @@ ${message}
       from: `"CWD Website" <${process.env.SMTP_USER}>`,
       to: "dev@canadianwebdesigns.com, sales.canadianwebdesigns@gmail.com",
       replyTo: email,
-      subject: source === "homepage" ? "New Message from home page" : `New Contact Form: ${firstName} ${lastName}`,
+      subject: source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${firstName} ${lastName}` : `New Contact Form: ${firstName} ${lastName}`,
       text: internalEmailBody,
     });
   } catch (err) {
