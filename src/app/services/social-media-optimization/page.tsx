@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { getConfig } from "@/lib/client-config";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import Link from "next/link";
 
 const service = getConfig().services.find((s) => s.slug === "social-media-optimization")!;
 
 export const metadata: Metadata = {
-  title: "Social Media Optimization Services",
-  description: "Build a powerful social media presence with Canadian Web Designs. Social media optimization, content creation, and community management across all platforms.",
+  title: "Social Media Management Toronto & Canada | Canadian Web Designs",
+  description: "Professional social media management for Canadian businesses. Content creation, scheduling, community management, and paid ads on Instagram, Facebook, LinkedIn & more.",
   alternates: { canonical: "/services/social-media-optimization" },
 };
 
@@ -37,11 +38,136 @@ const faqSchema = {
   ],
 };
 
+const packages = [
+  {
+    name: "Starter",
+    price: "$499",
+    period: "/mo",
+    ideal: "Businesses new to social media",
+    features: ["2 platforms managed", "12 posts/month", "Branded graphic templates", "Basic community engagement", "Monthly performance report"],
+  },
+  {
+    name: "Growth",
+    price: "$899",
+    period: "/mo",
+    ideal: "Businesses ready to grow their audience",
+    features: ["3 platforms managed", "20 posts/month", "Custom graphic + video content", "Daily community management", "Competitor analysis", "Bi-weekly strategy call"],
+    highlight: true,
+  },
+  {
+    name: "Authority",
+    price: "$1,799",
+    period: "/mo",
+    ideal: "Brands needing full-service management",
+    features: ["All major platforms", "30+ posts/month", "Short-form video (Reels/TikTok)", "Paid social ad management", "Influencer outreach", "Dedicated account manager"],
+  },
+];
+
+const platforms = [
+  { name: "Instagram", icon: "📸", desc: "Visual storytelling and Reels to reach a younger, highly engaged audience." },
+  { name: "Facebook", icon: "📘", desc: "Community building, local ads, and targeted campaigns for Canadian consumers." },
+  { name: "LinkedIn", icon: "💼", desc: "B2B lead generation and thought leadership for professional service businesses." },
+  { name: "TikTok", icon: "🎵", desc: "Short-form video content that drives massive organic reach and brand awareness." },
+];
+
 export default function ServicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePageTemplate service={service} />
+
+      {/* ── Platform + Pricing Section ── */}
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Platform Expertise</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">
+              Social Media Management Toronto &amp; Across Canada
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+              We manage social media for businesses across Canada — from small local shops to national brands. Our strategies are tailored to your audience, industry, and city, not copy-pasted from a template.
+            </p>
+          </div>
+
+          {/* Platform cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
+            {platforms.map((p) => (
+              <div key={p.name} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+                <div className="text-4xl mb-4">{p.icon}</div>
+                <h3 className="text-lg font-black text-gray-900 mb-2">{p.name}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Pricing */}
+          <div className="text-center mb-10">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Social Media Management Packages</h3>
+            <p className="text-gray-500 max-w-xl mx-auto">Month-to-month plans — no lock-in contracts. All packages include content creation, scheduling, and monthly reporting. Cancel anytime.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+            {packages.map((pkg) => (
+              <div
+                key={pkg.name}
+                className={`rounded-2xl p-8 border-2 flex flex-col ${pkg.highlight ? "border-[#00AADF] shadow-lg shadow-[#00AADF]/10" : "border-gray-100"}`}
+                style={pkg.highlight ? { background: "linear-gradient(135deg, #f0fbff, #fff)" } : {}}
+              >
+                {pkg.highlight && (
+                  <span className="inline-block bg-[#00AADF] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">Most Popular</span>
+                )}
+                <h4 className="text-xl font-black text-gray-900 mb-1">{pkg.name}</h4>
+                <p className="text-sm text-gray-400 mb-4">{pkg.ideal}</p>
+                <div className="flex items-baseline gap-1 mb-6">
+                  <span className="text-4xl font-black text-gray-900">{pkg.price}</span>
+                  <span className="text-gray-400 text-sm">{pkg.period}</span>
+                </div>
+                <ul className="space-y-3 flex-1 mb-8">
+                  {pkg.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
+                      <span className="text-[#00AADF] font-bold mt-0.5">✓</span> {f}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/contact"
+                  className={`text-center py-3 px-6 rounded-xl font-bold text-sm transition-all duration-200 ${pkg.highlight ? "bg-[#00AADF] text-white hover:opacity-90" : "border-2 border-gray-200 text-gray-700 hover:border-[#00AADF] hover:text-[#00AADF]"}`}
+                >
+                  Get Started
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          {/* Stats */}
+          <div className="bg-white rounded-2xl p-8 lg:p-12 border border-gray-100 shadow-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <h3 className="text-2xl font-black text-gray-900 mb-4">Why Social Media Management Matters for Canadian Businesses</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  94% of Canadians use social media regularly — and they are buying from brands they follow. But posting inconsistently, using generic graphics, or ignoring comments kills trust faster than having no social presence at all. Effective social media management means showing up with the right content, on the right platform, at the right time.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  We have managed social media for service businesses, retailers, restaurants, and professional firms across Toronto, Brampton, Calgary, and Vancouver. Our team creates scroll-stopping content that builds real audiences — not just vanity metrics.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { label: "Accounts managed", value: "120+" },
+                  { label: "Avg. engagement increase", value: "4.2×" },
+                  { label: "Monthly posts created", value: "2,000+" },
+                  { label: "Industries served", value: "30+" },
+                ].map((stat) => (
+                  <div key={stat.label} className="bg-gray-50 rounded-xl p-5 text-center">
+                    <div className="text-3xl font-black text-[#00AADF] mb-1">{stat.value}</div>
+                    <div className="text-xs text-gray-500 font-medium">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
