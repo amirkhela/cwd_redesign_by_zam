@@ -8,7 +8,7 @@ const config = getConfig();
 
 export const metadata: Metadata = {
   title: "Get a Free Quote",
-  description: "Request a quote for a customized website. We can help you create a business website or enhance your site. Get in touch!",
+  description: "Contact Canadian Web Designs for a free quote on web design, SEO, or digital marketing. Serving 24+ cities across Canada. Call 647-689-6069.",
   alternates: { canonical: "/contact" },
 };
 

@@ -75,10 +75,49 @@ const localSeoContent = {
   ],
 };
 
+const offerSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Local SEO Services Canada",
+  provider: {
+    "@type": "Organization",
+    name: "Canadian Web Designs",
+    url: "https://canadianwebdesigns.ca",
+  },
+  areaServed: "Canada",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Starter SEO Package",
+      price: "399",
+      priceCurrency: "CAD",
+      priceSpecification: { "@type": "UnitPriceSpecification", unitText: "month" },
+      description: "5 target keywords, on-page optimization, Google Business Profile setup, monthly ranking report",
+    },
+    {
+      "@type": "Offer",
+      name: "Growth SEO Package",
+      price: "799",
+      priceCurrency: "CAD",
+      priceSpecification: { "@type": "UnitPriceSpecification", unitText: "month" },
+      description: "20 target keywords, technical SEO audit, local citation building, content creation, competitor gap analysis",
+    },
+    {
+      "@type": "Offer",
+      name: "Authority SEO Package",
+      price: "1499",
+      priceCurrency: "CAD",
+      priceSpecification: { "@type": "UnitPriceSpecification", unitText: "month" },
+      description: "Unlimited keywords, full site technical SEO, link building campaign, 4 blog posts/mo, dedicated SEO strategist",
+    },
+  ],
+};
+
 export default function ServicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }} />
       <ServicePageTemplate service={service} />
 
       {/* ── Local SEO Services Section ── */}

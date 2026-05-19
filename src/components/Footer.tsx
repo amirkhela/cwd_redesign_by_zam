@@ -66,6 +66,12 @@ export default function Footer() {
                 </svg>
                 <a href={`tel:${config.phone}`} className="hover:text-white transition-colors duration-200 py-1 min-h-[44px] flex items-center">{config.phone}</a>
               </li>
+              <li className="flex items-center gap-2.5">
+                <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Mon–Fri: 8:00 AM – 6:00 PM EST</span>
+              </li>
               {Object.entries(config.addresses).map(([key, addr]) => (
                 <li key={key} className="flex items-start gap-2.5 pt-1">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

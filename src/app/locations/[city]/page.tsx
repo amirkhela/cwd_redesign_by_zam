@@ -292,7 +292,13 @@ export default function LocationPage({ params }: { params: { city: string } }) {
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 pt-5 border-t border-gray-100">
+                <div className="mt-5 pt-4 border-t border-gray-100 flex items-center gap-2 text-sm text-gray-500">
+                  <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Mon–Fri: 8:00 AM – 6:00 PM EST</span>
+                </div>
+                <div className="mt-4 pt-4 border-t border-gray-100">
                   <Link href="/contact"
                     className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-white font-bold text-sm transition-all duration-300 hover:opacity-90"
                     style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>
@@ -367,8 +373,9 @@ export default function LocationPage({ params }: { params: { city: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "ProfessionalService",
-          name: `${config.businessName} - ${city} Web Design`,
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": `https://${config.domain}/locations/${params.city}`,
+          name: `${config.businessName} — ${city} Web Design`,
           description: `Professional web design, SEO, and digital marketing for businesses in ${city}, ${province}`,
           url: `https://${config.domain}/locations/${params.city}`,
           telephone: config.phone,
@@ -382,6 +389,12 @@ export default function LocationPage({ params }: { params: { city: string } }) {
             postalCode: primaryAddress.postalCode,
             addressCountry: "CA",
           } : undefined,
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            opens: "08:00",
+            closes: "18:00",
+          },
           priceRange: "$$",
           aggregateRating: {
             "@type": "AggregateRating",

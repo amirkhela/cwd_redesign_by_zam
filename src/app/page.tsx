@@ -186,7 +186,7 @@ export default function HomePage() {
                   style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
                 />
                 <span className="text-white/80 text-sm font-medium tracking-wide">
-                  Canada&rsquo;s Most Trusted Web Agency
+                  Canada&rsquo;s Most Trusted Web Design Agency
                 </span>
               </div>
 
@@ -535,7 +535,7 @@ export default function HomePage() {
                 >
                   <Image
                     src={item.src}
-                    alt={item.name}
+                    alt={`${item.name} website designed by Canadian Web Designs`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"

@@ -12,7 +12,7 @@ const POSTS_PER_PAGE = 12;
 
 export const metadata: Metadata = {
   title: "Blog | Web Design & SEO Tips",
-  description: `Web design, SEO, and digital marketing tips from ${config.businessName}.`,
+  description: `Web design, SEO, and digital marketing tips from Canada's most trusted agency. Browse 160+ articles written by Canadian experts.`,
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog | Web Design & SEO Tips — Canadian Web Designs",

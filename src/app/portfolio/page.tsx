@@ -8,7 +8,7 @@ import PortfolioGrid from "@/components/PortfolioGrid";
 export const metadata: Metadata = {
   title: "Our Portfolio",
   description:
-    "Browse our portfolio of web design, SEO, and digital marketing projects for Canadian businesses.",
+    "Browse Canadian Web Designs' portfolio of custom websites, branding, and digital marketing projects. Award-winning work for businesses across Canada.",
   alternates: { canonical: "/portfolio" },
 };
 

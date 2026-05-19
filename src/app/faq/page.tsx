@@ -8,7 +8,7 @@ const config = getConfig();
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Here is general information for your frequently asked questions. We're here to help and make your worries go away.",
+  description: "Answers to the most common questions about web design, SEO, and digital marketing services at Canadian Web Designs. Learn about pricing, timelines, and more.",
   alternates: { canonical: "/faq" },
 };
 
@@ -21,6 +21,16 @@ const faqs = [
   { q: "Can you redesign my existing website?", a: "Yes, we specialize in website redesigns. We'll modernize your site while preserving your brand identity and improving user experience and SEO." },
   { q: "What areas do you serve?", a: `We serve businesses across ${config.cities.length} cities in Canada including Toronto, Brampton, Calgary, Vancouver, Montreal, Edmonton, and many more.` },
   { q: "Do you offer AI consultation?", a: "Yes, our AI consultation service helps businesses leverage artificial intelligence to streamline operations, improve customer service, and gain competitive advantages." },
+  { q: "What is your refund policy?", a: "We offer a satisfaction guarantee on all projects. If you're not happy with our work, we'll revise until you are. For details, please review our refund policy page or contact us directly." },
+  { q: "Do you build eCommerce websites?", a: "Yes — we build fully functional eCommerce websites with secure payment gateways, product management, inventory tracking, and conversion-optimized checkout flows." },
+  { q: "Can you help with Google Ads?", a: "Yes. We offer Google Ads management as part of our digital marketing services. We handle campaign setup, keyword targeting, ad copy, and ongoing optimization to maximize your return on ad spend." },
+  { q: "Do you offer social media management?", a: "Yes. Our social media optimization service includes content creation, scheduling, community management, and paid social advertising on platforms like Instagram, Facebook, LinkedIn, and TikTok." },
+  { q: "How do I know if my SEO is working?", a: "We provide monthly ranking reports, Google Analytics access, and keyword tracking so you can see exactly how your traffic and rankings are improving. Most clients see measurable progress within 60–90 days." },
+  { q: "Do you build websites on WordPress?", a: "Yes — we work with WordPress, as well as custom Next.js builds and other modern platforms. We recommend the stack that best fits your budget, goals, and technical requirements." },
+  { q: "Can you integrate a booking system into my website?", a: "Absolutely. We integrate booking systems, appointment schedulers, and reservation tools into websites for healthcare, hospitality, professional services, and other industries." },
+  { q: "Do you offer bilingual (English/French) websites?", a: "Yes — we can build bilingual websites with English and French content. All our sites include proper hreflang tags and language signals for Canadian bilingual SEO." },
+  { q: "What makes Canadian Web Designs different from other agencies?", a: "We're 100% Canadian-owned, with a 25+ person team and 180+ five-star reviews. We offer flat-rate pricing with no hidden fees, no long-term lock-in contracts, and direct access to your project manager throughout the entire process." },
+  { q: "How many clients have you worked with?", a: "We've completed 500+ projects since 2014, serving businesses across 24+ cities in Canada — from solo entrepreneurs to established companies in healthcare, real estate, trades, and retail." },
 ];
 
 export default function FAQPage() {
@@ -51,7 +61,7 @@ export default function FAQPage() {
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">{faqs.length} Questions Answered</span>
+              <span className="text-white/80 text-sm font-medium tracking-wide">{faqs.length} Common Questions Answered</span>
             </div>
             <h1
               className="hero-fade-up-1 font-black text-white mb-5"

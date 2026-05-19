@@ -207,15 +207,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <p className="text-center text-[#00AADF] text-xs font-bold tracking-[0.2em] uppercase mb-7">Awards &amp; Recognition</p>
                 <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-14">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/designrush.png" alt="DesignRush Accredited Agency" height="50" className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <img loading="lazy" src="/badges/designrush.png" alt="Canadian Web Designs featured on DesignRush" height="50" className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/reliable.png" alt="Reliable Business" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <img loading="lazy" src="/badges/reliable.png" alt="Canadian Web Designs top-rated reliable business badge" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/clever-canadian.png" alt="Canada Best" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <img loading="lazy" src="/badges/clever-canadian.png" alt="Canadian Web Designs awarded Canada Best web agency" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/clutch.png" alt="Clutch Top Rated" height="40" className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <img loading="lazy" src="/badges/clutch.png" alt="Canadian Web Designs top agency badge on Clutch" height="40" className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/bbb.png" alt="BBB Accredited" height="55" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <img loading="lazy" src="/badges/bbb.png" alt="Canadian Web Designs BBB accredited business badge" height="55" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                 </div>
               </div>
             </section>
