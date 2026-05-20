@@ -252,30 +252,6 @@ export default function HomePage() {
       <GoogleReviews />
 
       {/* =============================================
-          STATS BAR
-          ============================================= */}
-      <section className="py-16 bg-white border-b border-gray-100">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            {[
-              { count: 200,  suffix: "+", label: "Five Star Reviews",    icon: "⭐" },
-              { count: config.cities.length, suffix: "+", label: "Cities Served", icon: "📍" },
-              { count: 10,   suffix: "+", label: "Years Experience",     icon: "🏆" },
-              { count: 500,  suffix: "+", label: "Projects Completed",   icon: "✅" },
-            ].map((stat, i) => (
-              <div key={i} className={`reveal`} style={{ transitionDelay: `${i * 0.1}s` }}>
-                <div className="text-3xl mb-2">{stat.icon}</div>
-                <div className="text-4xl lg:text-5xl font-black text-dark mb-1">
-                  <span data-count={stat.count} data-suffix={stat.suffix}>0{stat.suffix}</span>
-                </div>
-                <p className="text-sm text-dark-light font-medium">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* =============================================
           SERVICES — Dark section
           ============================================= */}
       <section
