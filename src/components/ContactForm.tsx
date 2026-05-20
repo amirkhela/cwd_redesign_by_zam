@@ -56,13 +56,15 @@ export default function ContactForm() {
     setSubmitting(true);
     setError(false);
 
+    const form = e.currentTarget;
+
     try {
       let recaptchaToken = "";
       if (RECAPTCHA_SITE_KEY && typeof window !== "undefined") {
         recaptchaToken = await getRecaptchaToken(RECAPTCHA_SITE_KEY);
       }
 
-      const form = e.currentTarget;
+
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
 
