@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getConfig } from "@/lib/client-config";
 import ContactForm from "@/components/ContactForm";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
@@ -55,6 +56,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       {/* =============================================
           FORM + INFO

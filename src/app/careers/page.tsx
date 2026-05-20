@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getConfig } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
@@ -99,6 +100,8 @@ export default function CareersPage() {
         </div>
       </section>
 
+
+      <GoogleReviews />
 
       {/* =============================================
           OPEN POSITIONS

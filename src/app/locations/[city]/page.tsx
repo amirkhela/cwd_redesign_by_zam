@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getConfig } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
@@ -254,6 +255,8 @@ export default function LocationPage({ params }: { params: { city: string } }) {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       {/* ─── CITY CONTENT ─── */}
       <section className="py-14" style={{ background: "#f8fafc" }}>

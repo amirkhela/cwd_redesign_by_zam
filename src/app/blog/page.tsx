@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { getAllPosts } from "@/lib/blog";
 import { getConfig } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import GoogleReviews from "@/components/GoogleReviews";
 import BlogSearchBox from "@/components/BlogSearchBox";
 
 const config = getConfig();
@@ -116,6 +117,8 @@ export default async function BlogPage({ searchParams }: Props) {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       {/* BLOG GRID */}
       <section className="py-section-y relative" style={{ background: "#ffffff" }}>

@@ -72,27 +72,6 @@ const REVIEWS = [
     text: "Professional, prompt, and passionate about their craft. The logo design and branding package was exactly what I envisioned, delivered faster than expected. Our brand finally looks as premium as our service.",
     color: "#B45309",
   },
-  {
-    name: "Amara O.",
-    location: "Hamilton, ON",
-    date: "5 weeks ago",
-    text: "I needed a website for my healthcare practice and they delivered something truly professional — fast, accessible, and beautiful. My patients constantly comment on how easy the site is to use.",
-    color: "#9D174D",
-  },
-  {
-    name: "Michael B.",
-    location: "Scarborough, ON",
-    date: "3 months ago",
-    text: "The website maintenance plan is worth every penny. They keep our site updated, secure, and running fast. Customer service is always responsive whenever we need changes. Truly a top-tier agency.",
-    color: "#1E40AF",
-  },
-  {
-    name: "Tanya S.",
-    location: "North York, ON",
-    date: "2 weeks ago",
-    text: "We've worked with a few web agencies before but none compare to Canadian Web Designs. They actually care about your results, not just the deliverable. Our conversion rate increased by 60% within 90 days.",
-    color: "#065F46",
-  },
 ];
 
 function Stars() {

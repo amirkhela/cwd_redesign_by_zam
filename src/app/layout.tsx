@@ -7,7 +7,6 @@ import Preloader from "@/components/Preloader";
 import { getConfig } from "@/lib/client-config";
 import HreflangTags from "@/components/HreflangTags";
 import ConditionalSchemas from "@/components/ConditionalSchemas";
-import GoogleReviews from "@/components/GoogleReviews";
 import "./globals.css";
 
 const inter = Inter({
@@ -202,7 +201,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Preloader />
         <GoogleAnalytics />
         <SiteShell
-          reviews={<GoogleReviews />}
           awards={
             <section className="py-10 border-t border-gray-100" style={{ background: "#ffffff" }}>
               <div className="max-w-[1280px] mx-auto px-6 lg:px-8">

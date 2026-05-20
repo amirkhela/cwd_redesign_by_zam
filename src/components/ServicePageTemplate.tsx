@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { ClientService } from "@/lib/client-config";
 import { getConfig } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
@@ -75,6 +76,8 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       {/* =============================================
           DESCRIPTION + FEATURES (single section)

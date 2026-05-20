@@ -4,6 +4,7 @@ import { getConfig } from "@/lib/client-config";
 import StarRating from "@/components/StarRating";
 import ClientLogoCarousel from "@/components/ClientLogoCarousel";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
+import GoogleReviews from "@/components/GoogleReviews";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const config = getConfig();
@@ -247,6 +248,8 @@ export default function HomePage() {
           </svg>
         </div>
       </section>
+
+      <GoogleReviews />
 
       {/* =============================================
           STATS BAR

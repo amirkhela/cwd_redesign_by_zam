@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import GoogleReviews from "@/components/GoogleReviews";
 import PortfolioGrid from "@/components/PortfolioGrid";
 // v4
 
@@ -71,6 +72,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       {/* =============================================
           PORTFOLIO GRID (client component with category filters)
