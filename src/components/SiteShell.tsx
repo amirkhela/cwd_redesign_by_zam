@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export default function SiteShell({ children, awards }: { children: React.ReactNode; awards: React.ReactNode }) {
+export default function SiteShell({ children, reviews, awards }: { children: React.ReactNode; reviews?: React.ReactNode; awards: React.ReactNode }) {
   const pathname = usePathname();
   const isLp = pathname?.startsWith("/lp");
 
@@ -16,6 +16,7 @@ export default function SiteShell({ children, awards }: { children: React.ReactN
     <>
       <Header />
       <main className="flex-1 pt-header-h">{children}</main>
+      {reviews}
       {awards}
       <Footer />
     </>
