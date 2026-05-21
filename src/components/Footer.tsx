@@ -92,7 +92,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Service Areas</h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-0 text-sm">
-              {config.cities.map((city) => (
+              {/* Toronto first — primary market */}
+              <li key="toronto" className="col-span-2 mb-1">
+                <Link
+                  href="/locations/toronto"
+                  className="text-[#00AADF] hover:text-white font-semibold transition-colors duration-200 py-1.5 block min-h-[40px] flex items-center"
+                >
+                  Web Design Toronto ↗
+                </Link>
+              </li>
+              {config.cities.filter((c) => c.slug !== "toronto").map((city) => (
                 <li key={city.slug}>
                   <Link
                     href={`/locations/${city.slug}`}

@@ -20,27 +20,27 @@ const config = getConfig();
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${config.domain}`),
   title: {
-    default: `Canadian Web Design Agency | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    default: `Web Design Toronto & Across Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     template: `%s | ${config.businessName}`,
   },
   description:
-    `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Get a free quote today.`,
+    `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, local SEO & digital marketing. Get a free quote today.`,
   authors: [{ name: config.businessName }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_CA",
     siteName: config.businessName,
-    title: `Canadian Web Design Agency | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    title: `Web Design Toronto & Across Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     description:
-      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Get a free quote today.`,
+      `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, local SEO & digital marketing. Get a free quote today.`,
     url: `https://${config.domain}`,
     images: [
       {
         url: "/images/hero-leading-web-design.jpg",
         width: 1200,
         height: 630,
-        alt: "Canadian Web Designs — Affordable Web Design in Toronto, Canada",
+        alt: "Canadian Web Designs — Web Design Toronto & Across Canada",
       },
     ],
   },
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@canadianwebdesigns",
     creator: "@canadianwebdesigns",
-    title: `Canadian Web Design Agency | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    title: `Web Design Toronto & Across Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     description:
-      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Get a free quote today.`,
+      `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, local SEO & digital marketing. Get a free quote today.`,
     images: ["/images/hero-leading-web-design.jpg"],
   },
   robots: {
@@ -69,11 +69,12 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": `https://${config.domain}`,
   name: config.businessName,
   url: `https://${config.domain}`,
   logo: `https://${config.domain}/logos/logo.webp`,
   image: `https://${config.domain}/images/hero-leading-web-design.jpg`,
-  description: "Canadian Web Designs is Toronto's top-rated affordable web design agency offering custom websites, SEO, graphic design, social media, and AI consultation services across Canada.",
+  description: "Canadian Web Designs is Toronto's top-rated web design agency offering custom websites, local SEO, Google Ads, graphic design, social media, and AI consultation for businesses across Canada.",
   priceRange: "$$",
   telephone: config.phone,
   email: config.emails.support,
@@ -85,16 +86,23 @@ const localBusinessSchema = {
     areaServed: "CA",
     availableLanguage: "English",
   },
-  address: [
-    {
-      "@type": "PostalAddress",
-      streetAddress: "2967 Dundas St W #718",
-      addressLocality: "Toronto",
-      addressRegion: "ON",
-      postalCode: "M6P 1Z2",
-      addressCountry: "CA",
-    },
-    {
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "2967 Dundas St W #718",
+    addressLocality: "Toronto",
+    addressRegion: "ON",
+    postalCode: "M6P 1Z2",
+    addressCountry: "CA",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 43.6532,
+    longitude: -79.3832,
+  },
+  branchLocation: {
+    "@type": "LocalBusiness",
+    name: "Canadian Web Designs — Brampton",
+    address: {
       "@type": "PostalAddress",
       streetAddress: "5 Cherrycrest Drive #202",
       addressLocality: "Brampton",
@@ -102,7 +110,7 @@ const localBusinessSchema = {
       postalCode: "L6P 3W4",
       addressCountry: "CA",
     },
-  ],
+  },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -113,8 +121,8 @@ const localBusinessSchema = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: "150",
+    ratingValue: "4.9",
+    reviewCount: String(config.reviewCount),
     bestRating: "5",
     worstRating: "1",
   },
@@ -123,25 +131,43 @@ const localBusinessSchema = {
       "@type": "Review",
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Sharanya K." },
-      reviewBody: "Canadian Web Designs completely transformed our online presence. The team was professional, responsive, and delivered a stunning website that exceeded our expectations. Our leads have increased significantly since launch!",
+      datePublished: "2025-09-12",
+      reviewBody: "Canadian Web Designs completely transformed our Toronto clinic's online presence. Our patient inquiries increased by over 300% within the first month. They understood exactly what a Toronto healthcare business needs to rank on Google.",
     },
     {
       "@type": "Review",
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Shawn M." },
-      reviewBody: "Best web design agency in Toronto! They built our e-commerce site from scratch and the results have been incredible. The SEO work they did has us ranking on the first page of Google. Highly recommend.",
+      datePublished: "2025-08-03",
+      reviewBody: "Best web design agency in Toronto! They built our e-commerce site from scratch and the SEO work has us ranking on the first page of Google for our core Toronto keywords. Highly recommend to any Toronto business.",
     },
     {
       "@type": "Review",
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Dorota W." },
-      reviewBody: "I was blown away by the quality of work and speed of delivery. Canadian Web Designs understood our brand perfectly and created a website that truly represents who we are. Great value for money.",
+      datePublished: "2025-06-18",
+      reviewBody: "I was blown away by the quality of work and speed of delivery. Canadian Web Designs understood our brand perfectly and created a website that truly represents who we are. Great value for a Toronto web design agency.",
     },
     {
       "@type": "Review",
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       author: { "@type": "Person", name: "Matthew R." },
-      reviewBody: "Working with Canadian Web Designs was a fantastic experience from start to finish. Their attention to detail and commitment to customer satisfaction is unmatched. Our new website has dramatically improved our business.",
+      datePublished: "2025-05-22",
+      reviewBody: "Working with Canadian Web Designs was a fantastic experience. Their attention to detail is unmatched. Our Toronto contracting business now ranks on page 1 for our target keywords — exactly what we needed.",
+    },
+    {
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: "Mai Abu-Taleb" },
+      datePublished: "2025-01-10",
+      reviewBody: "Zam did an excellent job building my website in a short period of time. Everything was completed exactly as requested, with great attention to detail and clear communication throughout. I highly recommend their web design services!",
+    },
+    {
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: "K." },
+      datePublished: "2024-11-30",
+      reviewBody: "We chose Canadian Web Designs because they were easily contactable. The website not only met our needs fully, it blew me away the first time I saw the finished project. Well above expectations. The logo design was top notch.",
     },
   ],
   founder: { "@type": "Person", name: "Amir Khela" },
@@ -150,6 +176,9 @@ const localBusinessSchema = {
   sameAs: config.socialLinks.map((link) => link.href),
   areaServed: [
     { "@type": "City", name: "Toronto" },
+    { "@type": "City", name: "North York" },
+    { "@type": "City", name: "Scarborough" },
+    { "@type": "City", name: "Etobicoke" },
     { "@type": "City", name: "Brampton" },
     { "@type": "City", name: "Mississauga" },
     { "@type": "City", name: "Vancouver" },

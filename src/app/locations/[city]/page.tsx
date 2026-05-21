@@ -335,6 +335,40 @@ export default function LocationPage({ params }: { params: { city: string } }) {
         </div>
       </section>
 
+      {/* ─── RELATED CITIES ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Also serving across Canada — including our primary market:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {params.city !== "toronto" && (
+              <Link
+                href="/locations/toronto"
+                className="px-4 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200"
+                style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
+              >
+                Web Design Toronto ↗
+              </Link>
+            )}
+            {[
+              { name: "Mississauga", slug: "mississauga" },
+              { name: "Brampton", slug: "brampton" },
+              { name: "Vancouver", slug: "vancouver" },
+              { name: "Calgary", slug: "calgary" },
+              { name: "Ottawa", slug: "ottawa" },
+              { name: "Edmonton", slug: "edmonton" },
+            ].filter((c) => c.slug !== params.city).map((c) => (
+              <Link
+                key={c.slug}
+                href={`/locations/${c.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200"
+              >
+                {c.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA BAND ─── */}
       <section className="relative overflow-hidden py-20"
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}>

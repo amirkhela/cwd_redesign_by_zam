@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getConfig } from "@/lib/client-config";
@@ -8,6 +9,19 @@ import GoogleReviews from "@/components/GoogleReviews";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const config = getConfig();
+
+export const metadata: Metadata = {
+  title: "Web Design Toronto & Across Canada | Canadian Web Designs",
+  description:
+    `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across Canada. Custom websites, local SEO & digital marketing that drives real revenue. Free quote — ${config.phone}.`,
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Web Design Toronto & Across Canada | Canadian Web Designs",
+    description: `${config.reviewCount}+ five-star reviews. Custom Toronto websites built to rank on Google & convert visitors. Free consultation.`,
+    url: `https://${config.domain}`,
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Toronto — Canadian Web Designs" }],
+  },
+};
 
 const services = [
   {
@@ -187,14 +201,14 @@ export default function HomePage() {
                   style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
                 />
                 <span className="text-white/80 text-sm font-medium tracking-wide">
-                  Canada&rsquo;s Most Trusted Web Design Agency
+                  Toronto&rsquo;s Top-Rated Web Design Agency &middot; Serving All of Canada
                 </span>
               </div>
 
               <h1 className="hero-fade-up-1 font-black text-white leading-tight mb-6"
                 style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", lineHeight: 1.05 }}>
-                Web Design &amp; Digital Marketing{" "}<br />
-                <span className="gradient-text-animated">That Makes You Money</span>
+                Web Design Toronto{" "}<br />
+                <span className="gradient-text-animated">&amp; Across Canada</span>
               </h1>
 
               <p className="hero-fade-up-2 text-lg text-white leading-relaxed max-w-lg mb-10">
