@@ -18,7 +18,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "How much does logo design cost in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Our logo design packages start at $299 for a professional logo with 3 concepts. Full brand identity packages (logo, colours, typography, brand guidelines) start at $799. All designs are delivered in vector format for unlimited scalability." },
+      acceptedAnswer: { "@type": "Answer", text: "Cost depends on the scope — a standalone logo vs. a full brand identity package are very different engagements. Contact us for a free quote and we'll scope the right package for your business." },
     },
     {
       "@type": "Question",
@@ -37,28 +37,6 @@ const faqSchema = {
     },
   ],
 };
-
-const packages = [
-  {
-    name: "Logo",
-    price: "$299",
-    ideal: "New businesses needing a logo",
-    features: ["3 logo concepts", "2 revision rounds", "Vector files (AI, EPS, SVG)", "PNG & JPG exports", "Black/white variations"],
-  },
-  {
-    name: "Brand Identity",
-    price: "$799",
-    ideal: "Businesses building a full brand",
-    features: ["Logo + colour palette", "Typography selection", "Brand guidelines PDF", "Business card design", "Social media kit", "Unlimited revisions"],
-    highlight: true,
-  },
-  {
-    name: "Marketing Suite",
-    price: "$1,499",
-    ideal: "Established brands needing marketing assets",
-    features: ["Full brand identity", "Brochure or flyer design", "Email template design", "Infographic creation", "Banner ads (3 sizes)", "Print-ready files included"],
-  },
-];
 
 const process = [
   { step: "01", title: "Brief & Discovery", body: "We learn your brand story, audience, and competitors. You fill out a simple design brief — the clearer your vision, the better the first concepts." },
@@ -101,42 +79,20 @@ export default function ServicePage() {
             ))}
           </div>
 
-          {/* Pricing */}
-          <div className="text-center mb-10">
-            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Graphic Design Pricing</h3>
-            <p className="text-gray-500 max-w-xl mx-auto">Transparent, flat-rate pricing. No hourly billing, no surprise invoices. All packages include vector source files and a satisfaction guarantee.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`rounded-2xl p-8 border-2 flex flex-col ${pkg.highlight ? "border-[#00AADF] shadow-lg shadow-[#00AADF]/10" : "border-gray-100"}`}
-                style={pkg.highlight ? { background: "linear-gradient(135deg, #f0fbff, #fff)" } : {}}
-              >
-                {pkg.highlight && (
-                  <span className="inline-block bg-[#00AADF] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">Most Popular</span>
-                )}
-                <h4 className="text-xl font-black text-gray-900 mb-1">{pkg.name}</h4>
-                <p className="text-sm text-gray-400 mb-4">{pkg.ideal}</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-black text-gray-900">{pkg.price}</span>
-                </div>
-                <ul className="space-y-3 flex-1 mb-8">
-                  {pkg.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
-                      <span className="text-[#00AADF] font-bold mt-0.5">✓</span> {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className={`text-center py-3 px-6 rounded-xl font-bold text-sm transition-all duration-200 ${pkg.highlight ? "bg-[#00AADF] text-white hover:opacity-90" : "border-2 border-gray-200 text-gray-700 hover:border-[#00AADF] hover:text-[#00AADF]"}`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
+          {/* CTA */}
+          <div className="text-center mb-14">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Ready to Elevate Your Brand?</h3>
+            <p className="text-gray-500 max-w-xl mx-auto mb-8">Whether you need a logo, a full brand identity, or marketing materials — we&apos;ll scope the right package for your goals. Get a free quote with no obligation.</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold rounded-xl text-base transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
+            >
+              Request a Free Quote
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
 
           {/* Stats + Why section */}

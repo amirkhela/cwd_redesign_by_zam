@@ -19,7 +19,7 @@ const cityContent: Record<string, {
     industries: ["Healthcare & Clinics", "Law Firms", "Real Estate", "Restaurants & Hospitality", "Contractors & Trades", "Retail & eCommerce"],
     faq: [
       { q: "How long does it take to rank in Toronto?", a: "For competitive Toronto keywords ('web design toronto', 'lawyer toronto'), expect 4–8 months of consistent SEO. For less competitive long-tail terms and location-specific searches, we often see movement in 6–12 weeks." },
-      { q: "Do you work with small businesses in Toronto?", a: "Absolutely — the majority of our clients are small to mid-size Toronto businesses. We have packages starting at $1,500 for a custom website and SEO-ready launch." },
+      { q: "Do you work with small businesses in Toronto?", a: "Absolutely — the majority of our clients are small to mid-size Toronto businesses. Every project is fully custom and SEO-ready from day one. Contact us for a free quote." },
       { q: "Can you help my Toronto business show up in Google Maps?", a: "Yes. Google Business Profile optimization is included in all our Toronto SEO packages. We optimize your listing, build local citations, and help you generate more reviews to dominate the local pack." },
     ],
   },
@@ -29,7 +29,7 @@ const cityContent: Record<string, {
     industries: ["Tech & Software", "Retail & Shopping", "Healthcare & Wellness", "Restaurants & Food", "Contractors & Construction", "Education & Training"],
     faq: [
       { q: "Why should I choose a web design agency that knows Burnaby?", a: "Local market knowledge matters. We know that Burnaby searches often compete with Vancouver results — so we build geo-targeted content and local citations specifically for Burnaby neighbourhoods like Brentwood, Metrotown, and Lougheed." },
-      { q: "What's the cost of a website for a Burnaby small business?", a: "Most Burnaby small business websites run $1,500–$5,000 depending on complexity. We offer transparent pricing with no hidden fees — and all sites include SEO optimization from day one." },
+      { q: "What's the cost of a website for a Burnaby small business?", a: "Cost depends on your scope — number of pages, features, and integrations. We provide free, no-obligation quotes with no hidden fees, and all sites include SEO optimization from day one." },
       { q: "How quickly can you rank my Burnaby business on Google?", a: "Burnaby has relatively low keyword difficulty compared to Vancouver. Most of our Burnaby clients see meaningful ranking improvements within 30–60 days for location-specific searches." },
     ],
   },
@@ -40,7 +40,7 @@ const cityContent: Record<string, {
     faq: [
       { q: "Can you help my Surrey business rank above competitors in Google?", a: "Yes — Surrey keywords like 'web design surrey' and '[service] surrey' have relatively low difficulty. With proper on-page optimization and local SEO, most Surrey businesses see page 1 movement within 60–90 days." },
       { q: "Do you build websites for Surrey trades and contractors?", a: "Trades are one of our most common Surrey clients. We build fast-loading, mobile-first sites with click-to-call, quote forms, and Google Maps integration — everything a Surrey contractor needs to win more jobs online." },
-      { q: "Do you offer ongoing SEO for Surrey businesses?", a: "Yes — we offer monthly SEO retainers starting at $500/month that include ranking reports, content updates, citation building, and Google Business Profile management for Surrey businesses." },
+      { q: "Do you offer ongoing SEO for Surrey businesses?", a: "Yes — we offer monthly SEO retainers that include ranking reports, content updates, citation building, and Google Business Profile management for Surrey businesses. Contact us for a custom quote." },
     ],
   },
   kitchener: {
@@ -60,7 +60,7 @@ const cityContent: Record<string, {
     faq: [
       { q: "How important is it to include 'Ontario' in SEO for London businesses?", a: "Critical. Google often confuses London, ON with London, UK. We build geo-signals into every page — using 'London, Ontario', schema markup with province data, and local citations — to ensure your site ranks in the right market." },
       { q: "Do you work with healthcare businesses in London, ON?", a: "Yes — healthcare is one of our most common London verticals. We understand PIPEDA compliance requirements and build clinic, dental, and medical websites that are professional, accessible, and optimized for local search." },
-      { q: "What does a website cost for a London Ontario small business?", a: "Most London small business websites are $1,500–$4,500. We provide detailed quotes with no surprise costs — and all sites include mobile optimization, SEO foundation, and Google Analytics setup." },
+      { q: "What does a website cost for a London Ontario small business?", a: "Every project is scoped individually. We provide detailed quotes with no surprise costs — and all sites include mobile optimization, SEO foundation, and Google Analytics setup." },
     ],
   },
   brampton: {
@@ -110,7 +110,7 @@ const cityContent: Record<string, {
     faq: [
       { q: "Why is hyper-local SEO important for North York businesses?", a: "North York searches are often neighbourhood-specific — 'dentist near Yonge and Sheppard', 'contractor North York', etc. We optimize for these hyper-local queries that have high buyer intent and lower competition than broad Toronto keywords." },
       { q: "How fast can a North York business rank on Google?", a: "North York keywords have very low difficulty — we've seen new clients reach page 1 for North York-specific searches within 30–45 days of launch with proper on-page SEO and Google Business Profile optimization." },
-      { q: "Do you offer website packages for North York small businesses?", a: "Yes — we have packages starting at $1,500 for small North York businesses that include custom design, mobile optimization, local SEO setup, and Google Analytics. No hidden fees." },
+      { q: "Do you offer website packages for North York small businesses?", a: "Yes — we build fully custom websites for North York businesses that include custom design, mobile optimization, local SEO setup, and Google Analytics. No hidden fees — contact us for a free quote." },
     ],
   },
 };

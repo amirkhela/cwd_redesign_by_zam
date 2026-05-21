@@ -23,7 +23,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "How much does website maintenance cost in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Our maintenance packages start at $99/month for basic care. Business plans start at $199/month and include content updates and priority support. We offer flexible plans with no long-term contracts." },
+      acceptedAnswer: { "@type": "Answer", text: "Cost depends on your site's size, platform, and the level of support you need. We offer flexible month-to-month plans with no long-term contracts — contact us for a free quote." },
     },
     {
       "@type": "Question",
@@ -37,31 +37,6 @@ const faqSchema = {
     },
   ],
 };
-
-const packages = [
-  {
-    name: "Basic Care",
-    price: "$99",
-    period: "/mo",
-    ideal: "Simple brochure sites",
-    features: ["Monthly CMS/plugin updates", "Daily cloud backups", "Uptime monitoring", "Monthly security scan", "Monthly status report"],
-  },
-  {
-    name: "Business",
-    price: "$199",
-    period: "/mo",
-    ideal: "Active business websites",
-    features: ["Weekly updates & backups", "Content updates (2 hrs/mo)", "Performance optimization", "Priority email support", "Speed & Core Web Vitals check", "Monthly report + call"],
-    highlight: true,
-  },
-  {
-    name: "E-Commerce",
-    price: "$349",
-    period: "/mo",
-    ideal: "Online stores & high-traffic sites",
-    features: ["Daily updates & backups", "Unlimited content updates", "WooCommerce / Shopify support", "24/7 downtime alerting", "Dedicated support channel", "Quarterly strategy review"],
-  },
-];
 
 const whyItems = [
   { icon: "🔒", title: "Security Threats Are Constant", body: "Over 30,000 websites are hacked every day. Outdated plugins and CMS software are the #1 attack vector. Regular updates are the single most effective security measure you can take." },
@@ -99,43 +74,20 @@ export default function ServicePage() {
             ))}
           </div>
 
-          {/* Pricing */}
-          <div className="text-center mb-10">
-            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Website Maintenance Plans</h3>
-            <p className="text-gray-500 max-w-xl mx-auto">Month-to-month plans for Canadian businesses. No lock-in contracts, no setup fees. We maintain WordPress, Shopify, Webflow, and custom-built sites.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`rounded-2xl p-8 border-2 flex flex-col ${pkg.highlight ? "border-[#00AADF] shadow-lg shadow-[#00AADF]/10" : "border-gray-100"}`}
-                style={pkg.highlight ? { background: "linear-gradient(135deg, #f0fbff, #fff)" } : {}}
-              >
-                {pkg.highlight && (
-                  <span className="inline-block bg-[#00AADF] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">Most Popular</span>
-                )}
-                <h4 className="text-xl font-black text-gray-900 mb-1">{pkg.name}</h4>
-                <p className="text-sm text-gray-400 mb-4">{pkg.ideal}</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-black text-gray-900">{pkg.price}</span>
-                  <span className="text-gray-400 text-sm">{pkg.period}</span>
-                </div>
-                <ul className="space-y-3 flex-1 mb-8">
-                  {pkg.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
-                      <span className="text-[#00AADF] font-bold mt-0.5">✓</span> {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className={`text-center py-3 px-6 rounded-xl font-bold text-sm transition-all duration-200 ${pkg.highlight ? "bg-[#00AADF] text-white hover:opacity-90" : "border-2 border-gray-200 text-gray-700 hover:border-[#00AADF] hover:text-[#00AADF]"}`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
+          {/* CTA */}
+          <div className="text-center mb-14">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Let&apos;s Protect Your Website</h3>
+            <p className="text-gray-500 max-w-xl mx-auto mb-8">We maintain WordPress, Shopify, Webflow, and custom-built sites. Month-to-month, no setup fees. Tell us about your site and we&apos;ll recommend the right plan.</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold rounded-xl text-base transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
+            >
+              Request a Free Quote
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
 
           {/* Stats */}

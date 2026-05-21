@@ -9,7 +9,7 @@ const config = getConfig();
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Answers to the most common questions about web design, SEO, and digital marketing services at Canadian Web Designs. Learn about pricing, timelines, and more.",
+  description: "Answers to the most common questions about web design, SEO, and digital marketing services at Canadian Web Designs. Learn about our process, timelines, and more.",
   alternates: { canonical: "/faq" },
 };
 
@@ -30,7 +30,7 @@ const faqs = [
   { q: "Do you build websites on WordPress?", a: "Yes — we work with WordPress, as well as custom Next.js builds and other modern platforms. We recommend the stack that best fits your budget, goals, and technical requirements." },
   { q: "Can you integrate a booking system into my website?", a: "Absolutely. We integrate booking systems, appointment schedulers, and reservation tools into websites for healthcare, hospitality, professional services, and other industries." },
   { q: "Do you offer bilingual (English/French) websites?", a: "Yes — we can build bilingual websites with English and French content. All our sites include proper hreflang tags and language signals for Canadian bilingual SEO." },
-  { q: "What makes Canadian Web Designs different from other agencies?", a: "We're 100% Canadian-owned, with a 25+ person team and 180+ five-star reviews. We offer flat-rate pricing with no hidden fees, no long-term lock-in contracts, and direct access to your project manager throughout the entire process." },
+  { q: "What makes Canadian Web Designs different from other agencies?", a: "We're 100% Canadian-owned, with a 25+ person team and 180+ five-star reviews. We offer no hidden fees, no long-term lock-in contracts, and direct access to your project manager throughout the entire process." },
   { q: "How many clients have you worked with?", a: "We've completed 500+ projects since 2014, serving businesses across 24+ cities in Canada — from solo entrepreneurs to established companies in healthcare, real estate, trades, and retail." },
 ];
 

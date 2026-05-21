@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does web design cost in Toronto?",
-    a: "Web design in Toronto typically ranges from $1,499 for a professional 5-page site to $3,499+ for a full-featured business website with blog, SEO integration, and Google Ads landing pages. Enterprise and e-commerce sites with complex functionality start at $5,000+. Canadian Web Designs offers flat-rate, transparent pricing with no hidden fees — and every package includes mobile optimization, on-page SEO, and Google Analytics setup.",
+    a: "Cost depends on the scope — the number of pages, features, and level of customization. We provide free, no-obligation quotes tailored to your specific goals. Every project includes mobile optimization, on-page SEO, and Google Analytics setup.",
   },
   {
     q: "How long does it take to rank on Google in Toronto?",
@@ -36,7 +36,7 @@ const faq = [
   },
   {
     q: "Do you work with small businesses in Toronto?",
-    a: "The majority of our Toronto clients are small and medium businesses — trades, clinics, law firms, restaurants, and professional services. Our most popular package starts at $1,499 and includes a fully custom website (no templates), mobile optimization, local SEO setup, and 30 days of post-launch support. We've built websites for hundreds of Toronto SMBs across every major neighbourhood and industry.",
+    a: "The majority of our Toronto clients are small and medium businesses — trades, clinics, law firms, restaurants, and professional services. Every project is fully custom (no templates) and includes mobile optimization, local SEO setup, and 30 days of post-launch support. We've built websites for hundreds of Toronto SMBs across every major neighbourhood and industry.",
   },
   {
     q: "Can you help my Toronto business show up in Google Maps?",
@@ -157,57 +157,6 @@ const TORONTO_INDUSTRIES = [
   { name: "Retail & eCommerce", icon: "🛍️" },
   { name: "Financial Services", icon: "💼" },
   { name: "Education & Training", icon: "🎓" },
-];
-
-const PRICING = [
-  {
-    name: "Starter",
-    price: "$1,499",
-    best: "Small businesses & service providers",
-    features: [
-      "5-page custom website",
-      "Mobile-first responsive design",
-      "On-page SEO foundation",
-      "Google Analytics + Search Console",
-      "Contact form + click-to-call",
-      "SSL certificate included",
-      "30-day post-launch support",
-    ],
-    cta: "Get Started",
-    highlight: false,
-  },
-  {
-    name: "Professional",
-    price: "$3,499",
-    best: "Growing Toronto businesses",
-    features: [
-      "10-page custom website",
-      "Blog & content management",
-      "Advanced local SEO setup",
-      "Google Business Profile optimization",
-      "Google Ads landing page",
-      "Speed optimization (Core Web Vitals)",
-      "60-day post-launch support",
-    ],
-    cta: "Most Popular",
-    highlight: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    best: "E-commerce & large businesses",
-    features: [
-      "Unlimited pages",
-      "E-commerce (Shopify / WooCommerce)",
-      "Full SEO & content strategy",
-      "Google Ads campaign setup",
-      "Dedicated project manager",
-      "Priority support & SLA",
-      "Ongoing retainer available",
-    ],
-    cta: "Get a Quote",
-    highlight: false,
-  },
 ];
 
 export default function TorontoPage() {
@@ -458,68 +407,26 @@ export default function TorontoPage() {
         </div>
       </section>
 
-      {/* ─── PRICING ─── */}
+      {/* ─── CTA ─── */}
       <section className="py-16 bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12 reveal">
-            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Transparent Pricing</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">
-              Web Design Toronto — Flat-Rate Packages, No Hidden Fees
-            </h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">
-              All packages include custom design (no templates), mobile optimization, on-page SEO, and Google Analytics setup.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {PRICING.map((plan, i) => (
-              <div
-                key={plan.name}
-                className={`rounded-2xl p-8 reveal border transition-all duration-300 ${plan.highlight
-                  ? "border-[#00AADF] shadow-xl"
-                  : "border-gray-200 hover:border-[#00AADF]/40 hover:shadow-md"}`}
-                style={{
-                  background: plan.highlight ? "linear-gradient(135deg, #f0faff, #ffffff)" : "#ffffff",
-                  boxShadow: plan.highlight ? "0 8px 32px rgba(0,170,223,0.18)" : "0 2px 16px rgba(0,0,0,0.05)",
-                  transitionDelay: `${i * 0.1}s`,
-                }}
-              >
-                {plan.highlight && (
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold text-white mb-4"
-                    style={{ background: "#00AADF" }}>
-                    ★ Most Popular in Toronto
-                  </div>
-                )}
-                <h3 className="text-xl font-black text-gray-900 mb-1">{plan.name}</h3>
-                <p className="text-gray-400 text-sm mb-4">Best for: {plan.best}</p>
-                <p className="text-4xl font-black text-gray-900 mb-6">
-                  {plan.price}
-                  {plan.price !== "Custom" && <span className="text-base font-normal text-gray-400"> one-time</span>}
-                </p>
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2.5 text-sm text-gray-600">
-                      <svg className="w-4 h-4 text-[#00AADF] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 ${plan.highlight
-                    ? "text-white hover:opacity-90"
-                    : "border-2 border-[#00AADF] text-[#00AADF] hover:bg-[#00AADF] hover:text-white"}`}
-                  style={plan.highlight ? { background: "linear-gradient(135deg, #003B6F, #00AADF)" } : {}}
-                >
-                  {plan.cta === "Most Popular" ? "Get Started" : plan.cta}
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </Link>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8 text-center reveal">
+          <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Get Started</span>
+          <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">
+            Ready to Grow Your Toronto Business Online?
+          </h2>
+          <p className="text-gray-500 max-w-xl mx-auto mb-8">
+            Every project is custom-scoped — no templates, no guesswork. Tell us about your Toronto business and we&apos;ll send you a free, no-obligation quote within 24 hours.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold rounded-xl text-base transition-all duration-200 hover:opacity-90"
+            style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
+          >
+            Request a Free Quote
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 

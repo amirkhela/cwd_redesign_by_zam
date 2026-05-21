@@ -7,7 +7,7 @@ const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
   title: "SEO Services Canada | Affordable Local SEO for Canadian Businesses",
-  description: "Affordable SEO services for Canadian businesses. We offer local SEO in Toronto, Calgary, Vancouver and more — transparent pricing, no contracts, real results.",
+  description: "Affordable SEO services for Canadian businesses. We offer local SEO in Toronto, Calgary, Vancouver and more — no contracts, real results. Get a free quote.",
   alternates: { canonical: "/services/seo" },
 };
 
@@ -49,75 +49,12 @@ const localSeoContent = {
     { name: "Ottawa", url: "/locations/ottawa" },
     { name: "Hamilton", url: "/locations/hamilton" },
   ],
-  packages: [
-    {
-      name: "Starter",
-      price: "$399",
-      period: "/mo",
-      ideal: "New businesses & startups",
-      features: ["5 target keywords", "On-page optimization", "Google Business Profile setup", "Monthly ranking report"],
-    },
-    {
-      name: "Growth",
-      price: "$799",
-      period: "/mo",
-      ideal: "SMBs ready to compete",
-      features: ["20 target keywords", "Technical SEO audit", "Local citation building", "Content creation (2 posts/mo)", "Competitor gap analysis"],
-      highlight: true,
-    },
-    {
-      name: "Authority",
-      price: "$1,499",
-      period: "/mo",
-      ideal: "Established businesses scaling fast",
-      features: ["Unlimited keywords", "Full site technical SEO", "Link building campaign", "4 blog posts/mo", "Dedicated SEO strategist"],
-    },
-  ],
-};
-
-const offerSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Local SEO Services Canada",
-  provider: {
-    "@type": "Organization",
-    name: "Canadian Web Designs",
-    url: "https://canadianwebdesigns.ca",
-  },
-  areaServed: "Canada",
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Starter SEO Package",
-      price: "399",
-      priceCurrency: "CAD",
-      priceSpecification: { "@type": "UnitPriceSpecification", unitText: "month" },
-      description: "5 target keywords, on-page optimization, Google Business Profile setup, monthly ranking report",
-    },
-    {
-      "@type": "Offer",
-      name: "Growth SEO Package",
-      price: "799",
-      priceCurrency: "CAD",
-      priceSpecification: { "@type": "UnitPriceSpecification", unitText: "month" },
-      description: "20 target keywords, technical SEO audit, local citation building, content creation, competitor gap analysis",
-    },
-    {
-      "@type": "Offer",
-      name: "Authority SEO Package",
-      price: "1499",
-      priceCurrency: "CAD",
-      priceSpecification: { "@type": "UnitPriceSpecification", unitText: "month" },
-      description: "Unlimited keywords, full site technical SEO, link building campaign, 4 blog posts/mo, dedicated SEO strategist",
-    },
-  ],
 };
 
 export default function ServicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }} />
       <ServicePageTemplate service={service} />
 
       {/* ── Local SEO Services Section ── */}
@@ -145,43 +82,20 @@ export default function ServicePage() {
             ))}
           </div>
 
-          {/* Affordable SEO Packages */}
-          <div className="text-center mb-10">
-            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Affordable SEO Packages</h3>
-            <p className="text-gray-500 max-w-xl mx-auto">Transparent, flat-rate pricing — no hidden fees, no lock-in contracts. Every package includes monthly reporting and a dedicated SEO point of contact.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-            {localSeoContent.packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`rounded-2xl p-8 border-2 flex flex-col ${pkg.highlight ? "border-[#00AADF] shadow-lg shadow-[#00AADF]/10" : "border-gray-100"}`}
-                style={pkg.highlight ? { background: "linear-gradient(135deg, #f0fbff, #fff)" } : {}}
-              >
-                {pkg.highlight && (
-                  <span className="inline-block bg-[#00AADF] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">Most Popular</span>
-                )}
-                <h4 className="text-xl font-black text-gray-900 mb-1">{pkg.name}</h4>
-                <p className="text-sm text-gray-400 mb-4">{pkg.ideal}</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-black text-gray-900">{pkg.price}</span>
-                  <span className="text-gray-400 text-sm">{pkg.period}</span>
-                </div>
-                <ul className="space-y-3 flex-1 mb-8">
-                  {pkg.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
-                      <span className="text-[#00AADF] font-bold mt-0.5">✓</span> {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className={`text-center py-3 px-6 rounded-xl font-bold text-sm transition-all duration-200 ${pkg.highlight ? "bg-[#00AADF] text-white hover:opacity-90" : "border-2 border-gray-200 text-gray-700 hover:border-[#00AADF] hover:text-[#00AADF]"}`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
+          {/* CTA */}
+          <div className="text-center mb-14">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Ready to Grow Your Organic Traffic?</h3>
+            <p className="text-gray-500 max-w-xl mx-auto mb-8">Every SEO engagement is scoped to your market, goals, and competition. Get a free strategy call and custom quote — no contracts, no lock-in.</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold rounded-xl text-base transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
+            >
+              Request a Free Quote
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">

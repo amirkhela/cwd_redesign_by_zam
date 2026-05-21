@@ -18,7 +18,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "How much does a professional website cost in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Our custom websites typically range from $1,500 to $10,000+ depending on the scope, features, and complexity. We offer transparent, flat-rate pricing with no hidden fees. Contact us for a free quote tailored to your business." },
+      acceptedAnswer: { "@type": "Answer", text: "Every project is scoped individually — cost depends on the number of pages, features, and complexity. Contact us for a free, no-obligation quote tailored to your business." },
     },
     {
       "@type": "Question",
@@ -42,28 +42,6 @@ const faqSchema = {
     },
   ],
 };
-
-const packages = [
-  {
-    name: "Starter",
-    price: "$1,499",
-    ideal: "New businesses & startups",
-    features: ["Up to 5 pages", "Mobile-responsive design", "Contact form integration", "Basic SEO setup", "1-month support"],
-  },
-  {
-    name: "Business",
-    price: "$3,499",
-    ideal: "Growing SMBs",
-    features: ["Up to 15 pages", "Custom design + branding", "CMS integration (WordPress)", "Advanced SEO + speed optimization", "E-commerce ready", "3-month support"],
-    highlight: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    ideal: "Large orgs & complex projects",
-    features: ["Unlimited pages", "Full custom Next.js / React build", "API & third-party integrations", "Performance SLA", "Dedicated project manager", "Ongoing retainer available"],
-  },
-];
 
 const process = [
   { step: "01", title: "Discovery Call", body: "We learn your business goals, audience, and competitors. You get a custom project brief with scope, timeline, and flat-rate quote — no surprises." },
@@ -117,42 +95,20 @@ export default function ServicePage() {
             ))}
           </div>
 
-          {/* Pricing */}
-          <div className="text-center mb-10">
-            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Web Design Pricing in Canada</h3>
-            <p className="text-gray-500 max-w-xl mx-auto">Flat-rate pricing — no hourly billing, no hidden fees. Every project includes mobile-responsive design, SEO setup, and a dedicated project manager.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`rounded-2xl p-8 border-2 flex flex-col ${pkg.highlight ? "border-[#00AADF] shadow-lg shadow-[#00AADF]/10" : "border-gray-100"}`}
-                style={pkg.highlight ? { background: "linear-gradient(135deg, #f0fbff, #fff)" } : {}}
-              >
-                {pkg.highlight && (
-                  <span className="inline-block bg-[#00AADF] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">Most Popular</span>
-                )}
-                <h4 className="text-xl font-black text-gray-900 mb-1">{pkg.name}</h4>
-                <p className="text-sm text-gray-400 mb-4">{pkg.ideal}</p>
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-black text-gray-900">{pkg.price}</span>
-                </div>
-                <ul className="space-y-3 flex-1 mb-8">
-                  {pkg.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
-                      <span className="text-[#00AADF] font-bold mt-0.5">✓</span> {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className={`text-center py-3 px-6 rounded-xl font-bold text-sm transition-all duration-200 ${pkg.highlight ? "bg-[#00AADF] text-white hover:opacity-90" : "border-2 border-gray-200 text-gray-700 hover:border-[#00AADF] hover:text-[#00AADF]"}`}
-                >
-                  Get a Free Quote
-                </Link>
-              </div>
-            ))}
+          {/* CTA */}
+          <div className="text-center mb-14">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Ready to Build Your Website?</h3>
+            <p className="text-gray-500 max-w-xl mx-auto mb-8">Every project is scoped individually — no templates, no guesswork. Tell us about your business and we&apos;ll send you a free, no-obligation quote.</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold rounded-xl text-base transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
+            >
+              Request a Free Quote
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
 
           {/* Cities + Stats */}
