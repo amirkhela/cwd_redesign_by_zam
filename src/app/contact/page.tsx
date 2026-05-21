@@ -57,8 +57,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <GoogleReviews />
-
       {/* =============================================
           FORM + INFO
           ============================================= */}
@@ -220,6 +218,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
     </>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 type Project = {
   name: string;
@@ -14,29 +13,29 @@ type Project = {
 const projects: Project[] = [
   // ── Construction & Trades ─────────────────────────────
   { name: "Gator Dumpster Services",      url: "gatordumpsterservices.com",         category: "Construction & Trades", localImage: "/portfolio/gator-dumpster.jpg" },
-  { name: "McLaren Masonry",              url: "mclarenmasonry.ca",                 category: "Construction & Trades", localImage: "/portfolio/mclaren-masonry.jpg" },
-  { name: "Heavy Iron Plant",             url: "heavyironplant.com",                category: "Construction & Trades", localImage: "/portfolio/heavy-iron-plant.jpg" },
-  { name: "Emergency Plumbing Toronto",   url: "emergencyplumbingtoronto.com",      category: "Construction & Trades", localImage: "/portfolio/emergency-plumbing-toronto.jpg" },
-  { name: "Emergency Plumbing Markham",   url: "emergencyplumbingmarkham.com",      category: "Construction & Trades", localImage: "/portfolio/emergency-plumbing-markham.jpg" },
-  { name: "North 5 Contracting",          url: "north5contracting.ca",              category: "Construction & Trades", localImage: "/portfolio/north-5-contracting.jpg" },
-  { name: "AMAC Stucco",                  url: "amacstucco.ca",                     category: "Construction & Trades", localImage: "/portfolio/amac-stucco.jpg" },
-  { name: "D Squared Construction",       url: "dsquaredconstruction.ca",           category: "Construction & Trades", localImage: "/portfolio/d-squared-construction.jpg" },
+  { name: "McLaren Masonry",              url: "mclarenmasonry.ca",                 category: "Construction & Trades" },
+  { name: "Heavy Iron Plant",             url: "heavyironplant.com",                category: "Construction & Trades", localImage: "/portfolio/heavy-iron-plant.png" },
+  { name: "Emergency Plumbing Toronto",   url: "emergencyplumbingtoronto.com",      category: "Construction & Trades", localImage: "/portfolio/emergency-plumbing-toronto.png" },
+  { name: "Emergency Plumbing Markham",   url: "emergencyplumbingmarkham.com",      category: "Construction & Trades", localImage: "/portfolio/emergency-plumbing-markham.png" },
+  { name: "North 5 Contracting",          url: "north5contracting.ca",              category: "Construction & Trades", localImage: "/portfolio/north-5-contracting.png" },
+  { name: "AMAC Stucco",                  url: "amacstucco.ca",                     category: "Construction & Trades", localImage: "/portfolio/amac-stucco.png" },
+  { name: "D Squared Construction",       url: "dsquaredconstruction.ca",           category: "Construction & Trades", localImage: "/portfolio/d-squared-construction.png" },
   { name: "Awash Roofing",                url: "awashroofing.ca",                   category: "Construction & Trades", localImage: "/portfolio/awash-roofing.png" },
   { name: "Awash Construction",           url: "awashconstruction.com",             category: "Construction & Trades", localImage: "/portfolio/awash-construction.png" },
-  { name: "AD Plumbing Services",         url: "adplumbingservices.ca",             category: "Construction & Trades", localImage: "/portfolio/ad-plumbing-services.jpg" },
-  { name: "Stainless Industries",         url: "stainless-ind.com",                 category: "Construction & Trades", localImage: "/portfolio/stainless-industries.jpg" },
-  { name: "PD Door Systems",              url: "pddoorsystems.com",                 category: "Construction & Trades", localImage: "/portfolio/pd-door-systems.jpg" },
-  { name: "Meganet Electric",             url: "meganetelectric.ca",                category: "Construction & Trades", localImage: "/portfolio/meganet-electric.jpg" },
-  { name: "Tank X",                       url: "tankx.ca",                          category: "Construction & Trades", localImage: "/portfolio/tank-x.jpg" },
+  { name: "AD Plumbing Services",         url: "adplumbingservices.ca",             category: "Construction & Trades", localImage: "/portfolio/ad-plumbing-services.png" },
+  { name: "Stainless Industries",         url: "stainless-ind.com",                 category: "Construction & Trades", localImage: "/portfolio/stainless-industries.png" },
+  { name: "PD Door Systems",              url: "pddoorsystems.com",                 category: "Construction & Trades", localImage: "/portfolio/pd-door-systems.png" },
+  { name: "Meganet Electric",             url: "meganetelectric.ca",                category: "Construction & Trades", localImage: "/portfolio/meganet-electric.png" },
+  { name: "Tank X",                       url: "tankx.ca",                          category: "Construction & Trades", localImage: "/portfolio/tank-x.png" },
   { name: "Remove My Walls",              url: "removemywalls.ca",                  category: "Construction & Trades", localImage: "/portfolio/remove-my-walls.jpg" },
 
   // ── Home Services ──────────────────────────────────────
   { name: "Ewowzers Cleaning",            url: "ewowzerscleaning.com",              category: "Home Services", localImage: "/portfolio/ewowzers-cleaning.jpg" },
-  { name: "Springview Window Cleaning",   url: "springviewwindowcleaning.com",      category: "Home Services", localImage: "/portfolio/springview-window-cleaning.jpg" },
+  { name: "Springview Window Cleaning",   url: "springviewwindowcleaning.com",      category: "Home Services", localImage: "/portfolio/springview-window-cleaning.png" },
   { name: "Nicagon Cleaning Services",    url: "nicagoncleaningservices.ca",        category: "Home Services", localImage: "/portfolio/nicagon-cleaning-services.png" },
-  { name: "Homestone",                    url: "homestone.ca",                      category: "Home Services", localImage: "/portfolio/homestone.jpg" },
+  { name: "Homestone",                    url: "homestone.ca",                      category: "Home Services", localImage: "/portfolio/homestone.png" },
   { name: "Bird Sitting Brampton",        url: "birdsittingbrampton.ca",            category: "Home Services", localImage: "/portfolio/bird-sitting-brampton.png" },
-  { name: "Speed Boards",                 url: "speedboards.ca",                    category: "Home Services", localImage: "/portfolio/speed-boards.jpg" },
+  { name: "Speed Boards",                 url: "speedboards.ca",                    category: "Home Services", localImage: "/portfolio/speed-boards.png" },
 
   // ── Health & Wellness ──────────────────────────────────
   { name: "Rejuvenation by Dale",         url: "rejuvenationbydale.ca",             category: "Health & Wellness", localImage: "/portfolio/rejuvenation-by-dale.jpg" },
@@ -44,67 +43,67 @@ const projects: Project[] = [
   { name: "TCM Wellness",                 url: "tcmwellness.ca",                    category: "Health & Wellness", localImage: "/portfolio/tcm-wellness.jpg" },
   { name: "Fade Central",                 url: "fadecentral.ca",                    category: "Health & Wellness", localImage: "/portfolio/fade-central.jpg" },
   { name: "Esmas Essiac Tea",             url: "esmasessiac.ca",                    category: "Health & Wellness", localImage: "/portfolio/esmas-essiac-tea.jpg" },
-  { name: "Accelicare",                   url: "accelicare.com",                    category: "Health & Wellness", localImage: "/portfolio/accelicare.jpg" },
+  { name: "Accelicare",                   url: "accelicare.com",                    category: "Health & Wellness", localImage: "/portfolio/accelicare.png" },
   { name: "Cloud Pharmacy",               url: "cloudpharmacy.ca",                  category: "Health & Wellness", localImage: "/portfolio/cloud-pharmacy.png" },
   { name: "MedTech DIY",                  url: "medtechdiy.ca",                     category: "Health & Wellness", localImage: "/portfolio/medtech-diy.png" },
-  { name: "Timely Cares",                 url: "timelycares.com",                   category: "Health & Wellness", localImage: "/portfolio/timely-cares.jpg" },
+  { name: "Timely Cares",                 url: "timelycares.com",                   category: "Health & Wellness", localImage: "/portfolio/timely-cares.png" },
   { name: "Gently Touch Spa",             url: "gentlytouchspa.ca",                 category: "Health & Wellness", localImage: "/portfolio/gently-touch-spa.png" },
-  { name: "Serenity Saffron",             url: "serenitysaffron.com",               category: "Health & Wellness", localImage: "/portfolio/serenity-saffron.jpg" },
+  { name: "Serenity Saffron",             url: "serenitysaffron.com",               category: "Health & Wellness", localImage: "/portfolio/serenity-saffron.png" },
 
   // ── Food & Beverage ────────────────────────────────────
   { name: "EL Afrek Lounge",              url: "el-afriklounge.com",                category: "Food & Beverage", localImage: "/portfolio/el-afrek-lounge.jpg" },
-  { name: "Kozak Food",                   url: "kozakfood.com",                     category: "Food & Beverage", localImage: "/portfolio/kozak-food.jpg" },
-  { name: "Sufra Nuts",                   url: "sufranuts.com",                     category: "Food & Beverage", localImage: "/portfolio/sufra-nuts.jpg" },
-  { name: "Tealicious Tea Boutique",      url: "tealiciousteabouteaque.com",        category: "Food & Beverage", localImage: "/portfolio/tealicious-tea.jpg" },
+  { name: "Kozak Food",                   url: "kozakfood.com",                     category: "Food & Beverage", localImage: "/portfolio/kozak-food.png" },
+  { name: "Sufra Nuts",                   url: "sufranuts.com",                     category: "Food & Beverage", localImage: "/portfolio/sufra-nuts.png" },
+  { name: "Tealicious Tea Boutique",      url: "tealiciousteabouteaque.com",        category: "Food & Beverage" },
   { name: "AMX Kitchens",                 url: "amxkitchens.com",                   category: "Food & Beverage", localImage: "/portfolio/amx-kitchens.png" },
 
   // ── Transportation & Logistics ─────────────────────────
-  { name: "Taxi Halifax Airport",         url: "taxihalifaxairport.com",            category: "Transportation", localImage: "/portfolio/taxi-halifax-airport.jpg" },
+  { name: "Taxi Halifax Airport",         url: "taxihalifaxairport.com",            category: "Transportation", localImage: "/portfolio/taxi-halifax-airport.png" },
   { name: "Transnet Canada",              url: "transnetcanada.ca",                 category: "Transportation", localImage: "/portfolio/transnet-canada.png" },
-  { name: "Director TMS",                 url: "directortms.com",                   category: "Transportation", localImage: "/portfolio/director-tms.jpg" },
-  { name: "Worldwide White Glove",        url: "worldwidewhiteglove.ca",            category: "Transportation", localImage: "/portfolio/worldwide-white-glove.jpg" },
+  { name: "Director TMS",                 url: "directortms.com",                   category: "Transportation", localImage: "/portfolio/director-tms.png" },
+  { name: "Worldwide White Glove",        url: "worldwidewhiteglove.ca",            category: "Transportation", localImage: "/portfolio/worldwide-white-glove.png" },
 
   // ── Business & Professional ────────────────────────────
   { name: "MOS Solutions",                url: "mossolutions.ca",                   category: "Business & Professional", localImage: "/portfolio/mos-solutions.jpg" },
   { name: "Evolve Media Group",           url: "evolvemediagroup.ca",               category: "Business & Professional", localImage: "/portfolio/evolve-media-group.jpg" },
   { name: "SWJ Modern Creations",         url: "swjmoderncreations.ca",             category: "Business & Professional", localImage: "/portfolio/swj-modern-creations.jpg" },
   { name: "LHC Group",                    url: "lhcgroup.ca",                       category: "Business & Professional", localImage: "/portfolio/lhc-group.png" },
-  { name: "Instrumentum Group",           url: "instrumentumgroup.com",             category: "Business & Professional", localImage: "/portfolio/instrumentum-group.png" },
-  { name: "Shahgaldi Research Group",     url: "shahgaldiresearchgroup.ca",         category: "Business & Professional", localImage: "/portfolio/shahgaldi-research-group.jpg" },
+  { name: "Instrumentum Group",           url: "instrumentumgroup.com",             category: "Business & Professional" },
+  { name: "Shahgaldi Research Group",     url: "shahgaldiresearchgroup.ca",         category: "Business & Professional", localImage: "/portfolio/shahgaldi-research-group.png" },
   { name: "FOS Consulting",               url: "fosconsulting.ca",                  category: "Business & Professional", localImage: "/portfolio/fos-consulting.png" },
-  { name: "Toren Associates",             url: "torenassociates.com",               category: "Business & Professional", localImage: "/portfolio/toren-associates.jpg" },
-  { name: "Hi-Rise Financial",            url: "hirise-fp.com",                     category: "Business & Professional", localImage: "/portfolio/hi-rise-financial.jpg" },
-  { name: "Mr Bailiff Inc",               url: "mrbailiffinc.ca",                   category: "Business & Professional", localImage: "/portfolio/mr-bailiff-inc.jpg" },
-  { name: "Canada Tenant",                url: "canadatenant.ca",                   category: "Business & Professional", localImage: "/portfolio/canada-tenant.jpg" },
-  { name: "CILCO",                        url: "cilco.ca",                          category: "Business & Professional", localImage: "/portfolio/cilco.jpg" },
+  { name: "Toren Associates",             url: "torenassociates.com",               category: "Business & Professional", localImage: "/portfolio/toren-associates.png" },
+  { name: "Hi-Rise Financial",            url: "hirise-fp.com",                     category: "Business & Professional", localImage: "/portfolio/hi-rise-financial.png" },
+  { name: "Mr Bailiff Inc",               url: "mrbailiffinc.ca",                   category: "Business & Professional", localImage: "/portfolio/mr-bailiff-inc.png" },
+  { name: "Canada Tenant",                url: "canadatenant.ca",                   category: "Business & Professional", localImage: "/portfolio/canada-tenant.png" },
+  { name: "CILCO",                        url: "cilco.ca",                          category: "Business & Professional" },
   { name: "Contact Oscar",                url: "contactoscar.ca",                   category: "Business & Professional", localImage: "/portfolio/contact-oscar.png" },
-  { name: "Nicagon Security",             url: "nicagonsecurityservices.ca",        category: "Business & Professional", localImage: "/portfolio/nicagon-security.png" },
+  { name: "Nicagon Security",             url: "nicagonsecurityservices.ca",        category: "Business & Professional" },
   { name: "Vibe Lube",                    url: "vibelube.com",                      category: "Business & Professional" },
-  { name: "Royal Crown Plywood",          url: "royalcrownplywood.com",             category: "Business & Professional", localImage: "/portfolio/royal-crown-plywood.jpg" },
-  { name: "Walopus",                      url: "walopus.com",                       category: "Business & Professional", localImage: "/portfolio/walopus.jpg" },
+  { name: "Royal Crown Plywood",          url: "royalcrownplywood.com",             category: "Business & Professional", localImage: "/portfolio/royal-crown-plywood.png" },
+  { name: "Walopus",                      url: "walopus.com",                       category: "Business & Professional", localImage: "/portfolio/walopus.png" },
   { name: "Kratom Delivery Canada",       url: "kratomdeliverycanada.ca",           category: "Business & Professional", localImage: "/portfolio/kratom-delivery-canada.png" },
   { name: "Vape Central",                 url: "vapecentral.ca",                    category: "Business & Professional", localImage: "/portfolio/vape-central.png" },
 
   // ── Events & Entertainment ─────────────────────────────
   { name: "Supre Events",                 url: "supreevents.com",                   category: "Events & Entertainment", localImage: "/portfolio/supre-events.jpg" },
-  { name: "Tresolz",                      url: "tresolz.com",                       category: "Events & Entertainment", localImage: "/portfolio/tresolz.jpg" },
-  { name: "Rebirth Con",                  url: "rebirthcon.com",                    category: "Events & Entertainment", localImage: "/portfolio/rebirth-con.jpg" },
-  { name: "Palazzo Talenti",              url: "palazzotalenti.ca",                 category: "Events & Entertainment", localImage: "/portfolio/palazzo-talenti.jpg" },
-  { name: "Sima Flower Designer",         url: "simaflowerdesigner.com",            category: "Events & Entertainment", localImage: "/portfolio/sima-flower-designer.jpg" },
+  { name: "Tresolz",                      url: "tresolz.com",                       category: "Events & Entertainment", localImage: "/portfolio/tresolz.png" },
+  { name: "Rebirth Con",                  url: "rebirthcon.com",                    category: "Events & Entertainment", localImage: "/portfolio/rebirth-con.png" },
+  { name: "Palazzo Talenti",              url: "palazzotalenti.ca",                 category: "Events & Entertainment", localImage: "/portfolio/palazzo-talenti.png" },
+  { name: "Sima Flower Designer",         url: "simaflowerdesigner.com",            category: "Events & Entertainment", localImage: "/portfolio/sima-flower-designer.png" },
 
   // ── Education & Non-Profit ─────────────────────────────
   { name: "Sierra College of Business",   url: "sierracollegesl-edu.org",           category: "Education & Non-Profit", localImage: "/portfolio/sierra-college.jpg" },
   { name: "Audio Book Fanatic",           url: "audiobookfanatic.net",              category: "Education & Non-Profit", localImage: "/portfolio/audio-book-fanatic.jpg" },
-  { name: "Social Global Studies",        url: "socialglobalstudies.com",           category: "Education & Non-Profit", localImage: "/portfolio/social-global-studies.jpg" },
-  { name: "KAPMI Academy",                url: "kapmiacademy.com",                  category: "Education & Non-Profit", localImage: "/portfolio/kapmi-academy.jpg" },
-  { name: "Girl Impact",                  url: "girlimpact.ca",                     category: "Education & Non-Profit", localImage: "/portfolio/girl-impact.png" },
-  { name: "Jin Pin Sen",                  url: "jinpinsen.com",                     category: "Education & Non-Profit", localImage: "/portfolio/jin-pin-sen.jpg" },
+  { name: "Social Global Studies",        url: "socialglobalstudies.com",           category: "Education & Non-Profit", localImage: "/portfolio/social-global-studies.png" },
+  { name: "KAPMI Academy",                url: "kapmiacademy.com",                  category: "Education & Non-Profit" },
+  { name: "Girl Impact",                  url: "girlimpact.ca",                     category: "Education & Non-Profit" },
+  { name: "Jin Pin Sen",                  url: "jinpinsen.com",                     category: "Education & Non-Profit", localImage: "/portfolio/jin-pin-sen.png" },
 
   // ── Arts & Creative ────────────────────────────────────
   { name: "Kristina Blinova",             url: "photographicpoetry.ca",             category: "Arts & Creative", localImage: "/portfolio/kristina-blinova.jpg" },
   { name: "Sonia Aimy",                   url: "soniaaimy.com",                     category: "Arts & Creative", localImage: "/portfolio/sonia-aimy.jpg" },
-  { name: "The Art of Ronnie Simon",      url: "theartofronniesimon.ca",            category: "Arts & Creative", localImage: "/portfolio/art-of-ronnie-simon.jpg" },
-  { name: "Victoria Shuter",              url: "victoriashuter.com",                category: "Arts & Creative", localImage: "/portfolio/victoria-shuter.jpg" },
+  { name: "The Art of Ronnie Simon",      url: "theartofronniesimon.ca",            category: "Arts & Creative", localImage: "/portfolio/art-of-ronnie-simon.png" },
+  { name: "Victoria Shuter",              url: "victoriashuter.com",                category: "Arts & Creative", localImage: "/portfolio/victoria-shuter.png" },
 ];
 
 const CATEGORIES = [
@@ -156,21 +155,45 @@ function ProjectPlaceholder({ project }: { project: Project }) {
 
 function CardImage({ project }: { project: Project }) {
   const [errored, setErrored] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
-  if (project.localImage && !errored) {
-    return (
-      <Image
-        src={project.localImage}
-        alt={`${project.name} website designed by Canadian Web Designs`}
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-        onError={() => setErrored(true)}
-      />
-    );
+  if (!project.localImage || errored) {
+    return <ProjectPlaceholder project={project} />;
   }
 
-  return <ProjectPlaceholder project={project} />;
+  return (
+    <>
+      {!loaded && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(135deg, #0a1628 0%, #0d2040 100%)",
+          }}
+        />
+      )}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={project.localImage}
+        alt={`${project.name} website designed by Canadian Web Designs`}
+        onError={() => setErrored(true)}
+        onLoad={() => setLoaded(true)}
+        loading="eager"
+        decoding="async"
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center top",
+          transition: "transform 0.5s ease, opacity 0.3s ease",
+          opacity: loaded ? 1 : 0,
+        }}
+        className="group-hover:scale-[1.04]"
+      />
+    </>
+  );
 }
 
 export default function PortfolioGrid() {
@@ -261,9 +284,6 @@ export default function PortfolioGrid() {
                 <h2 className="text-white font-black text-xl">
                   {active === "All" ? "Our Work" : active}
                 </h2>
-                <p className="text-white/40 text-sm mt-0.5">
-                  {filtered.length} {filtered.length === 1 ? "project" : "projects"}
-                </p>
               </div>
               {active !== "All" && (
                 <button
