@@ -256,6 +256,8 @@ const nextConfig = {
       // ============================================
       // WordPress Infrastructure URLs
       // ============================================
+      // Preserve legacy logo path used by client sites
+      { source: "/wp-content/uploads/2019/07/cwd-white.png", destination: "/logos/cwd-white.png", permanent: false },
       {
         source: "/wp-admin/:path*",
         destination: "/",
