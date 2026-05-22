@@ -174,6 +174,11 @@ const nextConfig = {
       },
 
       // ============================================
+      // Old WordPress Portfolio URLs
+      // ============================================
+      { source: "/website-portfolio/:slug", destination: "/portfolio", permanent: true },
+
+      // ============================================
       // Old WordPress Landing Pages — redirect to service pages
       // ============================================
       { source: "/web-designers-near-me",          destination: "/services/web-design-development", permanent: true },
