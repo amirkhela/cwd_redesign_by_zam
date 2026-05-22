@@ -190,11 +190,6 @@ const nextConfig = {
       { source: "/seo/:city/", destination: "/locations/:city", permanent: true },
 
       // ============================================
-      // Old WooCommerce /items/ product URLs
-      // ============================================
-      { source: "/items/:path*", destination: "/", permanent: true },
-
-      // ============================================
       // Location Pages — /web-designs/:city → /locations/:city
       // ============================================
       {
