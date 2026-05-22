@@ -247,6 +247,11 @@ const nextConfig = {
         destination: "/blog/why-every-business-needs-a-mobile-first-website",
         permanent: true,
       },
+      // Slug-shortened blog posts (old WP slug → current slug)
+      { source: "/why-you-need-seo-in-your-business-in-2021",   destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
+      { source: "/why-you-need-seo-in-your-business-in-2021/",  destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
+      { source: "/why-you-need-pay-per-click-like-google-ads-marketing",  destination: "/blog/why-you-need-pay-per-click-like-google-ads", permanent: true },
+      { source: "/why-you-need-pay-per-click-like-google-ads-marketing/", destination: "/blog/why-you-need-pay-per-click-like-google-ads", permanent: true },
 
       // ============================================
       // WordPress Infrastructure URLs
