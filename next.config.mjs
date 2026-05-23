@@ -190,9 +190,18 @@ const nextConfig = {
 
       // ============================================
       // Old /seo/:city/ pages → /locations/:city
+      // (toronto excluded — has a dedicated /seo/toronto page)
       // ============================================
-      { source: "/seo/:city",  destination: "/locations/:city", permanent: true },
-      { source: "/seo/:city/", destination: "/locations/:city", permanent: true },
+      {
+        source: "/seo/:city(brampton|burnaby|victoria|surrey|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|barrie|london|kitchener|winnipeg|halifax|richmond-hill|markham|oakville|windsor|kingston|sudbury)",
+        destination: "/locations/:city",
+        permanent: true,
+      },
+      {
+        source: "/seo/:city(brampton|burnaby|victoria|surrey|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|barrie|london|kitchener|winnipeg|halifax|richmond-hill|markham|oakville|windsor|kingston|sudbury)/",
+        destination: "/locations/:city",
+        permanent: true,
+      },
 
       // ============================================
       // Location Pages — /web-designs/:city → /locations/:city
