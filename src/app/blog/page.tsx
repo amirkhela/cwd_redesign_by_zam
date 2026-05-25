@@ -15,12 +15,13 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const { page } = await searchParams;
   const currentPage = Math.max(1, parseInt(page || "1", 10));
   const isPaged = currentPage > 1;
+  const hasQuery = (q?.trim() ?? "").length > 0;
 
   return {
     title: "Blog | Web Design & SEO Tips",
     description: `Web design, SEO, and digital marketing tips from Canada's most trusted agency. Browse 160+ articles written by Canadian experts.`,
     alternates: { canonical: "/blog" },
-    ...(isPaged && { robots: { index: false, follow: true } }),
+    ...((isPaged || hasQuery) && { robots: { index: false, follow: true } }),
     openGraph: {
       title: "Blog | Web Design & SEO Tips — Canadian Web Designs",
       description: `Web design, SEO, and digital marketing tips from ${config.businessName}.`,
