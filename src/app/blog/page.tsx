@@ -11,23 +11,30 @@ import BlogSearchBox from "@/components/BlogSearchBox";
 const config = getConfig();
 const POSTS_PER_PAGE = 12;
 
-export const metadata: Metadata = {
-  title: "Blog | Web Design & SEO Tips",
-  description: `Web design, SEO, and digital marketing tips from Canada's most trusted agency. Browse 160+ articles written by Canadian experts.`,
-  alternates: { canonical: "/blog" },
-  openGraph: {
-    title: "Blog | Web Design & SEO Tips — Canadian Web Designs",
-    description: `Web design, SEO, and digital marketing tips from ${config.businessName}.`,
-    url: `https://${config.domain}/blog`,
-    siteName: config.businessName,
-    locale: "en_CA",
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Canadian Web Designs — Web Design & Digital Marketing Blog" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: ["/images/hero-leading-web-design.jpg"],
-  },
-};
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const { page } = await searchParams;
+  const currentPage = Math.max(1, parseInt(page || "1", 10));
+  const isPaged = currentPage > 1;
+
+  return {
+    title: "Blog | Web Design & SEO Tips",
+    description: `Web design, SEO, and digital marketing tips from Canada's most trusted agency. Browse 160+ articles written by Canadian experts.`,
+    alternates: { canonical: "/blog" },
+    ...(isPaged && { robots: { index: false, follow: true } }),
+    openGraph: {
+      title: "Blog | Web Design & SEO Tips — Canadian Web Designs",
+      description: `Web design, SEO, and digital marketing tips from ${config.businessName}.`,
+      url: `https://${config.domain}/blog`,
+      siteName: config.businessName,
+      locale: "en_CA",
+      images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Canadian Web Designs — Web Design & Digital Marketing Blog" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: ["/images/hero-leading-web-design.jpg"],
+    },
+  };
+}
 
 interface Props {
   searchParams: Promise<{ page?: string; q?: string }>;
