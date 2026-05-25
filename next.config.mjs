@@ -261,6 +261,13 @@ const nextConfig = {
       { source: "/why-you-need-seo-in-your-business-in-2021/",  destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
       { source: "/why-you-need-pay-per-click-like-google-ads-marketing",  destination: "/blog/why-you-need-pay-per-click-like-google-ads", permanent: true },
       { source: "/why-you-need-pay-per-click-like-google-ads-marketing/", destination: "/blog/why-you-need-pay-per-click-like-google-ads", permanent: true },
+      // Root-level WP blog posts still indexed by Google
+      { source: "/top-modern-web-design-trends",                                       destination: "/blog/top-modern-web-design-trends",                                       permanent: true },
+      { source: "/top-modern-web-design-trends/",                                      destination: "/blog/top-modern-web-design-trends",                                       permanent: true },
+      { source: "/best-web-design-companies-near-me-how-to-choose-the-right-one",     destination: "/blog/best-web-design-companies-near-me-how-to-choose-the-right-one",     permanent: true },
+      { source: "/best-web-design-companies-near-me-how-to-choose-the-right-one/",    destination: "/blog/best-web-design-companies-near-me-how-to-choose-the-right-one",     permanent: true },
+      { source: "/5-essential-web-design-trends-from-canada-to-upgrade-your-website",  destination: "/blog/5-essential-web-design-trends-from-canada-to-upgrade-your-website", permanent: true },
+      { source: "/5-essential-web-design-trends-from-canada-to-upgrade-your-website/", destination: "/blog/5-essential-web-design-trends-from-canada-to-upgrade-your-website", permanent: true },
 
       // ============================================
       // WordPress Infrastructure URLs
