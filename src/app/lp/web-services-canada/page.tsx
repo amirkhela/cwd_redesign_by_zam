@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
@@ -49,7 +50,8 @@ function fireConversion() {
 }
 
 function LpForm() {
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const router = useRouter();
+  const [status, setStatus] = useState<"idle" | "sending" | "error">("idle");
   const [form, setForm] = useState({ name: "", email: "", phone: "", service: "" });
 
   const set = (k: keyof typeof form) =>
@@ -84,34 +86,11 @@ function LpForm() {
       });
       if (!res.ok) throw new Error();
       const data = await res.json();
-      if (data.success) { fireConversion(); setStatus("done"); }
+      if (data.success) { fireConversion(); router.push("/lp/web-services-canada/thank-you"); }
       else setStatus("error");
     } catch {
       setStatus("error");
     }
-  }
-
-  if (status === "done") {
-    return (
-      <div
-        className="rounded-2xl p-8 flex flex-col items-center justify-center text-center"
-        style={{
-          background: "#fff",
-          border: "1px solid #e2e8f0",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
-          minHeight: 320,
-        }}
-      >
-        <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-5"
-          style={{ background: "rgba(0,208,132,0.12)", border: "2px solid rgba(0,208,132,0.4)" }}>
-          ✓
-        </div>
-        <h3 className="text-gray-900 font-black text-xl mb-2">We Got Your Request!</h3>
-        <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-          Our team will reach out within 24 hours with a custom quote.
-        </p>
-      </div>
-    );
   }
 
   return (
