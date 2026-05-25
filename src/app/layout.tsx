@@ -224,6 +224,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://analytics.google.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        {/* Google Ads tag — must be in <head> for detection */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18177745300" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18177745300');` }} />
         <HreflangTags />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-dark antialiased font-sans">
