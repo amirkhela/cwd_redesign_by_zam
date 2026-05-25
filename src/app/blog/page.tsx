@@ -12,7 +12,7 @@ const config = getConfig();
 const POSTS_PER_PAGE = 12;
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const { page } = await searchParams;
+  const { page, q } = await searchParams;
   const currentPage = Math.max(1, parseInt(page || "1", 10));
   const isPaged = currentPage > 1;
   const hasQuery = (q?.trim() ?? "").length > 0;
