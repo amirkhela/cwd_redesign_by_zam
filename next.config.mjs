@@ -261,6 +261,8 @@ const nextConfig = {
       { source: "/why-you-need-seo-in-your-business-in-2021/",  destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
       { source: "/why-you-need-pay-per-click-like-google-ads-marketing",  destination: "/blog/why-you-need-pay-per-click-like-google-ads", permanent: true },
       { source: "/why-you-need-pay-per-click-like-google-ads-marketing/", destination: "/blog/why-you-need-pay-per-click-like-google-ads", permanent: true },
+      { source: "/how-to-migrate-from-shopify-to-woocommerce",  destination: "/blog/how-to-migrate-from-shopify-to-woocommerce", permanent: true },
+      { source: "/how-to-migrate-from-shopify-to-woocommerce/", destination: "/blog/how-to-migrate-from-shopify-to-woocommerce", permanent: true },
       // Root-level WP blog posts still indexed by Google
       { source: "/top-modern-web-design-trends",                                       destination: "/blog/top-modern-web-design-trends",                                       permanent: true },
       { source: "/top-modern-web-design-trends/",                                      destination: "/blog/top-modern-web-design-trends",                                       permanent: true },
