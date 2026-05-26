@@ -103,6 +103,21 @@ const cityContent: Record<string, {
       { q: "What industries do you serve in Hamilton?", a: "Our Hamilton clients span healthcare, trades, restaurants, professional services, manufacturing, and creative industries. If you're a Hamilton business that wants more customers from Google, we can help." },
     ],
   },
+  mississauga: {
+    blurb: `Mississauga is Ontario's second-largest city with over 700,000 residents and one of Canada's most important business hubs. Home to Canadian head offices for Microsoft, Walmart, Hershey, and dozens of Fortune 500 firms, Mississauga combines enterprise-grade demand with a thriving community of local businesses across City Centre, Port Credit, Streetsville, Erin Mills, and Meadowvale. Yet most Mississauga businesses still have outdated websites and weak Google presences — making it one of the highest-opportunity SEO markets in the GTA. Canadian Web Designs builds fast, conversion-focused websites for Mississauga businesses that rank in Google and turn local searches into booked appointments and phone calls. We understand Mississauga's distinct communities and build hyper-local strategies for each: the corporate corridors near Square One, the boutique shops of Port Credit, the family services market in Erin Mills, and beyond.`,
+    facts: [
+      "Mississauga is Ontario's 2nd-largest city and 6th largest in Canada — 700,000+ residents with strong purchasing power",
+      "Home to Canadian HQs for Microsoft, Walmart, Hershey, and hundreds of Fortune 500 companies — enterprise buyers are here",
+      "Mississauga keyword difficulty is significantly lower than downtown Toronto — faster and cheaper to rank",
+      "Square One is one of Canada's busiest shopping destinations — retail and service businesses need strong local SEO to compete",
+    ],
+    industries: ["Corporate & Enterprise", "Retail & eCommerce", "Healthcare & Clinics", "Financial Services", "Tech & Software", "Real Estate & Mortgage"],
+    faq: [
+      { q: "How competitive is SEO in Mississauga vs. Toronto?", a: "Mississauga keywords typically have difficulty scores of 15–30 vs 40–60+ for the same categories in downtown Toronto. This means a well-optimized Mississauga website can reach page 1 within 45–90 days — faster and with less budget than comparable Toronto campaigns. It's one of the best-value SEO markets in the GTA." },
+      { q: "Do you work with Mississauga corporate and enterprise businesses?", a: "Yes — corporate clients are one of our most common Mississauga verticals. We build enterprise-grade websites for head offices, professional services firms, and B2B companies that need to project credibility to large clients and partners. We understand the polished, professional standard expected in Mississauga's corporate market." },
+      { q: "Can you help my Mississauga business rank in the Google local pack?", a: "Absolutely — Google Business Profile optimization is central to every Mississauga SEO package. We optimize your listing for City Centre, Port Credit, Streetsville, and other Mississauga communities, build local citations across 50+ Canadian directories, and run a review generation program. Mississauga's local pack is competitive but very winnable with the right strategy." },
+    ],
+  },
   "north-york": {
     blurb: `North York is one of Toronto's most densely populated and commercially active districts — with major business corridors along Yonge Street, Sheppard Avenue, and Wilson Avenue. From Yonge-Eglinton to Bayview Village, North York businesses compete intensely for local customers who search Google before spending. Canadian Web Designs builds websites for North York businesses that are optimized for hyper-local searches — 'web design north york', '[service] north york' — so you appear when customers near you are looking. We combine fast, conversion-focused web design with a local SEO strategy specifically tuned to North York's diverse business landscape: medical clinics, law firms, restaurants, contractors, and retail shops.`,
     facts: ["North York is one of Toronto's most commercially active districts — Yonge-Sheppard, Wilson, and Bayview corridors are major business hubs", "North York web design has difficulty of just 9 — one of the easiest local keywords to rank for in the GTA", "Dense residential population means strong foot traffic intent — local searches are high-converting", "Competition from downtown Toronto agencies makes local positioning critical for North York businesses"],
@@ -313,6 +328,79 @@ export default function LocationPage({ params }: { params: { city: string } }) {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PRICING ─── */}
+      <section className="py-14" style={{ background: "#f8fafc" }}>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Pricing</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">{city} Web Design Packages</h2>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto text-base">Transparent pricing — no hidden fees. Every package is built mobile-first and SEO-optimized from day one.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+              <p className="text-sm font-bold text-[#00AADF] tracking-widest uppercase mb-3">Starter</p>
+              <p className="text-4xl font-black text-gray-900 mb-1">$1,499</p>
+              <p className="text-gray-400 text-sm mb-6">One-time investment</p>
+              <ul className="space-y-3 text-sm text-gray-600">
+                {["Up to 5 pages", "Mobile-responsive design", "On-page SEO basics", "Contact form", "Google Analytics setup", "3-week delivery"].map(f => (
+                  <li key={f} className="flex items-center gap-2"><span className="text-[#00AADF] font-bold">✓</span>{f}</li>
+                ))}
+              </ul>
+              <a href="/contact" className="block mt-8 text-center py-3 rounded-xl border-2 border-[#00AADF] text-[#00AADF] font-bold text-sm hover:bg-[#00AADF] hover:text-white transition-all duration-200">Get Started</a>
+            </div>
+            <div className="rounded-2xl p-8 reveal text-white relative" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)", boxShadow: "0 8px 32px rgba(0,170,223,0.35)" }}>
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+              <p className="text-sm font-bold tracking-widest uppercase mb-3 text-blue-100">Growth</p>
+              <p className="text-4xl font-black mb-1">$3,499</p>
+              <p className="text-blue-200 text-sm mb-1">+ $499/mo ongoing SEO</p>
+              <p className="text-blue-200 text-xs mb-6">One-time build + monthly retainer</p>
+              <ul className="space-y-3 text-sm text-blue-50">
+                {["Up to 12 pages", "Custom UI/UX design", "Full on-page & technical SEO", "Local SEO + Google Business Profile", "Monthly rank tracking & reporting", "Ongoing content updates"].map(f => (
+                  <li key={f} className="flex items-center gap-2"><span className="text-yellow-300 font-bold">✓</span>{f}</li>
+                ))}
+              </ul>
+              <a href="/contact" className="block mt-8 text-center py-3 rounded-xl bg-white text-[#003B6F] font-black text-sm hover:bg-blue-50 transition-all duration-200">Start Growing</a>
+            </div>
+            <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+              <p className="text-sm font-bold text-[#00AADF] tracking-widest uppercase mb-3">Enterprise</p>
+              <p className="text-4xl font-black text-gray-900 mb-1">Custom</p>
+              <p className="text-gray-400 text-sm mb-6">Scoped to your goals</p>
+              <ul className="space-y-3 text-sm text-gray-600">
+                {["Unlimited pages", "E-commerce / booking systems", "Multi-location SEO strategy", "Custom integrations & APIs", "Dedicated account manager", "SLA-backed support"].map(f => (
+                  <li key={f} className="flex items-center gap-2"><span className="text-[#00AADF] font-bold">✓</span>{f}</li>
+                ))}
+              </ul>
+              <a href="/contact" className="block mt-8 text-center py-3 rounded-xl border-2 border-[#00AADF] text-[#00AADF] font-bold text-sm hover:bg-[#00AADF] hover:text-white transition-all duration-200">Let&apos;s Talk</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── TIMELINE ─── */}
+      <section className="py-14 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Timeline</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">What {city} SEO Looks Like Month by Month</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">A realistic roadmap so you know exactly what to expect — from first audit to first-page rankings.</p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { month: "Month 1", title: "Foundation & Audit", desc: `Full technical SEO audit, keyword mapping tailored to ${city}&apos;s search landscape, Google Business Profile optimization, and citation cleanup.` },
+              { month: "Months 2–3", title: "On-Page & Content", desc: "Optimized service and landing pages, schema markup for local business signals, and initial link outreach to relevant local publications and directories." },
+              { month: "Months 3–6", title: "Authority Building", desc: `Guest posts, backlink acquisition from ${city}-region directories, and competitive gap analysis against top-ranking local competitors in your industry.` },
+              { month: "Month 6+", title: "Rankings & ROI", desc: "First-page visibility for neighbourhood and service-area keywords. More competitive city-wide terms typically follow by months 9–12 with consistent execution." },
+            ].map((t, i) => (
+              <div key={i} className="reveal bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                <div className="text-sm font-black text-[#00AADF] uppercase tracking-widest mb-2">{t.month}</div>
+                <h3 className="font-black text-gray-900 text-base mb-2">{t.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{t.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
