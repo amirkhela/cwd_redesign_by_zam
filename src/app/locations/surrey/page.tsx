@@ -50,6 +50,18 @@ const faq = [
     q: "What industries do you serve with Surrey web design and SEO?",
     a: "We serve all major Surrey industries: real estate and mortgage brokers, construction and trades, healthcare clinics, law firms, restaurants, professional services, retail, and auto. Surrey's growing economy means each sector has unique SEO needs — we tailor every strategy to your specific industry, competitors, and target customers.",
   },
+  {
+    q: "What's the difference between SEO and Google Ads for a Surrey business?",
+    a: "SEO builds organic rankings that generate free traffic month after month — but takes 30–90 days to show results. Google Ads deliver immediate visibility at the top of Surrey search results, but stop the moment you stop paying. For most Surrey businesses, the ideal strategy combines both: Google Ads for immediate lead generation while your SEO program builds long-term organic authority. Surrey's low keyword difficulty (21) means your SEO compounds quickly and reduces your dependency on paid ads over time.",
+  },
+  {
+    q: "How do you build local citations for a Surrey BC business?",
+    a: "We submit your business name, address, phone, and website to the 50+ most important Canadian and BC-specific directories: Google Business Profile, Bing Places, Apple Maps, Yelp Canada, Yellow Pages Canada, Canada411, Chamber of Commerce sites, industry-specific directories, and Surrey regional listings. Consistent citations across authoritative sites send Google powerful local relevance signals — directly improving your ranking in Surrey's Google local pack (the map results at the top of search pages).",
+  },
+  {
+    q: "Can you help an e-commerce business in Surrey rank on Google?",
+    a: "Absolutely — e-commerce SEO is a CWD specialty. For Surrey-based online stores, we optimize product and category pages for local and national keywords, set up Google Merchant Center for Shopping results, improve site speed and mobile experience, and run Google Shopping campaigns for immediate product visibility. We've helped Surrey retailers on WooCommerce and Shopify rank for both hyper-local searches like 'outdoor furniture surrey bc' and national product searches competing across Canada.",
+  },
 ];
 
 const faqSchema = {
@@ -277,6 +289,99 @@ export default function SurreyPage() {
                 <div className="text-4xl font-black mb-4" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{p.step}</div>
                 <h3 className="text-gray-900 font-black text-base mb-2 group-hover:text-[#00AADF] transition-colors duration-200">{p.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section className="py-14" style={{ background: "#f8fafc" }}>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Transparent Pricing</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Web Design & SEO Pricing for Surrey Businesses</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">No hidden fees. No lock-in contracts. Flat-rate pricing with clear deliverables — and results you can measure every month.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {[
+              {
+                name: "Starter",
+                price: "$1,499",
+                period: "one-time",
+                desc: "Perfect for Surrey small businesses launching or refreshing their online presence.",
+                features: ["5-page custom website", "Mobile-first responsive design", "On-page SEO foundation", "Google Analytics + Search Console", "Contact form + click-to-call", "30 days post-launch support"],
+                cta: "Get Started",
+                highlight: false,
+              },
+              {
+                name: "Growth",
+                price: "$3,499",
+                period: "one-time + $499/mo SEO",
+                desc: "The complete package for Surrey businesses serious about ranking above their competitors.",
+                features: ["10–15 page custom website", "Surrey-specific SEO strategy", "Google Business Profile optimization", "Local citation building (50+ sites)", "Monthly ranking reports", "Dedicated account manager"],
+                cta: "Get Growth Plan",
+                highlight: true,
+              },
+              {
+                name: "Enterprise",
+                price: "Custom",
+                period: "quote",
+                desc: "For larger Surrey businesses, e-commerce stores, or aggressive growth timelines.",
+                features: ["Unlimited pages + custom features", "E-commerce (WooCommerce / Shopify)", "Full content marketing program", "Google Ads management", "Multi-location SEO", "Priority support + SLA"],
+                cta: "Get a Custom Quote",
+                highlight: false,
+              },
+            ].map((plan) => (
+              <div key={plan.name} className={`rounded-2xl p-8 reveal border transition-all duration-300 ${plan.highlight ? "border-[#00AADF]" : "border-gray-100 bg-white"}`} style={plan.highlight ? { background: "linear-gradient(135deg, #003B6F, #00AADF)", boxShadow: "0 8px 40px rgba(0,170,223,0.3)" } : { boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+                <p className={`text-sm font-bold tracking-widest uppercase mb-2 ${plan.highlight ? "text-white/70" : "text-[#00AADF]"}`}>{plan.name}</p>
+                <p className={`text-4xl font-black mb-1 ${plan.highlight ? "text-white" : "text-gray-900"}`}>{plan.price}</p>
+                <p className={`text-sm mb-4 ${plan.highlight ? "text-white/60" : "text-gray-400"}`}>{plan.period}</p>
+                <p className={`text-sm leading-relaxed mb-6 ${plan.highlight ? "text-white/80" : "text-gray-600"}`}>{plan.desc}</p>
+                <ul className="space-y-2.5 mb-8">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2.5">
+                      <svg className={`w-4 h-4 shrink-0 ${plan.highlight ? "text-white" : "text-[#00AADF]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                      <span className={`text-sm ${plan.highlight ? "text-white/90" : "text-gray-600"}`}>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact" className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-bold text-sm transition-all duration-300 ${plan.highlight ? "bg-white text-[#003B6F] hover:bg-white/90" : "text-white hover:opacity-90"}`} style={!plan.highlight ? { background: "linear-gradient(135deg, #003B6F, #00AADF)" } : {}}>
+                  {plan.cta}
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-400 text-sm">All plans include a free Surrey consultation and website audit. SEO packages are month-to-month — no lock-in contracts.</p>
+        </div>
+      </section>
+
+      {/* TIMELINE */}
+      <section className="py-14 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Your SEO Journey</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">What Surrey SEO Looks Like Month by Month</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">We set realistic expectations from day one — and then work to exceed them. Here&apos;s what a typical Surrey SEO engagement delivers.</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            {[
+              { month: "Month 1", title: "Audit, Strategy & Technical Foundation", desc: "We run a complete Surrey SEO audit: your current rankings, website technical health, Google Business Profile status, and competitor keyword gaps. We fix all on-site technical issues, optimize meta titles and descriptions for your Surrey keywords, update your GBP listing, and submit your first 20 priority citations. By end of Month 1, your foundation is solid and Google is already re-crawling your site." },
+              { month: "Months 2–3", title: "Content Optimization & Local Signal Building", desc: "We optimize every key page for your target Surrey search terms and publish neighbourhood-specific content targeting Newton, Guildford, Cloverdale, and South Surrey buyers. Citation building continues across 50+ directories. Most Surrey SEO clients see their first ranking movements in weeks 6–8 — pages start climbing from positions 20–40 into the top 15, and branded searches begin showing your updated GBP prominently." },
+              { month: "Months 3–6", title: "Page 1 Rankings & Measurable Traffic Growth", desc: "Lower-difficulty Surrey keywords break into page 1. Organic traffic grows measurably month over month. Your Google Business Profile gains impressions, calls, and direction requests from Surrey searchers. We expand your keyword footprint across more Surrey searches and begin building authority for your most competitive targets. Monthly reports show exactly where you rank and how fast you&apos;re climbing." },
+              { month: "Month 6+", title: "Compound Growth & Sustained Market Dominance", desc: "Rankings compound — each new piece of content and each new citation multiplies the authority of everything else. You appear in Surrey&apos;s Google local pack for your primary service searches. Organic leads become a consistent, growing channel that doesn&apos;t stop when an ad budget runs out. Your competitors in Newton, Guildford, and South Surrey start noticing — and it gets harder for them to catch up." },
+            ].map((t, i) => (
+              <div key={t.month} className="flex gap-6 reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
+                <div className="flex flex-col items-center pt-1">
+                  <div className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center text-white font-black text-sm" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>{i + 1}</div>
+                  {i < 3 && <div className="w-0.5 flex-1 mt-2 mb-2" style={{ background: "linear-gradient(to bottom, rgba(0,170,223,0.4), transparent)" }} />}
+                </div>
+                <div className="pb-10">
+                  <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-1">{t.month}</p>
+                  <h3 className="text-gray-900 font-black text-lg mb-2">{t.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{t.desc}</p>
+                </div>
               </div>
             ))}
           </div>
