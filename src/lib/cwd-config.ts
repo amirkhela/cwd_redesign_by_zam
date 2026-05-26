@@ -131,6 +131,21 @@ export const cwdConfig: ClientConfig = {
         "Team training and adoption support",
       ],
     },
+    {
+      slug: "google-ads-management",
+      title: "Google Ads Management",
+      tagline: "Immediate top-of-page visibility for your most valuable keywords",
+      description:
+        "We build and manage Google Ads campaigns that generate qualified leads at the lowest possible cost per conversion. No wasted budget, no black-box reporting — transparent management and measurable ROI for Canadian businesses.",
+      features: [
+        "Full campaign setup and keyword research",
+        "Negative keyword management and bid optimization",
+        "A/B tested ad copy for maximum click-through rate",
+        "Conversion tracking (calls, forms, purchases)",
+        "Monthly reporting with real cost-per-lead data",
+        "Month-to-month — no long-term contracts",
+      ],
+    },
   ],
 
   cities: [
@@ -181,6 +196,7 @@ export const cwdConfig: ClientConfig = {
         { label: "Social Media Optimization", href: "/services/social-media-optimization" },
         { label: "Website Maintenance", href: "/services/website-maintenance" },
         { label: "AI Consultation", href: "/services/ai-consultation" },
+        { label: "Google Ads Management", href: "/services/google-ads-management" },
       ],
     },
     { label: "Our Portfolio", href: "/portfolio" },
