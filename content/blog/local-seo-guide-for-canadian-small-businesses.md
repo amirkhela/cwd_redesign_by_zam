@@ -6,7 +6,7 @@ author: "Amir Khela"
 description: "A practical, no-fluff guide to local SEO for Canadian small businesses in 2026. Learn how to rank on Google Maps, dominate local search, and turn organic traffic into paying customers."
 keywords: ["local seo canada", "local seo for small business", "seo for canadian businesses", "local seo tips", "how to rank on google canada"]
 category: "SEO"
-featuredImage: ""
+featuredImage: "/blog/posts/Local-SEO1.jpg"
 ---
 
 <p>If your business serves customers in a specific city or region — a restaurant in Brampton, a law firm in Vancouver, a contractor in Winnipeg — local SEO is the single highest-ROI marketing channel available to you. Done right, it puts you in front of people who are actively searching for what you offer, in your city, right now.</p>
