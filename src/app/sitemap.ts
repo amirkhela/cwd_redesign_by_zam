@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/testimonials` },
     { url: `${BASE_URL}/blog` },
     { url: `${BASE_URL}/faq` },
+    { url: `${BASE_URL}/seo/toronto` },
+    { url: `${BASE_URL}/seo/mississauga` },
+    { url: `${BASE_URL}/seo/brampton` },
+    { url: `${BASE_URL}/seo/north-york` },
+    { url: `${BASE_URL}/seo/burnaby` },
+    { url: `${BASE_URL}/seo/victoria` },
   ];
 
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({
