@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/testimonials` },
     { url: `${BASE_URL}/blog` },
     { url: `${BASE_URL}/faq` },
-    { url: `${BASE_URL}/careers` },
   ];
 
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({

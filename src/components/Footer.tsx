@@ -41,7 +41,6 @@ export default function Footer() {
                 { href: "/portfolio", label: "Our Portfolio" },
                 { href: "/blog", label: "Blog" },
                 { href: "/faq", label: "FAQ" },
-                { href: "/careers", label: "Careers" },
                 { href: "/contact", label: "Get In Touch" },
               ].map(({ href, label }) => (
                 <li key={href}>
