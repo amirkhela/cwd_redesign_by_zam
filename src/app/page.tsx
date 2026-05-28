@@ -11,15 +11,15 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Toronto & Across Canada | Canadian Web Designs",
+  title: "Web Design Canada | Toronto's Top-Rated Agency | Canadian Web Designs",
   description:
-    `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across Canada. Custom websites, local SEO & digital marketing that drives real revenue. Free quote — ${config.phone}.`,
+    `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews. Custom websites, web design services & local SEO from Toronto to Vancouver. Free quote — ${config.phone}.`,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design Toronto & Across Canada | Canadian Web Designs",
-    description: `${config.reviewCount}+ five-star reviews. Custom Toronto websites built to rank on Google & convert visitors. Free consultation.`,
+    title: "Web Design Canada | Toronto's Top-Rated Agency | Canadian Web Designs",
+    description: `${config.reviewCount}+ five-star reviews. Web design services across Canada — built to rank on Google & convert visitors. Free consultation.`,
     url: `https://${config.domain}`,
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Toronto — Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada — Canadian Web Designs" }],
   },
 };
 

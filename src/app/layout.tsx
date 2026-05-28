@@ -20,27 +20,27 @@ const config = getConfig();
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${config.domain}`),
   title: {
-    default: `Web Design Toronto & Across Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    default: `Web Design Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     template: `%s | ${config.businessName}`,
   },
   description:
-    `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, local SEO & digital marketing. Get a free quote today.`,
+    `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
   authors: [{ name: config.businessName }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_CA",
     siteName: config.businessName,
-    title: `Web Design Toronto & Across Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    title: `Web Design Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     description:
-      `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, local SEO & digital marketing. Get a free quote today.`,
+      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
     url: `https://${config.domain}`,
     images: [
       {
         url: "/images/hero-leading-web-design.jpg",
         width: 1200,
         height: 630,
-        alt: "Canadian Web Designs — Web Design Toronto & Across Canada",
+        alt: "Canadian Web Designs — Web Design Canada",
       },
     ],
   },
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@canadianwebdesigns",
     creator: "@canadianwebdesigns",
-    title: `Web Design Toronto & Across Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    title: `Web Design Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     description:
-      `Toronto's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, local SEO & digital marketing. Get a free quote today.`,
+      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
     images: ["/images/hero-leading-web-design.jpg"],
   },
   robots: {
