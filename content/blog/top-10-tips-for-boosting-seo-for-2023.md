@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "SEO is crucial for online visibility; without ranking on Google, your website might go unnoticed. The key to higher rankings lies in understanding..."
 keywords: ["top 10 tips for boosting seo for 2023","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/seo-2.png"
+featuredImage: "/blog/posts/Building-website-rank.png"
 ---
 
 <div class="wp-block-columns">

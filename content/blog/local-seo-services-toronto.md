@@ -5,7 +5,7 @@ date: "2026-05-16"
 author: "Amir Khela"
 description: "Choosing local SEO services in Toronto is harder than it should be. Cut through the noise with this practical guide to what actually works and who to trust."
 category: "SEO"
-featuredImage: "/blog/posts/SEO-CWD.jpg"
+featuredImage: "/blog/posts/White-Hat-SEO-Strategies.png"
 ---
 
 <p>If someone in Toronto searches "plumber near me" or "best dentist in Scarborough," the businesses that show up first didn't get there by accident. They invested in local SEO — and the ones at the very top invested in it consistently, with a strategy built around how Google actually ranks local businesses.</p>

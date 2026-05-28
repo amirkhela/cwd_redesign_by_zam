@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Learn to expand your home service business by using the Kijiji marketing tool. Connect your brand with the Canadian community to attract leads and hike..."
 keywords: ["kijiji ads marketing strategy for local businesses","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/Untitled-design.jpg"
+featuredImage: "/blog/posts/digital-marketing-media-in-virtual-icon-globe-shap-UW9Q4EY-1-scaled-1.jpg"
 ---
 
 <p>Learn to expand your home service business by using the Kijiji marketing tool. Connect your brand with the Canadian community to attract leads and hike up your sales. This article will introduce you to Kijiji marketing and a step-by-step guide to optimizing your Kijiji ads. So, let’s dive in!</p>

@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Decoding the Investment For businesses in the dynamic Toronto and Greater Toronto Area (GTA), a compelling online presence is no longer optional – it’s..."
 keywords: ["understanding basic wordpress website costs in toronto and the gta","Web Design"]
 category: "Web Design"
-featuredImage: "/blog/posts/WordPress-Website-Costs-1.jpg"
+featuredImage: "/blog/posts/duplicator.jpg"
 ---
 
 <p><strong>Decoding the Investment</strong></p>

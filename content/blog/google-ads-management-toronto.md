@@ -6,7 +6,7 @@ author: "Amir Khela"
 description: "Toronto businesses waste thousands on Google Ads every month. Here's what professional Google Ads management actually does, what it costs in Toronto, and what real results look like."
 keywords: ["google ads management toronto", "google ads toronto", "ppc management toronto", "google ads agency toronto", "toronto ppc", "pay per click toronto"]
 category: "Digital Marketing"
-featuredImage: "/blog/web-design-company.png"
+featuredImage: "/blog/posts/PPC-google-ads.jpg"
 ---
 
 <p>If you've ever tried running Google Ads on your own, you already know how quickly a budget can disappear without a single sale to show for it. Google Ads management in Toronto is one of the most competitive and highest-stakes forms of digital marketing — and when done right, it can generate consistent, measurable revenue for your business. When done wrong, it's an expensive lesson.</p>

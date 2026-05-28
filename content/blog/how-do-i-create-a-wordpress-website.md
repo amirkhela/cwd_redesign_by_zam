@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "7 Steps To Create A WordPress Site? Creating a WordPress website is not difficult, especially for those with some basic technical knowledge. To get..."
 keywords: ["how do i create a wordpress website","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/Wordpress.jpg"
+featuredImage: "/blog/posts/wiz-to-wordpress.jpg"
 ---
 
 <h2 class="wp-block-heading" id="h-7-steps-to-create-a-wordpress-site">7 Steps To Create A WordPress Site?</h2>

@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "To simplify the understanding of WordPress security , we can categorize it into four essential components. These components guide website..."
 keywords: ["wordpress safety 101 the 4 key standards of protection","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/Web-security-cursor-pointing-to-security.jpg"
+featuredImage: "/blog/posts/Wordpress-Featured-image-1.jpg"
 ---
 
 <p>To simplify the understanding of WordPress <strong>security</strong>, we can categorize it into four essential components. These components guide website administrators in grasping the nuances of security risks and the best strategies to address them. We'll delve into server-, website-, and user-based security, in addition to emphasizing the significance of regular website upkeep. By adhering to the recommended measures for each of these four components, you can ensure the safety of your website.</p>

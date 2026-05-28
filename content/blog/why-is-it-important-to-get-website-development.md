@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Why is it important? You can be a business owner hiring a developer to build a website or a digital marketer pitching a design to your development..."
 keywords: ["why is it important to get website development","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/domenico-loia-hGV2TfOh0ns-unsplash-1.jpg"
+featuredImage: "/blog/posts/5-Reasons-Having-a-Website-for-Your-Business-is-a-Good-Idea.png"
 ---
 
 <h2 class="wp-block-heading" id="h-why-is-it-important"><strong>Why is it important?</strong></h2>

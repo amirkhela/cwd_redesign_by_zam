@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "In the vast and diverse Canadian market, simply having a website isn't enough. To truly connect with consumers—whether they’re in downtown Toronto, a..."
 keywords: ["how to optimise your canadian website for local search and customer engagement","Web Design"]
 category: "Web Design"
-featuredImage: "/blog/posts/1.png"
+featuredImage: "/blog/posts/Local-website-design.jpg"
 ---
 
 <p>In the vast and diverse Canadian market, simply having a website isn't enough. To truly connect with consumers—whether they’re in downtown Toronto, a coastal community in <a href="https://en.wikipedia.org/wiki/British_Columbia" target="_blank" rel="noreferrer noopener">British Columbia</a>, or a Quebecois town—your online presence must be tailored to speak their local language and address their regional needs.</p>

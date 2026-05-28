@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "In today's digital era, having an online presence is indispensable for businesses of all sizes. While big corporations can shell out vast amounts on..."
 keywords: ["affordable seo services for small businesses","SEO"]
 category: "SEO"
-featuredImage: "/blog/posts/SEO-CWD.jpg"
+featuredImage: "/blog/posts/hand-arrange-white-letters-as-seo-scaled.jpg"
 ---
 
 <p>In today's digital era, having an online presence is indispensable for businesses of all sizes. While big corporations can shell out vast amounts on their digital marketing campaigns, small businesses often operate on tighter budgets. This is where affordable SEO services come into play, leveling the playing field for these smaller entities. Let's delve into how these services can benefit small businesses and what one should look for when opting for such services.</p>

@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Introduction : When it comes to building a website, the myriad of platform choices can be overwhelming. Among the heavyweights are Webflow,..."
 keywords: ["webflow vs squarespace vs wordpress","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/launchpresso-IOM28XWsk-g-unsplash.jpg"
+featuredImage: "/blog/posts/Squarespace-website.jpg"
 ---
 
 <h3 class="wp-block-heading" id="h-introduction"><strong>Introduction</strong>: </h3>

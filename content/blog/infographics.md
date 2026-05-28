@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "What is Infographics? Infographics are a set of visual presentations of ideas, data, or knowledge designed to educate readers by presenting graphic..."
 keywords: ["infographics","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/pasted-image-0.png"
+featuredImage: "/blog/posts/1.jpg"
 ---
 
 <div class="wp-block-columns">

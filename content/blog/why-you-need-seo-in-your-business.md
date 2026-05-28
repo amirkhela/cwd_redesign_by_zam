@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Owning a business with a lot of goals and aspects to look into isn’t easy nowadays. Digital marketing is a big part of the way your business faces the..."
 keywords: ["why you need seo in your business","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/SEO-for-Small-businesses-e1674226071184.png"
+featuredImage: "/blog/posts/local-seo-business-1.jpg"
 ---
 
 <p>Owning a business with a lot of goals and aspects to look into isn’t easy nowadays. Digital marketing is a big part of the way your business faces the journey to success. Part of the many strategies to look into in digital marketing is SEO. Do not underestimate the importance of SEO to your business. Let us dive into what SEO is? Is it beneficial, how effective is SEO?</p>

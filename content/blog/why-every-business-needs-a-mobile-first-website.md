@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "With over 60% of web traffic coming from mobile devices, having a mobile-first website is no longer optional."
 keywords: ["mobile-first design", "responsive web design", "mobile website", "web design Canada"]
 category: "Web Design"
-featuredImage: "/blog/web-design-company.png"
+featuredImage: "/blog/posts/cropped-view-of-smiling-designer-showing-mobile.jpg"
 ---
 
 With over 60% of web traffic now coming from mobile devices, having a mobile-first website isn't just a nice-to-have — it's a business necessity. If your site doesn't work well on a phone, you're losing customers.

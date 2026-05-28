@@ -5,7 +5,7 @@ date: "2026-05-16"
 author: "Amir Khela"
 description: "Is your Toronto website costing you customers without you realizing it? These 7 signs tell you it's time for a website redesign — and what to do about it."
 category: "Web Design"
-featuredImage: "/blog/web-design-company.png"
+featuredImage: "/blog/posts/ui-ux-representation-with-hand-typing-scaled.jpeg"
 ---
 
 <p>Most business owners don't decide to invest in a website redesign until something breaks. But by then, the damage is already done — visitors have been bouncing, leads have been lost, and competitors with better sites have been capturing the customers that should have been yours.</p>

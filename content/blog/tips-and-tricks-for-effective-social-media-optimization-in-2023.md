@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "In an increasingly digital world, mastering the art of social media optimization is non-negotiable. With constant algorithm changes, evolving trends,..."
 keywords: ["tips and tricks for effective social media optimization in 2023","Blog"]
 category: "Blog"
-featuredImage: "/blog/posts/social-media.jpg"
+featuredImage: "/blog/posts/alexander-shatov-mr4JG4SYOF8-unsplash.jpg"
 ---
 
 <div class="wp-block-columns">

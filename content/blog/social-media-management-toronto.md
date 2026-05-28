@@ -5,7 +5,7 @@ date: "2026-05-16"
 author: "Amir Khela"
 description: "Curious what a social media management agency in Toronto actually delivers each month? Here's the real breakdown — no jargon, no filler, just what matters."
 category: "Social Media"
-featuredImage: "/blog/web-design-company.png"
+featuredImage: "/blog/posts/hand-holding-smartphone-social-media-concept-scaled.jpg"
 ---
 
 <p>A lot of Toronto business owners have hired a social media management agency and walked away wondering what exactly they paid for. A few posts a week, some stock photos, and a monthly report full of metrics they don't quite understand. Sound familiar? That's not what good social media management in Toronto looks like — and this guide will help you tell the difference.</p>
