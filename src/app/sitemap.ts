@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/seo/north-york` },
     { url: `${BASE_URL}/seo/burnaby` },
     { url: `${BASE_URL}/seo/victoria` },
+    { url: `${BASE_URL}/seo/halifax` },
+    { url: `${BASE_URL}/seo/surrey` },
   ];
 
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({

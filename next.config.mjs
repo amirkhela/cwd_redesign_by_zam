@@ -18,6 +18,13 @@ const nextConfig = {
       { source: "/what-we-do", destination: "/services/web-design-development", permanent: true },
       { source: "/what-we-do/", destination: "/services/web-design-development", permanent: true },
 
+      // ============================================
+      // Old WordPress /web-designs/[city]/ → /locations/[city]
+      // Consolidates ~30,000 GSC impressions split across WP-era URLs
+      // ============================================
+      { source: "/web-designs/:city", destination: "/locations/:city", permanent: true },
+      { source: "/web-designs/:city/", destination: "/locations/:city", permanent: true },
+
       
       // ============================================
       // Service Slug Aliases
