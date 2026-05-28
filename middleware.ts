@@ -22,6 +22,8 @@ const KNOWN_ROUTES = new Set([
   "who-we-are",
   "api",
   "seo",
+  "maintenance",
+  "web-designers-near-me",
   // WordPress URLs already handled by next.config.mjs redirects
   "about-us",
   "get-in-touch",

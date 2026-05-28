@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/testimonials` },
     { url: `${BASE_URL}/blog` },
     { url: `${BASE_URL}/faq` },
+    { url: `${BASE_URL}/maintenance` },
+    { url: `${BASE_URL}/web-designers-near-me` },
     { url: `${BASE_URL}/seo/toronto` },
     { url: `${BASE_URL}/seo/mississauga` },
     { url: `${BASE_URL}/seo/brampton` },

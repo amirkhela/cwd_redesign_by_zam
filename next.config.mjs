@@ -94,16 +94,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/maintenance",
-        destination: "/services/website-maintenance",
-        permanent: true,
-      },
-      {
-        source: "/maintenance/",
-        destination: "/services/website-maintenance",
-        permanent: true,
-      },
-      {
         source: "/ai-consultation",
         destination: "/services/ai-consultation",
         permanent: true,
@@ -181,8 +171,6 @@ const nextConfig = {
       // ============================================
       // Old WordPress Landing Pages — redirect to service pages
       // ============================================
-      { source: "/web-designers-near-me",          destination: "/services/web-design-development", permanent: true },
-      { source: "/web-designers-near-me/",         destination: "/services/web-design-development", permanent: true },
       { source: "/mobile-web-design-in-toronto",   destination: "/services/web-design-development", permanent: true },
       { source: "/mobile-web-design-in-toronto/",  destination: "/services/web-design-development", permanent: true },
       { source: "/ecommerce-website-design-toronto",  destination: "/services/web-design-development", permanent: true },
