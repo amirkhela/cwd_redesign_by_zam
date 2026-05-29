@@ -441,6 +441,101 @@ export default function SeoTorontoPage() {
         </div>
       </section>
 
+      {/* ─── PRICING ─── */}
+      <section className="py-14" style={{ background: "#f8fafc" }}>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Transparent Pricing</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Affordable Toronto SEO Pricing — No Surprises</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">Flat monthly packages. No hidden fees, no lock-in contracts. Cancel anytime — we earn your business by delivering results.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {[
+              {
+                name: "Starter",
+                price: "$499",
+                period: "/month",
+                desc: "For Toronto small businesses ready to start ranking — clinics, trades, restaurants, retail, professional services.",
+                features: ["Local keyword research", "On-page optimization (up to 5 pages)", "Google Business Profile management", "20 local citation submissions", "Monthly ranking report", "Free technical audit"],
+                cta: "Start Ranking",
+                highlight: false,
+              },
+              {
+                name: "Growth",
+                price: "$899",
+                period: "/month",
+                desc: "The complete Toronto SEO package for businesses ready to dominate their category across Toronto neighbourhoods.",
+                features: ["Full keyword strategy (50+ targets)", "On-page optimization (unlimited pages)", "GBP + local pack optimization", "50+ citation submissions", "Monthly content (1 blog + 1 landing page)", "Link building — Canadian publications", "Weekly ranking updates", "Dedicated account manager"],
+                cta: "Get Growth Plan",
+                highlight: true,
+              },
+              {
+                name: "Enterprise",
+                price: "Custom",
+                period: "quote",
+                desc: "For multi-location Toronto businesses, healthcare groups, law firms, and e-commerce brands with aggressive growth goals.",
+                features: ["Multi-location keyword strategy", "E-commerce SEO", "Full content marketing program", "Google Ads integration", "CRO + conversion tracking", "Priority support + monthly strategy call"],
+                cta: "Get a Custom Quote",
+                highlight: false,
+              },
+            ].map((plan) => (
+              <div key={plan.name} className={`rounded-2xl p-8 reveal border transition-all duration-300 ${plan.highlight ? "border-[#00AADF]" : "border-gray-100 bg-white"}`} style={plan.highlight ? { background: "linear-gradient(135deg, #003B6F, #00AADF)", boxShadow: "0 8px 40px rgba(0,170,223,0.3)" } : { boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+                <p className={`text-sm font-bold tracking-widest uppercase mb-2 ${plan.highlight ? "text-white/70" : "text-[#00AADF]"}`}>{plan.name}</p>
+                <p className={`text-4xl font-black mb-1 ${plan.highlight ? "text-white" : "text-gray-900"}`}>{plan.price}</p>
+                <p className={`text-sm mb-4 ${plan.highlight ? "text-white/60" : "text-gray-400"}`}>{plan.period}</p>
+                <p className={`text-sm leading-relaxed mb-6 ${plan.highlight ? "text-white/80" : "text-gray-600"}`}>{plan.desc}</p>
+                <ul className="space-y-2.5 mb-8">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2.5">
+                      <svg className={`w-4 h-4 shrink-0 ${plan.highlight ? "text-white" : "text-[#00AADF]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                      <span className={`text-sm ${plan.highlight ? "text-white/90" : "text-gray-600"}`}>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact" className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-bold text-sm transition-all duration-300 ${plan.highlight ? "bg-white text-[#003B6F] hover:bg-white/90" : "text-white hover:opacity-90"}`} style={!plan.highlight ? { background: "linear-gradient(135deg, #003B6F, #00AADF)" } : {}}>
+                  {plan.cta}
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-400 text-sm">All plans include a free Toronto SEO audit. Month-to-month — no lock-in, cancel anytime.</p>
+        </div>
+      </section>
+
+      {/* ─── TIMELINE ─── */}
+      <section className="py-14 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Your SEO Journey</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">What Toronto SEO Looks Like Month by Month</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">
+              Toronto is Canada&apos;s most competitive SEO market. Here&apos;s an honest, realistic timeline for what our clients achieve.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            {[
+              { month: "Month 1", title: "Audit, Strategy & Technical Foundation", desc: "We run a complete Toronto SEO audit: your current keyword positions, site technical health, Google Business Profile status, backlink profile, and competitor keyword gaps across your target Toronto neighbourhoods. We fix all critical on-site technical issues, optimize meta titles and descriptions for your core Toronto keywords, update your GBP listing, and submit the first batch of 20 priority citations. Month 1 ends with a solid SEO foundation in place." },
+              { month: "Months 2–3", title: "Content Optimization & Citation Building", desc: "We optimize every key service page for Toronto search intent and publish neighbourhood-specific content targeting Downtown, North York, Scarborough, and Etobicoke. Citation building continues across 50+ directories. Most Toronto SEO clients see their first ranking movements in weeks 6–8 — pages start climbing from positions 30–60 into the top 25, and your GBP begins gaining impressions for local pack queries." },
+              { month: "Months 3–6", title: "Page 1 Rankings for Targeted Keywords", desc: "Lower-difficulty Toronto keywords break into page 1 — particularly neighbourhood-specific searches and service + neighbourhood combinations ('affordable seo north york', 'seo agency etobicoke'). Organic traffic grows measurably. Your GBP gains calls, direction requests, and website visits from Toronto local pack appearances. Monthly ranking reports show exactly where you rank against key Toronto competitors." },
+              { month: "Month 6+", title: "Compounding Authority & Sustained Growth", desc: "Higher-volume Toronto keywords like 'seo toronto' and 'affordable seo toronto' move into the top 15–20 as domain authority compounds. Each new piece of content and citation multiplies the authority of everything already built. Toronto's competitive market rewards persistence — businesses that invest consistently for 6–12 months build rankings that are extremely difficult for new entrants to displace." },
+            ].map((t, i) => (
+              <div key={t.month} className="flex gap-6 reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
+                <div className="flex flex-col items-center pt-1">
+                  <div className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center text-white font-black text-sm" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>{i + 1}</div>
+                  {i < 3 && <div className="w-0.5 flex-1 mt-2 mb-2" style={{ background: "linear-gradient(to bottom, rgba(0,170,223,0.4), transparent)" }} />}
+                </div>
+                <div className="pb-10">
+                  <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-1">{t.month}</p>
+                  <h3 className="text-gray-900 font-black text-lg mb-2">{t.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{t.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── FAQ ─── */}
       <section className="py-14" style={{ background: "#f8fafc" }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -472,14 +567,14 @@ export default function SeoTorontoPage() {
               Web Design Toronto ↗
             </Link>
             {[
+              { name: "SEO Mississauga", slug: "mississauga" },
               { name: "SEO Brampton", slug: "brampton" },
-              { name: "SEO Burnaby", slug: "burnaby" },
-              { name: "SEO Victoria", slug: "victoria" },
+              { name: "SEO North York", slug: "north-york" },
               { name: "SEO Halifax", slug: "halifax" },
               { name: "SEO Calgary", slug: "calgary" },
               { name: "SEO Ottawa", slug: "ottawa" },
             ].map((c) => (
-              <Link key={c.slug} href={`/locations/${c.slug}`}
+              <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
                 {c.name}
               </Link>

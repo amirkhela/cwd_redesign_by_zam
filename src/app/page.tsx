@@ -207,8 +207,8 @@ export default function HomePage() {
 
               <h1 className="hero-fade-up-1 font-black text-white leading-tight mb-6"
                 style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", lineHeight: 1.05 }}>
-                Web Design Toronto{" "}<br />
-                <span className="gradient-text-animated">&amp; Across Canada</span>
+                Web Design Canada{" "}<br />
+                <span className="gradient-text-animated">&amp; Toronto</span>
               </h1>
 
               <p className="hero-fade-up-2 text-lg text-white leading-relaxed max-w-lg mb-10">

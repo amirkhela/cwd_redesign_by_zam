@@ -126,6 +126,34 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
+
+      {/* ─── CITY SEO LINKS ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm font-semibold text-gray-600 mb-5">Local SEO services across Canada — find your city:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "SEO Toronto", slug: "toronto" },
+              { name: "SEO Mississauga", slug: "mississauga" },
+              { name: "SEO Brampton", slug: "brampton" },
+              { name: "SEO North York", slug: "north-york" },
+              { name: "SEO Ottawa", slug: "ottawa" },
+              { name: "SEO Vancouver", slug: "vancouver" },
+              { name: "SEO Burnaby", slug: "burnaby" },
+              { name: "SEO Surrey", slug: "surrey" },
+              { name: "SEO Calgary", slug: "calgary" },
+              { name: "SEO Edmonton", slug: "edmonton" },
+              { name: "SEO Halifax", slug: "halifax" },
+              { name: "SEO Kitchener", slug: "kitchener" },
+            ].map((c) => (
+              <Link key={c.slug} href={`/seo/${c.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
+                {c.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
