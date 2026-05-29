@@ -178,8 +178,6 @@ const nextConfig = {
       // ============================================
       // Old WordPress Landing Pages — redirect to service pages
       // ============================================
-      { source: "/mobile-web-design-in-toronto",   destination: "/services/web-design-development", permanent: true },
-      { source: "/mobile-web-design-in-toronto/",  destination: "/services/web-design-development", permanent: true },
       { source: "/ecommerce-website-design-toronto",  destination: "/services/web-design-development", permanent: true },
       { source: "/ecommerce-website-design-toronto/", destination: "/services/web-design-development", permanent: true },
 

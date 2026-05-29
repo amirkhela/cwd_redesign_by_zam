@@ -1,10 +1,10 @@
 ---
-title: "Website Design Near Me: Local Experts for Small Businesses"
+title: "Website Design Near Me: How to Find the Right Local Web Designer"
 slug: "website-design-near-me-finding-the-right-team-for-your-business"
-date: "2025-09-23"
+date: "2026-05-29"
 author: "Canadian Web Designs"
-description: "Finding a reliable website design team near you is essential for growing your business online. At Canadian Web Designs , we specialize in creating..."
-keywords: ["website design near me finding the right team for your business","Web Design"]
+description: "Looking for a website designer near you? Canadian Web Designs serves Toronto, Mississauga, Brampton & 20+ Canadian cities. Custom websites from $1,499. SEO included. Free consultation."
+keywords: ["website design near me","local web designer","web designer near me canada"]
 category: "Web Design"
 featuredImage: "/blog/posts/3-1.png"
 ---

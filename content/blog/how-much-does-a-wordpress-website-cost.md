@@ -1,10 +1,10 @@
 ---
-title: "Understanding WordPress Website Costs in Toronto &amp; GTA"
+title: "How Much Does a WordPress Website Cost in Canada? (2026 Pricing)"
 slug: "how-much-does-a-wordpress-website-cost"
-date: "2024-01-16"
+date: "2026-05-29"
 author: "Canadian Web Designs"
-description: "Are you a business owner in Toronto or the Greater Toronto Area (GTA) ready to elevate your online presence? A powerful WordPress website can be your..."
-keywords: ["how much does a wordpress website cost","Blog"]
+description: "WordPress websites in Canada cost $1,499–$8,000+ depending on complexity. Here's exactly what you'll pay for design, hosting, plugins, and maintenance — with real 2026 Canadian pricing."
+keywords: ["how much does a wordpress website cost","wordpress website cost canada","wordpress website pricing toronto"]
 category: "Blog"
 featuredImage: "/blog/posts/launchpresso-IOM28XWsk-g-unsplash.jpg"
 ---

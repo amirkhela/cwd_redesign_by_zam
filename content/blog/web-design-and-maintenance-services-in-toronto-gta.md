@@ -1,10 +1,10 @@
 ---
-title: "Web Design and Maintenance Services in Toronto &amp; GTA"
+title: "Web Design and Maintenance Services in Toronto & GTA"
 slug: "web-design-and-maintenance-services-in-toronto-gta"
-date: "2025-06-05"
+date: "2026-05-29"
 author: "Canadian Web Designs"
-description: "Looking for professional web design and maintenance services in Toronto or the GTA? Whether you're a startup or a growing business, your website is..."
-keywords: ["web design and maintenance services in toronto gta","Web Design"]
+description: "Custom web design and monthly maintenance services for Toronto and GTA businesses. Websites from $1,499. Maintenance plans from $99/mo. 180+ five-star reviews. Free consultation."
+keywords: ["web design and maintenance services toronto","web design toronto gta","website maintenance toronto"]
 category: "Web Design"
 featuredImage: "/blog/posts/website-maintenance-costs-toronto.jpg"
 ---
