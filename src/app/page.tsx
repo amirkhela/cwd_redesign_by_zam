@@ -13,7 +13,7 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: "Web Design Canada | Toronto's Top-Rated Agency | Canadian Web Designs",
   description:
-    `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews. Custom websites, web design services & local SEO from Toronto to Vancouver. Free quote — ${config.phone}.`,
+    `Canada's top-rated web design agency — ${config.reviewCount}+ five-star reviews. Custom websites built to rank on Google & convert visitors. Toronto to Vancouver. Get a free quote today.`,
   alternates: { canonical: "/" },
   openGraph: {
     title: "Web Design Canada | Toronto's Top-Rated Agency | Canadian Web Designs",

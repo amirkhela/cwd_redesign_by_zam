@@ -108,7 +108,11 @@
 
 .animate-carousel        { animation: carousel 30s linear infinite; }
 .animate-float           { animation: float 7s ease-in-out infinite; }
-.animate-orb             { animation: orb-pulse 5s ease-in-out infinite; }
+.animate-orb             { animation: orb-pulse 5s ease-in-out infinite; will-change: transform, opacity; }
+
+@media (max-width: 767px) {
+  .animate-orb { display: none !important; }
+}
 .animate-scroll-bounce   { animation: scroll-bounce 1.8s ease-in-out infinite; }
 
 /* Hero entrance animations (no JS needed) */

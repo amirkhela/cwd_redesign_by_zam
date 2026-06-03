@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import SiteShell from "@/components/SiteShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import Preloader from "@/components/Preloader";
 import { getConfig } from "@/lib/client-config";
 import HreflangTags from "@/components/HreflangTags";
 import ConditionalSchemas from "@/components/ConditionalSchemas";
@@ -224,13 +223,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://analytics.google.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-        {/* Google Ads tag — must be in <head> for detection */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18177745300" />
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18177745300');` }} />
         <HreflangTags />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-dark antialiased font-sans">
-        <Preloader />
         <GoogleAnalytics />
         <SiteShell
           awards={
@@ -311,23 +306,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             init();
 
             // Re-init after Next.js soft navigation.
-            // pushState fires when URL changes, but RSC rendering is async —
-            // so we retry at multiple intervals to catch elements as they appear.
             function onNav() {
-              [80, 250, 500, 900, 1500].forEach(function(d) { setTimeout(init, d); });
+              [80, 300, 700].forEach(function(d) { setTimeout(init, d); });
             }
             var _push    = history.pushState.bind(history);
             var _replace = history.replaceState.bind(history);
             history.pushState    = function() { _push.apply(history, arguments);    onNav(); };
             history.replaceState = function() { _replace.apply(history, arguments); onNav(); };
             window.addEventListener('popstate', onNav);
-
-            // Fallback: watch for new reveal elements added to the DOM
-            var debounce;
-            new MutationObserver(function() {
-              clearTimeout(debounce);
-              debounce = setTimeout(init, 100);
-            }).observe(document.documentElement, { childList: true, subtree: true });
           })();
         `}</Script>
       </body>
