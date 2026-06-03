@@ -4,7 +4,8 @@ const BASE_URL = `https://${getConfig().domain}`;
 
 export interface BreadcrumbItem {
   name: string;
-  href: string;
+  href?: string;
+  url?: string;
 }
 
 export default function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
@@ -13,12 +14,14 @@ export default function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] })
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-      ...items.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 2,
-        name: item.name,
-        item: `${BASE_URL}${item.href}`,
-      })),
+      ...items
+        .filter((item) => item.name !== "Home")
+        .map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 2,
+          name: item.name,
+          item: item.href ? `${BASE_URL}${item.href}` : (item.url ?? BASE_URL),
+        })),
     ],
   };
 

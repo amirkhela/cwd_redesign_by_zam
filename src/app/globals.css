@@ -59,7 +59,7 @@
 
 @keyframes orb-pulse {
   0%, 100% { transform: scale(1); opacity: 0.45; }
-  50%       { transform: scale(1.35); opacity: 0.85; }
+  50%       { transform: scale(1.12); opacity: 0.72; }
 }
 
 @keyframes text-gradient-flow {
@@ -106,12 +106,21 @@
    ANIMATION UTILITY CLASSES
    ======================================== */
 
-.animate-carousel        { animation: carousel 30s linear infinite; }
+.animate-carousel        { animation: carousel 30s linear infinite; will-change: transform; }
 .animate-float           { animation: float 7s ease-in-out infinite; }
 .animate-orb             { animation: orb-pulse 5s ease-in-out infinite; will-change: transform, opacity; }
 
 @media (max-width: 767px) {
   .animate-orb { display: none !important; }
+  .glass {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(255, 255, 255, 0.12);
+  }
+  .glass-white {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
 }
 .animate-scroll-bounce   { animation: scroll-bounce 1.8s ease-in-out infinite; }
 

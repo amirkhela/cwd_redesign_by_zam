@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { getConfig } from "@/lib/client-config";
 import StarRating from "@/components/StarRating";
-import ClientLogoCarousel from "@/components/ClientLogoCarousel";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
-import GoogleReviews from "@/components/GoogleReviews";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+
+const GoogleReviews = dynamic(() => import("@/components/GoogleReviews"));
+const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel"));
 
 const config = getConfig();
 
@@ -134,6 +136,7 @@ export default function HomePage() {
           src="/images/hero-leading-web-design.jpg"
           alt=""
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
@@ -272,7 +275,7 @@ export default function HomePage() {
         className="relative overflow-hidden py-section-y"
         style={{ background: "#08121F" }}
       >
-        <Image src="/blog/web-design-company.png" alt="" fill className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
+        <Image src="/blog/web-design-company.png" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "rgba(8,18,31,0.75)" }} />
         {/* Background orb */}
         <div
@@ -480,7 +483,7 @@ export default function HomePage() {
         className="py-section-y relative overflow-hidden"
         style={{ background: "#08121F" }}
       >
-        <Image src="/portfolio/remove-my-walls.jpg" alt="" fill className="object-cover object-center pointer-events-none" style={{ opacity: 0.25 }} />
+        <Image src="/portfolio/remove-my-walls.jpg" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.25 }} />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "rgba(8,18,31,0.78)" }} />
         <div
           className="absolute inset-0 pointer-events-none"
@@ -626,7 +629,7 @@ export default function HomePage() {
         className="relative py-14 overflow-hidden"
         style={{ background: "#010C1E" }}
       >
-        <Image src="/blog/seo-services-london-ontario.png" alt="" fill className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
+        <Image src="/blog/seo-services-london-ontario.png" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(1,12,30,0.82) 0%, rgba(5,33,64,0.80) 55%, rgba(1,13,26,0.82) 100%)" }} />
         <div
           className="absolute top-0 left-1/4 w-96 h-96 rounded-full pointer-events-none animate-orb"

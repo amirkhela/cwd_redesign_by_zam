@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { getConfig } from "@/lib/client-config";
@@ -222,7 +223,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://analytics.google.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <HreflangTags />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-dark antialiased font-sans">
@@ -233,16 +236,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
                 <p className="text-center text-[#00AADF] text-xs font-bold tracking-[0.2em] uppercase mb-7">Awards &amp; Recognition</p>
                 <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-14">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/designrush.png" alt="Canadian Web Designs featured on DesignRush" height="50" className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/reliable.png" alt="Canadian Web Designs top-rated reliable business badge" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/clever-canadian.png" alt="Canadian Web Designs awarded Canada Best web agency" height="60" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/clutch.png" alt="Canadian Web Designs top agency badge on Clutch" height="40" className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="/badges/bbb.png" alt="Canadian Web Designs BBB accredited business badge" height="55" className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <Image src="/badges/designrush.png" alt="Canadian Web Designs featured on DesignRush" width={120} height={48} className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <Image src="/badges/reliable.png" alt="Canadian Web Designs top-rated reliable business badge" width={120} height={56} className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <Image src="/badges/clever-canadian.png" alt="Canadian Web Designs awarded Canada Best web agency" width={120} height={56} className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <Image src="/badges/clutch.png" alt="Canadian Web Designs top agency badge on Clutch" width={100} height={40} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                  <Image src="/badges/bbb.png" alt="Canadian Web Designs BBB accredited business badge" width={120} height={56} className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                 </div>
               </div>
             </section>

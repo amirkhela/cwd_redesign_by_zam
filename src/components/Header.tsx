@@ -151,7 +151,6 @@ export default function Header() {
         <Link href="/" className="flex items-center shrink-0 group">
           <Image
             src="/logos/logo.png"
-            unoptimized
             alt={config.businessName}
             style={{ height: "36px", width: "auto" }}
             width={150}

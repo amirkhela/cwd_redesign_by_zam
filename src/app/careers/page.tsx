@@ -72,8 +72,7 @@ export default function CareersPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: `https://${config.domain}/` },
-          { name: "Careers", url: `https://${config.domain}/careers` },
+          { name: "Careers", href: "/careers" },
         ]}
       />
 
