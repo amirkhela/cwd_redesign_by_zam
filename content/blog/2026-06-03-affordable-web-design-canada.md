@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Get affordable web design in Canada without sacrificing quality. Discover how Canadian small businesses get professional, SEO-optimized websites that rank and convert."
 keywords: ["affordable web design canada", "cheap web design canada", "web design company canada", "professional website canada", "web design small business canada"]
 category: "Web Design"
-featuredImage: "/blog/posts/default.png"
+featuredImage: "/blog/Professional-Web-Design-Services-in-Canada.png"
 ---
 
 <p>When most Canadian small business owners search for <strong>affordable web design in Canada</strong>, they expect to face a trade-off: either pay premium agency rates for a quality website, or settle for a cheap template that barely functions and never ranks on Google. The good news? That trade-off is a myth.</p>

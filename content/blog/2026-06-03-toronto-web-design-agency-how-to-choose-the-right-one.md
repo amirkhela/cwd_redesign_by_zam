@@ -6,7 +6,7 @@ author: "Canadian Web Designs"
 description: "Choosing a Toronto web design agency? Learn what separates top agencies from the rest — and how to pick a partner that builds sites that rank and convert."
 keywords: ["toronto web design agency", "web design agency toronto", "web design toronto", "best web design agency toronto"]
 category: "Web Design"
-featuredImage: "/blog/posts/default.png"
+featuredImage: "/blog/Canadian-Website-Design-Toronto.png"
 ---
 
 <p>If you're searching for a <strong>Toronto web design agency</strong>, you're already ahead of most business owners — you know that a great website is one of the highest-ROI investments your business can make. But with hundreds of agencies in the city, the real question is: how do you find the right one?</p>
