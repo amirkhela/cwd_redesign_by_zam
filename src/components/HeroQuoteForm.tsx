@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Script from "next/script";
-
-const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
 
 export default function HeroQuoteForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
@@ -18,11 +15,6 @@ export default function HeroQuoteForm() {
     if (status === "sending") return;
     setStatus("sending");
     try {
-      let recaptchaToken = "";
-      if (RECAPTCHA_SITE_KEY && typeof window !== "undefined" && (window as any).grecaptcha) {
-        recaptchaToken = await (window as any).grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "homepage_quote" });
-      }
-
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -34,7 +26,7 @@ export default function HeroQuoteForm() {
           service: form.service,
           message: `Quick quote request from the homepage.\n\nService: ${form.service || "General Inquiry"}`,
           source: "homepage",
-          recaptchaToken,
+          recaptchaToken: "",
           _hp: "",
         }),
       });
@@ -80,12 +72,6 @@ export default function HeroQuoteForm() {
 
   return (
     <>
-      {RECAPTCHA_SITE_KEY && (
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
-          strategy="lazyOnload"
-        />
-      )}
       <form
         onSubmit={submit}
         className="rounded-2xl p-6"
@@ -203,7 +189,7 @@ export default function HeroQuoteForm() {
           )}
         </div>
 
-        <p className="text-white/25 text-xs text-center mt-4">🔒 Protected by reCAPTCHA. No spam.</p>
+        <p className="text-white/25 text-xs text-center mt-4">🔒 Secure & confidential. No spam.</p>
       </form>
     </>
   );

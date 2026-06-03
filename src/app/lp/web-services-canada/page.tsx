@@ -3,10 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Script from "next/script";
 import Image from "next/image";
-
-const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
 
 const testimonials = [
   {
@@ -63,10 +60,7 @@ function LpForm() {
     if (status === "sending") return;
     setStatus("sending");
     try {
-      let recaptchaToken = "";
-      if (RECAPTCHA_SITE_KEY && typeof window !== "undefined" && (window as any).grecaptcha) {
-        recaptchaToken = await (window as any).grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "lp_quote" });
-      }
+      const recaptchaToken = "";
       const [firstName, ...rest] = form.name.trim().split(" ");
       const lastName = rest.join(" ") || "-";
       const res = await fetch("/api/contact", {
@@ -95,9 +89,6 @@ function LpForm() {
 
   return (
     <>
-      {RECAPTCHA_SITE_KEY && (
-        <Script src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`} strategy="lazyOnload" />
-      )}
       <form
         onSubmit={submit}
         className="rounded-2xl p-6"
