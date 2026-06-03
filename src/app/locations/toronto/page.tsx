@@ -5,14 +5,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata: Metadata = {
-  title: "Web Design Toronto | #1 Rated Web Design Agency | Canadian Web Designs",
+  title: "Web Design Agency Toronto | 180+ Reviews | Free Quote | CWD",
   description:
-    "Toronto's top-rated web design agency. 180+ five-star reviews. Custom websites that rank on Google & convert visitors into paying customers. Serving Downtown, North York, Scarborough & the GTA. Free quote — (647) 689-6069.",
+    "Toronto's top-rated web design agency. 180+ five-star reviews. Custom websites that rank on Google & convert visitors into customers. Serving all of Toronto & the GTA. Free quote.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
-    title: "Web Design Toronto | #1 Rated Agency | Canadian Web Designs",
+    title: "Web Design Agency Toronto | 180+ Reviews | CWD",
     description:
-      "180+ five-star Google reviews. Custom Toronto websites built to rank and convert. Free consultation — call (647) 689-6069.",
+      "Toronto's top-rated web design agency. Custom sites that rank & convert. 180+ five-star reviews. Free quote — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/toronto",
     images: [
       {
@@ -214,7 +214,7 @@ export default function TorontoPage() {
               className="hero-fade-up-1 font-black text-white mb-5"
               style={{ fontSize: "clamp(2rem, 4.5vw, 3.2rem)", lineHeight: 1.05 }}
             >
-              Web Design Toronto —{" "}
+              Web Design Agency Toronto —{" "}
               <span className="gradient-text-animated">Built to Rank. Built to Convert.</span>
             </h1>
 
@@ -291,6 +291,13 @@ export default function TorontoPage() {
                 </p>
                 <p>
                   Every Toronto website we build is mobile-first (70%+ of Toronto searches happen on smartphones), loads in under 2 seconds, and is optimized for the exact keywords your ideal customers are searching. We don&apos;t use templates. We don&apos;t outsource. And we back every project with a results guarantee.
+                </p>
+                <p>
+                  Looking to grow beyond web design? We offer comprehensive{" "}
+                  <Link href="/services/seo" className="text-[#00AADF] font-semibold hover:underline">SEO services in Toronto</Link>{" "}
+                  to drive sustained organic traffic, and{" "}
+                  <Link href="/ecommerce-website-design-toronto" className="text-[#00AADF] font-semibold hover:underline">ecommerce website design</Link>{" "}
+                  for Toronto retailers ready to sell online at scale.
                 </p>
               </div>
             </div>

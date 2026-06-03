@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: "Web Design Services Canada | Custom Websites That Rank | Canadian Web Designs",
-  description: "Professional web design services across Canada. Custom, SEO-optimized, mobile-first websites from $1,499. 180+ five-star reviews. Free quote — (647) 689-6069.",
+  title: "Web Design Canada | Custom Websites That Rank | CWD",
+  description: "Custom web design services across Canada. Mobile-first, SEO-optimized websites built to rank on Google & convert visitors into customers. From $1,499 — free quote today.",
   alternates: { canonical: "/services/web-design-development" },
 };
 
@@ -39,6 +39,16 @@ const faqSchema = {
       "@type": "Question",
       name: "Do you provide website hosting and maintenance?",
       acceptedAnswer: { "@type": "Answer", text: "Yes. We offer managed hosting, security monitoring, regular updates, and ongoing maintenance packages. Our maintenance plans start at an affordable monthly rate and keep your site secure, fast, and up-to-date." },
+    },
+    {
+      "@type": "Question",
+      name: "What makes Canadian Web Designs the best web design company in Toronto?",
+      acceptedAnswer: { "@type": "Answer", text: "We combine deep Toronto market knowledge, proven local SEO expertise, and 180+ five-star reviews to deliver websites that rank on Google and convert visitors into customers. Unlike agencies that use templates, we build every site from scratch — custom to your brand and industry. Our results guarantee means we keep working at no extra charge if your site doesn't perform." },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer affordable web design for small businesses in Canada?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We offer transparent, flat-rate pricing starting from $1,499 with no hidden fees. We believe every Canadian small business deserves a professional website — our packages are designed to fit SMB budgets while delivering enterprise-quality design, SEO, and performance." },
     },
   ],
 };

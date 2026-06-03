@@ -7,8 +7,8 @@ import StarRating from "@/components/StarRating";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
-const GoogleReviews = dynamic(() => import("@/components/GoogleReviews"));
-const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel"));
+const GoogleReviews = dynamic(() => import("@/components/GoogleReviews"), { ssr: false });
+const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel"), { ssr: false });
 
 const config = getConfig();
 
@@ -146,40 +146,15 @@ export default function HomePage() {
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.82) 0%, rgba(1,12,30,0.55) 45%, rgba(1,12,30,0.30) 100%)" }}
         />
 
-        {/* Animated orbs */}
+        {/* Ambient glow — CSS gradients replace blur-filter orbs for better paint performance */}
         <div
-          className="absolute animate-orb pointer-events-none"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            top: "5%", left: "2%",
-            width: 600, height: 600,
-            borderRadius: "50%",
-            background: "#00AADF",
-            filter: "blur(130px)",
-            opacity: 0.35,
-          }}
-        />
-        <div
-          className="absolute animate-orb pointer-events-none"
-          style={{
-            bottom: "0%", right: "0%",
-            width: 480, height: 480,
-            borderRadius: "50%",
-            background: "#00AADF",
-            filter: "blur(110px)",
-            opacity: 0.22,
-            animationDelay: "2.5s",
-          }}
-        />
-        <div
-          className="absolute animate-orb pointer-events-none"
-          style={{
-            top: "40%", right: "30%",
-            width: 300, height: 300,
-            borderRadius: "50%",
-            background: "#33C2E8",
-            filter: "blur(90px)",
-            opacity: 0.18,
-            animationDelay: "1.2s",
+            background: [
+              "radial-gradient(ellipse 65% 60% at 3% 10%, rgba(0,170,223,0.28) 0%, transparent 52%)",
+              "radial-gradient(ellipse 50% 45% at 92% 95%, rgba(0,170,223,0.20) 0%, transparent 52%)",
+              "radial-gradient(ellipse 35% 35% at 62% 42%, rgba(51,194,232,0.14) 0%, transparent 58%)",
+            ].join(", "),
           }}
         />
 
@@ -272,19 +247,20 @@ export default function HomePage() {
           SERVICES — Dark section
           ============================================= */}
       <section
-        className="relative overflow-hidden py-section-y"
+        className="relative overflow-hidden py-section-y cv-auto"
         style={{ background: "#08121F" }}
       >
         <Image src="/blog/web-design-company.png" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "rgba(8,18,31,0.75)" }} />
-        {/* Background orb */}
+        {/* Ambient glow via CSS gradients — no filter:blur overhead */}
         <div
-          className="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none"
-          style={{ background: "#00AADF", filter: "blur(150px)", opacity: 0.18 }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-80 h-80 rounded-full pointer-events-none"
-          style={{ background: "#00AADF", filter: "blur(130px)", opacity: 0.12 }}
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: [
+              "radial-gradient(ellipse 50% 50% at 100% 0%, rgba(0,170,223,0.16) 0%, transparent 55%)",
+              "radial-gradient(ellipse 45% 45% at 0% 100%, rgba(0,170,223,0.11) 0%, transparent 50%)",
+            ].join(", "),
+          }}
         />
 
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8 relative">
@@ -337,7 +313,7 @@ export default function HomePage() {
       {/* =============================================
           PROCESS — How We Work
           ============================================= */}
-      <section className="py-section-y bg-white">
+      <section className="py-section-y bg-white cv-auto">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 reveal">
             <span className="inline-block text-accent text-sm font-bold tracking-[0.2em] uppercase mb-4">
@@ -403,7 +379,7 @@ export default function HomePage() {
       {/* =============================================
           WHY CHOOSE US — Content-rich SEO section
           ============================================= */}
-      <section className="py-section-y bg-white">
+      <section className="py-section-y bg-white cv-auto">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 
@@ -480,7 +456,7 @@ export default function HomePage() {
           PORTFOLIO PREVIEW — Dark section
           ============================================= */}
       <section
-        className="py-section-y relative overflow-hidden"
+        className="py-section-y relative overflow-hidden cv-auto"
         style={{ background: "#08121F" }}
       >
         <Image src="/portfolio/remove-my-walls.jpg" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.25 }} />
@@ -533,6 +509,7 @@ export default function HomePage() {
                     src={item.src}
                     alt={`${item.name} website designed by Canadian Web Designs`}
                     fill
+                    loading="lazy"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                   />
@@ -557,7 +534,7 @@ export default function HomePage() {
       {/* =============================================
           TESTIMONIALS
           ============================================= */}
-      <section className="py-section-y" style={{ background: "#f8f7fc" }}>
+      <section className="py-section-y cv-auto" style={{ background: "#f8f7fc" }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 reveal">
             <span className="inline-block text-accent text-sm font-bold tracking-[0.2em] uppercase mb-4">
@@ -704,10 +681,12 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: config.businessName,
+            description: "Canada's top-rated web design agency offering custom websites, local SEO, ecommerce development, Google Ads, and digital marketing for businesses across Toronto and Canada.",
             image: `https://${config.domain}/logo.png`,
             "@id": `https://${config.domain}`,
             url: `https://${config.domain}`,
             telephone: config.phone,
+            priceRange: "$$",
             address: Object.values(config.addresses).map((addr) => ({
               "@type": "PostalAddress",
               streetAddress: addr.street,
@@ -728,6 +707,11 @@ export default function HomePage() {
               reviewCount: config.reviewCount,
               bestRating: 5,
             },
+            sameAs: [
+              "https://www.facebook.com/canadianwebdesigns",
+              "https://www.instagram.com/canadianwebdesigns",
+              "https://www.linkedin.com/company/canadianwebdesigns",
+            ],
           }),
         }}
       />

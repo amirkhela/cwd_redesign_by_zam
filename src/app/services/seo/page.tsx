@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
-  title: "SEO Services Canada | Affordable Local SEO for Canadian Businesses",
-  description: "Affordable SEO services for Canadian businesses. We offer local SEO in Toronto, Calgary, Vancouver and more — no contracts, real results. Get a free quote.",
+  title: "SEO Services Canada | Rank on Google | Canadian Web Designs",
+  description: "Rank on Google with affordable SEO services across Canada. Local SEO, technical audits & link building for Canadian businesses. No contracts. Free SEO quote today.",
   alternates: { canonical: "/services/seo" },
 };
 
@@ -34,6 +34,16 @@ const faqSchema = {
       "@type": "Question",
       name: "Can you guarantee first-page Google rankings?",
       acceptedAnswer: { "@type": "Answer", text: "No ethical SEO agency can guarantee specific rankings — Google's algorithm is complex and constantly changing. What we guarantee is a proven, white-hat strategy and transparent reporting. Our average client sees 300%+ organic traffic growth within 12 months." },
+    },
+    {
+      "@type": "Question",
+      name: "How much do SEO services cost in Canada?",
+      acceptedAnswer: { "@type": "Answer", text: "Our Canadian SEO packages are tailored to your market, competition, and goals. We offer flexible, no-contract pricing with no lock-in. Contact us for a free strategy call and a custom quote — most small business packages start at an affordable monthly rate with clear deliverables and monthly reporting." },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer ecommerce SEO for Canadian online stores?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Our ecommerce SEO services cover product page optimization, category keyword targeting, schema markup, technical speed optimization, and link building. We work with Shopify, WooCommerce, and custom ecommerce platforms across Canada." },
     },
   ],
 };

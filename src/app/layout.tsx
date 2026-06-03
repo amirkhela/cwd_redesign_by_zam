@@ -220,6 +220,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/logos/favicon.png" type="image/png" />
         <link rel="shortcut icon" href="/logos/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/logos/apple-touch-icon.png" />
+        {/* Preload hero LCP image — fires before page component hydrates */}
+        <link rel="preload" as="image" href="/images/hero-leading-web-design.jpg" fetchPriority="high" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://analytics.google.com" />

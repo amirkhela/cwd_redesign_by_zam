@@ -197,7 +197,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: text-gradient-flow 4s linear infinite;
+  animation: text-gradient-flow 4s linear 3;
+  animation-fill-mode: forwards;
 }
 
 /* Glass morphism */
@@ -269,10 +270,13 @@
    MISC
    ======================================== */
 
-/* Google Translate */
-.goog-te-banner-frame, .skiptranslate { display: none !important; }
-body { top: 0 !important; }
 body, html { overflow-x: hidden; }
+
+/* Below-fold sections: skip rendering until near viewport */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}
 
 html { scroll-behavior: smooth; }
 

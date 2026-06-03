@@ -58,8 +58,7 @@ export default function HeroQuoteForm() {
       <div
         className="rounded-2xl p-8 flex flex-col items-center justify-center text-center"
         style={{
-          background: "rgba(0,15,35,0.82)",
-          backdropFilter: "blur(24px)",
+          background: "rgba(0,10,28,0.95)",
           border: "1px solid rgba(0,170,223,0.3)",
           boxShadow: "0 32px 80px rgba(0,0,0,0.5)",
           minHeight: 380,
@@ -91,8 +90,7 @@ export default function HeroQuoteForm() {
         onSubmit={submit}
         className="rounded-2xl p-6"
         style={{
-          background: "rgba(0,15,35,0.82)",
-          backdropFilter: "blur(24px)",
+          background: "rgba(0,10,28,0.95)",
           border: "1px solid rgba(0,170,223,0.3)",
           boxShadow: "0 32px 80px rgba(0,0,0,0.5), 0 0 50px rgba(0,170,223,0.08)",
         }}

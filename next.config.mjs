@@ -27,6 +27,7 @@ const nextConfig = {
     ];
   },
   experimental: {
+    optimizePackageImports: ["react", "react-dom", "next"],
     outputFileTracingIncludes: {
       "/blog": ["./content/blog/**/*.md"],
     },
