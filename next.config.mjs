@@ -194,11 +194,9 @@ const nextConfig = {
       // ============================================
       { source: "/website-portfolio/:slug", destination: "/portfolio", permanent: true },
 
-      // ============================================
-      // Old WordPress Landing Pages — redirect to service pages
-      // ============================================
-      { source: "/ecommerce-website-design-toronto",  destination: "/services/web-design-development", permanent: true },
-      { source: "/ecommerce-website-design-toronto/", destination: "/services/web-design-development", permanent: true },
+      // /about → /who-we-are (common alternate URL)
+      { source: "/about", destination: "/who-we-are", permanent: true },
+      { source: "/about/", destination: "/who-we-are", permanent: true },
 
       // ============================================
       // Old /seo/:city/ pages → /locations/:city

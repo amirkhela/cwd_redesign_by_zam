@@ -6,9 +6,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Careers at Canadian Web Designs | Join Our Team",
+  title: "Careers at Canadian Web Designs | Web Design Jobs in Canada",
   description:
-    "Join Canada's top-rated web design agency. We're hiring Web Designers, Frontend Developers, SEO Specialists, and Marketing Managers. Apply today.",
+    "Join Canada's top-rated web design agency. Remote web design, SEO & dev roles available. Work with a team that builds websites that actually rank. Apply today.",
   alternates: { canonical: "/careers" },
 };
 
@@ -83,11 +83,11 @@ export default function CareersPage() {
             We&apos;re Hiring
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            Join Canada&apos;s Top-Rated Web Design Agency
+            Web Design Jobs in Canada — Join Our Top-Rated Agency
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
             We&apos;re a remote-first team building websites that actually rank and convert. If you care deeply about craft,
-            results, and working with great clients — we&apos;d love to meet you.
+            results, and working with great clients across Canada — we&apos;d love to meet you.
           </p>
         </div>
       </section>
@@ -157,6 +157,59 @@ export default function CareersPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-dark text-center mb-12">Careers FAQ</h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: "Are these web design jobs fully remote?",
+                a: "Yes — all positions at Canadian Web Designs are 100% remote. You can work from anywhere in Canada. We believe great work happens when talented people have the freedom to do their best work.",
+              },
+              {
+                q: "What is it like working at a Canadian web design agency?",
+                a: "You'll work on real client projects across industries — from Toronto law firms to Vancouver ecommerce stores. Every site you ship is SEO-optimized and conversion-focused, so you'll see your work make a measurable impact.",
+              },
+              {
+                q: "Do you offer sponsorship or relocation for web design roles?",
+                a: "We currently hire candidates who are already authorized to work in Canada. We don't offer relocation or sponsorship at this time, but we do work with contractors and freelancers on a project basis.",
+              },
+              {
+                q: "What tools and tech stack does your team use?",
+                a: "Our core stack is Next.js, React, TypeScript, and Tailwind CSS. For SEO and analytics we use Google Search Console, GA4, and SE Ranking. For design, our team works in Figma. WordPress expertise is a strong bonus for many roles.",
+              },
+              {
+                q: "How do I apply for a web design or SEO role?",
+                a: "Send your portfolio and a short note about your experience to our contact page. We review every application and reach out within 5 business days for roles that match your background.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                <h3 className="font-bold text-dark mb-2">{item.q}</h3>
+                <p className="text-muted text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 bg-light rounded-2xl p-6 border border-gray-100">
+            <p className="text-dark text-sm leading-relaxed">
+              Interested in our work? Explore our{" "}
+              <Link href="/services/web-design-development" className="text-primary font-semibold hover:underline">
+                web design services
+              </Link>
+              , see our{" "}
+              <Link href="/portfolio" className="text-primary font-semibold hover:underline">
+                client portfolio
+              </Link>
+              , or learn about our{" "}
+              <Link href="/services/seo" className="text-primary font-semibold hover:underline">
+                SEO approach
+              </Link>
+              {" "}before applying.
+            </p>
           </div>
         </div>
       </section>

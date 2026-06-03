@@ -25,6 +25,8 @@ const KNOWN_ROUTES = new Set([
   "maintenance",
   "web-designers-near-me",
   "mobile-web-design-in-toronto",
+  "ecommerce-website-design-toronto",
+  "lp",
   // WordPress URLs already handled by next.config.mjs redirects
   "about-us",
   "get-in-touch",

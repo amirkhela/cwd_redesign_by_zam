@@ -6,9 +6,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Ecommerce Website Design Toronto | Custom Online Stores | Canadian Web Designs",
+  title: "Ecommerce Website Design Toronto | Shopify & WooCommerce Experts",
   description:
-    "Toronto's top ecommerce website design agency. We build Shopify, WooCommerce & custom online stores that rank on Google and convert visitors into customers. Free quote.",
+    "Toronto ecommerce website design — Shopify, WooCommerce & headless stores built to rank on Google and drive sales. 80+ stores launched. Get a free quote today.",
   alternates: { canonical: "/ecommerce-website-design-toronto" },
   openGraph: {
     title: "Ecommerce Website Design Toronto | Canadian Web Designs",
@@ -291,6 +291,27 @@ export default function EcommerceTorontoPage() {
                 <p className="text-muted text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="py-10 px-6 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-center text-sm text-muted mb-6">Related services for Toronto businesses</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/services/web-design-development" className="px-5 py-2.5 rounded-xl text-sm font-semibold border border-primary/30 text-primary hover:bg-primary hover:text-white transition-colors">
+              Web Design & Development
+            </Link>
+            <Link href="/services/seo" className="px-5 py-2.5 rounded-xl text-sm font-semibold border border-primary/30 text-primary hover:bg-primary hover:text-white transition-colors">
+              SEO Services Toronto
+            </Link>
+            <Link href="/locations/toronto" className="px-5 py-2.5 rounded-xl text-sm font-semibold border border-primary/30 text-primary hover:bg-primary hover:text-white transition-colors">
+              Web Design Toronto
+            </Link>
+            <Link href="/services/website-maintenance" className="px-5 py-2.5 rounded-xl text-sm font-semibold border border-primary/30 text-primary hover:bg-primary hover:text-white transition-colors">
+              Website Maintenance
+            </Link>
           </div>
         </div>
       </section>

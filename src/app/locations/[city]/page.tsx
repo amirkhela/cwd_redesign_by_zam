@@ -118,6 +118,30 @@ const cityContent: Record<string, {
       { q: "Can you help my Mississauga business rank in the Google local pack?", a: "Absolutely — Google Business Profile optimization is central to every Mississauga SEO package. We optimize your listing for City Centre, Port Credit, Streetsville, and other Mississauga communities, build local citations across 50+ Canadian directories, and run a review generation program. Mississauga's local pack is competitive but very winnable with the right strategy." },
     ],
   },
+  "richmond-hill": {
+    blurb: `Richmond Hill is one of the GTA's fastest-growing communities — a diverse, affluent suburb north of Toronto with a booming business ecosystem spanning healthcare, real estate, professional services, retail, and technology. With over 220,000 residents and a high average household income, Richmond Hill customers are actively searching for local businesses online — and the competition for Google's first page is fierce but winnable. Canadian Web Designs builds custom, conversion-focused websites for Richmond Hill businesses that rank on Google, load fast on mobile, and turn visitors into paying clients. From Yonge Street to Major Mackenzie Drive, we know the Richmond Hill market and understand how to position your business to capture high-intent local searches. Our Richmond Hill clients in healthcare, real estate, professional services, and trades consistently see 3–5× growth in inbound leads within the first 6 months of launch.`,
+    facts: [
+      "Richmond Hill has one of Ontario's highest average household incomes — buyers have real purchasing power",
+      "Healthcare, real estate, professional services, and retail are the dominant Richmond Hill business sectors",
+      "Richmond Hill-specific keywords have low difficulty vs Toronto — faster, cheaper to rank",
+      "High mobile search volume — a fast, mobile-first website is essential for Richmond Hill businesses",
+    ],
+    industries: ["Healthcare & Clinics", "Real Estate & Mortgage", "Professional Services", "Retail & Restaurants", "Contractors & Trades", "Technology & IT"],
+    faq: [
+      {
+        q: "How quickly can a Richmond Hill business rank on Google?",
+        a: "Richmond Hill keywords have significantly lower difficulty than downtown Toronto searches. Most of our Richmond Hill clients see meaningful movement on location-specific searches within 30–60 days of launch, with stronger city-wide rankings following in months 3–6.",
+      },
+      {
+        q: "Do you build websites for Richmond Hill healthcare and medical businesses?",
+        a: "Yes — healthcare is one of our most common Richmond Hill verticals. We build PIPEDA-compliant websites for medical clinics, dental practices, physiotherapy, chiropractic, and mental health providers in Richmond Hill, optimized for Google Maps visibility and patient trust.",
+      },
+      {
+        q: "What does web design cost for a Richmond Hill small business?",
+        a: "Our Richmond Hill web design packages start at $1,499 for a 5-page mobile-optimized site and go up to $3,499+ for a full growth package with SEO retainer. We provide detailed quotes with no hidden fees — contact us for a free consultation.",
+      },
+    ],
+  },
   "north-york": {
     blurb: `North York is one of Toronto's most densely populated and commercially active districts — with major business corridors along Yonge Street, Sheppard Avenue, and Wilson Avenue. From Yonge-Eglinton to Bayview Village, North York businesses compete intensely for local customers who search Google before spending. Canadian Web Designs builds websites for North York businesses that are optimized for hyper-local searches — 'web design north york', '[service] north york' — so you appear when customers near you are looking. We combine fast, conversion-focused web design with a local SEO strategy specifically tuned to North York's diverse business landscape: medical clinics, law firms, restaurants, contractors, and retail shops.`,
     facts: ["North York is one of Toronto's most commercially active districts — Yonge-Sheppard, Wilson, and Bayview corridors are major business hubs", "North York web design has difficulty of just 9 — one of the easiest local keywords to rank for in the GTA", "Dense residential population means strong foot traffic intent — local searches are high-converting", "Competition from downtown Toronto agencies makes local positioning critical for North York businesses"],
@@ -138,12 +162,24 @@ export function generateStaticParams() {
   return config.cities.map((c) => ({ city: c.slug }));
 }
 
+const cityMeta: Record<string, { title: string; description: string }> = {
+  "richmond-hill": {
+    title: "Web Design Richmond Hill | Top-Rated Agency | Canadian Web Designs",
+    description: `Richmond Hill web design agency — custom websites, local SEO & digital marketing. ${config.reviewCount}+ five-star reviews. Rank on Google & convert visitors. Free quote.`,
+  },
+  toronto: {
+    title: "Web Design Toronto | #1 Rated Agency | Canadian Web Designs",
+    description: `Toronto's top web design agency — custom sites built to rank & convert. ${config.reviewCount}+ five-star reviews. Local SEO, Google Ads & more. Get a free quote today.`,
+  },
+};
+
 export function generateMetadata({ params }: { params: { city: string } }): Metadata {
   const cityData = getCityBySlug(params.city);
   const cityName = cityData?.name ?? params.city;
+  const custom = cityMeta[params.city];
   return {
-    title: `Web Design ${cityName} | ${config.businessName}`,
-    description: `Professional web design, SEO & digital marketing in ${cityName}. ${config.reviewCount}+ five-star reviews. Custom websites that rank on Google and convert visitors. Call ${config.phone}.`,
+    title: custom?.title ?? `Web Design ${cityName} | ${config.businessName}`,
+    description: custom?.description ?? `Professional web design, SEO & digital marketing in ${cityName}. ${config.reviewCount}+ five-star reviews. Custom websites that rank on Google and convert visitors. Call ${config.phone}.`,
     alternates: { canonical: `/locations/${params.city}` },
   };
 }
