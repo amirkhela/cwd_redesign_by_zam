@@ -5,14 +5,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata: Metadata = {
-  title: "Web Design Agency Toronto | 180+ Reviews | Free Quote | CWD",
+  title: "Web Design Toronto | #1 Agency, 180+ Reviews | CWD",
   description:
-    "Toronto's top-rated web design agency. 180+ five-star reviews. Custom websites that rank on Google & convert visitors into customers. Serving all of Toronto & the GTA. Free quote.",
+    "Toronto's top-rated web design company. Custom websites that rank on Google & convert visitors into customers. 180+ five-star reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
-    title: "Web Design Agency Toronto | 180+ Reviews | CWD",
+    title: "Web Design Toronto | #1 Agency, 180+ Reviews | CWD",
     description:
-      "Toronto's top-rated web design agency. Custom sites that rank & convert. 180+ five-star reviews. Free quote — (647) 689-6069.",
+      "Top-rated web design company in Toronto. Custom sites that rank & convert. 180+ five-star reviews. Free quote — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/toronto",
     images: [
       {
@@ -49,6 +49,18 @@ const faq = [
   {
     q: "Do you build e-commerce websites for Toronto businesses?",
     a: "Yes — e-commerce is one of our fastest-growing Toronto specialties. We build Shopify, WooCommerce, and custom e-commerce sites for Toronto retailers, food brands, and product-based businesses. Every e-commerce site includes product SEO, speed optimization, payment gateway integration, and mobile-first design. Our Toronto e-commerce clients typically see 30–50% higher conversion rates than their previous sites.",
+  },
+  {
+    q: "What is the best web design agency in Toronto?",
+    a: "Canadian Web Designs is consistently ranked as one of Toronto's top web design agencies based on Google reviews, client results, and search performance. With 180+ five-star reviews, a proven track record of ranking Toronto businesses on Google page 1, and fully custom (no-template) websites, we stand out from the hundreds of Toronto agencies that use cookie-cutter approaches. See our portfolio and reviews at canadianwebdesigns.ca.",
+  },
+  {
+    q: "How much does a web design company in Toronto charge?",
+    a: "Toronto web design costs range from $500 (low-cost template builders) to $50,000+ (enterprise custom development). For a professional, custom, SEO-optimized website from a reputable Toronto agency, expect $1,499–$4,999 for most small to mid-size businesses. Canadian Web Designs offers flat-rate pricing with no surprises — starting at $1,499 for a complete, Google-ready website.",
+  },
+  {
+    q: "Do you work with Toronto tech startups and SaaS companies?",
+    a: "Yes — tech is one of our fastest-growing Toronto verticals. We build SaaS marketing sites, product landing pages, and investor-ready web presences for Toronto startups from pre-seed through Series B. We understand what Toronto's tech ecosystem needs: fast, modern, and built to convert high-intent B2B visitors.",
   },
 ];
 

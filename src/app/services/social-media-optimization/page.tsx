@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "social-media-optimization")!;
 
 export const metadata: Metadata = {
-  title: "Social Media Management Toronto & Canada | Canadian Web Designs",
-  description: "Professional social media management for Canadian businesses. Content creation, scheduling, community management, and paid ads on Instagram, Facebook, LinkedIn & more.",
+  title: "Social Media Management Canada | Content, Ads & Growth | CWD",
+  description: "Professional social media management for Canadian businesses. Content creation, paid ads, Instagram, Facebook, LinkedIn & TikTok. Results-driven campaigns. Free strategy call today.",
   alternates: { canonical: "/services/social-media-optimization" },
 };
 

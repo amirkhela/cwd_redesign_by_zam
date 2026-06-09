@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
-  title: "SEO Services Canada | Rank on Google | Canadian Web Designs",
-  description: "Rank on Google with affordable SEO services across Canada. Local SEO, technical audits & link building for Canadian businesses. No contracts. Free SEO quote today.",
+  title: "SEO Services Canada | Page 1 in 90 Days | Free Audit | CWD",
+  description: "Rank on Google with proven SEO services across Canada. Local SEO, technical audits & link building. 300%+ avg traffic growth. No contracts. Free SEO audit today.",
   alternates: { canonical: "/services/seo" },
 };
 
@@ -44,6 +44,16 @@ const faqSchema = {
       "@type": "Question",
       name: "Do you offer ecommerce SEO for Canadian online stores?",
       acceptedAnswer: { "@type": "Answer", text: "Yes. Our ecommerce SEO services cover product page optimization, category keyword targeting, schema markup, technical speed optimization, and link building. We work with Shopify, WooCommerce, and custom ecommerce platforms across Canada." },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer SEO services specifically for Toronto businesses?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes — Toronto SEO is one of our core specialties. Toronto is Canada's most competitive search market, and our local SEO strategies are calibrated for Toronto's landscape: neighbourhood-level content targeting (Etobicoke, North York, Scarborough, Yorkville), Google Business Profile optimization for the Toronto local pack, and city-specific link building. We've helped dozens of Toronto businesses reach Google page 1 in competitive niches including law, healthcare, trades, and real estate." },
+    },
+    {
+      "@type": "Question",
+      name: "How much do SEO services cost for a Toronto business?",
+      acceptedAnswer: { "@type": "Answer", text: "Toronto SEO pricing depends on your industry competition, target keywords, and goals. Most Toronto small business SEO retainers range from $500–$2,500/month. We offer no-contract, transparent monthly retainers with clear deliverables and monthly ranking reports — no lock-in and no surprise fees. Contact us for a free SEO audit and custom Toronto quote." },
     },
   ],
 };

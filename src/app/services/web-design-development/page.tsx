@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: "Web Design Canada | Custom Websites That Rank | CWD",
-  description: "Custom web design services across Canada. Mobile-first, SEO-optimized websites built to rank on Google & convert visitors into customers. From $1,499 — free quote today.",
+  title: "Web Design Canada | From $1,499 | 180+ Reviews | CWD",
+  description: "Custom web design across Canada starting at $1,499. Mobile-first, SEO-optimized websites built to rank on Google & convert visitors. 180+ reviews. Free quote today.",
   alternates: { canonical: "/services/web-design-development" },
 };
 
@@ -49,6 +49,16 @@ const faqSchema = {
       "@type": "Question",
       name: "Do you offer affordable web design for small businesses in Canada?",
       acceptedAnswer: { "@type": "Answer", text: "Yes. We offer transparent, flat-rate pricing starting from $1,499 with no hidden fees. We believe every Canadian small business deserves a professional website — our packages are designed to fit SMB budgets while delivering enterprise-quality design, SEO, and performance." },
+    },
+    {
+      "@type": "Question",
+      name: "What web design services are included with every website?",
+      acceptedAnswer: { "@type": "Answer", text: "Every website we build includes mobile-first responsive design, on-page SEO (meta tags, headings, canonical URLs, sitemap), Google Analytics integration, contact form setup, SSL certificate configuration, and 30 days of post-launch support. Higher-tier packages add e-commerce functionality, blog setup, custom animations, CRO optimization, and extended maintenance." },
+    },
+    {
+      "@type": "Question",
+      name: "How do I choose the best web design company in Canada?",
+      acceptedAnswer: { "@type": "Answer", text: "Look for three things: proven results (real rankings and traffic growth, not just pretty portfolios), transparent pricing (flat-rate quotes with no hidden fees), and strong reviews (180+ five-star Google reviews is a meaningful signal). Ask whether they build custom sites or use templates, and whether SEO is included or an add-on. Canadian Web Designs checks all of these boxes — and backs every project with a results guarantee." },
     },
   ],
 };

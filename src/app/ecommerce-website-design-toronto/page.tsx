@@ -115,6 +115,14 @@ const faqs = [
     q: "Can you migrate my existing store to a new platform?",
     a: "Yes. We handle full migrations from Magento, BigCommerce, Wix, Squarespace, or any other platform to Shopify, WooCommerce, or a custom solution — with zero data loss.",
   },
+  {
+    q: "How much does ecommerce website design cost in Toronto?",
+    a: "Toronto ecommerce websites start at $2,499 for a Starter Store (up to 50 products), $4,999 for a Growth Store (up to 250 products with custom design and CRO), and custom pricing for Enterprise builds. All packages include mobile-first design, SEO setup, and payment gateway integration. Contact us for a free, detailed quote.",
+  },
+  {
+    q: "Do you offer ecommerce SEO for Toronto online stores?",
+    a: "Yes — every store we build includes a full Toronto-specific ecommerce SEO foundation: product schema markup, keyword-optimized product and category pages, sitemap configuration, and Google Shopping integration. We also offer ongoing monthly ecommerce SEO retainers for Toronto stores that want to dominate competitive product searches.",
+  },
 ];
 
 export default function EcommerceTorontoPage() {

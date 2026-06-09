@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "ai-consultation")!;
 
 export const metadata: Metadata = {
-  title: "AI Consultation for Canadian Businesses | Automation & AI Strategy",
-  description: "Leverage AI to automate operations, improve customer service, and outpace competitors. Canadian Web Designs offers practical AI consultation and implementation for businesses across Canada.",
+  title: "AI Consultation Canada | Business Automation & AI Strategy | CWD",
+  description: "Practical AI consultation for Canadian businesses. Automate operations, cut costs & outpace competitors with AI tools and custom workflows. Free strategy session — book today.",
   alternates: { canonical: "/services/ai-consultation" },
 };
 

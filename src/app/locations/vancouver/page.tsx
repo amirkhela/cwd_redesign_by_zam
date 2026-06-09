@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Vancouver & SEO | Canadian Web Designs",
+  title: "Web Design Vancouver | Top-Rated BC Agency | 180+ Reviews | CWD",
   description:
-    "Top-rated web design and SEO in Vancouver, BC. Custom websites that rank on Google and convert visitors into customers. 180+ five-star reviews. Free quote — (647) 689-6069.",
+    "Vancouver's top-rated web design company. Custom websites that rank on Google & convert visitors into customers. Serving Burnaby, Surrey, Richmond & Metro Vancouver. 180+ reviews. Free quote.",
   alternates: { canonical: "/locations/vancouver" },
   openGraph: {
-    title: "Web Design Vancouver & SEO | Canadian Web Designs",
+    title: "Web Design Vancouver | Top-Rated BC Agency | 180+ Reviews | CWD",
     description:
-      "Vancouver's trusted web design and SEO agency. 180+ five-star reviews. Custom websites built to rank on Google and generate consistent leads. Free consultation.",
+      "Top-rated web design agency in Vancouver, BC. 180+ five-star reviews. Custom websites built to rank on Google and generate leads. Serving Metro Vancouver. Free consultation.",
     url: "https://canadianwebdesigns.ca/locations/vancouver",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Vancouver BC — Canadian Web Designs" }],
   },
@@ -61,6 +61,18 @@ const faq = [
   {
     q: "Do you work with Vancouver eCommerce businesses selling across Canada?",
     a: "Yes — eCommerce is a growing Vancouver vertical for us. We build WooCommerce and Shopify stores optimized for both local Vancouver searches and national product keywords. For Vancouver-based brands, we combine local SEO (capturing Vancouver shoppers) with national SEO (capturing product-intent searches across Canada). We also set up Google Shopping and Performance Max campaigns for immediate product visibility on Google.",
+  },
+  {
+    q: "What makes Canadian Web Designs the best web design company in Vancouver?",
+    a: "We combine Vancouver market expertise, proven local SEO results, and 180+ five-star reviews to deliver websites that actually rank and convert. Unlike most Vancouver web agencies that use templates, we build every site from scratch — custom to your brand, industry, and Metro Vancouver audience. Our results guarantee means we keep working at no extra charge if your site doesn't perform within the agreed timeline.",
+  },
+  {
+    q: "Do you offer affordable web design for Vancouver small businesses?",
+    a: "Yes. Vancouver small business websites start at $1,499 — a flat-rate, all-inclusive price that covers mobile-first design, on-page SEO, Google Analytics, contact form, and 30 days of post-launch support. No hidden fees, no recurring charges (unless you choose a maintenance plan). We believe every Vancouver business deserves a professional online presence.",
+  },
+  {
+    q: "How do you help Vancouver businesses rank for 'web design vancouver' and similar searches?",
+    a: "We use a multi-layered approach: a dedicated Vancouver service page with 1,500+ words of unique content targeting Vancouver-specific queries, local schema markup with your Vancouver address and geo-coordinates, internal links from our high-authority pages, Google Business Profile optimization for Vancouver, and citation building across BC-specific directories. Combined, these signals tell Google you are a Vancouver-based business serving the Metro Vancouver market.",
   },
 ];
 
