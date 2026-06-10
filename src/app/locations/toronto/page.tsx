@@ -5,9 +5,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata: Metadata = {
-  title: "Web Design Toronto | #1 Agency, 180+ Reviews | CWD",
+  title: "Web Design Toronto | Custom Sites From $1,499 | 180+ Reviews | CWD",
   description:
-    "Toronto's top-rated web design company. Custom websites that rank on Google & convert visitors into customers. 180+ five-star reviews. Free quote — (647) 689-6069.",
+    "Toronto's #1 web design company — custom sites from $1,499 that rank on Google & convert visitors into customers. 180+ five-star reviews. Call (647) 689-6069 or get a free quote.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
     title: "Web Design Toronto | #1 Agency, 180+ Reviews | CWD",
@@ -61,6 +61,14 @@ const faq = [
   {
     q: "Do you work with Toronto tech startups and SaaS companies?",
     a: "Yes — tech is one of our fastest-growing Toronto verticals. We build SaaS marketing sites, product landing pages, and investor-ready web presences for Toronto startups from pre-seed through Series B. We understand what Toronto's tech ecosystem needs: fast, modern, and built to convert high-intent B2B visitors.",
+  },
+  {
+    q: "How do I find a reliable web design company in Toronto?",
+    a: "Look for three things: verifiable reviews, real portfolio case studies with measurable results, and transparent pricing. Avoid agencies that can't show you ranking data for their own clients. Canadian Web Designs has 180+ Google reviews, a public portfolio at canadianwebdesigns.ca/portfolio, flat-rate pricing starting at $1,499, and a results guarantee — if you don't see movement, we keep working at no charge.",
+  },
+  {
+    q: "What should I expect from a Toronto web design agency?",
+    a: "A professional Toronto web design agency should deliver a mobile-first, SEO-optimized website with clear timelines, transparent pricing, and ongoing communication. You should receive Google Analytics setup, on-page SEO, and at least 30 days of post-launch support. Red flags include templates passed off as custom work, no pricing on their own site, and lack of Google reviews. Canadian Web Designs is fully custom, fully transparent, and has 11+ years of Toronto-specific results to back it up.",
   },
 ];
 

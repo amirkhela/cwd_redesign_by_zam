@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: "Web Design Canada | From $1,499 | 180+ Reviews | CWD",
-  description: "Custom web design across Canada starting at $1,499. Mobile-first, SEO-optimized websites built to rank on Google & convert visitors. 180+ reviews. Free quote today.",
+  title: "Custom Web Design & Development Canada | From $1,499 | CWD",
+  description: "Custom web design & development across Canada from $1,499 — mobile-first, SEO-optimized sites built to rank on Google & convert visitors into leads. 180+ reviews. Free quote.",
   alternates: { canonical: "/services/web-design-development" },
 };
 

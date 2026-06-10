@@ -6,9 +6,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Careers at Canadian Web Designs | Web Design Jobs in Canada",
+  title: "Web Design & SEO Jobs in Canada | Careers at Canadian Web Designs",
   description:
-    "Join Canada's top-rated web design agency. Remote web design, SEO & dev roles available. Work with a team that builds websites that actually rank. Apply today.",
+    "Join Canada's top-rated web design agency — remote roles in web design, SEO & development. Competitive pay, flexible hours & real client impact. View openings & apply today.",
   alternates: { canonical: "/careers" },
 };
 

@@ -6,9 +6,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Ecommerce Website Design Toronto | Shopify & WooCommerce Experts",
+  title: "Ecommerce Website Design Toronto | Shopify & WooCommerce | From $1,999",
   description:
-    "Toronto ecommerce website design — Shopify, WooCommerce & headless stores built to rank on Google and drive sales. 80+ stores launched. Get a free quote today.",
+    "Toronto ecommerce website design — Shopify, WooCommerce & headless stores built to rank on Google and drive sales. 80+ stores launched, avg 3× conversion lift. Free quote today.",
   alternates: { canonical: "/ecommerce-website-design-toronto" },
   openGraph: {
     title: "Ecommerce Website Design Toronto | Canadian Web Designs",
