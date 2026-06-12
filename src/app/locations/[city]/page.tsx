@@ -152,6 +152,76 @@ const cityContent: Record<string, {
       { q: "Do you offer website packages for North York small businesses?", a: "Yes — we build fully custom websites for North York businesses that include custom design, mobile optimization, local SEO setup, and Google Analytics. No hidden fees — contact us for a free quote." },
     ],
   },
+  edmonton: {
+    blurb: `Edmonton is Alberta's capital and one of Canada's largest cities — a dynamic economy built on energy, government, healthcare, construction, and a fast-growing tech sector. With over one million residents in the metro area and a business community that spans industries from oil-field services to craft breweries, Edmonton businesses face real competition online. Canadian Web Designs builds websites for Edmonton businesses that are fast, mobile-first, and engineered to rank for local Google searches. We understand the Edmonton market: the influence of the energy sector, the government procurement landscape, the University of Alberta's innovation ecosystem, and the city's entrepreneurial spirit. Our Edmonton clients consistently outrank local competitors within 60–90 days.`,
+    facts: ["Edmonton has over 1 million metro residents — one of Canada's largest and fastest-growing markets", "Energy, government, healthcare, and construction are Edmonton's dominant industries", "Edmonton keyword difficulty is lower than Calgary or Vancouver — easier and faster to rank", "Government procurement and B2B sales drive a significant share of Edmonton's commercial activity"],
+    industries: ["Energy & Engineering", "Government & Non-Profit", "Healthcare & Medical", "Construction & Trades", "Retail & Hospitality", "Tech & Startups"],
+    faq: [
+      { q: "How competitive is web design SEO in Edmonton?", a: "Edmonton has lower keyword difficulty than Calgary and significantly lower than Toronto. A well-optimized Edmonton website can typically reach page 1 for core service keywords within 60–90 days of launch — faster and more affordable than comparable campaigns in larger cities." },
+      { q: "Do you work with Edmonton energy and engineering companies?", a: "Yes — oil and gas services, engineering firms, and environmental consultants are among our most common Edmonton clients. We build professional, authoritative websites that meet the standards expected in Alberta's energy sector." },
+      { q: "Can you help my Edmonton business appear in Google Maps?", a: "Absolutely. Google Business Profile optimization is included in every Edmonton SEO package. We build local citations across Canadian directories, optimize your listing for Edmonton-specific searches, and run a review generation program to improve your local pack visibility." },
+    ],
+  },
+  ottawa: {
+    blurb: `Ottawa is Canada's capital city — a unique market shaped by government, technology, healthcare, education, and a vibrant French-English bilingual culture. Home to the National Capital Region's 1.4 million residents, Ottawa businesses compete for a sophisticated, educated customer base that does thorough online research before spending. Canadian Web Designs builds websites for Ottawa businesses that rank in Google, load fast, and convert government contacts, tech buyers, and local consumers alike. We understand Ottawa's bilingual landscape, the government procurement cycle, the Kanata tech park ecosystem, and the importance of appearing in local search when Ottawa residents are ready to buy. Our Ottawa clients range from IT consultancies and law firms to restaurants and retail businesses.`,
+    facts: ["Ottawa is Canada's 4th largest city — 1.4M metro residents with high average household income", "Government, tech, healthcare, and education dominate Ottawa's economy — high B2B demand", "Bilingual market (English/French) — websites benefit from bilingual content signals for local SEO", "Kanata is one of Canada's most important tech corridors — B2B tech companies compete intensely online"],
+    industries: ["Government & Public Sector", "Technology & IT", "Healthcare & Medical", "Legal Services", "Restaurants & Hospitality", "Education & Training"],
+    faq: [
+      { q: "Do you build bilingual (English/French) websites for Ottawa businesses?", a: "Yes — bilingual websites are a competitive advantage in Ottawa. We build dual-language sites with proper hreflang tags, separate URL structures for each language, and SEO optimization for both English and French keywords." },
+      { q: "Do you work with Ottawa government suppliers and IT companies?", a: "Absolutely — government and B2B IT clients are among our most common Ottawa verticals. We understand the professional standards, security requirements, and credibility signals needed to win government contracts and enterprise clients online." },
+      { q: "How quickly can an Ottawa business rank on Google?", a: "Ottawa keyword difficulty is moderate — lower than Toronto but competitive in tech and government sectors. Most Ottawa clients see meaningful ranking movement within 60–90 days for location-specific and long-tail searches." },
+    ],
+  },
+  vaughan: {
+    blurb: `Vaughan is one of the GTA's fastest-growing cities — a booming suburb north of Toronto with a thriving business community spanning construction, manufacturing, healthcare, professional services, and retail. With over 350,000 residents and one of Ontario's most active commercial real estate markets at the VMC (Vaughan Metropolitan Centre), Vaughan businesses have a massive local opportunity. Canadian Web Designs builds websites for Vaughan businesses that are designed to win local Google searches — capturing customers the moment they search for your services in Vaughan, Woodbridge, Maple, and Kleinburg. Our Vaughan clients in trades, healthcare, professional services, and real estate consistently see 3–5x growth in inbound leads within 6 months.`,
+    facts: ["Vaughan is one of Ontario's fastest-growing cities with 350,000+ residents and rising", "The Vaughan Metropolitan Centre (VMC) is a major commercial hub attracting head offices and tech companies", "Construction, trades, healthcare, and professional services are Vaughan's dominant business sectors", "Vaughan keywords have lower competition than Toronto — ideal for aggressive SEO growth with faster ROI"],
+    industries: ["Construction & Trades", "Healthcare & Clinics", "Real Estate & Mortgage", "Professional Services", "Manufacturing", "Retail & Restaurants"],
+    faq: [
+      { q: "Why should Vaughan businesses invest in local SEO?", a: "Vaughan's population growth means more local searches every year — and most Vaughan businesses have weak online presences. A well-optimized website can capture a dominant share of local search traffic before competition catches up." },
+      { q: "Do you build websites for Vaughan trades and construction companies?", a: "Yes — trades and construction are our most common Vaughan verticals. We build fast, mobile-first sites with click-to-call buttons, quote forms, and project galleries that help Vaughan contractors win more jobs from Google." },
+      { q: "How quickly can a Vaughan business rank on Google?", a: "Vaughan-specific keywords have significantly lower difficulty than Toronto keywords. Most Vaughan clients see first-page movement for location-specific searches within 30–60 days with our full SEO package." },
+    ],
+  },
+  victoria: {
+    blurb: `Victoria, BC is one of Canada's most beautiful and livable cities — and one of its most interesting business markets. With over 400,000 residents in the Capital Regional District, a thriving tourism and hospitality sector, a strong government presence, and a growing tech community, Victoria businesses compete for a sophisticated, values-driven consumer base that researches thoroughly online. Canadian Web Designs builds websites for Victoria businesses that rank on Google, reflect the quality and professionalism that Victoria customers expect, and convert visitors into booked appointments and phone calls. We understand the Victoria market — from the Oak Bay boutique to the James Bay restaurant, from the Langford contractor to the downtown law firm.`,
+    facts: ["Victoria CRD has 400,000+ residents — a compact but highly educated, affluent consumer market", "Tourism, government, healthcare, and tech are Victoria's dominant industries", "Victoria keyword difficulty is low — similar buyer intent to Vancouver but much easier to rank", "Mobile searches dominate in Victoria — a fast, mobile-first website is essential to compete"],
+    industries: ["Tourism & Hospitality", "Government & Public Sector", "Healthcare & Wellness", "Technology & IT", "Retail & Boutique", "Contractors & Trades"],
+    faq: [
+      { q: "How competitive is web design SEO in Victoria, BC?", a: "Victoria keyword difficulty is significantly lower than Vancouver — 'web design victoria bc' and similar searches are very achievable within 45–90 days with proper on-page SEO. It's one of BC's best-value SEO markets." },
+      { q: "Do you build websites for Victoria tourism and hospitality businesses?", a: "Yes — tourism is one of our most common Victoria verticals. We build professional, visually compelling websites for hotels, restaurants, tour operators, and experience businesses that convert both local and international visitors." },
+      { q: "Can you help my Victoria business rank in Google Maps?", a: "Absolutely. Google Business Profile optimization is part of every Victoria SEO package. We optimize your listing, build local citations for the Capital Regional District, and run a review generation program to improve local pack visibility." },
+    ],
+  },
+  oshawa: {
+    blurb: `Oshawa is the economic heart of the Durham Region — a city defined by its automotive heritage but rapidly diversifying into healthcare, education, manufacturing, retail, and professional services. Home to Ontario Tech University and a growing young population, Oshawa is a city in transition — and its businesses need strong digital presences to capture a customer base that is increasingly searching Google before spending. Canadian Web Designs builds websites for Oshawa businesses that are fast, mobile-optimized, and engineered to rank for local searches in Oshawa, Whitby, Ajax, and across Durham Region. Our Oshawa clients in trades, healthcare, automotive, and professional services consistently see more inbound leads within 60–90 days of launch.`,
+    facts: ["Oshawa is home to Ontario Tech University — 10,000+ students create strong demand for local services", "Durham Region has 700,000+ residents — Oshawa businesses can rank for the entire region", "Automotive, manufacturing, healthcare, and education are Oshawa's dominant sectors", "Oshawa keyword difficulty is very low — one of Ontario's best-value SEO markets"],
+    industries: ["Automotive & Trades", "Healthcare & Clinics", "Manufacturing & Industrial", "Education & Training", "Retail & Restaurants", "Professional Services"],
+    faq: [
+      { q: "Is SEO worth it for an Oshawa small business?", a: "Absolutely — and arguably more so than in Toronto. Oshawa and Durham Region keyword difficulty is very low, meaning your website investment goes much further. Most Oshawa businesses see page 1 results within 45–60 days with our SEO program." },
+      { q: "Do you build websites for Oshawa automotive and trades businesses?", a: "Yes — automotive and trades are among our most common Oshawa verticals. We build mobile-first sites with click-to-call, online booking, and Google Maps integration specifically designed for service businesses." },
+      { q: "Can you rank my Oshawa business across all of Durham Region?", a: "Yes — we build geo-targeted content strategies that rank your site for Oshawa, Whitby, Ajax, Pickering, and Clarington — capturing the entire Durham Region market with a single optimized site." },
+    ],
+  },
+  windsor: {
+    blurb: `Windsor is Ontario's southernmost city — a border town with a uniquely binational economy shaped by its proximity to Detroit, a strong manufacturing and automotive heritage, a growing healthcare sector, and a lively entertainment and restaurant scene. Windsor businesses serve both local customers and cross-border traffic from Michigan, which means a strong online presence is essential for capturing both markets. Canadian Web Designs builds websites for Windsor businesses that rank in Canadian and local Google searches, load fast on mobile, and convert visitors into bookings, calls, and sales. We understand Windsor's distinctive market — the auto industry, the casino corridor, the University of Windsor student market, and the growing professional services sector.`,
+    facts: ["Windsor is Canada's southernmost city with a binational economy linking to Detroit and Michigan", "Automotive manufacturing, healthcare, and tourism/entertainment are Windsor's dominant industries", "University of Windsor creates strong demand for student-facing services and local businesses", "Windsor keyword difficulty is very low — ideal for aggressive SEO growth with fast ROI"],
+    industries: ["Automotive & Manufacturing", "Healthcare & Medical", "Restaurants & Hospitality", "Legal Services", "Retail & Shopping", "Construction & Trades"],
+    faq: [
+      { q: "Do you build websites for Windsor automotive and manufacturing companies?", a: "Yes — automotive and manufacturing clients are a specialty in Windsor. We build professional, B2B-ready websites for tier-1 and tier-2 suppliers, dealerships, and industrial businesses that rank for Windsor and regional searches." },
+      { q: "Can a Windsor business rank on both Canadian and US Google?", a: "Yes — we build geo-targeted sites that can rank for both Windsor, Ontario searches and Detroit/Michigan-area searches where relevant. Proper hreflang, schema, and content signals help Google understand which market each page targets." },
+      { q: "How quickly can a Windsor business rank on Google?", a: "Windsor keyword difficulty is very low — most of our Windsor clients reach page 1 for core service keywords within 30–60 days of launch. It's one of Ontario's fastest-ranking SEO markets." },
+    ],
+  },
+  saskatoon: {
+    blurb: `Saskatoon is Saskatchewan's largest city — a prairie hub with a diverse economy spanning agriculture, mining, energy, healthcare, education, and a growing tech sector centred around innovation districts like Innovation Place. With over 280,000 residents and some of Canada's lowest keyword competition, Saskatoon is a golden opportunity for businesses willing to invest in web design and SEO. Most Saskatoon businesses still have outdated websites and weak online presences — which means a well-built, properly optimized site can rapidly dominate local Google searches. Canadian Web Designs builds websites for Saskatoon businesses that load fast, rank locally, and convert the right customers. We've helped clients across agriculture, professional services, healthcare, and trades grow their inbound leads consistently.`,
+    facts: ["Saskatoon has 280,000+ residents — Saskatchewan's largest city and commercial centre", "Agriculture, mining, energy, and healthcare are the dominant Saskatoon industries", "Innovation Place and the University of Saskatchewan create a growing tech and research ecosystem", "Saskatoon keyword difficulty is extremely low — one of Canada's best-value SEO markets"],
+    industries: ["Agriculture & Agri-Tech", "Mining & Energy", "Healthcare & Clinics", "Education & Research", "Professional Services", "Retail & Hospitality"],
+    faq: [
+      { q: "Is SEO worth it for a Saskatoon business?", a: "More than almost anywhere else in Canada. Saskatoon keyword difficulty is extremely low, meaning a modest investment in SEO can put your business on page 1 faster and keep it there with less ongoing effort than in larger cities." },
+      { q: "Do you build websites for Saskatoon agriculture and agri-tech companies?", a: "Yes — agriculture and agri-tech are a specialty in Saskatchewan. We build professional websites for farms, co-ops, input suppliers, and agri-tech companies that rank for Saskatchewan-specific and national agricultural searches." },
+      { q: "How quickly can a Saskatoon business rank on Google?", a: "Saskatoon keyword difficulty is among the lowest in Canada. Most of our Saskatoon clients reach page 1 for core service keywords within 30–45 days of launch — some of the fastest ranking timelines we see anywhere." },
+    ],
+  },
 };
 
 function getCityBySlug(slug: string) {
@@ -170,6 +240,70 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   toronto: {
     title: "Web Design Toronto | #1 Rated Agency | Canadian Web Designs",
     description: `Toronto's top web design agency — custom sites built to rank & convert. ${config.reviewCount}+ five-star reviews. Local SEO, Google Ads & more. Get a free quote today.`,
+  },
+  mississauga: {
+    title: "Web Design Mississauga | Custom Sites From $1,499 | CWD",
+    description: `Mississauga's top web design agency — custom websites, local SEO & Google Ads. ${config.reviewCount}+ five-star reviews. Rank on Google & get more leads. Free quote today.`,
+  },
+  edmonton: {
+    title: "Web Design Edmonton | Custom Sites From $1,499 | CWD",
+    description: `Edmonton web design agency — fast, mobile-optimized websites built to rank on Google. Local SEO, Google Ads & digital marketing. ${config.reviewCount}+ reviews. Free quote.`,
+  },
+  brampton: {
+    title: "Web Design Brampton | Custom Sites From $1,499 | CWD",
+    description: `Brampton web design agency — custom websites & local SEO for Brampton businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & convert more visitors. Free quote.`,
+  },
+  london: {
+    title: "Web Design London Ontario | Custom Sites From $1,499 | CWD",
+    description: `London Ontario web design agency — custom sites, local SEO & digital marketing. ${config.reviewCount}+ five-star reviews. Rank above competitors in London, ON. Free quote.`,
+  },
+  ottawa: {
+    title: "Web Design Ottawa | Custom Sites From $1,499 | CWD",
+    description: `Ottawa web design agency — custom websites built to rank on Google & convert visitors. Local SEO, Google Ads & digital marketing. ${config.reviewCount}+ reviews. Free quote.`,
+  },
+  vaughan: {
+    title: "Web Design Vaughan | Custom Sites From $1,499 | CWD",
+    description: `Vaughan web design agency — fast, mobile-first websites & local SEO for Vaughan businesses. ${config.reviewCount}+ five-star reviews. Get more leads from Google. Free quote.`,
+  },
+  victoria: {
+    title: "Web Design Victoria BC | Custom Sites From $1,499 | CWD",
+    description: `Victoria BC web design agency — custom websites & SEO for Victoria businesses. ${config.reviewCount}+ reviews. Mobile-first, Google-optimized sites that convert. Free quote.`,
+  },
+  kitchener: {
+    title: "Web Design Kitchener | Custom Sites From $1,499 | CWD",
+    description: `Kitchener-Waterloo web design agency — custom websites & local SEO for KW businesses. ${config.reviewCount}+ five-star reviews. Rank on Google faster. Free quote today.`,
+  },
+  oshawa: {
+    title: "Web Design Oshawa | Custom Sites From $1,499 | CWD",
+    description: `Oshawa web design agency — custom websites, local SEO & digital marketing for Durham Region businesses. ${config.reviewCount}+ reviews. Get more leads online. Free quote.`,
+  },
+  windsor: {
+    title: "Web Design Windsor Ontario | Custom Sites From $1,499 | CWD",
+    description: `Windsor Ontario web design agency — custom websites & SEO for Windsor businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & grow your business. Free quote.`,
+  },
+  calgary: {
+    title: "Web Design Calgary | Custom Sites From $1,499 | CWD",
+    description: `Calgary web design agency — custom websites & local SEO for Alberta businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & convert more visitors. Free quote.`,
+  },
+  saskatoon: {
+    title: "Web Design Saskatoon | Custom Sites From $1,499 | CWD",
+    description: `Saskatoon web design agency — custom websites & local SEO for Saskatchewan businesses. ${config.reviewCount}+ reviews. Mobile-first, Google-optimized sites. Free quote.`,
+  },
+  vancouver: {
+    title: "Web Design Vancouver | Custom Sites From $1,499 | CWD",
+    description: `Vancouver web design agency — custom websites, local SEO & digital marketing for BC businesses. ${config.reviewCount}+ five-star reviews. Rank on Google. Free quote today.`,
+  },
+  surrey: {
+    title: "Web Design Surrey BC | Custom Sites From $1,499 | CWD",
+    description: `Surrey BC web design agency — custom websites & local SEO for Surrey businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & get more leads. Free quote.`,
+  },
+  burnaby: {
+    title: "Web Design Burnaby | Custom Sites From $1,499 | CWD",
+    description: `Burnaby web design agency — custom websites & local SEO for Metro Vancouver businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & convert visitors. Free quote.`,
+  },
+  "north-york": {
+    title: "Web Design North York | Custom Sites From $1,499 | CWD",
+    description: `North York web design agency — custom websites & local SEO for North York businesses. ${config.reviewCount}+ five-star reviews. Rank on Google faster. Free quote today.`,
   },
 };
 

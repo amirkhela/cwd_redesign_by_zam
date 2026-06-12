@@ -7,9 +7,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Website Maintenance Services Canada | Plans from $99/mo | Canadian Web Designs",
+  title: "Website Maintenance Canada | From $99/mo | No Contract | CWD",
   description:
-    "Professional website maintenance services across Canada. Security updates, backups, speed optimization & support. Protecting 180+ Canadian businesses. Free audit — (647) 689-6069.",
+    "Keep your Canadian website secure, fast & updated from $99/mo. Security patches, daily backups, uptime monitoring & SEO checks. 200+ sites protected. No contracts. Free audit.",
   alternates: { canonical: "/maintenance" },
   openGraph: {
     title: "Website Maintenance Services Canada | Plans from $99/mo | Canadian Web Designs",

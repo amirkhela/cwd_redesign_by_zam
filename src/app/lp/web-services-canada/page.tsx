@@ -81,6 +81,15 @@ const cities = [
   "Kitchener", "London", "Surrey", "Oshawa",
 ];
 
+const featuredProjects = [
+  { name: "Cloud Pharmacy",       url: "cloudpharmacy.ca",      img: "/portfolio/cloud-pharmacy.png",       category: "Health & Wellness" },
+  { name: "Evolve Media Group",   url: "evolvemediagroup.ca",   img: "/portfolio/evolve-media-group.jpg",   category: "Business & Professional" },
+  { name: "Palazzo Talenti",      url: "palazzotalenti.ca",     img: "/portfolio/palazzo-talenti.png",      category: "Events & Entertainment" },
+  { name: "Remove My Walls",      url: "removemywalls.ca",      img: "/portfolio/remove-my-walls.jpg",      category: "Construction & Trades" },
+  { name: "Rejuvenation by Dale", url: "rejuvenationbydale.ca", img: "/portfolio/rejuvenation-by-dale.jpg", category: "Health & Wellness" },
+  { name: "MOS Solutions",        url: "mossolutions.ca",       img: "/portfolio/mos-solutions.jpg",        category: "Business & Professional" },
+];
+
 const field =
   "w-full px-4 py-3 rounded-xl text-sm text-gray-800 placeholder-gray-400 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
 const fieldStyle = { background: "#fff", border: "1px solid #e2e8f0" };
@@ -254,7 +263,7 @@ export default function LandingPage() {
 
               <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4 mb-10">
                 <a
-                  href="#bottom-form"
+                  href="#lp-form"
                   className="btn-shimmer inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-bold rounded-btn text-base"
                   style={{ background: "linear-gradient(135deg, #005B9A, #00AADF)", boxShadow: "0 4px 28px rgba(0,170,223,0.45)" }}
                 >
@@ -269,7 +278,7 @@ export default function LandingPage() {
                 </a>
               </div>
 
-              <div className="hero-fade-up-4 flex items-center gap-3">
+              <div className="hero-fade-up-4 hidden sm:flex items-center gap-3">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5" style={{ color: "#FFB800" }} fill="currentColor" viewBox="0 0 20 20">
@@ -282,7 +291,7 @@ export default function LandingPage() {
             </div>
 
             {/* RIGHT: Form */}
-            <div id="lp-form" className="relative">
+            <div id="lp-form" className="relative order-first lg:order-none">
               <LpForm />
             </div>
           </div>
@@ -382,18 +391,59 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Portfolio CTA ── */}
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-8 text-center">
-          <Link href="/portfolio" target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-base border-2 transition-all duration-200 hover:bg-[#00AADF] hover:text-white"
-            style={{ borderColor: "#00AADF", color: "#00AADF" }}>
-            View Our Portfolio
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-          </Link>
-          <p className="text-gray-400 text-xs mt-2">Opens in a new tab — come back and get your quote</p>
+      {/* ── Featured Work ── */}
+      <section className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4" style={{ background: "rgba(0,170,223,0.1)", color: "#00AADF" }}>Our Work</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">Websites We&rsquo;ve Built for Canadian Businesses</h2>
+            <p className="text-gray-500 max-w-xl mx-auto text-lg">Custom, high-performance websites across every industry — no templates, built from scratch.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {featuredProjects.map((p) => (
+              <a
+                key={p.name}
+                href={`https://${p.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 block bg-white"
+              >
+                <div className="overflow-hidden bg-gray-100" style={{ aspectRatio: "16/9" }}>
+                  <Image
+                    src={p.img}
+                    alt={`${p.name} website designed by Canadian Web Designs`}
+                    width={600}
+                    height={338}
+                    unoptimized
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4">
+                  <span className="text-xs font-bold tracking-wide" style={{ color: "#00AADF" }}>{p.category}</span>
+                  <h3 className="font-black text-gray-900 mt-1 text-base">{p.name}</h3>
+                  <span className="text-xs text-gray-400">{p.url}</span>
+                </div>
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-sky-400 transition-all duration-300 pointer-events-none" />
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl font-bold text-base border-2 transition-all duration-200 hover:bg-[#00AADF] hover:text-white"
+              style={{ borderColor: "#00AADF", color: "#00AADF" }}
+            >
+              View Our Full Portfolio
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </Link>
+            <p className="text-gray-400 text-xs mt-2">Opens in a new tab — come back and get your quote</p>
+          </div>
         </div>
       </section>
 

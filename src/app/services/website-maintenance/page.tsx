@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "website-maintenance")!;
 
 export const metadata: Metadata = {
-  title: "Website Maintenance Plans Canada | From $99/mo | No Contract | CWD",
-  description: "Professional website maintenance for Canadian businesses from $99/month. Security updates, daily backups, speed optimization & priority support. No contracts. Free quote today.",
+  title: "Website Maintenance Plans Canada | WordPress & Custom Sites | CWD",
+  description: "Monthly website maintenance from $99/mo — security updates, daily backups, uptime monitoring & speed optimization for Canadian businesses. No contracts. Free quote today.",
   alternates: { canonical: "/services/website-maintenance" },
 };
 
