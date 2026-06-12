@@ -1,9 +1,9 @@
 ﻿---
-title: "Best Web Design in Canada"
+title: "Best Web Design in Canada — What Top Websites Do Differently"
 slug: "best-web-design-canada"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "We at Canadian Web Designs understand the significance of a stellar website in facilitating business success and hence create not just websites, but..."
+description: "What separates Canada's best-designed websites from the rest? Speed, clarity & conversion strategy. See the standards we hold every project to."
 keywords: ["best web design canada","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Web-Design-in-Canada.png"
@@ -91,4 +91,6 @@ featuredImage: "/blog/posts/Best-Web-Design-in-Canada.png"
 </div>
 
 <p>Share on <a href="https://www.facebook.com/canadianwebdesigns/" target="_blank" rel="noreferrer noopener nofollow">Facebook</a><br><a href="https://www.facebook.com/canadianwebdesigns/" target="_blank" rel="noreferrer noopener nofollow">Facebook</a><br>Share on <a href="https://twitter.com/canadian_design" target="_blank" rel="noreferrer noopener nofollow">Twitter</a><br><a href="https://twitter.com/canadian_design" target="_blank" rel="noreferrer noopener nofollow">Twitter</a><br>Share on <a href="https://www.linkedin.com/company/canadianwebdesigns/" target="_blank" rel="noreferrer noopener nofollow">LinkedIn</a><br><a href="https://www.linkedin.com/company/canadianwebdesigns/" target="_blank" rel="noreferrer noopener nofollow">LinkedIn</a></p>
-
+<h3 class="wp-block-heading">Work With One of Canada's Top-Rated Web Design Teams</h3>
+<p>Canadian Web Designs has earned 180+ five-star reviews building websites that rank and convert for businesses from <a href="/locations/toronto">Toronto</a> to <a href="/locations/calgary">Calgary</a> to <a href="/locations/vancouver">Vancouver</a>. Every project includes mobile-first design, on-page <a href="/services/seo">SEO</a>, and conversion-focused copy — see our <a href="/portfolio">portfolio</a> for proof.</p>
+<p><strong><a href="/contact">Get a free quote for your project</a></strong> — custom websites from $1,499.</p>

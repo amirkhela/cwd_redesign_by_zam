@@ -8,8 +8,8 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Get a Free Quote",
-  description: "Contact Canadian Web Designs for a free quote on web design, SEO, or digital marketing. Serving 24+ cities across Canada. Call 647-689-6069.",
+  title: "Contact Us — Free Web Design Quote Within 24 Hours",
+  description: "Get a free web design or SEO quote — most clients hear back within hours. Serving 24+ Canadian cities. Call 647-689-6069 or send the form today.",
   alternates: { canonical: "/contact" },
 };
 

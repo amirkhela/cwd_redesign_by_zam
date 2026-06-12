@@ -162,4 +162,6 @@ featuredImage: "/blog/posts/SEO-Services-London-Ontario.png"
 <p>If you want your business to grow online, SEO is no longer optional. Professional <strong>SEO services London Ontario</strong> help your website rank higher, attract local customers, and convert traffic into real business results.</p>
 
 <p>Whether you’re just starting out or looking to improve existing rankings, investing in SEO is one of the smartest decisions you can make for your business.</p>
-
+<h3 class="wp-block-heading">SEO Help for London, Ontario Businesses</h3>
+<p>Ranking in London's local market takes consistent on-page work, local citations, and content that answers what Londoners actually search for. Canadian Web Designs provides <a href="/services/seo">SEO services</a> and <a href="/services/web-design-development">conversion-focused web design</a> for businesses across Southwestern Ontario — see our dedicated <a href="/locations/london">London web design page</a> for local details, or learn the fundamentals in our <a href="/blog/white-hat-seo-strategies-ethical-techniques-to-boost-your-website">white hat SEO guide</a>.</p>
+<p><strong><a href="/contact">Book a free local SEO audit</a></strong> for your London business today.</p>

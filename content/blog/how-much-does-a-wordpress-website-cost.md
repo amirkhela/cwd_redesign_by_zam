@@ -206,5 +206,6 @@ featuredImage: "/blog/posts/launchpresso-IOM28XWsk-g-unsplash.jpg"
 </ul>
 
 <p><em>Note: Government programs and their availability can change. It is always recommended to visit the official websites for the most up-to-date information on eligibility and application processes.</em></p>
-
-
+<h3 class="wp-block-heading">Ready to Get an Exact Price for Your WordPress Website?</h3>
+<p>Every project is different, which is why the fastest way to budget accurately is a quick conversation. Canadian Web Designs builds <a href="/services/web-design-development">custom WordPress websites</a> for businesses across <a href="/locations/toronto">Toronto</a> and the GTA, with transparent pricing starting at $1,499 and <a href="/services/website-maintenance">monthly maintenance plans from $99</a> so your site stays fast and secure after launch. You can also compare options in our guide to <a href="/blog/understanding-basic-wordpress-website-costs-in-toronto-and-the-gta">basic WordPress website costs in Toronto and the GTA</a>.</p>
+<p><strong><a href="/contact">Get a free, no-obligation WordPress quote today</a></strong> — we respond within one business day.</p>

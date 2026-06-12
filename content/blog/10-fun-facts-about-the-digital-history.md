@@ -1,9 +1,9 @@
 ﻿---
-title: "10 Fun Facts About The Digital History"
+title: "10 Fun Facts About Digital History You Probably Didn't Know"
 slug: "10-fun-facts-about-the-digital-history"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Year by year, people around the world are becoming modernized in advanced digital technology. Even young to old people are turning to tech-savvy ones...."
+description: "From the first website ever published to the first online sale — 10 surprising facts about the internet's history, told by Canadian web designers."
 keywords: ["10 fun facts about the digital history","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/featured.png"
@@ -150,3 +150,6 @@ featuredImage: "/blog/posts/featured.png"
 </figure>
 
 <p><a target="_blank" rel="noopener noreferrer"><br />Facebook<br /></a><br /><a target="_blank" rel="noopener noreferrer"><br />Twitter<br /></a><br /><a target="_blank" rel="noopener noreferrer"><br />Youtube<br /></a></p>
+<h3 class="wp-block-heading">Make Some Digital History of Your Own</h3>
+<p>The web has come a long way since the first grey-background homepage — and so have user expectations. If your website still feels like a piece of digital history itself, our <a href="/services/web-design-development">web design and development team</a> can bring it up to 2026 standards. Read about the <a href="/blog/5-essential-web-design-trends-from-canada-to-upgrade-your-website">web design trends shaping Canadian websites</a>, or see what we've built in our <a href="/portfolio">portfolio</a>.</p>
+<p><strong><a href="/contact">Get a free website assessment</a></strong> — find out where your site stands today.</p>

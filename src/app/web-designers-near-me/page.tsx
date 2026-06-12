@@ -7,7 +7,7 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Designers Near Me | Local Web Design Canada | Canadian Web Designs",
+  title: { absolute: "Web Designers Near Me — Local Canadian Team, Free Quote | CWD" },
   description:
     "Looking for web designers near you? Canadian Web Designs serves Toronto, Mississauga, Vancouver, Calgary & 20+ cities. 180+ five-star reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/web-designers-near-me" },

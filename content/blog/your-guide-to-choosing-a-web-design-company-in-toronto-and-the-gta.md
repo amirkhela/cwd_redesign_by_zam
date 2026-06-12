@@ -3,7 +3,7 @@ title: "Your Guide to Choosing a Web Design Company in Toronto and the GTA"
 slug: "your-guide-to-choosing-a-web-design-company-in-toronto-and-the-gta"
 date: "2025-04-14"
 author: "Canadian Web Designs"
-description: "In today's digital landscape, your website is often the first impression your business makes. For businesses in the bustling Greater Toronto Area..."
+description: "How to choose a web design company in Toronto & the GTA — pricing benchmarks, portfolio red flags & the questions agencies hope you won't ask."
 keywords: ["your guide to choosing a web design company in toronto and the gta","Tips"]
 category: "Tips"
 featuredImage: "/blog/posts/mobile-web-design-toronto1.jpg"
@@ -226,4 +226,6 @@ featuredImage: "/blog/posts/mobile-web-design-toronto1.jpg"
 <p><strong>Website:</strong> <a href="https://maps.app.goo.gl/rwxf9sjTnyvNcHBQ7">Canadian Web Designs</a></p>
 
 <p>We serve businesses across the Greater Toronto Area (GTA), including Toronto, Mississauga, and surrounding areas. Let's discuss your web design needs and how we can help you achieve your online success. We look forward to hearing from you!</p>
-
+<h3 class="wp-block-heading">Put Us on Your Shortlist</h3>
+<p>If you're comparing Toronto web design companies, measure us against anyone: 180+ five-star <a href="/testimonials">client reviews</a>, transparent pricing from $1,499, and a <a href="/portfolio">portfolio</a> of GTA businesses we've helped grow. Explore our <a href="/services/web-design-development">web design services</a> and our dedicated <a href="/locations/toronto">Toronto web design</a> page to see exactly how we work.</p>
+<p><strong><a href="/contact">Get a free, no-pressure quote</a></strong> — and ask us the hard questions from this guide.</p>

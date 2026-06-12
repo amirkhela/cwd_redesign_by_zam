@@ -9,8 +9,8 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Testimonials",
-  description: `Read ${config.reviewCount}+ five-star reviews from ${config.businessName} clients across Canada.`,
+  title: "Client Reviews — 180+ Five-Star Web Design Testimonials",
+  description: `Read ${config.reviewCount}+ five-star reviews from real ${config.businessName} clients — restaurants, clinics, contractors & stores across Canada. See why they chose us.`,
   alternates: { canonical: "/testimonials" },
 };
 

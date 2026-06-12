@@ -35,6 +35,16 @@ const faqSchema = {
       name: "How long does AI implementation take?",
       acceptedAnswer: { "@type": "Answer", text: "Simple automations like AI-powered email responses or chatbot setup can be deployed in as little as 1–2 weeks. More complex integrations into existing systems may take 4–8 weeks. We provide a detailed project timeline after the discovery session." },
     },
+    {
+      "@type": "Question",
+      name: "How much does AI consultation cost in Canada?",
+      acceptedAnswer: { "@type": "Answer", text: "The initial AI discovery session is free. Implementation costs depend on scope — a single chatbot or automation workflow is far less than a full process overhaul. After discovery, you receive a fixed quote with projected time savings so you can judge the ROI before committing." },
+    },
+    {
+      "@type": "Question",
+      name: "Is my business data safe when using AI tools?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes — data privacy is part of every implementation. We configure AI tools so your customer data stays protected, recommend Canadian-compliant options where required, and never train public models on your private business data." },
+    },
   ],
 };
 
@@ -113,7 +123,7 @@ export default function ServicePage() {
                   The businesses adopting AI now are pulling ahead of competitors who are still doing things manually. A well-implemented AI chatbot can handle 70% of customer inquiries without human intervention. Automated content pipelines can produce a month of SEO content in hours. Process automation can eliminate 10–20 hours of admin work per week.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Our AI consultation service is designed for Canadian business owners who want practical results — not jargon, not hype. We identify what you can automate today, implement it, and train your team to keep it running.
+                  Our AI consultation service is designed for Canadian business owners who want practical results — not jargon, not hype. We identify what you can automate today, implement it, and train your team to keep it running. Many clients pair AI automation with <Link href="/services/seo" className="text-[#00AADF] hover:underline">SEO</Link> and a <Link href="/services/web-design-development" className="text-[#00AADF] hover:underline">conversion-focused website</Link> so the leads AI captures keep growing — see how it fits together in our <Link href="/blog/marketing-automation-software-overview" className="text-[#00AADF] hover:underline">marketing automation guide</Link>.
                 </p>
                 <Link
                   href="/contact"
@@ -136,6 +146,19 @@ export default function ServicePage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* ── FAQ (visible) ── */}
+          <div className="mt-16">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-8 text-center">AI Consultation FAQs</h3>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {faqSchema.mainEntity.map((item) => (
+                <details key={item.name} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 group">
+                  <summary className="font-bold text-gray-900 cursor-pointer list-none">{item.name}</summary>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-3">{item.acceptedAnswer.text}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>

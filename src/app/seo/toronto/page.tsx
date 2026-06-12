@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Toronto | Affordable SEO Services | Canadian Web Designs",
+  title: { absolute: "SEO Toronto — Affordable SEO That Gets You to Page 1 | CWD" },
   description:
-    "Affordable SEO services in Toronto. Rank on page 1 of Google, get more leads, and grow your Toronto business. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
+    "Affordable Toronto SEO with proof: 180+ five-star reviews and clients ranking on page 1 of Google. Get more calls and leads. Free SEO audit — (647) 689-6069.",
   alternates: { canonical: "/seo/toronto" },
   openGraph: {
     title: "SEO Toronto | Affordable SEO Services | Canadian Web Designs",

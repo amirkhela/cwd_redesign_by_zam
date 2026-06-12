@@ -35,6 +35,16 @@ const faqSchema = {
       name: "Can you match my existing brand colours and style?",
       acceptedAnswer: { "@type": "Answer", text: "Absolutely. We review your existing brand assets before starting any project. Whether you need a fresh start or want to extend an existing visual identity, our designers adapt to your brand standards and aesthetic." },
     },
+    {
+      "@type": "Question",
+      name: "How long does a graphic design project take?",
+      acceptedAnswer: { "@type": "Answer", text: "Most logo and branding projects are delivered within 7 business days. Larger brand identity packages with marketing collateral typically take 2–3 weeks. Rush delivery is available — let us know your deadline when you request a quote." },
+    },
+    {
+      "@type": "Question",
+      name: "Do you design menus, brochures, and print materials?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Beyond logos, we design restaurant menus, brochures, business cards, flyers, trade-show banners, and social media graphics. All print materials are delivered press-ready at 300 DPI with correct bleed and margins." },
+    },
   ],
 };
 
@@ -104,7 +114,7 @@ export default function ServicePage() {
                   Consumers form an opinion about your brand in 0.05 seconds. A professionally designed logo and consistent visual identity signal trust, quality, and credibility — before a single word is read. Businesses with strong branding consistently outperform competitors with inconsistent or DIY visuals.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Our graphic design team has worked with businesses across Toronto, Calgary, Vancouver, and beyond. Whether you are launching a new brand or refreshing an outdated look, we create designs that are timeless, versatile, and built to scale.
+                  Our graphic design team has worked with businesses across <Link href="/locations/toronto" className="text-[#00AADF] hover:underline">Toronto</Link>, <Link href="/locations/calgary" className="text-[#00AADF] hover:underline">Calgary</Link>, <Link href="/locations/vancouver" className="text-[#00AADF] hover:underline">Vancouver</Link>, and beyond. Whether you are launching a new brand or refreshing an outdated look, we create designs that are timeless, versatile, and built to scale. Pair your new brand with a <Link href="/services/web-design-development" className="text-[#00AADF] hover:underline">custom website</Link> and <Link href="/services/social-media-optimization" className="text-[#00AADF] hover:underline">social media content</Link> for a consistent identity everywhere customers find you.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -120,6 +130,19 @@ export default function ServicePage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* ── FAQ (visible) ── */}
+          <div className="mt-16">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-8 text-center">Graphic Design FAQs</h3>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {faqSchema.mainEntity.map((item) => (
+                <details key={item.name} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 group">
+                  <summary className="font-bold text-gray-900 cursor-pointer list-none">{item.name}</summary>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-3">{item.acceptedAnswer.text}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>

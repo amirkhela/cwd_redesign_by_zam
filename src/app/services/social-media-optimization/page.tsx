@@ -35,6 +35,16 @@ const faqSchema = {
       name: "How do you measure social media success?",
       acceptedAnswer: { "@type": "Answer", text: "We track follower growth, engagement rate, reach, impressions, click-through rates, and leads generated. Monthly reports are provided so you always know how your social media is performing." },
     },
+    {
+      "@type": "Question",
+      name: "How much does social media management cost in Canada?",
+      acceptedAnswer: { "@type": "Answer", text: "Plans depend on how many platforms you need and how much content we create each month. Most Canadian small businesses invest a few hundred dollars per month for consistent, professionally managed social media. Request a free quote and we'll scope the right plan." },
+    },
+    {
+      "@type": "Question",
+      name: "Do you also run paid social media ads?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We run targeted ad campaigns on Facebook, Instagram, LinkedIn, and TikTok — audience research, creative, copy, and ongoing optimization included. Paid ads pair naturally with organic content to accelerate growth." },
+    },
   ],
 };
 
@@ -100,7 +110,7 @@ export default function ServicePage() {
                   94% of Canadians use social media regularly — and they are buying from brands they follow. But posting inconsistently, using generic graphics, or ignoring comments kills trust faster than having no social presence at all. Effective social media management means showing up with the right content, on the right platform, at the right time.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  We have managed social media for service businesses, retailers, restaurants, and professional firms across Toronto, Brampton, Calgary, and Vancouver. Our team creates scroll-stopping content that builds real audiences — not just vanity metrics.
+                  We have managed social media for service businesses, retailers, restaurants, and professional firms across <Link href="/locations/toronto" className="text-[#00AADF] hover:underline">Toronto</Link>, <Link href="/locations/brampton" className="text-[#00AADF] hover:underline">Brampton</Link>, <Link href="/locations/calgary" className="text-[#00AADF] hover:underline">Calgary</Link>, and <Link href="/locations/vancouver" className="text-[#00AADF] hover:underline">Vancouver</Link>. Our team creates scroll-stopping content that builds real audiences — not just vanity metrics. Combine it with <Link href="/services/graphic-design" className="text-[#00AADF] hover:underline">professional graphic design</Link> and a <Link href="/services/web-design-development" className="text-[#00AADF] hover:underline">website built to convert</Link> for a complete digital presence.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -116,6 +126,19 @@ export default function ServicePage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* ── FAQ (visible) ── */}
+          <div className="mt-16">
+            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-8 text-center">Social Media Management FAQs</h3>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {faqSchema.mainEntity.map((item) => (
+                <details key={item.name} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 group">
+                  <summary className="font-bold text-gray-900 cursor-pointer list-none">{item.name}</summary>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-3">{item.acceptedAnswer.text}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>

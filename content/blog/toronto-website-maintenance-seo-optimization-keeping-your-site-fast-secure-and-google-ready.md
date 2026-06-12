@@ -164,4 +164,6 @@ featuredImage: "/blog/posts/Secured-Google.png"
 <p>With Canadian Web Designs, you get a dedicated team that keeps your site healthy, optimized, and ready to rank year-round.</p>
 
 <p>???? <strong>Contact us today to learn more about our Website Maintenance &amp; SEO packages — and start giving your website the care it deserves.</strong></p>
-
+<h3 class="wp-block-heading">Keep Your Toronto Website Fast, Secure, and Ranking</h3>
+<p>Maintenance isn't optional — it's the difference between a site that compounds in value and one that quietly decays. Our <a href="/services/website-maintenance">website maintenance plans from $99/month</a> cover updates, backups, security monitoring, and speed checks, and pair naturally with <a href="/services/seo">ongoing SEO</a>. Serving <a href="/locations/toronto">Toronto</a> and businesses Canada-wide — learn why backups matter in our guide to <a href="/blog/importance-of-regular-website-backups">regular website backups</a>.</p>
+<p><strong><a href="/contact">Get a free maintenance assessment</a></strong> — find out what your site needs.</p>

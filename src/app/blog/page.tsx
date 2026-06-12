@@ -18,8 +18,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const hasQuery = (q?.trim() ?? "").length > 0;
 
   return {
-    title: "Blog | Web Design & SEO Tips",
-    description: `Web design, SEO, and digital marketing tips from Canada's most trusted agency. Browse 160+ articles written by Canadian experts.`,
+    title: "Web Design & SEO Blog — Tips for Canadian Businesses",
+    description: `160+ practical articles on web design, SEO & digital marketing — pricing guides, how-tos & honest advice from Canadian experts. Updated weekly.`,
     alternates: { canonical: "/blog" },
     ...((isPaged || hasQuery) && { robots: { index: false, follow: true } }),
     openGraph: {

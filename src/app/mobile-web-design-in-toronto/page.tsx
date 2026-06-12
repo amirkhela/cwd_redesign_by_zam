@@ -7,7 +7,7 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Mobile Web Design Toronto | Responsive Websites That Rank | Canadian Web Designs",
+  title: { absolute: "Mobile Web Design Toronto — Responsive Sites That Rank | CWD" },
   description:
     "Mobile-first web design for Toronto businesses. Fast, responsive websites built to rank on Google and convert on every device. 180+ reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/mobile-web-design-in-toronto" },

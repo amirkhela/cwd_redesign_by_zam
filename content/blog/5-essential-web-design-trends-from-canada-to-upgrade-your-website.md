@@ -3,7 +3,7 @@ title: "5 Essential Web Design Trends from Canada to Upgrade Your Website"
 slug: "5-essential-web-design-trends-from-canada-to-upgrade-your-website"
 date: "2025-10-14"
 author: "Canadian Web Designs"
-description: "Tired of websites that look like they were built in the dial-up era? Ready for a refresh that feels modern, trustworthy, and incredibly polished? Look..."
+description: "5 web design trends Canadian businesses are using to win in 2026 — with real examples and practical upgrade tips. See which ones fit your site."
 keywords: ["5 essential web design trends from canada to upgrade your website","Blog"]
 category: "Blog"
 featuredImage: "/blog/posts/pexels-asphotography-106344-scaled.webp"
@@ -158,4 +158,6 @@ featuredImage: "/blog/posts/pexels-asphotography-106344-scaled.webp"
 <p>The public-facing guidelines the Government of Canada uses for all its web writing and design, focusing on plain language, clarity, and task completion.</p>
 
 <p><strong>Link:</strong> <a href="https://design.canada.ca/style-guide/">https://design.canada.ca/style-guide/</a></p>
-
+<h3 class="wp-block-heading">Want These Trends on Your Website?</h3>
+<p>Trends only matter when they're applied with strategy. Our <a href="/services/web-design-development">custom web design service</a> blends modern design with conversion fundamentals, and our <a href="/services/seo">SEO services</a> make sure the redesign ranks. We build for businesses across Canada — from <a href="/locations/toronto">Toronto</a> to <a href="/locations/vancouver">Vancouver</a>. Browse our <a href="/portfolio">recent work</a> to see these trends in action.</p>
+<p><strong><a href="/contact">Book a free design consultation</a></strong> — we'll tell you exactly which upgrades will move the needle.</p>
