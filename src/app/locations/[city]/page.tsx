@@ -21,6 +21,8 @@ const cityContent: Record<string, {
       { q: "How long does it take to rank in Toronto?", a: "For competitive Toronto keywords ('web design toronto', 'lawyer toronto'), expect 4–8 months of consistent SEO. For less competitive long-tail terms and location-specific searches, we often see movement in 6–12 weeks." },
       { q: "Do you work with small businesses in Toronto?", a: "Absolutely — the majority of our clients are small to mid-size Toronto businesses. Every project is fully custom and SEO-ready from day one. Contact us for a free quote." },
       { q: "Can you help my Toronto business show up in Google Maps?", a: "Yes. Google Business Profile optimization is included in all our Toronto SEO packages. We optimize your listing, build local citations, and help you generate more reviews to dominate the local pack." },
+      { q: "What does web design cost for a Toronto business?", a: "Our Toronto web design packages start at $1,499 for a 5-page custom site and scale to $3,499 for a full growth package with ongoing SEO. Flat-rate pricing with no hidden fees — book a free consultation for an exact quote." },
+      { q: "Can you help a Toronto startup build their first website?", a: "Yes — we work with Toronto startups at all stages, from pre-revenue to Series A. We deliver a professional, conversion-ready web presence quickly and can scale your site as your business grows." },
     ],
   },
   burnaby: {
@@ -31,6 +33,8 @@ const cityContent: Record<string, {
       { q: "Why should I choose a web design agency that knows Burnaby?", a: "Local market knowledge matters. We know that Burnaby searches often compete with Vancouver results — so we build geo-targeted content and local citations specifically for Burnaby neighbourhoods like Brentwood, Metrotown, and Lougheed." },
       { q: "What's the cost of a website for a Burnaby small business?", a: "Cost depends on your scope — number of pages, features, and integrations. We provide free, no-obligation quotes with no hidden fees, and all sites include SEO optimization from day one." },
       { q: "How quickly can you rank my Burnaby business on Google?", a: "Burnaby has relatively low keyword difficulty compared to Vancouver. Most of our Burnaby clients see meaningful ranking improvements within 30–60 days for location-specific searches." },
+      { q: "How much does web design cost in Burnaby?", a: "Our Burnaby web design packages start at $1,499 for a custom 5-page site. Every package includes mobile optimization, SEO setup, and Google Analytics from day one — no hidden fees. Contact us for a free scope and quote." },
+      { q: "Do you work with Burnaby tech and software companies?", a: "Absolutely — tech and SaaS are common Burnaby verticals. We build product sites and corporate pages optimized for Metro Vancouver and BC-wide searches, with technical SEO that ranks for both Burnaby-specific and broader industry keywords." },
     ],
   },
   surrey: {
@@ -41,6 +45,8 @@ const cityContent: Record<string, {
       { q: "Can you help my Surrey business rank above competitors in Google?", a: "Yes — Surrey keywords like 'web design surrey' and '[service] surrey' have relatively low difficulty. With proper on-page optimization and local SEO, most Surrey businesses see page 1 movement within 60–90 days." },
       { q: "Do you build websites for Surrey trades and contractors?", a: "Trades are one of our most common Surrey clients. We build fast-loading, mobile-first sites with click-to-call, quote forms, and Google Maps integration — everything a Surrey contractor needs to win more jobs online." },
       { q: "Do you offer ongoing SEO for Surrey businesses?", a: "Yes — we offer monthly SEO retainers that include ranking reports, content updates, citation building, and Google Business Profile management for Surrey businesses. Contact us for a custom quote." },
+      { q: "What's included in your Surrey web design packages?", a: "All Surrey packages include custom design, mobile-first development, on-page SEO, Google Analytics setup, and 30 days of post-launch support — plus local schema markup and sitemap submission for faster Google indexing. Contact us for a detailed quote with no hidden fees." },
+      { q: "Do you work with Surrey real estate agents and mortgage brokers?", a: "Yes — real estate is a common Surrey vertical. We build IDX-integrated agent sites, mortgage broker sites with lead capture forms, and investor sites optimized for Surrey neighbourhood searches in Clayton Heights, South Surrey, Cloverdale, and Guildford." },
     ],
   },
   kitchener: {
@@ -51,6 +57,8 @@ const cityContent: Record<string, {
       { q: "Is web design in Kitchener-Waterloo competitive?", a: "Less so than Toronto — keyword difficulty for KW searches is significantly lower, meaning a well-optimized website can reach page 1 faster and with less budget than major urban centres." },
       { q: "Do you work with KW startups and tech companies?", a: "Yes — we work with early-stage startups through to established Kitchener-Waterloo companies. We build scalable web platforms that grow with your business, from MVP landing pages to full enterprise sites." },
       { q: "Can you help my Kitchener business appear in Google Maps?", a: "Absolutely. Local pack visibility is critical for Kitchener service businesses. We optimize your Google Business Profile, build local citations across Canadian directories, and help generate authentic reviews." },
+      { q: "How much does web design cost in Kitchener-Waterloo?", a: "Our KW web design packages start at $1,499 — the same quality as our Toronto projects, often with faster results due to lower market competition. Flat-rate pricing with no hidden fees. Contact us for a free quote." },
+      { q: "Do you work with Kitchener manufacturers and engineering firms?", a: "Yes — manufacturing and engineering are common KW verticals. We build B2B websites for manufacturers, engineering firms, and industrial companies that rank for industry searches and generate qualified leads from procurement teams." },
     ],
   },
   london: {
@@ -61,6 +69,8 @@ const cityContent: Record<string, {
       { q: "How important is it to include 'Ontario' in SEO for London businesses?", a: "Critical. Google often confuses London, ON with London, UK. We build geo-signals into every page — using 'London, Ontario', schema markup with province data, and local citations — to ensure your site ranks in the right market." },
       { q: "Do you work with healthcare businesses in London, ON?", a: "Yes — healthcare is one of our most common London verticals. We understand PIPEDA compliance requirements and build clinic, dental, and medical websites that are professional, accessible, and optimized for local search." },
       { q: "What does a website cost for a London Ontario small business?", a: "Every project is scoped individually. We provide detailed quotes with no surprise costs — and all sites include mobile optimization, SEO foundation, and Google Analytics setup." },
+      { q: "Can you help my London Ontario business rank above Toronto-based competitors?", a: "Absolutely. Many Toronto agencies target London, ON searches — but local relevance signals matter. We build London, Ontario-specific schema markup, geo-targeted content, and local citations that give your London business an advantage over non-local competitors." },
+      { q: "Do you build websites for London Ontario law firms and legal professionals?", a: "Yes — legal is a common London, ON vertical. We build professional, credibility-first websites for law firms, barristers, and paralegals that rank for practice-area searches in London and across Southwestern Ontario." },
     ],
   },
   brampton: {
@@ -71,6 +81,8 @@ const cityContent: Record<string, {
       { q: "Do you build websites for trucking and logistics companies in Brampton?", a: "Yes — trucking is one of our most common Brampton verticals. We build professional websites for carriers, freight brokers, and logistics companies that rank for Brampton and GTA-wide searches." },
       { q: "How does SEO work differently in Brampton vs Toronto?", a: "Brampton-specific keywords have significantly lower competition than Toronto keywords. A Brampton business with a well-optimized website can rank on page 1 faster and maintain that ranking with less ongoing effort." },
       { q: "Can you help my Brampton clinic or healthcare practice get more patients online?", a: "Absolutely — we've built websites for medical clinics, dental practices, physiotherapy, and mental health providers in Brampton. We understand healthcare SEO and patient privacy requirements." },
+      { q: "What does a website cost for a Brampton business?", a: "Our Brampton packages start at $1,499 — the same quality as our Toronto builds with no GTA premium. Flat-rate pricing with no hidden fees. We include local SEO foundations, mobile optimization, and Google Analytics in every Brampton package. Contact us for a free quote." },
+      { q: "Do you build websites for Brampton South Asian and multicultural businesses?", a: "Yes — Brampton's diverse business community is something we know well. We build multilingual sites and culturally appropriate designs for businesses serving South Asian, Caribbean, and other multicultural communities across Brampton." },
     ],
   },
   calgary: {
@@ -81,6 +93,8 @@ const cityContent: Record<string, {
       { q: "Do you work with energy sector companies in Calgary?", a: "Yes — we've built websites for oil field services companies, environmental consultants, and engineering firms in Calgary. We understand the professional standards expected in the energy sector." },
       { q: "How competitive is web design SEO in Calgary?", a: "Web design Calgary has about 590 monthly searches and moderate difficulty — more achievable than Toronto but still competitive. Our Calgary clients typically reach page 1 within 90–120 days with our full SEO program." },
       { q: "Can you help my Calgary real estate business rank on Google?", a: "Real estate is one of our Calgary specialties. We build IDX-integrated real estate websites with hyperlocal SEO targeting Calgary neighbourhoods — Beltline, Kensington, Inglewood, Mission, and beyond." },
+      { q: "What does web design cost for a Calgary business?", a: "Our Calgary packages start at $1,499 — flat-rate with no hidden fees. Every Calgary build includes local SEO foundations, mobile-first design, and Google Analytics. We also offer Alberta-wide SEO retainers for businesses targeting Edmonton, Red Deer, and Lethbridge in addition to Calgary. Get a free quote to scope your project." },
+      { q: "Do you build websites for Calgary tech startups and software companies?", a: "Yes — Calgary's growing tech scene is something we're actively building for. We create clean, conversion-focused websites for SaaS companies, app developers, and tech startups that position you credibly for both Calgary and national/international markets." },
     ],
   },
   winnipeg: {
@@ -91,6 +105,8 @@ const cityContent: Record<string, {
       { q: "Is it worth investing in SEO for a Winnipeg business?", a: "Absolutely — and arguably more so than in Toronto or Vancouver. Winnipeg keyword difficulty is low, meaning your investment goes further. Most Winnipeg businesses see page 1 results for core service keywords within 60–90 days." },
       { q: "Do you build websites for Winnipeg manufacturing and agricultural businesses?", a: "Yes — industrial and agricultural clients are a specialty. We build professional, authoritative websites for Winnipeg manufacturers, agricultural suppliers, and food processing companies." },
       { q: "Can you help my Winnipeg business show up in Google Maps?", a: "Yes — Google Business Profile optimization is part of every Winnipeg SEO package. We build your local citations, optimize your listing, and help generate reviews so you appear in the Winnipeg local pack." },
+      { q: "What does web design cost for a Winnipeg business?", a: "Our Winnipeg web design packages start at $1,499 — flat-rate pricing with no hidden fees. We include local SEO setup, mobile-first design, and Google Analytics in every build. Most Winnipeg small businesses see ROI within the first 2–3 months of launch. Get a free quote today." },
+      { q: "Do you build bilingual or multicultural websites for Winnipeg businesses?", a: "Yes — Winnipeg has a significant French-speaking community and growing newcomer population. We build bilingual English/French sites with proper hreflang tags, and we can accommodate other language requirements for multicultural Winnipeg businesses." },
     ],
   },
   hamilton: {
@@ -101,6 +117,8 @@ const cityContent: Record<string, {
       { q: "How does Hamilton web design SEO compare to Toronto?", a: "Hamilton searches have significantly lower keyword difficulty than Toronto — which means your website can rank faster and maintain rankings with less ongoing investment. It's one of Ontario's best-value SEO markets." },
       { q: "Do you work with McMaster-affiliated businesses and startups in Hamilton?", a: "Yes — we work with university spin-offs, student entrepreneurs, and McMaster-affiliated health and research businesses. We understand the academic and startup environment and build sites that grow with early-stage companies." },
       { q: "What industries do you serve in Hamilton?", a: "Our Hamilton clients span healthcare, trades, restaurants, professional services, manufacturing, and creative industries. If you're a Hamilton business that wants more customers from Google, we can help." },
+      { q: "What does web design cost for a Hamilton business?", a: "Our Hamilton packages start at $1,499 — same flat-rate pricing as our Toronto builds with no GTA premium. Every Hamilton site includes mobile-first design, on-page SEO, Google Analytics, and a 30-day support window. We also offer Hamilton-specific SEO retainers starting at $499/month. Get a free quote." },
+      { q: "Can you help my Hamilton restaurant or food business rank on Google?", a: "Yes — hospitality and food are among our most common Hamilton verticals. We build visually compelling websites for Hamilton restaurants, cafes, bakeries, and catering companies that rank for 'best [food type] in Hamilton' and similar high-intent searches." },
     ],
   },
   mississauga: {
@@ -116,6 +134,8 @@ const cityContent: Record<string, {
       { q: "How competitive is SEO in Mississauga vs. Toronto?", a: "Mississauga keywords typically have difficulty scores of 15–30 vs 40–60+ for the same categories in downtown Toronto. This means a well-optimized Mississauga website can reach page 1 within 45–90 days — faster and with less budget than comparable Toronto campaigns. It's one of the best-value SEO markets in the GTA." },
       { q: "Do you work with Mississauga corporate and enterprise businesses?", a: "Yes — corporate clients are one of our most common Mississauga verticals. We build enterprise-grade websites for head offices, professional services firms, and B2B companies that need to project credibility to large clients and partners. We understand the polished, professional standard expected in Mississauga's corporate market." },
       { q: "Can you help my Mississauga business rank in the Google local pack?", a: "Absolutely — Google Business Profile optimization is central to every Mississauga SEO package. We optimize your listing for City Centre, Port Credit, Streetsville, and other Mississauga communities, build local citations across 50+ Canadian directories, and run a review generation program. Mississauga's local pack is competitive but very winnable with the right strategy." },
+      { q: "Do you build websites for Mississauga startups and tech companies?", a: "Yes — Mississauga's tech and innovation ecosystem is growing rapidly, and we work with early-stage startups through to established SMBs. We build clean, credibility-first websites that position Mississauga tech companies for both local business development and national visibility." },
+      { q: "What does web design cost for a Mississauga business?", a: "Our Mississauga packages start at $1,499 — the same quality as our downtown Toronto builds at a flat rate with no hidden fees. We offer Mississauga-specific SEO retainers that target Square One, Port Credit, Erin Mills, and Meadowvale neighbourhoods. Get a free quote today." },
     ],
   },
   "richmond-hill": {
@@ -140,6 +160,14 @@ const cityContent: Record<string, {
         q: "What does web design cost for a Richmond Hill small business?",
         a: "Our Richmond Hill web design packages start at $1,499 for a 5-page mobile-optimized site and go up to $3,499+ for a full growth package with SEO retainer. We provide detailed quotes with no hidden fees — contact us for a free consultation.",
       },
+      {
+        q: "Can you help my Richmond Hill real estate or mortgage business get more leads online?",
+        a: "Yes — real estate and mortgage are among our most common Richmond Hill verticals. We build IDX-integrated real estate websites, mortgage broker sites, and investment property pages with hyperlocal SEO targeting Richmond Hill, Oak Ridges, and Langstaff — helping you capture home buyers and sellers before they contact a competitor.",
+      },
+      {
+        q: "Do you build websites for Richmond Hill Persian and multicultural businesses?",
+        a: "Absolutely — Richmond Hill has one of Canada's largest Persian-speaking communities and a highly diverse business landscape. We build multilingual sites, culturally appropriate designs, and community-specific local SEO strategies for Richmond Hill's multicultural business owners.",
+      },
     ],
   },
   "north-york": {
@@ -150,6 +178,8 @@ const cityContent: Record<string, {
       { q: "Why is hyper-local SEO important for North York businesses?", a: "North York searches are often neighbourhood-specific — 'dentist near Yonge and Sheppard', 'contractor North York', etc. We optimize for these hyper-local queries that have high buyer intent and lower competition than broad Toronto keywords." },
       { q: "How fast can a North York business rank on Google?", a: "North York keywords have very low difficulty — we've seen new clients reach page 1 for North York-specific searches within 30–45 days of launch with proper on-page SEO and Google Business Profile optimization." },
       { q: "Do you offer website packages for North York small businesses?", a: "Yes — we build fully custom websites for North York businesses that include custom design, mobile optimization, local SEO setup, and Google Analytics. No hidden fees — contact us for a free quote." },
+      { q: "What does web design cost for a North York business?", a: "Our North York packages start at $1,499 — flat-rate pricing with no GTA premium. We include on-page SEO for North York-specific keywords, mobile-first design, and Google Analytics in every build. Contact us for a free quote and same-day turnaround on estimates." },
+      { q: "Do you build websites for North York medical clinics and dental practices?", a: "Yes — healthcare is one of our most active North York verticals. We build PIPEDA-compliant websites for medical clinics, dental offices, physiotherapy practices, and mental health providers along Yonge-Sheppard and the Wilson corridor, with strong Google Maps optimization to win new patient searches." },
     ],
   },
   edmonton: {
@@ -160,6 +190,8 @@ const cityContent: Record<string, {
       { q: "How competitive is web design SEO in Edmonton?", a: "Edmonton has lower keyword difficulty than Calgary and significantly lower than Toronto. A well-optimized Edmonton website can typically reach page 1 for core service keywords within 60–90 days of launch — faster and more affordable than comparable campaigns in larger cities." },
       { q: "Do you work with Edmonton energy and engineering companies?", a: "Yes — oil and gas services, engineering firms, and environmental consultants are among our most common Edmonton clients. We build professional, authoritative websites that meet the standards expected in Alberta's energy sector." },
       { q: "Can you help my Edmonton business appear in Google Maps?", a: "Absolutely. Google Business Profile optimization is included in every Edmonton SEO package. We build local citations across Canadian directories, optimize your listing for Edmonton-specific searches, and run a review generation program to improve your local pack visibility." },
+      { q: "What does web design cost for an Edmonton business?", a: "Our Edmonton packages start at $1,499 — flat-rate with no hidden fees. Every Edmonton build includes local SEO foundations targeting the Edmonton metro area, mobile-first design, and Google Analytics. We also offer Alberta-wide retainers covering both Edmonton and Calgary. Get a free quote today." },
+      { q: "Do you build websites for Edmonton government contractors and public sector businesses?", a: "Yes — government and public sector clients are a significant part of our Edmonton work. We build professional, credibility-forward websites for consulting firms, IT companies, and service providers that bid on provincial and federal government contracts in Alberta." },
     ],
   },
   ottawa: {
@@ -170,6 +202,8 @@ const cityContent: Record<string, {
       { q: "Do you build bilingual (English/French) websites for Ottawa businesses?", a: "Yes — bilingual websites are a competitive advantage in Ottawa. We build dual-language sites with proper hreflang tags, separate URL structures for each language, and SEO optimization for both English and French keywords." },
       { q: "Do you work with Ottawa government suppliers and IT companies?", a: "Absolutely — government and B2B IT clients are among our most common Ottawa verticals. We understand the professional standards, security requirements, and credibility signals needed to win government contracts and enterprise clients online." },
       { q: "How quickly can an Ottawa business rank on Google?", a: "Ottawa keyword difficulty is moderate — lower than Toronto but competitive in tech and government sectors. Most Ottawa clients see meaningful ranking movement within 60–90 days for location-specific and long-tail searches." },
+      { q: "What does web design cost for an Ottawa business?", a: "Our Ottawa packages start at $1,499 — flat-rate, no hidden fees. We offer bilingual builds (English + French) and government-ready designs within this range. Get a free quote and we'll scope the right package for your Ottawa business goals." },
+      { q: "Do you build websites for Ottawa restaurants, retail, and hospitality businesses?", a: "Yes — beyond the tech and government sectors, we work extensively with Ottawa's hospitality scene. We build visually compelling, mobile-first websites for ByWard Market restaurants, Glebe boutiques, Centretown bars, and tourism businesses that rank for Ottawa-specific searches and convert foot traffic intent." },
     ],
   },
   vaughan: {
@@ -180,6 +214,8 @@ const cityContent: Record<string, {
       { q: "Why should Vaughan businesses invest in local SEO?", a: "Vaughan's population growth means more local searches every year — and most Vaughan businesses have weak online presences. A well-optimized website can capture a dominant share of local search traffic before competition catches up." },
       { q: "Do you build websites for Vaughan trades and construction companies?", a: "Yes — trades and construction are our most common Vaughan verticals. We build fast, mobile-first sites with click-to-call buttons, quote forms, and project galleries that help Vaughan contractors win more jobs from Google." },
       { q: "How quickly can a Vaughan business rank on Google?", a: "Vaughan-specific keywords have significantly lower difficulty than Toronto keywords. Most Vaughan clients see first-page movement for location-specific searches within 30–60 days with our full SEO package." },
+      { q: "What does web design cost for a Vaughan business?", a: "Our Vaughan packages start at $1,499 — flat-rate pricing with no hidden fees. We include local SEO targeting Vaughan, Woodbridge, Maple, and Kleinburg, mobile-first design, and Google Analytics. Contact us for a free quote and same-day estimate." },
+      { q: "Do you build websites for Vaughan healthcare and medical practices?", a: "Yes — healthcare is one of our fastest-growing Vaughan verticals. We build PIPEDA-compliant websites for Vaughan medical clinics, dental practices, physiotherapy, and wellness centres, with Google Maps optimization to capture 'near me' healthcare searches in the VMC and surrounding communities." },
     ],
   },
   victoria: {
@@ -190,6 +226,8 @@ const cityContent: Record<string, {
       { q: "How competitive is web design SEO in Victoria, BC?", a: "Victoria keyword difficulty is significantly lower than Vancouver — 'web design victoria bc' and similar searches are very achievable within 45–90 days with proper on-page SEO. It's one of BC's best-value SEO markets." },
       { q: "Do you build websites for Victoria tourism and hospitality businesses?", a: "Yes — tourism is one of our most common Victoria verticals. We build professional, visually compelling websites for hotels, restaurants, tour operators, and experience businesses that convert both local and international visitors." },
       { q: "Can you help my Victoria business rank in Google Maps?", a: "Absolutely. Google Business Profile optimization is part of every Victoria SEO package. We optimize your listing, build local citations for the Capital Regional District, and run a review generation program to improve local pack visibility." },
+      { q: "What does web design cost for a Victoria BC business?", a: "Our Victoria packages start at $1,499 — flat-rate with no hidden fees. We include local SEO targeting Victoria and the Capital Regional District, mobile-first design, and Google Analytics. Contact us for a free quote — no obligation, same-day response." },
+      { q: "Do you build websites for Victoria BC government and public sector businesses?", a: "Yes — government and public sector work is part of our Victoria practice. We build professional, accessibility-compliant websites for Victoria-based consultants, non-profits, and public sector service providers that need to project credibility to BC and federal government clients." },
     ],
   },
   oshawa: {
@@ -200,6 +238,8 @@ const cityContent: Record<string, {
       { q: "Is SEO worth it for an Oshawa small business?", a: "Absolutely — and arguably more so than in Toronto. Oshawa and Durham Region keyword difficulty is very low, meaning your website investment goes much further. Most Oshawa businesses see page 1 results within 45–60 days with our SEO program." },
       { q: "Do you build websites for Oshawa automotive and trades businesses?", a: "Yes — automotive and trades are among our most common Oshawa verticals. We build mobile-first sites with click-to-call, online booking, and Google Maps integration specifically designed for service businesses." },
       { q: "Can you rank my Oshawa business across all of Durham Region?", a: "Yes — we build geo-targeted content strategies that rank your site for Oshawa, Whitby, Ajax, Pickering, and Clarington — capturing the entire Durham Region market with a single optimized site." },
+      { q: "What does web design cost for an Oshawa business?", a: "Our Oshawa packages start at $1,499 — flat-rate with no hidden fees. Every Oshawa build includes local SEO, mobile-first design, and Google Analytics. We offer Durham Region-wide retainers that cover Oshawa, Whitby, Ajax, and Pickering. Get a free quote today." },
+      { q: "Do you work with Oshawa businesses near Ontario Tech University?", a: "Yes — we work with student-facing businesses, university spin-offs, and service providers around Ontario Tech. We understand the Oshawa student market and build websites that rank for campus-adjacent searches and attract the young, mobile-first demographic." },
     ],
   },
   windsor: {
@@ -210,6 +250,8 @@ const cityContent: Record<string, {
       { q: "Do you build websites for Windsor automotive and manufacturing companies?", a: "Yes — automotive and manufacturing clients are a specialty in Windsor. We build professional, B2B-ready websites for tier-1 and tier-2 suppliers, dealerships, and industrial businesses that rank for Windsor and regional searches." },
       { q: "Can a Windsor business rank on both Canadian and US Google?", a: "Yes — we build geo-targeted sites that can rank for both Windsor, Ontario searches and Detroit/Michigan-area searches where relevant. Proper hreflang, schema, and content signals help Google understand which market each page targets." },
       { q: "How quickly can a Windsor business rank on Google?", a: "Windsor keyword difficulty is very low — most of our Windsor clients reach page 1 for core service keywords within 30–60 days of launch. It's one of Ontario's fastest-ranking SEO markets." },
+      { q: "What does web design cost for a Windsor Ontario business?", a: "Our Windsor packages start at $1,499 — flat-rate with no hidden fees. We include local SEO targeting Windsor and Essex County, mobile-first design, and Google Analytics. Contact us for a free quote and same-day estimate." },
+      { q: "Can you help my Windsor entertainment, casino, or hospitality business rank online?", a: "Yes — entertainment and hospitality are important Windsor verticals given the city's casino corridor and tourism economy. We build engaging, mobile-first websites for Windsor bars, restaurants, hotels, and event venues that rank for 'things to do in Windsor' and related high-intent searches." },
     ],
   },
   saskatoon: {
@@ -220,6 +262,8 @@ const cityContent: Record<string, {
       { q: "Is SEO worth it for a Saskatoon business?", a: "More than almost anywhere else in Canada. Saskatoon keyword difficulty is extremely low, meaning a modest investment in SEO can put your business on page 1 faster and keep it there with less ongoing effort than in larger cities." },
       { q: "Do you build websites for Saskatoon agriculture and agri-tech companies?", a: "Yes — agriculture and agri-tech are a specialty in Saskatchewan. We build professional websites for farms, co-ops, input suppliers, and agri-tech companies that rank for Saskatchewan-specific and national agricultural searches." },
       { q: "How quickly can a Saskatoon business rank on Google?", a: "Saskatoon keyword difficulty is among the lowest in Canada. Most of our Saskatoon clients reach page 1 for core service keywords within 30–45 days of launch — some of the fastest ranking timelines we see anywhere." },
+      { q: "What does web design cost for a Saskatoon business?", a: "Our Saskatoon packages start at $1,499 — flat-rate with no hidden fees. We include local SEO targeting Saskatoon and surrounding Saskatchewan communities, mobile-first design, and Google Analytics. Given Saskatoon's low keyword difficulty, ROI on web design investment is among the highest in Canada. Get a free quote today." },
+      { q: "Do you build websites for Saskatoon University of Saskatchewan businesses and startups?", a: "Yes — the University of Saskatchewan and Innovation Place create a strong startup and research ecosystem, and we work with spin-offs, student entrepreneurs, and innovation district businesses. We build credibility-first websites that position Saskatoon startups for both local and national audiences." },
     ],
   },
 };
