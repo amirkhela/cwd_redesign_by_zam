@@ -9,6 +9,8 @@ category: "Blog"
 featuredImage: "/blog/posts/duplicator.jpg"
 ---
 
+<p><strong>One ransomware attack. One bad plugin update. One accidental deletion.</strong> For most Canadian small business websites, any of these events erases months of content, SEO ranking signals, and customer data in seconds — with no way to recover. This guide explains exactly why regular backups are non-negotiable, what gets lost without them, and how to set up a backup system that actually works. Need someone to handle it for you? <a href="/services/website-maintenance">See our website maintenance plans from $99/mo</a> — backups included.</p>
+
 <h2 class="wp-block-heading" id="h-why-regular-website-backup-is-essential">Why Regular Website Backup is Essential</h2>
 
 <p>In an age where websites have become the beating heart of businesses and personal brands, ensuring their safety and continuity is paramount. One fundamental practice stands tall in this digital safeguarding mission: regular website backups. But why are they so crucial? Let's delve deep into the importance of these digital safety nets.</p>

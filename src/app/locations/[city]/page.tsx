@@ -235,75 +235,75 @@ export function generateStaticParams() {
 const cityMeta: Record<string, { title: string; description: string }> = {
   "richmond-hill": {
     title: "Web Design Richmond Hill | Top-Rated Agency | Canadian Web Designs",
-    description: `Richmond Hill web design agency — custom websites, local SEO & digital marketing. ${config.reviewCount}+ five-star reviews. Rank on Google & convert visitors. Free quote.`,
+    description: `Richmond Hill web design from $1,499 — high-income GTA market + low keyword difficulty = fast ROI. Healthcare, real estate & trades specialists. ${config.reviewCount}+ reviews. Free quote.`,
   },
   toronto: {
     title: "Web Design Toronto | #1 Rated Agency | Canadian Web Designs",
-    description: `Toronto's top web design agency — custom sites built to rank & convert. ${config.reviewCount}+ five-star reviews. Local SEO, Google Ads & more. Get a free quote today.`,
+    description: `Toronto's #1 rated web design agency — custom sites from $1,499 built to rank & convert. Local SEO, Google Ads & 180+ five-star reviews. Get a free quote today.`,
   },
   mississauga: {
     title: "Web Design Mississauga | Custom Sites From $1,499 | CWD",
-    description: `Mississauga's top web design agency — custom websites, local SEO & Google Ads. ${config.reviewCount}+ five-star reviews. Rank on Google & get more leads. Free quote today.`,
+    description: `Mississauga web design from $1,499 — outrank Toronto agencies in Square One, Port Credit & Erin Mills. ${config.reviewCount}+ reviews. Page 1 in 45–90 days. Free quote.`,
   },
   edmonton: {
     title: "Web Design Edmonton | Custom Sites From $1,499 | CWD",
-    description: `Edmonton web design agency — fast, mobile-optimized websites built to rank on Google. Local SEO, Google Ads & digital marketing. ${config.reviewCount}+ reviews. Free quote.`,
+    description: `Edmonton web design from $1,499 — energy, healthcare & trades specialists. Lower difficulty than Calgary = faster page 1 rankings. ${config.reviewCount}+ reviews. Free quote.`,
   },
   brampton: {
     title: "Web Design Brampton | Custom Sites From $1,499 | CWD",
-    description: `Brampton web design agency — custom websites & local SEO for Brampton businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & convert more visitors. Free quote.`,
+    description: `Brampton web design from $1,499 — trucking, healthcare & food industry specialists. GTA's best-value SEO market. ${config.reviewCount}+ five-star reviews. Free quote.`,
   },
   london: {
     title: "Web Design London Ontario | Custom Sites From $1,499 | CWD",
-    description: `London Ontario web design agency — custom sites, local SEO & digital marketing. ${config.reviewCount}+ five-star reviews. Rank above competitors in London, ON. Free quote.`,
+    description: `London Ontario web design from $1,499 — outrank Toronto agencies stealing your local searches. Geo-signals built in for London, ON. ${config.reviewCount}+ reviews. Free quote.`,
   },
   ottawa: {
     title: "Web Design Ottawa | Custom Sites From $1,499 | CWD",
-    description: `Ottawa web design agency — custom websites built to rank on Google & convert visitors. Local SEO, Google Ads & digital marketing. ${config.reviewCount}+ reviews. Free quote.`,
+    description: `Ottawa web design from $1,499 — bilingual, government-ready custom sites. Tech, healthcare & local services. Capital Region specialists. ${config.reviewCount}+ reviews. Free quote.`,
   },
   vaughan: {
     title: "Web Design Vaughan | Custom Sites From $1,499 | CWD",
-    description: `Vaughan web design agency — fast, mobile-first websites & local SEO for Vaughan businesses. ${config.reviewCount}+ five-star reviews. Get more leads from Google. Free quote.`,
+    description: `Vaughan web design from $1,499 — trades, healthcare & construction specialists in Woodbridge, Maple & Kleinburg. ${config.reviewCount}+ reviews. Free quote today.`,
   },
   victoria: {
     title: "Web Design Victoria BC | Custom Sites From $1,499 | CWD",
-    description: `Victoria BC web design agency — custom websites & SEO for Victoria businesses. ${config.reviewCount}+ reviews. Mobile-first, Google-optimized sites that convert. Free quote.`,
+    description: `Victoria BC web design from $1,499 — lower difficulty than Vancouver, same buyer intent. Tourism, healthcare & gov't specialists. ${config.reviewCount}+ reviews. Free quote.`,
   },
   kitchener: {
     title: "Web Design Kitchener | Custom Sites From $1,499 | CWD",
-    description: `Kitchener-Waterloo web design agency — custom websites & local SEO for KW businesses. ${config.reviewCount}+ five-star reviews. Rank on Google faster. Free quote today.`,
+    description: `Kitchener-Waterloo web design from $1,499 — KW tech, manufacturing & trades specialists. Rank faster than Toronto for less budget. ${config.reviewCount}+ reviews. Free quote.`,
   },
   oshawa: {
     title: "Web Design Oshawa | Custom Sites From $1,499 | CWD",
-    description: `Oshawa web design agency — custom websites, local SEO & digital marketing for Durham Region businesses. ${config.reviewCount}+ reviews. Get more leads online. Free quote.`,
+    description: `Oshawa web design from $1,499 — automotive, healthcare & trades for all of Durham Region. Ontario's fastest-ranking SEO market. ${config.reviewCount}+ reviews. Free quote.`,
   },
   windsor: {
     title: "Web Design Windsor Ontario | Custom Sites From $1,499 | CWD",
-    description: `Windsor Ontario web design agency — custom websites & SEO for Windsor businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & grow your business. Free quote.`,
+    description: `Windsor Ontario web design from $1,499 — automotive, healthcare & hospitality specialists. Rank for Windsor + cross-border searches. ${config.reviewCount}+ reviews. Free quote.`,
   },
   calgary: {
     title: "Web Design Calgary | Custom Sites From $1,499 | CWD",
-    description: `Calgary web design agency — custom websites & local SEO for Alberta businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & convert more visitors. Free quote.`,
+    description: `Calgary web design from $1,499 — energy, real estate & construction specialists. Rank province-wide across Alberta in 90 days. ${config.reviewCount}+ reviews. Free quote.`,
   },
   saskatoon: {
     title: "Web Design Saskatoon | Custom Sites From $1,499 | CWD",
-    description: `Saskatoon web design agency — custom websites & local SEO for Saskatchewan businesses. ${config.reviewCount}+ reviews. Mobile-first, Google-optimized sites. Free quote.`,
+    description: `Saskatoon web design from $1,499 — agriculture, mining & healthcare specialists. Canada's lowest keyword difficulty = page 1 fast. ${config.reviewCount}+ reviews. Free quote.`,
   },
   vancouver: {
     title: "Web Design Vancouver | Custom Sites From $1,499 | CWD",
-    description: `Vancouver web design agency — custom websites, local SEO & digital marketing for BC businesses. ${config.reviewCount}+ five-star reviews. Rank on Google. Free quote today.`,
+    description: `Vancouver web design from $1,499 — Metro Vancouver's top-rated agency. Custom sites for BC businesses built to rank & convert. ${config.reviewCount}+ reviews. Free quote.`,
   },
   surrey: {
     title: "Web Design Surrey BC | Custom Sites From $1,499 | CWD",
-    description: `Surrey BC web design agency — custom websites & local SEO for Surrey businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & get more leads. Free quote.`,
+    description: `Surrey BC web design from $1,499 — Newton, Cloverdale & South Surrey specialists. BC's best-value SEO market. ${config.reviewCount}+ five-star reviews. Free quote.`,
   },
   burnaby: {
     title: "Web Design Burnaby | Custom Sites From $1,499 | CWD",
-    description: `Burnaby web design agency — custom websites & local SEO for Metro Vancouver businesses. ${config.reviewCount}+ five-star reviews. Rank on Google & convert visitors. Free quote.`,
+    description: `Burnaby web design from $1,499 — Metrotown, Brentwood & Lougheed specialists. Rank in Metro Vancouver for less than downtown rates. ${config.reviewCount}+ reviews. Free quote.`,
   },
   "north-york": {
     title: "Web Design North York | Custom Sites From $1,499 | CWD",
-    description: `North York web design agency — custom websites & local SEO for North York businesses. ${config.reviewCount}+ five-star reviews. Rank on Google faster. Free quote today.`,
+    description: `North York web design from $1,499 — Yonge-Sheppard, Wilson & Bayview corridor specialists. Low difficulty GTA market. ${config.reviewCount}+ reviews. Free quote today.`,
   },
 };
 

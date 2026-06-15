@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "graphic-design")!;
 
 export const metadata: Metadata = {
-  title: "Graphic Design Canada | Logo, Branding & Print | From $299 | CWD",
-  description: "Professional graphic design for Canadian businesses. Custom logos from $299, brand identity, business cards, and marketing materials. Fast turnaround. Free quote today.",
+  title: "Graphic Design Canada | Logo & Branding From $299 | Fast | CWD",
+  description: "Professional graphic design for Canadian businesses — custom logos from $299, brand identity, print & digital marketing materials. Fast turnaround. 180+ reviews. Free quote.",
   alternates: { canonical: "/services/graphic-design" },
 };
 

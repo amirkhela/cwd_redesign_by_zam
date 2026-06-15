@@ -9,6 +9,8 @@ category: "Blog"
 featuredImage: "/blog/posts/Squarespace-website.jpg"
 ---
 
+<p><strong>Webflow, Squarespace, or WordPress — you're about to pick the platform your business lives on for the next 3–5 years.</strong> Each has a fundamentally different philosophy, cost structure, and SEO ceiling. Get it wrong and you'll be rebuilding in two years. This comparison gives you the unfiltered breakdown from a team that has built 500+ Canadian websites on all three. Want a recommendation for your specific business? <a href="/contact">Book a free strategy call</a> — we'll tell you exactly which platform to choose and why.</p>
+
 <h3 class="wp-block-heading" id="h-introduction"><strong>Introduction</strong>: </h3>
 
 <p>When it comes to building a website, the myriad of platform choices can be overwhelming. Among the heavyweights are Webflow, Squarespace, and WordPress. Each platform offers unique features catering to different needs. But which is right for you? Let's dive deep into the showdown to help you make an informed decision.</p>
