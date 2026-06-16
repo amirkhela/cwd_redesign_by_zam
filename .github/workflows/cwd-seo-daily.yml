@@ -32,15 +32,12 @@ jobs:
           npm ci
           npm install --no-save googleapis nodemailer
 
-      - name: Write GSC token
-        run: |
-          mkdir -p /tmp/gsc-tool
-          echo '${{ secrets.GSC_CWD_TOKENS }}' > /tmp/gsc-tool/tokens.json
-
       - name: Pull GSC + GA4 + PageSpeed data
         env:
-          REPO_DIR: ${{ github.workspace }}
-          REPORT_PATH: /tmp/gsc-tool/cwd_seo_report.txt
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GSC_CWD_TOKENS: ${{ secrets.GSC_CWD_TOKENS }}
+          REPORT_PATH: /tmp/cwd_seo_report.txt
         run: node scripts/cwd-daily-audit.js
 
       - name: Install Claude Code CLI
@@ -50,12 +47,11 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REPO_DIR: ${{ github.workspace }}
-          REPORT_PATH: /tmp/gsc-tool/cwd_seo_report.txt
-          LOG_PATH: /tmp/gsc-tool/daily_seo_log.txt
+          REPORT_PATH: /tmp/cwd_seo_report.txt
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
         run: |
           TODAY=$(date '+%Y-%m-%d')
-          PROMPT="Today is $TODAY. Repo root is $REPO_DIR. GSC report is at /tmp/gsc-tool/cwd_seo_report.txt. Blog posts are at $REPO_DIR/content/blog/ (MD format). Pages are at $REPO_DIR/src/app/. Run all 9 sections from your SEO task list: (0) GSC+GA4 analysis and fixes, (1) technical checks, (2) optimize 30+ pages, (3) write 2 blog posts, (4) outreach emails via SMTP user=canadianwebdesigns.emails@gmail.com pass=$SMTP_PASS, (5) technical SEO, (6) git commit and push (git add -A && git commit -m 'Daily SEO $TODAY' && git push origin main), (7) email HTML report to zam.canadianwebdesigns@gmail.com and dev@canadianwebdesigns.com, (8) log to /tmp/gsc-tool/daily_seo_log.txt. Use the exact data from the GSC report for all decisions. Minimum 30 pages optimized, minimum 2 blog posts. Never skip a section."
+          PROMPT="Today is $TODAY. Repo root is $REPO_DIR. GSC report is at /tmp/cwd_seo_report.txt. Blog posts are at $REPO_DIR/content/blog/ (MD format). Pages are at $REPO_DIR/src/app/. Run all 9 sections: (0) GSC+GA4 analysis, (1) technical checks, (2) optimize 30+ pages, (3) write 2 blog posts, (4) outreach emails via SMTP user=canadianwebdesigns.emails@gmail.com pass=$SMTP_PASS, (5) technical SEO, (6) git commit and push (git add -A && git commit -m 'Daily SEO $TODAY' && git push origin main), (7) email HTML report to zam.canadianwebdesigns@gmail.com and dev@canadianwebdesigns.com, (8) write summary log. Use exact data from GSC report. Minimum 30 pages optimized, minimum 2 blog posts. Never skip a section."
           claude --model claude-fable-5 --print "$PROMPT" --dangerously-skip-permissions
 
       - name: Report to team portal
