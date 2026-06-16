@@ -163,6 +163,36 @@ export default function ServicePage() {
               ))}
             </div>
           </div>
+
+          {/* ── From the Blog ── */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-black text-gray-900 mb-6 text-center">From the Blog — Web Design Guides</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {[
+                {
+                  title: "Web Design Services Canada: What to Look For, What to Pay, and Who to Trust",
+                  desc: "A no-fluff guide to hiring a web design agency in Canada — pricing, what's included, and how to avoid agencies that overpromise.",
+                  href: "/blog/web-design-services-canada-complete-guide",
+                },
+                {
+                  title: "How Long Does It Take to Build a Website in Canada?",
+                  desc: "Realistic 2026 timelines by project type — and the specific client-side factors that slow builds down the most.",
+                  href: "/blog/how-long-does-it-take-to-build-a-website-canada",
+                },
+                {
+                  title: "Affordable Web Design Canada: A Small Business Guide",
+                  desc: "How to get a professional, SEO-ready website without overpaying — and what \"affordable\" actually means in 2026.",
+                  href: "/blog/affordable-web-design-canada-small-business-guide",
+                },
+              ].map((post) => (
+                <Link key={post.href} href={post.href} className="group block bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:border-[#00AADF]/40 hover:shadow-md transition-all duration-200">
+                  <h4 className="font-black text-gray-900 text-sm mb-2 group-hover:text-[#00AADF] transition-colors">{post.title}</h4>
+                  <p className="text-gray-500 text-xs leading-relaxed mb-4">{post.desc}</p>
+                  <span className="text-[#00AADF] text-xs font-bold">Read the guide →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>

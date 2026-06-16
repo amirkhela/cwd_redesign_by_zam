@@ -38,7 +38,7 @@ const faq = [
   },
   {
     q: "How often do you run updates and backups?",
-    a: "Core, plugin, and theme updates are applied as they're released — we test in a staging environment first for production sites. Backups run daily and are stored off-site for 30 days. You can request a restore at any time.",
+    a: "Core, plugin, and theme updates are applied as they're released — we test in a staging environment first for production sites. Backups run daily and are stored off-site for 30 days. You can request a restore at any time. Learn why regular backups are non-negotiable in our guide: The Importance of Regular Website Backups.",
   },
   {
     q: "Do you offer website maintenance for Toronto and other Canadian cities?",

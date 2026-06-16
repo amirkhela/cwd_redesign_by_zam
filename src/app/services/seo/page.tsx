@@ -126,7 +126,7 @@ export default function ServicePage() {
                   Most affordable SEO services cut corners — thin content, low-quality backlinks, and cookie-cutter audits. We don&apos;t. Our local SEO services in Toronto and across Canada are built on three pillars: technical excellence, hyper-local content, and authoritative link earning.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  When someone in Toronto searches &ldquo;local SEO services near me,&rdquo; your business should be the first thing they see. We make that happen through Google Business Profile optimization, structured data markup, local citation building, and neighbourhood-level keyword targeting — the kind of work that moves the needle.
+                  When someone in Toronto searches &ldquo;local SEO services near me,&rdquo; your business should be the first thing they see. We make that happen through Google Business Profile optimization, structured data markup, local citation building, and neighbourhood-level keyword targeting — the kind of work that moves the needle. New to local SEO? Read our <Link href="/blog/what-is-local-seo-canada-guide" className="text-[#00AADF] hover:underline">complete guide to local SEO in Canada</Link>.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
