@@ -52,7 +52,7 @@ jobs:
         run: |
           TODAY=$(date '+%Y-%m-%d')
           PROMPT="Today is $TODAY. Repo root is $REPO_DIR. GSC report is at /tmp/cwd_seo_report.txt. Blog posts are at $REPO_DIR/content/blog/ (MD format). Pages are at $REPO_DIR/src/app/. Run all 9 sections: (0) GSC+GA4 analysis, (1) technical checks, (2) optimize 30+ pages, (3) write 2 blog posts, (4) outreach emails via SMTP user=canadianwebdesigns.emails@gmail.com pass=$SMTP_PASS, (5) technical SEO, (6) git commit and push (git add -A && git commit -m 'Daily SEO $TODAY' && git push origin main), (7) email HTML report to zam.canadianwebdesigns@gmail.com and dev@canadianwebdesigns.com, (8) write summary log. Use exact data from GSC report. Minimum 30 pages optimized, minimum 2 blog posts. Never skip a section."
-          claude --model claude-fable-5 --print "$PROMPT" --dangerously-skip-permissions
+          claude --model claude-opus-4-8 --print "$PROMPT" --dangerously-skip-permissions
 
       - name: Report to team portal
         if: always()
