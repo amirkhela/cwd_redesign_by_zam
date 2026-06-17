@@ -1,10 +1,10 @@
 ﻿---
-title: "Best Marketing Automation Software in 2026 — Canadian Guide"
+title: "Best Marketing Automation Software for Canadian Businesses in 2026 — Complete Guide"
 slug: "marketing-automation-software-overview"
 date: "2023-11-16"
 author: "Canadian Web Designs"
-description: "Compare the top marketing automation tools for Canadian small businesses — features, pricing & which one fits your stack. Expert picks + free advice."
-keywords: ["marketing automation software overview","Blog"]
+description: "Compare the best marketing automation software for Canadian small businesses in 2026 — features, pricing, integrations & expert picks. Stop wasting time on manual tasks. Free advice included."
+keywords: ["marketing automation software","best marketing automation software canada","marketing automation tools","marketing automation software overview","email marketing automation canada"]
 category: "Blog"
 featuredImage: "/blog/posts/Overview-of-Marketing-Automation-Software-Tools.png"
 ---

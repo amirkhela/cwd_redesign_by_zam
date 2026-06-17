@@ -8,8 +8,8 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design & SEO FAQs | Pricing, Timelines & What to Expect | CWD",
-  description: "How much does a website cost? How long does SEO take? Honest, no-fluff answers to the questions Canadian businesses ask before hiring a web agency. Read before you decide.",
+  title: "Web Design & SEO FAQs Canada | Pricing, Timelines & What to Expect | CWD",
+  description: "How much does a website cost in Canada? How long does SEO take? Honest, no-fluff answers to the most common questions Canadian businesses ask before hiring a web agency. Read before you decide.",
   alternates: { canonical: "/faq" },
 };
 

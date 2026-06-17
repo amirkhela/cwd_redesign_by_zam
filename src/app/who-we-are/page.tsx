@@ -8,8 +8,8 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "About Us — Canada's Top-Rated Web Design Team",
-  description: "Meet the Canadian web design team behind 180+ five-star reviews — designers, developers & SEO specialists helping businesses in 24+ cities grow online.",
+  title: "About Canadian Web Designs | Canada's Top-Rated Web Agency | 180+ Reviews | CWD",
+  description: "Meet the team behind Canada's top-rated web design agency — designers, developers & SEO specialists with 11+ years experience helping businesses in 24+ cities rank on Google and grow online.",
   alternates: { canonical: "/who-we-are" },
 };
 

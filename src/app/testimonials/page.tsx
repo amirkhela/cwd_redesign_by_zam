@@ -9,8 +9,8 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "180+ Five-Star Reviews | Real Client Testimonials | Canadian Web Designs",
-  description: `Read ${config.reviewCount}+ verified five-star reviews from real ${config.businessName} clients — restaurants, clinics, contractors & stores across Canada. See why businesses choose us over other agencies.`,
+  title: "Client Reviews & Testimonials | 180+ Five-Star Google Reviews | Canadian Web Designs",
+  description: `Read ${config.reviewCount}+ verified five-star Google reviews from real ${config.businessName} clients — restaurants, clinics, contractors & e-commerce stores across Canada. See why businesses choose CWD over other agencies.`,
   alternates: { canonical: "/testimonials" },
 };
 

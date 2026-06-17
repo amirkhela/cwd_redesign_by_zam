@@ -7,14 +7,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Website Maintenance Canada | From $99/mo | No Contracts | 24/7 Monitoring | CWD",
+  title: "Website Maintenance Services Canada | From $99/mo | 24/7 Security & Uptime | CWD",
   description:
-    "Protect your site from hacks, downtime & speed loss — maintenance from $99/mo, no contracts. Daily backups, security scans, uptime monitoring & SEO checks. 200+ Canadian sites protected. Free audit.",
+    "Keep your website fast, secure & ranking — maintenance plans from $99/mo. Daily backups, 24/7 uptime monitoring, malware removal & plugin updates. No contracts. 200+ Canadian sites protected. Free audit today.",
   alternates: { canonical: "/maintenance" },
   openGraph: {
-    title: "Website Maintenance Services Canada | Plans from $99/mo | Canadian Web Designs",
+    title: "Website Maintenance Canada | Plans from $99/mo | No Contracts | CWD",
     description:
-      "Professional website maintenance services across Canada. Security updates, backups, speed optimization & support. Protecting 180+ Canadian businesses.",
+      "Professional website maintenance across Canada from $99/mo. Security updates, daily backups, 24/7 uptime monitoring & SEO checks. Free audit for new clients.",
     url: "https://canadianwebdesigns.ca/maintenance",
   },
 };

@@ -1,10 +1,10 @@
 ﻿---
-title: "Best Menu Design Services in Canada — Menus That Sell (2026)"
+title: "Best Menu Design Services in Canada — Professional Menus That Sell (2026 Guide)"
 slug: "best-menu-design-service"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Professional restaurant menu design from $299. See what makes a menu sell more — layout, psychology & print tips from Canadian designers. Free quote."
-keywords: ["best menu design service","Blog"]
+description: "Looking for the best menu design service in Canada? Professional restaurant menu design from $299. Layout psychology, print tips & digital menus that increase average order value. Free quote."
+keywords: ["best menu design service","restaurant menu design canada","professional menu design","menu design service canada","canadian menu design"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Menu-Design-Service.png"
 ---

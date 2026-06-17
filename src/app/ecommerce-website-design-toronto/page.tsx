@@ -6,14 +6,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Ecommerce Website Design Toronto | Shopify & WooCommerce | Rank & Sell More | CWD",
+  title: "Ecommerce Website Design Toronto | Shopify & WooCommerce | 3× More Sales | CWD",
   description:
-    "Toronto ecommerce sites that rank on Google & convert — Shopify, WooCommerce & headless from $1,999. 80+ stores launched, avg 3× conversion lift. 180+ reviews. Free quote — (647) 689-6069.",
+    "Toronto ecommerce stores that rank on Google & sell — Shopify, WooCommerce & headless from $1,999. 80+ stores launched with avg 3× conversion lift. 180+ reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/ecommerce-website-design-toronto" },
   openGraph: {
-    title: "Ecommerce Website Design Toronto | Canadian Web Designs",
+    title: "Ecommerce Website Design Toronto | Shopify & WooCommerce | CWD",
     description:
-      "Custom ecommerce stores for Toronto businesses — built to rank, built to sell. Shopify, WooCommerce & headless commerce. Free consultation.",
+      "Custom ecommerce stores for Toronto businesses — built to rank on Google & convert visitors into buyers. Shopify, WooCommerce & headless. Free consultation.",
     url: `https://${config.domain}/ecommerce-website-design-toronto`,
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Ecommerce Website Design Toronto" }],
   },

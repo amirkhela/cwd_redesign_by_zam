@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Mississauga | Page 1 in 45 Days | Outrank Toronto Agencies | Free Audit | CWD",
+  title: "SEO Services Mississauga | Page 1 in 45–90 Days | Outrank Toronto Agencies | CWD",
   description:
-    "Mississauga SEO that outranks Toronto agencies on your local searches — Square One, Port Credit, Erin Mills & beyond. 180+ reviews. Free SEO audit — (647) 689-6069.",
+    "Mississauga SEO services that outrank Toronto agencies on your local searches — Square One, Port Credit, Erin Mills & Meadowvale. 700K+ residents, lower difficulty. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/mississauga" },
   openGraph: {
     title: "SEO Mississauga | Mississauga SEO Services | Canadian Web Designs",

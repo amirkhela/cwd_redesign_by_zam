@@ -6,9 +6,9 @@ import PortfolioGrid from "@/components/PortfolioGrid";
 // v4
 
 export const metadata: Metadata = {
-  title: "Web Design Portfolio | Real Canadian Websites That Rank & Convert | CWD",
+  title: "Web Design Portfolio Canada | Real Websites With Proven Traffic & Conversion Results | CWD",
   description:
-    "Browse custom websites we've built for Canadian restaurants, contractors, clinics & retailers — with real traffic and conversion results. Get yours from $1,499. Free quote today.",
+    "Browse 19+ custom websites built for Canadian restaurants, contractors, clinics & retailers — with real Google rankings and conversion results. Custom sites from $1,499. Free quote today.",
   alternates: { canonical: "/portfolio" },
 };
 

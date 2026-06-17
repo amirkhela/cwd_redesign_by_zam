@@ -7,9 +7,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Designers Near Me | Local Canadian Team | 180+ Reviews | Free Quote | CWD" },
+  title: { absolute: "Web Designers Near Me | Local Canadian Web Design Team | 180+ Reviews | Free Quote" },
   description:
-    "Find local web designers who know your market — Canadian Web Designs serves Toronto, Mississauga, Vancouver, Calgary & 20+ cities. 180+ five-star reviews. Free quote — (647) 689-6069.",
+    "Looking for web designers near you? Canadian Web Designs serves Toronto, Mississauga, Vancouver, Calgary, Ottawa & 20+ cities across Canada. 180+ five-star Google reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/web-designers-near-me" },
   openGraph: {
     title: "Web Designers Near Me | Local Web Design Canada | Canadian Web Designs",
