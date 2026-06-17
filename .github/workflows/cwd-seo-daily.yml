@@ -43,9 +43,15 @@ jobs:
       - name: Install Claude Code CLI
         run: npm install -g @anthropic-ai/claude-code
 
+      - name: Set up Claude credentials
+        env:
+          CLAUDE_CREDENTIALS: ${{ secrets.CLAUDE_CREDENTIALS }}
+        run: |
+          mkdir -p ~/.claude
+          echo "$CLAUDE_CREDENTIALS" > ~/.claude/.credentials.json
+
       - name: Run SEO Agent
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REPO_DIR: ${{ github.workspace }}
           REPORT_PATH: /tmp/cwd_seo_report.txt
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
