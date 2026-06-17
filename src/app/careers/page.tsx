@@ -6,9 +6,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Careers at Canadian Web Designs | Remote Web Design & SEO Jobs",
+  title: "Web Design & SEO Jobs Canada | Remote | Competitive Pay | Apply at CWD",
   description:
-    "Work at Canada's top-rated web agency — remote roles in web design, SEO & development. Competitive pay, flexible hours & real impact. Apply today. No experience required for junior roles.",
+    "Join Canada's top-rated web agency — remote roles in web design, SEO & development. Competitive pay, flexible hours, real client impact. Junior to senior positions open. Apply today.",
   alternates: { canonical: "/careers" },
 };
 

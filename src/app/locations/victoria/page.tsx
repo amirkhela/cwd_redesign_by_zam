@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Victoria BC & Web Design | Canadian Web Designs",
+  title: "SEO & Web Design Victoria BC | Rank Faster Than Vancouver | Free Audit | CWD",
   description:
-    "Top-rated SEO services and web design in Victoria, BC. Rank on Google, get more leads, and grow your Victoria business. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
+    "Victoria BC's top-rated SEO & web design agency — rank on page 1 in 45–90 days, lower difficulty than Vancouver. Custom sites from $1,499. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/locations/victoria" },
   openGraph: {
     title: "SEO Victoria BC & Web Design | Canadian Web Designs",

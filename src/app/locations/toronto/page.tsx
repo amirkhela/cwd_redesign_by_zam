@@ -5,9 +5,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata: Metadata = {
-  title: "Web Design Toronto | Custom Sites From $1,499 | 180+ Reviews | CWD",
+  title: "Web Design Toronto | Canada's #1 Agency | From $1,499 | Free Quote | CWD",
   description:
-    "Toronto's #1 web design company — custom sites from $1,499 that rank on Google & convert visitors into customers. 180+ five-star reviews. Call (647) 689-6069 or get a free quote.",
+    "Toronto's #1 web design agency — custom sites from $1,499 engineered to rank on Google & convert visitors into paying customers. 180+ five-star reviews. Call (647) 689-6069 or get a free quote.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
     title: "Web Design Toronto | #1 Agency, 180+ Reviews | CWD",

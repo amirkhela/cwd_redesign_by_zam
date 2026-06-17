@@ -20,11 +20,11 @@ const config = getConfig();
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${config.domain}`),
   title: {
-    default: `Web Design Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    default: `Web Design Canada | #1 Rated | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
     template: `%s | ${config.businessName}`,
   },
   description:
-    `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
+    `Canada's #1 rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Free quote — (647) 689-6069.`,
   authors: [{ name: config.businessName }],
   alternates: { canonical: "/" },
   openGraph: {

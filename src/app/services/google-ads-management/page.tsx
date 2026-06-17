@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Google Ads Management Toronto — Leads, Not Wasted Spend | CWD" },
+  title: { absolute: "Google Ads Management Canada | Qualified Leads, Not Wasted Spend | CWD" },
   description:
-    "Google Ads management that pays for itself — qualified Toronto leads at the lowest cost per click. Flat fee, no contracts. Free audit — (647) 689-6069.",
+    "Google Ads management that pays for itself — qualified leads at the lowest cost per click. Transparent flat-fee pricing, no contracts. Free ads audit — (647) 689-6069.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
     title: "Google Ads Management Toronto | Canadian Web Designs",

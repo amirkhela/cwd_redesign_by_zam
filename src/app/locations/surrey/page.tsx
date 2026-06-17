@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Surrey BC | SEO Services | 180+ Reviews | Free Quote | CWD",
+  title: "Web Design Surrey BC | #1 Agency in BC's 2nd Largest City | From $1,499 | CWD",
   description:
-    "Top-rated web design & SEO in Surrey, BC — custom sites from $1,499 built to rank on Google and convert visitors into leads. 180+ five-star reviews. Free quote — (647) 689-6069.",
+    "Top-rated web design & SEO in Surrey, BC — custom sites from $1,499 that rank on Google & convert visitors into paying leads. 180+ five-star reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/locations/surrey" },
   openGraph: {
     title: "Web Design Surrey BC & SEO | Canadian Web Designs",

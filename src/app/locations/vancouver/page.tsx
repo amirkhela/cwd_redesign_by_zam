@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Vancouver BC | Custom Sites From $1,499 | CWD",
+  title: "Web Design Vancouver BC | BC's #1 Rated Agency | From $1,499 | Free Quote | CWD",
   description:
-    "Vancouver's top-rated web design company — custom sites from $1,499 that rank on Google & drive leads. Serving Burnaby, Surrey, Richmond & all Metro Vancouver. 180+ reviews. Free quote.",
+    "Vancouver's top-rated web design agency — custom sites from $1,499 that rank on Google & drive leads. Serving Burnaby, Surrey, Richmond & all Metro Vancouver. 180+ reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/locations/vancouver" },
   openGraph: {
     title: "Web Design Vancouver | Top-Rated BC Agency | 180+ Reviews | CWD",

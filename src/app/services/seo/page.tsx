@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
-  title: "SEO Services Canada | Page 1 Rankings | Free Audit | CWD",
-  description: "Canada's top-rated SEO agency — local SEO, technical audits & link building for small businesses and e-commerce. Avg 300%+ traffic growth. Get your free SEO audit today.",
+  title: "SEO Services Canada | Page 1 Rankings | 300%+ Traffic Growth | Free Audit | CWD",
+  description: "Canada's top SEO agency — local SEO, technical audits & link building. Average 300%+ organic traffic growth for Canadian small businesses & e-commerce. Get your free SEO audit today.",
   alternates: { canonical: "/services/seo" },
 };
 
