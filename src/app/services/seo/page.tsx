@@ -6,9 +6,15 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
-  title: "SEO Services Canada | Page 1 Google Rankings | 300%+ Avg Traffic Growth | CWD",
-  description: "Canada's #1 SEO agency — local SEO, technical audits & link building that delivers real rankings. Average 300%+ organic traffic growth for Canadian businesses. Free SEO audit — no obligation. Call (647) 689-6069.",
+  title: "SEO Services Canada 2026 | Rank Page 1 | Free Audit | CWD",
+  description: "Dominate Google in 2026 — local SEO, technical audits & link building for Canadian businesses. Avg 300%+ traffic growth. Free SEO audit. Call (647) 689-6069.",
   alternates: { canonical: "/services/seo" },
+  openGraph: {
+    title: "SEO Services Canada 2026 | Rank Page 1 | Free Audit | CWD",
+    description: "Dominate Google in 2026 — local SEO, technical audits & link building for Canadian businesses. Avg 300%+ traffic growth. Free SEO audit. Call (647) 689-6069.",
+    url: "https://canadianwebdesigns.ca/services/seo",
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "SEO Services Canada 2026 — Canadian Web Designs" }],
+  },
 };
 
 const faqSchema = {

@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Toronto | Affordable, Proven | Page 1 Results for Toronto Businesses | CWD" },
+  title: { absolute: "SEO Toronto 2026 | Page 1 Google in 60–90 Days | 180+ Reviews | Free Audit | CWD" },
   description:
-    "Toronto SEO with verified results — 180+ five-star reviews, clients ranking page 1 for competitive keywords. More calls, more leads. Free SEO audit — (647) 689-6069.",
+    "Toronto SEO with real 2026 results — neighbourhood-targeted strategy for Etobicoke, Scarborough & North York. Clients ranking page 1 for competitive keywords. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
   alternates: { canonical: "/seo/toronto" },
   openGraph: {
-    title: "SEO Toronto | Affordable SEO Services | Canadian Web Designs",
+    title: "SEO Toronto 2026 | Page 1 Results in 60–90 Days | Canadian Web Designs",
     description:
-      "Toronto's trusted SEO agency. 180+ five-star reviews. Affordable SEO that gets Toronto businesses to page 1 of Google. Free consultation — call (647) 689-6069.",
+      "Toronto's trusted SEO agency — 180+ five-star reviews, proven 2026 rankings across every GTA neighbourhood. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/toronto",
     images: [
       {

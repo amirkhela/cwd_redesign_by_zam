@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design North York | Rank Faster Than Downtown Toronto | From $1,499 | Free Quote | CWD",
+  title: "North York Web Design 2026 | 180+ Reviews | Free Quote",
   description:
-    "Top-rated web design & SEO in North York — custom sites from $1,499 that rank faster than downtown Toronto. Serving Yonge-Sheppard, Wilson & Bayview. 180+ reviews. Free quote — (647) 689-6069.",
+    "North York's #1 web design agency for 2026. Custom sites from $1,499, page 1 Google results in 30–45 days. 180+ reviews. Free quote — (647) 689-6069.",
   alternates: { canonical: "/locations/north-york" },
   openGraph: {
-    title: "Web Design North York & SEO | Canadian Web Designs",
+    title: "North York Web Design 2026 | 180+ Reviews | Free Quote",
     description:
-      "North York's trusted web design and SEO agency. 180+ five-star reviews. Custom websites that rank on Google and turn visitors into paying customers. Free consultation.",
+      "Top-rated web design & SEO in North York for 2026. 180+ five-star reviews. Custom sites from $1,499, rank faster than downtown Toronto. Free quote — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/north-york",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design North York — Canadian Web Designs" }],
   },

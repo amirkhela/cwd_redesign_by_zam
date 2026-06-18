@@ -272,12 +272,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const data = cities[city];
   if (!data) return {};
   return {
-    title: `SEO ${data.name} | ${data.name} SEO Services | Canadian Web Designs`,
-    description: `Expert SEO services in ${data.name}, ${data.province}. Rank on Google page 1 and get more local leads. ${config.reviewCount}+ five-star reviews. Free SEO audit — (647) 689-6069.`,
+    title: `SEO ${data.name} | Page 1 Google in 60–90 Days | Free Audit | CWD`,
+    description: `${data.name} SEO that delivers page 1 Google rankings in 60–90 days — neighbourhood-targeted strategy, GBP optimization, 50+ citations, and monthly ranking reports. ${config.reviewCount}+ five-star reviews. Free SEO audit — (647) 689-6069.`,
     alternates: { canonical: `/seo/${city}` },
     openGraph: {
-      title: `SEO ${data.name} | ${data.name} SEO Services | Canadian Web Designs`,
-      description: `Expert SEO services in ${data.name}, ${data.province}. ${config.reviewCount}+ reviews. Free audit — (647) 689-6069.`,
+      title: `SEO ${data.name} | Page 1 Google in 60–90 Days | Free Audit | CWD`,
+      description: `${data.name} SEO with proven page 1 results — local keyword strategy, GBP optimization & citation building. ${config.reviewCount}+ reviews. Free audit — (647) 689-6069.`,
       url: `https://canadianwebdesigns.ca/seo/${city}`,
       images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: `SEO ${data.name} — Canadian Web Designs` }],
     },

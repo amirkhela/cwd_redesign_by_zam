@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Burnaby BC | Metro Vancouver's Best-Value Agency | Custom Sites From $1,499",
+  title: "Burnaby Web Design 2026 | 180+ Reviews | Free Quote",
   description:
-    "Top-rated web design & SEO in Burnaby, BC — custom sites from $1,499 that rank on Google & generate leads. Serving Metrotown, Brentwood & Lougheed. 180+ reviews. Free quote — (647) 689-6069.",
+    "Burnaby's top-rated web design agency in 2026. Custom sites from $1,499, rank on Google in 30–60 days. 180+ reviews. Free quote — call (647) 689-6069 now.",
   alternates: { canonical: "/locations/burnaby" },
   openGraph: {
-    title: "SEO & Web Design Burnaby | Canadian Web Designs",
+    title: "Burnaby Web Design 2026 | 180+ Reviews | Free Quote",
     description:
-      "Burnaby's trusted SEO and web design agency. 180+ five-star reviews. Custom websites that rank on Google and convert visitors into customers. Free consultation.",
+      "Top-rated web design & SEO in Burnaby BC for 2026. 180+ five-star reviews. Custom sites from $1,499 serving Metrotown, Brentwood & Lougheed. Free quote — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/burnaby",
     images: [
       {

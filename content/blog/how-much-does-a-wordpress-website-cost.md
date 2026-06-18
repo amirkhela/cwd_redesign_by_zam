@@ -3,8 +3,8 @@ title: "How Much Does a WordPress Website Cost in Canada? (2026 Pricing Guide)"
 slug: "how-much-does-a-wordpress-website-cost"
 date: "2026-05-29"
 author: "Canadian Web Designs"
-description: "How much does a WordPress website cost in Canada in 2026? Real pricing from $1,499 to $8,000+ — breakdown by complexity, hosting, plugins & maintenance. Compare agencies vs. freelancers vs. DIY."
-keywords: ["how much does a wordpress website cost","wordpress website cost canada","wordpress website pricing toronto","wordpress website cost 2026","how much does a website cost in canada"]
+description: "How much does a WordPress website cost in Canada in 2026? Real agency pricing from $1,499 to $8,000+ — with a full breakdown by complexity, hosting, plugins, and maintenance. Compare agencies vs. freelancers vs. DIY and get an accurate budget before you build."
+keywords: ["how much does a wordpress website cost","wordpress website cost canada","wordpress website pricing toronto","wordpress website cost 2026","how much does a website cost in canada","wordpress website cost 2026 canada","custom wordpress website price","wordpress development cost canada","cheap wordpress website canada","wordpress agency pricing","how much is a website in canada 2026"]
 category: "Blog"
 featuredImage: "/blog/posts/launchpresso-IOM28XWsk-g-unsplash.jpg"
 ---

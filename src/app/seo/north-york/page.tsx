@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO North York | GTA's Best-Value SEO | Page 1 Results Fast | CWD",
+  title: "SEO North York | Page 1 Google in 60–90 Days | GTA's Best-Value SEO | CWD",
   description:
-    "North York SEO that gets you to page 1 faster than downtown Toronto — lower competition, same buyer intent. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
+    "North York SEO that beats downtown Toronto agencies — lower keyword difficulty, same high buyer intent. Yonge St, Sheppard, Finch & Bathurst specialists. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
   alternates: { canonical: "/seo/north-york" },
   openGraph: {
     title: "SEO North York | North York SEO Services | Canadian Web Designs",

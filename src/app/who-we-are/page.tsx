@@ -8,9 +8,17 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "About Canadian Web Designs | Canada's Top-Rated Web Agency | 180+ Reviews | CWD",
-  description: "Meet the team behind Canada's top-rated web design agency — designers, developers & SEO specialists with 11+ years experience helping businesses in 24+ cities rank on Google and grow online.",
+  title: "Meet the Team | Canadian Web Designs | 25+ Experts Since 2014",
+  description:
+    "25+ designers, developers & SEO specialists who've built 500+ websites and earned 180+ five-star reviews. Meet the Canadian team that makes businesses rank and grow online.",
   alternates: { canonical: "/who-we-are" },
+  openGraph: {
+    title: "Meet the Team | Canadian Web Designs | 25+ Experts Since 2014",
+    description:
+      "25+ designers, developers & SEO specialists who've built 500+ websites and earned 180+ five-star reviews. Meet the Canadian team that makes businesses rank and grow online.",
+    url: "https://canadianwebdesigns.ca/who-we-are",
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Meet the Team — Canadian Web Designs" }],
+  },
 };
 
 const stats = [

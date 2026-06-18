@@ -8,16 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Google Ads Management Canada | Qualified Leads at Lowest Cost Per Click | CWD" },
-  description:
-    "Google Ads management that pays for itself — targeted Canadian campaigns that drive qualified leads, not wasted spend. Flat-fee pricing from $499/mo, no contracts. Free ads audit — (647) 689-6069.",
+  title: "Google Ads Management Canada 2026 | Leads From $499/mo | CWD",
+  description: "Stop wasting ad budget in 2026 — flat-fee Google Ads from $499/mo, no contracts. Certified experts cut cost-per-lead 30–50%. Free audit. Call (647) 689-6069.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
-    title: "Google Ads Management Toronto | Canadian Web Designs",
-    description:
-      "Google Ads management that generates real leads. 180+ five-star reviews. Flat-fee management, no long-term contracts. Free Google Ads audit for Toronto businesses.",
+    title: "Google Ads Management Canada 2026 | Leads From $499/mo | CWD",
+    description: "Stop wasting ad budget in 2026 — flat-fee Google Ads from $499/mo, no contracts. Certified experts cut cost-per-lead 30–50%. Free audit. Call (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Toronto — Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],
   },
 };
 

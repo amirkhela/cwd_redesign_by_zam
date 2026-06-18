@@ -8,9 +8,17 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Our Story | Canada's #1 Web Design Agency Since 2014 | 500+ Sites Built | CWD",
-  description: "Discover the story behind Canada's most-trusted web design & SEO agency — 500+ custom websites built, 180+ five-star Google reviews, and trusted by businesses in 24+ Canadian cities since 2014. Book a free consultation.",
+  title: "Our Story | Canadian Web Designs | 500+ Sites Since 2014",
+  description:
+    "From a bold idea in 2014 to Canada's most-trusted web agency — 500+ websites built, 180+ five-star reviews & clients in 24+ cities. See how we grew and what drives us.",
   alternates: { canonical: "/our-story" },
+  openGraph: {
+    title: "Our Story | Canadian Web Designs | 500+ Sites Since 2014",
+    description:
+      "From a bold idea in 2014 to Canada's most-trusted web agency — 500+ websites built, 180+ five-star reviews & clients in 24+ cities. See how we grew and what drives us.",
+    url: "https://canadianwebdesigns.ca/our-story",
+    images: [{ url: "/images/amir-portrait.png", width: 1200, height: 630, alt: "Our Story — Canadian Web Designs" }],
+  },
 };
 
 const milestones = [

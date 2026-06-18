@@ -8,9 +8,17 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Contact Us | Free Web Design & SEO Quote | Same-Day Response | CWD",
-  description: "Get a free, no-obligation web design or SEO quote — most clients hear back within hours. Call (647) 689-6069 or send the form. Serving 24+ Canadian cities coast to coast.",
+  title: "Get a Free Web Design Quote | Same-Day Response | CWD 2026",
+  description:
+    "Ready to grow? Get a free, no-obligation quote — most clients hear back within hours. Call (647) 689-6069 or fill out the form. Serving 24+ Canadian cities coast to coast.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Get a Free Web Design Quote | Same-Day Response | CWD 2026",
+    description:
+      "Get a free web design or SEO quote from Canada's top-rated agency. Most clients hear back within hours. No commitment required — call (647) 689-6069 or send the form.",
+    url: "https://canadianwebdesigns.ca/contact",
+    images: [{ url: "/images/contact-right.png", width: 1200, height: 630, alt: "Contact Canadian Web Designs" }],
+  },
 };
 
 export default function ContactPage() {
