@@ -10,3 +10,8 @@ out/
 payroll-*.json
 tokens_write.json
 *.json.bak
+
+# Block auto-generated email helpers (never commit SMTP creds)
+send_outreach_emails.js
+_email*.js
+*outreach*email*.js
