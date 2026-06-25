@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Toronto 2026 | Page 1 Google in 60–90 Days | 180+ Reviews | Free Audit | CWD" },
+  title: { absolute: "SEO Toronto | Page 1 Google in 60–90 Days | 180+ Reviews | Free Audit | CWD" },
   description:
-    "Toronto SEO with real 2026 results — neighbourhood-targeted strategy for Etobicoke, Scarborough & North York. Clients ranking page 1 for competitive keywords. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
+    "Toronto SEO with proven results — neighbourhood-targeted strategy for Etobicoke, Scarborough & North York. Clients ranking page 1 for competitive keywords. 180+ reviews. Free audit → (647) 689-6069.",
   alternates: { canonical: "/seo/toronto" },
   openGraph: {
     title: "SEO Toronto 2026 | Page 1 Results in 60–90 Days | Canadian Web Designs",

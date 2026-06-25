@@ -13,13 +13,13 @@ const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Canada | #1 Rated 2026 | From $1,499 | 180+ Reviews",
+  title: "Web Design Canada | 180+ Reviews | Custom Sites From $1,499 | Free Quote",
   description:
-    `Canada's #1 web design agency in 2026 — ${config.reviewCount}+ five-star reviews. Custom websites from $1,499, built to rank on Google & win customers. Toronto, Vancouver, Calgary & coast to coast. Free quote today.`,
+    `Canada's most-trusted web design agency — ${config.reviewCount}+ five-star reviews. Custom websites from $1,499 built to rank on Google & win customers. Toronto, Vancouver, Calgary & coast to coast. Free quote → (647) 689-6069.`,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design Canada | #1 Rated 2026 | From $1,499 | 180+ Reviews",
-    description: `Canada's top-rated web design agency — ${config.reviewCount}+ five-star reviews. Custom sites from $1,499 built to rank & convert. Free quote — (647) 689-6069.`,
+    title: "Web Design Canada | 180+ Reviews | Custom Sites From $1,499 | Free Quote",
+    description: `Canada's most-trusted web design agency — ${config.reviewCount}+ five-star reviews. Custom sites from $1,499 built to rank & convert. Free quote — (647) 689-6069.`,
     url: `https://${config.domain}`,
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada — Canadian Web Designs" }],
   },

@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Meet the Team | Canadian Web Designs | 25+ Experts Since 2014",
+  title: "Meet the Team | 25+ Web Design & SEO Experts | Canadian Web Designs",
   description:
-    "25+ designers, developers & SEO specialists who've built 500+ websites and earned 180+ five-star reviews. Meet the Canadian team that makes businesses rank and grow online.",
+    "25+ designers, developers & SEO specialists behind 500+ Canadian websites and 180+ five-star reviews. Meet the team powering Canada's most trusted web design agency.",
   alternates: { canonical: "/who-we-are" },
   openGraph: {
-    title: "Meet the Team | Canadian Web Designs | 25+ Experts Since 2014",
+    title: "Meet the Team | 25+ Web Design & SEO Experts | Canadian Web Designs",
     description:
-      "25+ designers, developers & SEO specialists who've built 500+ websites and earned 180+ five-star reviews. Meet the Canadian team that makes businesses rank and grow online.",
+      "25+ designers, developers & SEO specialists behind 500+ Canadian websites and 180+ five-star reviews. Meet the team powering Canada's most trusted web design agency.",
     url: "https://canadianwebdesigns.ca/who-we-are",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Meet the Team — Canadian Web Designs" }],
   },

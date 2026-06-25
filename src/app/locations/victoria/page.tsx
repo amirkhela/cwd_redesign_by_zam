@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Victoria BC Web Design 2026 | 180+ Reviews | Free Quote",
+  title: "Victoria BC Web Design | SEO & Custom Sites From $1,499 | 180+ Reviews | Free Quote",
   description:
-    "Victoria's top-rated web design agency for 2026. Custom sites from $1,499 — reach page 1 in 45–90 days. 180+ reviews. Free quote — call (647) 689-6069 today.",
+    "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom sites from $1,499, page 1 Google in 45–90 days. Free quote → (647) 689-6069.",
   alternates: { canonical: "/locations/victoria" },
   openGraph: {
-    title: "Victoria BC Web Design 2026 | 180+ Reviews | Free Quote",
+    title: "Victoria BC Web Design | SEO & Custom Sites From $1,499 | 180+ Reviews | Free Quote",
     description:
-      "Top-rated web design & SEO in Victoria BC for 2026. 180+ five-star reviews. Custom sites from $1,499, page 1 results in 45–90 days. Free quote — (647) 689-6069.",
+      "Top-rated web design & SEO in Victoria BC. 180+ five-star reviews. Custom sites from $1,499, page 1 results in 45–90 days. Free quote — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/victoria",
     images: [
       {

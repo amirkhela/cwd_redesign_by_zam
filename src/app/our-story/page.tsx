@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Our Story | Canadian Web Designs | 500+ Sites Since 2014",
+  title: "Our Story | Canadian Web Designs | 500+ Websites & 180+ Reviews Since 2014",
   description:
-    "From a bold idea in 2014 to Canada's most-trusted web agency — 500+ websites built, 180+ five-star reviews & clients in 24+ cities. See how we grew and what drives us.",
+    "How a bold idea in 2014 became Canada's most-trusted web design agency — 500+ custom websites, 180+ five-star Google reviews, and clients in 24+ cities coast to coast.",
   alternates: { canonical: "/our-story" },
   openGraph: {
-    title: "Our Story | Canadian Web Designs | 500+ Sites Since 2014",
+    title: "Our Story | Canadian Web Designs | 500+ Websites & 180+ Reviews Since 2014",
     description:
-      "From a bold idea in 2014 to Canada's most-trusted web agency — 500+ websites built, 180+ five-star reviews & clients in 24+ cities. See how we grew and what drives us.",
+      "How a bold idea in 2014 became Canada's most-trusted web design agency — 500+ custom websites, 180+ five-star Google reviews, and clients in 24+ cities coast to coast.",
     url: "https://canadianwebdesigns.ca/our-story",
     images: [{ url: "/images/amir-portrait.png", width: 1200, height: 630, alt: "Our Story — Canadian Web Designs" }],
   },

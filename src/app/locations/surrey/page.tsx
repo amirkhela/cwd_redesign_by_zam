@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Surrey BC Web Design 2026 | Free Quote | 180+ Reviews",
+  title: "Surrey BC Web Design | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
   description:
-    "Surrey's fastest-growing web design agency in 2026. Custom sites from $1,499, 180+ reviews, rank on Google in 30–60 days. Free quote — call (647) 689-6069 now.",
+    "Surrey BC's top-rated web design agency — Newton, Cloverdale & South Surrey specialists. Custom sites from $1,499, page 1 Google in 30–60 days. Free quote → (647) 689-6069.",
   alternates: { canonical: "/locations/surrey" },
   openGraph: {
-    title: "Surrey BC Web Design 2026 | Free Quote | 180+ Reviews",
+    title: "Surrey BC Web Design | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
     description:
-      "Top-rated web design & SEO in Surrey BC. 180+ five-star reviews. Custom sites from $1,499 built to rank on Google and win local customers in 2026. Free quote — (647) 689-6069.",
+      "Top-rated web design & SEO in Surrey BC. 180+ five-star reviews. Custom sites from $1,499 built to rank on Google and win local customers. Free quote — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/surrey",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Surrey BC — Canadian Web Designs" }],
   },

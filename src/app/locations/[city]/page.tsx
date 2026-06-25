@@ -278,84 +278,84 @@ export function generateStaticParams() {
 
 const cityMeta: Record<string, { title: string; description: string }> = {
   "richmond-hill": {
-    title: "Web Design Richmond Hill 2026 | Dominate GTA Search | CWD",
-    description: `Proven web design for Richmond Hill — Oak Ridges, Langstaff & Yonge St. Fastest-ranking GTA suburb. Free quote: (647) 689-6069. Custom sites from $1,499.`,
+    title: "Web Design Richmond Hill | Custom Sites From $1,499 | GTA Specialists | Free Quote",
+    description: `Richmond Hill's top-rated web design agency — Oak Ridges, Langstaff & Yonge St specialists. Custom sites from $1,499, fastest-ranking GTA suburb. Free quote → (647) 689-6069.`,
   },
   toronto: {
-    title: "Web Design Toronto 2026 | Guaranteed Page 1 | From $1,499",
-    description: `Toronto's fastest-growing web agency. Dominate Yorkville, Etobicoke & Scarborough searches. ${config.reviewCount}+ five-star reviews. Free audit — call (647) 689-6069.`,
+    title: "Web Design Toronto | 180+ Reviews | Custom Sites From $1,499 | Free Quote",
+    description: `Toronto's top-rated web design agency — Yorkville, Etobicoke & Scarborough specialists. Custom sites from $1,499, 180+ reviews, page 1 guaranteed. Free quote → (647) 689-6069.`,
   },
   mississauga: {
-    title: "Web Design Mississauga 2026 | Dominate Square One Area | CWD",
-    description: `Proven results for Mississauga businesses — Port Credit, Erin Mills & Streetsville. Fastest Page 1 in the GTA. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Mississauga | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    description: `Mississauga's top-rated web design agency — Port Credit, Erin Mills & Streetsville specialists. Page 1 Google results, 180+ five-star reviews. Free quote → (647) 689-6069.`,
   },
   edmonton: {
-    title: "Web Design Edmonton 2026 | Fastest Page 1 in Alberta | CWD",
-    description: `Dominate Edmonton search — Oliver, Glenora & Windermere. Proven energy, healthcare & trades results. Free audit: (647) 689-6069. Sites from $1,499.`,
+    title: "Web Design Edmonton | Custom Sites From $1,499 | Energy & Healthcare Specialists | CWD",
+    description: `Edmonton's top-rated web design agency — energy, healthcare & trades specialists. Custom sites from $1,499, SEO included, 180+ reviews. Free quote → (647) 689-6069.`,
   },
   brampton: {
-    title: "Web Design Brampton 2026 | Proven GTA Results | From $1,499",
-    description: `Brampton's fastest-growing web agency — Bramalea, Heart Lake & Downtown specialists. Guaranteed leads or we keep working. Free quote: (647) 689-6069.`,
+    title: "Web Design Brampton | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    description: `Brampton's top-rated web design agency — trucking, healthcare & professional services specialists. Sites from $1,499, SEO included. Free quote → (647) 689-6069.`,
   },
   london: {
-    title: "Web Design London Ontario 2026 | Dominate Local Search | CWD",
-    description: `Proven results for London ON — Old North, Byron & White Oaks. Outrank Toronto agencies guaranteed. Free quote: (647) 689-6069. Custom sites from $1,499.`,
+    title: "Web Design London Ontario | Custom Sites From $1,499 | Outrank Toronto Agencies",
+    description: `London Ontario's top-rated web design agency — healthcare, legal & trades specialists. Custom sites from $1,499, outrank Toronto agencies guaranteed. Free quote → (647) 689-6069.`,
   },
   ottawa: {
-    title: "Web Design Ottawa 2026 | Bilingual & Proven Results | CWD",
-    description: `Dominate Ottawa search — Kanata, Glebe & ByWard Market. Fastest bilingual EN/FR web agency. Free quote: (647) 689-6069. Custom sites from $1,499.`,
+    title: "Web Design Ottawa | Bilingual EN/FR | Custom Sites From $1,499 | Free Quote",
+    description: `Ottawa's top-rated bilingual web design agency — Kanata, Glebe & ByWard Market specialists. Custom sites from $1,499, 180+ reviews. Free quote → (647) 689-6069.`,
   },
   vaughan: {
-    title: "Web Design Vaughan 2026 | Dominate VMC & Woodbridge | CWD",
-    description: `Vaughan's proven web agency — Woodbridge, Maple & Kleinburg specialists. Dominate GTA search before rivals catch up. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Vaughan | Custom Sites From $1,499 | VMC & Woodbridge | Free Quote",
+    description: `Vaughan's top-rated web design agency — Woodbridge, Maple & VMC specialists. Custom sites from $1,499, SEO included, page 1 Google in 30–60 days. Free quote → (647) 689-6069.`,
   },
   victoria: {
     title: "Web Design Victoria BC 2026 | Proven Island Results | CWD",
     description: `Dominate Victoria search — Oak Bay, Langford & James Bay. Fastest Page 1 in BC after Vancouver. Free audit: (647) 689-6069. Custom sites from $1,499.`,
   },
   kitchener: {
-    title: "Web Design Kitchener 2026 | Proven KW Tech Results | CWD",
-    description: `Dominate Kitchener-Waterloo search — Uptown Waterloo, Downtown Kitchener & Cambridge. Proven fastest ROI vs Toronto. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Kitchener-Waterloo | Custom Sites From $1,499 | KW Tech Specialists | Free Quote",
+    description: `Kitchener-Waterloo's top-rated web design agency — tech, manufacturing & healthcare specialists. Custom sites from $1,499, fastest ROI vs Toronto. Free quote → (647) 689-6069.`,
   },
   oshawa: {
-    title: "Web Design Oshawa 2026 | Dominate Durham Region | CWD",
-    description: `Proven results across Durham — Oshawa, Whitby, Ajax & Pickering. Fastest-ranking Ontario SEO market. Free quote: (647) 689-6069. Custom sites from $1,499.`,
+    title: "Web Design Oshawa | Custom Sites From $1,499 | Durham Region Specialists | Free Quote",
+    description: `Oshawa & Durham Region's top-rated web design agency — Whitby, Ajax & Pickering coverage. Custom sites from $1,499, fastest-ranking Ontario SEO market. Free quote → (647) 689-6069.`,
   },
   windsor: {
-    title: "Web Design Windsor Ontario 2026 | Proven Local + US Reach",
-    description: `Dominate Windsor search — Downtown, Walkerville & South Windsor. Proven cross-border Detroit traffic capture. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Windsor Ontario | Custom Sites From $1,499 | Local + US Reach | Free Quote",
+    description: `Windsor Ontario's top-rated web design agency — downtown, Walkerville & South Windsor. Cross-border Detroit traffic capture. Custom sites from $1,499. Free quote → (647) 689-6069.`,
   },
   calgary: {
-    title: "Web Design Calgary 2026 | Dominate Alberta Search | CWD",
-    description: `Proven Calgary results — Beltline, Kensington & Inglewood. Fastest Alberta rankings guaranteed. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Calgary | Custom Sites From $1,499 | Alberta SEO | Free Quote",
+    description: `Calgary's top-rated web design agency — energy, real estate & construction specialists. Custom sites from $1,499, page 1 Alberta results guaranteed. Free quote → (647) 689-6069.`,
   },
   saskatoon: {
-    title: "Web Design Saskatoon 2026 | Fastest Page 1 in Canada | CWD",
-    description: `Dominate Saskatoon search — Nutana, Riversdale & Stonebridge. Canada's proven lowest-difficulty SEO market. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Saskatoon | Custom Sites From $1,499 | Canada's Lowest SEO Difficulty | CWD",
+    description: `Saskatoon's top-rated web design agency — agriculture, mining & healthcare specialists. Custom sites from $1,499, Canada's fastest-ranking SEO market. Free quote → (647) 689-6069.`,
   },
   vancouver: {
-    title: "Web Design Vancouver 2026 | Dominate BC Search | From $1,499",
-    description: `Vancouver's fastest-growing web agency — Yaletown, Kitsilano & Mount Pleasant. Proven Metro Vancouver results. Free audit: (647) 689-6069. From $1,499.`,
+    title: "Web Design Vancouver | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    description: `Vancouver's top-rated web design agency — Yaletown, Kitsilano & Mount Pleasant specialists. Custom sites from $1,499, proven Metro Vancouver results. Free quote → (647) 689-6069.`,
   },
   surrey: {
-    title: "Web Design Surrey BC 2026 | Dominate BC's 2nd City | CWD",
-    description: `Proven results in Surrey — Newton, Cloverdale & South Surrey. Fastest Page 1 in Metro Vancouver. Free quote: (647) 689-6069. Custom sites from $1,499.`,
+    title: "Web Design Surrey BC | Custom Sites From $1,499 | Newton & South Surrey | Free Quote",
+    description: `Surrey BC's top-rated web design agency — Newton, Cloverdale & South Surrey specialists. Custom sites from $1,499, page 1 Metro Vancouver rankings. Free quote → (647) 689-6069.`,
   },
   burnaby: {
-    title: "Web Design Burnaby BC 2026 | Proven Metro Results | CWD",
-    description: `Dominate Burnaby search — Metrotown, Brentwood & Lougheed. Proven Metro Vancouver rankings at lower cost. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Burnaby BC | Custom Sites From $1,499 | Metrotown Specialists | Free Quote",
+    description: `Burnaby's top-rated web design agency — Metrotown, Brentwood & Lougheed specialists. Custom sites from $1,499, Metro Vancouver rankings at lower cost. Free quote → (647) 689-6069.`,
   },
   "north-york": {
-    title: "Web Design North York 2026 | Fastest GTA Rankings | CWD",
-    description: `Proven results for North York — Yonge-Sheppard, Wilson & Bayview. Dominate GTA search faster than downtown Toronto. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design North York | Custom Sites From $1,499 | Yonge-Sheppard Specialists | Free Quote",
+    description: `North York's top-rated web design agency — Yonge-Sheppard, Wilson & Bayview specialists. Custom sites from $1,499, dominate GTA search faster than downtown Toronto. Free quote → (647) 689-6069.`,
   },
   hamilton: {
-    title: "Web Design Hamilton 2026 | Dominate Steel City Search | CWD",
-    description: `Proven Hamilton results — Stoney Creek, Dundas & Westdale. Fastest-growing web agency in Ontario's Steel City. Free quote: (647) 689-6069. From $1,499.`,
+    title: "Web Design Hamilton | Custom Sites From $1,499 | Steel City Specialists | Free Quote",
+    description: `Hamilton's top-rated web design agency — Stoney Creek, Dundas & Westdale specialists. Custom sites from $1,499, lowest keyword difficulty in Ontario. Free quote → (647) 689-6069.`,
   },
   winnipeg: {
-    title: "Web Design Winnipeg 2026 | Dominate Manitoba Search | CWD",
-    description: `Proven Winnipeg results — Corydon, Exchange District & St. Vital. Canada's fastest ROI SEO market. Free quote: (647) 689-6069. Custom sites from $1,499.`,
+    title: "Web Design Winnipeg | Custom Sites From $1,499 | Manitoba Specialists | Free Quote",
+    description: `Winnipeg's top-rated web design agency — Corydon, Exchange District & St. Vital specialists. Custom sites from $1,499, Canada's fastest ROI SEO market. Free quote → (647) 689-6069.`,
   },
 };
 

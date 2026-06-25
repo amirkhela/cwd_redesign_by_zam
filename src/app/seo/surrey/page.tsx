@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Surrey BC | Page 1 Google in 60–90 Days | 600K+ Residents | Free Audit | CWD",
+  title: "SEO Surrey BC | Page 1 Google in 60–90 Days | 180+ Reviews | Free Audit | CWD",
   description:
-    "Surrey BC SEO — BC's second-largest city with 600K+ residents and lower keyword difficulty than Vancouver. Newton, Guildford, Cloverdale & South Surrey specialists. 180+ reviews. Free SEO audit — (647) 689-6069.",
+    "Surrey BC SEO specialists — BC's 2nd-largest city, lower keyword difficulty than Vancouver. Newton, Guildford, Cloverdale & South Surrey. 180+ reviews. Free SEO audit → (647) 689-6069.",
   alternates: { canonical: "/seo/surrey" },
   openGraph: {
-    title: "SEO Surrey BC | Page 1 Google in 60–90 Days | 600K+ Residents | CWD",
+    title: "SEO Surrey BC | Page 1 Google in 60–90 Days | 180+ Reviews | CWD",
     description:
-      "Surrey SEO that reaches page 1 faster than Vancouver — 600K+ residents, lower keyword difficulty, neighbourhood-specific strategies for Newton, Guildford & South Surrey. 180+ reviews. Free audit — (647) 689-6069.",
+      "Surrey SEO that reaches page 1 faster than Vancouver — lower keyword difficulty, neighbourhood-specific strategies for Newton, Guildford & South Surrey. 180+ reviews. Free audit.",
     url: "https://canadianwebdesigns.ca/seo/surrey",
     images: [
       {

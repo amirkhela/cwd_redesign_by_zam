@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "social-media-optimization")!;
 
 export const metadata: Metadata = {
-  title: "Social Media Management Canada 2026 | Real Growth | CWD",
-  description: "Turn followers into customers in 2026 — done-for-you content, paid ads & strategy on Instagram, TikTok, LinkedIn & more. Free strategy call. (647) 689-6069.",
+  title: "Social Media Management Canada | Real Growth | Done For You | Free Strategy Call",
+  description: "Turn followers into paying customers — done-for-you content, paid ads & growth strategy on Instagram, TikTok & LinkedIn for Canadian businesses. Free strategy call → (647) 689-6069.",
   alternates: { canonical: "/services/social-media-optimization" },
   openGraph: {
-    title: "Social Media Management Canada 2026 | Real Growth | CWD",
-    description: "Turn followers into customers in 2026 — done-for-you content, paid ads & strategy on Instagram, TikTok, LinkedIn & more. Free strategy call. (647) 689-6069.",
+    title: "Social Media Management Canada | Real Growth | Done For You | Free Strategy Call",
+    description: "Turn followers into paying customers — done-for-you content, paid ads & growth strategy on Instagram, TikTok & LinkedIn for Canadian businesses. Free strategy call → (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/social-media-optimization",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Social Media Management Canada 2026 — Canadian Web Designs" }],
   },
