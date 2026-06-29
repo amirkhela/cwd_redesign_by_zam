@@ -7,9 +7,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Mobile Web Design Toronto | Fast & Responsive | Core Web Vitals | Free Audit",
+  title: "Mobile Web Design Toronto | Loads Under 2s | Core Web Vitals Pass | 180+ Reviews | Free Audit",
   description:
-    "70%+ of Toronto searches happen on mobile. We build responsive sites that load under 2s, pass Core Web Vitals & rank on Google. 180+ reviews. Free mobile audit → (647) 689-6069.",
+    "70%+ of Toronto searches happen on mobile — is your site ready? We build responsive sites that load under 2s, pass Core Web Vitals & rank Page 1 on Google. Free mobile audit: (647) 689-6069.",
   alternates: { canonical: "/mobile-web-design-in-toronto" },
   openGraph: {
     title: "Mobile Web Design Toronto | Fast & Responsive | Core Web Vitals | Free Audit",

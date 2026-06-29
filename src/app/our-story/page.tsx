@@ -8,9 +8,9 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Our Story | Canadian Web Designs | 500+ Websites & 180+ Reviews Since 2014",
+  title: "About Canadian Web Designs | 500+ Websites Built Since 2014 | Canada's Most-Trusted Agency",
   description:
-    "How a bold idea in 2014 became Canada's most-trusted web design agency — 500+ custom websites, 180+ five-star Google reviews, and clients in 24+ cities coast to coast.",
+    "From a bold idea in 2014 to Canada's most-trusted web design agency — 500+ custom websites launched, 180+ five-star Google reviews, and clients in 24+ cities from Vancouver to Halifax.",
   alternates: { canonical: "/our-story" },
   openGraph: {
     title: "Our Story | Canadian Web Designs | 500+ Websites & 180+ Reviews Since 2014",

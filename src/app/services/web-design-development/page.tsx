@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: "Web Design Canada | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
-  description: "Canada's top-rated web design agency — custom, mobile-first websites from $1,499 built to rank on Google & convert visitors into paying customers. 180+ reviews. Free quote → (647) 689-6069.",
+  title: "Web Design Canada | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
+  description: "Custom websites from $1,499 — built to rank Page 1 on Google & convert visitors into leads. Mobile-first, SEO-ready on day one, no templates. 180+ five-star reviews. Free quote: (647) 689-6069.",
   alternates: { canonical: "/services/web-design-development" },
   openGraph: {
-    title: "Web Design Canada | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
-    description: "Canada's top-rated web design agency — custom, mobile-first websites from $1,499 built to rank on Google & convert visitors into paying customers. 180+ reviews. Free quote → (647) 689-6069.",
+    title: "Web Design Canada | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
+    description: "Custom websites from $1,499 — built to rank Page 1 on Google & convert visitors into leads. Mobile-first, SEO-ready on day one. 180+ reviews. Free quote: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/web-design-development",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Toronto 2026 — Canadian Web Designs" }],
   },

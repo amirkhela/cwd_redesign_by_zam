@@ -3,7 +3,7 @@ title: "How Much Does a Website Cost in Canada? (2026 Pricing Guide)"
 slug: "how-much-does-a-website-cost-in-canada"
 date: "2026-05-28"
 author: "Amir Khela"
-description: "A complete, no-fluff breakdown of website costs in Canada for 2026 — from basic business sites to custom e-commerce builds. Real pricing, real timelines."
+description: "How much does a website cost in Canada in 2026? Real pricing from $500 to $15,000+ — broken down by type, agency tier, and features. Templates vs custom, agency vs freelancer vs DIY. Bookmark before you buy."
 keywords: ["how much does a website cost in canada", "website cost canada", "website design pricing canada", "web design cost", "how much does a website cost"]
 category: "Web Design"
 featuredImage: "/blog/posts/WordPress-Website-Costs-1.jpg"

@@ -3,7 +3,7 @@ title: "Why Every Business Needs a Mobile-First Website"
 slug: "why-every-business-needs-a-mobile-first-website"
 date: "2024-12-10"
 author: "Canadian Web Designs"
-description: "With over 60% of web traffic coming from mobile devices, having a mobile-first website is no longer optional."
+description: "Over 70% of Canadian web traffic comes from mobile — is your website built for it? Learn why mobile-first design is now a Google ranking requirement, not just a nice-to-have, and what it costs to get it right."
 keywords: ["mobile-first design", "responsive web design", "mobile website", "web design Canada"]
 category: "Web Design"
 featuredImage: "/blog/posts/cropped-view-of-smiling-designer-showing-mobile.jpg"

@@ -3,7 +3,7 @@ title: "Social Media Management Toronto: What Agencies Actually Do"
 slug: "social-media-management-toronto"
 date: "2026-05-16"
 author: "Amir Khela"
-description: "Curious what a social media management agency in Toronto actually delivers each month? Here's the real breakdown — no jargon, no filler, just what matters."
+description: "What does a Toronto social media management agency actually deliver each month? Real deliverables, real pricing from $499/mo, and how to tell if yours is driving results or just posting content. No jargon."
 category: "Social Media"
 featuredImage: "/blog/posts/hand-holding-smartphone-social-media-concept-scaled.jpg"
 ---

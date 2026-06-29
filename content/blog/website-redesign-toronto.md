@@ -3,7 +3,7 @@ title: "Website Redesign Toronto: 7 Signs It's Time to Rebuild Your Site"
 slug: "website-redesign-toronto"
 date: "2026-05-16"
 author: "Amir Khela"
-description: "Is your Toronto website costing you customers without you realizing it? These 7 signs tell you it's time for a website redesign — and what to do about it."
+description: "Is your Toronto website silently costing you customers? These 7 clear signs tell you it's time for a redesign in 2026 — plus real redesign costs, timelines, and how to avoid the most common pitfalls."
 category: "Web Design"
 featuredImage: "/blog/posts/ui-ux-representation-with-hand-typing-scaled.jpeg"
 ---

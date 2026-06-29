@@ -5,7 +5,12 @@ import { getAllPosts } from "@/lib/blog";
 const config = getConfig();
 const BASE_URL = `https://${config.domain}`;
 
-const SEO_CITIES = ["toronto", "mississauga", "brampton", "north-york", "burnaby", "victoria"];
+const SEO_CITIES = [
+  "toronto", "mississauga", "brampton", "north-york", "burnaby", "victoria",
+  "surrey", "halifax", "oshawa", "ottawa", "barrie", "vaughan", "windsor",
+  "richmond-hill", "kitchener", "edmonton", "vancouver", "saskatoon",
+  "calgary", "montreal", "london", "ladner",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

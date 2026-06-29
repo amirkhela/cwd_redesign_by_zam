@@ -3,7 +3,7 @@ title: "Affordable Web Design for Small Businesses in Canada: What You Really Ne
 slug: "affordable-web-design-for-small-businesses-in-canada-what-you-really-need-in-2026"
 date: "2026-01-02"
 author: "Canadian Web Designs"
-description: "Table of Contents Introduction Why Affordable Web Design Matters for Canadian Small Businesses What Affordable Web Design Should Include (Not Cheap..."
+description: "Affordable web design for Canadian small businesses in 2026: what a budget site should actually include, the real cost floor for quality work, and how to avoid agencies that take your money without delivering results."
 keywords: ["affordable web design for small businesses in canada what you really need in 2026","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/Website-design.png"

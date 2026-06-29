@@ -6,8 +6,8 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "graphic-design")!;
 
 export const metadata: Metadata = {
-  title: "Graphic Design Canada 2026 | Logos From $299 | 72-Hr Rush | CWD",
-  description: "Stand out in 2026 with a brand that converts — custom logos from $299, full identity packages, 72-hr rush available. 180+ reviews. Free quote. (647) 689-6069.",
+  title: "Graphic Design Canada | Custom Logos From $299 | 72-Hr Rush | 180+ Reviews | Free Quote",
+  description: "Stand out with a brand that converts — custom logos from $299, full identity packages & print design. 72-hr rush delivery available. 180+ five-star reviews. Free quote: (647) 689-6069.",
   alternates: { canonical: "/services/graphic-design" },
   openGraph: {
     title: "Graphic Design Canada 2026 | Logos From $299 | 72-Hr Rush | CWD",

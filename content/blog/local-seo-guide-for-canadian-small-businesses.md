@@ -3,7 +3,7 @@ title: "Local SEO for Canadian Small Businesses: The Complete 2026 Guide"
 slug: "local-seo-guide-for-canadian-small-businesses"
 date: "2026-05-28"
 author: "Amir Khela"
-description: "A practical, no-fluff guide to local SEO for Canadian small businesses in 2026. Learn how to rank on Google Maps, dominate local search, and turn organic traffic into paying customers."
+description: "Local SEO for Canadian small businesses in 2026: rank on Google Maps, dominate local search, and turn organic traffic into paying customers. Step-by-step guide covering GBP, citations, on-page, and link building."
 keywords: ["local seo canada", "local seo for small business", "seo for canadian businesses", "local seo tips", "how to rank on google canada"]
 category: "SEO"
 featuredImage: "/blog/posts/SEO-Services-London-Ontario.png"

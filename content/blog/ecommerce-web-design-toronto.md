@@ -3,7 +3,7 @@ title: "eCommerce Web Design Toronto: Costs, Features & How to Choose"
 slug: "ecommerce-web-design-toronto"
 date: "2026-05-16"
 author: "Amir Khela"
-description: "Planning an online store in Toronto? Here's what eCommerce web design actually costs, what features matter most, and how to find the right agency to build it."
+description: "eCommerce web design in Toronto: real 2026 costs from $2,499, which features actually drive sales, and how to pick an agency that ranks your store on Google. Shopify vs WooCommerce comparison included."
 category: "Web Design"
 featuredImage: "/blog/web-design-company.png"
 ---
