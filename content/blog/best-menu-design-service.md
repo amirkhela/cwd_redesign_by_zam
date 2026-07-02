@@ -1,10 +1,10 @@
 ﻿---
-title: "Best Menu Design Services in Canada — Professional Menus That Sell (2026 Guide)"
+title: "Best Menu Design Services in Canada 2026 — Restaurant Menus That Boost Sales"
 slug: "best-menu-design-service"
 date: "2023-11-15"
 author: "Canadian Web Designs"
-description: "Looking for the best menu design service in Canada in 2026? Get a professionally engineered restaurant menu that boosts average order value — from layout psychology to digital menus. Trusted by Canadian restaurants. Get your free quote today."
-keywords: ["best menu design service","restaurant menu design canada","professional menu design","menu design service canada","canadian menu design","menu design toronto","menu design services canada 2026","restaurant menu design agency","digital menu design canada","food menu design service","menu printing canada"]
+description: "The best menu design service in Canada for 2026 — professionally engineered restaurant menus that increase average order value with layout psychology, digital & print. Trusted by 100+ Canadian restaurants. Free quote: (647) 689-6069."
+keywords: ["best menu design service","restaurant menu design canada","professional menu design","menu design service canada","canadian menu design","menu design toronto","menu design services canada 2026","restaurant menu design agency","digital menu design canada","food menu design service","menu printing canada","best restaurant menu design canada","menu design company canada"]
 category: "Blog"
 featuredImage: "/blog/posts/Best-Menu-Design-Service.png"
 ---

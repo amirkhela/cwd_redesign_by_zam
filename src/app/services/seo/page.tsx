@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
-  title: "SEO Services Canada | Rank Page 1 in 60–90 Days | 300%+ Traffic Growth | Free Audit | CWD",
-  description: "Rank Page 1 on Google in 60–90 days — proven Canadian SEO with local targeting, technical audits & link building. Avg 300%+ traffic growth. Free SEO audit: (647) 689-6069.",
+  title: "SEO Services Canada 2026 | Page 1 in 60–90 Days | Avg 300%+ Traffic | 180+ Reviews | Free Audit",
+  description: "Canada's most trusted SEO agency — rank Page 1 in 60–90 days with local targeting, technical audits, content & link building. 180+ reviews, avg 300%+ organic traffic growth. Free SEO audit: (647) 689-6069.",
   alternates: { canonical: "/services/seo" },
   openGraph: {
-    title: "SEO Services Canada | Rank Page 1 in 60–90 Days | 300%+ Traffic Growth | Free Audit | CWD",
-    description: "Rank Page 1 on Google in 60–90 days — proven Canadian SEO with local targeting, technical audits & link building. Avg 300%+ traffic growth. Free SEO audit: (647) 689-6069.",
+    title: "SEO Services Canada 2026 | Page 1 in 60–90 Days | 300%+ Traffic | 180+ Reviews | Free Audit",
+    description: "Rank Page 1 on Google in 60–90 days — local & national SEO, avg 300%+ traffic growth, 180+ five-star reviews. Canada's most-trusted SEO agency. Free audit: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/seo",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "SEO Services Canada 2026 — Canadian Web Designs" }],
   },

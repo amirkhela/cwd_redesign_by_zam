@@ -278,84 +278,84 @@ export function generateStaticParams() {
 
 const cityMeta: Record<string, { title: string; description: string }> = {
   "richmond-hill": {
-    title: "Web Design Richmond Hill | Custom Sites From $1,499 | GTA Specialists | Free Quote",
-    description: `Richmond Hill's top-rated web design agency — Oak Ridges, Langstaff & Yonge St specialists. Custom sites from $1,499, fastest-ranking GTA suburb. Free quote → (647) 689-6069.`,
+    title: "Web Design Richmond Hill 2026 | Custom Sites From $1,499 | GTA's Fastest Page 1 | Free Quote",
+    description: `Richmond Hill's #1 rated web design agency — Oak Ridges, Langstaff & Yonge St. Custom sites from $1,499, fastest-ranking GTA suburb. Rank Page 1 faster than Toronto. Free quote: (647) 689-6069.`,
   },
   toronto: {
-    title: "Web Design Toronto | 180+ Reviews | Custom Sites From $1,499 | Page 1 Guaranteed | Free Quote",
-    description: `Toronto's most-trusted web design agency — Yorkville, Etobicoke & Scarborough specialists. Custom sites from $1,499, 180+ five-star reviews, Page 1 Google guaranteed. Free quote: (647) 689-6069.`,
+    title: "Web Design Toronto 2026 | 180+ Reviews | Custom Sites From $1,499 | Page 1 Guaranteed | Free Quote",
+    description: `Toronto's #1 rated web design agency in 2026 — Yorkville, Etobicoke & Scarborough specialists. Custom sites from $1,499, 180+ five-star reviews, Page 1 Google guaranteed. Free quote: (647) 689-6069.`,
   },
   mississauga: {
-    title: "Web Design Mississauga | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
-    description: `Mississauga's most-trusted web design agency — Square One, Port Credit & Erin Mills. Custom sites from $1,499, Page 1 Google results, 180+ five-star reviews. Free quote: (647) 689-6069.`,
+    title: "Web Design Mississauga 2026 | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
+    description: `Mississauga's #1 rated web design agency in 2026 — Square One, Port Credit & Erin Mills specialists. Custom sites from $1,499, proven Page 1 Google results, 180+ five-star reviews. Free quote: (647) 689-6069.`,
   },
   edmonton: {
-    title: "Web Design Edmonton | Custom Sites From $1,499 | Energy & Healthcare Specialists | Page 1 | CWD",
-    description: `Edmonton's most-trusted web design agency — energy, healthcare & trades specialists. Rank Page 1 in 60–90 days. Custom sites from $1,499, SEO included. Free quote: (647) 689-6069.`,
+    title: "Web Design Edmonton 2026 | Custom Sites From $1,499 | Energy & Healthcare | Page 1 | Free Quote",
+    description: `Edmonton's most-trusted web design agency in 2026 — energy, healthcare & trades specialists. Rank Page 1 in 60–90 days. Custom sites from $1,499, full SEO included. Free quote: (647) 689-6069.`,
   },
   brampton: {
-    title: "Web Design Brampton | Custom Sites From $1,499 | 180+ Reviews | Page 1 in 60 Days | Free Quote",
-    description: `Brampton's most-trusted web design agency — trucking, healthcare & professional services. Custom sites from $1,499, Page 1 rankings in 60 days, SEO included. Free quote: (647) 689-6069.`,
+    title: "Web Design Brampton 2026 | Custom Sites From $1,499 | 180+ Reviews | Page 1 in 60 Days | Free Quote",
+    description: `Brampton's #1 rated web design agency in 2026 — trucking, healthcare & professional services specialists. Custom sites from $1,499, Page 1 rankings in 60 days, SEO included. Free quote: (647) 689-6069.`,
   },
   london: {
-    title: "Web Design London Ontario | Custom Sites From $1,499 | Outrank Toronto Agencies | Free Quote",
-    description: `London Ontario's most-trusted web design agency — healthcare, legal & trades experts. Custom sites from $1,499, outrank Toronto agencies guaranteed. Free quote: (647) 689-6069.`,
+    title: "Web Design London Ontario 2026 | Custom Sites From $1,499 | Beat Toronto Agencies | Free Quote",
+    description: `London Ontario's most-trusted web design agency in 2026 — healthcare, legal & trades experts. Custom sites from $1,499, outrank Toronto agencies on Google. Free quote: (647) 689-6069.`,
   },
   ottawa: {
-    title: "Web Design Ottawa | Bilingual EN/FR | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
-    description: `Ottawa's most-trusted bilingual web design agency — Kanata, Glebe & ByWard Market. Custom EN/FR sites from $1,499, 180+ reviews. Free quote: (647) 689-6069.`,
+    title: "Web Design Ottawa 2026 | Bilingual EN/FR | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    description: `Ottawa's most-trusted bilingual web design agency in 2026 — Kanata, Glebe & ByWard Market. Custom EN/FR sites from $1,499, 180+ reviews. Free quote: (647) 689-6069.`,
   },
   vaughan: {
-    title: "Web Design Vaughan | Custom Sites From $1,499 | Page 1 in 30–60 Days | Free Quote",
-    description: `Vaughan's most-trusted web design agency — Woodbridge, Maple & VMC. Page 1 Google in 30–60 days. Custom sites from $1,499, SEO included. Free quote: (647) 689-6069.`,
+    title: "Web Design Vaughan 2026 | Custom Sites From $1,499 | Page 1 in 30–60 Days | Free Quote",
+    description: `Vaughan's most-trusted web design agency in 2026 — Woodbridge, Maple & VMC. Page 1 Google in 30–60 days. Custom sites from $1,499, full SEO included. Free quote: (647) 689-6069.`,
   },
   victoria: {
-    title: "Web Design Victoria BC | Custom Sites From $1,499 | Fastest Page 1 in BC | Free Quote",
-    description: `Victoria BC's most-trusted web design agency — Oak Bay, Langford & James Bay. Fastest Page 1 results in BC. Custom sites from $1,499. Free audit: (647) 689-6069.`,
+    title: "Web Design Victoria BC 2026 | Custom Sites From $1,499 | Fastest Page 1 in BC | Free Quote",
+    description: `Victoria BC's most-trusted web design agency in 2026 — Oak Bay, Langford & James Bay. Fastest Page 1 results in BC. Custom sites from $1,499. Free audit: (647) 689-6069.`,
   },
   kitchener: {
-    title: "Web Design Kitchener-Waterloo | Custom Sites From $1,499 | KW Tech Specialists | Free Quote",
+    title: "Web Design Kitchener-Waterloo 2026 | Custom Sites From $1,499 | KW Tech Specialists | Free Quote",
     description: `Kitchener-Waterloo's most-trusted web design agency — tech, manufacturing & healthcare specialists. Custom sites from $1,499, fastest ROI vs Toronto. Free quote: (647) 689-6069.`,
   },
   oshawa: {
-    title: "Web Design Oshawa | Custom Sites From $1,499 | Durham Region | Page 1 in 45 Days | Free Quote",
+    title: "Web Design Oshawa 2026 | Custom Sites From $1,499 | Durham Region | Page 1 in 45 Days | Free Quote",
     description: `Oshawa & Durham Region's most-trusted web design agency — Whitby, Ajax & Pickering coverage. Custom sites from $1,499, Page 1 results in 45 days. Free quote: (647) 689-6069.`,
   },
   windsor: {
-    title: "Web Design Windsor Ontario | Custom Sites From $1,499 | Local + Detroit Reach | Free Quote",
-    description: `Windsor Ontario's most-trusted web design agency — downtown, Walkerville & South Windsor. Cross-border Detroit traffic capture. Custom sites from $1,499. Free quote: (647) 689-6069.`,
+    title: "Web Design Windsor Ontario 2026 | Custom Sites From $1,499 | Local + Detroit Reach | Free Quote",
+    description: `Windsor Ontario's most-trusted web design agency in 2026 — downtown, Walkerville & South Windsor. Cross-border Detroit traffic capture. Custom sites from $1,499. Free quote: (647) 689-6069.`,
   },
   calgary: {
-    title: "Web Design Calgary | Custom Sites From $1,499 | Alberta Page 1 Guaranteed | Free Quote",
-    description: `Calgary's most-trusted web design agency — energy, real estate & construction specialists. Custom sites from $1,499, Page 1 Alberta results guaranteed. Free quote: (647) 689-6069.`,
+    title: "Web Design Calgary 2026 | Custom Sites From $1,499 | Alberta Page 1 Guaranteed | Free Quote",
+    description: `Calgary's most-trusted web design agency in 2026 — energy, real estate & construction specialists. Custom sites from $1,499, Page 1 Alberta results guaranteed. Free quote: (647) 689-6069.`,
   },
   saskatoon: {
-    title: "Web Design Saskatoon | Custom Sites From $1,499 | Page 1 in 30 Days | Free Quote",
-    description: `Saskatoon's most-trusted web design agency — agriculture, mining & healthcare specialists. Custom sites from $1,499, Canada's fastest-ranking SEO market. Free quote: (647) 689-6069.`,
+    title: "Web Design Saskatoon 2026 | Custom Sites From $1,499 | Page 1 in 30 Days | Free Quote",
+    description: `Saskatoon's most-trusted web design agency in 2026 — agriculture, mining & healthcare specialists. Custom sites from $1,499, Canada's fastest-ranking SEO market. Free quote: (647) 689-6069.`,
   },
   vancouver: {
-    title: "Web Design Vancouver | Custom Sites From $1,499 | 180+ Reviews | Page 1 Results | Free Quote",
-    description: `Vancouver's most-trusted web design agency — Yaletown, Kitsilano & Mount Pleasant. Custom sites from $1,499, proven Metro Vancouver Page 1 results. Free quote: (647) 689-6069.`,
+    title: "Web Design Vancouver 2026 | Custom Sites From $1,499 | 180+ Reviews | Page 1 Guaranteed | Free Quote",
+    description: `Vancouver's most-trusted web design agency in 2026 — Yaletown, Kitsilano & Mount Pleasant. Custom sites from $1,499, proven Metro Vancouver Page 1 results. Free quote: (647) 689-6069.`,
   },
   surrey: {
-    title: "Web Design Surrey BC | Custom Sites From $1,499 | Newton & South Surrey | Page 1 | Free Quote",
-    description: `Surrey BC's most-trusted web design agency — Newton, Cloverdale & South Surrey. Page 1 Metro Vancouver rankings. Custom sites from $1,499. Free quote: (647) 689-6069.`,
+    title: "Web Design Surrey BC 2026 | Custom Sites From $1,499 | Newton & South Surrey | Page 1 | Free Quote",
+    description: `Surrey BC's most-trusted web design agency in 2026 — Newton, Cloverdale & South Surrey. Page 1 Metro Vancouver rankings. Custom sites from $1,499. Free quote: (647) 689-6069.`,
   },
   burnaby: {
-    title: "Web Design Burnaby BC | Custom Sites From $1,499 | Metrotown | Metro Vancouver Page 1 | Free Quote",
-    description: `Burnaby's most-trusted web design agency — Metrotown, Brentwood & Lougheed. Metro Vancouver Page 1 rankings at lower cost. Sites from $1,499. Free quote: (647) 689-6069.`,
+    title: "Web Design Burnaby BC 2026 | Custom Sites From $1,499 | Metrotown | Metro Vancouver Page 1 | Free Quote",
+    description: `Burnaby's most-trusted web design agency in 2026 — Metrotown, Brentwood & Lougheed. Metro Vancouver Page 1 rankings at lower cost. Sites from $1,499. Free quote: (647) 689-6069.`,
   },
   "north-york": {
-    title: "Web Design North York | Custom Sites From $1,499 | Yonge-Sheppard | Page 1 Faster | Free Quote",
-    description: `North York's most-trusted web design agency — Yonge-Sheppard, Wilson & Bayview. Custom sites from $1,499, dominate GTA search faster than downtown Toronto. Free quote: (647) 689-6069.`,
+    title: "Web Design North York 2026 | Custom Sites From $1,499 | Yonge-Sheppard | Page 1 Faster | Free Quote",
+    description: `North York's most-trusted web design agency in 2026 — Yonge-Sheppard, Wilson & Bayview. Custom sites from $1,499, dominate GTA search faster than downtown Toronto. Free quote: (647) 689-6069.`,
   },
   hamilton: {
-    title: "Web Design Hamilton | Custom Sites From $1,499 | Ontario's Lowest Difficulty | Free Quote",
-    description: `Hamilton's most-trusted web design agency — Stoney Creek, Dundas & Westdale. Custom sites from $1,499, lowest keyword difficulty in Ontario for fast Page 1 results. Free quote: (647) 689-6069.`,
+    title: "Web Design Hamilton 2026 | Custom Sites From $1,499 | Ontario's Lowest Difficulty | Free Quote",
+    description: `Hamilton's most-trusted web design agency in 2026 — Stoney Creek, Dundas & Westdale. Custom sites from $1,499, lowest keyword difficulty in Ontario for fast Page 1 results. Free quote: (647) 689-6069.`,
   },
   winnipeg: {
-    title: "Web Design Winnipeg | Custom Sites From $1,499 | Manitoba's #1 Agency | Free Quote",
-    description: `Winnipeg's most-trusted web design agency — Corydon, Exchange District & St. Vital. Custom sites from $1,499, Canada's fastest ROI SEO market. Free quote: (647) 689-6069.`,
+    title: "Web Design Winnipeg 2026 | Custom Sites From $1,499 | Manitoba's #1 Agency | Free Quote",
+    description: `Winnipeg's most-trusted web design agency in 2026 — Corydon, Exchange District & St. Vital. Custom sites from $1,499, Canada's fastest ROI SEO market. Free quote: (647) 689-6069.`,
   },
 };
 

@@ -7,14 +7,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Designers Near Me | Toronto, Vancouver, Calgary & 20+ Cities | 180+ Reviews | Free Quote" },
+  title: { absolute: "Web Designers Near Me | Canada's #1 Rated 2026 | Custom Sites From $1,499 | 180+ Reviews | Free Quote" },
   description:
-    "Top-rated web designers in your city — serving Toronto, Vancouver, Calgary & 20+ Canadian cities. Custom sites from $1,499, SEO included, 180+ five-star reviews. Free quote: (647) 689-6069.",
+    "Find top-rated web designers near you — Canadian Web Designs serves Toronto, Vancouver, Calgary, Mississauga & 20+ cities. Custom sites from $1,499, SEO included. Ranked #1 in Canada. 180+ reviews. Free quote: (647) 689-6069.",
   alternates: { canonical: "/web-designers-near-me" },
   openGraph: {
-    title: "Web Designers Near Me | 20+ Canadian Cities | 180+ Reviews | Free Quote",
+    title: "Web Designers Near Me | Canada's #1 Rated 2026 | 20+ Cities | 180+ Reviews | Free Quote",
     description:
-      "Looking for web designers near you? Canadian Web Designs serves Toronto, Mississauga, Vancouver, Calgary & 20+ cities. Custom sites from $1,499. Free quote → (647) 689-6069.",
+      "Looking for web designers near you? Canadian Web Designs is Canada's #1 rated agency serving 20+ cities from Toronto to Vancouver. Custom sites from $1,499. Free quote → (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/web-designers-near-me",
   },
 };

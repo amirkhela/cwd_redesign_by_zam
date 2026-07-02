@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "ai-consultation")!;
 
 export const metadata: Metadata = {
-  title: "AI Consultation Canada | Automate Your Business | Custom GPT & Chatbots | Free Session",
-  description: "Future-proof your business with AI — chatbots, workflow automation & custom GPT integrations built for Canadian SMBs. Cut overhead, win more leads. Free consultation: (647) 689-6069.",
+  title: "AI Consultation Canada 2026 | Automate Your Business | Custom GPT & Chatbots | Free Session",
+  description: "Future-proof your Canadian business with AI in 2026 — custom chatbots, workflow automation & GPT integrations for SMBs. Cut overhead by 40%+, win more leads. Free consultation: (647) 689-6069.",
   alternates: { canonical: "/services/ai-consultation" },
   openGraph: {
-    title: "AI Consultation Canada 2026 | Automate & Scale | Free Session",
-    description: "Future-proof your business in 2026 — AI chatbots, workflow automation & custom GPT integrations. Cut overhead, win more leads. Free session. Call (647) 689-6069.",
+    title: "AI Consultation Canada 2026 | Automate & Scale Your Business | Free Session",
+    description: "Future-proof your business in 2026 — AI chatbots, workflow automation & custom GPT integrations for Canadian SMBs. Cut overhead, win more leads. Free session: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/ai-consultation",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "AI Consultation Canada 2026 — Canadian Web Designs" }],
   },

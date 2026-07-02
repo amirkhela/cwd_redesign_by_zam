@@ -6,14 +6,14 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: "Web Design Canada | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
-  description: "Custom websites from $1,499 — built to rank Page 1 on Google & convert visitors into leads. Mobile-first, SEO-ready on day one, no templates. 180+ five-star reviews. Free quote: (647) 689-6069.",
+  title: "Web Design Canada 2026 | Custom Sites From $1,499 | Page 1 Google Guaranteed | 180+ Reviews | Free Quote",
+  description: "Award-winning web design across Canada — custom sites from $1,499 engineered to rank Page 1 on Google & convert visitors into paying clients. No templates. SEO built-in. 180+ five-star reviews. Free quote: (647) 689-6069.",
   alternates: { canonical: "/services/web-design-development" },
   openGraph: {
-    title: "Web Design Canada | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
-    description: "Custom websites from $1,499 — built to rank Page 1 on Google & convert visitors into leads. Mobile-first, SEO-ready on day one. 180+ reviews. Free quote: (647) 689-6069.",
+    title: "Web Design Canada 2026 | Custom Sites From $1,499 | Page 1 Guaranteed | 180+ Reviews | Free Quote",
+    description: "Custom websites from $1,499 — no templates, SEO built-in, Page 1 Google guaranteed. Toronto, Vancouver, Calgary & across Canada. 180+ five-star reviews. Free quote: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/web-design-development",
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Toronto 2026 — Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
   },
 };
 

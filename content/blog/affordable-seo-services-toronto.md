@@ -1,10 +1,10 @@
 ---
-title: "Affordable SEO Services Toronto: What Your Budget Actually Gets You"
+title: "Affordable SEO Services Toronto 2026: What Your Budget Actually Gets You (Honest Guide)"
 slug: "affordable-seo-services-toronto"
 date: "2026-05-26"
 author: "Amir Khela"
-description: "Affordable SEO services in Toronto: what $499/mo actually gets you vs $2,000/mo, which agencies to avoid, and how to get real Page 1 Google rankings without overpaying. Honest guide for Toronto SMBs."
-keywords: ["affordable seo services toronto", "affordable seo toronto", "seo services toronto", "toronto seo agency", "cheap seo toronto", "seo packages toronto"]
+description: "Affordable SEO services in Toronto 2026 — honest breakdown of what $499/mo vs $2,000/mo actually buys you, which agencies to avoid, and how to get real Page 1 results without overpaying. Toronto SMB guide. Free audit: (647) 689-6069."
+keywords: ["affordable seo services toronto", "affordable seo toronto", "seo services toronto", "toronto seo agency", "cheap seo toronto", "seo packages toronto", "affordable seo toronto 2026", "toronto local seo affordable", "seo services cost toronto"]
 category: "SEO"
 featuredImage: "/blog/seo-services-london-ontario.png"
 ---

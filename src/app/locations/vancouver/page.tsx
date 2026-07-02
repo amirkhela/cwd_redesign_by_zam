@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Vancouver Web Design 2026 | 180+ Reviews | Free Quote",
+  title: "Vancouver Web Design 2026 | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
   description:
-    "Vancouver's #1 rated web design agency in 2026. Custom sites from $1,499 that dominate Google & convert leads. 180+ reviews. Free quote — (647) 689-6069.",
+    "Vancouver's #1 rated web design agency in 2026 — Yaletown, Kitsilano & Metro Vancouver. Custom sites from $1,499 that rank Page 1 on Google & convert leads. 180+ reviews. Free quote: (647) 689-6069.",
   alternates: { canonical: "/locations/vancouver" },
   openGraph: {
-    title: "Vancouver Web Design 2026 | 180+ Reviews | Free Quote",
+    title: "Vancouver Web Design 2026 | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
     description:
-      "BC's top-rated web design agency for 2026. 180+ five-star reviews. Custom sites from $1,499 built to rank in Metro Vancouver & convert visitors into customers. Free quote — (647) 689-6069.",
+      "BC's #1 rated web design agency for 2026. Custom sites from $1,499 built to rank Page 1 in Metro Vancouver & convert visitors into customers. 180+ reviews. Free quote: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/locations/vancouver",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Vancouver BC — Canadian Web Designs" }],
   },

@@ -8,12 +8,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Google Ads Management Canada 2026 | Leads From $499/mo | CWD",
-  description: "Stop wasting ad budget in 2026 — flat-fee Google Ads from $499/mo, no contracts. Certified experts cut cost-per-lead 30–50%. Free audit. Call (647) 689-6069.",
+  title: "Google Ads Management Canada 2026 | Leads From $499/mo | Cut Cost-Per-Lead 30–50% | Free Audit",
+  description: "Stop wasting your ad budget in 2026 — certified Google Ads management from $499/mo, no contracts. Our experts cut cost-per-lead 30–50% on average. 180+ reviews. Free audit: (647) 689-6069.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
-    title: "Google Ads Management Canada 2026 | Leads From $499/mo | CWD",
-    description: "Stop wasting ad budget in 2026 — flat-fee Google Ads from $499/mo, no contracts. Certified experts cut cost-per-lead 30–50%. Free audit. Call (647) 689-6069.",
+    title: "Google Ads Management Canada 2026 | Leads From $499/mo | Cut Cost-Per-Lead 30–50% | Free Audit",
+    description: "Certified Google Ads management from $499/mo — cut cost-per-lead 30–50%, no contracts. 180+ five-star reviews. Free audit and campaign review: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],
   },

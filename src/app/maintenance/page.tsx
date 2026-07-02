@@ -7,16 +7,16 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Website Maintenance Canada | From $99/mo | Daily Backups | 24/7 Monitoring | Free Audit",
+  title: "Website Maintenance Canada 2026 | From $99/mo | Hack Protection | 24/7 Monitoring | Free Audit",
   description:
-    "30,000+ websites are hacked daily — is yours protected? Expert maintenance from $99/mo: daily backups, 24/7 uptime monitoring, malware removal & speed tuning. No lock-in. Free audit: (647) 689-6069.",
+    "A website is hacked every 39 seconds in 2026 — is yours protected? Expert maintenance from $99/mo: daily backups, 24/7 uptime monitoring, malware removal, speed tuning & Core Web Vitals. No lock-in. Free audit: (647) 689-6069.",
   alternates: { canonical: "/maintenance" },
   openGraph: {
-    title: "Website Maintenance Canada | From $99/mo | Daily Backups | 24/7 Monitoring | Free Audit",
+    title: "Website Maintenance Canada 2026 | From $99/mo | Hack Protection | 24/7 Monitoring | Free Audit",
     description:
-      "Keep your website secure, fast & ranking — expert maintenance from $99/mo. Daily backups, 24/7 monitoring, malware removal & security updates. Free site audit — no commitment.",
+      "A website is hacked every 39 seconds — keep yours secure & ranking with expert maintenance from $99/mo. Daily backups, 24/7 monitoring, malware removal & Core Web Vitals tuning. Free site audit.",
     url: "https://canadianwebdesigns.ca/maintenance",
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada — Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada 2026 — Canadian Web Designs" }],
   },
 };
 

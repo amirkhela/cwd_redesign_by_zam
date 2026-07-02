@@ -13,15 +13,15 @@ const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design Canada | #1 Rated | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+  title: "Web Design Canada | #1 Rated Agency 2026 | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
   description:
-    `Canada's #1 rated web design agency — ${config.reviewCount}+ five-star Google reviews. Custom websites from $1,499 built to rank Page 1 & convert visitors into paying customers. Toronto, Vancouver, Calgary & coast to coast. Free quote: (647) 689-6069.`,
+    `Canada's #1 rated web design agency in 2026 — ${config.reviewCount}+ five-star Google reviews. Custom websites from $1,499 built to rank Page 1 & convert visitors into paying customers. Toronto, Vancouver, Calgary & coast to coast. Free quote: (647) 689-6069.`,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design Canada | #1 Rated | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
-    description: `Canada's #1 rated web design agency — ${config.reviewCount}+ five-star reviews. Custom sites from $1,499 built to rank Page 1 & convert visitors. Free quote: (647) 689-6069.`,
+    title: "Web Design Canada | #1 Rated Agency 2026 | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    description: `Canada's #1 rated web design agency in 2026 — ${config.reviewCount}+ five-star reviews. Custom sites from $1,499 built to rank Page 1 & convert visitors into customers. Free quote: (647) 689-6069.`,
     url: `https://${config.domain}`,
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada — Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
   },
 };
 
