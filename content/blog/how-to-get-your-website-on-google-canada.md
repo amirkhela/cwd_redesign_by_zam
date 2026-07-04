@@ -3,9 +3,10 @@ title: "How to Get Your Website on Google in Canada (Step-by-Step Guide for 2026
 date: "2026-06-15"
 excerpt: "A practical guide for Canadian business owners who want their website to appear on Google — from submitting your sitemap to ranking for local searches."
 coverImage: "/blog/posts/Local-SEO1.jpg"
-author:
-  name: "Canadian Web Designs"
-  picture: "/favicon.ico"
+featuredImage: "/blog/posts/Local-SEO1.jpg"
+description: "A practical step-by-step guide for Canadian business owners — from submitting your sitemap to ranking for local searches and getting your site on Google."
+category: "SEO"
+author: "Canadian Web Designs"
 ogImage:
   url: "/blog/posts/Local-SEO1.jpg"
 ---

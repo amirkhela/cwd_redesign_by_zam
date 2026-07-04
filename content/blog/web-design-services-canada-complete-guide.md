@@ -3,9 +3,10 @@ title: "Web Design Services Canada: What to Look For, What to Pay, and Who to Tr
 date: "2026-06-14"
 excerpt: "A no-fluff guide to hiring web design services in Canada — what's included, what good pricing looks like, and how to avoid the agencies that overpromise and underdeliver."
 coverImage: "/blog/posts/Web-Design-Services-for-Businesses.png"
-author:
-  name: "Canadian Web Designs"
-  picture: "/favicon.ico"
+featuredImage: "/blog/posts/Web-Design-Services-for-Businesses.png"
+description: "A no-fluff guide to hiring web design services in Canada — what's included, what good pricing looks like, and how to avoid agencies that overpromise."
+category: "Web Design"
+author: "Canadian Web Designs"
 ogImage:
   url: "/blog/posts/Web-Design-Services-for-Businesses.png"
 ---

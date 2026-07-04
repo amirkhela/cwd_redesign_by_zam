@@ -6,7 +6,7 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "social-media-optimization")!;
 
 export const metadata: Metadata = {
-  title: "Social Media Management Canada | Turn Followers Into Customers | Done-For-You | Free Strategy Call",
+  title: { absolute: "Social Media Management Canada | Done-For-You | CWD" },
   description: "Turn followers into paying customers — done-for-you content, paid ads & growth strategy on Instagram, TikTok & LinkedIn. Canadian businesses only. Free strategy call: (647) 689-6069.",
   alternates: { canonical: "/services/social-media-optimization" },
   openGraph: {

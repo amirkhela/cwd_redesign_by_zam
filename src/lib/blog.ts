@@ -25,6 +25,18 @@ function sanitizeHtml(raw: string): string {
   return raw.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script\s*>/gi, "");
 }
 
+// Coerce author to a string. Some older posts store author as an object
+// { name, picture }; rendering that object directly crashes prerendering
+// (React child error) and breaks the whole production build. Always return
+// a display name, defaulting to "Amir Khela" for E-E-A-T byline consistency.
+function normalizeAuthor(author: unknown): string {
+  const name =
+    author && typeof author === "object"
+      ? (author as { name?: string }).name
+      : (author as string | undefined);
+  return name && name !== "Canadian Web Designs" ? name : "Amir Khela";
+}
+
 export function getAllPosts(): BlogPost[] {
   if (!fs.existsSync(postsDirectory)) return [];
   const fileNames = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
@@ -43,7 +55,7 @@ export function getAllPosts(): BlogPost[] {
       slug,
       title: data.title,
       date: data.date,
-      author: (data.author && data.author !== "Canadian Web Designs") ? data.author : "Amir Khela",
+      author: normalizeAuthor(data.author),
       description: data.description,
       keywords: data.keywords ?? [],
       category: data.category,

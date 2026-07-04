@@ -3,9 +3,10 @@ title: "Website Redesign Canada: When to Do It, Why It Matters, and What It Cost
 date: "2026-06-15"
 excerpt: "Signs your Canadian business website needs a redesign, what a proper redesign should accomplish, and realistic costs in 2026."
 coverImage: "/blog/posts/Web-Design-Services-for-Businesses.png"
-author:
-  name: "Canadian Web Designs"
-  picture: "/favicon.ico"
+featuredImage: "/blog/posts/Web-Design-Services-for-Businesses.png"
+description: "Signs your Canadian business website needs a redesign, what a proper redesign should accomplish, and realistic 2026 costs — when, why, and how much."
+category: "Web Design"
+author: "Canadian Web Designs"
 ogImage:
   url: "/blog/posts/Web-Design-Services-for-Businesses.png"
 ---

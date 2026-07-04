@@ -3,9 +3,10 @@ title: "How Long Does It Take to Build a Website in Canada? (Honest 2026 Timelin
 date: "2026-06-14"
 excerpt: "Most Canadian web agencies give you a vague timeline. Here's what actually affects how long a website takes to build — and what you can do to speed things up."
 coverImage: "/blog/posts/Canada-Web-Design.png"
-author:
-  name: "Canadian Web Designs"
-  picture: "/favicon.ico"
+featuredImage: "/blog/posts/Canada-Web-Design.png"
+description: "How long does it take to build a website in Canada? An honest 2026 timeline — what actually affects the schedule and how to speed things up."
+category: "Web Design"
+author: "Canadian Web Designs"
 ogImage:
   url: "/blog/posts/Canada-Web-Design.png"
 ---
