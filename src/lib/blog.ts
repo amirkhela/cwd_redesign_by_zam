@@ -19,6 +19,39 @@ export interface BlogPost {
 const postsDirectory = path.join(process.cwd(), "content/blog");
 // Strip images still hosted on the decommissioned WordPress domain
 const OLD_WP = /^https?:\/\/old\.canadianwebdesigns\.ca\//;
+// Leading "YYYY-MM-DD-" that the daily automation prepends to filenames/slugs.
+const DATE_PREFIX = /^\d{4}-\d{2}-\d{2}-/;
+
+// The canonical, indexable slug for a post. Prefer the frontmatter `slug`,
+// fall back to the filename, then strip any leading date prefix so URLs are
+// clean (e.g. /blog/toronto-web-design-2026-complete-guide, NOT
+// /blog/2026-07-02-toronto-web-design-2026-complete-guide). This is the single
+// source of truth used by getAllPosts, getAllSlugs (sitemap + static params)
+// and getPostBySlug so links, canonical tags and redirects all agree.
+function canonicalSlug(fileName: string, data: { slug?: unknown }): string {
+  const base =
+    (typeof data.slug === "string" && data.slug.trim()) ||
+    fileName.replace(/\.md$/, "");
+  return base.replace(DATE_PREFIX, "");
+}
+
+// Map every recognized alias (canonical slug, raw frontmatter slug, bare
+// filename) -> filename, so historical/ugly URLs still resolve to the post and
+// can be 301'd to the canonical slug. Memoized: post files are fixed per build.
+let aliasMap: Map<string, string> | null = null;
+function getAliasMap(): Map<string, string> {
+  if (aliasMap) return aliasMap;
+  const map = new Map<string, string>();
+  if (!fs.existsSync(postsDirectory)) return (aliasMap = map);
+  for (const fileName of fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"))) {
+    const { data } = matter(fs.readFileSync(path.join(postsDirectory, fileName), "utf8"));
+    const fileNoExt = fileName.replace(/\.md$/, "");
+    const aliases = [canonicalSlug(fileName, data), fileNoExt];
+    if (typeof data.slug === "string" && data.slug.trim()) aliases.push(data.slug.trim());
+    for (const a of aliases) if (a && !map.has(a)) map.set(a, fileName);
+  }
+  return (aliasMap = map);
+}
 
 function sanitizeHtml(raw: string): string {
   // Remove injected <script> tags (WordPress malware / SEO spam)
@@ -42,10 +75,10 @@ export function getAllPosts(): BlogPost[] {
   const fileNames = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
 
   const posts = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.md$/, "");
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data } = matter(fileContents);
+    const slug = canonicalSlug(fileName, data);
 
     const rawImage: string | undefined = data.featuredImage;
     const featuredImage =
@@ -67,7 +100,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
+  // Resolve the requested slug (canonical, raw frontmatter, or bare filename)
+  // to the actual file so old/ugly URLs still return the post.
+  const fileName = getAliasMap().get(slug);
+  if (!fileName) return null;
+  const fullPath = path.join(postsDirectory, fileName);
   if (!fs.existsSync(fullPath)) return null;
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -87,7 +124,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     rawImage && !OLD_WP.test(rawImage) ? rawImage : undefined;
 
   return {
-    slug,
+    slug: canonicalSlug(fileName, data),
     title: data.title,
     date: data.date,
     author: (data.author && data.author !== "Canadian Web Designs") ? data.author : "Amir Khela",
@@ -104,5 +141,8 @@ export function getAllSlugs(): string[] {
   return fs
     .readdirSync(postsDirectory)
     .filter((f) => f.endsWith(".md"))
-    .map((f) => f.replace(/\.md$/, ""));
+    .map((fileName) => {
+      const { data } = matter(fs.readFileSync(path.join(postsDirectory, fileName), "utf8"));
+      return canonicalSlug(fileName, data);
+    });
 }

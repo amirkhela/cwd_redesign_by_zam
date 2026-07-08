@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/blog";
 import { getConfig } from "@/lib/client-config";
 import ShareButtons from "@/components/ShareButtons";
@@ -46,8 +46,11 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
   if (!post) notFound();
+  // Old date-prefixed / filename URLs 301 to the clean canonical slug so link
+  // equity consolidates and Google drops the duplicate.
+  if (slug !== post.slug) permanentRedirect(`/blog/${post.slug}`);
 
-  const recentPosts = getAllPosts().filter((p) => p.slug !== slug).slice(0, 5);
+  const recentPosts = getAllPosts().filter((p) => p.slug !== post.slug).slice(0, 5);
   const heroImage = post.featuredImage || "/blog/web-design-company.png";
 
   const jsonLd = {
@@ -246,6 +249,36 @@ export default async function BlogPostPage({ params }: Props) {
                   </svg>
                 </Link>
               </div>
+            </div>
+
+            {/* Related Services — keyword-anchored internal links that pass
+                equity from every post to the money pages we're pushing from
+                page 2 to page 1. */}
+            <div className="bg-white rounded-2xl overflow-hidden"
+              style={{ border: "1px solid #f0f0f0", boxShadow: "0 2px 20px rgba(0,0,0,0.06)" }}>
+              <div className="px-6 py-5 border-b border-gray-100 flex items-center gap-2">
+                <div className="w-1 h-5 rounded-full" style={{ background: "linear-gradient(180deg, #00AADF, #003B6F)" }} />
+                <h3 className="font-bold text-dark text-lg">Our Services</h3>
+              </div>
+              <ul className="px-2 py-2">
+                {[
+                  { href: "/services/web-design-development", label: "Web Design & Development" },
+                  { href: "/locations/toronto", label: "Web Design Toronto" },
+                  { href: "/services/seo", label: "SEO Services" },
+                  { href: "/services/graphic-design", label: "Graphic Design" },
+                  { href: "/services/website-maintenance", label: "Website Maintenance" },
+                ].map((s) => (
+                  <li key={s.href}>
+                    <Link href={s.href}
+                      className="flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-sm font-medium text-dark-light hover:text-primary hover:bg-gray-50/80 transition-colors group">
+                      <svg className="w-4 h-4 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                      {s.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {/* Free Quote CTA */}

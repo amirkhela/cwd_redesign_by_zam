@@ -33,13 +33,17 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4">Services & Links</h3>
             <ul className="space-y-0.5 text-sm">
               {[
-                { href: "/who-we-are", label: "Who We Are" },
-                { href: "/our-story", label: "Our Story" },
+                { href: "/services/web-design-development", label: "Web Design & Development" },
+                { href: "/services/seo", label: "SEO Services" },
+                { href: "/services/graphic-design", label: "Graphic Design" },
+                { href: "/services/website-maintenance", label: "Website Maintenance" },
                 { href: "/portfolio", label: "Our Portfolio" },
                 { href: "/blog", label: "Blog" },
+                { href: "/who-we-are", label: "Who We Are" },
+                { href: "/our-story", label: "Our Story" },
                 { href: "/faq", label: "FAQ" },
                 { href: "/contact", label: "Get In Touch" },
               ].map(({ href, label }) => (
