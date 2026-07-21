@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Mississauga | Page 1 Google in 60–90 Days | 700K+ Residents | Free Audit | CWD",
+  title: { absolute: "SEO Mississauga | SEO Services | Canadian Web Designs" },
   description:
-    "Mississauga SEO built for Canada's 6th-largest city — Square One, Port Credit, Erin Mills & Meadowvale. Lower keyword difficulty than Toronto, 700K+ residents searching locally. 180+ reviews. Free audit — (647) 689-6069.",
+    "Mississauga SEO for Square One, Port Credit & Erin Mills — lower keyword difficulty than Toronto. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/mississauga" },
   openGraph: {
-    title: "SEO Mississauga | Mississauga SEO Services | Canadian Web Designs",
+    title: "SEO Mississauga | SEO Services | Canadian Web Designs",
     description:
-      "Expert SEO services in Mississauga, ON. Rank on page 1 of Google and get more leads from Square One, Port Credit, Erin Mills & beyond. 180+ reviews. Free audit — (647) 689-6069.",
+      "Expert SEO for Mississauga, ON — rank page 1 and win leads from Square One, Port Credit & Erin Mills. 180+ reviews. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/mississauga",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost for a Mississauga business?",
-    a: "Our Mississauga SEO packages start at $499/month. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building across 50+ Canadian directories, and monthly ranking reports. Pricing scales based on your industry&apos;s competitiveness and how many Mississauga keyword clusters you want to target. We offer a free SEO audit before any commitment so you see exactly what&apos;s possible for your specific business.",
+    a: "Our Mississauga SEO packages are scoped to your goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building across 50+ Canadian directories, and monthly ranking reports. Pricing scales based on your industry&apos;s competitiveness and how many Mississauga keyword clusters you want to target. We offer a free SEO audit before any commitment so you see exactly what&apos;s possible for your specific business.",
   },
   {
     q: "How long does SEO take to work in Mississauga?",
@@ -59,7 +59,7 @@ const faq = [
   },
   {
     q: "Do you offer combined web design and SEO packages for Mississauga businesses?",
-    a: "Yes — we offer standalone Mississauga SEO ($499/mo+) and combined web design + SEO packages starting at $3,499. Combining both is always the most effective approach: we build every website with Mississauga SEO architecture from day one — proper URL structure, fast load speeds, mobile optimization, local schema markup, and keyword-rich content for your specific Mississauga neighbourhood. Contact us for a free consultation and custom quote.",
+    a: "Yes — we offer standalone Mississauga SEO and combined web design + SEO packages tailored to your scope. Combining both is always the most effective approach: we build every website with Mississauga SEO architecture from day one — proper URL structure, fast load speeds, mobile optimization, local schema markup, and keyword-rich content for your specific Mississauga neighbourhood. Contact us for a free consultation and custom quote.",
   },
 ];
 
@@ -238,7 +238,7 @@ export default function SeoMississaugaPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Mississauga SEO from $499/mo", "No Lock-In Contracts"].map((t) => (
+              {["180+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -412,8 +412,8 @@ export default function SeoMississaugaPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter SEO", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth SEO", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter SEO", price: "$199/mo", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
@@ -472,8 +472,8 @@ export default function SeoMississaugaPage() {
             {[
               {
                 name: "Starter",
-                price: "$499",
-                period: "/month",
+                price: "$199",
+                period: "/mo",
                 desc: "For Mississauga small businesses starting their SEO journey — clinics, trades, restaurants, retail, professional services.",
                 features: ["Local keyword research", "On-page optimization (up to 5 pages)", "Google Business Profile management", "20 local citation submissions", "Monthly ranking report", "Free technical audit"],
                 cta: "Start Ranking",
@@ -481,8 +481,8 @@ export default function SeoMississaugaPage() {
               },
               {
                 name: "Growth",
-                price: "$899",
-                period: "/month",
+                price: "$399",
+                period: "/mo",
                 desc: "The complete Mississauga SEO package for businesses ready to dominate multiple keyword clusters across neighbourhoods.",
                 features: ["Full keyword strategy (50+ targets)", "On-page optimization (unlimited pages)", "GBP + local pack optimization", "50+ citation submissions", "Monthly content (1 blog + 1 landing page)", "Link building — Canadian publications", "Weekly ranking updates", "Dedicated account manager"],
                 cta: "Get Growth Plan",
@@ -491,7 +491,7 @@ export default function SeoMississaugaPage() {
               {
                 name: "Enterprise",
                 price: "Custom",
-                period: "quote",
+                period: "tailored scope",
                 desc: "For multi-location Mississauga businesses, healthcare groups, financial services firms, and e-commerce brands.",
                 features: ["Multi-location keyword strategy", "E-commerce SEO", "Full content marketing program", "Google Ads integration", "CRO + conversion tracking", "Priority support + monthly strategy call"],
                 cta: "Get a Custom Quote",

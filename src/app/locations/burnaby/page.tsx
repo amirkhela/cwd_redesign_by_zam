@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Burnaby Web Design | Custom Sites From $1,499 | Metrotown Specialists | Free Quote",
+  title: { absolute: "Burnaby Web Design | Metrotown Specialists | Canadian Website Design" },
   description:
-    "Burnaby's top-rated web design agency — Metrotown, Brentwood & Lougheed specialists. Custom sites from $1,499, page 1 Google in 30–60 days, 180+ reviews. Free quote → (647) 689-6069.",
+    "Burnaby's top-rated web design agency — Metrotown, Brentwood & Lougheed specialists. Custom websites built to rank on Google. 180+ reviews.",
   alternates: { canonical: "/locations/burnaby" },
   openGraph: {
-    title: "Burnaby Web Design | Custom Sites From $1,499 | Metrotown Specialists | Free Quote",
+    title: "Burnaby Web Design | Metrotown Specialists | Canadian Website Design",
     description:
-      "Top-rated web design & SEO in Burnaby BC. 180+ five-star reviews. Custom sites from $1,499 serving Metrotown, Brentwood & Lougheed. Free quote — (647) 689-6069.",
+      "Top-rated web design & SEO in Burnaby BC. 180+ five-star reviews. Custom websites serving Metrotown, Brentwood & Lougheed, built to rank on Google.",
     url: "https://canadianwebdesigns.ca/locations/burnaby",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost for a Burnaby business?",
-    a: "Our Burnaby SEO packages start at $499/month and scale based on the competitiveness of your keywords, number of target pages, and your growth goals. Every package includes keyword research, on-page optimization, local citation building, Google Business Profile management, and monthly ranking reports. Contact us for a free Burnaby SEO audit and custom quote.",
+    a: "Our Burnaby SEO packages are scoped based on the competitiveness of your keywords, number of target pages, and your growth goals. Every package includes keyword research, on-page optimization, local citation building, Google Business Profile management, and monthly ranking reports. Contact us for a free Burnaby SEO audit and custom quote.",
   },
   {
     q: "How long does SEO take to work in Burnaby?",
@@ -55,7 +55,7 @@ const faq = [
   },
   {
     q: "How much does a website cost for a Burnaby business?",
-    a: "Burnaby website packages start at $1,499 for a professional 5-page site and scale based on your scope — number of pages, e-commerce functionality, custom integrations, and design complexity. Every website includes mobile optimization, on-page SEO, Google Analytics setup, and 30 days of post-launch support. Contact us for a free, no-obligation quote.",
+    a: "Burnaby website pricing depends on your project scope — number of pages, e-commerce functionality, custom integrations, and design complexity. Every website includes mobile optimization, on-page SEO, Google Analytics setup, and 30 days of post-launch support. Contact us for a free, no-obligation quote.",
   },
   {
     q: "What's the difference between SEO and Google Ads for a Burnaby business?",
@@ -244,7 +244,7 @@ export default function BurnabyPage() {
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
               {[
                 { label: "180+ Google Reviews", icon: "M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" },
-                { label: "Page 1 Results or We Keep Working", icon: "M4.5 12.75l6 6 9-13.5" },
+                { label: "Results or We Keep Working", icon: "M4.5 12.75l6 6 9-13.5" },
                 { label: "Burnaby SEO Specialists", icon: "M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" },
               ].map((t) => (
                 <div key={t.label} className="flex items-center gap-2 text-white/70 text-sm">
@@ -491,7 +491,7 @@ export default function BurnabyPage() {
             {[
               {
                 name: "Starter",
-                price: "$1,499",
+                price: "$299",
                 period: "one-time",
                 desc: "Perfect for Burnaby small businesses launching or refreshing their web presence.",
                 features: ["5-page custom website", "Mobile-first responsive design", "On-page SEO foundation", "Google Analytics + Search Console", "Contact form + click-to-call", "30 days post-launch support"],
@@ -500,8 +500,8 @@ export default function BurnabyPage() {
               },
               {
                 name: "Growth",
-                price: "$3,499",
-                period: "one-time + $499/mo SEO",
+                price: "$599",
+                period: "Ongoing SEO available",
                 desc: "The complete package for Burnaby businesses ready to dominate local search results.",
                 features: ["10–15 page custom website", "Burnaby-specific SEO strategy", "Google Business Profile optimization", "Local citation building (50+ sites)", "Monthly ranking reports", "Dedicated account manager"],
                 cta: "Get Growth Plan",

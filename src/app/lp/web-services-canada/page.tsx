@@ -71,7 +71,7 @@ const whyUs = [
   { icon: "⚡", title: "Fast Turnaround", desc: "Most websites launch within 2–4 weeks. No endless delays, no excuses, no surprises." },
   { icon: "📊", title: "Results-Focused", desc: "We build sites that rank on Google and convert visitors into actual paying customers." },
   { icon: "🤝", title: "Dedicated Support", desc: "Direct access to your team. Real humans — not bots or offshore call centres." },
-  { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. Websites from $1,499. AI WebSuite from $40/month. You always know what you pay." },
+  { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. Custom websites tailored to your needs. You always know what you pay." },
 ];
 
 const cities = [
@@ -258,7 +258,7 @@ export default function LandingPage() {
               <p className="hero-fade-up-2 text-lg text-white/80 leading-relaxed max-w-lg mb-8">
                 Serving Toronto, Brampton, Winnipeg, Vancouver, Calgary &amp; across Canada.{" "}
                 <strong className="text-white">180+ five-star Google reviews.</strong>{" "}
-                Custom websites from $1,499 — no templates, no lock-in contracts.
+                Custom websites — no templates, no lock-in contracts.
               </p>
 
               <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4 mb-10">

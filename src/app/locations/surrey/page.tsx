@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Surrey BC Web Design | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+  title: { absolute: "Web Design Surrey BC | Custom Websites | Canadian Web Designs" },
   description:
-    "Surrey BC's top-rated web design agency — Newton, Cloverdale & South Surrey specialists. Custom sites from $1,499, page 1 Google in 30–60 days. Free quote → (647) 689-6069.",
+    "Surrey BC's top-rated web design agency — Newton, Cloverdale & South Surrey specialists. Custom websites built to rank on Google and win local customers.",
   alternates: { canonical: "/locations/surrey" },
   openGraph: {
-    title: "Surrey BC Web Design | Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    title: "Web Design Surrey BC | Custom Websites | Canadian Web Designs",
     description:
-      "Top-rated web design & SEO in Surrey BC. 180+ five-star reviews. Custom sites from $1,499 built to rank on Google and win local customers. Free quote — (647) 689-6069.",
+      "Top-rated web design & SEO in Surrey BC. 180+ five-star reviews. Custom websites built to rank on Google and win local customers across Metro Vancouver.",
     url: "https://canadianwebdesigns.ca/locations/surrey",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Surrey BC — Canadian Web Designs" }],
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does a website cost for a Surrey BC business?",
-    a: "Surrey website packages start at $1,499 for a professional 5-page site and scale based on your scope — number of pages, e-commerce functionality, custom integrations, and design complexity. Every website includes mobile optimization, on-page SEO, Google Analytics setup, and 30 days of post-launch support. Contact us for a free, no-obligation quote.",
+    a: "Surrey website pricing depends on your project scope — number of pages, e-commerce functionality, custom integrations, and design complexity. Every website includes mobile optimization, on-page SEO, Google Analytics setup, and 30 days of post-launch support. Contact us for a free, no-obligation quote.",
   },
   {
     q: "How long does SEO take to work in Surrey?",
@@ -44,7 +44,7 @@ const faq = [
   },
   {
     q: "Do you offer ongoing SEO for Surrey businesses?",
-    a: "Yes — we offer monthly SEO retainers that include ranking reports, content updates, citation building, and Google Business Profile management. Surrey SEO retainers start at $499/month. Contact us for a custom quote based on your industry and growth goals.",
+    a: "Yes — we offer monthly SEO retainers that include ranking reports, content updates, citation building, and Google Business Profile management. Pricing depends on your industry and growth goals — contact us for a custom quote.",
   },
   {
     q: "What industries do you serve with Surrey web design and SEO?",
@@ -155,7 +155,7 @@ export default function SurreyPage() {
               <a href="tel:6476896069" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">(647) 689-6069</a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Surrey SEO Difficulty: 21 — Highly Achievable", "Page 1 or We Keep Working"].map((t) => (
+              {["180+ Google Reviews", "Surrey SEO Difficulty: 21 — Highly Achievable", "Results or We Keep Working"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -307,7 +307,7 @@ export default function SurreyPage() {
             {[
               {
                 name: "Starter",
-                price: "$1,499",
+                price: "$299",
                 period: "one-time",
                 desc: "Perfect for Surrey small businesses launching or refreshing their online presence.",
                 features: ["5-page custom website", "Mobile-first responsive design", "On-page SEO foundation", "Google Analytics + Search Console", "Contact form + click-to-call", "30 days post-launch support"],
@@ -316,8 +316,8 @@ export default function SurreyPage() {
               },
               {
                 name: "Growth",
-                price: "$3,499",
-                period: "one-time + $499/mo SEO",
+                price: "$599",
+                period: "Ongoing SEO available",
                 desc: "The complete package for Surrey businesses serious about ranking above their competitors.",
                 features: ["10–15 page custom website", "Surrey-specific SEO strategy", "Google Business Profile optimization", "Local citation building (50+ sites)", "Monthly ranking reports", "Dedicated account manager"],
                 cta: "Get Growth Plan",

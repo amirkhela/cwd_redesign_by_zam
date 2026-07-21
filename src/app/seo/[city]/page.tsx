@@ -272,12 +272,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const data = cities[city];
   if (!data) return {};
   return {
-    title: `SEO ${data.name} | Rank Page 1 in 60–90 Days | ${config.reviewCount}+ Reviews | Free Audit | CWD`,
-    description: `Rank Page 1 on Google in ${data.name} in 60–90 days — neighbourhood-targeted SEO, GBP optimization, 50+ citations & monthly rank reports. ${config.reviewCount}+ five-star reviews. Free audit: (647) 689-6069.`,
+    title: { absolute: `SEO ${data.name} | SEO Company & Services | Canadian Web Designs` },
+    description: `Rank page 1 in ${data.name} in 60–90 days — local SEO, GBP optimization & citation building. ${config.reviewCount}+ five-star reviews. Free audit: (647) 689-6069.`,
     alternates: { canonical: `/seo/${city}` },
     openGraph: {
-      title: `SEO ${data.name} | Rank Page 1 in 60–90 Days | ${config.reviewCount}+ Reviews | Free Audit | CWD`,
-      description: `${data.name} SEO with proven Page 1 results — local keyword strategy, GBP optimization & citation building. ${config.reviewCount}+ reviews. Free audit: (647) 689-6069.`,
+      title: `SEO ${data.name} | SEO Company & Services | Canadian Web Designs`,
+      description: `${data.name} SEO that ranks — local keyword strategy, GBP optimization & citation building. ${config.reviewCount}+ reviews. Free audit: (647) 689-6069.`,
       url: `https://canadianwebdesigns.ca/seo/${city}`,
       images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: `SEO ${data.name} — Canadian Web Designs` }],
     },
@@ -364,7 +364,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
               <a href="tel:6476896069" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">(647) 689-6069</a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {[`${config.reviewCount}+ Google Reviews`, `${data.name} SEO from $499/mo`, "No Lock-In Contracts"].map((t) => (
+              {[`${config.reviewCount}+ Google Reviews`, "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -446,8 +446,8 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
               <div className="bg-white rounded-2xl p-7 border border-gray-100 mb-5" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
                 <h3 className="text-gray-900 font-black text-xl mb-5">Pricing</h3>
                 {[
-                  { name: "Starter SEO", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth SEO", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter SEO", price: "$199/mo", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">

@@ -37,6 +37,8 @@ export default function Footer() {
             <ul className="space-y-0.5 text-sm">
               {[
                 { href: "/services/web-design-development", label: "Web Design & Development" },
+                { href: "/web-design-company", label: "Web Design Company" },
+                { href: "/web-design-agency", label: "Web Design Agency" },
                 { href: "/services/seo", label: "SEO Services" },
                 { href: "/services/graphic-design", label: "Graphic Design" },
                 { href: "/services/website-maintenance", label: "Website Maintenance" },

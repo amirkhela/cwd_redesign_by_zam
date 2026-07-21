@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "graphic-design")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Graphic Design Canada | Custom Logos From $299 | CWD" },
-  description: "Build a brand that gets remembered — custom logos from $299, full identity packages, print & digital. Trusted by 500+ Canadian businesses. Free quote: (647) 689-6069.",
+  title: { absolute: "Graphic Design Canada | Logos & Branding | Canadian Web Designs" },
+  description: "Build a brand that gets remembered — custom logos, full identity packages, print & digital. Trusted by 500+ Canadian businesses. Free quote.",
   alternates: { canonical: "/services/graphic-design" },
   openGraph: {
-    title: "Graphic Design Canada — Custom Logos From $299 | Canadian Web Designs",
-    description: "Custom logos from $299, full brand identity packages & print. 72-hr rush available. 500+ Canadian businesses served. 180+ five-star reviews. Free quote: (647) 689-6069.",
+    title: "Graphic Design Canada | Logos & Branding | Canadian Web Designs",
+    description: "Custom logos, full brand identity packages & print. 72-hr rush available. 500+ Canadian businesses served. 180+ five-star reviews. Free quote.",
     url: "https://canadianwebdesigns.ca/services/graphic-design",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Graphic Design Canada 2026 — Canadian Web Designs" }],
   },

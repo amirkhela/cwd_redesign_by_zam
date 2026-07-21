@@ -8,12 +8,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Google Ads Management Canada | From $499/mo | CWD" },
-  description: "Certified Google Ads management from $499/mo, no contracts — our experts cut wasted spend and lower your cost per lead. 180+ five-star reviews. Free audit: (647) 689-6069.",
+  title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Website Design" },
+  description: "Certified Google Ads management, no contracts — our experts cut wasted spend and lower your cost per lead. 180+ five-star reviews. Free audit.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
-    title: "Google Ads Management Canada — From $499/mo | Canadian Web Designs",
-    description: "Certified Google Ads management from $499/mo, no contracts — cut wasted spend and lower cost per lead. 180+ five-star reviews. Free audit: (647) 689-6069.",
+    title: "Google Ads Management Canada | PPC That Converts | Canadian Website Design",
+    description: "Certified Google Ads management, no contracts — cut wasted spend and lower cost per lead. 180+ five-star reviews. Free audit.",
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does Google Ads management cost in Toronto?",
-    a: "Our Google Ads management starts at $499/month flat fee — no percentage-of-spend markup. Your ad budget goes entirely to Google, and our fee covers full campaign management: keyword research, ad copywriting, negative keyword expansion, bid optimization, conversion tracking, and monthly reporting. Ad spend is separate and we recommend a minimum of $1,000/month for Toronto campaigns to generate meaningful data.",
+    a: "Our Google Ads management is a flat monthly fee — no percentage-of-spend markup. Your ad budget goes entirely to Google, and our fee covers full campaign management: keyword research, ad copywriting, negative keyword expansion, bid optimization, conversion tracking, and monthly reporting. Ad spend is billed separately by Google, and we'll recommend a realistic minimum budget for Toronto campaigns based on your industry and competition.",
   },
   {
     q: "How quickly will I see results from Google Ads?",
@@ -30,7 +30,7 @@ const faq = [
   },
   {
     q: "What's the minimum Google Ads budget for Toronto?",
-    a: "We recommend a minimum of $1,000–$1,500/month in ad spend for Toronto service businesses. Below this threshold, you'll get too few clicks per day to gather meaningful data or generate consistent lead volume. For competitive industries like legal, mortgage, and home services in Toronto, $2,000–$3,000/month is a more realistic starting point.",
+    a: "Recommended ad spend varies by industry and competition. Below a certain threshold, you'll get too few clicks per day to gather meaningful data or generate consistent lead volume. Competitive industries like legal, mortgage, and home services in Toronto need a higher starting budget than less competitive niches — we'll recommend a realistic minimum during your free audit.",
   },
   {
     q: "Do you manage Google Shopping and Performance Max campaigns?",
@@ -83,9 +83,8 @@ const serviceSchema = {
   ],
   offers: {
     "@type": "Offer",
-    price: "499",
+    availability: "https://schema.org/InStock",
     priceCurrency: "CAD",
-    priceSpecification: { "@type": "UnitPriceSpecification", price: "499", priceCurrency: "CAD", unitText: "month" },
   },
 };
 
@@ -221,7 +220,7 @@ export default function GoogleAdsManagementPage() {
               <h2 className="text-3xl font-black text-gray-900 mb-6" style={{ lineHeight: 1.15 }}>Why Most Toronto Businesses Waste Their Google Ads Budget</h2>
 
               <p className="text-gray-600 text-base leading-relaxed mb-5">
-                Toronto is one of Canada&apos;s most competitive Google Ads markets. Terms like &ldquo;toronto plumber,&rdquo; &ldquo;toronto lawyer,&rdquo; and &ldquo;toronto web design&rdquo; can cost $8–$30+ per click — because businesses that win these auctions consistently generate high-value leads. But winning the auction is only half the equation. The other half is making sure the clicks you pay for actually convert into calls, form fills, and booked appointments.
+                Toronto is one of Canada&apos;s most competitive Google Ads markets. Terms like &ldquo;toronto plumber,&rdquo; &ldquo;toronto lawyer,&rdquo; and &ldquo;toronto web design&rdquo; command some of the highest cost-per-click rates in the country — which varies by industry and competition — because businesses that win these auctions consistently generate high-value leads. But winning the auction is only half the equation. The other half is making sure the clicks you pay for actually convert into calls, form fills, and booked appointments.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-5">
                 Most Toronto businesses running Google Ads without professional management make three critical mistakes: (1) Using broad match keywords that match irrelevant searches and burn 30–50% of budget on non-converting traffic, (2) Skipping negative keyword management — the single highest-ROI activity in Google Ads, and (3) Running campaigns without proper conversion tracking, so they have no idea which keywords are generating leads and which are generating waste.
@@ -314,9 +313,9 @@ export default function GoogleAdsManagementPage() {
             {[
               {
                 name: "Starter",
-                price: "$499",
-                period: "/month management",
-                adSpend: "Recommended ad spend: $1,000–$2,000/mo",
+                price: "$150",
+                period: "monthly management",
+                adSpend: "Recommended ad spend scaled to your goals",
                 desc: "For small and medium Toronto businesses running their first Google Ads campaigns.",
                 features: ["1 campaign, up to 5 ad groups", "Search ads setup + copywriting", "Negative keyword management", "Conversion tracking setup", "Monthly performance report", "You own the account — always"],
                 cta: "Get Started",
@@ -324,9 +323,9 @@ export default function GoogleAdsManagementPage() {
               },
               {
                 name: "Growth",
-                price: "$799",
-                period: "/month management",
-                adSpend: "Recommended ad spend: $2,000–$5,000/mo",
+                price: "$350",
+                period: "monthly management",
+                adSpend: "Recommended ad spend scaled to your goals",
                 desc: "For established Toronto businesses scaling campaigns across multiple services or locations.",
                 features: ["Up to 3 campaigns, 15 ad groups", "Search + Shopping or Remarketing", "Weekly Search Terms review", "A/B ad copy testing", "Competitor landscape analysis", "Bi-weekly strategy calls"],
                 cta: "Get Growth Plan",
@@ -335,8 +334,8 @@ export default function GoogleAdsManagementPage() {
               {
                 name: "Enterprise",
                 price: "Custom",
-                period: "quote",
-                adSpend: "Ad spend $5,000+/mo",
+                period: "monthly management",
+                adSpend: "Higher ad spend for multi-location scale",
                 desc: "For multi-location businesses, e-commerce stores, or agencies needing white-label management.",
                 features: ["Unlimited campaigns and ad groups", "All campaign types (Search, Shopping, PMax, LSA)", "Dedicated account manager", "Custom reporting dashboard", "Landing page optimization included", "Priority support + SLA"],
                 cta: "Get a Custom Quote",

@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Toronto | Page 1 Google in 60–90 Days | 180+ Reviews | Free Audit | CWD" },
+  title: { absolute: "SEO Toronto | SEO Company & Services | Canadian Web Designs" },
   description:
-    "Toronto SEO with proven results — neighbourhood-targeted strategy for Etobicoke, Scarborough & North York. Clients ranking page 1 for competitive keywords. 180+ reviews. Free audit → (647) 689-6069.",
+    "Toronto SEO with proven results — neighbourhood strategy for Etobicoke, Scarborough & North York. 180+ reviews. Free audit → (647) 689-6069.",
   alternates: { canonical: "/seo/toronto" },
   openGraph: {
-    title: "SEO Toronto 2026 | Page 1 Results in 60–90 Days | Canadian Web Designs",
+    title: "SEO Toronto | SEO Company & Services | Canadian Web Designs",
     description:
-      "Toronto's trusted SEO agency — 180+ five-star reviews, proven 2026 rankings across every GTA neighbourhood. Free audit — (647) 689-6069.",
+      "Toronto's trusted SEO agency — 180+ five-star reviews, proven rankings across every GTA neighbourhood. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/toronto",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost in Toronto?",
-    a: "Our Toronto SEO packages start at $499/month and are scoped based on your industry, target keywords, and goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building, content strategy, and monthly ranking reports. We also offer one-time SEO audits starting at $299 for businesses that want a roadmap before committing to a monthly retainer. Contact us for a free Toronto SEO audit and custom quote.",
+    a: "Our Toronto SEO packages are scoped based on your industry, target keywords, and goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building, content strategy, and monthly ranking reports. We also offer one-time SEO audits for businesses that want a roadmap before committing to a monthly retainer. Contact us for a free Toronto SEO audit and custom quote.",
   },
   {
     q: "How long does SEO take to work in Toronto?",
@@ -223,7 +223,7 @@ export default function SeoTorontoPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Affordable Packages from $499/mo", "No Long-Term Contracts"].map((t) => (
+              {["180+ Google Reviews", "Custom-Quoted Packages", "No Long-Term Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -274,7 +274,7 @@ export default function SeoTorontoPage() {
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
                 { value: "180+", label: "Five-Star Reviews" },
-                { value: "$499", label: "Packages Starting At" },
+                { value: "60–90", label: "Days to Page 1" },
                 { value: "300%+", label: "Avg Traffic Growth" },
                 { value: "100%", label: "Results Guaranteed" },
               ].map((s) => (
@@ -311,7 +311,7 @@ export default function SeoTorontoPage() {
               <p className="text-gray-600 text-base leading-relaxed mb-5">
                 The challenge most Toronto businesses face isn&apos;t understanding that SEO matters — it&apos;s
                 finding affordable SEO services in Toronto that actually deliver results. The Toronto market is full
-                of agencies charging $3,000–$10,000/month for work that amounts to monthly reports and minor tweaks.
+                of agencies charging premium retainers for work that amounts to monthly reports and minor tweaks.
                 Canadian Web Designs takes a different approach: we focus exclusively on the activities that move
                 rankings — on-page optimization, local citation building, Google Business Profile management, and
                 targeted content that captures the searches your customers are already making.
@@ -359,7 +359,7 @@ export default function SeoTorontoPage() {
                 <h3 className="text-gray-900 font-black text-xl mb-5">Why Toronto Businesses Choose CWD</h3>
                 <div className="space-y-4">
                   {[
-                    "Affordable packages starting at $499/mo — no bloated retainers, no busywork line items",
+                    "Custom-scoped packages — no bloated retainers, no busywork line items",
                     "180+ five-star Google reviews — the most publicly verifiable track record in Toronto",
                     "No long-term contracts — we earn your business month after month with results",
                     "Monthly ranking reports showing exactly which keywords moved and by how much",
@@ -393,8 +393,8 @@ export default function SeoTorontoPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter SEO", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth SEO", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter SEO", price: "$199/mo", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
@@ -453,8 +453,8 @@ export default function SeoTorontoPage() {
             {[
               {
                 name: "Starter",
-                price: "$499",
-                period: "/month",
+                price: "$199",
+                period: "/mo",
                 desc: "For Toronto small businesses ready to start ranking — clinics, trades, restaurants, retail, professional services.",
                 features: ["Local keyword research", "On-page optimization (up to 5 pages)", "Google Business Profile management", "20 local citation submissions", "Monthly ranking report", "Free technical audit"],
                 cta: "Start Ranking",
@@ -462,8 +462,8 @@ export default function SeoTorontoPage() {
               },
               {
                 name: "Growth",
-                price: "$899",
-                period: "/month",
+                price: "$399",
+                period: "/mo",
                 desc: "The complete Toronto SEO package for businesses ready to dominate their category across Toronto neighbourhoods.",
                 features: ["Full keyword strategy (50+ targets)", "On-page optimization (unlimited pages)", "GBP + local pack optimization", "50+ citation submissions", "Monthly content (1 blog + 1 landing page)", "Link building — Canadian publications", "Weekly ranking updates", "Dedicated account manager"],
                 cta: "Get Growth Plan",
@@ -472,7 +472,7 @@ export default function SeoTorontoPage() {
               {
                 name: "Enterprise",
                 price: "Custom",
-                period: "quote",
+                period: "tailored scope",
                 desc: "For multi-location Toronto businesses, healthcare groups, law firms, and e-commerce brands with aggressive growth goals.",
                 features: ["Multi-location keyword strategy", "E-commerce SEO", "Full content marketing program", "Google Ads integration", "CRO + conversion tracking", "Priority support + monthly strategy call"],
                 cta: "Get a Custom Quote",

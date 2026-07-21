@@ -6,14 +6,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Ecommerce Website Design Toronto | From $2,499 | CWD" },
+  title: { absolute: "Ecommerce Website Design Toronto | Shopify & More | Canada Web Designs" },
   description:
-    "Custom Toronto ecommerce stores built to sell — Shopify, WooCommerce & headless from $2,499. 80+ stores launched, no templates. Free quote: (647) 689-6069.",
+    "Custom Toronto ecommerce stores built to sell — Shopify, WooCommerce & headless. 80+ stores launched, no templates. Free quote: (647) 689-6069.",
   alternates: { canonical: "/ecommerce-website-design-toronto" },
   openGraph: {
-    title: "Ecommerce Website Design Toronto — Shopify & WooCommerce From $2,499 | Canadian Web Designs",
+    title: "Ecommerce Website Design Toronto | Shopify & More | Canada Web Designs",
     description:
-      "Custom online stores for Toronto businesses — rank Page 1, avg 3.4× conversion lift. Shopify, WooCommerce & headless from $2,499. 80+ stores launched. Free quote: (647) 689-6069.",
+      "Custom online stores for Toronto businesses — avg 3.4× conversion lift. Shopify, WooCommerce & headless. 80+ stores launched. Free quote today.",
     url: `https://${config.domain}/ecommerce-website-design-toronto`,
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Ecommerce Website Design Toronto" }],
   },
@@ -49,8 +49,8 @@ const features = [
 const pricing = [
   {
     name: "Starter Store",
-    price: "$2,499",
-    note: "one-time",
+    price: "$499",
+    note: "",
     items: [
       "Up to 50 products",
       "Shopify or WooCommerce",
@@ -64,8 +64,8 @@ const pricing = [
   },
   {
     name: "Growth Store",
-    price: "$4,999",
-    note: "one-time",
+    price: "$999",
+    note: "",
     items: [
       "Up to 250 products",
       "Custom design + CRO",
@@ -109,7 +109,7 @@ const faqs = [
   },
   {
     q: "Do you offer ongoing maintenance for ecommerce stores?",
-    a: "Absolutely. We offer monthly maintenance plans starting at $199/month covering security updates, plugin updates, backups, and performance monitoring.",
+    a: "Absolutely. We offer monthly maintenance plans covering security updates, plugin updates, backups, and performance monitoring — priced to fit your store, with a tailored quote after a free consultation.",
   },
   {
     q: "Can you migrate my existing store to a new platform?",
@@ -117,7 +117,7 @@ const faqs = [
   },
   {
     q: "How much does ecommerce website design cost in Toronto?",
-    a: "Toronto ecommerce websites start at $2,499 for a Starter Store (up to 50 products), $4,999 for a Growth Store (up to 250 products with custom design and CRO), and custom pricing for Enterprise builds. All packages include mobile-first design, SEO setup, and payment gateway integration. Contact us for a free, detailed quote.",
+    a: "Pricing depends on your store's size and features — from a starter store with a handful of products to a large custom build with advanced CRO and integrations. All packages include mobile-first design, SEO setup, and payment gateway integration. Contact us for a free, detailed quote.",
   },
   {
     q: "Do you offer ecommerce SEO for Toronto online stores?",

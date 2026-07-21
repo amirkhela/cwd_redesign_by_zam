@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Victoria BC | Page 1 Google in 45–90 Days | 400K+ Residents | Free Audit | CWD",
+  title: { absolute: "SEO Victoria BC | SEO Company & Services | Canada Web Designs" },
   description:
-    "Victoria BC SEO — lower keyword difficulty than Vancouver with the same high buyer intent. Downtown, Oak Bay & Saanich specialists. More leads from 400K+ Capital Region residents. 180+ reviews. Free audit — (647) 689-6069.",
+    "Victoria BC SEO — lower keyword difficulty than Vancouver, same buyer intent. Downtown, Oak Bay & Saanich. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/victoria" },
   openGraph: {
-    title: "SEO Victoria BC | Victoria SEO Services | Canadian Web Designs",
+    title: "SEO Victoria BC | SEO Company & Services | Canada Web Designs",
     description:
-      "Expert SEO services in Victoria, BC. Rank on page 1 of Google, grow your Victoria business, and get more leads from search. Free SEO audit — (647) 689-6069.",
+      "Expert SEO services in Victoria, BC — rank page 1, grow your business, and win more leads from search. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/victoria",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost for a Victoria business?",
-    a: "Our Victoria SEO packages start at $499/month and scale based on your industry competitiveness, keyword targets, and growth goals. Every package includes Victoria keyword research, on-page optimization, Google Business Profile management, local citation building, and monthly ranking reports. Victoria's low keyword difficulty means most businesses see meaningful page 1 movement within 60 days. Contact us for a free Victoria SEO audit.",
+    a: "Our Victoria SEO packages scale based on your industry competitiveness, keyword targets, and growth goals. Every package includes Victoria keyword research, on-page optimization, Google Business Profile management, local citation building, and monthly ranking reports. Victoria's low keyword difficulty means most businesses see meaningful page 1 movement within 60 days. Contact us for a free Victoria SEO audit.",
   },
   {
     q: "How long does SEO take in Victoria, BC?",
@@ -47,7 +47,7 @@ const faq = [
   },
   {
     q: "Do you offer web design and SEO together for Victoria businesses?",
-    a: "Yes — and combining both delivers the strongest results. Every website we build is structured for SEO from day one: proper URL architecture, fast loading times, mobile optimization, local schema markup, and keyword-rich content. Standalone Victoria SEO packages are also available starting at $499/month if you have an existing site.",
+    a: "Yes — and combining both delivers the strongest results. Every website we build is structured for SEO from day one: proper URL architecture, fast loading times, mobile optimization, local schema markup, and keyword-rich content. Standalone Victoria SEO packages are also available if you have an existing site.",
   },
   {
     q: "How do you handle Victoria's unique island geography for local citations?",
@@ -221,7 +221,7 @@ export default function SeoVictoriaPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Victoria SEO from $499/mo", "No Lock-In Contracts"].map((t) => (
+              {["180+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -393,8 +393,8 @@ export default function SeoVictoriaPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter", price: "$199", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth", price: "$399", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">

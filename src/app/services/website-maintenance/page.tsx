@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "website-maintenance")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Website Maintenance Canada | From $99/mo | CWD" },
-  description: "Expert website maintenance from $99/mo — daily backups, 24/7 uptime monitoring, malware removal, speed & Core Web Vitals tuning. No lock-in. Free audit: (647) 689-6069.",
+  title: { absolute: "Website Maintenance Canada | Secure & Updated | Canada Web Designs" },
+  description: "Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal, speed & Core Web Vitals tuning. No lock-in. Free audit.",
   alternates: { canonical: "/services/website-maintenance" },
   openGraph: {
-    title: "Website Maintenance Canada — From $99/mo | Canadian Web Designs",
-    description: "Expert website maintenance from $99/mo — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. 180+ reviews. No lock-in. Free audit: (647) 689-6069.",
+    title: "Website Maintenance Canada | Secure & Updated | Canada Web Designs",
+    description: "Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. 180+ reviews. No lock-in. Free audit.",
     url: "https://canadianwebdesigns.ca/services/website-maintenance",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada 2026 — Canadian Web Designs" }],
   },

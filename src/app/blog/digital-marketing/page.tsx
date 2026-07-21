@@ -7,7 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Guides for Canadian Businesses | CWD Blog",
+  title: { absolute: "Digital Marketing Guides for Canadian Businesses | Canada Website Design" },
   description: "Practical digital marketing strategies, Google Ads tips & social media guides for Canadian businesses — from Canada's top-rated full-service digital agency. Grow smarter.",
   alternates: { canonical: "/blog/digital-marketing" },
   openGraph: {

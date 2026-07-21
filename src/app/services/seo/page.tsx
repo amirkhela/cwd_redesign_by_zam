@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Services Canada | Local & National SEO That Ranks | CWD" },
-  description: "Grow your organic traffic with Canada's trusted SEO team — technical audits, local targeting, content & link building. 180+ five-star reviews. Free SEO audit: (647) 689-6069.",
+  title: { absolute: "SEO Services Canada | Local & National SEO | Canadian Web Designs" },
+  description: "Grow your organic traffic with Canada's trusted SEO team — technical audits, local targeting, content & link building. 180+ five-star reviews. Free SEO audit.",
   alternates: { canonical: "/services/seo" },
   openGraph: {
-    title: "SEO Services Canada — Local & National SEO That Ranks | Canadian Web Designs",
-    description: "Climb Google and grow organic traffic with local & national SEO — audits, content & link building. 180+ five-star reviews. Free SEO audit: (647) 689-6069.",
+    title: "SEO Services Canada | Local & National SEO | Canadian Web Designs",
+    description: "Climb Google and grow organic traffic with local & national SEO — audits, content & link building. 180+ five-star reviews. Free SEO audit.",
     url: "https://canadianwebdesigns.ca/services/seo",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "SEO Services Canada 2026 — Canadian Web Designs" }],
   },
@@ -59,7 +59,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "How much do SEO services cost for a Toronto business?",
-      acceptedAnswer: { "@type": "Answer", text: "Toronto SEO pricing depends on your industry competition, target keywords, and goals. Most Toronto small business SEO retainers range from $500–$2,500/month. We offer no-contract, transparent monthly retainers with clear deliverables and monthly ranking reports — no lock-in and no surprise fees. Contact us for a free SEO audit and custom Toronto quote." },
+      acceptedAnswer: { "@type": "Answer", text: "Toronto SEO pricing depends on your industry competition, target keywords, and goals. We offer no-contract, transparent monthly retainers with clear deliverables and monthly ranking reports — no lock-in and no surprise fees. Contact us for a free SEO audit and a custom Toronto quote after a quick consultation." },
     },
   ],
 };

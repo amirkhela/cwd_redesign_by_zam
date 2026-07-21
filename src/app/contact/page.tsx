@@ -8,12 +8,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Free Web Design Quote Canada | Reply in Hours | (647) 689-6069 | 180+ Reviews | CWD",
+  title: { absolute: "Contact Canadian Web Designs | Free Web Design Quote in Canada" },
   description:
     "Get a free, no-obligation web design or SEO quote — most clients hear back within 2 hours. Canada's #1 rated agency. 180+ five-star reviews. Call (647) 689-6069 or fill out the form. 24+ cities.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Free Web Design Quote Canada | Reply in Hours | (647) 689-6069 | 180+ Reviews | CWD",
+    title: "Contact Canadian Web Designs | Free Web Design Quote in Canada",
     description:
       "Get a free web design or SEO quote from Canada's #1 rated agency — most clients hear back within 2 hours. 180+ reviews. No commitment. Call (647) 689-6069 or send the form.",
     url: "https://canadianwebdesigns.ca/contact",

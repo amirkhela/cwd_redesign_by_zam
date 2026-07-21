@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Burnaby BC | Page 1 Google in 30–60 Days | Diff 12 | Free Audit | CWD",
+  title: { absolute: "SEO Burnaby BC | SEO Company & Services | Canadian Website Design" },
   description:
-    "Burnaby SEO — keyword difficulty as low as 12 means page 1 Google rankings in 30–60 days, faster than anywhere else in Metro Vancouver. Brentwood, Metrotown & Lougheed specialists. 180+ reviews. Free audit — (647) 689-6069.",
+    "Burnaby SEO — difficulty as low as 12 means page 1 in 30–60 days. Brentwood, Metrotown & Lougheed. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/burnaby" },
   openGraph: {
-    title: "SEO Burnaby | Burnaby SEO Services | Canadian Web Designs",
+    title: "SEO Burnaby BC | SEO Company & Services | Canadian Website Design",
     description:
-      "Top-rated SEO services in Burnaby, BC. Rank on Google page 1, get more leads, and grow your Burnaby business. Keyword difficulty as low as 12. Free SEO audit — (647) 689-6069.",
+      "Top-rated SEO in Burnaby, BC — rank page 1, win leads, grow your business. Keyword difficulty as low as 12. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/burnaby",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost for a Burnaby business?",
-    a: "Our Burnaby SEO packages start at $499/month and are scoped based on your industry competitiveness, target keywords, and growth goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building (50+ sites), and monthly ranking reports. Burnaby's low keyword difficulty means most packages deliver measurable page 1 results within 60 days. Contact us for a free Burnaby SEO audit and custom quote.",
+    a: "Our Burnaby SEO packages are scoped based on your industry competitiveness, target keywords, and growth goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building (50+ sites), and monthly ranking reports. Burnaby's low keyword difficulty means most packages deliver measurable page 1 results within 60 days. Contact us for a free Burnaby SEO audit and custom quote.",
   },
   {
     q: "How long does SEO take to work in Burnaby?",
@@ -47,7 +47,7 @@ const faq = [
   },
   {
     q: "Do you offer both web design and SEO in Burnaby?",
-    a: "Yes — we offer both as a combined package or standalone services. Web design and SEO work best together: a site we build is already structured for Burnaby SEO from day one. If you have an existing site, our standalone Burnaby SEO packages start at $499/month. See our full Burnaby web design and SEO page at /locations/burnaby for combined packages.",
+    a: "Yes — we offer both as a combined package or standalone services. Web design and SEO work best together: a site we build is already structured for Burnaby SEO from day one. If you have an existing site, our standalone Burnaby SEO packages are scoped to your goals. See our full Burnaby web design and SEO page at /locations/burnaby for combined packages.",
   },
   {
     q: "What industries do you serve with Burnaby SEO?",
@@ -393,8 +393,8 @@ export default function SeoByurnabyPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter", price: "$199", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth", price: "$399", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">

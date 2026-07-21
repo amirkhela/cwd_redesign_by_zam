@@ -7,14 +7,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Website Maintenance & Support Canada | From $99/mo | CWD" },
+  title: { absolute: "Website Maintenance Services Canada | Canada Website Design" },
   description:
-    "A website is hacked every 39 seconds — is yours protected? Expert maintenance from $99/mo: daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. No lock-in. Free audit: (647) 689-6069.",
+    "A website is hacked every 39 seconds — is yours protected? Expert maintenance: daily backups, 24/7 monitoring, malware removal & speed tuning.",
   alternates: { canonical: "/maintenance" },
   openGraph: {
-    title: "Website Maintenance & Support Canada — From $99/mo | Canadian Web Designs",
+    title: "Website Maintenance Services Canada | Canada Website Design",
     description:
-      "A website is hacked every 39 seconds — keep yours secure & ranking with expert maintenance from $99/mo. Daily backups, 24/7 monitoring, malware removal & Core Web Vitals tuning. Free site audit.",
+      "A website is hacked every 39 seconds — keep yours secure with expert maintenance: daily backups, 24/7 monitoring, malware removal & speed tuning.",
     url: "https://canadianwebdesigns.ca/maintenance",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada 2026 — Canadian Web Designs" }],
   },
@@ -27,7 +27,7 @@ const faq = [
   },
   {
     q: "How much does website maintenance cost in Canada?",
-    a: "Our plans start at $99/month for basic maintenance (updates, backups, monitoring) and scale up to $349/month for full-service maintenance including content updates, SEO monitoring, and priority support. All plans are month-to-month with no long-term contracts.",
+    a: "Pricing depends on the level of support your site needs — from essential updates, backups, and monitoring to full-service maintenance with content updates, SEO monitoring, and priority support. All plans are month-to-month with no long-term contracts, and we provide a tailored quote after a free consultation.",
   },
   {
     q: "Do you maintain websites you didn't build?",
@@ -60,8 +60,8 @@ const faqSchema = {
 const plans = [
   {
     name: "Essential",
-    price: "$99",
-    period: "/month",
+    price: "$99/mo",
+    period: "",
     desc: "For small business sites that need to stay secure and online.",
     features: [
       "WordPress core + plugin + theme updates",
@@ -76,8 +76,8 @@ const plans = [
   },
   {
     name: "Professional",
-    price: "$199",
-    period: "/month",
+    price: "$199/mo",
+    period: "",
     desc: "For growing businesses that need faster response and content updates.",
     features: [
       "Everything in Essential",
@@ -93,8 +93,8 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "$349",
-    period: "/month",
+    price: "Custom",
+    period: "",
     desc: "For high-traffic sites, WooCommerce stores, and multi-location businesses.",
     features: [
       "Everything in Professional",
@@ -178,7 +178,7 @@ export default function MaintenancePage() {
             </h1>
             <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">
               Keep your website secure, fast, and always online. Professional website maintenance
-              plans for Canadian businesses — from $99/month, no lock-in contracts.
+              plans for Canadian businesses — month-to-month, no lock-in contracts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <Link href="/contact"
@@ -195,7 +195,7 @@ export default function MaintenancePage() {
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["Plans from $99/mo", "No Lock-In Contracts", "Month-to-Month", "180+ Happy Clients"].map((t) => (
+              {["Flexible Plans", "No Lock-In Contracts", "Month-to-Month", "180+ Happy Clients"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

@@ -8,12 +8,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Brampton | Page 1 Google in 60–90 Days | 650K+ Residents | Free Audit | CWD",
+  title: { absolute: "SEO Brampton | SEO Company & Services | Canada Website Design" },
   description:
-    "Brampton SEO services that reach page 1 faster than Toronto — lower difficulty, 650K+ residents, growing trucking, healthcare & trades market. Downtown, Bramalea & Castlemore specialists. 180+ reviews. Free audit — (647) 689-6069.",
+    "Brampton SEO that reaches page 1 faster than Toronto — Downtown, Bramalea & Castlemore specialists. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/brampton" },
   openGraph: {
-    title: "SEO Brampton | Brampton SEO Services | Canadian Web Designs",
+    title: "SEO Brampton | SEO Company & Services | Canada Website Design",
     description:
       "Expert SEO services in Brampton, ON. Get your Brampton business to page 1 of Google. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/brampton",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost for a Brampton business?",
-    a: "Our Brampton SEO packages start at $499/month. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building (50+ sites), and monthly ranking reports. Package pricing scales based on your industry's competitiveness and how many Brampton keyword clusters you want to target. We offer a free SEO audit before any commitment so you know exactly what&apos;s possible for your specific business.",
+    a: "Our Brampton SEO packages are scoped to your goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building (50+ sites), and monthly ranking reports. Package pricing scales based on your industry's competitiveness and how many Brampton keyword clusters you want to target. We offer a free SEO audit before any commitment so you know exactly what&apos;s possible for your specific business.",
   },
   {
     q: "How long does SEO take to show results in Brampton?",
@@ -59,7 +59,7 @@ const faq = [
   },
   {
     q: "Do you offer web design and SEO packages for Brampton businesses?",
-    a: "Yes — we offer both standalone Brampton SEO ($499/mo+) and combined web design + SEO packages starting at $3,499. Combining both is always the most effective approach: we build every website with Brampton SEO architecture from day one — proper URL structure, fast loading speeds, mobile optimization, local schema markup, and keyword-rich content for Brampton neighbourhoods. Contact us for a free consultation and custom quote.",
+    a: "Yes — we offer both standalone Brampton SEO and combined web design + SEO packages tailored to your scope. Combining both is always the most effective approach: we build every website with Brampton SEO architecture from day one — proper URL structure, fast loading speeds, mobile optimization, local schema markup, and keyword-rich content for Brampton neighbourhoods. Contact us for a free consultation and custom quote.",
   },
 ];
 
@@ -237,7 +237,7 @@ export default function SeoBramptonPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Brampton SEO from $499/mo", "No Lock-In Contracts"].map((t) => (
+              {["180+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -409,8 +409,8 @@ export default function SeoBramptonPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter SEO", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth SEO", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter SEO", price: "$199/mo", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
@@ -469,8 +469,8 @@ export default function SeoBramptonPage() {
             {[
               {
                 name: "Starter",
-                price: "$499",
-                period: "/month",
+                price: "$199",
+                period: "/mo",
                 desc: "For Brampton small businesses starting their SEO journey — clinics, trades, restaurants, retail.",
                 features: ["Local keyword research", "On-page optimization (up to 5 pages)", "Google Business Profile management", "20 local citation submissions", "Monthly ranking report", "Free technical audit"],
                 cta: "Start Ranking",
@@ -478,8 +478,8 @@ export default function SeoBramptonPage() {
               },
               {
                 name: "Growth",
-                price: "$899",
-                period: "/month",
+                price: "$399",
+                period: "/mo",
                 desc: "The complete Brampton SEO package for businesses ready to dominate multiple keyword clusters.",
                 features: ["Full keyword strategy (50+ targets)", "On-page optimization (unlimited pages)", "GBP + local pack optimization", "50+ citation submissions", "Monthly content (1 blog + 1 landing page)", "Link building — Canadian publications", "Weekly ranking updates", "Dedicated account manager"],
                 cta: "Get Growth Plan",
@@ -488,7 +488,7 @@ export default function SeoBramptonPage() {
               {
                 name: "Enterprise",
                 price: "Custom",
-                period: "quote",
+                period: "tailored scope",
                 desc: "For multi-location Brampton businesses, healthcare groups, logistics companies, and e-commerce brands.",
                 features: ["Multi-location keyword strategy", "E-commerce SEO", "Full content marketing program", "Google Ads integration", "CRO + conversion tracking", "Priority support + monthly strategy call"],
                 cta: "Get a Custom Quote",

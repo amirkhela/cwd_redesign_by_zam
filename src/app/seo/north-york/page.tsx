@@ -8,12 +8,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO North York | Page 1 Google in 60–90 Days | GTA's Best-Value SEO | CWD",
+  title: { absolute: "SEO North York | SEO Company & Services | Canada Web Designs" },
   description:
-    "North York SEO that beats downtown Toronto agencies — lower keyword difficulty, same high buyer intent. Yonge St, Sheppard, Finch & Bathurst specialists. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
+    "North York SEO that beats downtown Toronto agencies — lower difficulty, same buyer intent. 180+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/north-york" },
   openGraph: {
-    title: "SEO North York | North York SEO Services | Canadian Web Designs",
+    title: "SEO North York | SEO Company & Services | Canada Web Designs",
     description:
       "Expert SEO services in North York, ON. Rank on Google page 1 for North York searches. 180+ five-star reviews. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/north-york",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost for a North York business?",
-    a: "Our North York SEO packages start at $499/month. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building, and monthly ranking reports. North York sits inside Toronto, which means GTA competition — but North York-specific search terms have much lower difficulty, making it very achievable to rank page 1 for 'seo north york' and related searches within 60–90 days.",
+    a: "Our North York SEO packages are scoped to your goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building, and monthly ranking reports. North York sits inside Toronto, which means GTA competition — but North York-specific search terms have much lower difficulty, making it very achievable to rank page 1 for 'seo north york' and related searches within 60–90 days.",
   },
   {
     q: "How long does SEO take in North York?",
@@ -185,7 +185,7 @@ export default function SeoNorthYorkPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "North York SEO from $499/mo", "No Lock-In Contracts"].map((t) => (
+              {["180+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -315,8 +315,8 @@ export default function SeoNorthYorkPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter SEO", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth SEO", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter SEO", price: "$199/mo", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">

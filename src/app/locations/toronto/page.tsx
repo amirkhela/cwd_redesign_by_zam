@@ -5,14 +5,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata: Metadata = {
-  title: "Toronto Web Design | 180+ Reviews | Custom Sites From $1,499 | Free Quote",
+  title: { absolute: "Web Design Toronto | Custom Websites That Rank | Canadian Website Design" },
   description:
-    "Toronto's top-rated web design agency — 180+ five-star reviews, custom sites from $1,499 built to rank & convert. Etobicoke, Scarborough & Yorkville specialists. Free quote → (647) 689-6069.",
+    "Toronto's top-rated web design agency — 180+ five-star reviews. Custom websites built to rank and convert, serving Etobicoke, Scarborough & Yorkville.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
-    title: "Toronto Web Design | 180+ Reviews | Custom Sites From $1,499 | Free Quote",
+    title: "Web Design Toronto | Custom Websites That Rank | Canadian Website Design",
     description:
-      "Toronto's top-rated web design agency. 180+ five-star reviews. Custom sites from $1,499 that rank on Google & win customers. Free quote — (647) 689-6069.",
+      "Toronto's top-rated web design agency. 180+ five-star reviews. Custom websites that rank on Google & win customers across the GTA.",
     url: "https://canadianwebdesigns.ca/locations/toronto",
     images: [
       {
@@ -56,7 +56,7 @@ const faq = [
   },
   {
     q: "How much does a web design company in Toronto charge?",
-    a: "Toronto web design costs range from $500 (low-cost template builders) to $50,000+ (enterprise custom development). For a professional, custom, SEO-optimized website from a reputable Toronto agency, expect $1,499–$4,999 for most small to mid-size businesses. Canadian Web Designs offers flat-rate pricing with no surprises — starting at $1,499 for a complete, Google-ready website.",
+    a: "Toronto web design costs vary widely — from budget template builders to enterprise custom development. For a professional, custom, SEO-optimized website from a reputable Toronto agency, pricing depends on your project scope. Canadian Web Designs offers flat-rate pricing with no surprises — we provide a tailored quote after a free consultation.",
   },
   {
     q: "Do you work with Toronto tech startups and SaaS companies?",
@@ -64,7 +64,7 @@ const faq = [
   },
   {
     q: "How do I find a reliable web design company in Toronto?",
-    a: "Look for three things: verifiable reviews, real portfolio case studies with measurable results, and transparent pricing. Avoid agencies that can't show you ranking data for their own clients. Canadian Web Designs has 180+ Google reviews, a public portfolio at canadianwebdesigns.ca/portfolio, flat-rate pricing starting at $1,499, and a results guarantee — if you don't see movement, we keep working at no charge.",
+    a: "Look for three things: verifiable reviews, real portfolio case studies with measurable results, and transparent pricing. Avoid agencies that can't show you ranking data for their own clients. Canadian Web Designs has 180+ Google reviews, a public portfolio at canadianwebdesigns.ca/portfolio, transparent flat-rate pricing, and a results guarantee — if you don't see movement, we keep working at no charge.",
   },
   {
     q: "What should I expect from a Toronto web design agency?",

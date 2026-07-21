@@ -6,12 +6,12 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design & SEO Jobs Canada 2026 | Remote | Great Pay | 180+ Reviews | Apply Now at CWD",
+  title: { absolute: "Careers at Canadian Web Designs | Web Design & SEO Jobs in Canada" },
   description:
     "Join Canada's #1 rated web design agency in 2026 — remote roles in web design, SEO, development & project management. Competitive pay, flexible hours, real impact. Apply now: (647) 689-6069.",
   alternates: { canonical: "/careers" },
   openGraph: {
-    title: "Web Design & SEO Jobs Canada 2026 | Remote Roles | Great Pay | Apply Now at CWD",
+    title: "Careers at Canadian Web Designs | Web Design & SEO Jobs in Canada",
     description:
       "Remote web design, SEO & development roles at Canada's #1 rated digital agency. Competitive pay, flexible hours, real Canadian client impact. View open positions and apply today.",
     url: "https://canadianwebdesigns.ca/careers",

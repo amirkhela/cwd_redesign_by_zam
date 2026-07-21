@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Vancouver Web Design 2026 | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
+  title: { absolute: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs" },
   description:
-    "Vancouver's #1 rated web design agency in 2026 — Yaletown, Kitsilano & Metro Vancouver. Custom sites from $1,499 that rank Page 1 on Google & convert leads. 180+ reviews. Free quote: (647) 689-6069.",
+    "Vancouver's top-rated web design agency — Yaletown, Kitsilano & Metro Vancouver. Custom websites built to rank on Google and convert. 180+ reviews.",
   alternates: { canonical: "/locations/vancouver" },
   openGraph: {
-    title: "Vancouver Web Design 2026 | Custom Sites From $1,499 | Page 1 Google | 180+ Reviews | Free Quote",
+    title: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs",
     description:
-      "BC's #1 rated web design agency for 2026. Custom sites from $1,499 built to rank Page 1 in Metro Vancouver & convert visitors into customers. 180+ reviews. Free quote: (647) 689-6069.",
+      "BC's top-rated web design agency. Custom websites built to rank in Metro Vancouver and convert visitors into customers. 180+ five-star reviews.",
     url: "https://canadianwebdesigns.ca/locations/vancouver",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Vancouver BC — Canadian Web Designs" }],
   },
@@ -28,7 +28,7 @@ const faq = [
   },
   {
     q: "How much does a website cost for a Vancouver business?",
-    a: "Vancouver website packages start at $1,499 for a professional 5-page site and scale based on scope. Most Vancouver small businesses invest $2,499–$4,999 for a fully custom, SEO-optimized site. eCommerce and enterprise projects are scoped separately. All sites include mobile optimization, local SEO foundation, Google Analytics, and 30 days of post-launch support. Contact us for a free, no-obligation quote.",
+    a: "Vancouver website pricing depends on your project scope — number of pages, e-commerce functionality, and design complexity. eCommerce and enterprise projects are scoped separately. All sites include mobile optimization, local SEO foundation, Google Analytics, and 30 days of post-launch support. We provide a tailored quote after a free, no-obligation consultation.",
   },
   {
     q: "Do you offer Vancouver-specific SEO services?",
@@ -68,7 +68,7 @@ const faq = [
   },
   {
     q: "Do you offer affordable web design for Vancouver small businesses?",
-    a: "Yes. Vancouver small business websites start at $1,499 — a flat-rate, all-inclusive price that covers mobile-first design, on-page SEO, Google Analytics, contact form, and 30 days of post-launch support. No hidden fees, no recurring charges (unless you choose a maintenance plan). We believe every Vancouver business deserves a professional online presence.",
+    a: "Yes. Vancouver small business websites are offered at a flat-rate, all-inclusive price that covers mobile-first design, on-page SEO, Google Analytics, contact form, and 30 days of post-launch support. No hidden fees, no recurring charges (unless you choose a maintenance plan). Pricing depends on your project scope — we provide a tailored quote after a free consultation.",
   },
   {
     q: "How do you help Vancouver businesses rank for 'web design vancouver' and similar searches?",
@@ -168,7 +168,7 @@ export default function VancouverPage() {
               <a href="tel:6476896069" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">(647) 689-6069</a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Metro Vancouver 2.5M+ Consumer Market", "Page 1 or We Keep Working"].map((t) => (
+              {["180+ Google Reviews", "Metro Vancouver 2.5M+ Consumer Market", "Results or We Keep Working"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -320,7 +320,7 @@ export default function VancouverPage() {
             {/* Starter */}
             <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
               <p className="text-sm font-bold text-[#00AADF] tracking-widest uppercase mb-3">Starter</p>
-              <p className="text-4xl font-black text-gray-900 mb-1">$1,499</p>
+              <p className="text-4xl font-black text-gray-900 mb-1">$299</p>
               <p className="text-gray-400 text-sm mb-6">One-time investment</p>
               <ul className="space-y-3 text-sm text-gray-600">
                 {["Up to 5 pages", "Mobile-responsive design", "On-page SEO basics", "Contact form", "Google Analytics setup", "3-week delivery"].map(f => (
@@ -333,8 +333,8 @@ export default function VancouverPage() {
             <div className="rounded-2xl p-8 reveal text-white relative" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)", boxShadow: "0 8px 32px rgba(0,170,223,0.35)" }}>
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
               <p className="text-sm font-bold tracking-widest uppercase mb-3 text-blue-100">Growth</p>
-              <p className="text-4xl font-black mb-1">$3,499</p>
-              <p className="text-blue-200 text-sm mb-1">+ $499/mo ongoing SEO</p>
+              <p className="text-4xl font-black mb-1">$599</p>
+              <p className="text-blue-200 text-sm mb-1">Ongoing SEO available</p>
               <p className="text-blue-200 text-xs mb-6">One-time build + monthly retainer</p>
               <ul className="space-y-3 text-sm text-blue-50">
                 {["Up to 12 pages", "Custom UI/UX design", "Full on-page & technical SEO", "Local SEO + Google Business Profile", "Monthly rank tracking & reporting", "Ongoing content updates"].map(f => (

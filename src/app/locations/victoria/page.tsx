@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Victoria BC Web Design | SEO & Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+  title: { absolute: "Victoria BC Web Design | SEO & Custom Sites | Canada Website Design" },
   description:
-    "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom sites from $1,499, page 1 Google in 45–90 days. Free quote → (647) 689-6069.",
+    "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom websites built to rank on Google. 180+ reviews.",
   alternates: { canonical: "/locations/victoria" },
   openGraph: {
-    title: "Victoria BC Web Design | SEO & Custom Sites From $1,499 | 180+ Reviews | Free Quote",
+    title: "Victoria BC Web Design | SEO & Custom Sites | Canada Website Design",
     description:
-      "Top-rated web design & SEO in Victoria BC. 180+ five-star reviews. Custom sites from $1,499, page 1 results in 45–90 days. Free quote — (647) 689-6069.",
+      "Top-rated web design & SEO in Victoria BC. 180+ five-star reviews. Custom websites built to rank on Google across Greater Victoria.",
     url: "https://canadianwebdesigns.ca/locations/victoria",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does SEO cost in Victoria BC?",
-    a: "Our Victoria SEO packages start at $499/month and are scoped based on your industry competitiveness, target keywords, and growth goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building across BC and national directories, and monthly ranking reports. Contact us for a free Victoria SEO audit and custom quote.",
+    a: "Our Victoria SEO packages are scoped based on your industry competitiveness, target keywords, and growth goals. Every package includes keyword research, on-page optimization, Google Business Profile management, local citation building across BC and national directories, and monthly ranking reports. Contact us for a free Victoria SEO audit and custom quote.",
   },
   {
     q: "How long does SEO take to work for a Victoria business?",
@@ -221,7 +221,7 @@ export default function VictoriaPage() {
               {[
                 { label: "180+ Google Reviews" },
                 { label: "Victoria SEO Difficulty as Low as 8" },
-                { label: "Page 1 or We Keep Working" },
+                { label: "Results or We Keep Working" },
               ].map((t) => (
                 <div key={t.label} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

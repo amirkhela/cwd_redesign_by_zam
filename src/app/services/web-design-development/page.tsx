@@ -6,12 +6,12 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Services Canada | Custom Sites From $1,499 | CWD" },
-  description: "Custom, hand-coded web design from $1,499 — no templates, SEO built in, designed to convert visitors into clients. Trusted by 180+ five-star clients across Canada. Free quote: (647) 689-6069.",
+  title: { absolute: "Web Design Services Canada | Custom Web Design | Canadian Website Design" },
+  description: "Custom, hand-coded web design — no templates, SEO built in, designed to convert visitors into clients. Trusted by 180+ five-star clients. Free quote.",
   alternates: { canonical: "/services/web-design-development" },
   openGraph: {
-    title: "Web Design Services Canada — Custom Sites From $1,499 | Canadian Web Designs",
-    description: "Custom websites from $1,499 — no templates, SEO built in, built to convert. Serving Toronto, Vancouver, Calgary & all of Canada. 180+ five-star reviews. Free quote: (647) 689-6069.",
+    title: "Web Design Services Canada | Custom Web Design | Canadian Website Design",
+    description: "Custom websites — no templates, SEO built in, built to convert. Serving Toronto, Vancouver, Calgary & all of Canada. 180+ five-star reviews.",
     url: "https://canadianwebdesigns.ca/services/web-design-development",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
   },
@@ -54,7 +54,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "Do you offer affordable web design for small businesses in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Yes. We offer transparent, flat-rate pricing starting from $1,499 with no hidden fees. We believe every Canadian small business deserves a professional website — our packages are designed to fit SMB budgets while delivering enterprise-quality design, SEO, and performance." },
+      acceptedAnswer: { "@type": "Answer", text: "Yes. We offer transparent, flat-rate pricing with no hidden fees. We believe every Canadian small business deserves a professional website — our packages are designed to fit SMB budgets while delivering enterprise-quality design, SEO, and performance." },
     },
     {
       "@type": "Question",

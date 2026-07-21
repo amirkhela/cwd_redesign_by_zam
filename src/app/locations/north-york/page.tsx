@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "North York Web Design 2026 | 180+ Reviews | Free Quote",
+  title: { absolute: "Web Design North York | Custom Websites That Rank | Canada Web Designs" },
   description:
-    "North York's #1 web design agency for 2026. Custom sites from $1,499, page 1 Google results in 30–45 days. 180+ reviews. Free quote — (647) 689-6069.",
+    "North York's top-rated web design agency — Willowdale, Sheppard & Bayview Village specialists. Custom websites built to rank on Google. 180+ reviews.",
   alternates: { canonical: "/locations/north-york" },
   openGraph: {
-    title: "North York Web Design 2026 | 180+ Reviews | Free Quote",
+    title: "Web Design North York | Custom Websites That Rank | Canada Web Designs",
     description:
-      "Top-rated web design & SEO in North York for 2026. 180+ five-star reviews. Custom sites from $1,499, rank faster than downtown Toronto. Free quote — (647) 689-6069.",
+      "Top-rated web design & SEO in North York. 180+ five-star reviews. Custom websites built to rank across Willowdale, Sheppard & Bayview Village.",
     url: "https://canadianwebdesigns.ca/locations/north-york",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design North York — Canadian Web Designs" }],
   },
@@ -32,7 +32,7 @@ const faq = [
   },
   {
     q: "Do you offer website packages for North York small businesses?",
-    a: "Yes — we build fully custom websites for North York businesses starting at $1,499. Every package includes custom design, mobile optimization, local SEO foundation, Google Analytics, and 30 days of post-launch support. No templates, no hidden fees — everything built specifically for your North York business and target customers.",
+    a: "Yes — we build fully custom websites for North York businesses, priced to your project scope. Every package includes custom design, mobile optimization, local SEO foundation, Google Analytics, and 30 days of post-launch support. No templates, no hidden fees — everything built specifically for your North York business and target customers.",
   },
   {
     q: "Can you help my North York clinic or healthcare practice get more patients?",
@@ -48,7 +48,7 @@ const faq = [
   },
   {
     q: "What does a North York website redesign cost?",
-    a: "Website redesign costs depend on your current platform, the number of pages to migrate, and your new feature requirements. We provide a free discovery call and detailed quote with no surprises. Most North York business website redesigns range from $1,499 to $5,999 depending on scope. Contact us to discuss your specific project.",
+    a: "Website redesign costs depend on your current platform, the number of pages to migrate, and your new feature requirements. Pricing depends on your project scope — we provide a free discovery call and a tailored quote with no surprises after a free consultation. Contact us to discuss your specific project.",
   },
   {
     q: "What's the difference between North York SEO and Google Ads?",
@@ -155,7 +155,7 @@ export default function NorthYorkPage() {
               <a href="tel:6476896069" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">(647) 689-6069</a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "North York SEO Difficulty: Only 9", "Page 1 Results in 30–45 Days"].map((t) => (
+              {["180+ Google Reviews", "North York SEO Difficulty: Only 9", "Results in 30–45 Days"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -307,7 +307,7 @@ export default function NorthYorkPage() {
             {[
               {
                 name: "Starter",
-                price: "$1,499",
+                price: "$299",
                 period: "one-time",
                 desc: "Perfect for North York small businesses launching or refreshing their digital presence.",
                 features: ["5-page custom website", "Mobile-first responsive design", "On-page SEO foundation", "Google Analytics + Search Console", "Contact form + click-to-call", "30 days post-launch support"],
@@ -316,8 +316,8 @@ export default function NorthYorkPage() {
               },
               {
                 name: "Growth",
-                price: "$3,499",
-                period: "one-time + $499/mo SEO",
+                price: "$599",
+                period: "Ongoing SEO available",
                 desc: "The complete package for North York businesses serious about ranking above their GTA competitors.",
                 features: ["10–15 page custom website", "North York neighbourhood SEO", "Google Business Profile optimization", "Local citation building (50+ sites)", "Monthly ranking reports", "Dedicated account manager"],
                 cta: "Get Growth Plan",

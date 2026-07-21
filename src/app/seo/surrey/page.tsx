@@ -8,14 +8,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Surrey BC 2026 | Rank Page 1 in 60 Days | 300%+ Traffic | 180+ Reviews | Free Audit | CWD",
+  title: { absolute: "SEO Surrey BC | SEO Company & Services | Canadian Web Designs" },
   description:
-    "Surrey BC SEO that outranks Vancouver — lower keyword difficulty, faster Page 1 results. Newton, Guildford, Cloverdale & South Surrey specialists. 180+ reviews. Avg 300%+ traffic growth. Free audit: (647) 689-6069.",
+    "Surrey BC SEO that outranks Vancouver — lower difficulty, faster page 1. Newton, Guildford & South Surrey. 180+ reviews. Free audit: (647) 689-6069.",
   alternates: { canonical: "/seo/surrey" },
   openGraph: {
-    title: "SEO Surrey BC 2026 | Rank Page 1 in 60 Days | 300%+ Traffic | 180+ Reviews | CWD",
+    title: "SEO Surrey BC | SEO Company & Services | Canadian Web Designs",
     description:
-      "Surrey SEO that reaches page 1 faster than Vancouver — lower keyword difficulty, avg 300%+ traffic growth, neighbourhood-specific strategies. 180+ reviews. Free audit: (647) 689-6069.",
+      "Surrey SEO that reaches page 1 faster than Vancouver — lower difficulty, avg 300%+ traffic growth. 180+ reviews. Free audit: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/surrey",
     images: [
       {
@@ -43,7 +43,7 @@ const faq = [
   },
   {
     q: "How much does Surrey SEO cost?",
-    a: "Our Surrey SEO packages start at $499/month, covering keyword research, on-page optimization, Google Business Profile management, local citation building across 50+ Canadian and BC-specific directories, and monthly ranking reports. Surrey's lower keyword difficulty means most packages deliver measurable results within 60–90 days. Contact us for a free Surrey SEO audit and custom quote.",
+    a: "Our Surrey SEO packages cover keyword research, on-page optimization, Google Business Profile management, local citation building across 50+ Canadian and BC-specific directories, and monthly ranking reports. Surrey's lower keyword difficulty means most packages deliver measurable results within 60–90 days. Contact us for a free Surrey SEO audit and custom quote.",
   },
   {
     q: "Can you rank my Surrey business in the Google local pack?",
@@ -55,7 +55,7 @@ const faq = [
   },
   {
     q: "Do you offer both web design and SEO in Surrey?",
-    a: "Yes — we offer both as a combined package or standalone services. Web design and SEO work best together: a site we build is already structured for Surrey SEO from day one. If you have an existing site, our standalone Surrey SEO packages start at $499/month. See our Surrey web design and SEO page at /locations/surrey for combined packages.",
+    a: "Yes — we offer both as a combined package or standalone services. Web design and SEO work best together: a site we build is already structured for Surrey SEO from day one. If you have an existing site, our standalone Surrey SEO packages are scoped to your goals. See our Surrey web design and SEO page at /locations/surrey for combined packages.",
   },
   {
     q: "What industries do you serve with Surrey SEO?",
@@ -389,8 +389,8 @@ export default function SeoSurreyPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter", price: "$499/mo", desc: "Local SEO + GBP + citations" },
-                  { name: "Growth", price: "$899/mo", desc: "Full SEO + content + link building" },
+                  { name: "Starter", price: "$199", desc: "Local SEO + GBP + citations" },
+                  { name: "Growth", price: "$399", desc: "Full SEO + content + link building" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">

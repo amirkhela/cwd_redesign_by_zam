@@ -7,14 +7,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Mobile Web Design Toronto | Fast, Responsive Sites | CWD" },
+  title: { absolute: "Mobile Web Design Toronto | Fast Responsive Sites | Canada Web Designs" },
   description:
-    "73% of Toronto searches happen on mobile — is your site ready? We build responsive sites that load under 2s and score A+ on Core Web Vitals. 180+ reviews. Free audit: (647) 689-6069.",
+    "73% of Toronto searches are on mobile — is your site ready? We build responsive sites that load under 2s and ace Core Web Vitals. 180+ reviews.",
   alternates: { canonical: "/mobile-web-design-in-toronto" },
   openGraph: {
-    title: "Mobile Web Design Toronto — Fast, Responsive Sites | Canadian Web Designs",
+    title: "Mobile Web Design Toronto | Fast Responsive Sites | Canada Web Designs",
     description:
-      "Mobile-first web design for Toronto — sites loading under 2s, Core Web Vitals A+, Page 1 rankings. 180+ five-star reviews. Free mobile audit: (647) 689-6069.",
+      "Mobile-first web design for Toronto — responsive sites loading under 2s with A+ Core Web Vitals. 180+ five-star reviews. Free mobile audit.",
     url: "https://canadianwebdesigns.ca/mobile-web-design-in-toronto",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Mobile Web Design Toronto" }],
   },
@@ -31,7 +31,7 @@ const faq = [
   },
   {
     q: "How much does mobile web design cost in Toronto?",
-    a: "Our responsive websites start at $1,499 for a complete custom build. All sites include full mobile optimization, Core Web Vitals compliance, fast loading speeds, and on-page SEO. There are no add-on fees for mobile — responsiveness is built into every project as standard.",
+    a: "Pricing depends on your project's scope and features — we provide a tailored quote after a free consultation. Every responsive site includes full mobile optimization, Core Web Vitals compliance, fast loading speeds, and on-page SEO. There are no add-on fees for mobile — responsiveness is built into every project as standard.",
   },
   {
     q: "Will a mobile-optimized website rank higher on Google in Toronto?",
@@ -148,7 +148,7 @@ export default function MobileWebDesignTorontoPage() {
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["Websites from $1,499", "Mobile-First by Default", "Core Web Vitals Certified", `${config.reviewCount}+ Reviews`].map((t) => (
+              {["Custom Websites", "Mobile-First by Default", "Core Web Vitals Certified", `${config.reviewCount}+ Reviews`].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -288,8 +288,8 @@ export default function MobileWebDesignTorontoPage() {
             {[
               {
                 name: "AI WebSuite",
-                price: "$40",
-                period: "/month",
+                price: "$299",
+                period: "",
                 desc: "Mobile-optimized AI-powered website. Fully managed, hosted, and updated monthly.",
                 features: ["Responsive on all devices", "Core Web Vitals compliant", "Click-to-call integration", "SEO-optimized from day one", "Hosting & SSL included", "Monthly content updates"],
                 cta: "Get Started",
@@ -297,8 +297,8 @@ export default function MobileWebDesignTorontoPage() {
               },
               {
                 name: "Custom WordPress",
-                price: "$1,499",
-                period: "one-time",
+                price: "$599",
+                period: "",
                 desc: "Full custom responsive WordPress site — mobile-first design, SEO-optimized for Toronto.",
                 features: ["Mobile-first responsive design", "Core Web Vitals certified", "Touch-optimized navigation", "Click-to-call + lead forms", "On-page SEO for Toronto", "3 rounds of revisions"],
                 cta: "Get a Quote",
@@ -306,8 +306,8 @@ export default function MobileWebDesignTorontoPage() {
               },
               {
                 name: "Mobile Redesign",
-                price: "From $799",
-                period: "one-time",
+                price: "$399",
+                period: "",
                 desc: "Existing site not mobile-friendly? We audit, redesign, and relaunch — protecting your current rankings.",
                 features: ["Mobile UX audit included", "Responsive rebuild/retrofit", "URL structure preserved", "Current SEO protected", "Core Web Vitals optimization", "Post-launch monitoring"],
                 cta: "Get a Quote",

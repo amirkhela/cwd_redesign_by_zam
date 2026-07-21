@@ -7,7 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "SEO Tips & Strategies for Canadian Businesses | CWD Blog",
+  title: { absolute: "SEO Tips & Strategies for Canadian Businesses | Canadian Website Design" },
   description: "Expert SEO guides for Canadian businesses — rank on Google, build local authority, and drive organic traffic that converts into paying customers. From Canada's top-rated SEO agency.",
   alternates: { canonical: "/blog/seo" },
   openGraph: {

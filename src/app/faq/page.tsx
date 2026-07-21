@@ -8,7 +8,7 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "Web Design & SEO FAQs | Pricing, Timelines & Real Answers | CWD",
+  title: { absolute: "Web Design & SEO FAQs Canada | Canadian Web Designs" },
   description: "How much does a website cost in Canada? How long does SEO take? Honest, no-fluff answers with real numbers from 180+ clients — pricing, timelines, what's included & more. Read before you decide.",
   alternates: { canonical: "/faq" },
 };

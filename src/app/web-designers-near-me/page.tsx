@@ -7,14 +7,14 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Designers Near Me | Custom Sites From $1,499 | CWD" },
+  title: { absolute: "Web Designers Near Me | Custom Website Design | Canadian Web Designs" },
   description:
-    "Find top-rated web designers near you — Canadian Web Designs serves Toronto, Vancouver, Calgary, Mississauga & 20+ cities. Custom sites from $1,499, SEO included. 180+ reviews. Free quote: (647) 689-6069.",
+    "Top-rated web designers serving Toronto, Vancouver, Calgary, Mississauga & 20+ Canadian cities. Custom sites with SEO included. 180+ five-star reviews.",
   alternates: { canonical: "/web-designers-near-me" },
   openGraph: {
-    title: "Web Designers Near Me — Custom Sites From $1,499 | Canadian Web Designs",
+    title: "Web Designers Near Me | Custom Website Design | Canadian Web Designs",
     description:
-      "Looking for web designers near you? Canadian Web Designs serves 20+ cities from Toronto to Vancouver. Custom sites from $1,499, SEO included. Free quote → (647) 689-6069.",
+      "Looking for web designers near you? We serve 20+ Canadian cities from Toronto to Vancouver — custom sites with SEO included. Free quote: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/web-designers-near-me",
   },
 };
@@ -44,7 +44,7 @@ const faqSchema = {
       name: "How much does a web designer near me cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Web design costs in Canada typically range from $1,499 for a small business site to $8,000+ for a full custom build with SEO and advanced features. Canadian Web Designs offers transparent pricing: websites from $1,499 (AI WebSuite), $3,499 (custom WordPress), and custom quotes for enterprise projects. All prices include SEO optimization.",
+        text: "Web design costs in Canada vary with the scope of your project — from a simple small business site to a full custom build with SEO and advanced features. Canadian Web Designs offers transparent pricing with options for every budget, and we provide a tailored quote after a free consultation. Every build includes SEO optimization.",
       },
     },
     {
@@ -173,7 +173,7 @@ export default function WebDesignersNearMePage() {
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["Websites from $1,499", "SEO Included", "No Lock-In Contracts", `${config.reviewCount}+ Reviews`].map((t) => (
+              {["Custom Websites", "SEO Included", "No Lock-In Contracts", `${config.reviewCount}+ Reviews`].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -221,7 +221,7 @@ export default function WebDesignersNearMePage() {
                 {[
                   { value: `${config.reviewCount}+`, label: "Five-star reviews" },
                   { value: "20+", label: "Canadian cities" },
-                  { value: "$1,499", label: "Starting price" },
+                  { value: "3–4wk", label: "Avg. launch time" },
                   { value: "2026", label: "Serving Canada since 2016" },
                 ].map((s) => (
                   <div key={s.label} className="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
@@ -341,8 +341,8 @@ export default function WebDesignersNearMePage() {
             {[
               {
                 name: "AI WebSuite",
-                price: "$40",
-                period: "/month",
+                price: "$299",
+                period: "",
                 desc: "For small businesses that need a professional online presence fast. AI-powered, fully managed.",
                 features: ["AI-built professional website", "Hosting & SSL included", "Monthly content updates", "SEO-optimized from day one", "Mobile-first design", "No setup fee"],
                 cta: "Get Started",
@@ -350,8 +350,8 @@ export default function WebDesignersNearMePage() {
               },
               {
                 name: "Custom WordPress",
-                price: "$1,499",
-                period: "one-time",
+                price: "$599",
+                period: "",
                 desc: "Full custom WordPress website — designed, built, and SEO-optimized for your local market.",
                 features: ["Custom design (no templates)", "On-page SEO for your city", "Google Analytics setup", "Contact forms + integrations", "Mobile & speed optimized", "3 rounds of revisions"],
                 cta: "Get a Quote",
@@ -359,8 +359,8 @@ export default function WebDesignersNearMePage() {
               },
               {
                 name: "Enterprise",
-                price: "$3,499+",
-                period: "one-time",
+                price: "Custom",
+                period: "",
                 desc: "WooCommerce stores, multi-location sites, custom functionality, and complex integrations.",
                 features: ["WooCommerce / eCommerce", "Multi-location SEO", "Custom post types & features", "CRM & booking integrations", "Advanced analytics setup", "Priority launch support"],
                 cta: "Get a Quote",
