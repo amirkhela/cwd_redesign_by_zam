@@ -117,6 +117,28 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Local SEO — sitewide links to the recovered /seo/[city] pages */}
+            <p className="text-xs font-bold text-white/70 uppercase tracking-wider mt-5 mb-2">Local SEO</p>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-0 text-sm">
+              {[
+                { s: "surrey", n: "SEO Surrey" },
+                { s: "victoria", n: "SEO Victoria" },
+                { s: "burnaby", n: "SEO Burnaby" },
+                { s: "halifax", n: "SEO Halifax" },
+                { s: "barrie", n: "SEO Barrie" },
+                { s: "kitchener", n: "SEO Kitchener" },
+              ].map((c) => (
+                <li key={c.s}>
+                  <Link
+                    href={`/seo/${c.s}`}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 py-1.5 block min-h-[40px] flex items-center"
+                  >
+                    {c.n}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

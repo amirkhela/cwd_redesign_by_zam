@@ -5,11 +5,14 @@ import { getAllPosts } from "@/lib/blog";
 const config = getConfig();
 const BASE_URL = `https://${config.domain}`;
 
+// Only cities whose /seo/[city] returns 200. The others still 301 to /locations
+// (see next.config.mjs), and a sitemap must list final 200 URLs only — declaring
+// redirects wastes crawl budget and sends mixed indexing signals. Verified live
+// 2026-07-22: these 12 serve 200; mississauga/brampton/north-york/ottawa/windsor/
+// richmond-hill/edmonton/vancouver/calgary/london still redirect and are excluded.
 const SEO_CITIES = [
-  "toronto", "mississauga", "brampton", "north-york", "burnaby", "victoria",
-  "surrey", "halifax", "oshawa", "ottawa", "barrie", "vaughan", "windsor",
-  "richmond-hill", "kitchener", "edmonton", "vancouver", "saskatoon",
-  "calgary", "montreal", "london", "ladner",
+  "toronto", "burnaby", "victoria", "surrey", "halifax", "oshawa",
+  "barrie", "vaughan", "kitchener", "saskatoon", "montreal", "ladner",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
