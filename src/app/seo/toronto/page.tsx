@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "SEO Toronto | SEO Company & Services | Canadian Web Designs" },
   description:
-    "Toronto SEO with proven results — neighbourhood strategy for Etobicoke, Scarborough & North York. 180+ reviews. Free audit → (647) 689-6069.",
+    "Toronto SEO with proven results — neighbourhood strategy for Etobicoke, Scarborough & North York. 200+ reviews. Free audit → (647) 689-6069.",
   alternates: { canonical: "/seo/toronto" },
   openGraph: {
     title: "SEO Toronto | SEO Company & Services | Canadian Web Designs",
     description:
-      "Toronto's trusted SEO agency — 180+ five-star reviews, proven rankings across every GTA neighbourhood. Free audit — (647) 689-6069.",
+      "Toronto's trusted SEO agency — 200+ five-star reviews, proven rankings across every GTA neighbourhood. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/toronto",
     images: [
       {
@@ -55,7 +55,7 @@ const faq = [
   },
   {
     q: "How is Canadian Web Designs different from other Toronto SEO agencies?",
-    a: "Three differences: we focus on rankings that drive revenue (not just impressions), we're transparent about what we're doing and why, and we back our work with a results guarantee. With 180+ five-star Google reviews and clients across every major Toronto neighbourhood and industry, our track record is publicly verifiable. We don't lock you into long contracts — we earn your business month after month.",
+    a: "Three differences: we focus on rankings that drive revenue (not just impressions), we're transparent about what we're doing and why, and we back our work with a results guarantee. With 200+ five-star Google reviews and clients across every major Toronto neighbourhood and industry, our track record is publicly verifiable. We don't lock you into long contracts — we earn your business month after month.",
   },
   {
     q: "Do you work with Toronto businesses in competitive industries like law and healthcare?",
@@ -102,7 +102,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "180",
+    reviewCount: String(config.reviewCount),
   },
 };
 
@@ -223,7 +223,7 @@ export default function SeoTorontoPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Custom-Quoted Packages", "No Long-Term Contracts"].map((t) => (
+              {["200+ Google Reviews", "Custom-Quoted Packages", "No Long-Term Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -273,7 +273,7 @@ export default function SeoTorontoPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "180+", label: "Five-Star Reviews" },
+                { value: "200+", label: "Five-Star Reviews" },
                 { value: "60–90", label: "Days to Page 1" },
                 { value: "300%+", label: "Avg Traffic Growth" },
                 { value: "100%", label: "Results Guaranteed" },
@@ -360,7 +360,7 @@ export default function SeoTorontoPage() {
                 <div className="space-y-4">
                   {[
                     "Custom-scoped packages — no bloated retainers, no busywork line items",
-                    "180+ five-star Google reviews — the most publicly verifiable track record in Toronto",
+                    "200+ five-star Google reviews — the most publicly verifiable track record in Toronto",
                     "No long-term contracts — we earn your business month after month with results",
                     "Monthly ranking reports showing exactly which keywords moved and by how much",
                     "300%+ average organic traffic growth within 12 months for Toronto clients",

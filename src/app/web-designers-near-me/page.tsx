@@ -9,7 +9,7 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Designers Near Me | Custom Website Design | Canadian Web Designs" },
   description:
-    "Top-rated web designers serving Toronto, Vancouver, Calgary, Mississauga & 20+ Canadian cities. Custom sites with SEO included. 180+ five-star reviews.",
+    "Top-rated web designers serving Toronto, Vancouver, Calgary, Mississauga & 20+ Canadian cities. Custom sites with SEO included. 200+ five-star reviews.",
   alternates: { canonical: "/web-designers-near-me" },
   openGraph: {
     title: "Web Designers Near Me | Custom Website Design | Canadian Web Designs",
@@ -239,7 +239,7 @@ export default function WebDesignersNearMePage() {
                   {[
                     "SEO-optimized from day one — not an add-on",
                     "City-specific keyword research for your local market",
-                    "180+ verified Canadian client reviews",
+                    "200+ verified Canadian client reviews",
                     "Transparent pricing — no hidden fees",
                     "No lock-in contracts — cancel anytime",
                     "Websites built to rank AND convert",

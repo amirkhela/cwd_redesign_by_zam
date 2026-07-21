@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs" },
   description:
-    "Vancouver's top-rated web design agency — Yaletown, Kitsilano & Metro Vancouver. Custom websites built to rank on Google and convert. 180+ reviews.",
+    "Vancouver's top-rated web design agency — Yaletown, Kitsilano & Metro Vancouver. Custom websites built to rank on Google and convert. 200+ reviews.",
   alternates: { canonical: "/locations/vancouver" },
   openGraph: {
     title: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs",
     description:
-      "BC's top-rated web design agency. Custom websites built to rank in Metro Vancouver and convert visitors into customers. 180+ five-star reviews.",
+      "BC's top-rated web design agency. Custom websites built to rank in Metro Vancouver and convert visitors into customers. 200+ five-star reviews.",
     url: "https://canadianwebdesigns.ca/locations/vancouver",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Vancouver BC — Canadian Web Designs" }],
   },
@@ -64,7 +64,7 @@ const faq = [
   },
   {
     q: "What makes Canadian Web Designs the best web design company in Vancouver?",
-    a: "We combine Vancouver market expertise, proven local SEO results, and 180+ five-star reviews to deliver websites that actually rank and convert. Unlike most Vancouver web agencies that use templates, we build every site from scratch — custom to your brand, industry, and Metro Vancouver audience. Our results guarantee means we keep working at no extra charge if your site doesn't perform within the agreed timeline.",
+    a: "We combine Vancouver market expertise, proven local SEO results, and 200+ five-star reviews to deliver websites that actually rank and convert. Unlike most Vancouver web agencies that use templates, we build every site from scratch — custom to your brand, industry, and Metro Vancouver audience. Our results guarantee means we keep working at no extra charge if your site doesn't perform within the agreed timeline.",
   },
   {
     q: "Do you offer affordable web design for Vancouver small businesses?",
@@ -113,7 +113,7 @@ const localBusinessSchema = {
     closes: "18:00",
   },
   priceRange: "$$",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "180" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
 };
 
 const services = [
@@ -168,7 +168,7 @@ export default function VancouverPage() {
               <a href="tel:6476896069" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">(647) 689-6069</a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Metro Vancouver 2.5M+ Consumer Market", "Results or We Keep Working"].map((t) => (
+              {["200+ Google Reviews", "Metro Vancouver 2.5M+ Consumer Market", "Results or We Keep Working"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -201,7 +201,7 @@ export default function VancouverPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: "180+", label: "Five-Star Reviews" }, { value: "2.5M+", label: "Metro Vancouver Consumers" }, { value: "90–180", label: "Days to Page 1 Rankings" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
+              {[{ value: "200+", label: "Five-Star Reviews" }, { value: "2.5M+", label: "Metro Vancouver Consumers" }, { value: "90–180", label: "Days to Page 1 Rankings" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>

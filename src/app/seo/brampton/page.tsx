@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "SEO Brampton | SEO Company & Services | Canada Website Design" },
   description:
-    "Brampton SEO that reaches page 1 faster than Toronto — Downtown, Bramalea & Castlemore specialists. 180+ reviews. Free audit — (647) 689-6069.",
+    "Brampton SEO that reaches page 1 faster than Toronto — Downtown, Bramalea & Castlemore specialists. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/brampton" },
   openGraph: {
     title: "SEO Brampton | SEO Company & Services | Canada Website Design",
     description:
-      "Expert SEO services in Brampton, ON. Get your Brampton business to page 1 of Google. 180+ five-star reviews. Free SEO audit — (647) 689-6069.",
+      "Expert SEO services in Brampton, ON. Get your Brampton business to page 1 of Google. 200+ five-star reviews. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/brampton",
     images: [
       {
@@ -101,7 +101,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "180",
+    reviewCount: String(config.reviewCount),
   },
 };
 
@@ -237,7 +237,7 @@ export default function SeoBramptonPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
+              {["200+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -287,7 +287,7 @@ export default function SeoBramptonPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "180+", label: "Five-Star Reviews" },
+                { value: "200+", label: "Five-Star Reviews" },
                 { value: "480/mo", label: "Brampton SEO Search Volume" },
                 { value: "Diff 22", label: "Keyword Difficulty" },
                 { value: "60–90", label: "Days to Page 1" },

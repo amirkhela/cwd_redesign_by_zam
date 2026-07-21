@@ -283,11 +283,11 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   },
   toronto: {
     title: "Web Design Toronto | Custom Sites That Rank | Canadian Website Design",
-    description: `Toronto web design agency — Yorkville, Etobicoke & Scarborough. Custom sites that rank, backed by 180+ five-star reviews. Free quote.`,
+    description: `Toronto web design agency — Yorkville, Etobicoke & Scarborough. Custom sites that rank, backed by 200+ five-star reviews. Free quote.`,
   },
   mississauga: {
     title: "Web Design Mississauga | Custom Sites That Convert | Canada Web Designs",
-    description: `Mississauga web design — Square One, Port Credit & Erin Mills. Custom sites that rank and convert, backed by 180+ five-star reviews. Free quote.`,
+    description: `Mississauga web design — Square One, Port Credit & Erin Mills. Custom sites that rank and convert, backed by 200+ five-star reviews. Free quote.`,
   },
   edmonton: {
     title: "Web Design Edmonton | Energy & Healthcare Experts | Canada Website Design",
@@ -303,7 +303,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   },
   ottawa: {
     title: "Web Design Ottawa | Bilingual EN/FR Sites | Canada Web Designs",
-    description: `Ottawa bilingual web design — Kanata, Glebe & ByWard Market. Custom EN/FR sites that rank, backed by 180+ five-star reviews. Free quote.`,
+    description: `Ottawa bilingual web design — Kanata, Glebe & ByWard Market. Custom EN/FR sites that rank, backed by 200+ five-star reviews. Free quote.`,
   },
   vaughan: {
     title: "Web Design Vaughan | Custom Sites That Convert | Canada Website Design",
@@ -335,7 +335,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   },
   vancouver: {
     title: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs",
-    description: `Vancouver web design — Yaletown, Kitsilano & Mount Pleasant. Custom sites that rank across Metro Vancouver, 180+ reviews. Free quote.`,
+    description: `Vancouver web design — Yaletown, Kitsilano & Mount Pleasant. Custom sites that rank across Metro Vancouver, 200+ reviews. Free quote.`,
   },
   surrey: {
     title: "Web Design Surrey BC | Custom Sites That Rank | Canada Website Design",

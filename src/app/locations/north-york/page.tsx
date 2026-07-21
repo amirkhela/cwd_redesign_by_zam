@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Design North York | Custom Websites That Rank | Canada Web Designs" },
   description:
-    "North York's top-rated web design agency — Willowdale, Sheppard & Bayview Village specialists. Custom websites built to rank on Google. 180+ reviews.",
+    "North York's top-rated web design agency — Willowdale, Sheppard & Bayview Village specialists. Custom websites built to rank on Google. 200+ reviews.",
   alternates: { canonical: "/locations/north-york" },
   openGraph: {
     title: "Web Design North York | Custom Websites That Rank | Canada Web Designs",
     description:
-      "Top-rated web design & SEO in North York. 180+ five-star reviews. Custom websites built to rank across Willowdale, Sheppard & Bayview Village.",
+      "Top-rated web design & SEO in North York. 200+ five-star reviews. Custom websites built to rank across Willowdale, Sheppard & Bayview Village.",
     url: "https://canadianwebdesigns.ca/locations/north-york",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design North York — Canadian Web Designs" }],
   },
@@ -100,7 +100,7 @@ const localBusinessSchema = {
     closes: "18:00",
   },
   priceRange: "$$",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "180" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
 };
 
 const services = [
@@ -155,7 +155,7 @@ export default function NorthYorkPage() {
               <a href="tel:6476896069" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass text-white font-semibold rounded-btn text-base hover:bg-white/15 transition-all duration-300">(647) 689-6069</a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "North York SEO Difficulty: Only 9", "Results in 30–45 Days"].map((t) => (
+              {["200+ Google Reviews", "North York SEO Difficulty: Only 9", "Results in 30–45 Days"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -188,7 +188,7 @@ export default function NorthYorkPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: "180+", label: "Five-Star Reviews" }, { value: "Diff 9", label: "North York SEO Difficulty" }, { value: "30–45", label: "Days to First Rankings" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
+              {[{ value: "200+", label: "Five-Star Reviews" }, { value: "Diff 9", label: "North York SEO Difficulty" }, { value: "30–45", label: "Days to First Rankings" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>

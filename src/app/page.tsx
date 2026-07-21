@@ -672,49 +672,10 @@ export default function HomePage() {
       </section>
 
       <BreadcrumbSchema items={[]} />
-
-      {/* LocalBusiness Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: config.businessName,
-            description: "Canada's top-rated web design agency offering custom websites, local SEO, ecommerce development, Google Ads, and digital marketing for businesses across Toronto and Canada.",
-            image: `https://${config.domain}/logo.png`,
-            "@id": `https://${config.domain}`,
-            url: `https://${config.domain}`,
-            telephone: config.phone,
-            priceRange: "$$",
-            address: Object.values(config.addresses).map((addr) => ({
-              "@type": "PostalAddress",
-              streetAddress: addr.street,
-              addressLocality: addr.city,
-              addressRegion: addr.province,
-              postalCode: addr.postalCode,
-              addressCountry: "CA",
-            })),
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              opens: "08:00",
-              closes: "18:00",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: config.rating,
-              reviewCount: config.reviewCount,
-              bestRating: 5,
-            },
-            sameAs: [
-              "https://www.facebook.com/canadianwebdesigns",
-              "https://www.instagram.com/canadianwebdesigns",
-              "https://www.linkedin.com/company/canadianwebdesigns",
-            ],
-          }),
-        }}
-      />
+      {/* LocalBusiness schema intentionally omitted here — the global schema in
+          layout.tsx (@id = homepage) is the single source of truth for the
+          business entity + aggregateRating. A second block here caused Google's
+          "Review has multiple aggregate ratings" error (4.9 vs 5.0 on one @id). */}
     </>
   );
 }

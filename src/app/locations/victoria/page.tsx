@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Victoria BC Web Design | SEO & Custom Sites | Canada Website Design" },
   description:
-    "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom websites built to rank on Google. 180+ reviews.",
+    "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom websites built to rank on Google. 200+ reviews.",
   alternates: { canonical: "/locations/victoria" },
   openGraph: {
     title: "Victoria BC Web Design | SEO & Custom Sites | Canada Website Design",
     description:
-      "Top-rated web design & SEO in Victoria BC. 180+ five-star reviews. Custom websites built to rank on Google across Greater Victoria.",
+      "Top-rated web design & SEO in Victoria BC. 200+ five-star reviews. Custom websites built to rank on Google across Greater Victoria.",
     url: "https://canadianwebdesigns.ca/locations/victoria",
     images: [
       {
@@ -98,7 +98,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "180",
+    reviewCount: String(config.reviewCount),
   },
 };
 
@@ -219,7 +219,7 @@ export default function VictoriaPage() {
 
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
               {[
-                { label: "180+ Google Reviews" },
+                { label: "200+ Google Reviews" },
                 { label: "Victoria SEO Difficulty as Low as 8" },
                 { label: "Results or We Keep Working" },
               ].map((t) => (
@@ -272,7 +272,7 @@ export default function VictoriaPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "180+", label: "Five-Star Reviews" },
+                { value: "200+", label: "Five-Star Reviews" },
                 { value: "Diff 8", label: "Victoria SEO Difficulty" },
                 { value: "30–60", label: "Days to First Rankings" },
                 { value: "100%", label: "Results Guaranteed" },

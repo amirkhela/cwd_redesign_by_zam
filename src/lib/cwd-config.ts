@@ -9,8 +9,8 @@ export const cwdConfig: ClientConfig = {
   teamSize: 25,
 
   // Reputation
-  rating: 5,
-  reviewCount: 180,
+  rating: 4.9,
+  reviewCount: 200,
 
   // Contact
   phone: "647-689-6069",

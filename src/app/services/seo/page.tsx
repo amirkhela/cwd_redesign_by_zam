@@ -7,11 +7,11 @@ const service = getConfig().services.find((s) => s.slug === "seo")!;
 
 export const metadata: Metadata = {
   title: { absolute: "SEO Services Canada | Local & National SEO | Canadian Web Designs" },
-  description: "Grow your organic traffic with Canada's trusted SEO team — technical audits, local targeting, content & link building. 180+ five-star reviews. Free SEO audit.",
+  description: "Grow your organic traffic with Canada's trusted SEO team — technical audits, local targeting, content & link building. 200+ five-star reviews. Free SEO audit.",
   alternates: { canonical: "/services/seo" },
   openGraph: {
     title: "SEO Services Canada | Local & National SEO | Canadian Web Designs",
-    description: "Climb Google and grow organic traffic with local & national SEO — audits, content & link building. 180+ five-star reviews. Free SEO audit.",
+    description: "Climb Google and grow organic traffic with local & national SEO — audits, content & link building. 200+ five-star reviews. Free SEO audit.",
     url: "https://canadianwebdesigns.ca/services/seo",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "SEO Services Canada 2026 — Canadian Web Designs" }],
   },

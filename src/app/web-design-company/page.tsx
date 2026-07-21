@@ -9,12 +9,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Design Company Canada | Trusted Firm | Canada Website Design" },
   description:
-    "Canada's trusted web design company — a 25+ person in-house team, 500+ sites built, 180+ five-star reviews. Custom sites with SEO. Free quote.",
+    "Canada's trusted web design company — a 25+ person in-house team, 500+ sites built, 200+ five-star reviews. Custom sites with SEO. Free quote.",
   alternates: { canonical: "/web-design-company" },
   openGraph: {
     title: "Web Design Company Canada | Trusted Firm | Canada Website Design",
     description:
-      "Canada's trusted web design company — a 25+ person in-house team, 500+ websites built, 180+ five-star reviews. Custom sites with SEO included.",
+      "Canada's trusted web design company — a 25+ person in-house team, 500+ websites built, 200+ five-star reviews. Custom sites with SEO included.",
     url: "https://canadianwebdesigns.ca/web-design-company",
   },
 };
@@ -28,7 +28,7 @@ const faqSchema = {
       name: "What makes a good web design company?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A good web design company has a real, verifiable track record — a portfolio of live client sites, hundreds of genuine reviews, and a team you can actually reach. Look for an in-house staff rather than subcontractors, a documented process from discovery to launch, SEO built into every build, and no long lock-in contracts. Canadian Web Designs has operated since 2016 with a 25+ person in-house team, 500+ websites delivered, and 180+ verified five-star reviews.",
+        text: "A good web design company has a real, verifiable track record — a portfolio of live client sites, hundreds of genuine reviews, and a team you can actually reach. Look for an in-house staff rather than subcontractors, a documented process from discovery to launch, SEO built into every build, and no long lock-in contracts. Canadian Web Designs has operated since 2016 with a 25+ person in-house team, 500+ websites delivered, and 200+ verified five-star reviews.",
       },
     },
     {
@@ -81,7 +81,7 @@ const lookFor = [
   },
   {
     title: "Genuine, independent reviews",
-    desc: "Testimonials on a company's own site are easy to fake. Look for reviews you can verify. We hold 180+ five-star reviews from real Canadian businesses.",
+    desc: "Testimonials on a company's own site are easy to fake. Look for reviews you can verify. We hold 200+ five-star reviews from real Canadian businesses.",
   },
   {
     title: "An in-house team, not subcontractors",
@@ -252,7 +252,7 @@ export default function WebDesignCompanyPage() {
                     "25+ person in-house team — no subcontractors",
                     "Canadian-owned and operated since 2016",
                     "500+ websites built and launched",
-                    "180+ verified five-star reviews",
+                    "200+ verified five-star reviews",
                     "No work outsourced overseas",
                     "Dedicated account manager on every project",
                     "Transparent process — you always know the status",
@@ -360,7 +360,7 @@ export default function WebDesignCompanyPage() {
                   "Team continuity — your project never depends on one person",
                   "Ongoing maintenance, hosting, and support after launch",
                   "Depth across every discipline your site needs",
-                  "180+ verifiable reviews and 500+ live client sites",
+                  "200+ verifiable reviews and 500+ live client sites",
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-white shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

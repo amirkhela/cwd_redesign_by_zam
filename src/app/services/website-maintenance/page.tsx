@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services/website-maintenance" },
   openGraph: {
     title: "Website Maintenance Canada | Secure & Updated | Canada Web Designs",
-    description: "Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. 180+ reviews. No lock-in. Free audit.",
+    description: "Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. 200+ reviews. No lock-in. Free audit.",
     url: "https://canadianwebdesigns.ca/services/website-maintenance",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada 2026 — Canadian Web Designs" }],
   },
@@ -100,7 +100,7 @@ export default function ServicePage() {
           <div className="bg-white rounded-2xl p-8 lg:p-12 border border-gray-100 shadow-sm">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
               {[
-                { label: "Sites actively maintained", value: "200+" },
+                { label: "Sites actively maintained", value: "180+" },
                 { label: "Avg. uptime guaranteed", value: "99.9%" },
                 { label: "Security incidents prevented", value: "1,200+" },
                 { label: "Years in business", value: "10+" },

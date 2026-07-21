@@ -7,11 +7,11 @@ const service = getConfig().services.find((s) => s.slug === "web-design-developm
 
 export const metadata: Metadata = {
   title: { absolute: "Web Design Services Canada | Custom Web Design | Canadian Website Design" },
-  description: "Custom, hand-coded web design — no templates, SEO built in, designed to convert visitors into clients. Trusted by 180+ five-star clients. Free quote.",
+  description: "Custom, hand-coded web design — no templates, SEO built in, designed to convert visitors into clients. Trusted by 200+ five-star clients. Free quote.",
   alternates: { canonical: "/services/web-design-development" },
   openGraph: {
     title: "Web Design Services Canada | Custom Web Design | Canadian Website Design",
-    description: "Custom websites — no templates, SEO built in, built to convert. Serving Toronto, Vancouver, Calgary & all of Canada. 180+ five-star reviews.",
+    description: "Custom websites — no templates, SEO built in, built to convert. Serving Toronto, Vancouver, Calgary & all of Canada. 200+ five-star reviews.",
     url: "https://canadianwebdesigns.ca/services/web-design-development",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
   },
@@ -49,7 +49,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "What makes Canadian Web Designs the best web design company in Toronto?",
-      acceptedAnswer: { "@type": "Answer", text: "We combine deep Toronto market knowledge, proven local SEO expertise, and 180+ five-star reviews to deliver websites that rank on Google and convert visitors into customers. Unlike agencies that use templates, we build every site from scratch — custom to your brand and industry. Our results guarantee means we keep working at no extra charge if your site doesn't perform." },
+      acceptedAnswer: { "@type": "Answer", text: "We combine deep Toronto market knowledge, proven local SEO expertise, and 200+ five-star reviews to deliver websites that rank on Google and convert visitors into customers. Unlike agencies that use templates, we build every site from scratch — custom to your brand and industry. Our results guarantee means we keep working at no extra charge if your site doesn't perform." },
     },
     {
       "@type": "Question",
@@ -64,7 +64,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "How do I choose the best web design company in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Look for three things: proven results (real rankings and traffic growth, not just pretty portfolios), transparent pricing (flat-rate quotes with no hidden fees), and strong reviews (180+ five-star Google reviews is a meaningful signal). Ask whether they build custom sites or use templates, and whether SEO is included or an add-on. Canadian Web Designs checks all of these boxes — and backs every project with a results guarantee." },
+      acceptedAnswer: { "@type": "Answer", text: "Look for three things: proven results (real rankings and traffic growth, not just pretty portfolios), transparent pricing (flat-rate quotes with no hidden fees), and strong reviews (200+ five-star Google reviews is a meaningful signal). Ask whether they build custom sites or use templates, and whether SEO is included or an add-on. Canadian Web Designs checks all of these boxes — and backs every project with a results guarantee." },
     },
   ],
 };

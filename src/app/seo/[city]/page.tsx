@@ -319,7 +319,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
       closes: "18:00",
     },
     priceRange: "$$",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "180" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
   };
 
   const services = [
@@ -398,7 +398,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "180+", label: "Five-Star Reviews" },
+                { value: "200+", label: "Five-Star Reviews" },
                 { value: data.population, label: `${data.name} Population` },
                 { value: data.difficulty, label: "Keyword Difficulty" },
                 { value: "60–120", label: "Days to Page 1" },

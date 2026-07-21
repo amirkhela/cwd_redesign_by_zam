@@ -7,12 +7,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 export const metadata: Metadata = {
   title: { absolute: "Web Design Toronto | Custom Websites That Rank | Canadian Website Design" },
   description:
-    "Toronto's top-rated web design agency — 180+ five-star reviews. Custom websites built to rank and convert, serving Etobicoke, Scarborough & Yorkville.",
+    "Toronto's top-rated web design agency — 200+ five-star reviews. Custom websites built to rank and convert, serving Etobicoke, Scarborough & Yorkville.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
     title: "Web Design Toronto | Custom Websites That Rank | Canadian Website Design",
     description:
-      "Toronto's top-rated web design agency. 180+ five-star reviews. Custom websites that rank on Google & win customers across the GTA.",
+      "Toronto's top-rated web design agency. 200+ five-star reviews. Custom websites that rank on Google & win customers across the GTA.",
     url: "https://canadianwebdesigns.ca/locations/toronto",
     images: [
       {
@@ -44,7 +44,7 @@ const faq = [
   },
   {
     q: "What makes Canadian Web Designs different from other Toronto web agencies?",
-    a: "Three things: results, transparency, and communication. Unlike agencies that hand you off to a junior account manager, you work directly with your developer throughout the project. We show you real ranking data, not vanity metrics. And we back every website with a results guarantee — if you don't see movement within our agreed timeline, we keep working at no charge. With 180+ five-star Google reviews, our track record speaks for itself.",
+    a: "Three things: results, transparency, and communication. Unlike agencies that hand you off to a junior account manager, you work directly with your developer throughout the project. We show you real ranking data, not vanity metrics. And we back every website with a results guarantee — if you don't see movement within our agreed timeline, we keep working at no charge. With 200+ five-star Google reviews, our track record speaks for itself.",
   },
   {
     q: "Do you build e-commerce websites for Toronto businesses?",
@@ -52,7 +52,7 @@ const faq = [
   },
   {
     q: "What is the best web design agency in Toronto?",
-    a: "Canadian Web Designs is consistently ranked as one of Toronto's top web design agencies based on Google reviews, client results, and search performance. With 180+ five-star reviews, a proven track record of ranking Toronto businesses on Google page 1, and fully custom (no-template) websites, we stand out from the hundreds of Toronto agencies that use cookie-cutter approaches. See our portfolio and reviews at canadianwebdesigns.ca.",
+    a: "Canadian Web Designs is consistently ranked as one of Toronto's top web design agencies based on Google reviews, client results, and search performance. With 200+ five-star reviews, a proven track record of ranking Toronto businesses on Google page 1, and fully custom (no-template) websites, we stand out from the hundreds of Toronto agencies that use cookie-cutter approaches. See our portfolio and reviews at canadianwebdesigns.ca.",
   },
   {
     q: "How much does a web design company in Toronto charge?",
@@ -64,7 +64,7 @@ const faq = [
   },
   {
     q: "How do I find a reliable web design company in Toronto?",
-    a: "Look for three things: verifiable reviews, real portfolio case studies with measurable results, and transparent pricing. Avoid agencies that can't show you ranking data for their own clients. Canadian Web Designs has 180+ Google reviews, a public portfolio at canadianwebdesigns.ca/portfolio, transparent flat-rate pricing, and a results guarantee — if you don't see movement, we keep working at no charge.",
+    a: "Look for three things: verifiable reviews, real portfolio case studies with measurable results, and transparent pricing. Avoid agencies that can't show you ranking data for their own clients. Canadian Web Designs has 200+ Google reviews, a public portfolio at canadianwebdesigns.ca/portfolio, transparent flat-rate pricing, and a results guarantee — if you don't see movement, we keep working at no charge.",
   },
   {
     q: "What should I expect from a Toronto web design agency?",
@@ -127,7 +127,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "180",
+    reviewCount: "200",
     bestRating: "5",
     worstRating: "1",
   },
@@ -226,7 +226,7 @@ export default function TorontoPage() {
                 style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
               />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Toronto, ON — 180+ Five-Star Google Reviews
+                Toronto, ON — 200+ Five-Star Google Reviews
               </span>
             </div>
 
@@ -270,7 +270,7 @@ export default function TorontoPage() {
             {/* Stats bar */}
             <div className="hero-fade-up-4 flex flex-wrap gap-8">
               {[
-                { value: "180+", label: "5-Star Reviews" },
+                { value: "200+", label: "5-Star Reviews" },
                 { value: "500+", label: "Toronto Websites Built" },
                 { value: "11", label: "Years Serving Toronto" },
                 { value: "100%", label: "Results Guaranteed" },

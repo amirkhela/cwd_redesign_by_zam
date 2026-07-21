@@ -319,12 +319,10 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
               priceCurrency: "CAD",
               seller: { "@type": "Organization", name: config.businessName },
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: config.rating,
-              reviewCount: config.reviewCount,
-              bestRating: 5,
-            },
+            // No aggregateRating here: Google rejects review ratings on @type
+            // "Service" ("Invalid object type for field"). The business rating
+            // lives on the global LocalBusiness schema (layout.tsx) instead.
+            provider: { "@type": "Organization", name: config.businessName, url: `https://${config.domain}` },
           }),
         }}
       />

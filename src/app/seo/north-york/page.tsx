@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "SEO North York | SEO Company & Services | Canada Web Designs" },
   description:
-    "North York SEO that beats downtown Toronto agencies — lower difficulty, same buyer intent. 180+ reviews. Free audit — (647) 689-6069.",
+    "North York SEO that beats downtown Toronto agencies — lower difficulty, same buyer intent. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/north-york" },
   openGraph: {
     title: "SEO North York | SEO Company & Services | Canada Web Designs",
     description:
-      "Expert SEO services in North York, ON. Rank on Google page 1 for North York searches. 180+ five-star reviews. Free audit — (647) 689-6069.",
+      "Expert SEO services in North York, ON. Rank on Google page 1 for North York searches. 200+ five-star reviews. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/north-york",
     images: [
       {
@@ -88,7 +88,7 @@ const localBusinessSchema = {
     closes: "18:00",
   },
   priceRange: "$$",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "180" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
 };
 
 const services = [
@@ -185,7 +185,7 @@ export default function SeoNorthYorkPage() {
               </a>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["180+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
+              {["200+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -223,7 +223,7 @@ export default function SeoNorthYorkPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "180+", label: "Five-Star Reviews" },
+                { value: "200+", label: "Five-Star Reviews" },
                 { value: "700+", label: "Monthly SEO Searches" },
                 { value: "Low-Med", label: "Keyword Difficulty" },
                 { value: "60–90", label: "Days to Page 1" },

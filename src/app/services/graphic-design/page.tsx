@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services/graphic-design" },
   openGraph: {
     title: "Graphic Design Canada | Logos & Branding | Canadian Web Designs",
-    description: "Custom logos, full brand identity packages & print. 72-hr rush available. 500+ Canadian businesses served. 180+ five-star reviews. Free quote.",
+    description: "Custom logos, full brand identity packages & print. 72-hr rush available. 500+ Canadian businesses served. 200+ five-star reviews. Free quote.",
     url: "https://canadianwebdesigns.ca/services/graphic-design",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Graphic Design Canada 2026 — Canadian Web Designs" }],
   },

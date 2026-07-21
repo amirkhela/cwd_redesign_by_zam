@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "About Canadian Web Designs | Canada's Web Design Agency Since 2014" },
   description:
-    "From a 2014 startup to a trusted Canadian web design agency — 500+ custom websites, 180+ five-star reviews, clients from Vancouver to Halifax.",
+    "From a 2014 startup to a trusted Canadian web design agency — 500+ custom websites, 200+ five-star reviews, clients from Vancouver to Halifax.",
   alternates: { canonical: "/our-story" },
   openGraph: {
     title: "About Canadian Web Designs | Canada's Web Design Agency Since 2014",
     description:
-      "How a 2014 idea grew into a trusted Canadian web design agency — 500+ websites, 180+ five-star reviews, clients from Vancouver to Halifax.",
+      "How a 2014 idea grew into a trusted Canadian web design agency — 500+ websites, 200+ five-star reviews, clients from Vancouver to Halifax.",
     url: "https://canadianwebdesigns.ca/our-story",
     images: [{ url: "/images/amir-portrait.png", width: 1200, height: 630, alt: "Our Story — Canadian Web Designs" }],
   },

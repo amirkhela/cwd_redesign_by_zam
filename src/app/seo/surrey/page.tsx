@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "SEO Surrey BC | SEO Company & Services | Canadian Web Designs" },
   description:
-    "Surrey BC SEO that outranks Vancouver — lower difficulty, faster page 1. Newton, Guildford & South Surrey. 180+ reviews. Free audit: (647) 689-6069.",
+    "Surrey BC SEO that outranks Vancouver — lower difficulty, faster page 1. Newton, Guildford & South Surrey. 200+ reviews. Free audit: (647) 689-6069.",
   alternates: { canonical: "/seo/surrey" },
   openGraph: {
     title: "SEO Surrey BC | SEO Company & Services | Canadian Web Designs",
     description:
-      "Surrey SEO that reaches page 1 faster than Vancouver — lower difficulty, avg 300%+ traffic growth. 180+ reviews. Free audit: (647) 689-6069.",
+      "Surrey SEO that reaches page 1 faster than Vancouver — lower difficulty, avg 300%+ traffic growth. 200+ reviews. Free audit: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/surrey",
     images: [
       {
@@ -102,7 +102,7 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "180",
+    reviewCount: String(config.reviewCount),
   },
 };
 
@@ -272,7 +272,7 @@ export default function SeoSurreyPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "180+", label: "Five-Star Reviews" },
+                { value: "200+", label: "Five-Star Reviews" },
                 { value: "600K+", label: "Surrey Population" },
                 { value: "Low-Med", label: "Keyword Difficulty" },
                 { value: "60–90", label: "Days to Page 1" },

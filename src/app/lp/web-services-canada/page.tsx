@@ -257,7 +257,7 @@ export default function LandingPage() {
 
               <p className="hero-fade-up-2 text-lg text-white/80 leading-relaxed max-w-lg mb-8">
                 Serving Toronto, Brampton, Winnipeg, Vancouver, Calgary &amp; across Canada.{" "}
-                <strong className="text-white">180+ five-star Google reviews.</strong>{" "}
+                <strong className="text-white">200+ five-star Google reviews.</strong>{" "}
                 Custom websites — no templates, no lock-in contracts.
               </p>
 
@@ -286,7 +286,7 @@ export default function LandingPage() {
                     </svg>
                   ))}
                 </div>
-                <span className="text-white/60 text-sm">180+ Five-Star Reviews on Google</span>
+                <span className="text-white/60 text-sm">200+ Five-Star Reviews on Google</span>
               </div>
             </div>
 
@@ -303,7 +303,7 @@ export default function LandingPage() {
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-14">
             {[
-              { num: "180+", label: "5-Star Google Reviews" },
+              { num: "200+", label: "5-Star Google Reviews" },
               { num: "500+", label: "Websites Launched" },
               { num: "10+",  label: "Years in Business" },
               { num: "24+",  label: "Cities Across Canada" },

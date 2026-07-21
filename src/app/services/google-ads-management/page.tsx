@@ -9,11 +9,11 @@ const config = getConfig();
 
 export const metadata: Metadata = {
   title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Website Design" },
-  description: "Certified Google Ads management, no contracts — our experts cut wasted spend and lower your cost per lead. 180+ five-star reviews. Free audit.",
+  description: "Certified Google Ads management, no contracts — our experts cut wasted spend and lower your cost per lead. 200+ five-star reviews. Free audit.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
     title: "Google Ads Management Canada | PPC That Converts | Canadian Website Design",
-    description: "Certified Google Ads management, no contracts — cut wasted spend and lower cost per lead. 180+ five-star reviews. Free audit.",
+    description: "Certified Google Ads management, no contracts — cut wasted spend and lower cost per lead. 200+ five-star reviews. Free audit.",
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],
   },
@@ -71,7 +71,7 @@ const serviceSchema = {
     name: "Canadian Web Designs",
     url: "https://canadianwebdesigns.ca",
     telephone: "(647) 689-6069",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "180" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
   },
   areaServed: [
     { "@type": "City", name: "Toronto" },
@@ -201,7 +201,7 @@ export default function GoogleAdsManagementPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: "30–50%", label: "Avg. Cost-Per-Lead Reduction" }, { value: "24–48h", label: "Time to First Leads" }, { value: "180+", label: "Five-Star Reviews" }, { value: "100%", label: "Account Ownership — Always" }].map((s) => (
+              {[{ value: "30–50%", label: "Avg. Cost-Per-Lead Reduction" }, { value: "24–48h", label: "Time to First Leads" }, { value: "200+", label: "Five-Star Reviews" }, { value: "100%", label: "Account Ownership — Always" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>
