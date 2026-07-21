@@ -201,15 +201,25 @@ const nextConfig = {
 
       // ============================================
       // Old /seo/:city/ pages → /locations/:city
-      // (toronto excluded — has a dedicated /seo/toronto page)
+      //
+      // RESTORED 2026-07-21: burnaby, victoria, surrey, halifax, barrie and
+      // kitchener removed from this redirect. Search Console showed these six
+      // held ~245,000 impressions across 520 SEO-intent queries before the
+      // redirect sent them to /locations/:city, which sells web design, not SEO.
+      // Google dropped the SEO vertical entirely: 163,749 impressions/mo → 48.
+      // All six already have real, differentiated pages (dedicated routes for
+      // burnaby/victoria/surrey, src/app/seo/[city] for the rest), so this is
+      // purely a routing fix — no content work required.
+      //
+      // (toronto was already excluded — it has a dedicated /seo/toronto page)
       // ============================================
       {
-        source: "/seo/:city(brampton|burnaby|victoria|surrey|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|barrie|london|kitchener|winnipeg|halifax|richmond-hill|markham|oakville|windsor|kingston|sudbury)",
+        source: "/seo/:city(brampton|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|london|winnipeg|richmond-hill|markham|oakville|windsor|kingston|sudbury)",
         destination: "/locations/:city",
         permanent: true,
       },
       {
-        source: "/seo/:city(brampton|burnaby|victoria|surrey|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|barrie|london|kitchener|winnipeg|halifax|richmond-hill|markham|oakville|windsor|kingston|sudbury)/",
+        source: "/seo/:city(brampton|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|london|winnipeg|richmond-hill|markham|oakville|windsor|kingston|sudbury)/",
         destination: "/locations/:city",
         permanent: true,
       },

@@ -15,11 +15,19 @@ export default function robots(): MetadataRoute.Robots {
           "/detail/",
         ],
       },
+      // Live retrieval agents: they fetch a page because a user asked a question,
+      // then cite and link back. Allowed so the site can surface in AI answers.
+      { userAgent: "ChatGPT-User",  allow: "/" },
+      { userAgent: "OAI-SearchBot", allow: "/" },
+      { userAgent: "Claude-Web",    allow: "/" },
+      { userAgent: "Claude-User",   allow: "/" },
+      { userAgent: "PerplexityBot", allow: "/" },
+      { userAgent: "Google-Extended", allow: "/" },
+      // Bulk training crawlers stay blocked.
       { userAgent: "GPTBot",       disallow: ["/"] },
-      { userAgent: "ChatGPT-User", disallow: ["/"] },
       { userAgent: "CCBot",        disallow: ["/"] },
       { userAgent: "anthropic-ai", disallow: ["/"] },
-      { userAgent: "Claude-Web",   disallow: ["/"] },
+      { userAgent: "ClaudeBot",    disallow: ["/"] },
     ],
     sitemap: `https://${config.domain}/sitemap.xml`,
   };
