@@ -14,6 +14,8 @@ export interface BlogPost {
   category: string;
   featuredImage?: string;
   content?: string;
+  updated?: string;
+  faq?: { q: string; a: string }[];
 }
 
 const postsDirectory = path.join(process.cwd(), "content/blog");
@@ -54,8 +56,17 @@ function getAliasMap(): Map<string, string> {
 }
 
 function sanitizeHtml(raw: string): string {
-  // Remove injected <script> tags (WordPress malware / SEO spam)
-  return raw.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script\s*>/gi, "");
+  return raw
+    // Remove injected <script> tags (WordPress malware / SEO spam)
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script\s*>/gi, "")
+    // Drop <figure> blocks whose image is hosted on the dead WordPress domain
+    // (old.canadianwebdesigns.ca returns 404) so nothing renders broken.
+    .replace(
+      /<figure\b[^>]*>\s*(?:<a\b[^>]*>\s*)?<img\b[^>]*old\.canadianwebdesigns\.ca[^>]*>(?:\s*<\/a>)?(?:\s*<figcaption[^>]*>[\s\S]*?<\/figcaption>)?\s*<\/figure>/gi,
+      ""
+    )
+    // Drop bare <img> tags pointing at the dead WordPress domain.
+    .replace(/<img\b[^>]*old\.canadianwebdesigns\.ca[^>]*>/gi, "");
 }
 
 // Coerce author to a string. Some older posts store author as an object
@@ -133,6 +144,8 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     category: data.category,
     featuredImage,
     content,
+    updated: typeof data.updated === "string" ? data.updated : undefined,
+    faq: Array.isArray(data.faq) ? data.faq : undefined,
   };
 }
 

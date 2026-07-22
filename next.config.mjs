@@ -277,6 +277,12 @@ const nextConfig = {
         destination: "/blog/why-every-business-needs-a-mobile-first-website",
         permanent: true,
       },
+      // Blog consolidations (duplicate/cannibalizing posts → canonical post)
+      // WordPress-cost cluster → /blog/how-much-does-a-wordpress-website-cost
+      { source: "/blog/how-much-does-a-wordpress-website-cost-in-canada",                    destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
+      { source: "/how-much-does-a-wordpress-website-cost-in-canada",                         destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
+      { source: "/blog/understanding-basic-wordpress-website-costs-in-toronto-and-the-gta",  destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
+      { source: "/understanding-basic-wordpress-website-costs-in-toronto-and-the-gta",       destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
       // Slug-shortened blog posts (old WP slug → current slug)
       { source: "/why-you-need-seo-in-your-business-in-2021",   destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
       { source: "/why-you-need-seo-in-your-business-in-2021/",  destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
