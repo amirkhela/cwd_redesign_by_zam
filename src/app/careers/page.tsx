@@ -8,12 +8,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Careers at Canadian Web Designs | Web Design & SEO Jobs in Canada" },
   description:
-    "Join Canada's #1 rated web design agency in 2026 — remote roles in web design, SEO, development & project management. Competitive pay, flexible hours, real impact. Apply now: (647) 689-6069.",
+    "Join Canada's top-rated web design agency in 2026 — remote roles in web design, SEO, development & project management. Competitive pay, flexible hours, real impact. Apply now: (647) 689-6069.",
   alternates: { canonical: "/careers" },
   openGraph: {
     title: "Careers at Canadian Web Designs | Web Design & SEO Jobs in Canada",
     description:
-      "Remote web design, SEO & development roles at Canada's #1 rated digital agency. Competitive pay, flexible hours, real Canadian client impact. View open positions and apply today.",
+      "Remote web design, SEO & development roles at Canada's top-rated digital agency. Competitive pay, flexible hours, real Canadian client impact. View open positions and apply today.",
     url: "https://canadianwebdesigns.ca/careers",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Careers at Canadian Web Designs" }],
   },

@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Contact Canadian Web Designs | Free Web Design Quote in Canada" },
   description:
-    "Get a free, no-obligation web design or SEO quote — most clients hear back within 2 hours. Canada's #1 rated agency. 200+ five-star reviews. Call (647) 689-6069 or fill out the form. 24+ cities.",
+    "Get a free, no-obligation web design or SEO quote — most clients hear back within 2 hours. Canada's top-rated agency. 200+ five-star reviews. Call (647) 689-6069 or fill out the form. 24+ cities.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Canadian Web Designs | Free Web Design Quote in Canada",
     description:
-      "Get a free web design or SEO quote from Canada's #1 rated agency — most clients hear back within 2 hours. 200+ reviews. No commitment. Call (647) 689-6069 or send the form.",
+      "Get a free web design or SEO quote from Canada's top-rated agency — most clients hear back within 2 hours. 200+ reviews. No commitment. Call (647) 689-6069 or send the form.",
     url: "https://canadianwebdesigns.ca/contact",
     images: [{ url: "/images/contact-right.png", width: 1200, height: 630, alt: "Contact Canadian Web Designs" }],
   },

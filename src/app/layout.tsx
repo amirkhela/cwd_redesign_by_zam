@@ -20,11 +20,11 @@ const config = getConfig();
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${config.domain}`),
   title: {
-    default: `Web Design Canada | #1 Rated | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    default: `Web Design Canada | Custom Websites | Canadian Web Designs`,
     template: `%s | ${config.businessName}`,
   },
   description:
-    `Canada's #1 rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Free quote — (647) 689-6069.`,
+    `Canada's trusted web design agency — ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Free quote — (647) 689-6069.`,
   authors: [{ name: config.businessName }],
   alternates: { canonical: "/" },
   openGraph: {
@@ -126,50 +126,11 @@ const localBusinessSchema = {
     bestRating: "5",
     worstRating: "1",
   },
-  review: [
-    {
-      "@type": "Review",
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: "Sharanya K." },
-      datePublished: "2025-09-12",
-      reviewBody: "Canadian Web Designs completely transformed our Toronto clinic's online presence. Our patient inquiries increased by over 300% within the first month. They understood exactly what a Toronto healthcare business needs to rank on Google.",
-    },
-    {
-      "@type": "Review",
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: "Shawn M." },
-      datePublished: "2025-08-03",
-      reviewBody: "Best web design agency in Toronto! They built our e-commerce site from scratch and the SEO work has us ranking on the first page of Google for our core Toronto keywords. Highly recommend to any Toronto business.",
-    },
-    {
-      "@type": "Review",
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: "Dorota W." },
-      datePublished: "2025-06-18",
-      reviewBody: "I was blown away by the quality of work and speed of delivery. Canadian Web Designs understood our brand perfectly and created a website that truly represents who we are. Great value for a Toronto web design agency.",
-    },
-    {
-      "@type": "Review",
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: "Matthew R." },
-      datePublished: "2025-05-22",
-      reviewBody: "Working with Canadian Web Designs was a fantastic experience. Their attention to detail is unmatched. Our Toronto contracting business now ranks on page 1 for our target keywords — exactly what we needed.",
-    },
-    {
-      "@type": "Review",
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: "Mai Abu-Taleb" },
-      datePublished: "2025-01-10",
-      reviewBody: "Zam did an excellent job building my website in a short period of time. Everything was completed exactly as requested, with great attention to detail and clear communication throughout. I highly recommend their web design services!",
-    },
-    {
-      "@type": "Review",
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: "K." },
-      datePublished: "2024-11-30",
-      reviewBody: "We chose Canadian Web Designs because they were easily contactable. The website not only met our needs fully, it blew me away the first time I saw the finished project. Well above expectations. The logo design was top notch.",
-    },
-  ],
+  // NOTE: No hardcoded review[] here. Google disallows self-serving reviews
+  // (a business marking up reviews about itself) on LocalBusiness — they don't
+  // earn star rich results and are a manual-action risk. The aggregateRating
+  // above should be backed by the real reviews rendered on-page (GoogleReviews
+  // component) and the Google Business Profile.
   founder: { "@type": "Person", name: "Amir Khela" },
   foundingDate: "2014",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 25 },
