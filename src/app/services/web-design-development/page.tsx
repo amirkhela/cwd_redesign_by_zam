@@ -6,11 +6,11 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Services Canada | Custom Web Design | Canadian Website Design" },
+  title: { absolute: "Web Design & Development Company | Canadian Website Design" },
   description: "Custom, hand-coded web design — no templates, SEO built in, designed to convert visitors into clients. Trusted by 200+ five-star clients. Free quote.",
   alternates: { canonical: "/services/web-design-development" },
   openGraph: {
-    title: "Web Design Services Canada | Custom Web Design | Canadian Website Design",
+    title: "Web Design & Development Company | Canadian Website Design",
     description: "Custom websites — no templates, SEO built in, built to convert. Serving Toronto, Vancouver, Calgary & all of Canada. 200+ five-star reviews.",
     url: "https://canadianwebdesigns.ca/services/web-design-development",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],

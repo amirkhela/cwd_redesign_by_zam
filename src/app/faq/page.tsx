@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   title: { absolute: "Web Design & SEO FAQs Canada | Canadian Web Designs" },
   description: "How much does a website cost in Canada? How long does SEO take? Honest, no-fluff answers with real numbers from 180+ clients — pricing, timelines, what's included & more. Read before you decide.",
   alternates: { canonical: "/faq" },
+  openGraph: {
+    title: "Web Design & SEO FAQs Canada | Canadian Web Designs",
+    description: "Honest, no-fluff answers on web design & SEO — pricing, timelines, and what's included, from a Canadian agency with 200+ five-star reviews.",
+    url: "https://canadianwebdesigns.ca/faq",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design & SEO FAQs Canada | Canadian Web Designs",
+    description: "Honest answers on web design & SEO pricing, timelines & scope — from a Canadian agency with 200+ reviews.",
+  },
 };
 
 const faqs = [

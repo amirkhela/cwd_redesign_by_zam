@@ -13,12 +13,12 @@ const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Canada | Custom Websites That Convert | Canadian Web Designs" },
+  title: { absolute: "Web Design Canada | Custom Websites | Canadian Web Designs" },
   description:
     `Custom, high-converting websites that turn visitors into clients. Rated 5 stars by ${config.reviewCount}+ clients across Toronto, Vancouver & Canada. Free quote.`,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design Canada | Custom Websites That Convert | Canadian Web Designs",
+    title: "Web Design Canada | Custom Websites | Canadian Web Designs",
     description: `Custom, high-converting websites trusted by ${config.reviewCount}+ five-star clients across Canada. Get your free quote today.`,
     url: `https://${config.domain}`,
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],

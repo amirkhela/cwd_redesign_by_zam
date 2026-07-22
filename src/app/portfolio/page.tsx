@@ -10,6 +10,17 @@ export const metadata: Metadata = {
   description:
     "See 19+ custom Canadian websites for restaurants, clinics, contractors & retailers with real Google rankings and conversion data. Free quote.",
   alternates: { canonical: "/portfolio" },
+  openGraph: {
+    title: "Web Design Portfolio Canada | Real Results | Canadian Website Design",
+    description: "See 19+ custom Canadian websites for restaurants, clinics, contractors & retailers with real Google rankings and conversion data.",
+    url: "https://canadianwebdesigns.ca/portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design Portfolio Canada | Real Results | Canadian Website Design",
+    description: "19+ custom Canadian websites with real Google rankings and conversion data.",
+  },
 };
 
 const stats = [

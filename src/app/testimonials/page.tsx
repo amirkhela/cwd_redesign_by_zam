@@ -9,9 +9,20 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: "200+ Five-Star Reviews | Real Client Results Across Canada | Canadian Web Designs",
+  title: { absolute: "200+ Five-Star Reviews | Client Results | Canadian Web Designs" },
   description: `Read ${config.reviewCount}+ verified five-star Google reviews from real ${config.businessName} clients — 300% traffic growth, page 1 rankings, and doubled leads for restaurants, clinics, contractors & e-commerce stores across Canada. See what results look like.`,
   alternates: { canonical: "/testimonials" },
+  openGraph: {
+    title: "200+ Five-Star Reviews | Real Client Results Across Canada | Canadian Web Designs",
+    description: `Read ${config.reviewCount}+ verified five-star Google reviews from real ${config.businessName} clients — traffic growth, page 1 rankings, and more leads across Canada.`,
+    url: "https://canadianwebdesigns.ca/testimonials",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "200+ Five-Star Reviews | Canadian Web Designs",
+    description: `${config.reviewCount}+ verified five-star reviews from real clients across Canada.`,
+  },
 };
 
 const testimonials = [

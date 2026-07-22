@@ -363,10 +363,16 @@ export function generateMetadata({ params }: { params: { city: string } }): Meta
   const cityData = getCityBySlug(params.city);
   const cityName = cityData?.name ?? params.city;
   const custom = cityMeta[params.city];
+  const title = custom?.title ?? `Web Design ${cityName} | Custom Sites That Rank | Canadian Web Designs`;
+  const description = custom?.description ?? `Custom web design & SEO in ${cityName} — sites built to rank and convert. ${config.reviewCount}+ five-star reviews. Free quote: ${config.phone}.`;
+  const url = `https://${config.domain}/locations/${params.city}`;
   return {
-    title: { absolute: custom?.title ?? `Web Design ${cityName} | Custom Sites That Rank | Canadian Web Designs` },
-    description: custom?.description ?? `Custom web design & SEO in ${cityName} — sites built to rank and convert. ${config.reviewCount}+ five-star reviews. Free quote: ${config.phone}.`,
+    title: { absolute: title },
+    description,
     alternates: { canonical: `/locations/${params.city}` },
+    // Page-specific OG/Twitter so social shares show the city page, not the homepage.
+    openGraph: { title, description, url, type: "website" },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
