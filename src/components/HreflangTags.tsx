@@ -1,17 +1,20 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { getConfig } from "@/lib/client-config";
+import { hreflangEntries } from "@/lib/i18n";
 
-const config = getConfig();
-
+/**
+ * Renders hreflang alternate links for the current page. Rendered once in the
+ * root layout, so it covers every page. EN-only (en-CA + x-default) until the
+ * French site launches — see src/lib/i18n.ts (FR_ENABLED) to flip it on.
+ */
 export default function HreflangTags() {
   const pathname = usePathname();
-  const url = `https://${config.domain}${pathname}`;
   return (
     <>
-      <link rel="alternate" hrefLang="en-CA" href={url} />
-      <link rel="alternate" hrefLang="x-default" href={url} />
+      {hreflangEntries(pathname).map((e) => (
+        <link key={e.hrefLang} rel="alternate" hrefLang={e.hrefLang} href={e.href} />
+      ))}
     </>
   );
 }
