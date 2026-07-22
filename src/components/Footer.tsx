@@ -128,6 +128,17 @@ export default function Footer() {
                 { s: "halifax", n: "SEO Halifax" },
                 { s: "barrie", n: "SEO Barrie" },
                 { s: "kitchener", n: "SEO Kitchener" },
+                // Un-shadowed 2026-07-23 — these carried the largest historical
+                // impression volume of any /seo pages; they need sitewide links.
+                { s: "calgary", n: "SEO Calgary" },
+                { s: "ottawa", n: "SEO Ottawa" },
+                { s: "mississauga", n: "SEO Mississauga" },
+                { s: "brampton", n: "SEO Brampton" },
+                { s: "vancouver", n: "SEO Vancouver" },
+                { s: "north-york", n: "SEO North York" },
+                { s: "edmonton", n: "SEO Edmonton" },
+                { s: "london", n: "SEO London" },
+                { s: "windsor", n: "SEO Windsor" },
               ].map((c) => (
                 <li key={c.s}>
                   <Link

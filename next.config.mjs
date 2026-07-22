@@ -212,14 +212,27 @@ const nextConfig = {
       // purely a routing fix — no content work required.
       //
       // (toronto was already excluded — it has a dedicated /seo/toronto page)
+      //
+      // RESTORED 2026-07-23 (second pass): the 2026-07-21 fix restored six
+      // cities but missed NINE more that also have real, rendering pages and
+      // were still being shadowed by this redirect:
+      //   dedicated routes  — brampton, mississauga, north-york
+      //   /seo/[city] map   — calgary, vancouver, ottawa, edmonton, london, windsor
+      // Year-ago 90-day impressions on these URLs: calgary 45,698 · ottawa
+      // 42,656 · mississauga 23,056 · brampton 13,125 · north-york 4,333.
+      // They now render instead of 301'ing to /locations/:city (web design).
+      //
+      // Only cities with NO page may remain below. Before adding one back,
+      // confirm there is no src/app/seo/<city>/page.tsx AND the city is not a
+      // key in the `cities` map inside src/app/seo/[city]/page.tsx.
       // ============================================
       {
-        source: "/seo/:city(brampton|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|london|winnipeg|richmond-hill|markham|oakville|windsor|kingston|sudbury)",
+        source: "/seo/:city(hamilton|winnipeg|richmond-hill|markham|oakville|kingston|sudbury)",
         destination: "/locations/:city",
         permanent: true,
       },
       {
-        source: "/seo/:city(brampton|mississauga|calgary|vancouver|ottawa|edmonton|hamilton|north-york|london|winnipeg|richmond-hill|markham|oakville|windsor|kingston|sudbury)/",
+        source: "/seo/:city(hamilton|winnipeg|richmond-hill|markham|oakville|kingston|sudbury)/",
         destination: "/locations/:city",
         permanent: true,
       },

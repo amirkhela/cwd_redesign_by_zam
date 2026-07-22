@@ -10,9 +10,14 @@ const BASE_URL = `https://${config.domain}`;
 // redirects wastes crawl budget and sends mixed indexing signals. Verified live
 // 2026-07-22: these 12 serve 200; mississauga/brampton/north-york/ottawa/windsor/
 // richmond-hill/edmonton/vancouver/calgary/london still redirect and are excluded.
+// Only cities whose /seo/<city> URL returns 200 belong here — a sitemap must
+// never list a redirecting URL. Expanded 2026-07-23 with the nine cities
+// un-shadowed in next.config.mjs (they render real pages).
 const SEO_CITIES = [
   "toronto", "burnaby", "victoria", "surrey", "halifax", "oshawa",
   "barrie", "vaughan", "kitchener", "saskatoon", "montreal", "ladner",
+  "brampton", "mississauga", "north-york",
+  "calgary", "vancouver", "ottawa", "edmonton", "london", "windsor",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
