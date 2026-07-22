@@ -98,9 +98,9 @@ featuredImage: "/blog/posts/Best-Photo-Editing-in-Canada.png"
 <h3 class="wp-block-heading" id="h-related-articles">Related Reading</h3>
 
 <ul class="wp-block-list">
-<li><a href="/blog/best-graphic-design-service-canada">Best Graphic Design Service in Canada</a></li>
+<li><a href="/services/graphic-design">Our Graphic Design Services</a></li>
 <li><a href="/blog/best-web-design-canada">Best Web Design in Canada</a></li>
 <li><a href="/blog/importance-of-regular-website-backups">Why Regular Website Backups Matter</a></li>
 <li><a href="/blog/local-seo-benefits-2021">How Local SEO Benefits Your Business</a></li>
-<li><a href="/blog/integrated-marketing-tools">Integrated Marketing Tools</a></li>
+<li><a href="/services/seo">SEO Services for Canadian Businesses</a></li>
 </ul>
