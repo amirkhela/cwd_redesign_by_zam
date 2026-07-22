@@ -283,6 +283,11 @@ const nextConfig = {
       { source: "/how-much-does-a-wordpress-website-cost-in-canada",                         destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
       { source: "/blog/understanding-basic-wordpress-website-costs-in-toronto-and-the-gta",  destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
       { source: "/understanding-basic-wordpress-website-costs-in-toronto-and-the-gta",       destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
+      // Maintenance-cost cluster → /blog/how-much-does-website-maintenance-really-cost
+      { source: "/blog/understanding-website-maintenance-costs-in-toronto-a-comprehensive-guide", destination: "/blog/how-much-does-website-maintenance-really-cost", permanent: true },
+      { source: "/understanding-website-maintenance-costs-in-toronto-a-comprehensive-guide",      destination: "/blog/how-much-does-website-maintenance-really-cost", permanent: true },
+      { source: "/blog/understanding-website-maintenance-costs-in-toronto",                       destination: "/blog/how-much-does-website-maintenance-really-cost", permanent: true },
+      { source: "/understanding-website-maintenance-costs-in-toronto",                            destination: "/blog/how-much-does-website-maintenance-really-cost", permanent: true },
       // Slug-shortened blog posts (old WP slug → current slug)
       { source: "/why-you-need-seo-in-your-business-in-2021",   destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
       { source: "/why-you-need-seo-in-your-business-in-2021/",  destination: "/blog/why-you-need-seo-in-your-business",          permanent: true },
