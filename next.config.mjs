@@ -349,6 +349,24 @@ const nextConfig = {
       { source: "/integrated-marketing-tools", destination: "/services/seo", permanent: true },
       { source: "/integrated-marketing-tools/", destination: "/services/seo", permanent: true },
 
+      // ============================================
+      // Blog posts cannibalizing a live money page (2026-07-23)
+      // Each duplicated the topic of an existing service/location page while
+      // ranking far below it. NOTE: web-designers-near-me,
+      // ecommerce-website-design-toronto and mobile-web-design-in-toronto are
+      // ALSO real top-level routes — only the /blog/ prefix may be redirected
+      // for those three, or the root URL would redirect to itself.
+      // ============================================
+      { source: "/blog/canadian-web-designs-in-brampton", destination: "/locations/brampton", permanent: true },
+      { source: "/canadian-web-designs-in-brampton", destination: "/locations/brampton", permanent: true },
+      { source: "/canadian-web-designs-in-brampton/", destination: "/locations/brampton", permanent: true },
+      { source: "/blog/top-5-web-design-companies-in-toronto", destination: "/web-design-company", permanent: true },
+      { source: "/top-5-web-design-companies-in-toronto", destination: "/web-design-company", permanent: true },
+      { source: "/top-5-web-design-companies-in-toronto/", destination: "/web-design-company", permanent: true },
+      { source: "/blog/web-designers-near-me", destination: "/web-designers-near-me", permanent: true },
+      { source: "/blog/ecommerce-website-design-toronto", destination: "/ecommerce-website-design-toronto", permanent: true },
+      { source: "/blog/mobile-web-design-in-toronto", destination: "/mobile-web-design-in-toronto", permanent: true },
+
       // Blog consolidations (duplicate/cannibalizing posts → canonical post)
       // WordPress-cost cluster → /blog/how-much-does-a-wordpress-website-cost
       { source: "/blog/how-much-does-a-wordpress-website-cost-in-canada",                    destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
