@@ -493,11 +493,13 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
             <Link href="/locations/toronto" className="px-4 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>Web Design Toronto ↗</Link>
             {[
               { name: "SEO Toronto", slug: "toronto" },
-              { name: "SEO Mississauga", slug: "mississauga" },
-              { name: "SEO Brampton", slug: "brampton" },
-              { name: "SEO North York", slug: "north-york" },
+              { name: "SEO Surrey", slug: "surrey" },
               { name: "SEO Burnaby", slug: "burnaby" },
-            ].map((c) => (
+              { name: "SEO Victoria", slug: "victoria" },
+              { name: "SEO Halifax", slug: "halifax" },
+              { name: "SEO Kitchener", slug: "kitchener" },
+              { name: "SEO Barrie", slug: "barrie" },
+            ].filter((c) => c.slug !== city).map((c) => (
               <Link key={c.slug} href={`/seo/${c.slug}`} className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">{c.name}</Link>
             ))}
           </div>

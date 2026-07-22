@@ -468,11 +468,11 @@ export default function SeoSurreyPage() {
               Web Design Surrey ↗
             </Link>
             {[
-              { name: "SEO Vancouver", slug: "vancouver" },
               { name: "SEO Burnaby", slug: "burnaby" },
               { name: "SEO Victoria", slug: "victoria" },
-              { name: "SEO Calgary", slug: "calgary" },
+              { name: "SEO Ladner", slug: "ladner" },
               { name: "SEO Toronto", slug: "toronto" },
+              { name: "SEO Halifax", slug: "halifax" },
             ].map((c) => (
               <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">

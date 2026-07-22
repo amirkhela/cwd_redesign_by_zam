@@ -160,17 +160,17 @@ export default function ServicePage() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { name: "SEO Toronto", slug: "toronto" },
-              { name: "SEO Mississauga", slug: "mississauga" },
-              { name: "SEO Brampton", slug: "brampton" },
-              { name: "SEO North York", slug: "north-york" },
-              { name: "SEO Ottawa", slug: "ottawa" },
-              { name: "SEO Vancouver", slug: "vancouver" },
-              { name: "SEO Burnaby", slug: "burnaby" },
               { name: "SEO Surrey", slug: "surrey" },
-              { name: "SEO Calgary", slug: "calgary" },
-              { name: "SEO Edmonton", slug: "edmonton" },
+              { name: "SEO Burnaby", slug: "burnaby" },
+              { name: "SEO Victoria", slug: "victoria" },
               { name: "SEO Halifax", slug: "halifax" },
+              { name: "SEO Barrie", slug: "barrie" },
               { name: "SEO Kitchener", slug: "kitchener" },
+              { name: "SEO Oshawa", slug: "oshawa" },
+              { name: "SEO Vaughan", slug: "vaughan" },
+              { name: "SEO Saskatoon", slug: "saskatoon" },
+              { name: "SEO Montreal", slug: "montreal" },
+              { name: "SEO Ladner", slug: "ladner" },
             ].map((c) => (
               <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">

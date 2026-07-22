@@ -474,9 +474,9 @@ export default function SeoVictoriaPage() {
             {[
               { name: "SEO Burnaby", slug: "burnaby" },
               { name: "SEO Surrey", slug: "surrey" },
-              { name: "SEO Vancouver", slug: "vancouver" },
-              { name: "SEO Calgary", slug: "calgary" },
-              { name: "SEO Winnipeg", slug: "winnipeg" },
+              { name: "SEO Ladner", slug: "ladner" },
+              { name: "SEO Toronto", slug: "toronto" },
+              { name: "SEO Halifax", slug: "halifax" },
             ].map((c) => (
               <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">

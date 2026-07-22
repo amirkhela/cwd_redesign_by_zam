@@ -567,12 +567,12 @@ export default function SeoTorontoPage() {
               Web Design Toronto ↗
             </Link>
             {[
-              { name: "SEO Mississauga", slug: "mississauga" },
-              { name: "SEO Brampton", slug: "brampton" },
-              { name: "SEO North York", slug: "north-york" },
+              { name: "SEO Vaughan", slug: "vaughan" },
+              { name: "SEO Oshawa", slug: "oshawa" },
+              { name: "SEO Barrie", slug: "barrie" },
+              { name: "SEO Kitchener", slug: "kitchener" },
               { name: "SEO Halifax", slug: "halifax" },
-              { name: "SEO Calgary", slug: "calgary" },
-              { name: "SEO Ottawa", slug: "ottawa" },
+              { name: "SEO Burnaby", slug: "burnaby" },
             ].map((c) => (
               <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
