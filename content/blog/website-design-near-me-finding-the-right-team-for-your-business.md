@@ -84,7 +84,7 @@ featuredImage: "/blog/posts/3-1.png"
 <p>Ready to grow your business online? Contact our <strong>web design team</strong> today for a free consultation.</p>
 
 <ul class="wp-block-list">
-<li><strong>Phone:</strong> (647) 955-5289 | (647) 492-5513</li>
+<li><strong>Phone:</strong> <a href="tel:647-689-6069">(647) 689-6069</a></li>
 
 <li><strong>Email:</strong> <a href="mailto:amir@canadianwebdesigns.ca">amir@canadianwebdesigns.ca</a></li>
 
