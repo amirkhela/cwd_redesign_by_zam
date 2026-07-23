@@ -129,5 +129,5 @@ featuredImage: "/blog/posts/Canadian-Web-Design-Unique-Trends-.png"
 
 <h2 class="wp-block-heading" id="h-build-an-exceptional-web-design-this-year"><strong>Build an exceptional web design this year!</strong></h2>
 
-<p>These web design trends are waiting for you! Make a stunning online presence now. Get in touch with Canadian Web Designs; call us at <a href="tel:" data-type="tel" data-id="tel:">647-689-6069</a> or send an email to<a href="mail:to" data-type="URL" data-id="mail:to"> sales@canadianwebsitedesigns.ca</a>.</p>
+<p>These web design trends are waiting for you! Make a stunning online presence now. Get in touch with Canadian Web Designs; call us at <a href="tel:647-689-6069">647-689-6069</a> or send an email to<a href="mail:to" data-type="URL" data-id="mail:to"> sales@canadianwebdesigns.ca</a>.</p>
 

@@ -73,6 +73,6 @@ featuredImage: "/blog/posts/DIGITAL-MARKETING.jpg"
 
 <p>Start improving your entrepreneurial journey with Canadian Web Designs. Our digital marketing services in Toronto have helped various business owners, professionals, agencies locally and internationally. With the satisfactory result, we have retained 95% loyal clients availing different marketing packages.</p>
 
-<p>So, do you want to know more to become more competitive? Hit us up to talk with our digital marketing experts. Get your phone and dial <a href="tel:" data-type="tel" data-id="tel:">647-492-5513</a> to call us or send your email at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> for further inquiries.</p>
+<p>So, do you want to know more to become more competitive? Hit us up to talk with our digital marketing experts. Get your phone and dial <a href="tel:647-689-6069">647-689-6069</a> to call us or send your email at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> for further inquiries.</p>
 
 

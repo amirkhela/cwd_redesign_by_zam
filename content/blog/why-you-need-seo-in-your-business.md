@@ -220,5 +220,5 @@ featuredImage: "/blog/posts/local-seo-business-1.jpg"
 
 <h2 class="wp-block-heading" id="h-work-with-the-best-seo-team-in-toronto"><strong>Work with the best SEO team in Toronto</strong></h2>
 
-<p>Level up your digital footprint to expand your brand awareness on online platforms. Our professional web designers and developers are ready to discuss your concept. Call Canadian Web Designs at&nbsp;<a href="tel:to">647-492-5513</a>&nbsp;or email us at&nbsp;<a href="mailto:sales@canadianwebsitedesigns.ca">sales@canadianwebsitedesigns.ca</a>&nbsp;to get your free quote. You can also visit our website&nbsp;<a href="https://canadianwebdesigns.ca/get-in-touch/">get-in-touch us page.</a></p>
+<p>Level up your digital footprint to expand your brand awareness on online platforms. Our professional web designers and developers are ready to discuss your concept. Call Canadian Web Designs at&nbsp;<a href="tel:to">647-689-6069</a>&nbsp;or email us at&nbsp;<a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a>&nbsp;to get your free quote. You can also visit our website&nbsp;<a href="https://canadianwebdesigns.ca/get-in-touch/">get-in-touch us page.</a></p>
 

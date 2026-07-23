@@ -183,5 +183,5 @@ https://youtu.be/9lodvr77J8k
 
 <h2 class="wp-block-heading" id="h-build-connections-through-social-media-with-canadian-web-designs"><strong>Build connections through social media with Canadian Web Designs</strong></h2>
 
-<p>Talk to our professional digital manager now. Give us a call at 647-689-6069 or send an email at <a href="mailto:sales@canadianwebdesigns.ca">amir@canadianwebedsigns.ca </a>to get your free consultations. You can also leave your inquiry by filling up the form on our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
+<p>Talk to our professional digital manager now. Give us a call at 647-689-6069 or send an email at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca </a>to get your free consultations. You can also leave your inquiry by filling up the form on our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
 

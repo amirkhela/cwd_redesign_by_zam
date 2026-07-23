@@ -109,6 +109,6 @@ featuredImage: "/blog/posts/Brand-speak.jpg"
 
 <h2 class="wp-block-heading" id="h-strengthen-your-brand-authority-today"><strong>Strengthen your brand authority today</strong></h2>
 
-<p style="font-size:22px">Talk to our professional marketing team now. Give us a call at <a href="tel:" data-type="tel" data-id="tel:">647-492-5513</a> or send an email at <a href="mailto:amir@canadianwebsitedesigns.ca">amir@canadianwebsitedesigns.ca</a> to get your free quotations. You can also leave your inquiry by filling up the form on our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
+<p style="font-size:22px">Talk to our professional marketing team now. Give us a call at <a href="tel:647-689-6069">647-689-6069</a> or send an email at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to get your free quotations. You can also leave your inquiry by filling up the form on our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
 
 

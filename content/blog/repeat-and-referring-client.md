@@ -41,5 +41,5 @@ featuredImage: "/blog/posts/sebastian-herrmann-NbtIDoFKGO8-unsplash-1-1.jpg"
 
 <h2 class="wp-block-heading" id="h-gain-countless-customers-today"><strong>Gain countless customers today</strong></h2>
 
-<p>Talk to our professional digital manager now. Give us a call at <a href="tel:" data-type="tel" data-id="tel:">647-492-5513</a> or send an email at <a href="mailto:amir@canadianwebedsigns.ca">amir@canadianwebedsigns.ca</a> to get your free quotations. You can also leave your inquiry by filling up the form in our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
+<p>Talk to our professional digital manager now. Give us a call at <a href="tel:647-689-6069">647-689-6069</a> or send an email at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to get your free quotations. You can also leave your inquiry by filling up the form in our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
 

@@ -83,7 +83,7 @@ featuredImage: "/blog/posts/why-do-you-need-PPC_.jpg"
 
 <h2 class="wp-block-heading" id="h-increase-your-leads-partner-with-canadian-web-designs"><strong>Increase your leads, partner with Canadian Web Designs</strong></h2>
 
-<p>Talk to our Google ad specialist now. If you’re ready to start your PPC and want to know more, give us a call at <a href="tel:" data-type="tel" data-id="tel:">647-492-5513</a> or send an email at <a href="mailto:amir@canadianwebedsigns.ca">amir@canadianwebedsigns.ca</a> to get your free consultations. You can also leave your inquiry by filling up the form on our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
+<p>Talk to our Google ad specialist now. If you’re ready to start your PPC and want to know more, give us a call at <a href="tel:647-689-6069">647-689-6069</a> or send an email at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to get your free consultations. You can also leave your inquiry by filling up the form on our website <a href="https://canadianwebdesigns.ca/get-in-touch/">contact page</a>.</p>
 
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://youtu.be/cOTMWqwUXPU

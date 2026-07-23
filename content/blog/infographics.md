@@ -147,4 +147,4 @@ featuredImage: "/blog/posts/1.jpg"
 
 <p>Our graphic design team produces infographics, business cards and promotional material for clients across Canada and abroad. Because the work varies so much by scope, we quote <a href="/services/graphic-design">graphic design</a> per project rather than selling a fixed package — send us the content and we'll price it.</p>
 
-<p>Call <a href="tel:+16474925513">647-492-5513</a>, email <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a>, or <a href="/contact">get in touch here</a>. Our office is at 202-5 Cherrycrest Drive, <a href="https://maps.app.goo.gl/NHA39UAcjiUQfjaD9" rel="noopener">Brampton, ON</a> L6P 3W4.</p>
+<p>Call <a href="tel:647-689-6069">647-689-6069</a>, email <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a>, or <a href="/contact">get in touch here</a>. Our office is at 202-5 Cherrycrest Drive, <a href="https://maps.app.goo.gl/NHA39UAcjiUQfjaD9" rel="noopener">Brampton, ON</a> L6P 3W4.</p>

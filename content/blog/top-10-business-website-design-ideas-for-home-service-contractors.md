@@ -77,7 +77,7 @@ featuredImage: "/blog/posts/clint-patterson-knxuAKpRoxs-unsplash.jpg"
 
 <h3 class="wp-block-heading" id="h-website-design-and-development-in-calgary-alberta"><a href="https://canadianwebdesigns.ca/web-design-and-development-calgary/">Website Design and Development in Calgary</a>, Alberta</h3>
 
-<p>Get ready to level up your home services business online trademark. No matter how big or small an organization is, we can build it for you. We create stunning website designs and development in <a href="https://www.calgary.ca/home.html">Calgary,</a> Alberta, and all over the world. Your competitors are going digital nowadays, start growing your home service business today! Call <a href="https://maps.app.goo.gl/rwxf9sjTnyvNcHBQ7">Canadian Web Designs</a> at <strong>647-492-5513</strong> or send an email to <a href="mailto:amir@canadianwebsitedesigns.ca">amir@canadianwebsitedesigns.ca</a> to <a href="https://canadianwebdesigns.ca/get-in-touch/">get your free quote</a>.</p>
+<p>Get ready to level up your home services business online trademark. No matter how big or small an organization is, we can build it for you. We create stunning website designs and development in <a href="https://www.calgary.ca/home.html">Calgary,</a> Alberta, and all over the world. Your competitors are going digital nowadays, start growing your home service business today! Call <a href="https://maps.app.goo.gl/rwxf9sjTnyvNcHBQ7">Canadian Web Designs</a> at <strong>647-689-6069</strong> or send an email to <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to <a href="https://canadianwebdesigns.ca/get-in-touch/">get your free quote</a>.</p>
 
 <h2 class="wp-block-heading">Frequently Asked Questions (FAQs) for Your Website</h2>
 

@@ -79,7 +79,7 @@ featuredImage: "/blog/posts/alexander-shatov-mr4JG4SYOF8-unsplash.jpg"
 
 <p>Because marketing is continuously changing and expanding, we're constantly re-evaluating our products, features, marketing channels, and more to help you build your business.</p>
 
-<p>Level up your digital footprint to expand your brand awareness on online platforms. Our professional web designers and developers are ready to discuss your concept. Call Canadian Web Designs at <a href="tel:to">647-492-5513</a> or email us at <a href="mailto:sales@canadianwebsitedesigns.ca">sales@canadianwebsitedesigns.ca</a> to get your free quote. You can also visit our website <a href="https://canadianwebdesigns.ca/get-in-touch/">get-in-touch us page.</a></p>
+<p>Level up your digital footprint to expand your brand awareness on online platforms. Our professional web designers and developers are ready to discuss your concept. Call Canadian Web Designs at <a href="tel:to">647-689-6069</a> or email us at <a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to get your free quote. You can also visit our website <a href="https://canadianwebdesigns.ca/get-in-touch/">get-in-touch us page.</a></p>
 </div>
 
 <div class="wp-block-column" style="flex-basis:33.33%">
