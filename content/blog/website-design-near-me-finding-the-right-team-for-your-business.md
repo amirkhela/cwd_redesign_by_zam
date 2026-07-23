@@ -16,7 +16,7 @@ faq:
     a: "We build with SEO best practices — optimized headings, structured data, and local SEO elements — and offer ongoing SEO support so your site keeps ranking for relevant searches after launch."
   - q: "Can you redesign an existing website?"
     a: "Yes. We regularly take over outdated sites, improve the design, fix functionality issues, and optimize for SEO to lift traffic and conversions without starting from zero."
-featuredImage: "/blog/posts/3-1.png"
+featuredImage: "/blog/posts/website-design-near-me.png"
 ---
 
 <p>Finding a reliable website design team near you is essential for growing your business online. At <strong>Canadian Web Designs</strong>, we specialize in creating professional, mobile-friendly, and SEO-optimized websites for small businesses in <strong>Toronto, Mississauga, and surrounding areas</strong>. Whether you're launching a new website or revamping an existing one, our local experts are here to help your brand shine.</p>

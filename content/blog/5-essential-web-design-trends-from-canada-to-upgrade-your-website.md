@@ -7,7 +7,7 @@ author: "Amir Khela"
 description: "5 web design trends Canadian businesses are using to win in 2026 — with real examples and practical upgrade tips. See which ones fit your site."
 keywords: ["web design trends canada", "web design trends 2026", "website upgrade tips"]
 category: "Web Design"
-featuredImage: "/blog/posts/pexels-asphotography-106344-scaled.webp"
+featuredImage: "/blog/posts/canadian-web-design-trends.webp"
 ---
 
 <figure class="wp-block-image size-large"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2025/10/pexels-asphotography-106344-1024x684.webp" alt="Web Design Trends" class="wp-image-14419"/></figure>

@@ -16,7 +16,7 @@ faq:
     a: "The typical stages are initial consultation and discovery, planning and strategy, design concepts and revisions, content integration, development and testing, launch, and post-launch support. A collaborative agency keeps you involved at every stage rather than disappearing until delivery."
   - q: "Do web design companies offer maintenance after launch?"
     a: "The good ones do. Ongoing maintenance covers security patches, updates, content changes, and technical support — ask about maintenance packages before signing, because a site with no post-launch care degrades quickly. Ours start at $99/month."
-featuredImage: "/blog/posts/mobile-web-design-toronto1.jpg"
+featuredImage: "/blog/posts/choosing-web-design-company-toronto.jpg"
 ---
 
 <p>In today's digital landscape, your website is often the first impression your business makes. For businesses in the bustling Greater Toronto Area (GTA), a professional and effective website is no longer a luxury – it's a necessity. Whether you're a startup in Mississauga, an established enterprise in Toronto, or a growing business anywhere in between, partnering with the right <strong>web design company in Toronto</strong> is crucial for online success.</p>

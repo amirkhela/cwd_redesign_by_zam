@@ -14,7 +14,7 @@ faq:
     a: "A lead generation page collects contact information through a form, usually in exchange for something of value. A click-through page skips the form and instead warms up the visitor before sending them to a checkout or signup page — it's about persuasion, not data collection."
   - q: "What makes a landing page convert well?"
     a: "A clear headline, a single focused call to action, minimal distractions (no navigation menu, no unrelated links), fast load times, and trust signals like real testimonials or reviews. The common failure mode is trying to do too much on one page instead of committing to a single goal."
-featuredImage: "/blog/posts/landingpage-e1675884446462.png"
+featuredImage: "/blog/posts/what-is-a-landing-page.png"
 ---
 
 <h2 class="wp-block-heading" id="h-what-is-a-landing-page-and-how-it-works">What Is a Landing Page and How It Works</h2>

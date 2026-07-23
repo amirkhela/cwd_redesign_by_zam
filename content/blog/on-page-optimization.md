@@ -14,7 +14,7 @@ faq:
     a: "On-page SEO is what you do on your own pages (content, structure, technical setup). Off-page SEO is what happens elsewhere — mainly backlinks and mentions that build your site's authority. Both matter; on-page is where you start."
   - q: "How long does on-page SEO take to work?"
     a: "On-page changes can be crawled within days, but ranking improvements typically show over a few weeks to a few months depending on competition. It's foundational — nothing else in SEO works well without it."
-featuredImage: "/blog/posts/Win-With-On-page-Optimization-1.png"
+featuredImage: "/blog/posts/on-page-seo-optimization.png"
 ---
 
 <p><strong>Quick answer:</strong> on-page SEO is everything you optimize on a page itself — title, headings, content, internal links, images, URL and speed — to help it rank higher on Google. It's the part of SEO you fully control, and it's where every ranking strategy should start.</p>

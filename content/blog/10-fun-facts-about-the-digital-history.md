@@ -16,7 +16,7 @@ faq:
     a: "Ray Tomlinson chose the @ symbol in 1971 while building the first networked email system for ARPANET. He needed a character that would never appear in a person's name to separate the username from the destination computer, and @ fit perfectly."
   - q: "How many people use the internet today?"
     a: "As of 2026, more than 6.1 billion people use the internet worldwide — about 74% of the global population. Asia accounts for roughly 58-59% of all internet users."
-featuredImage: "/blog/posts/featured.png"
+featuredImage: "/blog/posts/digital-history-fun-facts.png"
 ---
 
 <p><strong>Quick answer:</strong> the internet was born as ARPANET in the late 1960s, the World Wide Web arrived in 1989, and today more than 6 billion people are online. In between, an email symbol, a $125 million buyout and one very early online transaction shaped the digital world we now build websites for.</p>

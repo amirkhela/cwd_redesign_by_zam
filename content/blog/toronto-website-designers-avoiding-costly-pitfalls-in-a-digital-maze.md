@@ -16,7 +16,7 @@ faq:
     a: "Prioritize reliable uptime, fast server response, strong security, scalability as you grow, and responsive support. Cheap hosting is the most common root cause of a chronically slow site."
   - q: "How do I know if a Toronto web design firm is good?"
     a: "Check their live portfolio (not just screenshots), read client reviews for specifics about communication and results, confirm they build SEO and mobile responsiveness in from the start, and make sure they offer post-launch maintenance."
-featuredImage: "/blog/posts/unnamed-1.jpg"
+featuredImage: "/blog/posts/toronto-web-design-pitfalls.jpg"
 ---
 
 <p>Toronto's business scene demands a strong online presence, and the competition means there's little room for expensive missteps. At Canadian Web Designs, serving Toronto, Brampton, and the wider GTA, we've seen the same avoidable pitfalls sink project after project. This guide covers what they cost and how to avoid them.</p>

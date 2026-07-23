@@ -16,7 +16,7 @@ faq:
     a: "For self-hosted WordPress (WordPress.org), yes — you need a hosting account and a domain name. WordPress.com offers hosting bundled in in exchange for less control over customization and, on lower tiers, your own domain."
   - q: "How much does a WordPress website cost?"
     a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $99/month covering updates, backups, and security. Cost scales up from there based on page count, custom functionality, and whether e-commerce is involved."
-featuredImage: "/blog/posts/wiz-to-wordpress.jpg"
+featuredImage: "/blog/posts/create-wordpress-website-beginners.jpg"
 ---
 
 <p><strong>Quick answer:</strong> building a WordPress site comes down to seven steps — pick a domain, get hosting, install WordPress, choose a theme, install plugins, add content, and launch. None of it requires coding, though getting each step right (especially hosting and plugin choices) is where most beginner sites go wrong.</p>

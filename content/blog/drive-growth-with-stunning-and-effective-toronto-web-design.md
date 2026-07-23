@@ -16,7 +16,7 @@ faq:
     a: "Yes — our maintenance packages start at $99/month and cover updates, security patches, backups, and technical support, so you can focus on running your business."
   - q: "Can you help with a redesign of an existing website?"
     a: "Absolutely. We assess your current site, identify what's underperforming — design, speed, SEO, or functionality — and develop a redesign strategy aligned with your business goals rather than starting from zero."
-featuredImage: "/blog/posts/1.png"
+featuredImage: "/blog/posts/toronto-web-design-growth.png"
 ---
 
 <h4 class="wp-block-heading">Your Guide to Online Success</h4>

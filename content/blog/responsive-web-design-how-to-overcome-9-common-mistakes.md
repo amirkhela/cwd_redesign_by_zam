@@ -7,7 +7,7 @@ author: "Amir Khela"
 description: "9 responsive web design mistakes that quietly break sites on mobile — and how to fix each one, from unscalable text to untested breakpoints."
 keywords: ["responsive web design mistakes", "responsive design", "mobile friendly website mistakes"]
 category: "Web Design"
-featuredImage: "/blog/posts/website-layout.jpg"
+featuredImage: "/blog/posts/responsive-web-design-mistakes.jpg"
 ---
 
 <h2 class="wp-block-heading" id="h-the-imperative-of-adaptive-web-design"><strong>The Imperative of Adaptive Web Design</strong></h2>

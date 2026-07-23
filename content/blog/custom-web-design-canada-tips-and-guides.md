@@ -14,7 +14,7 @@ faq:
     a: "A clear sense of your target audience, your goals for the site (leads, sales, information), and some reference points for design direction (competitor sites, mood boards). The more clarity you bring in, the less back-and-forth revision the project needs."
   - q: "Which platform is best for a custom website in Canada?"
     a: "WordPress fits most businesses well — flexible, cost-effective, and SEO-friendly. Shopify is the stronger choice specifically for ecommerce. A fully custom-coded site offers maximum flexibility but costs more and takes longer to build and maintain."
-featuredImage: "/blog/posts/Untitled-design.jpg"
+featuredImage: "/blog/posts/custom-web-design-canada.jpg"
 ---
 
 <p>Having a unique, tailored website is crucial for Canadian businesses trying to stand out and actually engage their audience. Custom web design, as opposed to template-based sites, lets you build a site that aligns exactly with your business goals and brand — this guide covers the tips, considerations, and platform choices that matter most.</p>

@@ -16,7 +16,7 @@ faq:
     a: "One idea per graphic, a clear reading path from top to bottom, a limited palette, and text you can read on a phone. Most weak infographics fail because they try to carry an entire article instead of a single takeaway."
   - q: "How much does infographic design cost in Canada?"
     a: "It depends on how much data work is involved — a single-stat social graphic is a very different job from a researched, multi-section report infographic. We quote graphic design per project rather than selling a fixed package, so send us the content and we'll price it."
-featuredImage: "/blog/posts/1.jpg"
+featuredImage: "/blog/posts/types-of-infographics.jpg"
 ---
 
 <p><strong>Quick answer:</strong> an infographic turns information into a picture your reader understands faster than they could read it. There are ten types worth knowing — statistical, informational, timeline, process, geographic, anatomical, comparison, hierarchical, list and visual resume — and the right one is decided by the shape of your data, not by which layout looks nicest. Numbers want a statistical infographic. Steps want a process infographic. Dates want a timeline.</p>

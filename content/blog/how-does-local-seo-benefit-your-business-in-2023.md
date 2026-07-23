@@ -7,7 +7,7 @@ author: "Amir Khela"
 description: "Local SEO puts your business in front of nearby customers ready to buy. Here is what it actually changes — map rankings, calls, and foot traffic."
 keywords: ["local seo benefits", "how does local seo benefit your business", "local seo for small business", "local seo canada", "google business profile"]
 category: "SEO"
-featuredImage: "/blog/posts/local-seo1.jpg"
+featuredImage: "/blog/posts/local-seo-benefits-business.jpg"
 ---
 
 <div class="wp-block-columns">

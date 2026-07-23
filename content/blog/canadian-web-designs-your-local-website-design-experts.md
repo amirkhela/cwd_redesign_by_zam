@@ -14,7 +14,7 @@ faq:
     a: "Discovery and planning first, to understand your business and goals. Then design and development, where a mockup gets approved before developers build it. Then testing across devices and browsers before launch. Then ongoing post-launch support for updates and maintenance."
   - q: "What content management systems do you build on?"
     a: "Most commonly WordPress, since it offers the best balance of flexibility, SEO control, and ease of ongoing management for small and mid-sized businesses. We can also work with other CMS platforms depending on your specific needs."
-featuredImage: "/blog/posts/1861.jpg"
+featuredImage: "/blog/posts/local-website-design-experts.jpg"
 ---
 
 <p>Your website is often the first point of contact a potential customer has with your business, which is exactly why choosing the right designer matters. If you're in Canada and looking for a website design team near you, here's what a local partner like Canadian Web Designs actually brings to the table.</p>

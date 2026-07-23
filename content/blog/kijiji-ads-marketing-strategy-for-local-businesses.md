@@ -16,7 +16,7 @@ faq:
     a: "Use a clear, benefit-led title, real photos, honest pricing, a specific service area, and a strong call to action. Refresh or repost regularly so your ad stays near the top of results."
   - q: "Should I rely on Kijiji instead of a website?"
     a: "No — Kijiji is a lead channel, not a home base. Send interested buyers to your own website, where you control the experience, build trust and capture leads you own. Classifieds and a professional site work best together."
-featuredImage: "/blog/posts/digital-marketing-media-in-virtual-icon-globe-shap-UW9Q4EY-1-scaled-1.jpg"
+featuredImage: "/blog/posts/kijiji-ads-marketing-strategy.jpg"
 ---
 
 <p>Learn to expand your home service business by using the Kijiji marketing tool. Connect your brand with the Canadian community to attract leads and hike up your sales. This article will introduce you to Kijiji marketing and a step-by-step guide to optimizing your Kijiji ads. So, let’s dive in!</p>

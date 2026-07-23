@@ -16,7 +16,7 @@ faq:
     a: "It suits most, but 'minimalist' doesn't mean 'empty.' The goal is clarity: e-commerce and content-heavy sites can still be minimalist by organizing information cleanly rather than cramming it in."
   - q: "What's the most common minimalist design mistake?"
     a: "Confusing minimalism with a lack of information. Removing helpful content, trust signals or clear navigation in the name of 'clean' hurts conversions. True minimalism removes clutter, not clarity."
-featuredImage: "/blog/posts/website-layout.jpg"
+featuredImage: "/blog/posts/minimalist-website-design.jpg"
 ---
 
 <h2 class="wp-block-heading"><strong>What is Minimalist Web Design?</strong></h2>

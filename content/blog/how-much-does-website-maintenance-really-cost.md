@@ -7,7 +7,7 @@ author: "Amir Khela"
 description: "What does website maintenance really cost in Canada? A clear breakdown of hosting, updates, security and design — plus what to budget. Managed plans from $99/mo."
 keywords: ["how much does website maintenance cost", "website maintenance cost canada", "website maintenance pricing", "website upkeep cost", "monthly website maintenance", "website maintenance services"]
 category: "Web Design"
-featuredImage: "/blog/posts/Website-maintenance-near-me1jpg.jpg"
+featuredImage: "/blog/posts/website-maintenance-cost.jpg"
 faq:
   - q: "Is website maintenance necessary?"
     a: "Yes. Without regular updates, security patches and monitoring, a site slowly breaks — plugins go out of date, security holes open, speed drops and rankings slip. Maintenance protects the investment you made building the site."

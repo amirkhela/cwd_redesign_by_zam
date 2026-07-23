@@ -7,7 +7,7 @@ author: "Amir Khela"
 description: "Why ongoing site care drives Google rankings — backups, Core Web Vitals, security patches and speed tuning for Toronto businesses, from $99/month."
 keywords: ["toronto website maintenance", "website maintenance seo", "website maintenance toronto", "website security toronto", "core web vitals toronto"]
 category: "Web Design"
-featuredImage: "/blog/posts/Secured-Google.png"
+featuredImage: "/blog/posts/toronto-website-maintenance-seo.png"
 ---
 
 <h2 class="wp-block-heading">Why Ongoing Website Maintenance Is Essential for SEO Success</h2>

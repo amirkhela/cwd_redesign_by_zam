@@ -16,7 +16,7 @@ faq:
     a: "Webflow gives designers near-code-level control over layout and interaction without actually writing code, while Figma is the standard for the design and prototyping stage before a site is ever built."
   - q: "Do these prices change often?"
     a: "Yes — most of these platforms adjust pricing and plan tiers roughly once a year. Treat the figures here as a current snapshot and check the provider's own pricing page before making a purchasing decision."
-featuredImage: "/blog/posts/Wordpress-Featured-image-1.jpg"
+featuredImage: "/blog/posts/web-design-tools-designers.jpg"
 ---
 
 <p>Choosing the right web design tool depends entirely on what you're building and how much control you need. This guide compares 10 of the most-used platforms and tools — website builders, ecommerce platforms, and design software — with current pricing and who each one actually fits.</p>

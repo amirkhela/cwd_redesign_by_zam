@@ -16,7 +16,7 @@ faq:
     a: "Yes. Ontario businesses need to consider AODA (Accessibility for Ontarians with Disabilities Act) accessibility requirements, and any business collecting customer data needs to follow PIPEDA (Personal Information Protection and Electronic Documents Act). A developer unfamiliar with Canadian requirements can leave you exposed to compliance issues later."
   - q: "What should I check before hiring a web design company?"
     a: "Look at their actual portfolio for work similar to what you need, ask about their process from consultation through launch, and confirm they offer maintenance and support after the site goes live — a site with no post-launch support degrades quickly."
-featuredImage: "/blog/posts/programming-background-with-html-scaled.jpg"
+featuredImage: "/blog/posts/website-developers-near-me.jpg"
 ---
 
 <p>Any business that wants to grow online needs a well-designed, well-optimized website, and finding the right local developer can make the difference between a site that performs and one that just sits there. This guide covers what to look for in a local web design team, what services actually matter, and the Canadian compliance requirements a developer should already know.</p>

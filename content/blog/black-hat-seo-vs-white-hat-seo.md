@@ -16,7 +16,7 @@ faq:
     a: "Gray hat tactics don't explicitly break Google's written rules but exploit gaps in them — buying expired domains, aggressive content spinning, clickbait titles. They're safer than black hat but not risk-free: Google regularly updates its policies to close these gaps, and yesterday's gray hat can become tomorrow's penalty."
   - q: "Does using AI to write content count as black hat SEO?"
     a: "No — Google has explicitly stated that AI-assisted content is fine when it's genuinely helpful and created for people, not to game rankings. What crosses into spam is mass-producing unoriginal, low-value pages at scale, regardless of whether a human or an AI wrote them."
-featuredImage: "/blog/posts/header2.png"
+featuredImage: "/blog/posts/black-hat-vs-white-hat-seo.png"
 ---
 
 <p><strong>Quick answer:</strong> white hat SEO earns rankings through genuine value — quality content, real backlinks, fast and well-structured pages. Black hat SEO tries to trick the algorithm directly — keyword stuffing, cloaking, paid link networks — and risks a penalty that can undo years of work. Gray hat sits in between: not explicitly against the rules, but not something Google rewards either.</p>

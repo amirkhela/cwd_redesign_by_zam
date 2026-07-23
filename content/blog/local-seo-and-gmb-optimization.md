@@ -16,7 +16,7 @@ faq:
     a: "Very. Google weighs review recency and volume as ranking signals, not just star rating — a steady, ongoing stream of recent reviews outperforms a large batch of old ones. Reviews also directly build the trust that turns a search result into a phone call."
   - q: "What are local citations and why do they matter?"
     a: "A citation is any online mention of your business name, address, and phone number (NAP) — directories like Yelp, BBB, or Houzz. Consistent NAP information across citations is a trust signal for Google; mismatched details across directories can actively hurt local rankings."
-featuredImage: "/blog/posts/Local-SEO1.jpg"
+featuredImage: "/blog/posts/local-seo-gmb-optimization.jpg"
 ---
 
 <p><strong>Quick answer:</strong> Google Business Profile (formerly Google My Business) is a free listing that puts your business on Google Search and Maps. For any business serving a local area, it's one of the highest-value, lowest-cost things you can set up — and optimizing it well is a core part of <a href="/services/seo">local SEO</a>.</p>

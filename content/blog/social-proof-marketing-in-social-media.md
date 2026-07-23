@@ -16,7 +16,7 @@ faq:
     a: "Yes — most consumers read reviews before buying, and products with visible positive feedback consistently convert better than identical products without it. The effect is strongest when the proof is recent, specific, and comes from people the buyer sees as similar to themselves."
   - q: "How do I get social proof if my business is new?"
     a: "Start with user proof: ask every early customer for a review while the experience is fresh, respond publicly to all feedback, and showcase real results. Partnerships with micro-influencers in your niche cost far less than celebrity endorsements and often convert better for local businesses."
-featuredImage: "/blog/posts/featured-image-1.png"
+featuredImage: "/blog/posts/social-proof-marketing.png"
 ---
 
 <p><strong>Quick answer:</strong> social proof marketing uses the experiences of others — reviews, endorsements, ratings, verification badges — to persuade new customers that your product is worth buying. It works because people instinctively copy what others do when making decisions, and social media is where that instinct is strongest.</p>

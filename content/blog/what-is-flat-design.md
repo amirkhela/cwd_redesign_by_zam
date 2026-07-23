@@ -16,7 +16,7 @@ faq:
     a: "It benefits most sites that prioritize speed and usability, but pure flat design can make interactive elements hard to spot — users can't always tell what's clickable. That's why most designers now use flat design 2.0, which adds slight depth cues to preserve usability."
   - q: "Does flat design limit creativity?"
     a: "No — it shifts creativity toward color, layout, and typography rather than textures and effects. Some of the most distinctive modern brands are built entirely on flat design systems, Google's Material Design being the best-known example."
-featuredImage: "/blog/posts/Flat-Design-1024x585-1.jpeg"
+featuredImage: "/blog/posts/flat-design-principles.jpeg"
 ---
 
 <p><strong>Quick answer:</strong> flat design is a minimalist UI style built on simple two-dimensional elements, bold colors, and clean typography — a deliberate rejection of the 3D gradients, textures, and drop shadows of skeuomorphic design. It rose to dominance with Windows 8, iOS 7, and Google's Material Design, and in its modern "flat 2.0" form it remains the default visual language of the web.</p>
