@@ -60,12 +60,11 @@ featuredImage: "/blog/posts/Wordpress.jpg"
 
 <h3 class="wp-block-heading">Further Reading</h3>
 <ul>
-<li><a href="/blog/which-website-cms-is-better-for-seo">Which Website CMS Is Better for SEO?</a></li>
 <li><a href="/blog/how-do-i-create-a-wordpress-website">How Do I Create a WordPress Website for Beginners?</a></li>
 <li><a href="/blog/how-much-does-a-wordpress-website-cost">How Much Does a WordPress Website Cost?</a></li>
-<li><a href="/blog/wordpress-for-e-commerce-a-toolbox-for-building-your-online-store">WordPress for E-commerce: A Toolbox for Building Your Online Store</a></li>
+<li><a href="/blog/how-to-migrate-from-shopify-to-woocommerce">WordPress for E-commerce: A Toolbox for Building Your Online Store</a></li>
 </ul>
 
 <h3 class="wp-block-heading">Get WordPress Built Right the First Time</h3>
-<p>WordPress is powerful, but only when it's set up properly — fast hosting, lean themes, and security hardening from day one. Our team builds <a href="/services/web-design-development">custom WordPress websites</a> and offers <a href="/services/website-maintenance">WordPress maintenance plans</a> that keep plugins updated and backups running. Hiring help? Read our guide on <a href="/blog/wordpress-developer-toronto">how to hire a WordPress developer in Toronto</a>, or compare platforms in <a href="/blog/which-website-cms-is-better-for-seo">which CMS is best for SEO</a>.</p>
+<p>WordPress is powerful, but only when it's set up properly — fast hosting, lean themes, and security hardening from day one. Our team builds <a href="/services/web-design-development">custom WordPress websites</a> and offers <a href="/services/website-maintenance">WordPress maintenance plans</a> that keep plugins updated and backups running. Migrating from another platform? See our <a href="/blog/how-to-migrate-from-shopify-to-woocommerce">Shopify-to-WooCommerce migration guide</a>.</p>
 <p><strong><a href="/contact">Get a free WordPress project quote</a></strong> today.</p>

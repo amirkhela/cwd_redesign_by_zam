@@ -31,7 +31,7 @@ featuredImage: "/blog/posts/5-Reasons-Having-a-Website-for-Your-Business-is-a-Go
 <p>Your website is a testament to your business's legitimacy. Showcasing real testimonials, industry certifications, and past work instills trust in potential customers, and since most people research online before making a purchase, having a professional site is often the difference between being shortlisted and being skipped.</p>
 
 <h2 class="wp-block-heading" id="h-4-expand-your-marketing-horizons">4) Expand Your Marketing Horizons</h2>
-<p>A website gives every marketing channel somewhere to land. It's what makes <a href="/services/seo">SEO</a>, <a href="/blog/why-you-need-pay-per-click-like-google-ads">pay-per-click advertising</a>, content marketing, and social campaigns actually convert — traffic without a destination site is wasted spend. Which strategy fits best depends on your business type, but all of them start with a website worth sending people to.</p>
+<p>A website gives every marketing channel somewhere to land. It's what makes <a href="/services/seo">SEO</a>, <a href="/blog/google-ads-management">pay-per-click advertising</a>, content marketing, and social campaigns actually convert — traffic without a destination site is wasted spend. Which strategy fits best depends on your business type, but all of them start with a website worth sending people to.</p>
 
 <h2 class="wp-block-heading" id="h-5-boost-sales-and-revenue">5) Boost Sales and Revenue</h2>
 <p>Ultimately, a business's success hinges on sales. A well-optimized website increases them by reaching a broader audience, offering your products or services 24/7, and streamlining the path from interest to purchase. For many local businesses, the website becomes their single most productive salesperson — one that never takes a day off.</p>
@@ -39,7 +39,7 @@ featuredImage: "/blog/posts/5-Reasons-Having-a-Website-for-Your-Business-is-a-Go
 <figure class="wp-block-image size-full"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2023/05/google-analytics.jpg" alt="Google Analytics dashboard showing website traffic growth" class="wp-image-11593"/></figure>
 
 <h2 class="wp-block-heading" id="h-conclusion">Conclusion</h2>
-<p>A well-designed, professional website is no longer a luxury — it's a necessity. From increased sales to heightened credibility, it's an investment that delivers returns long after launch. For more on what makes a site actually work on visitors, see the <a href="/blog/psychology-of-web-design">psychology of web design</a>.</p>
+<p>A well-designed, professional website is no longer a luxury — it's a necessity. From increased sales to heightened credibility, it's an investment that delivers returns long after launch. For more on what makes a site actually work on visitors, see the <a href="/services/web-design-development">psychology of web design</a>.</p>
 
 <h3 class="wp-block-heading">Ready to Get Your Business Online?</h3>
 <p>Our <a href="/services/web-design-development">web design team</a> builds professional, mobile-first websites for Canadian businesses starting at $299.</p>

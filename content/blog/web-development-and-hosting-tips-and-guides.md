@@ -30,7 +30,7 @@ featuredImage: "/blog/posts/2150170121.jpg"
 
 <li><strong>Mobile Responsiveness:</strong> With most users accessing websites on mobile devices, a responsive design is non-negotiable.</li>
 
-<li><strong><a href="/blog/why-you-need-seo-in-your-business">SEO Optimization</a>:</strong> Ensure your website ranks high on search engines by incorporating keywords like <em>website development Toronto</em> or <em>best website builders</em> strategically.</li>
+<li><strong><a href="/services/seo">SEO Optimization</a>:</strong> Ensure your website ranks high on search engines by incorporating keywords like <em>website development Toronto</em> or <em>best website builders</em> strategically.</li>
 
 <li><strong>Speed and Performance:</strong> Slow-loading websites drive visitors away. Optimize your website’s performance to keep users engaged.</li>
 </ul>
@@ -81,7 +81,7 @@ featuredImage: "/blog/posts/2150170121.jpg"
 
 <h4 class="wp-block-heading">Canadian Web Designs: Your Partner for Success</h4>
 
-<p>As a leading web design company serving Toronto and the GTA, <strong>Canadian Web Designs</strong> offers end-to-end solutions, from conceptualizing your website to hosting it on secure servers. Our expertise in <em><a href="/blog/custom-web-development-in-toronto">website development Toronto</a></em> ensures your site not only looks great but also functions flawlessly.</p>
+<p>As a leading web design company serving Toronto and the GTA, <strong>Canadian Web Designs</strong> offers end-to-end solutions, from conceptualizing your website to hosting it on secure servers. Our expertise in <em><a href="/locations/toronto">website development Toronto</a></em> ensures your site not only looks great but also functions flawlessly.</p>
 
 <p>We specialize in:</p>
 

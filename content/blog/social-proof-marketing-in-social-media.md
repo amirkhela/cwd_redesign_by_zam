@@ -42,7 +42,7 @@ featuredImage: "/blog/posts/featured-image-1.png"
 
 <figure class="wp-block-image"><img src="https://lh6.googleusercontent.com/lS22pPMaOkfQh5h18WLOHbdO-fHzESsfOh_kx1sEAMpMc58PRWGrqEJh_xfbhhWRbirXn44VOXfLgdJ92mAAu1Ly4NRWY9KXTum7OGAJrKPiFm2iwh3PtJvoCq7_JLzikhcLns9h" alt="Brand ambassador photographing a product for social media"/></figure>
 
-<p>Recruit influencers or experts whose audience overlaps with your customers, and have them feature your product with official hashtags on <a href="/blog/social-media-optimization-effective-strategies-to-follow">social media</a>. For local businesses, micro-influencers in your niche usually outperform celebrities on cost per conversion — their recommendations read as genuine rather than paid.</p>
+<p>Recruit influencers or experts whose audience overlaps with your customers, and have them feature your product with official hashtags on <a href="/services/social-media-optimization">social media</a>. For local businesses, micro-influencers in your niche usually outperform celebrities on cost per conversion — their recommendations read as genuine rather than paid.</p>
 
 <h3 class="wp-block-heading" id="h-tip-2-ratings-feedbacks-and-surveys">Tip #2: Ratings, Reviews, and Surveys</h3>
 
@@ -70,7 +70,7 @@ featuredImage: "/blog/posts/featured-image-1.png"
 
 <h2 class="wp-block-heading" id="h-final-thoughts">Final Thoughts</h2>
 
-<p>Social proof is one of the most cost-effective forms of digital marketing because it turns your existing happy customers into your sales force. Layer the tactics — reviews, ambassadors, mentions, verification, responsiveness — and each one compounds the others. For the broader playbook, see our guide to <a href="/blog/tips-and-tricks-for-effective-social-media-optimization-in-2023">effective social media optimization</a>.</p>
+<p>Social proof is one of the most cost-effective forms of digital marketing because it turns your existing happy customers into your sales force. Layer the tactics — reviews, ambassadors, mentions, verification, responsiveness — and each one compounds the others. For the broader playbook, see our guide to <a href="/services/social-media-optimization">effective social media optimization</a>.</p>
 
 <h2 class="wp-block-heading" id="h-optimize-your-social-media-with-us">Optimize Your Social Media With Us</h2>
 

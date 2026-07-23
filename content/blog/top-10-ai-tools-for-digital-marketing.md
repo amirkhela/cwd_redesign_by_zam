@@ -341,7 +341,7 @@ faq:
 
 <p>Pricing information for Brandwatch Consumer Intelligence is not readily available and may be obtained by contacting the company.</p>
 
-<p>Related Article: <a href="https://canadianwebdesigns.ca/chatgpts-impact-on-digital-marketing/" target="_blank" rel="noreferrer noopener"><strong>ChatGPT’s Impact on Digital Marketing Success</strong></a></p>
+<p>Related Article: <a href="/services/ai-consultation" target="_blank" rel="noreferrer noopener"><strong>ChatGPT’s Impact on Digital Marketing Success</strong></a></p>
 
 <h3 class="wp-block-heading">Other AI Tools:</h3>
 
@@ -353,7 +353,7 @@ faq:
 
 <h4 class="wp-block-heading" id="h-related-article">Related Article</h4>
 
-<ul class="wp-block-yoast-seo-related-links"><li><a href="https://canadianwebdesigns.ca/what-is-the-importance-of-ai-automation/">Unraveling the Significance: What is the Importance of AI Automation?</a></li><li><a href="https://canadianwebdesigns.ca/how-do-i-create-a-wordpress-website/">How Do I Create A WordPress Website For Beginners?</a></li><li><a href="https://canadianwebdesigns.ca/tips-and-tricks-for-effective-social-media-optimization-in-2023/">Tips and Tricks for Effective Social Media Optimization in 2023</a></li><li><a href="https://canadianwebdesigns.ca/top-web-design-tools-for-designers-2023/">The Ultimate List of Top Web Design Tools for Designers 2023</a></li><li><a href="https://canadianwebdesigns.ca/how-much-does-a-wordpress-website-cost/">How Much Does a WordPress Website Cost?</a></li></ul>
+<ul class="wp-block-yoast-seo-related-links"><li><a href="/services/ai-consultation">Unraveling the Significance: What is the Importance of AI Automation?</a></li><li><a href="https://canadianwebdesigns.ca/how-do-i-create-a-wordpress-website/">How Do I Create A WordPress Website For Beginners?</a></li><li><a href="/services/social-media-optimization">Tips and Tricks for Effective Social Media Optimization in 2023</a></li><li><a href="https://canadianwebdesigns.ca/top-web-design-tools-for-designers-2023/">The Ultimate List of Top Web Design Tools for Designers 2023</a></li><li><a href="https://canadianwebdesigns.ca/how-much-does-a-wordpress-website-cost/">How Much Does a WordPress Website Cost?</a></li></ul>
 </div>
 </div>
 

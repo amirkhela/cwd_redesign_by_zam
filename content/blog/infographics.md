@@ -93,7 +93,7 @@ featuredImage: "/blog/posts/1.jpg"
 
 <p>Two subjects set against each other — the familiar "vs." layout. Leader versus boss, one platform versus another, before versus after.</p>
 
-<p><strong>Use it when:</strong> the reader is deciding between options. Related reading: our breakdown of <a href="/blog/webflow-vs-squarespace-vs-wordpress">Webflow vs Squarespace vs WordPress</a>, which is this format in article form.</p>
+<p><strong>Use it when:</strong> the reader is deciding between options. Related reading: our breakdown of <a href="/blog/ultimate-guide-to-the-best-website-builders">Webflow vs Squarespace vs WordPress</a>, which is this format in article form.</p>
 
 <figure class="wp-block-image"><img src="https://lh3.googleusercontent.com/kLo04QBQCsnJA_hkIly9uz8skX8XRleTgytC2At9RAKYuyrdADlndcZvoUYPlpRSGcrXE-dkyp2-bqT5XyQ3lfd0RzepKOR2Fi8mUqGDJu45oRcsdp10XMaPjc2cZqVaDCMf0Qza" alt="Comparison infographic contrasting two options side by side" loading="lazy"/></figure>
 

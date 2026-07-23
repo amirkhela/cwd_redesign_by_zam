@@ -41,7 +41,7 @@ featuredImage: "/blog/posts/programming-background-with-html-scaled.jpg"
 <p>A capable local developer offers <a href="/services/social-media-optimization">social media optimization</a> alongside the site build — structuring content so it's easy to share and cross-promote, which extends your reach beyond people who find the site directly through search.</p>
 
 <h3 class="wp-block-heading" id="h-digital-marketing">Digital Marketing</h3>
-<p>Beyond the build, most local developers also offer <a href="/services/seo">SEO</a> and <a href="/blog/why-you-need-pay-per-click-like-google-ads">pay-per-click advertising</a> to drive traffic to the site once it's live. A site that looks great but attracts no visitors isn't doing its job — design and traffic generation need to be planned together, not treated as separate projects.</p>
+<p>Beyond the build, most local developers also offer <a href="/services/seo">SEO</a> and <a href="/blog/google-ads-management">pay-per-click advertising</a> to drive traffic to the site once it's live. A site that looks great but attracts no visitors isn't doing its job — design and traffic generation need to be planned together, not treated as separate projects.</p>
 
 <h2 class="wp-block-heading" id="h-canadian-compliance">Canadian Compliance a Local Developer Should Already Know</h2>
 <p>Working with a Canadian team means your site is more likely to meet local legal requirements without you having to specify them:</p>

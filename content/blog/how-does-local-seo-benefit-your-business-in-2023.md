@@ -138,7 +138,7 @@ featuredImage: "/blog/posts/local-seo1.jpg"
 
 <h4 class="wp-block-heading" id="h-related-articles">Related Articles</h4>
 
-<ul class="wp-block-yoast-seo-related-links"><li><a href="/blog/local-seo-benefits-2021">How does local SEO benefit your business?</a></li><li><a href="/locations/brampton">Canadian Web Designs: A Local Website Design in Brampton</a></li><li><a href="/blog/local-seo-and-gmb-optimization">Local SEO and GMB Optimization - Why It’s Helpful to Your Local Business</a></li><li><a href="/blog/why-busines-needs-website">5 Compelling Reasons Your Business Needs a Website</a></li><li><a href="/blog/search-engine-optimization-how-it-can-affect-your-business-website">Search Engine Optimization: How It Can Affect Your Business Website?</a></li></ul>
+<ul class="wp-block-yoast-seo-related-links"><li><a href="/locations/brampton">Canadian Web Designs: A Local Website Design in Brampton</a></li><li><a href="/blog/local-seo-and-gmb-optimization">Local SEO and GMB Optimization - Why It’s Helpful to Your Local Business</a></li><li><a href="/blog/why-busines-needs-website">5 Compelling Reasons Your Business Needs a Website</a></li><li><a href="/services/seo">Search Engine Optimization: How It Can Affect Your Business Website?</a></li></ul>
 </div>
 </div>
 

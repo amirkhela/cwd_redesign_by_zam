@@ -21,7 +21,7 @@ featuredImage: "/blog/posts/shopify-migrate-to-woocommerce.jpg"
 
 <h2 class="wp-block-heading" id="h-taking-your-ecommerce-to-the-next-level-with-woocommerce">Outgrowing Shopify? Here's What Moving to WooCommerce Looks Like</h2>
 
-<p>If you've already started selling online, you've made a smart move — online retail keeps taking a bigger share of overall spending every year. But growing past Shopify's built-in limits is common, and if you're hitting a ceiling on customization, transaction fees, or SEO control, a move to <a href="/blog/differences-between-woocommerce-vs-shopify">WooCommerce</a> is worth serious consideration.</p>
+<p>If you've already started selling online, you've made a smart move — online retail keeps taking a bigger share of overall spending every year. But growing past Shopify's built-in limits is common, and if you're hitting a ceiling on customization, transaction fees, or SEO control, a move to WooCommerce is worth serious consideration.</p>
 
 <figure class="wp-block-image size-large"><img src="https://old.canadianwebdesigns.ca/wp-content/uploads/2023/10/shopify-vs-woocommerce-1-1024x1024.jpg" alt="Shopify vs WooCommerce ecommerce platform comparison" class="wp-image-12172"/></figure>
 
@@ -76,7 +76,7 @@ featuredImage: "/blog/posts/shopify-migrate-to-woocommerce.jpg"
 <p>Shopify is a great starting point, but once you need more SEO control, lower long-term transaction costs, or design flexibility Shopify's templates can't deliver, WooCommerce is the natural next step. The migration itself is mechanical — export, import, redirect, verify — but getting the redirect mapping and post-migration QA right is where most self-managed migrations go wrong.</p>
 
 <h3 class="wp-block-heading" id="h-why-choose-canadian-web-designs">Get Migration Help</h3>
-<p>Our team handles Shopify-to-WooCommerce migrations end to end, including the URL redirect mapping that protects your existing SEO rankings. If you're also comparing platforms, see our full <a href="/blog/differences-between-woocommerce-vs-shopify">WooCommerce vs. Shopify breakdown</a>, and if security is a concern once you're self-hosting, read <a href="/blog/wordpress-safety-101-the-4-key-standards-of-protection">WordPress Safety 101</a>.</p>
+<p>Our team handles Shopify-to-WooCommerce migrations end to end, including the URL redirect mapping that protects your existing SEO rankings. If security is a concern once you're self-hosting, our <a href="/services/website-maintenance">maintenance plans</a> cover updates, backups, and hardening.</p>
 <p><strong><a href="/contact">Get a free migration quote</a></strong> — we'll scope your store and give you a real timeline.</p>
 
 <h3 class="wp-block-heading">Canadian Government Resources for E-commerce</h3>

@@ -100,7 +100,7 @@ featuredImage: "/blog/posts/Best-Photo-Editing-in-Canada.png"
 <ul class="wp-block-list">
 <li><a href="/services/graphic-design">Our Graphic Design Services</a></li>
 <li><a href="/blog/best-web-design-canada">Best Web Design in Canada</a></li>
-<li><a href="/blog/importance-of-regular-website-backups">Why Regular Website Backups Matter</a></li>
-<li><a href="/blog/local-seo-benefits-2021">How Local SEO Benefits Your Business</a></li>
+<li><a href="/services/website-maintenance">Why Regular Website Backups Matter</a></li>
+<li><a href="/blog/how-does-local-seo-benefit-your-business-in-2023">How Local SEO Benefits Your Business</a></li>
 <li><a href="/services/seo">SEO Services for Canadian Businesses</a></li>
 </ul>

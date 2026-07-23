@@ -22,7 +22,7 @@ featuredImage: "/blog/posts/PPC-google-ads.jpg"
 <p><strong>Quick answer:</strong> Google Ads management isn't setting a campaign live and letting it run — it's the ongoing work of refining keywords, adjusting bids, testing ad copy, and tracking conversions so your budget actually turns into leads. Most wasted ad spend comes from campaigns nobody is actively managing after launch.</p>
 
 <h2 class="wp-block-heading" id="h-what-is-google-ads">What Google Ads Actually Does</h2>
-<p>Google Ads is Google's <a href="/blog/why-you-need-pay-per-click-like-google-ads">pay-per-click</a> advertising platform — you bid on keywords, write ads, and only pay when someone clicks. Ads can appear in search results, on partner sites through the Display Network, on YouTube, in Gmail, and in Google Shopping. The reach is real, but reach alone doesn't produce results — that's where management comes in.</p>
+<p>Google Ads is Google's pay-per-click advertising platform — you bid on keywords, write ads, and only pay when someone clicks. Ads can appear in search results, on partner sites through the Display Network, on YouTube, in Gmail, and in Google Shopping. The reach is real, but reach alone doesn't produce results — that's where management comes in.</p>
 
 <h2 class="wp-block-heading" id="h-what-management-covers">What Real Google Ads Management Covers</h2>
 <ul class="wp-block-list">

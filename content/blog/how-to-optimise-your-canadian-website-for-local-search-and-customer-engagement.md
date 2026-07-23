@@ -107,7 +107,7 @@ featuredImage: "/blog/posts/Local-website-design.jpg"
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 
-<p><em>Ready to turn your website into a powerful local lead-generation engine? <a href="/contact">Contact <strong>Canadian Web Designs</strong></a> for a comprehensive <a href="/blog/local-seo-and-custom-web-design-for-toronto-businesses">local SEO</a> audit and see how your business can dominate your local market.</em></p>
+<p><em>Ready to turn your website into a powerful local lead-generation engine? <a href="/contact">Contact <strong>Canadian Web Designs</strong></a> for a comprehensive <a href="/seo/toronto">local SEO</a> audit and see how your business can dominate your local market.</em></p>
 
 <h3 class="wp-block-heading">Frequently Asked Questions (FAQs)</h3>
 

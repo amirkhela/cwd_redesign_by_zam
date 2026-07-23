@@ -41,7 +41,7 @@ featuredImage: "/blog/posts/programming-background-with-html-scaled.jpg"
 
 <h4 class="wp-block-heading"><strong>5. Project Management and Timeliness</strong></h4>
 
-<p>Effective project management is important for the timely and effective completion of your website. Inquire about the project management methods and resources used by the <a href="/blog/how-a-professional-website-design-company-can-transform-your-business-online">web design company</a>. Understanding their time management and workflow will help you manage your own schedule properly. Canadian Web Designs values your time, thus we ensure that projects will be completed on schedule without compromising quality or functionality.</p>
+<p>Effective project management is important for the timely and effective completion of your website. Inquire about the project management methods and resources used by the <a href="/web-design-company">web design company</a>. Understanding their time management and workflow will help you manage your own schedule properly. Canadian Web Designs values your time, thus we ensure that projects will be completed on schedule without compromising quality or functionality.</p>
 
 <h4 class="wp-block-heading"><strong>6. Pricing and Contract Structure</strong></h4>
 
