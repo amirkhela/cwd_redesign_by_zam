@@ -1,11 +1,12 @@
 ﻿---
-title: "Progressive Web Apps"
+title: "Progressive Web Apps: What They Are and Why They Matter"
 slug: "progressive-web-apps"
 date: "2023-11-16"
-author: "Canadian Web Designs"
-description: "A Progressive Web App (PWA) is a web app that delivers an app-like experience to users using web compatibilities. These apps meet certain requirements..."
-keywords: ["progressive web apps","Blog"]
-category: "Blog"
+updated: "2026-07-23"
+author: "Amir Khela"
+description: "A Progressive Web App (PWA) delivers an app-like experience straight from the browser — installable, offline-capable, and cheaper than a native app."
+keywords: ["progressive web apps", "what is a pwa", "pwa vs native app"]
+category: "Web Design"
 featuredImage: "/blog/posts/Progressive-Web-Apps-1024x647-1024x585-1.jpg"
 ---
 
@@ -93,6 +94,6 @@ featuredImage: "/blog/posts/Progressive-Web-Apps-1024x647-1024x585-1.jpg"
 
 <p>The digital landscape is evolving, and Progressive Web Apps are at the forefront of this transformation. By offering a user experience that rivals native apps and eliminating the boundaries set by traditional web applications, PWAs are set to define the future of web interactions. Whether you're a business owner, developer, or user, the world of PWAs holds endless possibilities. Are you ready to embrace the revolution?</p>
 
-<p>If you have any queries or want to know more of our services, you may <a href="https://canadianwebdesigns.ca/get-in-touch/" target="_blank" rel="noreferrer noopener">contact us.</a><br></p>
+<p>If you have any queries or want to know more of our services, you may <a href="/contact" target="_blank" rel="noreferrer noopener">contact us.</a><br></p>
 
 

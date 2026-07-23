@@ -1,11 +1,12 @@
 ﻿---
-title: "5 Essential Web Design Trends from Canada to Upgrade Your Website"
+title: "5 Essential Web Design Trends from Canada for Your Site"
 slug: "5-essential-web-design-trends-from-canada-to-upgrade-your-website"
 date: "2025-10-14"
-author: "Canadian Web Designs"
+updated: "2026-07-23"
+author: "Amir Khela"
 description: "5 web design trends Canadian businesses are using to win in 2026 — with real examples and practical upgrade tips. See which ones fit your site."
-keywords: ["5 essential web design trends from canada to upgrade your website","Blog"]
-category: "Blog"
+keywords: ["web design trends canada", "web design trends 2026", "website upgrade tips"]
+category: "Web Design"
 featuredImage: "/blog/posts/pexels-asphotography-106344-scaled.webp"
 ---
 
@@ -139,7 +140,7 @@ featuredImage: "/blog/posts/pexels-asphotography-106344-scaled.webp"
 
 <h3 class="wp-block-heading"><strong>Canadian Government Web Design and Accessibility Resources</strong></h3>
 
-<p>These official resources provide standards, guidelines, and compliance information for <a href="https://canadianwebdesigns.ca/website-design-development/">web design</a> and accessibility in Canada.</p>
+<p>These official resources provide standards, guidelines, and compliance information for <a href="/services/web-design-development">web design</a> and accessibility in Canada.</p>
 
 <p><strong>Accessibility Standards Canada</strong></p>
 
