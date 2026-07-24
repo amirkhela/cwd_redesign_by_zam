@@ -1,0 +1,26 @@
+name: SEO Run Heartbeat
+
+# Dead-man's switch for the daily SEO automation. The cloud run starts at
+# 13:00 UTC (6PM PKT) and pushes a log to automation/logs/ when it ships.
+# This watchdog fires 4 hours later; if no log exists for today, it emails
+# a MISSED-RUN alert through the portal. Silent when the run happened.
+
+on:
+  schedule:
+    - cron: "0 17 * * *" # 10PM PKT — 4h after the 6PM PKT run starts
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override date to check (YYYY-MM-DD, for testing)"
+        required: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Alert if today's run log is missing
+        env:
+          TEAM_LOG_KEY: ${{ secrets.TEAM_LOG_KEY }}
+          CHECK_DATE: ${{ inputs.date }}
+        run: node .github/scripts/heartbeat.mjs
