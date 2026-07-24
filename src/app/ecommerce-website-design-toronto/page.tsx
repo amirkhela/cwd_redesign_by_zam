@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import { getConfig } from "@/lib/client-config";
@@ -164,7 +165,7 @@ export default function EcommerceTorontoPage() {
               We build custom online stores for Toronto businesses that show up on Google and turn visitors into buyers.
               {config.reviewCount}+ five-star reviews. No templates. No guesswork.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mb-10">
               <Link
                 href="/contact"
                 className="bg-primary text-white font-semibold px-8 py-4 rounded-xl hover:bg-primary/90 transition-colors"
@@ -178,19 +179,24 @@ export default function EcommerceTorontoPage() {
                 View Our Work
               </Link>
             </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {[
+                { label: "Stores Launched", value: "80+" },
+                { label: "Avg. Traffic Increase", value: "3.4×" },
+                { label: "Five-Star Reviews", value: `${config.reviewCount}+` },
+                { label: "Years in Business", value: "10+" },
+              ].map((stat) => (
+                <div key={stat.label} className="bg-white/10 rounded-2xl p-4 text-center">
+                  <div className="text-2xl font-extrabold text-primary mb-1">{stat.value}</div>
+                  <div className="text-xs text-white/60">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              { label: "Stores Launched", value: "80+" },
-              { label: "Avg. Traffic Increase", value: "3.4×" },
-              { label: "Five-Star Reviews", value: `${config.reviewCount}+` },
-              { label: "Years in Business", value: "10+" },
-            ].map((stat) => (
-              <div key={stat.label} className="bg-white/10 rounded-2xl p-6 text-center">
-                <div className="text-3xl font-extrabold text-primary mb-1">{stat.value}</div>
-                <div className="text-sm text-white/60">{stat.label}</div>
-              </div>
-            ))}
+
+          {/* RIGHT: Quote Form */}
+          <div className="relative hidden lg:block">
+            <HeroQuoteForm source="ecommerce-website-design-toronto" />
           </div>
         </div>
       </section>
@@ -343,7 +349,7 @@ export default function EcommerceTorontoPage() {
         </div>
       </section>
 
-      <QuoteFormSection source="ecommerce-website-design-toronto" />
+      <QuoteFormSection source="ecommerce-website-design-toronto" mobileOnly />
     </>
   );
 }

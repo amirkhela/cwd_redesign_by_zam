@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
@@ -220,6 +221,7 @@ export default function TorontoPage() {
         />
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           <div className="max-w-3xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span
@@ -281,6 +283,12 @@ export default function TorontoPage() {
                   <p className="text-white/40 text-xs">{s.label}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+            {/* RIGHT: Quote Form */}
+            <div className="relative hidden lg:block">
+              <HeroQuoteForm source="location-toronto" />
             </div>
           </div>
         </div>
@@ -645,7 +653,7 @@ export default function TorontoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
-      <QuoteFormSection source="location-toronto" />
+      <QuoteFormSection source="location-toronto" mobileOnly />
     </>
   );
 }

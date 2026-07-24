@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
@@ -191,6 +192,7 @@ export default function SeoByurnabyPage() {
           style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
@@ -230,6 +232,12 @@ export default function SeoByurnabyPage() {
                   {t}
                 </div>
               ))}
+            </div>
+          </div>
+
+            {/* RIGHT: Quote Form */}
+            <div className="relative hidden lg:block">
+              <HeroQuoteForm source="seo-burnaby" />
             </div>
           </div>
         </div>
@@ -530,7 +538,7 @@ export default function SeoByurnabyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
-      <QuoteFormSection source="seo-burnaby" />
+      <QuoteFormSection source="seo-burnaby" mobileOnly />
     </>
   );
 }

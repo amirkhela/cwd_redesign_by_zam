@@ -13,13 +13,19 @@ export default function QuoteFormSection({
   source,
   title,
   subtitle,
+  mobileOnly = false,
 }: {
   source: string;
   title?: React.ReactNode;
   subtitle?: string;
+  /** Render only below lg — used on pages whose hero already shows the form on desktop. */
+  mobileOnly?: boolean;
 }) {
   return (
-    <section className="relative overflow-hidden py-20" style={{ background: "#010C1E" }}>
+    <section
+      className={`relative overflow-hidden py-20 ${mobileOnly ? "lg:hidden" : ""}`}
+      style={{ background: "#010C1E" }}
+    >
       {/* Ambient glow — same CSS-gradient treatment as the homepage hero */}
       <div
         className="absolute inset-0 pointer-events-none"
