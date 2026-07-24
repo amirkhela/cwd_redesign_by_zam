@@ -31,13 +31,24 @@ function DesktopDropdown({ item }: { item: ClientNavItem }) {
           style={{ boxShadow: "0 20px 50px rgba(0,0,0,0.12)" }}
         >
           {item.children!.map((child) => (
-            <Link
-              key={child.href}
-              href={child.href}
-              className="block px-5 py-2.5 text-sm text-dark hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
-            >
-              {child.label}
-            </Link>
+            <div key={child.href}>
+              <Link
+                href={child.href}
+                className="block px-5 py-2.5 text-sm text-dark hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
+              >
+                {child.label}
+              </Link>
+              {child.children?.map((sub) => (
+                <Link
+                  key={sub.href}
+                  href={sub.href}
+                  className="flex items-center gap-2 pl-9 pr-5 py-2 text-[13px] text-dark-light hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
+                >
+                  <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
+                  {sub.label}
+                </Link>
+              ))}
+            </div>
           ))}
         </div>
       </div>
@@ -77,14 +88,26 @@ function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
                   {expandedItem === item.label && (
                     <div className="bg-primary-50/60">
                       {item.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          onClick={onClose}
-                          className="block px-10 py-2.5 text-sm font-medium text-dark-light hover:text-primary transition-colors"
-                        >
-                          {child.label}
-                        </Link>
+                        <div key={child.href}>
+                          <Link
+                            href={child.href}
+                            onClick={onClose}
+                            className="block px-10 py-2.5 text-sm font-medium text-dark-light hover:text-primary transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                          {child.children?.map((sub) => (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              onClick={onClose}
+                              className="flex items-center gap-2 pl-14 pr-10 py-2 text-[13px] font-medium text-dark-light hover:text-primary transition-colors"
+                            >
+                              <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
+                              {sub.label}
+                            </Link>
+                          ))}
+                        </div>
                       ))}
                     </div>
                   )}
