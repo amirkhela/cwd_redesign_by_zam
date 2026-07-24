@@ -1,0 +1,341 @@
+{
+  "note": "One-time optimization pass per page. NEVER re-open a done entry. Frozen pages are intentionally absent.",
+  "pages": [
+    {
+      "url": "/seo/mississauga",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/calgary",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/ottawa",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/barrie",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/brampton",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/burnaby",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/edmonton",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/halifax",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/kitchener",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/ladner",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/london",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/montreal",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/north-york",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/oshawa",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/saskatoon",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/toronto",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/vancouver",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/vaughan",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/victoria",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/seo/windsor",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/toronto",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/brampton",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/mississauga",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/vancouver",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/calgary",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/ottawa",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/barrie",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/burnaby",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/edmonton",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/halifax",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/hamilton",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/kitchener",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/ladner",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/london",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/montreal",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/north-york",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/oshawa",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/richmond-hill",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/saskatoon",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/surrey",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/vaughan",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/victoria",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/windsor",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/locations/winnipeg",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/services/seo",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/services/website-maintenance",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/services/google-ads-management",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/services/graphic-design",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/services/social-media-optimization",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/services/ai-consultation",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/web-design-company",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/web-design-agency",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/portfolio",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/testimonials",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/faq",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    },
+    {
+      "url": "/who-we-are",
+      "status": "pending",
+      "optimizedAt": null,
+      "run": null
+    }
+  ]
+}
