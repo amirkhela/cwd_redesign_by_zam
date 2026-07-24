@@ -24,9 +24,17 @@ In July 2026 a daily automation rewrote page metas repeatedly and the homepage d
   - `DATA_getRelatedKeywords` / `DATA_getSimilarKeywords` / `DATA_getKeywordQuestions` `{"source":"ca","keyword":"seed","limit":30,"filter_volume_from":10}`
   - Rate limits exist — space calls out, batch keywords into single Metrics calls, and retry once on "too many requests" after ~60s.
 
+### 0.5 Network reality (cloud egress is restricted)
+Your session can usually reach ONLY git hosts. Adapt, don't abort:
+- **SE Ranking unreachable?** Use `automation/keyword-data.json` — pre-fetched Canadian metrics for every page target and blog seed (the volume ≥ 10 gate applies against it). Note "offline keyword data" in the report. Only abort content work if a keyword genuinely has no data anywhere.
+- **Portal/report endpoint unreachable?** Committing your run log to `automation/logs/` IS the report delivery — a GitHub Action (`.github/workflows/seo-report-relay.yml`) relays it to the portal and email automatically on push. Do not mark the run failed just because the direct POST failed.
+- **Live site unreachable?** Skip live verification — the relay Action performs it with full egress.
+- Position watch: skip when unreachable; say so in notes.
+
 ### 1. Determine today's plan day
-- **Day number = (count of `.json` files in `automation/logs/`) + 1.**
-- Load `automation/plan.json` and find that day's entry — it defines today's title, the 5 pages, the 3 blog themes, and any extras. The report MUST carry this day number and title (TVTC-style: "Day 7/30 — Location Pages II").
+- **Read `automation/state.json` → `nextDay` is today's plan day.** Increment it (and commit it with your work) ONLY after the day's core work has shipped — blocked/failed runs must leave it unchanged.
+- If a log file for today already exists, name yours `<YYYY-MM-DD>-2.json` (never overwrite).
+- Load `automation/plan.json` and find the `nextDay` entry — it defines today's title, the 5 pages, the 3 blog themes, and any extras. The report MUST carry this day number and title (TVTC-style: "Day 7/30 — Location Pages II").
 - Pages: skip any listed page whose queue.json entry is already `status: "done"` (a previous partial run may have shipped it); if that leaves fewer than 5, pull the next `pending` queue entries to top up — never exceed 5.
 - Blog themes are seeds: validate the exact keyword with SE Ranking + `keyword-registry.json` before writing. If a theme has no viable keyword (no volume, or already claimed), substitute the closest viable variant and say so in the report.
 - Extras: execute the day's `extras` list (image localization batches, llms.txt, read-only audits, etc.). Extras must respect every rule in this runbook — especially: read-only audits NEVER edit done pages.

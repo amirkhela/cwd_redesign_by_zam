@@ -1,0 +1,2166 @@
+{
+ "note": "Pre-fetched SE Ranking metrics (ca) 2026-07-24 - offline fallback when api.seranking.com is unreachable from the cloud session. volume>=10 gate applies. Refreshed periodically from a local session.",
+ "fetchedAt": "2026-07-24",
+ "keywords": [
+  {
+   "keyword": "web hosting canada",
+   "volume": 2400,
+   "difficulty": 98,
+   "cpc": 1.96,
+   "intents": [
+    "L",
+    "N"
+   ]
+  },
+  {
+   "keyword": "seo toronto",
+   "volume": 1300,
+   "difficulty": 65,
+   "cpc": 3.91,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "calgary seo",
+   "volume": 990,
+   "difficulty": 33,
+   "cpc": 3.62,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design hamilton",
+   "volume": 590,
+   "difficulty": 63,
+   "cpc": 2.64,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer edmonton",
+   "volume": 590,
+   "difficulty": 62,
+   "cpc": 6.11,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design hamilton",
+   "volume": 590,
+   "difficulty": 52,
+   "cpc": 2.64,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "ssl certificate website",
+   "volume": 590,
+   "difficulty": 64,
+   "cpc": 2.57,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo hamilton",
+   "volume": 590,
+   "difficulty": 25,
+   "cpc": 4.47,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company ottawa",
+   "volume": 590,
+   "difficulty": 17,
+   "cpc": 5.18,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "hamilton seo",
+   "volume": 590,
+   "difficulty": 13,
+   "cpc": 4.47,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design winnipeg",
+   "volume": 480,
+   "difficulty": 44,
+   "cpc": 2.61,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer vancouver",
+   "volume": 480,
+   "difficulty": 30,
+   "cpc": 5.65,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design winnipeg",
+   "volume": 480,
+   "difficulty": 42,
+   "cpc": 2.61,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design calgary",
+   "volume": 480,
+   "difficulty": 51,
+   "cpc": 3.29,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "victoria seo",
+   "volume": 480,
+   "difficulty": 15,
+   "cpc": 4.03,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo victoria",
+   "volume": 480,
+   "difficulty": 19,
+   "cpc": 4.03,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo brampton",
+   "volume": 480,
+   "difficulty": 7,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "schema markup",
+   "volume": 480,
+   "difficulty": 0,
+   "cpc": 0.34,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "business directories canada",
+   "volume": 480,
+   "difficulty": 45,
+   "cpc": 2.62,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "brampton seo",
+   "volume": 480,
+   "difficulty": 7,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "toronto seo",
+   "volume": 410,
+   "difficulty": 33,
+   "cpc": 3.91,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "winnipeg seo",
+   "volume": 390,
+   "difficulty": 21,
+   "cpc": 5.5,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design surrey",
+   "volume": 390,
+   "difficulty": 29,
+   "cpc": 6.33,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design kitchener",
+   "volume": 390,
+   "difficulty": 29,
+   "cpc": 3,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design brampton",
+   "volume": 390,
+   "difficulty": 33,
+   "cpc": 5.56,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design surrey",
+   "volume": 390,
+   "difficulty": 34,
+   "cpc": 6.33,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design kitchener",
+   "volume": 390,
+   "difficulty": 32,
+   "cpc": 3,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design brampton",
+   "volume": 390,
+   "difficulty": 32,
+   "cpc": 5.56,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo winnipeg",
+   "volume": 390,
+   "difficulty": 20,
+   "cpc": 3.35,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services ottawa",
+   "volume": 390,
+   "difficulty": 30,
+   "cpc": 4.68,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services halifax",
+   "volume": 390,
+   "difficulty": 33,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company hamilton",
+   "volume": 390,
+   "difficulty": 10,
+   "cpc": 6.27,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company brampton",
+   "volume": 390,
+   "difficulty": 24,
+   "cpc": 3.07,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "core web vitals",
+   "volume": 390,
+   "difficulty": 82,
+   "cpc": 1.76,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design victoria",
+   "volume": 320,
+   "difficulty": 38,
+   "cpc": 4.77,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design montreal",
+   "volume": 320,
+   "difficulty": 0,
+   "cpc": 2.34,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web designer ottawa",
+   "volume": 320,
+   "difficulty": 39,
+   "cpc": 7.63,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer calgary",
+   "volume": 320,
+   "difficulty": 39,
+   "cpc": 5.11,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design victoria",
+   "volume": 320,
+   "difficulty": 51,
+   "cpc": 4.77,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services montreal",
+   "volume": 320,
+   "difficulty": 25,
+   "cpc": 5.23,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services hamilton",
+   "volume": 320,
+   "difficulty": 14,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company montreal",
+   "volume": 320,
+   "difficulty": 32,
+   "cpc": 5.93,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design oshawa",
+   "volume": 260,
+   "difficulty": 0,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design barrie",
+   "volume": 260,
+   "difficulty": 51,
+   "cpc": 2.78,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer hamilton",
+   "volume": 260,
+   "difficulty": 31,
+   "cpc": 5.19,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design oshawa",
+   "volume": 260,
+   "difficulty": 48,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design montreal",
+   "volume": 260,
+   "difficulty": 56,
+   "cpc": 2.01,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design barrie",
+   "volume": 260,
+   "difficulty": 48,
+   "cpc": 2.78,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "squarespace vs wordpress",
+   "volume": 260,
+   "difficulty": 22,
+   "cpc": 0.14,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "shopify seo",
+   "volume": 260,
+   "difficulty": 57,
+   "cpc": 3.76,
+   "intents": [
+    "I",
+    "N"
+   ]
+  },
+  {
+   "keyword": "seo london",
+   "volume": 260,
+   "difficulty": 19,
+   "cpc": 0,
+   "intents": [
+    "I",
+    "N"
+   ]
+  },
+  {
+   "keyword": "seo company winnipeg",
+   "volume": 260,
+   "difficulty": 20,
+   "cpc": 5.01,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo burnaby",
+   "volume": 260,
+   "difficulty": 13,
+   "cpc": 4.39,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "london seo",
+   "volume": 260,
+   "difficulty": 24,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "conversion rate optimization",
+   "volume": 260,
+   "difficulty": 82,
+   "cpc": 3.95,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "burnaby seo",
+   "volume": 260,
+   "difficulty": 15,
+   "cpc": 4.39,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "edmonton seo",
+   "volume": 220,
+   "difficulty": 14,
+   "cpc": 3.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design halifax",
+   "volume": 210,
+   "difficulty": 46,
+   "cpc": 2.64,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design burnaby",
+   "volume": 210,
+   "difficulty": 11,
+   "cpc": 2.53,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo vaughan",
+   "volume": 210,
+   "difficulty": 25,
+   "cpc": 3.18,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo saskatoon",
+   "volume": 210,
+   "difficulty": 7,
+   "cpc": 4.14,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo halifax",
+   "volume": 210,
+   "difficulty": 30,
+   "cpc": 5.54,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company surrey",
+   "volume": 210,
+   "difficulty": 17,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo barrie",
+   "volume": 210,
+   "difficulty": 24,
+   "cpc": 2.34,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "saskatoon seo",
+   "volume": 210,
+   "difficulty": 7,
+   "cpc": 4.14,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "halifax seo",
+   "volume": 210,
+   "difficulty": 19,
+   "cpc": 5.54,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "google business profile optimization",
+   "volume": 210,
+   "difficulty": 52,
+   "cpc": 3.78,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "barrie seo",
+   "volume": 210,
+   "difficulty": 26,
+   "cpc": 2.34,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design toronto",
+   "volume": 180,
+   "difficulty": 43,
+   "cpc": 4.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design toronto",
+   "volume": 180,
+   "difficulty": 57,
+   "cpc": 4.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design richmond hill",
+   "volume": 170,
+   "difficulty": 29,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design london",
+   "volume": 170,
+   "difficulty": 59,
+   "cpc": 2.28,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer victoria",
+   "volume": 170,
+   "difficulty": 41,
+   "cpc": 4.2,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer mississauga",
+   "volume": 170,
+   "difficulty": 46,
+   "cpc": 4.85,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design london",
+   "volume": 170,
+   "difficulty": 54,
+   "cpc": 2.28,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services brampton",
+   "volume": 170,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo kitchener",
+   "volume": 170,
+   "difficulty": 22,
+   "cpc": 3.84,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "realtor website design",
+   "volume": 170,
+   "difficulty": 47,
+   "cpc": 3.92,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "plumber website design",
+   "volume": 170,
+   "difficulty": 10,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "kitchener seo",
+   "volume": 170,
+   "difficulty": 22,
+   "cpc": 3.84,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "how to get google reviews",
+   "volume": 170,
+   "difficulty": 43,
+   "cpc": 2.92,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "construction company website design",
+   "volume": 170,
+   "difficulty": 16,
+   "cpc": 2.83,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "wix seo",
+   "volume": 140,
+   "difficulty": 74,
+   "cpc": 3.48,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "windsor seo",
+   "volume": 140,
+   "difficulty": 11,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design windsor",
+   "volume": 140,
+   "difficulty": 30,
+   "cpc": 2.08,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design vaughan",
+   "volume": 140,
+   "difficulty": 19,
+   "cpc": 4,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design windsor",
+   "volume": 140,
+   "difficulty": 34,
+   "cpc": 2.08,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design vaughan",
+   "volume": 140,
+   "difficulty": 25,
+   "cpc": 4,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design richmond hill",
+   "volume": 140,
+   "difficulty": 36,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo windsor",
+   "volume": 140,
+   "difficulty": 4,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo surrey",
+   "volume": 140,
+   "difficulty": 14,
+   "cpc": 3.41,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo services richmond hill",
+   "volume": 140,
+   "difficulty": 28,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo richmond hill",
+   "volume": 140,
+   "difficulty": 28,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company halifax",
+   "volume": 140,
+   "difficulty": 34,
+   "cpc": 2.19,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "richmond hill seo",
+   "volume": 140,
+   "difficulty": 33,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "lawyer website design",
+   "volume": 140,
+   "difficulty": 32,
+   "cpc": 3.74,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "church website",
+   "volume": 140,
+   "difficulty": 55,
+   "cpc": 1.13,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "aoda website compliance",
+   "volume": 140,
+   "difficulty": 34,
+   "cpc": 2.28,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "woocommerce vs shopify",
+   "volume": 110,
+   "difficulty": 40,
+   "cpc": 0.25,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web designer winnipeg",
+   "volume": 110,
+   "difficulty": 41,
+   "cpc": 3.08,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer surrey",
+   "volume": 110,
+   "difficulty": 33,
+   "cpc": 7.2,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "surrey seo",
+   "volume": 110,
+   "difficulty": 6,
+   "cpc": 3.14,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo services surrey",
+   "volume": 110,
+   "difficulty": 25,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "local seo small business",
+   "volume": 110,
+   "difficulty": 31,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "email marketing small business",
+   "volume": 110,
+   "difficulty": 24,
+   "cpc": 7.37,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo oshawa",
+   "volume": 90,
+   "difficulty": 17,
+   "cpc": 2.86,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo north york",
+   "volume": 90,
+   "difficulty": 14,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company london",
+   "volume": 90,
+   "difficulty": 50,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "restaurant web design",
+   "volume": 90,
+   "difficulty": 40,
+   "cpc": 2.78,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "oshawa seo",
+   "volume": 90,
+   "difficulty": 16,
+   "cpc": 2.86,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "contractor website design",
+   "volume": 90,
+   "difficulty": 23,
+   "cpc": 4.67,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "ai chatbot for website",
+   "volume": 90,
+   "difficulty": 80,
+   "cpc": 4.57,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "vancouver seo",
+   "volume": 80,
+   "difficulty": 34,
+   "cpc": 4.4,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo vancouver",
+   "volume": 80,
+   "difficulty": 25,
+   "cpc": 4.4,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "wordpress security",
+   "volume": 70,
+   "difficulty": 45,
+   "cpc": 4.87,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web designer brampton",
+   "volume": 70,
+   "difficulty": 31,
+   "cpc": 1.87,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design north york",
+   "volume": 70,
+   "difficulty": 20,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services winnipeg",
+   "volume": 70,
+   "difficulty": 18,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company victoria",
+   "volume": 70,
+   "difficulty": 30,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company richmond hill",
+   "volume": 70,
+   "difficulty": 22,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "hvac website design",
+   "volume": 70,
+   "difficulty": 19,
+   "cpc": 3.01,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "how much does seo cost",
+   "volume": 70,
+   "difficulty": 34,
+   "cpc": 1.64,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "google my business optimization",
+   "volume": 70,
+   "difficulty": 73,
+   "cpc": 3.39,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "electrician website design",
+   "volume": 70,
+   "difficulty": 10,
+   "cpc": 1.61,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "cleaning services website",
+   "volume": 70,
+   "difficulty": 13,
+   "cpc": 1.05,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "bed and breakfast website",
+   "volume": 70,
+   "difficulty": 0,
+   "cpc": 0.67,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "barbershop website",
+   "volume": 70,
+   "difficulty": 15,
+   "cpc": 0.82,
+   "intents": [
+    "L",
+    "T"
+   ]
+  },
+  {
+   "keyword": "seo calgary",
+   "volume": 60,
+   "difficulty": 45,
+   "cpc": 3.62,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design halifax",
+   "volume": 50,
+   "difficulty": 12,
+   "cpc": 2.69,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "shopify fees canada",
+   "volume": 50,
+   "difficulty": 36,
+   "cpc": 0.76,
+   "intents": [
+    "I",
+    "N"
+   ]
+  },
+  {
+   "keyword": "seo services kitchener",
+   "volume": 50,
+   "difficulty": 29,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "roofing website design",
+   "volume": 50,
+   "difficulty": 13,
+   "cpc": 4.56,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "landing page best practices",
+   "volume": 50,
+   "difficulty": 49,
+   "cpc": 1.03,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "how to choose a domain name",
+   "volume": 50,
+   "difficulty": 27,
+   "cpc": 1.27,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "high converting landing page",
+   "volume": 50,
+   "difficulty": 49,
+   "cpc": 2.25,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "get more google reviews",
+   "volume": 50,
+   "difficulty": 46,
+   "cpc": 4.67,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "email marketing canada",
+   "volume": 50,
+   "difficulty": 32,
+   "cpc": 7.13,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "electrical contractor website",
+   "volume": 50,
+   "difficulty": 39,
+   "cpc": 2.2,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web designer halifax",
+   "volume": 40,
+   "difficulty": 49,
+   "cpc": 2.04,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design edmonton",
+   "volume": 40,
+   "difficulty": 38,
+   "cpc": 3.34,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services oshawa",
+   "volume": 40,
+   "difficulty": 0,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo services north york",
+   "volume": 40,
+   "difficulty": 16,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services barrie",
+   "volume": 40,
+   "difficulty": 12,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo ottawa",
+   "volume": 40,
+   "difficulty": 28,
+   "cpc": 3.18,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company vaughan",
+   "volume": 40,
+   "difficulty": 13,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo company toronto",
+   "volume": 40,
+   "difficulty": 49,
+   "cpc": 4.1,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "photographer portfolio website",
+   "volume": 40,
+   "difficulty": 46,
+   "cpc": 0.62,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "ottawa seo",
+   "volume": 40,
+   "difficulty": 30,
+   "cpc": 3.18,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "movers website",
+   "volume": 40,
+   "difficulty": 29,
+   "cpc": 1.47,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "google map pack",
+   "volume": 40,
+   "difficulty": 53,
+   "cpc": 3.37,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design calgary",
+   "volume": 30,
+   "difficulty": 41,
+   "cpc": 4.15,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web designer oshawa",
+   "volume": 30,
+   "difficulty": 39,
+   "cpc": 1.31,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design trends",
+   "volume": 30,
+   "difficulty": 0,
+   "cpc": 1.37,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo services saskatoon",
+   "volume": 30,
+   "difficulty": 9,
+   "cpc": 5.25,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo edmonton",
+   "volume": 30,
+   "difficulty": 14,
+   "cpc": 3.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company barrie",
+   "volume": 30,
+   "difficulty": 25,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "med spa website design",
+   "volume": 30,
+   "difficulty": 9,
+   "cpc": 1.02,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "hotel website design",
+   "volume": 30,
+   "difficulty": 40,
+   "cpc": 1.63,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "ecommerce website cost",
+   "volume": 30,
+   "difficulty": 33,
+   "cpc": 2.32,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "consultant website design",
+   "volume": 30,
+   "difficulty": 27,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "clinic website design",
+   "volume": 30,
+   "difficulty": 19,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "chiropractic website",
+   "volume": 30,
+   "difficulty": 25,
+   "cpc": 3.16,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "wordpress speed optimization",
+   "volume": 20,
+   "difficulty": 47,
+   "cpc": 3.21,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website migration seo",
+   "volume": 20,
+   "difficulty": 37,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design edmonton",
+   "volume": 20,
+   "difficulty": 36,
+   "cpc": 3.34,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design for dentists",
+   "volume": 20,
+   "difficulty": 18,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "vaughan seo",
+   "volume": 20,
+   "difficulty": 13,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "structured data seo",
+   "volume": 20,
+   "difficulty": 55,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "site migration checklist",
+   "volume": 20,
+   "difficulty": 49,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "shopify seo checklist",
+   "volume": 20,
+   "difficulty": 14,
+   "cpc": 2.02,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo services victoria",
+   "volume": 20,
+   "difficulty": 21,
+   "cpc": 5.21,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services vancouver",
+   "volume": 20,
+   "difficulty": 27,
+   "cpc": 7.01,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services toronto",
+   "volume": 20,
+   "difficulty": 45,
+   "cpc": 4.39,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services london",
+   "volume": 20,
+   "difficulty": 30,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services calgary",
+   "volume": 20,
+   "difficulty": 39,
+   "cpc": 5.85,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company oshawa",
+   "volume": 20,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company kitchener",
+   "volume": 20,
+   "difficulty": 24,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "online store design",
+   "volume": 20,
+   "difficulty": 0,
+   "cpc": 1.93,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "moving company website design",
+   "volume": 20,
+   "difficulty": 10,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "google ads budget",
+   "volume": 20,
+   "difficulty": 38,
+   "cpc": 12.04,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "franchise website design",
+   "volume": 20,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "fitness website design",
+   "volume": 20,
+   "difficulty": 19,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "coaching website design",
+   "volume": 20,
+   "difficulty": 21,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "chiropractor website design",
+   "volume": 20,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "auto repair website design",
+   "volume": 20,
+   "difficulty": 21,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "accounting firm website design",
+   "volume": 20,
+   "difficulty": 24,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "accountant website design",
+   "volume": 20,
+   "difficulty": 33,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website upkeep",
+   "volume": 10,
+   "difficulty": 75,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website redesign checklist",
+   "volume": 10,
+   "difficulty": 35,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website maintenance checklist",
+   "volume": 10,
+   "difficulty": 38,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "website design vancouver",
+   "volume": 10,
+   "difficulty": 44,
+   "cpc": 5.75,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design saskatoon",
+   "volume": 10,
+   "difficulty": 36,
+   "cpc": 2.85,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design ottawa",
+   "volume": 10,
+   "difficulty": 66,
+   "cpc": 4.56,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "website design mississauga",
+   "volume": 10,
+   "difficulty": 80,
+   "cpc": 2.82,
+   "intents": [
+    "L",
+    "N"
+   ]
+  },
+  {
+   "keyword": "web designer toronto",
+   "volume": 10,
+   "difficulty": 48,
+   "cpc": 3.93,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web designer london",
+   "volume": 10,
+   "difficulty": 29,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web design vancouver",
+   "volume": 10,
+   "difficulty": 55,
+   "cpc": 7.12,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "web design saskatoon",
+   "volume": 10,
+   "difficulty": 44,
+   "cpc": 2.85,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design ottawa",
+   "volume": 10,
+   "difficulty": 46,
+   "cpc": 4.56,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "web design mississauga",
+   "volume": 10,
+   "difficulty": 80,
+   "cpc": 2.82,
+   "intents": [
+    "L",
+    "N"
+   ]
+  },
+  {
+   "keyword": "speed up wordpress site",
+   "volume": 10,
+   "difficulty": 67,
+   "cpc": 3.35,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "spa website design",
+   "volume": 10,
+   "difficulty": 15,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "seo services windsor",
+   "volume": 10,
+   "difficulty": 23,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services mississauga",
+   "volume": 10,
+   "difficulty": 23,
+   "cpc": 6.31,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo services edmonton",
+   "volume": 10,
+   "difficulty": 28,
+   "cpc": 8.64,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo montreal",
+   "volume": 10,
+   "difficulty": 43,
+   "cpc": 3.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo mississauga",
+   "volume": 10,
+   "difficulty": 34,
+   "cpc": 6.46,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company vancouver",
+   "volume": 10,
+   "difficulty": 24,
+   "cpc": 5.48,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company saskatoon",
+   "volume": 10,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company mississauga",
+   "volume": 10,
+   "difficulty": 33,
+   "cpc": 11.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company edmonton",
+   "volume": 10,
+   "difficulty": 49,
+   "cpc": 6.4,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "seo company calgary",
+   "volume": 10,
+   "difficulty": 69,
+   "cpc": 5.08,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "roofing company website",
+   "volume": 10,
+   "difficulty": 36,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "physiotherapy website design",
+   "volume": 10,
+   "difficulty": 13,
+   "cpc": 1.59,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "photography website design",
+   "volume": 10,
+   "difficulty": 59,
+   "cpc": 0,
+   "intents": [
+    "I",
+    "N"
+   ]
+  },
+  {
+   "keyword": "multi location website design",
+   "volume": 10,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "montreal seo",
+   "volume": 10,
+   "difficulty": 36,
+   "cpc": 3.32,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "mississauga seo",
+   "volume": 10,
+   "difficulty": 16,
+   "cpc": 6.46,
+   "intents": [
+    "L",
+    "C"
+   ]
+  },
+  {
+   "keyword": "local seo checklist",
+   "volume": 10,
+   "difficulty": 33,
+   "cpc": 1.6,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "local content marketing",
+   "volume": 10,
+   "difficulty": 35,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "improve website conversions",
+   "volume": 10,
+   "difficulty": 73,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "ecommerce website design canada",
+   "volume": 10,
+   "difficulty": 40,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "daycare website design",
+   "volume": 10,
+   "difficulty": 11,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "childcare website design",
+   "volume": 10,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "I"
+   ]
+  },
+  {
+   "keyword": "charity website design",
+   "volume": 10,
+   "difficulty": 50,
+   "cpc": 4.26,
+   "intents": [
+    "I"
+   ]
+  }
+ ]
+}
