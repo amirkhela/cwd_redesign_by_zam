@@ -1,0 +1,23 @@
+{
+  "runId": "2026-07-24-blocked",
+  "date": "2026-07-24",
+  "status": "error",
+  "dayNumber": 1,
+  "queueDone": 0,
+  "queueTotal": 56,
+  "workCompleted": [],
+  "pagesOptimized": [],
+  "blogs": [],
+  "keywordsTargeted": [],
+  "liveVerification": [],
+  "manualTasks": [],
+  "positionWatch": null,
+  "tomorrow": [
+    "/seo/mississauga",
+    "/seo/calgary",
+    "/seo/ottawa",
+    "/seo/barrie",
+    "/seo/brampton"
+  ],
+  "notes": "Run aborted before any page or blog work began. This session's network egress policy blocks both hosts this automation requires: api.seranking.com (SE Ranking MCP, used for all keyword research/volume gates) returned 'Host not in allowlist' via the environment proxy, and team.canadianwebdesigns.ca (the mandatory report endpoint) returned a 403 CONNECT tunnel failure from the same proxy. Per the runbook, no keyword decision may be made without SE Ranking data and no blog keyword may be claimed without a verified volume >= 10 - so no page edits or blog posts were attempted rather than guess at SEO data (the exact failure mode that got v1 killed). No repo files outside this log were touched, and nothing was pushed except this log entry. The mandatory report POST could not be sent for the same network reason; this log file is the only record of today's run. Action needed: add api.seranking.com and team.canadianwebdesigns.ca to this environment's network egress allowlist so tomorrow's run can proceed."
+}
