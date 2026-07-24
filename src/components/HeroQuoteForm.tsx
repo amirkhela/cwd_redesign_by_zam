@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function HeroQuoteForm() {
+export default function HeroQuoteForm({ source = "homepage" }: { source?: string }) {
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", service: "" });
 
@@ -24,8 +24,8 @@ export default function HeroQuoteForm() {
           email: form.email,
           phone: form.phone,
           service: form.service,
-          message: `Quick quote request from the homepage.\n\nService: ${form.service || "General Inquiry"}`,
-          source: "homepage",
+          message: `Quick quote request from: ${source}.\n\nService: ${form.service || "General Inquiry"}`,
+          source,
           recaptchaToken: "",
           _hp: "",
         }),

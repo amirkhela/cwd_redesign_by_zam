@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import { getConfig } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -531,6 +532,8 @@ export default function WebDesignCompanyPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
+      <QuoteFormSection source="web-design-company" />
     </>
   );
 }

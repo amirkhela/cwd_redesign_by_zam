@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
 import { getConfig } from "@/lib/client-config";
@@ -757,6 +758,8 @@ export default function LocationPage({ params }: { params: { city: string } }) {
           sameAs: config.socialLinks.map((link) => link.href),
         }),
       }} />
+
+      <QuoteFormSection source={`location-${params.city}`} />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/blog";
@@ -340,6 +341,8 @@ export default async function BlogPostPage({ params }: Props) {
           </aside>
         </div>
       </div>
+
+      <QuoteFormSection source={`blog-${slug}`} />
     </>
   );
 }

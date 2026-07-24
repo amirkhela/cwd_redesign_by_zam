@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
 import { getConfig } from "@/lib/client-config";
@@ -184,6 +185,8 @@ export default function TestimonialsPage() {
           }),
         }}
       />
+
+      <QuoteFormSection source="testimonials" />
     </>
   );
 }

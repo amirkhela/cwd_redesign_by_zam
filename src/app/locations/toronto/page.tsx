@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -643,6 +644,8 @@ export default function TorontoPage() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+
+      <QuoteFormSection source="location-toronto" />
     </>
   );
 }

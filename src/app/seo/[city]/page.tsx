@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -534,6 +535,8 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+
+      <QuoteFormSection source={`seo-${city}`} />
     </>
   );
 }

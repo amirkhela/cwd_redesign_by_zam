@@ -1,4 +1,5 @@
 import Link from "next/link";
+import QuoteFormSection from "@/components/QuoteFormSection";
 import Image from "next/image";
 import type { ClientService } from "@/lib/client-config";
 import { getConfig } from "@/lib/client-config";
@@ -326,6 +327,8 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
           }),
         }}
       />
+
+      <QuoteFormSection source={`service-${service.title}`} />
     </>
   );
 }
