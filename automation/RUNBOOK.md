@@ -52,17 +52,20 @@ Per post:
 - Body: 1,200–2,000 words that actually answer the query. Research with SE Ranking question/longtail data (+ web search if available). H2/H3 structure, specific and factual — cite only evergreen or verified facts, current pricing truths from the site config, internal links (2–4) to service/location pages and related keeper posts, ONE external authoritative link max. No fabricated stats, testimonials, or case studies. No competitor bashing. No hidden links.
 - Do NOT edit `BLOG_SLUGS` in `src/middleware.ts` (that set is only for legacy WP root URLs).
 
-### 4. Verify
-- `npm ci` (first run) / `npm install` then `NODE_OPTIONS=--max-old-space-size=8192 npm run build`. The build MUST pass. If a change breaks it, fix or revert that change — never push a broken build. (Exit 127/0xC0000409 memory-crash lore is Windows-only; on Linux a failure is real.)
-- Spot-check your edited files for: unescaped apostrophes in JSX, image paths that exist, valid JSON in schema blocks.
+### 4. Verify & ship in PHASES (session-death insurance)
+Cloud sessions can run out of time. Work so that anything finished is already pushed:
+- **Phase A (pages):** after the 5 page optimizations → `npm ci && NODE_OPTIONS=--max-old-space-size=8192 npm run build` → if green, commit `seo-auto: <date> — pages (A)` including the queue.json updates → push immediately.
+- **Phase B (blogs):** after the 3 posts → build again → commit `seo-auto: <date> — blogs (B)` including keyword-registry updates → push.
+- If the build fails in a phase, fix or revert ONLY the offending change; never push red.
+- **Budget your session:** if time is running short, finish and push the current phase rather than starting the next. 3 pages shipped beats 5 pages lost. Fewer, deeper page passes are always preferred over rushing.
+- Spot-check edited files for: unescaped apostrophes in JSX, image paths that exist (case-sensitive!), valid JSON in schema blocks.
 
 ### 5. Position watch (SE Ranking project data)
 The CWD site is tracked in SE Ranking project/site id **9263024**. Pull current tracked-keyword positions (try `PROJECT_getKeywordStats` / `PROJECT_getSummary` / `PROJECT_getPositionHistory` with `{"site_id": 9263024}` — adapt args to what the tools accept). Build a small position-watch: overall summary (top-10 count, avg position if available) + any tracked keyword that dropped noticeably. This section is best-effort — if the calls fail, note it and move on; NEVER let position data trigger edits to already-done pages (one-pass rule is absolute).
 
-### 6. Ship
-- Wait ~3 minutes after push, then **live-verify**: curl every page URL you changed and every new blog URL on https://canadianwebdesigns.ca — record HTTP status for each (expect 200).
-- Append a run log: `automation/logs/<YYYY-MM-DD>.json` — the full report object below.
-- Commit everything as ONE commit: `seo-auto: <date> — 5 pages + 3 posts` (list URLs in the body). Push to `main`. (Log file can go in a tiny follow-up commit since live verification happens post-push.)
+### 6. Live-verify & log
+- Wait ~3 minutes after the last push, then **live-verify**: curl every page URL you changed and every new blog URL on https://canadianwebdesigns.ca — record HTTP status for each (expect 200).
+- Append the run log `automation/logs/<YYYY-MM-DD>.json` (full report object below) in a small final commit and push.
 
 ### 7. Report
 Build ONE report object with this shape (omit sections you genuinely have no data for):
@@ -85,7 +88,8 @@ Manual tasks to generate every run: (1) GSC Request Indexing for each new blog U
 
 Then send ONE call:
 `POST https://team.canadianwebdesigns.ca/api/automations/seo-report` with the report object as JSON body and header `x-log-key: <TEAM_LOG_KEY from your instructions>`. This single endpoint stores the run in the portal's /automations history AND emails the formatted daily report.
-If the run failed partway, still send it with `status: "error"` and honest notes.
+
+**THE REPORT IS NON-NEGOTIABLE.** Send it the moment your shipped work is known — if you are at risk of running out of session time, send a shorter report EARLY (after Phase A) rather than no report. A failed or partial run MUST still send `status: "error"` with honest notes. The owner judges this automation by the daily email; silence is the worst outcome.
 
 ## Style guide (site conventions)
 - JSX text: `&apos;` `&ldquo;` `&rdquo;` for quotes/apostrophes.
