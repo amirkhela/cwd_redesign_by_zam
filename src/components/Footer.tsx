@@ -34,7 +34,7 @@ export default function Footer() {
           {/* Services */}
           <div className="lg:col-span-3">
             <h3 className="text-base font-bold mb-3">Our Services</h3>
-            <ul className="space-y-0 text-[13px]">
+            <ul className="space-y-0 text-[0.8rem]">
               {[
                 { href: "/services/web-design-development", label: "Web Design & Development" },
                 { href: "/services/wordpress-website-design", label: "WordPress Website Design" },
@@ -62,7 +62,7 @@ export default function Footer() {
           {/* Company */}
           <div className="lg:col-span-3">
             <h3 className="text-base font-bold mb-3">Company</h3>
-            <ul className="space-y-0 text-[13px]">
+            <ul className="space-y-0 text-[0.8rem]">
               {[
                 { href: "/who-we-are", label: "Who We Are" },
                 { href: "/our-story", label: "Our Story" },
@@ -89,7 +89,7 @@ export default function Footer() {
           {/* Contact info */}
           <div className="lg:col-span-3">
             <h3 className="text-base font-bold mb-3">Contact Us</h3>
-            <ul className="space-y-2 text-[13px] text-gray-300">
+            <ul className="space-y-2 text-[0.8rem] text-gray-300">
               <li className="flex items-center gap-2.5">
                 <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -123,7 +123,7 @@ export default function Footer() {
         {/* Service areas — compact strip */}
         <div className="border-t border-white/10 pt-6 mb-6">
           <p className="text-xs font-bold text-white/70 uppercase tracking-wider mb-2">Service Areas</p>
-          <div className="flex flex-wrap gap-x-1 gap-y-0 text-[13px]">
+          <div className="flex flex-wrap gap-x-1 gap-y-0 text-[0.8rem]">
             <Link
               href="/locations/toronto"
               className="text-[#00AADF] hover:text-white font-semibold transition-colors duration-200 px-2 -ml-2 py-1.5 flex items-center"
