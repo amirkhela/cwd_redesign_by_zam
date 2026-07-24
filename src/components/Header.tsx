@@ -33,9 +33,13 @@ function DesktopDropdown({ item }: { item: ClientNavItem }) {
         >
           {item.children!.map((child) =>
             child.children ? (
-              <div key={child.href}>
-                <button
-                  onClick={() => setOpenSub(openSub === child.href ? null : child.href)}
+              <div
+                key={child.href}
+                onMouseEnter={() => setOpenSub(child.href)}
+                onMouseLeave={() => setOpenSub(null)}
+              >
+                <Link
+                  href={child.href}
                   className="flex items-center justify-between gap-3 w-full px-5 py-2.5 text-sm text-dark hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
                 >
                   {child.label}
@@ -45,15 +49,8 @@ function DesktopDropdown({ item }: { item: ClientNavItem }) {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                   </svg>
-                </button>
+                </Link>
                 <div className={openSub === child.href ? "block" : "hidden"}>
-                  <Link
-                    href={child.href}
-                    className="flex items-center gap-2 pl-9 pr-5 py-2 text-[13px] text-dark-light hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
-                    All {child.label}
-                  </Link>
                   {child.children.map((sub) => (
                     <Link
                       key={sub.href}
