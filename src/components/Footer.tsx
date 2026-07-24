@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white pt-section-y-sm pb-8">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
           {/* Company info */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-lg font-bold mb-4">{config.businessName}</h3>
             <p className="text-gray-300 text-sm mb-4">
               Professional web design, SEO, and digital marketing services across Canada since {config.founded}.
@@ -31,24 +31,46 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick links */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Services & Links</h3>
+          {/* Services */}
+          <div className="lg:col-span-3">
+            <h3 className="text-lg font-bold mb-4">Our Services</h3>
             <ul className="space-y-0.5 text-sm">
               {[
                 { href: "/services/web-design-development", label: "Web Design & Development" },
-                { href: "/web-design-company", label: "Web Design Company" },
-                { href: "/web-design-agency", label: "Web Design Agency" },
-                { href: "/services/seo", label: "SEO Services" },
                 { href: "/services/wordpress-website-design", label: "WordPress Website Design" },
                 { href: "/services/shopify-website-design", label: "Shopify Website Design" },
                 { href: "/services/wix-website-design", label: "Wix Website Design" },
+                { href: "/services/seo", label: "SEO Services" },
+                { href: "/services/google-ads-management", label: "Google Ads Management" },
+                { href: "/services/social-media-optimization", label: "Social Media Optimization" },
                 { href: "/services/graphic-design", label: "Graphic Design" },
                 { href: "/services/website-maintenance", label: "Website Maintenance" },
-                { href: "/portfolio", label: "Our Portfolio" },
-                { href: "/blog", label: "Blog" },
+                { href: "/services/ai-consultation", label: "AI Consultation" },
+              ].map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 py-1.5 block min-h-[40px] flex items-center"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div className="lg:col-span-3">
+            <h3 className="text-lg font-bold mb-4">Company</h3>
+            <ul className="space-y-0.5 text-sm">
+              {[
                 { href: "/who-we-are", label: "Who We Are" },
                 { href: "/our-story", label: "Our Story" },
+                { href: "/portfolio", label: "Our Portfolio" },
+                { href: "/testimonials", label: "Testimonials" },
+                { href: "/web-design-company", label: "Web Design Company" },
+                { href: "/web-design-agency", label: "Web Design Agency" },
+                { href: "/blog", label: "Blog" },
                 { href: "/faq", label: "FAQ" },
                 { href: "/contact", label: "Get In Touch" },
               ].map(({ href, label }) => (
@@ -65,7 +87,7 @@ export default function Footer() {
           </div>
 
           {/* Contact info */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-center gap-2.5">
@@ -96,63 +118,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Service areas */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Service Areas</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-0 text-sm">
-              {/* Toronto first — primary market */}
-              <li key="toronto" className="col-span-2 mb-1">
-                <Link
-                  href="/locations/toronto"
-                  className="text-[#00AADF] hover:text-white font-semibold transition-colors duration-200 py-1.5 block min-h-[40px] flex items-center"
-                >
-                  Web Design Toronto ↗
-                </Link>
-              </li>
-              {config.cities.filter((c) => c.slug !== "toronto").map((city) => (
-                <li key={city.slug}>
-                  <Link
-                    href={`/locations/${city.slug}`}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 py-1.5 block min-h-[40px] flex items-center"
-                  >
-                    {city.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+        </div>
 
-            {/* Local SEO — sitewide links to the recovered /seo/[city] pages */}
-            <p className="text-xs font-bold text-white/70 uppercase tracking-wider mt-5 mb-2">Local SEO</p>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-0 text-sm">
-              {[
-                { s: "surrey", n: "SEO Surrey" },
-                { s: "victoria", n: "SEO Victoria" },
-                { s: "burnaby", n: "SEO Burnaby" },
-                { s: "halifax", n: "SEO Halifax" },
-                { s: "barrie", n: "SEO Barrie" },
-                { s: "kitchener", n: "SEO Kitchener" },
-                // Un-shadowed 2026-07-23 — these carried the largest historical
-                // impression volume of any /seo pages; they need sitewide links.
-                { s: "calgary", n: "SEO Calgary" },
-                { s: "ottawa", n: "SEO Ottawa" },
-                { s: "mississauga", n: "SEO Mississauga" },
-                { s: "brampton", n: "SEO Brampton" },
-                { s: "vancouver", n: "SEO Vancouver" },
-                { s: "north-york", n: "SEO North York" },
-                { s: "edmonton", n: "SEO Edmonton" },
-                { s: "london", n: "SEO London" },
-                { s: "windsor", n: "SEO Windsor" },
-              ].map((c) => (
-                <li key={c.s}>
-                  <Link
-                    href={`/seo/${c.s}`}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 py-1.5 block min-h-[40px] flex items-center"
-                  >
-                    {c.n}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+        {/* Service areas — compact strip */}
+        <div className="border-t border-white/10 pt-6 mb-6">
+          <p className="text-xs font-bold text-white/70 uppercase tracking-wider mb-2">Service Areas</p>
+          <div className="flex flex-wrap gap-x-1 gap-y-0 text-sm">
+            <Link
+              href="/locations/toronto"
+              className="text-[#00AADF] hover:text-white font-semibold transition-colors duration-200 px-2 -ml-2 py-2 min-h-[40px] flex items-center"
+            >
+              Web Design Toronto ↗
+            </Link>
+            {config.cities.filter((c) => c.slug !== "toronto").map((city) => (
+              <Link
+                key={city.slug}
+                href={`/locations/${city.slug}`}
+                className="text-gray-300 hover:text-white transition-colors duration-200 px-2 py-2 min-h-[40px] flex items-center"
+              >
+                {city.name}
+              </Link>
+            ))}
           </div>
         </div>
 
