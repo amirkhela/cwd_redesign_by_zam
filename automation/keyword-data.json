@@ -2161,6 +2161,28 @@
    "intents": [
     "I"
    ]
+  },
+  {
+   "keyword": "local seo delta bc",
+   "volume": 10,
+   "difficulty": 5,
+   "cpc": 0,
+   "intents": [
+    "L"
+   ]
+  },
+  {
+   "keyword": "web design delta",
+   "volume": 10,
+   "difficulty": 9,
+   "cpc": 0,
+   "intents": [
+    "L",
+    "C"
+   ]
   }
- ]
+ ],
+ "pageNotes": {
+  "/seo/ladner": "Verified 2026-07-25: NO ladner-specific keyword has SE Ranking data (seo ladner, ladner seo, seo services/company ladner, web design ladner, ladner bc seo, local seo ladner, digital marketing ladner — all no-data; tsawwassen seo also no-data). Ladner is a community within Delta, BC — target the Delta terms above as primary/secondary and treat Ladner as the local-neighbourhood angle. Do NOT abort this page for lack of ladner-term data."
+ }
 }
