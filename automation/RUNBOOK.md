@@ -24,9 +24,13 @@ In July 2026 a daily automation rewrote page metas repeatedly and the homepage d
   - `DATA_getRelatedKeywords` / `DATA_getSimilarKeywords` / `DATA_getKeywordQuestions` `{"source":"ca","keyword":"seed","limit":30,"filter_volume_from":10}`
   - Rate limits exist — space calls out, batch keywords into single Metrics calls, and retry once on "too many requests" after ~60s.
 
-### 1. Pick today's 5 pages
-- Read `automation/queue.json`. Take the first **5** entries with `status: "pending"` (keep queue order — it is priority-ordered).
-- If fewer than 5 remain, take what's there. If zero remain → monitoring mode (skip to step 3).
+### 1. Determine today's plan day
+- **Day number = (count of `.json` files in `automation/logs/`) + 1.**
+- Load `automation/plan.json` and find that day's entry — it defines today's title, the 5 pages, the 3 blog themes, and any extras. The report MUST carry this day number and title (TVTC-style: "Day 7/30 — Location Pages II").
+- Pages: skip any listed page whose queue.json entry is already `status: "done"` (a previous partial run may have shipped it); if that leaves fewer than 5, pull the next `pending` queue entries to top up — never exceed 5.
+- Blog themes are seeds: validate the exact keyword with SE Ranking + `keyword-registry.json` before writing. If a theme has no viable keyword (no volume, or already claimed), substitute the closest viable variant and say so in the report.
+- Extras: execute the day's `extras` list (image localization batches, llms.txt, read-only audits, etc.). Extras must respect every rule in this runbook — especially: read-only audits NEVER edit done pages.
+- If the day number is beyond the plan: monitoring mode — blogs continue per theme rotation logic in the plan note, page work stops.
 
 ### 2. Optimize each page (one-time pro pass)
 For each page:
@@ -72,7 +76,8 @@ Build ONE report object with this shape (omit sections you genuinely have no dat
 ```json
 {
   "runId": "<date>-<short>", "date": "YYYY-MM-DD", "status": "success|error",
-  "dayNumber": <run # — count files in automation/logs/>, "queueDone": <n>, "queueTotal": 56,
+  "dayNumber": <today's plan day>, "dayTitle": "<today's plan title>", "planLength": 30,
+  "queueDone": <n>, "queueTotal": 56,
   "workCompleted": ["✅ human-readable line per accomplishment", ...],
   "pagesOptimized": [{ "url": "/seo/mississauga", "primaryKeyword": "...", "volume": 480, "newTitle": "...", "newDescription": "...", "changes": ["...", "..."] }],
   "blogs": [{ "slug": "...", "url": "https://canadianwebdesigns.ca/blog/...", "title": "...", "keyword": "...", "volume": 90 }],
