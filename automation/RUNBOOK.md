@@ -83,10 +83,9 @@ Build ONE report object with this shape (omit sections you genuinely have no dat
 ```
 Manual tasks to generate every run: (1) GSC Request Indexing for each new blog URL + each optimized page; (2) GBP review/Q&A check reminder; (3) one citation-directory submission from a rotating list (Yelp Canada, Bing Places, Apple Business Connect, Clutch, Yellow Pages Canada); (4) 2 backlink-outreach emails with a ready-to-send template relevant to today's content.
 
-Then POST it twice (no auth headers needed):
-1. `POST https://team.canadianwebdesigns.ca/api/automation-logs` — `{ "automationId": "cwd-daily-seo-v2", "name": "CWD Daily SEO (v2)", "runAt": "<ISO>", "status": "...", "summary": "<1-line>", "details": <report object> }`
-2. `POST https://team.canadianwebdesigns.ca/api/automations/seo-report` — the report object itself; this emails the formatted daily report.
-If the run failed partway, still send both with `status: "error"` and honest notes.
+Then send ONE call:
+`POST https://team.canadianwebdesigns.ca/api/automations/seo-report` with the report object as JSON body and header `x-log-key: <TEAM_LOG_KEY from your instructions>`. This single endpoint stores the run in the portal's /automations history AND emails the formatted daily report.
+If the run failed partway, still send it with `status: "error"` and honest notes.
 
 ## Style guide (site conventions)
 - JSX text: `&apos;` `&ldquo;` `&rdquo;` for quotes/apostrophes.
