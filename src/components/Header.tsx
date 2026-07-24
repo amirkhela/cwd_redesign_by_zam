@@ -9,6 +9,7 @@ import LanguageToggle from "./LanguageToggle";
 const config = getConfig();
 
 function DesktopDropdown({ item }: { item: ClientNavItem }) {
+  const [openSub, setOpenSub] = useState<string | null>(null);
   return (
     <div className="relative group">
       <Link
@@ -30,26 +31,51 @@ function DesktopDropdown({ item }: { item: ClientNavItem }) {
           className="bg-white rounded-2xl py-2 min-w-[260px] border border-gray-100"
           style={{ boxShadow: "0 20px 50px rgba(0,0,0,0.12)" }}
         >
-          {item.children!.map((child) => (
-            <div key={child.href}>
+          {item.children!.map((child) =>
+            child.children ? (
+              <div key={child.href}>
+                <button
+                  onClick={() => setOpenSub(openSub === child.href ? null : child.href)}
+                  className="flex items-center justify-between gap-3 w-full px-5 py-2.5 text-sm text-dark hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
+                >
+                  {child.label}
+                  <svg
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${openSub === child.href ? "rotate-180" : ""}`}
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className={openSub === child.href ? "block" : "hidden"}>
+                  <Link
+                    href={child.href}
+                    className="flex items-center gap-2 pl-9 pr-5 py-2 text-[13px] text-dark-light hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
+                    All {child.label}
+                  </Link>
+                  {child.children.map((sub) => (
+                    <Link
+                      key={sub.href}
+                      href={sub.href}
+                      className="flex items-center gap-2 pl-9 pr-5 py-2 text-[13px] text-dark-light hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
+                      {sub.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
               <Link
+                key={child.href}
                 href={child.href}
                 className="block px-5 py-2.5 text-sm text-dark hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
               >
                 {child.label}
               </Link>
-              {child.children?.map((sub) => (
-                <Link
-                  key={sub.href}
-                  href={sub.href}
-                  className="flex items-center gap-2 pl-9 pr-5 py-2 text-[13px] text-dark-light hover:bg-primary-50 hover:text-primary transition-all duration-150 font-medium whitespace-nowrap"
-                >
-                  <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
-                  {sub.label}
-                </Link>
-              ))}
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>
@@ -58,6 +84,7 @@ function DesktopDropdown({ item }: { item: ClientNavItem }) {
 
 function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
+  const [expandedSub, setExpandedSub] = useState<string | null>(null);
 
   if (!open) return null;
 
@@ -87,28 +114,54 @@ function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
                   </button>
                   {expandedItem === item.label && (
                     <div className="bg-primary-50/60">
-                      {item.children.map((child) => (
-                        <div key={child.href}>
+                      {item.children.map((child) =>
+                        child.children ? (
+                          <div key={child.href}>
+                            <button
+                              onClick={() => setExpandedSub(expandedSub === child.href ? null : child.href)}
+                              className="flex items-center justify-between w-full px-10 py-2.5 text-sm font-medium text-dark-light hover:text-primary transition-colors"
+                            >
+                              {child.label}
+                              <svg
+                                className={`w-3.5 h-3.5 transition-transform duration-200 ${expandedSub === child.href ? "rotate-180" : ""}`}
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </button>
+                            <div className={expandedSub === child.href ? "block" : "hidden"}>
+                              <Link
+                                href={child.href}
+                                onClick={onClose}
+                                className="flex items-center gap-2 pl-14 pr-10 py-2 text-[13px] font-medium text-dark-light hover:text-primary transition-colors"
+                              >
+                                <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
+                                All {child.label}
+                              </Link>
+                              {child.children.map((sub) => (
+                                <Link
+                                  key={sub.href}
+                                  href={sub.href}
+                                  onClick={onClose}
+                                  className="flex items-center gap-2 pl-14 pr-10 py-2 text-[13px] font-medium text-dark-light hover:text-primary transition-colors"
+                                >
+                                  <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
+                                  {sub.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        ) : (
                           <Link
+                            key={child.href}
                             href={child.href}
                             onClick={onClose}
                             className="block px-10 py-2.5 text-sm font-medium text-dark-light hover:text-primary transition-colors"
                           >
                             {child.label}
                           </Link>
-                          {child.children?.map((sub) => (
-                            <Link
-                              key={sub.href}
-                              href={sub.href}
-                              onClick={onClose}
-                              className="flex items-center gap-2 pl-14 pr-10 py-2 text-[13px] font-medium text-dark-light hover:text-primary transition-colors"
-                            >
-                              <span className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
-                              {sub.label}
-                            </Link>
-                          ))}
-                        </div>
-                      ))}
+                        )
+                      )}
                     </div>
                   )}
                 </>
