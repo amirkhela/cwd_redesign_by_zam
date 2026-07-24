@@ -120,28 +120,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Service areas — compact strip */}
-        <div className="border-t border-white/10 pt-6 mb-6">
-          <p className="text-xs font-bold text-white/70 uppercase tracking-wider mb-2">Service Areas</p>
-          <div className="flex flex-wrap gap-x-1 gap-y-0 text-[0.8rem]">
-            <Link
-              href="/locations/toronto"
-              className="text-[#00AADF] hover:text-white font-semibold transition-colors duration-200 px-2 -ml-2 py-1.5 flex items-center"
-            >
-              Web Design Toronto ↗
-            </Link>
-            {config.cities.filter((c) => c.slug !== "toronto").map((city) => (
-              <Link
-                key={city.slug}
-                href={`/locations/${city.slug}`}
-                className="text-gray-300 hover:text-white transition-colors duration-200 px-2 py-1.5 flex items-center"
-              >
-                {city.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-300">
