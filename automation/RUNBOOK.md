@@ -56,16 +56,37 @@ Per post:
 - `npm ci` (first run) / `npm install` then `NODE_OPTIONS=--max-old-space-size=8192 npm run build`. The build MUST pass. If a change breaks it, fix or revert that change — never push a broken build. (Exit 127/0xC0000409 memory-crash lore is Windows-only; on Linux a failure is real.)
 - Spot-check your edited files for: unescaped apostrophes in JSX, image paths that exist, valid JSON in schema blocks.
 
-### 5. Ship
-- Append a run log: `automation/logs/<YYYY-MM-DD>.json` — `{ runId, date, pagesOptimized: [{url, primaryKeyword, changes: [..]}], blogs: [{slug, url, keyword, volume}], queueRemaining, notes }`.
-- Commit everything as ONE commit: `seo-auto: <date> — 5 pages + 3 posts` (list URLs in the body). Push to `main`.
+### 5. Position watch (SE Ranking project data)
+The CWD site is tracked in SE Ranking project/site id **9263024**. Pull current tracked-keyword positions (try `PROJECT_getKeywordStats` / `PROJECT_getSummary` / `PROJECT_getPositionHistory` with `{"site_id": 9263024}` — adapt args to what the tools accept). Build a small position-watch: overall summary (top-10 count, avg position if available) + any tracked keyword that dropped noticeably. This section is best-effort — if the calls fail, note it and move on; NEVER let position data trigger edits to already-done pages (one-pass rule is absolute).
 
-### 6. Report
-POST the report to the team portal (both calls, no auth header needed):
-1. `POST https://team.canadianwebdesigns.ca/api/automation-logs` with JSON:
-   `{ "automationId": "cwd-daily-seo-v2", "name": "CWD Daily SEO (v2)", "runAt": "<ISO>", "status": "success"|"error", "summary": "<1-line: N pages, N posts, queue N left>", "details": <the run log object> }`
-2. `POST https://team.canadianwebdesigns.ca/api/automations/seo-report` with the same `details` object — this emails the daily report to dev@canadianwebdesigns.com. Include full blog URLs (`https://canadianwebdesigns.ca/blog/<slug>`).
-If the run failed partway, still send both with `status: "error"` and what happened.
+### 6. Ship
+- Wait ~3 minutes after push, then **live-verify**: curl every page URL you changed and every new blog URL on https://canadianwebdesigns.ca — record HTTP status for each (expect 200).
+- Append a run log: `automation/logs/<YYYY-MM-DD>.json` — the full report object below.
+- Commit everything as ONE commit: `seo-auto: <date> — 5 pages + 3 posts` (list URLs in the body). Push to `main`. (Log file can go in a tiny follow-up commit since live verification happens post-push.)
+
+### 7. Report
+Build ONE report object with this shape (omit sections you genuinely have no data for):
+```json
+{
+  "runId": "<date>-<short>", "date": "YYYY-MM-DD", "status": "success|error",
+  "dayNumber": <run # — count files in automation/logs/>, "queueDone": <n>, "queueTotal": 56,
+  "workCompleted": ["✅ human-readable line per accomplishment", ...],
+  "pagesOptimized": [{ "url": "/seo/mississauga", "primaryKeyword": "...", "volume": 480, "newTitle": "...", "newDescription": "...", "changes": ["...", "..."] }],
+  "blogs": [{ "slug": "...", "url": "https://canadianwebdesigns.ca/blog/...", "title": "...", "keyword": "...", "volume": 90 }],
+  "keywordsTargeted": ["kw1", "kw2", ...],
+  "liveVerification": [{ "url": "/seo/mississauga", "http": 200 }],
+  "manualTasks": [{ "title": "GSC — Request Indexing", "detail": "URL Inspection → paste <url> → Request Indexing (30s)" }],
+  "positionWatch": { "summary": "…", "drops": [{ "keyword": "...", "url": "...", "was": 12.0, "now": 19.5 }] },
+  "tomorrow": ["next", "5", "queue", "urls"],
+  "notes": "anything worth flagging"
+}
+```
+Manual tasks to generate every run: (1) GSC Request Indexing for each new blog URL + each optimized page; (2) GBP review/Q&A check reminder; (3) one citation-directory submission from a rotating list (Yelp Canada, Bing Places, Apple Business Connect, Clutch, Yellow Pages Canada); (4) 2 backlink-outreach emails with a ready-to-send template relevant to today's content.
+
+Then POST it twice (no auth headers needed):
+1. `POST https://team.canadianwebdesigns.ca/api/automation-logs` — `{ "automationId": "cwd-daily-seo-v2", "name": "CWD Daily SEO (v2)", "runAt": "<ISO>", "status": "...", "summary": "<1-line>", "details": <report object> }`
+2. `POST https://team.canadianwebdesigns.ca/api/automations/seo-report` — the report object itself; this emails the formatted daily report.
+If the run failed partway, still send both with `status: "error"` and honest notes.
 
 ## Style guide (site conventions)
 - JSX text: `&apos;` `&ldquo;` `&rdquo;` for quotes/apostrophes.
