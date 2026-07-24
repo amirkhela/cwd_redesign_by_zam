@@ -146,6 +146,51 @@ export const cwdConfig: ClientConfig = {
         "Month-to-month — no long-term contracts",
       ],
     },
+    {
+      slug: "wordpress-website-design",
+      title: "WordPress Website Design",
+      tagline: "Hand-built WordPress sites — fast, secure, and fully yours",
+      description:
+        "Custom WordPress website design and development for Canadian businesses. Lightweight hand-coded themes instead of bloated page builders, security hardening, and Core Web Vitals speed built in — on the platform that powers over 40% of the web.",
+      features: [
+        "Custom theme design — no bloated page builders",
+        "WooCommerce store development",
+        "Speed optimization for Core Web Vitals",
+        "Security hardening and malware cleanup",
+        "Migrations from Wix, Squarespace, and Shopify",
+        "Ongoing WordPress maintenance from $99/month",
+      ],
+    },
+    {
+      slug: "shopify-website-design",
+      title: "Shopify Website Design",
+      tagline: "Conversion-first Shopify stores by a Canadian team",
+      description:
+        "Shopify store design, theme development, and Shopify SEO for Canadian merchants. Custom Online Store 2.0 themes, lean app stacks, and product pages engineered to convert — built by a Canadian team on Canada's own e-commerce platform.",
+      features: [
+        "Custom Shopify store design and branding",
+        "Online Store 2.0 theme development (Liquid)",
+        "Shopify SEO — structured data and collection architecture",
+        "App selection, setup, and custom functionality",
+        "Migrations from WooCommerce, Wix, and Etsy",
+        "Conversion rate optimization and ongoing support",
+      ],
+    },
+    {
+      slug: "wix-website-design",
+      title: "Wix Website Design",
+      tagline: "Professional Wix Studio builds, redesigns, and rescues",
+      description:
+        "Professional Wix website design on Wix Studio, redesigns of DIY sites, and proper Wix SEO setup. And when your business outgrows Wix, we migrate you to WordPress without losing your Google rankings.",
+      features: [
+        "Professional design on Wix Studio",
+        "Redesigns and rescues of DIY Wix sites",
+        "Wix SEO setup done properly",
+        "Wix eCommerce store setup",
+        "Honest platform advice — Wix vs WordPress",
+        "Wix-to-WordPress migration with 301 redirects",
+      ],
+    },
   ],
 
   cities: [
@@ -197,6 +242,9 @@ export const cwdConfig: ClientConfig = {
         { label: "Website Maintenance", href: "/services/website-maintenance" },
         { label: "AI Consultation", href: "/services/ai-consultation" },
         { label: "Google Ads Management", href: "/services/google-ads-management" },
+        { label: "WordPress Website Design", href: "/services/wordpress-website-design" },
+        { label: "Shopify Website Design", href: "/services/shopify-website-design" },
+        { label: "Wix Website Design", href: "/services/wix-website-design" },
       ],
     },
     { label: "Our Portfolio", href: "/portfolio" },
