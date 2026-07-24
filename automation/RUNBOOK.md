@@ -87,8 +87,9 @@ Build ONE report object with this shape (omit sections you genuinely have no dat
   "dayNumber": <today's plan day>, "dayTitle": "<today's plan title>", "planLength": 30,
   "queueDone": <n>, "queueTotal": 56,
   "workCompleted": ["✅ human-readable line per accomplishment", ...],
-  "pagesOptimized": [{ "url": "/seo/mississauga", "primaryKeyword": "...", "volume": 480, "newTitle": "...", "newDescription": "...", "changes": ["...", "..."] }],
+  "pagesOptimized": [{ "url": "https://canadianwebdesigns.ca/seo/mississauga", "primaryKeyword": "...", "volume": 480, "newTitle": "...", "newDescription": "...", "changes": ["...", "..."] }],
   "blogs": [{ "slug": "...", "url": "https://canadianwebdesigns.ca/blog/...", "title": "...", "keyword": "...", "volume": 90 }],
+  "newPages": [{ "url": "https://canadianwebdesigns.ca/llms.txt", "title": "what this new page/file is" }],
   "keywordsTargeted": ["kw1", "kw2", ...],
   "liveVerification": [{ "url": "/seo/mississauga", "http": 200 }],
   "manualTasks": [{ "title": "GSC — Request Indexing", "detail": "URL Inspection → paste <url> → Request Indexing (30s)" }],
@@ -97,6 +98,8 @@ Build ONE report object with this shape (omit sections you genuinely have no dat
   "notes": "anything worth flagging"
 }
 ```
+**URL rule (owner requirement):** every page you optimized, every blog you added, and any NEW page/file you created MUST appear in the report with its FULL `https://canadianwebdesigns.ca/...` URL — pages in `pagesOptimized`, posts in `blogs`, anything else new in `newPages`. Never relative paths, never a summary count without the URLs. The owner clicks these links from the email.
+
 Manual tasks to generate every run: (1) GSC Request Indexing for each new blog URL + each optimized page; (2) GBP review/Q&A check reminder; (3) one citation-directory submission from a rotating list (Yelp Canada, Bing Places, Apple Business Connect, Clutch, Yellow Pages Canada); (4) 2 backlink-outreach emails with a ready-to-send template relevant to today's content.
 
 Then send ONE call:
