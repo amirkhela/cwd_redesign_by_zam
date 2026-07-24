@@ -37,7 +37,7 @@ const faq = [
   },
   {
     q: "How long does SEO take to show results in Brampton?",
-    a: "Brampton SEO keywords have a difficulty of 22 — moderate but very achievable. For lower-competition Brampton searches like '[service] brampton' or neighbourhood-specific terms, we typically see page 1 movement in 60–90 days. More competitive terms take 3–4 months. We track every keyword monthly so you can see exactly where you're climbing.",
+    a: "'Seo brampton' and 'brampton seo' carry a keyword difficulty of just 7 — among the easiest clusters we track anywhere in the GTA — while exact-match 'seo company brampton' runs tougher at 24. For lower-competition Brampton searches like '[service] brampton' or neighbourhood-specific terms, we typically see page 1 movement in 60–90 days. More competitive terms take 3–4 months. We track every keyword monthly so you can see exactly where you're climbing.",
   },
   {
     q: "Why does my Brampton business need local SEO specifically?",
@@ -298,7 +298,7 @@ export default function SeoBramptonPage() {
               {[
                 { value: "200+", label: "Five-Star Reviews" },
                 { value: "480/mo", label: "Brampton SEO Search Volume" },
-                { value: "Diff 22", label: "Keyword Difficulty" },
+                { value: "Diff 7", label: "Keyword Difficulty" },
                 { value: "60–90", label: "Days to Page 1" },
               ].map((s) => (
                 <div key={s.label}>
@@ -334,8 +334,9 @@ export default function SeoBramptonPage() {
                 page 1 of Google is the fastest path to more customers.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-5">
-                Brampton SEO keywords like &quot;brampton seo&quot; and &quot;seo brampton company&quot; see 480
-                monthly searches with a difficulty score of 22 — well below Toronto (65+), making Brampton an
+                Brampton SEO keywords like &quot;seo brampton&quot; and &quot;brampton seo&quot; see 480
+                monthly searches with a difficulty score of just 7 — well below Toronto (65+) and one of the
+                lowest scores we track anywhere in the GTA — making Brampton an
                 accessible market for businesses willing to invest in search. The GTA competitive overlap means
                 Brampton businesses are often competing against Toronto agencies in search results without the
                 Toronto keyword authority. The solution is hyper-local Brampton content that signals
@@ -384,7 +385,7 @@ export default function SeoBramptonPage() {
                 <h3 className="text-gray-900 font-black text-xl mb-5">Why Brampton Businesses Choose CWD</h3>
                 <div className="space-y-4">
                   {[
-                    "480 monthly searches for 'seo brampton' — significant volume at accessible difficulty (22)",
+                    "480 monthly searches for 'seo brampton' — with a keyword difficulty of just 7",
                     "Brampton is Canada's fastest-growing city — the demand for local services grows every year",
                     "GTA overlap means Brampton businesses compete with Toronto results — local signals are critical",
                     "Bramalea, Heart Lake, and Castlemore each have distinct search intent — neighbourhood targeting matters",
@@ -534,7 +535,7 @@ export default function SeoBramptonPage() {
           <div className="text-center mb-12 reveal">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Your SEO Journey</span>
             <h2 className="text-3xl lg:text-4xl font-black text-gray-900">What Brampton SEO Looks Like Month by Month</h2>
-            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">Brampton&apos;s keyword difficulty of 22 makes it one of the most achievable SEO markets in the GTA. Here&apos;s the realistic timeline for what our clients achieve.</p>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">Brampton&apos;s keyword difficulty of just 7 for &quot;seo brampton&quot; makes it one of the most achievable SEO markets in the GTA. Here&apos;s the realistic timeline for what our clients achieve.</p>
           </div>
           <div className="max-w-3xl mx-auto">
             {[
@@ -592,13 +593,32 @@ export default function SeoBramptonPage() {
             {[
               { name: "SEO Mississauga", slug: "mississauga" },
               { name: "SEO North York", slug: "north-york" },
-              { name: "SEO Winnipeg", slug: "winnipeg" },
+              { name: "SEO Burnaby", slug: "burnaby" },
               { name: "SEO Calgary", slug: "calgary" },
               { name: "SEO Ottawa", slug: "ottawa" },
             ].map((c) => (
-              <Link key={c.slug} href={`/locations/${c.slug}`}
+              <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
                 {c.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FURTHER READING ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Further reading on local SEO:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "Local SEO & Google Business Profile Optimization", slug: "local-seo-and-gmb-optimization" },
+              { name: "How Does Local SEO Benefit Your Business?", slug: "how-does-local-seo-benefit-your-business-in-2023" },
+              { name: "10 Strategies to Boost SEO Rankings", slug: "top-10-tips-for-boosting-seo-for-2023" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/blog/${b.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF]/40 hover:text-[#00AADF] transition-all duration-200">
+                {b.name} ↗
               </Link>
             ))}
           </div>

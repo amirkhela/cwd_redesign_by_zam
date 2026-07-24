@@ -3,33 +3,33 @@
   "pages": [
     {
       "url": "/seo/mississauga",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-24",
+      "run": "2026-07-24-day1"
     },
     {
       "url": "/seo/calgary",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-24",
+      "run": "2026-07-24-day1"
     },
     {
       "url": "/seo/ottawa",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-24",
+      "run": "2026-07-24-day1"
     },
     {
       "url": "/seo/barrie",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-24",
+      "run": "2026-07-24-day1"
     },
     {
       "url": "/seo/brampton",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-24",
+      "run": "2026-07-24-day1"
     },
     {
       "url": "/seo/burnaby",

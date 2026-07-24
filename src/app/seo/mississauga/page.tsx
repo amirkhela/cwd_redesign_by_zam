@@ -298,7 +298,7 @@ export default function SeoMississaugaPage() {
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
                 { value: "200+", label: "Five-Star Reviews" },
-                { value: "1,600+", label: "Monthly SEO Searches" },
+                { value: "16", label: "Keyword Difficulty Score*" },
                 { value: "GTA Hub", label: "Ontario&apos;s 3rd Largest City" },
                 { value: "60–90", label: "Days to Page 1" },
               ].map((s) => (
@@ -308,6 +308,7 @@ export default function SeoMississaugaPage() {
                 </div>
               ))}
             </div>
+            <p className="text-center text-gray-400 text-xs mt-5">*&quot;mississauga seo&quot; ranking difficulty, vs. 65+ for equivalent Toronto terms.</p>
           </div>
         </div>
       </section>
@@ -337,11 +338,11 @@ export default function SeoMississaugaPage() {
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-5">
                 Mississauga SEO is more competitive than Brampton or Hamilton, but significantly more accessible
-                than downtown Toronto — keyword difficulty scores are moderate, and the local pack is
+                than downtown Toronto — keyword difficulty scores for terms like &quot;mississauga seo&quot; sit around
+                16, versus 65+ for equivalent Toronto searches. The local pack is
                 frequently won by businesses with properly optimized Google Business Profiles and strong local
-                citations. Searches like &quot;seo company mississauga&quot; and &quot;mississauga seo services&quot; see
-                combined monthly volume exceeding 5,000 searches — with most Mississauga businesses
-                completely ignoring local SEO best practices. That gap is the opportunity.
+                citations, and most Mississauga businesses are still completely ignoring local SEO best
+                practices. That gap is the opportunity.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-5">
                 Mississauga&apos;s GTA position creates a unique SEO challenge: without city-specific optimization,
@@ -387,7 +388,7 @@ export default function SeoMississaugaPage() {
                 <h3 className="text-gray-900 font-black text-xl mb-5">Why Mississauga Businesses Choose CWD</h3>
                 <div className="space-y-4">
                   {[
-                    "5,000+ monthly searches for 'seo mississauga' keyword cluster — significant volume at accessible difficulty",
+                    "'mississauga seo' carries a keyword difficulty of just 16 — one of the most winnable local SEO markets in the GTA",
                     "Mississauga is Ontario's 3rd largest city — 720,000+ residents and one of Canada's highest household incomes",
                     "GTA overlap means Mississauga businesses compete with Toronto results without city-specific local signals",
                     "Port Credit, Erin Mills, and Meadowvale each have distinct search patterns — neighbourhood targeting matters",
@@ -602,6 +603,25 @@ export default function SeoMississaugaPage() {
               <Link key={c.slug} href={`/seo/${c.slug}`}
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
                 {c.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FURTHER READING ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Further reading on local SEO:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "Local SEO & Google Business Profile Optimization", slug: "local-seo-and-gmb-optimization" },
+              { name: "How Does Local SEO Benefit Your Business?", slug: "how-does-local-seo-benefit-your-business-in-2023" },
+              { name: "10 Strategies to Boost SEO Rankings", slug: "top-10-tips-for-boosting-seo-for-2023" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/blog/${b.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF]/40 hover:text-[#00AADF] transition-all duration-200">
+                {b.name} ↗
               </Link>
             ))}
           </div>
