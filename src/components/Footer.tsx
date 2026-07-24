@@ -41,6 +41,7 @@ export default function Footer() {
                 { href: "/services/shopify-website-design", label: "Shopify Website Design" },
                 { href: "/services/wix-website-design", label: "Wix Website Design" },
                 { href: "/services/seo", label: "SEO Services" },
+                { href: "/seo", label: "Local SEO by City" },
                 { href: "/services/google-ads-management", label: "Google Ads Management" },
                 { href: "/services/social-media-optimization", label: "Social Media Optimization" },
                 { href: "/services/graphic-design", label: "Graphic Design" },

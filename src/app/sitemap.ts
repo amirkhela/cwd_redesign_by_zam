@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/web-designers-near-me`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/mobile-web-design-in-toronto`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ecommerce-website-design-toronto`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/seo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({

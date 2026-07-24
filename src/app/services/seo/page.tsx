@@ -158,8 +158,22 @@ export default function ServicePage() {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-gray-600 mb-5">Local SEO services across Canada — find your city:</p>
           <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/seo"
+              className="px-4 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200"
+              style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>
+              All SEO Cities ↗
+            </Link>
             {[
+              { name: "SEO Mississauga", slug: "mississauga" },
+              { name: "SEO Calgary", slug: "calgary" },
+              { name: "SEO Ottawa", slug: "ottawa" },
               { name: "SEO Toronto", slug: "toronto" },
+              { name: "SEO Vancouver", slug: "vancouver" },
+              { name: "SEO Brampton", slug: "brampton" },
+              { name: "SEO North York", slug: "north-york" },
+              { name: "SEO Edmonton", slug: "edmonton" },
+              { name: "SEO London", slug: "london" },
+              { name: "SEO Windsor", slug: "windsor" },
               { name: "SEO Surrey", slug: "surrey" },
               { name: "SEO Burnaby", slug: "burnaby" },
               { name: "SEO Victoria", slug: "victoria" },
