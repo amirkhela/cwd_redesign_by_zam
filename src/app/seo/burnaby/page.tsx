@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Burnaby BC | SEO Company & Services | Canadian Website Design" },
+  title: { absolute: "SEO Burnaby BC | SEO Services | Canadian Web Designs" },
   description:
     "Burnaby SEO — difficulty as low as 12 means page 1 in 30–60 days. Brentwood, Metrotown & Lougheed. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/burnaby" },
   openGraph: {
-    title: "SEO Burnaby BC | SEO Company & Services | Canadian Website Design",
+    title: "SEO Burnaby BC | SEO Services | Canadian Web Designs",
     description:
       "Top-rated SEO in Burnaby, BC — rank page 1, win leads, grow your business. Keyword difficulty as low as 12. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/burnaby",
@@ -465,6 +465,25 @@ export default function SeoByurnabyPage() {
                 <h3 className="font-black text-gray-900 text-lg mb-3">{q}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">{a}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── RELATED READING ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Related guides for Burnaby businesses:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "Local SEO & GBP Optimization", slug: "local-seo-and-gmb-optimization" },
+              { name: "How to Get More Google Reviews", slug: "how-to-get-more-google-reviews" },
+              { name: "On-Page SEO Optimization", slug: "on-page-optimization" },
+            ].map((p) => (
+              <Link key={p.slug} href={`/blog/${p.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 border border-gray-100 hover:border-[#00AADF]/30 hover:text-[#00AADF] transition-all duration-200">
+                {p.name} →
+              </Link>
             ))}
           </div>
         </div>

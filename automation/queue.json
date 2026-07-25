@@ -33,33 +33,33 @@
     },
     {
       "url": "/seo/burnaby",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-25",
+      "run": "2026-07-25-day2"
     },
     {
       "url": "/seo/edmonton",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-25",
+      "run": "2026-07-25-day2"
     },
     {
       "url": "/seo/halifax",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-25",
+      "run": "2026-07-25-day2"
     },
     {
       "url": "/seo/kitchener",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-25",
+      "run": "2026-07-25-day2"
     },
     {
       "url": "/seo/ladner",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-25",
+      "run": "2026-07-25-day2"
     },
     {
       "url": "/seo/london",
