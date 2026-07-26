@@ -63,33 +63,33 @@
     },
     {
       "url": "/seo/london",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-26",
+      "run": "2026-07-26-day3"
     },
     {
       "url": "/seo/montreal",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-26",
+      "run": "2026-07-26-day3"
     },
     {
       "url": "/seo/north-york",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-26",
+      "run": "2026-07-26-day3"
     },
     {
       "url": "/seo/oshawa",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-26",
+      "run": "2026-07-26-day3"
     },
     {
       "url": "/seo/saskatoon",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-26",
+      "run": "2026-07-26-day3"
     },
     {
       "url": "/seo/toronto",

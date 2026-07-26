@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO North York | SEO Company & Services | Canada Web Designs" },
+  title: { absolute: "SEO North York | SEO Services | Canadian Web Designs" },
   description:
     "North York SEO that beats downtown Toronto agencies — lower difficulty, same buyer intent. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/north-york" },
   openGraph: {
-    title: "SEO North York | SEO Company & Services | Canada Web Designs",
+    title: "SEO North York | SEO Services | Canadian Web Designs",
     description:
       "Expert SEO services in North York, ON. Rank on Google page 1 for North York searches. 200+ five-star reviews. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/north-york",
@@ -234,7 +234,7 @@ export default function SeoNorthYorkPage() {
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
                 { value: "200+", label: "Five-Star Reviews" },
-                { value: "700+", label: "Monthly SEO Searches" },
+                { value: "200+", label: "Monthly SEO Searches" },
                 { value: "Low-Med", label: "Keyword Difficulty" },
                 { value: "60–90", label: "Days to Page 1" },
               ].map((s) => (
@@ -300,7 +300,7 @@ export default function SeoNorthYorkPage() {
                 <h3 className="text-gray-900 font-black text-xl mb-5">Why North York Businesses Choose CWD</h3>
                 <div className="space-y-4">
                   {[
-                    "700+ monthly searches for 'seo north york' cluster — significant volume at low competition",
+                    "200+ combined monthly searches across 'seo north york', 'web design north york' & 'seo services north york' — real demand at low competition",
                     "North York inside Toronto = GTA competition without Toronto-specific local signals",
                     "Willowdale, Bayview Village, Don Mills each have distinct search patterns",
                     "Most North York businesses have zero North York-specific SEO — easy to outrank",
@@ -376,6 +376,25 @@ export default function SeoNorthYorkPage() {
             ].map((c) => (
               <Link key={c.slug} href={`/seo/${c.slug}`} className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
                 {c.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FURTHER READING ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Further reading on local SEO:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "Local SEO & Google Business Profile Optimization", slug: "local-seo-and-gmb-optimization" },
+              { name: "Local SEO Checklist for Small Businesses", slug: "local-seo-checklist-for-small-businesses" },
+              { name: "10 Strategies to Boost SEO Rankings", slug: "top-10-tips-for-boosting-seo-for-2023" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/blog/${b.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF]/40 hover:text-[#00AADF] transition-all duration-200">
+                {b.name} ↗
               </Link>
             ))}
           </div>
