@@ -93,33 +93,33 @@
     },
     {
       "url": "/seo/toronto",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-27",
+      "run": "2026-07-27-day4"
     },
     {
       "url": "/seo/vancouver",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-27",
+      "run": "2026-07-27-day4"
     },
     {
       "url": "/seo/vaughan",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-27",
+      "run": "2026-07-27-day4"
     },
     {
       "url": "/seo/victoria",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-27",
+      "run": "2026-07-27-day4"
     },
     {
       "url": "/seo/windsor",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-27",
+      "run": "2026-07-27-day4"
     },
     {
       "url": "/locations/toronto",

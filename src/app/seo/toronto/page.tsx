@@ -75,16 +75,13 @@ const faqSchema = {
   })),
 };
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/seo/toronto",
-  name: "Canadian Web Designs — SEO Toronto",
+  "@type": "Service",
+  name: "SEO Services Toronto",
   description:
     "Affordable SEO services for Toronto businesses. Rank on Google page 1, get more leads, and grow your business online.",
-  url: "https://canadianwebdesigns.ca/seo/toronto",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
+  provider: { "@type": "LocalBusiness", name: config.businessName },
   areaServed: [
     { "@type": "City", name: "Toronto", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
     { "@type": "Neighborhood", name: "Downtown Toronto" },
@@ -94,18 +91,6 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "East York" },
     { "@type": "Neighborhood", name: "York" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: String(config.reviewCount),
-  },
 };
 
 const services = [
@@ -592,6 +577,25 @@ export default function SeoTorontoPage() {
         </div>
       </section>
 
+      {/* ─── FURTHER READING ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Further reading on local SEO:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "Toronto Website Maintenance & SEO Optimization", slug: "toronto-website-maintenance-seo-optimization-keeping-your-site-fast-secure-and-google-ready" },
+              { name: "Local SEO Checklist for Small Businesses", slug: "local-seo-checklist-for-small-businesses" },
+              { name: "How to Get More Google Reviews", slug: "how-to-get-more-google-reviews" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/blog/${b.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF]/40 hover:text-[#00AADF] transition-all duration-200">
+                {b.name} ↗
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ─── */}
       <section className="relative overflow-hidden py-20"
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}>
@@ -632,7 +636,7 @@ export default function SeoTorontoPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
       <QuoteFormSection source="seo-toronto" mobileOnly />
     </>

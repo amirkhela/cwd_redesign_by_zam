@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Victoria BC | SEO Company & Services | Canada Web Designs" },
+  title: { absolute: "SEO Victoria, BC | SEO Company | Canadian Web Designs" },
   description:
     "Victoria BC SEO — lower keyword difficulty than Vancouver, same buyer intent. Downtown, Oak Bay & Saanich. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/victoria" },
   openGraph: {
-    title: "SEO Victoria BC | SEO Company & Services | Canada Web Designs",
+    title: "SEO Victoria, BC | SEO Company | Canadian Web Designs",
     description:
       "Expert SEO services in Victoria, BC — rank page 1, grow your business, and win more leads from search. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/victoria",
@@ -37,7 +37,7 @@ const faq = [
   },
   {
     q: "How long does SEO take in Victoria, BC?",
-    a: "Victoria keywords like 'seo victoria' and '[service] victoria bc' have a difficulty score of 15 — much lower than Vancouver or Toronto. Most Victoria businesses we work with see first page-1 rankings within 4–8 weeks for lower-competition searches, and 90 days for more competitive terms. We provide monthly ranking reports so you can track every position.",
+    a: "Victoria keywords like 'victoria seo' (difficulty 15) and 'seo victoria' (difficulty 19) are much more accessible than Vancouver or Toronto equivalents. Most Victoria businesses we work with see first page-1 rankings within 4–8 weeks for lower-competition searches, and 90 days for more competitive terms. We provide monthly ranking reports so you can track every position.",
   },
   {
     q: "What industries do you serve with Victoria SEO?",
@@ -75,16 +75,13 @@ const faqSchema = {
   })),
 };
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/seo/victoria",
-  name: "Canadian Web Designs — SEO Victoria BC",
+  "@type": "Service",
+  name: "SEO Services Victoria BC",
   description:
     "Expert SEO services for Victoria, BC businesses. Rank on Google page 1, get more leads, and grow your business online.",
-  url: "https://canadianwebdesigns.ca/seo/victoria",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
+  provider: { "@type": "LocalBusiness", name: config.businessName },
   areaServed: [
     { "@type": "City", name: "Victoria", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
     { "@type": "Neighborhood", name: "Downtown Victoria" },
@@ -93,18 +90,6 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "Oak Bay" },
     { "@type": "Neighborhood", name: "Saanich" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: String(config.reviewCount),
-  },
 };
 
 const services = [
@@ -281,8 +266,8 @@ export default function SeoVictoriaPage() {
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
                 { value: "200+", label: "Five-Star Reviews" },
-                { value: "590/mo", label: "'SEO Victoria' Search Volume" },
-                { value: "Diff 15", label: "Victoria Keyword Difficulty" },
+                { value: "480/mo", label: "'SEO Victoria' Search Volume" },
+                { value: "Diff 15–19", label: "Victoria Keyword Difficulty" },
                 { value: "4–8 Wk", label: "Avg. to First Page Results" },
               ].map((s) => (
                 <div key={s.label}>
@@ -318,11 +303,11 @@ export default function SeoVictoriaPage() {
                 of commercial intent into a single local search landscape.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-5">
-                Victoria SEO has a keyword difficulty of 15 — dramatically lower than Vancouver (55+) or Toronto
-                (65+). &quot;Seo victoria&quot; gets 590 searches per month with a difficulty of just 15, meaning a
-                well-executed SEO strategy can break into page 1 in 4–8 weeks. Most Victoria businesses have weak
-                or non-existent SEO investment, leaving first-mover advantage open for businesses willing to invest
-                early in their Victoria search presence.
+                Victoria SEO keyword difficulty runs 15–19 — dramatically lower than Vancouver (25–34) or Toronto
+                (65). &quot;Victoria seo&quot; and &quot;seo victoria&quot; each draw 480 searches per month at a
+                difficulty of just 15–19, meaning a well-executed SEO strategy can break into page 1 in 4–8 weeks.
+                Most Victoria businesses have weak or non-existent SEO investment, leaving first-mover advantage
+                open for businesses willing to invest early in their Victoria search presence.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-5">
                 Victoria&apos;s geographic isolation as an island city creates a unique SEO opportunity. Mainland
@@ -368,8 +353,8 @@ export default function SeoVictoriaPage() {
                 <h3 className="text-gray-900 font-black text-xl mb-5">Why Victoria Businesses Choose CWD</h3>
                 <div className="space-y-4">
                   {[
-                    "Victoria SEO keyword difficulty of 15 — significantly lower than Vancouver, faster path to page 1",
-                    "590 monthly searches for 'seo victoria' alone — substantial traffic for a city of this size",
+                    "Victoria SEO keyword difficulty of 15–19 — significantly lower than Vancouver, faster path to page 1",
+                    "480 monthly searches for 'seo victoria' alone — substantial traffic for a city of this size",
                     "Tourism dominates Victoria's economy — hospitality businesses with strong SEO capture year-round bookings",
                     "Government and university presence creates diverse, high-income searcher demographics",
                     "Most Victoria businesses have minimal SEO investment — early movers gain durable ranking advantages",
@@ -496,6 +481,25 @@ export default function SeoVictoriaPage() {
         </div>
       </section>
 
+      {/* ─── FURTHER READING ─── */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-5">Further reading on local SEO:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "Local SEO & Google Business Profile Optimization", slug: "local-seo-and-gmb-optimization" },
+              { name: "How Does Local SEO Benefit Your Business?", slug: "how-does-local-seo-benefit-your-business-in-2023" },
+              { name: "Schema Markup for Local Businesses", slug: "schema-markup-for-local-businesses" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/blog/${b.slug}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF]/40 hover:text-[#00AADF] transition-all duration-200">
+                {b.name} ↗
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ─── */}
       <section className="relative overflow-hidden py-20"
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}>
@@ -536,7 +540,7 @@ export default function SeoVictoriaPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
       <QuoteFormSection source="seo-victoria" mobileOnly />
     </>
