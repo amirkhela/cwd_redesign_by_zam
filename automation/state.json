@@ -1,4 +1,4 @@
 {
   "note": "Explicit sprint-day tracker. The agent reads nextDay at run start, executes that plan.json day, and increments nextDay ONLY after the day's core work shipped (pages phase for days 1-12, extras for 13+). Blocked or failed runs must NOT increment.",
-  "nextDay": 5
+  "nextDay": 6
 }

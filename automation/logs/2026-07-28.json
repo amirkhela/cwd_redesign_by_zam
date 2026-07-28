@@ -1,0 +1,142 @@
+{
+  "runId": "2026-07-28-day5",
+  "date": "2026-07-28",
+  "status": "success",
+  "dayNumber": 5,
+  "dayTitle": "Location Pages I — Toronto + GTA",
+  "planLength": 30,
+  "queueDone": 25,
+  "queueTotal": 56,
+  "workCompleted": [
+    "✅ Optimized 5 queued location pages (one-time pass each): toronto, vancouver (static pages), brampton, mississauga, calgary (shared [city] template — city data entries only)",
+    "✅ Fixed duplicate/self-serving LocalBusiness+aggregateRating schema (including a hardcoded review[] array) on /locations/toronto and /locations/vancouver — layout.tsx already emits this sitewide",
+    "✅ Fixed title-tag length overflow on /locations/toronto (72→59 chars) and /locations/vancouver (66→58 chars), both now front-load the primary keyword",
+    "✅ Fixed title-tag length overflow on brampton (66→60), mississauga (71→45), and calgary (65→59) — shared template, city data entries only",
+    "✅ Corrected a stale/inaccurate keyword stat on /locations/calgary: was citing 590 searches for \"web design calgary\", verified data shows 480 — also surfaced \"calgary seo\" (990/mo) as the bigger opportunity",
+    "✅ Surfaced \"brampton seo\" (480/mo, difficulty 7) and \"web designer mississauga\" (170/mo, the highest-volume Mississauga term) as research-backed secondary keywords in facts/FAQ",
+    "✅ Added pricing section + testimonials/blog trust links to /locations/toronto; added testimonials/blog trust links to /locations/vancouver (already had pricing/process/timeline sections)",
+    "✅ Expanded FAQ sets on brampton, mississauga, calgary (5 → 6 questions) with keyword-grounded additions",
+    "✅ Published 3 new blog posts, each targeting a validated, unclaimed keyword",
+    "✅ Production build verified green after both phases (npm ci + next build)",
+    "✅ Shipped in 2 phases per runbook session-death insurance: Phase A (pages) and Phase B (blogs), each independently committed and pushed"
+  ],
+  "pagesOptimized": [
+    {
+      "url": "https://canadianwebdesigns.ca/locations/toronto",
+      "primaryKeyword": "web design toronto",
+      "volume": 180,
+      "newTitle": "Web Design Toronto | Sites That Rank | Canadian Web Designs",
+      "newDescription": "Toronto's top-rated web design agency — 200+ five-star reviews. Custom websites built to rank & convert, serving Etobicoke, Scarborough & the GTA.",
+      "changes": [
+        "Fixed title overflow (72→59 chars), front-loaded primary keyword",
+        "Removed re-emitted LocalBusiness+aggregateRating schema and a hardcoded review[] array (layout.tsx already owns this sitewide; self-serving reviews are a Google manual-action risk)",
+        "Added a Pricing section ($299 Starter / $599 Growth / Custom Enterprise, sourced from client-config — no invented prices)",
+        "Added internal links to /testimonials and 2 relevant blog posts"
+      ]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/vancouver",
+      "primaryKeyword": "web design vancouver",
+      "volume": 10,
+      "newTitle": "Web Design Vancouver | Custom Sites | Canadian Web Designs",
+      "newDescription": "Vancouver's top-rated web design agency — Yaletown, Kitsilano & Metro Vancouver. Custom websites built to rank on Google and convert. 200+ reviews.",
+      "changes": [
+        "Fixed title overflow (66→58 chars), front-loaded primary keyword",
+        "Removed re-emitted LocalBusiness+aggregateRating schema (layout.tsx already owns this sitewide) — no fabricated reviews were present on this page",
+        "Added internal links to /testimonials and 2 relevant blog posts",
+        "Pricing, process, and timeline sections already present and compliant — verified, no change needed"
+      ]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/brampton",
+      "primaryKeyword": "web design brampton",
+      "volume": 390,
+      "newTitle": "Web Design Brampton | Sites That Rank | Canadian Web Designs",
+      "newDescription": "Brampton web design — trucking, healthcare & pro services specialists. Sites built to rank locally. Free quote: (647) 689-6069.",
+      "changes": [
+        "Fixed title overflow (66→60 chars) — shared template, city data entry only",
+        "Surfaced \"brampton seo\" (480/mo, difficulty 7) as a research-backed opportunity in facts and a new FAQ entry",
+        "Expanded FAQ from 5 to 6 questions"
+      ]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/mississauga",
+      "primaryKeyword": "web design mississauga",
+      "volume": 10,
+      "newTitle": "Web Design Mississauga | Canadian Web Designs",
+      "newDescription": "Mississauga web design & web designer services — Square One, Port Credit, Erin Mills. 200+ five-star reviews. Free quote.",
+      "changes": [
+        "Fixed title overflow (71→45 chars) — shared template, city data entry only",
+        "Surfaced \"web designer mississauga\" (170/mo, the highest-volume Mississauga term tracked) in facts and a new FAQ entry",
+        "Expanded FAQ from 5 to 6 questions"
+      ]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/calgary",
+      "primaryKeyword": "web design calgary",
+      "volume": 480,
+      "newTitle": "Web Design Calgary | Sites That Rank | Canadian Web Designs",
+      "newDescription": "Calgary web design — energy, real estate & construction specialists. Sites built to rank across Alberta. Free quote: (647) 689-6069.",
+      "changes": [
+        "Fixed title overflow (65→59 chars) — shared template, city data entry only",
+        "Corrected a stale/inaccurate stat: was citing 590 monthly searches for \"web design calgary\", verified data shows 480",
+        "Surfaced \"calgary seo\" (990/mo) as a bigger, verified secondary opportunity in facts and a new FAQ entry",
+        "Expanded FAQ from 5 to 6 questions"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "realtor-website-design",
+      "url": "https://canadianwebdesigns.ca/blog/realtor-website-design",
+      "title": "Realtor Website Design: What Actually Generates Leads",
+      "keyword": "realtor website design",
+      "volume": 170
+    },
+    {
+      "slug": "squarespace-vs-wordpress-for-canadian-businesses",
+      "url": "https://canadianwebdesigns.ca/blog/squarespace-vs-wordpress-for-canadian-businesses",
+      "title": "Squarespace vs WordPress for Canadian Businesses",
+      "keyword": "squarespace vs wordpress",
+      "volume": 260
+    },
+    {
+      "slug": "how-to-rank-in-the-google-map-pack",
+      "url": "https://canadianwebdesigns.ca/blog/how-to-rank-in-the-google-map-pack",
+      "title": "How to Rank in the Google Map Pack: A Practical Guide",
+      "keyword": "google map pack",
+      "volume": 40
+    }
+  ],
+  "newPages": [],
+  "keywordsTargeted": [
+    "web design toronto", "web design vancouver", "web design brampton", "brampton seo",
+    "web design mississauga", "web designer mississauga", "web design calgary", "calgary seo",
+    "realtor website design", "squarespace vs wordpress", "google map pack", "google business profile optimization"
+  ],
+  "liveVerification": [],
+  "manualTasks": [
+    { "title": "GSC — Request Indexing: /locations/toronto", "detail": "Search Console → URL Inspection → paste https://canadianwebdesigns.ca/locations/toronto → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/vancouver", "detail": "Search Console → URL Inspection → paste https://canadianwebdesigns.ca/locations/vancouver → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/brampton", "detail": "Search Console → URL Inspection → paste https://canadianwebdesigns.ca/locations/brampton → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/mississauga", "detail": "Search Console → URL Inspection → paste https://canadianwebdesigns.ca/locations/mississauga → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/calgary", "detail": "Search Console → URL Inspection → paste https://canadianwebdesigns.ca/locations/calgary → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: new blog posts", "detail": "Request indexing for all 3 new blog URLs listed above" },
+    { "title": "GBP review/Q&A check", "detail": "Review Google Business Profile for new reviews to respond to and any unanswered Q&A" },
+    { "title": "Citation submission", "detail": "Submit/verify listing on Apple Business Connect this cycle (rotating list: Yelp Canada, Bing Places, Apple Business Connect, Clutch, Yellow Pages Canada)" },
+    { "title": "Backlink outreach #1 — real estate / realtor resource sites", "detail": "Email template: \"Hi [name], we just published a practical guide on realtor website design (https://canadianwebdesigns.ca/blog/realtor-website-design) — thought it could be a useful resource for your [directory/resource page]. Would you consider linking to it? Happy to return the favour. Thanks, Amir.\"" },
+    { "title": "Backlink outreach #2 — small business / platform comparison resource sites", "detail": "Email template: \"Hi [name], we published an honest Squarespace vs WordPress comparison for Canadian businesses (https://canadianwebdesigns.ca/blog/squarespace-vs-wordpress-for-canadian-businesses) — would this be a fit for your resources page? Happy to reciprocate. Thanks, Amir.\"" }
+  ],
+  "positionWatch": {
+    "summary": "Skipped — SE Ranking API (api.seranking.com) unreachable from this session's network egress (git-hosts-only policy). Best-effort per runbook section 5; not a run failure.",
+    "drops": []
+  },
+  "tomorrow": [
+    "/locations/ottawa",
+    "/locations/barrie",
+    "/locations/burnaby",
+    "/locations/edmonton",
+    "/locations/halifax"
+  ],
+  "notes": "Network egress from this cloud session reached only git hosts, as anticipated by runbook section 0.5: (1) api.seranking.com was unreachable for both keyword research and position-watch — all keyword decisions used the offline automation/keyword-data.json fallback (fetched 2026-07-24) instead; (2) the live site (canadianwebdesigns.ca) was unreachable for post-deploy verification — skipped per runbook, expected to be covered by the seo-report-relay GitHub Action; (3) the direct report POST to team.canadianwebdesigns.ca also failed for the same reason (confirmed via curl before attempting) — the committed log + relay Action is the fallback delivery path per runbook. All 5 queued pages moved one-time from pending to done in queue.json; none were previously done and none are on the frozen list. For brampton/mississauga/calgary (shared [city]/page.tsx template), only each city's data entry was edited — the shared JSX (services grid, pricing, process, timeline sections, and its own duplicate LocalBusiness schema block) was deliberately left untouched per runbook rule 1, since editing it would touch every other city on that template regardless of queue status. That shared-template LocalBusiness/aggregateRating re-emission (src/app/locations/[city]/page.tsx) is a pre-existing schema-rule violation affecting ~19 cities — flagging for a future dedicated cleanup pass rather than fixing today, since fixing it would require a shared-JSX edit outside today's one-time-pass scope. state.json nextDay incremented 5 → 6 since the day's core work (pages + blogs) shipped cleanly with a green build both phases."
+}
