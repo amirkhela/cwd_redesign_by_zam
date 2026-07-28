@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs" },
+  title: { absolute: "Web Design Vancouver | Custom Sites | Canadian Web Designs" },
   description:
     "Vancouver's top-rated web design agency — Yaletown, Kitsilano & Metro Vancouver. Custom websites built to rank on Google and convert. 200+ reviews.",
   alternates: { canonical: "/locations/vancouver" },
   openGraph: {
-    title: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs",
+    title: "Web Design Vancouver | Custom Sites | Canadian Web Designs",
     description:
       "BC's top-rated web design agency. Custom websites built to rank in Metro Vancouver and convert visitors into customers. 200+ five-star reviews.",
     url: "https://canadianwebdesigns.ca/locations/vancouver",
@@ -86,36 +86,6 @@ const faqSchema = {
     name: q,
     acceptedAnswer: { "@type": "Answer", text: a },
   })),
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/locations/vancouver",
-  name: "Canadian Web Designs — Web Design Vancouver & SEO",
-  description: "Professional web design and SEO services for businesses in Vancouver, BC. Custom websites that rank on Google and convert visitors into paying customers.",
-  url: "https://canadianwebdesigns.ca/locations/vancouver",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
-  geo: { "@type": "GeoCoordinates", latitude: 49.2827, longitude: -123.1207 },
-  areaServed: [
-    { "@type": "City", name: "Vancouver", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
-    { "@type": "Neighborhood", name: "Kitsilano, Vancouver" },
-    { "@type": "Neighborhood", name: "Yaletown, Vancouver" },
-    { "@type": "Neighborhood", name: "Mount Pleasant, Vancouver" },
-    { "@type": "Neighborhood", name: "Gastown, Vancouver" },
-    { "@type": "Neighborhood", name: "Commercial Drive, Vancouver" },
-    { "@type": "Neighborhood", name: "East Vancouver" },
-    { "@type": "Neighborhood", name: "West End, Vancouver" },
-  ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
 };
 
 const services = [
@@ -245,7 +215,12 @@ export default function VancouverPage() {
                 Vancouver&apos;s SEO landscape rewards specificity. Broad terms like &quot;web design vancouver&quot; are competitive, but neighbourhood-specific searches — &quot;web design kitsilano&quot;, &quot;seo mount pleasant&quot;, &quot;website designer gastown&quot; — have dramatically lower difficulty and higher buyer intent. We build neighbourhood-targeted content for Kitsilano, Yaletown, Mount Pleasant, Commercial Drive, and East Vancouver, stacking local authority that compounds across all Vancouver searches over time.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-8">
-                Whether you&apos;re a Gastown retailer competing for tourist and local foot traffic, a Kitsilano wellness clinic fighting for patient bookings, a Yaletown tech company attracting enterprise clients, or a Commercial Drive restaurant trying to fill seats — we build the digital presence that puts you in front of Vancouver customers at the exact moment they&apos;re ready to buy.
+                Whether you&apos;re a Gastown retailer competing for tourist and local foot traffic, a Kitsilano wellness clinic fighting for patient bookings, a Yaletown tech company attracting enterprise clients, or a Commercial Drive restaurant trying to fill seats — we build the digital presence that puts you in front of Vancouver customers at the exact moment they&apos;re ready to buy. See real client feedback on our{" "}
+                <Link href="/testimonials" className="text-[#00AADF] font-semibold hover:underline">testimonials page</Link>, or read our{" "}
+                <Link href="/blog/local-seo-checklist-for-small-businesses" className="text-[#00AADF] font-semibold hover:underline">local SEO checklist</Link>{" "}
+                and{" "}
+                <Link href="/blog/how-to-get-more-google-reviews" className="text-[#00AADF] font-semibold hover:underline">guide to getting more Google reviews</Link>{" "}
+                for more on how we build Vancouver rankings.
               </p>
 
               <h3 className="text-xl font-black text-gray-900 mb-4">Vancouver Neighbourhoods We Serve</h3>
@@ -456,7 +431,6 @@ export default function VancouverPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       <QuoteFormSection source="location-vancouver" mobileOnly />
     </>

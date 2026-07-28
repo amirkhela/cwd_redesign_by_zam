@@ -77,7 +77,7 @@ const cityContent: Record<string, {
   },
   brampton: {
     blurb: `Brampton is one of Canada's most diverse and fastest-growing cities — a hub for trucking and logistics, healthcare, food manufacturing, retail, and a booming small business community. With Pearson Airport nearby and Highway 410 running through the city, Brampton businesses serve both local customers and the broader GTA market. Canadian Web Designs has deep roots in Brampton — we've built websites for dozens of Brampton businesses across trucking companies, healthcare clinics, food businesses, and professional services. We build fast, mobile-first websites with local SEO baked in from day one — because Brampton customers search on their phones, and your website needs to be ready. Our Brampton clients consistently rank in Google's top 3 for their core service keywords.`,
-    facts: ["Brampton is the 9th-largest city in Canada with one of the country's most diverse business communities", "Trucking, logistics, healthcare, and food manufacturing are dominant Brampton industries", "Brampton searches have lower competition than Toronto — easier to rank, similar buyer intent", "The majority of Brampton searches happen on mobile — fast-loading sites are non-negotiable"],
+    facts: ["Brampton is the 9th-largest city in Canada with one of the country's most diverse business communities", "Trucking, logistics, healthcare, and food manufacturing are dominant Brampton industries", "\"Brampton seo\" gets 480 searches a month at a difficulty of just 7 — one of the easiest, highest-value keywords we track anywhere in the GTA", "The majority of Brampton searches happen on mobile — fast-loading sites are non-negotiable"],
     industries: ["Trucking & Logistics", "Healthcare & Clinics", "Food Manufacturing & Retail", "Professional Services", "Trades & Construction", "Auto & Mechanical"],
     faq: [
       { q: "Do you build websites for trucking and logistics companies in Brampton?", a: "Yes — trucking is one of our most common Brampton verticals. We build professional websites for carriers, freight brokers, and logistics companies that rank for Brampton and GTA-wide searches." },
@@ -85,18 +85,20 @@ const cityContent: Record<string, {
       { q: "Can you help my Brampton clinic or healthcare practice get more patients online?", a: "Absolutely — we've built websites for medical clinics, dental practices, physiotherapy, and mental health providers in Brampton. We understand healthcare SEO and patient privacy requirements." },
       { q: "What does a website cost for a Brampton business?", a: "Brampton builds are the same quality as our Toronto work with no GTA premium — flat-rate pricing scoped to your project, with no hidden fees. Every package includes local SEO foundations, mobile optimization, and Google Analytics. Contact us for a free quote." },
       { q: "Do you build websites for Brampton South Asian and multicultural businesses?", a: "Yes — Brampton's diverse business community is something we know well. We build multilingual sites and culturally appropriate designs for businesses serving South Asian, Caribbean, and other multicultural communities across Brampton." },
+      { q: "Is SEO worth it for a Brampton business?", a: "Very much so — \"brampton seo\" and \"seo brampton\" each get around 480 searches a month at a difficulty score of just 7, among the easiest, highest-opportunity local SEO keywords we track anywhere in the GTA. A modest ongoing SEO investment goes further in Brampton than in almost any neighbouring city." },
     ],
   },
   calgary: {
     blurb: `Calgary is Alberta's economic engine — a city reinventing itself from energy-dependent to tech-forward, with a growing startup ecosystem, booming construction, strong professional services, and one of Canada's most active real estate markets. Businesses in Calgary need digital strategies that reflect the city's ambition and pace. Canadian Web Designs builds websites for Calgary businesses that load fast, rank in Google, and convert visitors into clients. We understand the Calgary market — the energy sector, the real estate boom, the growing tech community, and the city's entrepreneurial spirit. Our local SEO strategies are calibrated for Calgary's search landscape, helping you rank for the keywords your ideal clients are searching right now.`,
-    facts: ["Calgary has one of Canada's highest average household incomes — buyers have strong purchasing power", "Energy, real estate, tech, and construction are Calgary's dominant growth sectors", "Web design Calgary has 590 monthly searches with moderate difficulty — a major opportunity", "Calgary businesses often need to rank province-wide (Alberta) AND locally — our SEO covers both"],
+    facts: ["Calgary has one of Canada's highest average household incomes — buyers have strong purchasing power", "Energy, real estate, tech, and construction are Calgary's dominant growth sectors", "\"Web design calgary\" gets 480 monthly searches, and \"calgary seo\" gets 990 — both moderate difficulty and a major opportunity", "Calgary businesses often need to rank province-wide (Alberta) AND locally — our SEO covers both"],
     industries: ["Energy & Engineering", "Real Estate & Mortgage", "Construction & Trades", "Tech & Software", "Professional Services", "Healthcare & Wellness"],
     faq: [
       { q: "Do you work with energy sector companies in Calgary?", a: "Yes — we've built websites for oil field services companies, environmental consultants, and engineering firms in Calgary. We understand the professional standards expected in the energy sector." },
-      { q: "How competitive is web design SEO in Calgary?", a: "Web design Calgary has about 590 monthly searches and moderate difficulty — more achievable than Toronto but still competitive. Our Calgary clients typically reach page 1 within 90–120 days with our full SEO program." },
+      { q: "How competitive is web design SEO in Calgary?", a: "\"Web design calgary\" gets about 480 searches a month at moderate difficulty — more achievable than Toronto but still competitive. \"Calgary SEO\" is an even bigger opportunity at roughly 990 searches a month. Our Calgary clients typically reach page 1 within 90–120 days with our full SEO program." },
       { q: "Can you help my Calgary real estate business rank on Google?", a: "Real estate is one of our Calgary specialties. We build IDX-integrated real estate websites with hyperlocal SEO targeting Calgary neighbourhoods — Beltline, Kensington, Inglewood, Mission, and beyond." },
-      { q: "What does web design cost for a Calgary business?", a: "Pricing is flat-rate with no hidden fees and scoped to your project. Every Calgary build includes local SEO foundations, mobile-first design, and Google Analytics. We also offer Alberta-wide SEO retainers for businesses targeting Edmonton, Red Deer, and Lethbridge in addition to Calgary. Get a free quote to scope your project." },
+      { q: "What does web design cost for a Calgary business?", a: "Custom web design starts from $299, with ongoing maintenance available from $99/month. Pricing is flat-rate with no hidden fees and scoped to your project. Every Calgary build includes local SEO foundations, mobile-first design, and Google Analytics. We also offer Alberta-wide SEO retainers for businesses targeting Edmonton, Red Deer, and Lethbridge in addition to Calgary. Get a free quote to scope your project." },
       { q: "Do you build websites for Calgary tech startups and software companies?", a: "Yes — Calgary's growing tech scene is something we're actively building for. We create clean, conversion-focused websites for SaaS companies, app developers, and tech startups that position you credibly for both Calgary and national/international markets." },
+      { q: "Should a Calgary business target \"web design calgary\" or \"calgary seo\" first?", a: "If you're launching a new site, \"web design calgary\" matches that intent directly. But \"calgary seo\" has roughly double the search volume at similar difficulty — so once your site is live, an ongoing local SEO program targeting that term is usually the higher-leverage next step." },
     ],
   },
   winnipeg: {
@@ -130,6 +132,7 @@ const cityContent: Record<string, {
       "Home to Canadian HQs for Microsoft, Walmart, Hershey, and hundreds of Fortune 500 companies — enterprise buyers are here",
       "Mississauga keyword difficulty is significantly lower than downtown Toronto — faster and cheaper to rank",
       "Square One is one of Canada's busiest shopping destinations — retail and service businesses need strong local SEO to compete",
+      "\"Web designer mississauga\" gets 170 searches a month — the highest-volume Mississauga search we track — and we optimize for it alongside \"web design mississauga\"",
     ],
     industries: ["Corporate & Enterprise", "Retail & eCommerce", "Healthcare & Clinics", "Financial Services", "Tech & Software", "Real Estate & Mortgage"],
     faq: [
@@ -138,6 +141,7 @@ const cityContent: Record<string, {
       { q: "Can you help my Mississauga business rank in the Google local pack?", a: "Absolutely — Google Business Profile optimization is central to every Mississauga SEO package. We optimize your listing for City Centre, Port Credit, Streetsville, and other Mississauga communities, build local citations across 50+ Canadian directories, and run a review generation program. Mississauga's local pack is competitive but very winnable with the right strategy." },
       { q: "Do you build websites for Mississauga startups and tech companies?", a: "Yes — Mississauga's tech and innovation ecosystem is growing rapidly, and we work with early-stage startups through to established SMBs. We build clean, credibility-first websites that position Mississauga tech companies for both local business development and national visibility." },
       { q: "What does web design cost for a Mississauga business?", a: "Mississauga builds are the same quality as our downtown Toronto work at a flat rate with no hidden fees, scoped to your project. We offer Mississauga-specific SEO retainers that target Square One, Port Credit, Erin Mills, and Meadowvale neighbourhoods. Get a free quote today." },
+      { q: "Should I search for a \"web design\" company or a \"web designer\" in Mississauga?", a: "Both terms lead to us — but \"web designer mississauga\" is actually the higher-volume search, so we optimize for both phrasings. Whichever way you search, you'll find a fully custom, mobile-first, SEO-ready build, not a template." },
     ],
   },
   "richmond-hill": {
@@ -288,16 +292,16 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Toronto web design agency — Yorkville, Etobicoke & Scarborough. Custom sites that rank, backed by 200+ five-star reviews. Free quote.`,
   },
   mississauga: {
-    title: "Web Design Mississauga | Custom Sites That Convert | Canada Web Designs",
-    description: `Mississauga web design — Square One, Port Credit & Erin Mills. Custom sites that rank and convert, backed by 200+ five-star reviews. Free quote.`,
+    title: "Web Design Mississauga | Canadian Web Designs",
+    description: `Mississauga web design & web designer services — Square One, Port Credit, Erin Mills. 200+ five-star reviews. Free quote.`,
   },
   edmonton: {
     title: "Web Design Edmonton | Energy & Healthcare Experts | Canada Website Design",
     description: `Edmonton web design — energy, healthcare & trades specialists. Custom sites built to rank locally, full SEO included. Free quote.`,
   },
   brampton: {
-    title: "Web Design Brampton | Custom-Built Websites | Canadian Web Designs",
-    description: `Brampton web design — trucking, healthcare & pro services specialists. Custom sites built to rank locally, SEO included. Free quote.`,
+    title: "Web Design Brampton | Sites That Rank | Canadian Web Designs",
+    description: `Brampton web design — trucking, healthcare & pro services specialists. Sites built to rank locally. Free quote: (647) 689-6069.`,
   },
   london: {
     title: "Web Design London Ontario | Custom Sites That Rank | Canadian Website Design",
@@ -328,8 +332,8 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Windsor Ontario web design — downtown, Walkerville & South Windsor. Custom sites built to rank and capture cross-border traffic. Free quote.`,
   },
   calgary: {
-    title: "Web Design Calgary | Custom-Built Websites | Canadian Web Designs",
-    description: `Calgary web design — energy, real estate & construction specialists. Custom sites built to rank across Alberta. Free quote.`,
+    title: "Web Design Calgary | Sites That Rank | Canadian Web Designs",
+    description: `Calgary web design — energy, real estate & construction specialists. Sites built to rank across Alberta. Free quote: (647) 689-6069.`,
   },
   saskatoon: {
     title: "Web Design Saskatoon | Custom Sites That Rank | Canadian Website Design",

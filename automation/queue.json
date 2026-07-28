@@ -123,33 +123,33 @@
     },
     {
       "url": "/locations/toronto",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-28",
+      "run": "2026-07-28-day5"
     },
     {
       "url": "/locations/brampton",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-28",
+      "run": "2026-07-28-day5"
     },
     {
       "url": "/locations/mississauga",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-28",
+      "run": "2026-07-28-day5"
     },
     {
       "url": "/locations/vancouver",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-28",
+      "run": "2026-07-28-day5"
     },
     {
       "url": "/locations/calgary",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-28",
+      "run": "2026-07-28-day5"
     },
     {
       "url": "/locations/ottawa",
