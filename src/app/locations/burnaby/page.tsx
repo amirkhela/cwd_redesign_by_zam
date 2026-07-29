@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Burnaby Web Design | Metrotown Specialists | Canadian Website Design" },
+  title: { absolute: "Web Design Burnaby | Sites That Rank | Canadian Web Designs" },
   description:
     "Burnaby's top-rated web design agency — Metrotown, Brentwood & Lougheed specialists. Custom websites built to rank on Google. 200+ reviews.",
   alternates: { canonical: "/locations/burnaby" },
   openGraph: {
-    title: "Burnaby Web Design | Metrotown Specialists | Canadian Website Design",
+    title: "Web Design Burnaby | Sites That Rank | Canadian Web Designs",
     description:
       "Top-rated web design & SEO in Burnaby BC. 200+ five-star reviews. Custom websites serving Metrotown, Brentwood & Lougheed, built to rank on Google.",
     url: "https://canadianwebdesigns.ca/locations/burnaby",
@@ -81,37 +81,6 @@ const faqSchema = {
     name: q,
     acceptedAnswer: { "@type": "Answer", text: a },
   })),
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/locations/burnaby",
-  name: "Canadian Web Designs — Burnaby SEO & Web Design",
-  description:
-    "Professional SEO services and web design for businesses in Burnaby, BC. Rank on Google, get more leads, and grow your business online.",
-  url: "https://canadianwebdesigns.ca/locations/burnaby",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
-  areaServed: [
-    { "@type": "City", name: "Burnaby", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
-    { "@type": "Neighborhood", name: "Brentwood, Burnaby" },
-    { "@type": "Neighborhood", name: "Metrotown, Burnaby" },
-    { "@type": "Neighborhood", name: "Lougheed, Burnaby" },
-    { "@type": "Neighborhood", name: "Edmonds, Burnaby" },
-  ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: String(config.reviewCount),
-  },
 };
 
 const services = [
@@ -691,7 +660,6 @@ export default function BurnabyPage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       <QuoteFormSection source="location-burnaby" mobileOnly />
     </>

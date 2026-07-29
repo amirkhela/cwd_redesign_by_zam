@@ -153,33 +153,33 @@
     },
     {
       "url": "/locations/ottawa",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-29",
+      "run": "2026-07-29-day6"
     },
     {
       "url": "/locations/barrie",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-29",
+      "run": "2026-07-29-day6"
     },
     {
       "url": "/locations/burnaby",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-29",
+      "run": "2026-07-29-day6"
     },
     {
       "url": "/locations/edmonton",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-29",
+      "run": "2026-07-29-day6"
     },
     {
       "url": "/locations/halifax",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-29",
+      "run": "2026-07-29-day6"
     },
     {
       "url": "/locations/hamilton",

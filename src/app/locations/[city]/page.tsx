@@ -272,6 +272,30 @@ const cityContent: Record<string, {
       { q: "Do you build websites for Saskatoon University of Saskatchewan businesses and startups?", a: "Yes — the University of Saskatchewan and Innovation Place create a strong startup and research ecosystem, and we work with spin-offs, student entrepreneurs, and innovation district businesses. We build credibility-first websites that position Saskatoon startups for both local and national audiences." },
     ],
   },
+  barrie: {
+    blurb: `Barrie sits on the shores of Lake Simcoe, about an hour north of Toronto — the gateway to Muskoka and Ontario's cottage country. It's one of Ontario's fastest-growing mid-size cities, with an economy built on manufacturing, healthcare, retail, and a growing base of tourism and recreation businesses serving both year-round residents and the seasonal cottage crowd. Canadian Web Designs builds fast, mobile-first websites for Barrie businesses that need to capture two very different audiences: local searches from Barrie and Innisfil residents, and seasonal traffic from GTA visitors heading north for the weekend. We build local SEO strategies tuned to both — so your Barrie business shows up whether the search is happening down the street or from a phone on the 400 heading up from Toronto.`,
+    facts: ["Barrie is one of Ontario's fastest-growing mid-size cities and the gateway to Muskoka cottage country", "GO Train service to Toronto means many Barrie searchers also compare against GTA-based competitors", "Manufacturing, healthcare, and retail are Barrie's core sectors, alongside a growing tourism and recreation economy", "Barrie web design keywords run in the high-40s for difficulty — more competitive than smaller Simcoe County towns but far more approachable than downtown Toronto"],
+    industries: ["Manufacturing & Industrial", "Healthcare & Clinics", "Retail & Hospitality", "Tourism & Recreation", "Real Estate & Mortgage", "Professional Services"],
+    faq: [
+      { q: "How much does SEO cost for a Barrie business?", a: "Barrie SEO packages are scoped to your keyword competitiveness, target page count, and growth goals. Every package includes keyword research, on-page optimization, local citation building, and Google Business Profile management. Contact us for a free Barrie SEO audit and custom quote." },
+      { q: "How long does it take to rank a Barrie business on Google?", a: "Barrie keyword difficulty sits in the high-40s — more competitive than the surrounding Simcoe County towns, but most of our Barrie clients see meaningful movement within 60–90 days of launch with a full on-page and local SEO program." },
+      { q: "Do you build websites for Barrie tourism and cottage-country businesses?", a: "Yes — tourism and recreation are a core Barrie vertical for us. We build visually driven, mobile-first sites for marinas, rental properties, outfitters, and hospitality businesses that need to convert both local searches and seasonal GTA traffic heading up Highway 400." },
+      { q: "Can you help my Barrie business rank in Google Maps?", a: "Yes — Google Business Profile optimization is included in every Barrie package. We optimize your listing, build citations across Canadian directories, and run a review generation strategy so your business shows up in Barrie's local map pack." },
+      { q: "What does a website cost for a Barrie business?", a: "Pricing depends on your project scope — page count, e-commerce needs, and design complexity. Every website includes mobile optimization, on-page SEO, Google Analytics, and 30 days of post-launch support. Contact us for a free, no-obligation quote." },
+    ],
+  },
+  halifax: {
+    blurb: `Halifax is Atlantic Canada's largest city and its financial, government, and technology hub — home to Dalhousie and Saint Mary's University, the Port of Halifax, the Halifax Shipyard, and one of Canada's most diverse regional economies. With the Halifax Regional Municipality now approaching half a million residents, local businesses are competing for a growing population that increasingly starts every purchase decision with a Google search. Canadian Web Designs builds fast, mobile-first websites for Halifax businesses across finance, healthcare, tech, and the ocean economy — engineered to rank locally and convert visitors into calls, bookings, and sales. We build the local SEO signals that matter in a market where East Coast businesses often compete against national and Ontario-based firms for the same searches.`,
+    facts: ["Halifax Regional Municipality's population is approaching 500,000 — Atlantic Canada's largest and fastest-growing market", "Halifax is Atlantic Canada's financial hub, with strong IT, life sciences, ocean economy, and transportation & logistics sectors alongside it", "Dalhousie University, Saint Mary's University, the Port of Halifax, and the Halifax Shipyard anchor major employment across the region", "Halifax web design keywords carry moderate difficulty (mid-40s), with easier long-tail terms like 'website design halifax' offering a faster path to page 1"],
+    industries: ["Financial Services", "Healthcare & Life Sciences", "Marine & Ocean Economy", "Government & Public Sector", "Education & Research", "Tourism & Hospitality"],
+    faq: [
+      { q: "How much does SEO cost for a Halifax business?", a: "Halifax SEO packages are scoped to your keyword competitiveness, number of target pages, and growth goals. Every package includes keyword research, on-page optimization, local citation building, and Google Business Profile management. Contact us for a free Halifax SEO audit and custom quote." },
+      { q: "How long does it take to rank a Halifax business on Google?", a: "Halifax keyword difficulty runs in the mid-40s for core terms, with several long-tail Halifax searches carrying much lower difficulty. Most of our Halifax clients see meaningful ranking movement within 60–90 days of launch with a full SEO program." },
+      { q: "Do you build websites for Halifax financial services and professional firms?", a: "Yes — finance and professional services are core Halifax verticals for us. As Atlantic Canada's financial hub, Halifax firms need websites that project credibility to both local clients and businesses across the Maritimes. We build clean, trust-focused sites tuned for that market." },
+      { q: "Can you help my Halifax business rank in Google Maps?", a: "Yes — Google Business Profile optimization is part of every Halifax package. We optimize your listing, build citations across Canadian directories, and run a review generation strategy so your business shows up in Halifax's local map pack." },
+      { q: "Do you work with Halifax's ocean economy and marine businesses?", a: "Yes — with the Port of Halifax and Halifax Shipyard anchoring the region's marine sector, we've built sites for logistics, marine services, and ocean-economy businesses that need to rank for both local Halifax searches and broader Atlantic Canada shipping and logistics terms." },
+    ],
+  },
 };
 
 function getCityBySlug(slug: string) {
@@ -296,7 +320,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Mississauga web design & web designer services — Square One, Port Credit, Erin Mills. 200+ five-star reviews. Free quote.`,
   },
   edmonton: {
-    title: "Web Design Edmonton | Energy & Healthcare Experts | Canada Website Design",
+    title: "Web Design Edmonton | Sites That Rank | Canadian Web Designs",
     description: `Edmonton web design — energy, healthcare & trades specialists. Custom sites built to rank locally, full SEO included. Free quote.`,
   },
   brampton: {
@@ -308,7 +332,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `London Ontario web design — healthcare, legal & trades experts. Custom-built sites that outrank non-local agencies on Google. Free quote.`,
   },
   ottawa: {
-    title: "Web Design Ottawa | Bilingual EN/FR Sites | Canada Web Designs",
+    title: "Web Design Ottawa | Bilingual EN/FR | Canadian Web Designs",
     description: `Ottawa bilingual web design — Kanata, Glebe & ByWard Market. Custom EN/FR sites that rank, backed by 200+ five-star reviews. Free quote.`,
   },
   vaughan: {
@@ -362,6 +386,14 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   winnipeg: {
     title: "Web Design Winnipeg | Manitoba Web Experts | Canada Website Design",
     description: `Winnipeg web design — Corydon, Exchange District & St. Vital. Custom sites built to rank in a low-competition market. Free quote.`,
+  },
+  barrie: {
+    title: "Web Design Barrie | Sites That Rank | Canadian Web Designs",
+    description: `Barrie web design — Lake Simcoe, Innisfil & cottage country. Custom sites built to rank locally. Free quote: 647-689-6069.`,
+  },
+  halifax: {
+    title: "Web Design Halifax | Sites That Rank | Canadian Web Designs",
+    description: `Halifax web design — Atlantic Canada's finance & tech hub. Custom sites built to rank in HRM. Free quote: 647-689-6069.`,
   },
 };
 
