@@ -183,33 +183,33 @@
     },
     {
       "url": "/locations/hamilton",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-30",
+      "run": "2026-07-30-day7"
     },
     {
       "url": "/locations/kitchener",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-30",
+      "run": "2026-07-30-day7"
     },
     {
       "url": "/locations/ladner",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-30",
+      "run": "2026-07-30-day7"
     },
     {
       "url": "/locations/london",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-30",
+      "run": "2026-07-30-day7"
     },
     {
       "url": "/locations/montreal",
-      "status": "pending",
-      "optimizedAt": null,
-      "run": null
+      "status": "done",
+      "optimizedAt": "2026-07-30",
+      "run": "2026-07-30-day7"
     },
     {
       "url": "/locations/north-york",

@@ -53,7 +53,7 @@ const cityContent: Record<string, {
   },
   kitchener: {
     blurb: `Kitchener-Waterloo is Canada's fastest-growing tech ecosystem — home to Google, Shopify alumni, and hundreds of startups — but it's also a city of manufacturers, trades, healthcare providers, restaurants, and professional services businesses all competing online. Whether you're a KW-area startup or an established Kitchener SMB, a fast, well-optimized website is your most valuable growth asset. Canadian Web Designs builds conversion-focused websites for Kitchener businesses that rank in Google, load in under 2 seconds, and turn visits into inquiries. We specialize in local SEO for the KW corridor — optimizing for neighbourhood-specific searches in Kitchener, Waterloo, Cambridge, and surrounding communities. Our clients in KW consistently see 3–5x more organic traffic within the first 6 months.`,
-    facts: ["The KW tech corridor is one of Canada's most innovative business environments", "Google, Shopify, and dozens of Fortune 500 companies have Waterloo offices", "Manufacturing, trades, and professional services remain the backbone of Kitchener's economy", "KW has lower keyword difficulty than Toronto — same buyer intent, easier to rank"],
+    facts: ["The KW tech corridor is one of Canada's most innovative business environments", "Google, Shopify, and dozens of Fortune 500 companies have Waterloo offices", "Manufacturing, trades, and professional services remain the backbone of Kitchener's economy", "\"Web design kitchener\" and \"website design kitchener\" each get 390 searches a month, while \"kitchener seo\" offers an easier entry point at difficulty 22"],
     industries: ["Tech & SaaS", "Manufacturing & Engineering", "Healthcare & Clinics", "Professional Services", "Retail & Restaurants", "Contractors & Trades"],
     faq: [
       { q: "Is web design in Kitchener-Waterloo competitive?", a: "Less so than Toronto — keyword difficulty for KW searches is significantly lower, meaning a well-optimized website can reach page 1 faster and with less budget than major urban centres." },
@@ -65,7 +65,7 @@ const cityContent: Record<string, {
   },
   london: {
     blurb: `London, Ontario is a city with remarkable diversity — university students and professors, healthcare workers at one of Canada's largest hospital networks, manufacturers, trades professionals, lawyers, and entrepreneurs. Every one of these groups searches Google before making a buying decision. Canadian Web Designs builds websites for London, Ontario businesses that capture that search traffic and convert it into real customers. Our London SEO strategies target the keywords your ideal clients are actually searching — 'web design london ontario', '[your service] london ontario' — and we build the on-page and off-page authority to rank for them. We've helped London businesses in healthcare, professional services, trades, and retail consistently grow their organic traffic and inbound leads.`,
-    facts: ["London is home to Western University, Fanshawe College, and one of Ontario's largest hospital networks", "Healthcare, education, manufacturing, and professional services are London's dominant sectors", "'London ontario' qualifier is essential — differentiating from London, UK in search", "London has significantly lower keyword difficulty than Toronto — ideal for aggressive SEO growth"],
+    facts: ["London is home to Western University, Fanshawe College, and one of Ontario's largest hospital networks", "Healthcare, education, manufacturing, and professional services are London's dominant sectors", "'London ontario' qualifier is essential — differentiating from London, UK in search", "\"London seo\" gets 260 searches a month at a difficulty of just 24 — a stronger opportunity than the lower-volume \"web design london\" term"],
     industries: ["Healthcare & Medical", "Legal Services", "Education & Training", "Manufacturing", "Contractors & Trades", "Retail & Hospitality"],
     faq: [
       { q: "How important is it to include 'Ontario' in SEO for London businesses?", a: "Critical. Google often confuses London, ON with London, UK. We build geo-signals into every page — using 'London, Ontario', schema markup with province data, and local citations — to ensure your site ranks in the right market." },
@@ -115,7 +115,7 @@ const cityContent: Record<string, {
   },
   hamilton: {
     blurb: `Hamilton is one of Ontario's most exciting cities for business — a post-industrial city reinventing itself with a booming arts scene, a growing tech and creative economy, a strong healthcare and education sector anchored by McMaster University, and a thriving trades and manufacturing base. Hamilton businesses are increasingly aware that a strong online presence is essential to compete — not just locally, but with Toronto businesses that target Hamilton searches. Canadian Web Designs builds websites for Hamilton businesses that are designed to win: fast-loading, mobile-optimized, and rank-ready for local Google searches. We know the Hamilton market from Stoney Creek to Dundas, and we build digital strategies that connect you with Hamilton customers at the exact moment they're searching.`,
-    facts: ["McMaster University and Hamilton Health Sciences make healthcare and education dominant sectors", "Hamilton's steel and manufacturing heritage is evolving — tech and creative industries are growing fast", "Hamilton is within an hour of Toronto — businesses compete with GTA companies for the same searches", "Hamilton keyword difficulty is low — strong opportunity for businesses willing to invest in SEO"],
+    facts: ["McMaster University and Hamilton Health Sciences make healthcare and education dominant sectors", "Hamilton's steel and manufacturing heritage is evolving — tech and creative industries are growing fast", "Hamilton is within an hour of Toronto — businesses compete with GTA companies for the same searches", "\"Web design hamilton\" gets 590 searches a month, and \"hamilton seo\" matches that volume at a difficulty of just 25 — one of Ontario's best-value SEO opportunities"],
     industries: ["Healthcare & Medical", "Manufacturing & Steel", "Education & Training", "Arts & Creative", "Trades & Construction", "Restaurants & Hospitality"],
     faq: [
       { q: "How does Hamilton web design SEO compare to Toronto?", a: "Hamilton searches have significantly lower keyword difficulty than Toronto — which means your website can rank faster and maintain rankings with less ongoing investment. It's one of Ontario's best-value SEO markets." },
@@ -296,6 +296,30 @@ const cityContent: Record<string, {
       { q: "Do you work with Halifax's ocean economy and marine businesses?", a: "Yes — with the Port of Halifax and Halifax Shipyard anchoring the region's marine sector, we've built sites for logistics, marine services, and ocean-economy businesses that need to rank for both local Halifax searches and broader Atlantic Canada shipping and logistics terms." },
     ],
   },
+  ladner: {
+    blurb: `Ladner is the heart of South Delta, BC — a tight-knit riverside community built around Ladner Village, the Tsawwassen ferry terminal, and one of the Fraser Valley's most productive farming regions. It's a market where word-of-mouth still carries weight, but where a modern, mobile-friendly website is what turns a local reputation into new customers actively searching Google. Canadian Web Designs builds fast, conversion-focused websites for Ladner and South Delta businesses — trades, retail shops in Ladner Village, marine and farm-adjacent operators, and professional services — engineered to rank for the searches your neighbours (and the broader Delta market) are already making. We treat Ladner as its own community, not an afterthought of Vancouver or Richmond, and build the local relevance signals that reflect that.`,
+    facts: ["Ladner sits within the Municipality of Delta, BC — searches here often need to target \"Delta\" terms alongside the Ladner name", "The Tsawwassen ferry terminal and YVR's proximity make Ladner a logistics- and trades-friendly location", "Ladner Village's boutique retail and marina businesses rely heavily on local search and word-of-mouth", "South Delta's farming heritage means agriculture-adjacent and rural-property businesses are a distinct local vertical"],
+    industries: ["Trades & Construction", "Retail & Boutique", "Marine & Marina Services", "Agriculture & Farm Services", "Real Estate", "Professional Services"],
+    faq: [
+      { q: "Do you build websites for businesses in Ladner specifically, or just Delta generally?", a: "Both — we treat Ladner as its own community with its own local identity (Ladner Village, the marina, South Delta) while also optimizing for the broader Delta, BC searches that Ladner businesses compete in, since dedicated Ladner-only search volume is limited." },
+      { q: "How competitive is web design SEO in Ladner and South Delta?", a: "Very approachable. Delta-area search terms carry low competition compared to Vancouver or Richmond, so a well-optimized site can build local visibility without the budget a downtown Vancouver campaign would need." },
+      { q: "Do you work with Ladner Village retail and boutique shops?", a: "Yes — Ladner Village's independent retailers are a market we understand. We build mobile-first sites with local map integration and easy click-to-call, so foot-traffic customers can find you online first." },
+      { q: "What does a website cost for a Ladner or South Delta business?", a: "Pricing is flat-rate with no hidden fees and scoped to your project. Every build includes mobile-first design, on-page SEO, and Google Analytics. Contact us for a free, no-obligation quote." },
+      { q: "Can you help my Ladner trades or marine services business get found on Google?", a: "Yes — trades and marine-adjacent services are common in South Delta. We build sites with click-to-call, quote request forms, and Google Business Profile optimization so local customers can reach you fast." },
+    ],
+  },
+  montreal: {
+    blurb: `Montreal is Canada's second-largest city and its most distinctive market — a bilingual economy where English and French search behaviour both matter, spanning a booming AI and tech sector, aerospace, fashion, food and hospitality, and a dense small business landscape from the Plateau to Old Montreal. Businesses here need websites that work in both official languages and rank in both. Canadian Web Designs builds fast, conversion-focused websites for Montreal businesses that are engineered to rank on Google in English and French alike, and to convert visitors into calls, bookings, and sales. We understand Montreal's bilingual search landscape, its distinct borough identities, and the local trust signals — proper hreflang, French-language content, and Quebec-relevant citations — that make the difference between ranking and being invisible.`,
+    facts: ["\"Website design montreal\" gets 320 searches a month, and \"seo services montreal\" matches that volume at a moderate difficulty of 25", "Montreal is Canada's largest bilingual market — proper English/French hreflang and content signals are essential for local SEO", "Aerospace, AI/tech, fashion, and food & hospitality are among Montreal's strongest growth sectors", "\"Web design montreal\" carries higher difficulty (56) than the English-only search — a French-language page is often the faster path to page 1"],
+    industries: ["Technology & AI", "Aerospace & Manufacturing", "Fashion & Retail", "Restaurants & Hospitality", "Professional Services", "Healthcare & Clinics"],
+    faq: [
+      { q: "Do you build bilingual English/French websites for Montreal businesses?", a: "Yes — bilingual websites are essential in Montreal. We build dual-language sites with proper hreflang tags and separate URL structures for each language, optimized for both English and French search terms." },
+      { q: "Is it worth targeting French-language SEO in Montreal separately?", a: "Often, yes. \"Web design montreal\" (English) has a difficulty of 56, noticeably more competitive than several English-only Canadian markets. A dedicated French-language page frequently offers an easier, faster path to visibility alongside your English content." },
+      { q: "How competitive is web design SEO in Montreal?", a: "Moderate — \"website design montreal\" carries a difficulty near 0 while \"web design montreal\" sits around 56, so keyword phrasing matters. We target the full range of relevant phrasings rather than guessing at just one." },
+      { q: "Do you work with Montreal's tech and AI sector?", a: "Yes — Montreal's AI and tech ecosystem is one of Canada's largest, and we build clean, credibility-first websites for SaaS companies, AI startups, and tech firms that need to rank both locally and nationally." },
+      { q: "What does web design cost for a Montreal business?", a: "Pricing is flat-rate with no hidden fees and scoped to your project. We offer bilingual builds (English + French) with full local SEO for the Montreal market. Contact us for a free quote." },
+    ],
+  },
 };
 
 function getCityBySlug(slug: string) {
@@ -328,7 +352,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Brampton web design — trucking, healthcare & pro services specialists. Sites built to rank locally. Free quote: (647) 689-6069.`,
   },
   london: {
-    title: "Web Design London Ontario | Custom Sites That Rank | Canadian Website Design",
+    title: "Web Design London Ontario | Sites That Rank",
     description: `London Ontario web design — healthcare, legal & trades experts. Custom-built sites that outrank non-local agencies on Google. Free quote.`,
   },
   ottawa: {
@@ -344,7 +368,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Victoria BC web design — Oak Bay, Langford & James Bay. Custom sites built to rank across the Capital Region. Free audit.`,
   },
   kitchener: {
-    title: "Web Design Kitchener-Waterloo | KW Tech Experts | Canadian Website Design",
+    title: "Web Design Kitchener-Waterloo | KW Tech Experts",
     description: `Kitchener-Waterloo web design — tech, manufacturing & healthcare specialists. Custom sites built to rank locally, fast. Free quote.`,
   },
   oshawa: {
@@ -380,7 +404,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `North York web design — Yonge-Sheppard, Wilson & Bayview. Custom sites built to rank faster than downtown Toronto. Free quote.`,
   },
   hamilton: {
-    title: "Web Design Hamilton | Custom Sites That Rank | Canada Web Designs",
+    title: "Web Design Hamilton | Custom Sites That Rank",
     description: `Hamilton web design — Stoney Creek, Dundas & Westdale. Custom sites built to rank in one of Ontario's best-value markets. Free quote.`,
   },
   winnipeg: {
@@ -394,6 +418,14 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   halifax: {
     title: "Web Design Halifax | Sites That Rank | Canadian Web Designs",
     description: `Halifax web design — Atlantic Canada's finance & tech hub. Custom sites built to rank in HRM. Free quote: 647-689-6069.`,
+  },
+  ladner: {
+    title: "Web Design Ladner BC | South Delta Sites That Rank",
+    description: `Ladner & South Delta web design — Ladner Village, the marina & Tsawwassen. Custom sites built to rank locally. Free quote.`,
+  },
+  montreal: {
+    title: "Web Design Montreal | Bilingual EN/FR Sites That Rank",
+    description: `Montreal web design — bilingual English/French sites for the Plateau, Old Montreal & beyond. Built to rank. Free quote.`,
   },
 };
 
