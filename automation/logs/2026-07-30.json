@@ -1,0 +1,105 @@
+{
+  "runId": "2026-07-30-day7",
+  "date": "2026-07-30",
+  "status": "success",
+  "dayNumber": 7,
+  "dayTitle": "Location Pages III",
+  "planLength": 30,
+  "queueDone": 35,
+  "queueTotal": 56,
+  "workCompleted": [
+    "✅ Optimized 5 location pages: /locations/hamilton, /locations/kitchener, /locations/ladner, /locations/london, /locations/montreal",
+    "✅ Added brand-new city content + metadata for Ladner and Montreal (previously fell back to generic template defaults)",
+    "✅ Trimmed Hamilton/Kitchener/London titles to ≤60 chars (were 65–76) and swapped one vague fact per city for a real SE Ranking-backed stat",
+    "✅ Published 3 new blog posts: electrician-website-design, website-migration-seo-checklist, google-ads-budget-guide",
+    "✅ Claimed all 3 new keywords in keyword-registry.json to prevent future cannibalization",
+    "✅ npm ci + production build verified green before both pushes (Phase A and Phase B)",
+    "✅ Pushed 2 commits to main: pages (A), blogs (B)"
+  ],
+  "pagesOptimized": [
+    {
+      "url": "https://canadianwebdesigns.ca/locations/hamilton",
+      "primaryKeyword": "web design hamilton",
+      "volume": 590,
+      "newTitle": "Web Design Hamilton | Custom Sites That Rank",
+      "newDescription": "Hamilton web design — Stoney Creek, Dundas & Westdale. Custom sites built to rank in one of Ontario's best-value markets. Free quote.",
+      "changes": ["Title shortened from 65 to 44 chars, primary keyword front-loaded", "Replaced vague difficulty claim with real volume/difficulty stat (\"web design hamilton\" 590/diff 52, \"hamilton seo\" 590/diff 25)"]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/kitchener",
+      "primaryKeyword": "web design kitchener",
+      "volume": 390,
+      "newTitle": "Web Design Kitchener-Waterloo | KW Tech Experts",
+      "newDescription": "Kitchener-Waterloo web design — tech, manufacturing & healthcare specialists. Custom sites built to rank locally, fast. Free quote.",
+      "changes": ["Title shortened from 73 to 47 chars", "Replaced vague difficulty claim with real stat (\"web design/website design kitchener\" 390 vol; \"kitchener seo\" 170 vol/diff 22)"]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/ladner",
+      "primaryKeyword": "web design delta",
+      "volume": 10,
+      "newTitle": "Web Design Ladner BC | South Delta Sites That Rank",
+      "newDescription": "Ladner & South Delta web design — Ladner Village, the marina & Tsawwassen. Custom sites built to rank locally. Free quote.",
+      "changes": ["Brand-new city content block + metadata (page previously used generic template defaults)", "No Ladner-specific SE Ranking keyword data exists (verified in prior run's pageNotes) — targeted Delta, BC terms per the documented substitution, with Ladner treated as the local-neighbourhood angle", "5-question FAQ + FAQPage schema added"]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/london",
+      "primaryKeyword": "london seo",
+      "volume": 260,
+      "newTitle": "Web Design London Ontario | Sites That Rank",
+      "newDescription": "London Ontario web design — healthcare, legal & trades experts. Custom-built sites that outrank non-local agencies on Google. Free quote.",
+      "changes": ["Title shortened from 76 to 43 chars", "Replaced vague difficulty claim with real stat (\"london seo\" 260 vol/diff 24 vs. lower-volume \"web design london\")"]
+    },
+    {
+      "url": "https://canadianwebdesigns.ca/locations/montreal",
+      "primaryKeyword": "website design montreal",
+      "volume": 320,
+      "newTitle": "Web Design Montreal | Bilingual EN/FR Sites That Rank",
+      "newDescription": "Montreal web design — bilingual English/French sites for the Plateau, Old Montreal & beyond. Built to rank. Free quote.",
+      "changes": ["Brand-new city content block + metadata (page previously used generic template defaults)", "Bilingual EN/FR framing per Montreal's market reality (same approach as the existing Ottawa page)", "5-question FAQ + FAQPage schema added, keyword-backed facts (\"website design montreal\" 320 vol/diff 0, \"web design montreal\" 260 vol/diff 56, \"seo services montreal\" 320 vol/diff 25)"]
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "electrician-website-design",
+      "url": "https://canadianwebdesigns.ca/blog/electrician-website-design",
+      "title": "Electrician Website Design: What Actually Books Jobs",
+      "keyword": "electrician website design",
+      "volume": 70
+    },
+    {
+      "slug": "website-migration-seo-checklist",
+      "url": "https://canadianwebdesigns.ca/blog/website-migration-seo-checklist",
+      "title": "Website Migration SEO Checklist: Don't Lose Your Rankings",
+      "keyword": "website migration seo",
+      "volume": 20
+    },
+    {
+      "slug": "google-ads-budget-guide",
+      "url": "https://canadianwebdesigns.ca/blog/google-ads-budget-guide",
+      "title": "Google Ads Budget Guide for Small Business (Canada)",
+      "keyword": "google ads budget",
+      "volume": 20
+    }
+  ],
+  "newPages": [],
+  "keywordsTargeted": ["web design hamilton", "hamilton seo", "web design kitchener", "website design kitchener", "kitchener seo", "web design delta", "local seo delta bc", "website design montreal", "web design montreal", "seo services montreal", "london seo", "web design london", "electrician website design", "electrical contractor website", "website migration seo", "site migration checklist", "google ads budget"],
+  "liveVerification": [],
+  "manualTasks": [
+    { "title": "GSC — Request Indexing: /locations/hamilton", "detail": "URL Inspection → paste https://canadianwebdesigns.ca/locations/hamilton → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/kitchener", "detail": "URL Inspection → paste https://canadianwebdesigns.ca/locations/kitchener → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/ladner", "detail": "URL Inspection → paste https://canadianwebdesigns.ca/locations/ladner → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/london", "detail": "URL Inspection → paste https://canadianwebdesigns.ca/locations/london → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: /locations/montreal", "detail": "URL Inspection → paste https://canadianwebdesigns.ca/locations/montreal → Request Indexing (30s)" },
+    { "title": "GSC — Request Indexing: 3 new blog posts", "detail": "URL Inspection → paste each of the 3 new blog URLs above → Request Indexing (30s each)" },
+    { "title": "GBP — review/Q&A check", "detail": "Log into Google Business Profile and check for new reviews or unanswered Q&A across tracked locations (5 min)" },
+    { "title": "Citation submission — Yelp Canada", "detail": "Submit/verify the Canadian Web Designs listing on Yelp Canada (rotating list, next up: Bing Places)" },
+    { "title": "Backlink outreach — email 1", "detail": "Subject: \"Electrician resource for [directory/blog name]\" — Body: \"Hi [name], we just published a practical guide on electrician website design (https://canadianwebdesigns.ca/blog/electrician-website-design) that your readers/members may find useful as a linkable resource. Happy to answer any questions — Amir, Canadian Web Designs.\"" },
+    { "title": "Backlink outreach — email 2", "detail": "Subject: \"Google Ads budget guide for small business owners\" — Body: \"Hi [name], sharing a Canadian-focused Google Ads budgeting guide (https://canadianwebdesigns.ca/blog/google-ads-budget-guide) in case it's useful for [your audience/newsletter]. No ask beyond that — happy to chat if helpful. Amir, Canadian Web Designs.\"" }
+  ],
+  "positionWatch": {
+    "summary": "Skipped — SE Ranking API (api.seranking.com) unreachable from this cloud session (host not in egress allowlist). No position data pulled this run.",
+    "drops": []
+  },
+  "tomorrow": ["/locations/north-york", "/locations/oshawa", "/locations/richmond-hill", "/locations/saskatoon", "/locations/surrey"],
+  "notes": "Cloud egress restricted to git hosts this run: SE Ranking API and the live site were both unreachable, so (1) keyword research used the offline automation/keyword-data.json fallback exclusively, and (2) live-verification of the 5 changed URLs + 3 new blog URLs was skipped — the seo-report-relay GitHub Action should perform this with full egress after this commit lands. Anomaly worth a human look (not touched this run, per the one-pass/no-shared-JSX rules): src/app/locations/[city]/page.tsx's shared JSX re-emits a full LocalBusiness+aggregateRating schema block on every /locations/<city> page, which duplicates the schema in src/app/layout.tsx and conflicts with the runbook's \"LocalBusiness lives ONLY in layout.tsx\" rule. This predates today's run and affects all location pages (including several already marked done in prior runs) — fixing it requires editing the shared template, which is out of scope for a per-city one-time pass and risks touching already-done pages, so it's flagged here rather than fixed."
+}
