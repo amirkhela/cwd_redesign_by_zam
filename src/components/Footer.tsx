@@ -127,6 +127,7 @@ export default function Footer() {
             <p>&copy; {new Date().getFullYear()} {config.businessName}. All rights reserved.</p>
             <div className="flex gap-1 flex-wrap justify-center">
               {[
+                { href: "/careers", label: "Careers" },
                 { href: "/privacy-policy", label: "Privacy Policy" },
                 { href: "/terms-and-conditions", label: "Terms & Conditions" },
                 { href: "/refund-policy", label: "Refund Policy" },
