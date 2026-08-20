@@ -147,6 +147,25 @@ export default async function BlogPage({ searchParams }: Props) {
             </p>
           )}
 
+          {/* Category hubs — these pages exist and rank on their own; the
+              index must link them or they are orphans. */}
+          {!isSearching && (
+            <div className="flex flex-wrap justify-center gap-3 mb-10">
+              {[
+                { href: "/blog/web-design", label: "Web Design Articles" },
+                { href: "/blog/digital-marketing", label: "Digital Marketing Guides" },
+              ].map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="px-4 py-2 rounded-full border border-gray-200 text-sm font-semibold text-gray-600 hover:border-[#00AADF] hover:text-[#00AADF] transition-all duration-200"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          )}
+
           {posts.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-gray-400 text-xl mb-4">No posts found.</p>
