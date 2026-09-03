@@ -13,15 +13,22 @@ const BASE_URL = `https://${config.domain}`;
 // Only cities whose /seo/<city> URL returns 200 belong here — a sitemap must
 // never list a redirecting URL. Expanded 2026-07-23 with the nine cities
 // un-shadowed in next.config.mjs (they render real pages).
-const SEO_CITIES = [
+export const SEO_CITIES = [
   "toronto", "burnaby", "victoria", "surrey", "halifax", "oshawa",
   "barrie", "vaughan", "kitchener", "saskatoon", "montreal", "ladner",
   "brampton", "mississauga", "north-york",
   "calgary", "vancouver", "ottawa", "edmonton", "london", "windsor",
 ];
 
+// Stable content date for the evergreen marketing pages. Using new Date() here
+// stamped every single fetch with "modified just now", which trains Google to
+// distrust lastmod and wastes crawl budget re-checking unchanged pages.
+// Bump this only when these pages genuinely change. Blog posts keep their own
+// frontmatter dates and are unaffected.
+const CONTENT_UPDATED = new Date("2026-08-29T00:00:00.000Z");
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = CONTENT_UPDATED;
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
@@ -43,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/mobile-web-design-in-toronto`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ecommerce-website-design-toronto`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/seo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/sitemap`, lastModified: now, changeFrequency: "weekly", priority: 0.3 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({

@@ -68,7 +68,7 @@ const KNOWN_ROUTES = new Set([
  * Dead URL patterns from the old classifieds/marketplace module and the past
  * casino/betting hack. Return 410 Gone so Google drops them fast (not 404).
  */
-const GONE_PREFIXES = ["/items/", "/detail/", "/cate-"];
+const GONE_PREFIXES = ["/items/", "/detail/", "/cate-", "/shop/", "/case-study/"];
 
 function isGoneUrl(pathname: string): boolean {
   return GONE_PREFIXES.some((p) => pathname === p.replace(/\/$/, "") || pathname.startsWith(p));

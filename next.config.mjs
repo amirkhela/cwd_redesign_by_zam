@@ -34,6 +34,13 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Canonical host: www -> apex. Both were serving 200, duplicating every page.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.canadianwebdesigns.ca" }],
+        destination: "https://canadianwebdesigns.ca/:path*",
+        permanent: true,
+      },
       // What We Do navigation alias
       { source: "/what-we-do", destination: "/services/web-design-development", permanent: true },
       { source: "/what-we-do/", destination: "/services/web-design-development", permanent: true },
@@ -544,6 +551,27 @@ const nextConfig = {
       { source: "/local-seo-guide-for-canadian-small-businesses", destination: "/services/seo", permanent: true },
       { source: "/local-seo-guide-for-canadian-small-businesses/", destination: "/services/seo", permanent: true },
       { source: "/blog/2026-06-25-local-seo-canada-small-business-guide-2026", destination: "/services/seo", permanent: true },
+      // --- undated /blog/<slug> forms of retired posts (the URLs Google actually indexed).
+      // The originals were generated from the dated FILENAME, so these 19 public URLs 404'd. ---
+      { source: "/blog/signs-your-website-is-hurting-google-rankings", destination: "/services/seo", permanent: true },
+      { source: "/blog/why-website-not-ranking-google", destination: "/services/seo", permanent: true },
+      { source: "/blog/local-seo-canada-small-business-guide-2026", destination: "/services/seo", permanent: true },
+      { source: "/blog/seo-services-surrey-bc", destination: "/seo/surrey", permanent: true },
+      { source: "/blog/best-web-design-company-toronto-2026", destination: "/web-design-company", permanent: true },
+      { source: "/blog/best-web-design-company-canada-what-to-look-for", destination: "/web-design-company", permanent: true },
+      { source: "/blog/how-to-choose-best-web-design-company-canada", destination: "/web-design-company", permanent: true },
+      { source: "/blog/web-design-company-canada-how-to-choose-the-right-agency", destination: "/web-design-company", permanent: true },
+      { source: "/blog/web-design-agency-canada-how-to-choose-the-right-one", destination: "/web-design-company", permanent: true },
+      { source: "/blog/toronto-web-design-agency-how-to-choose-the-right-one", destination: "/web-design-company", permanent: true },
+      { source: "/blog/toronto-web-design-agency-what-to-expect-in-2026", destination: "/web-design-company", permanent: true },
+      { source: "/blog/web-design-company-toronto-custom-websites-that-rank-and-convert", destination: "/web-design-company", permanent: true },
+      { source: "/blog/how-much-does-a-website-cost-in-toronto-2026", destination: "/blog/how-much-does-a-wordpress-website-cost", permanent: true },
+      { source: "/blog/website-maintenance-canada-what-to-expect-cost-services-2026", destination: "/services/website-maintenance", permanent: true },
+      { source: "/blog/ecommerce-website-design-canada-how-to-build-an-online-store-that-sells", destination: "/ecommerce-website-design-toronto", permanent: true },
+      { source: "/blog/affordable-web-design-canada", destination: "/services/web-design-development", permanent: true },
+      { source: "/blog/website-design-toronto-what-to-expect-from-a-top-agency-in-2026", destination: "/locations/toronto", permanent: true },
+      { source: "/blog/toronto-web-design-2026-complete-guide", destination: "/locations/toronto", permanent: true },
+      { source: "/blog/web-design-london-ontario", destination: "/locations/london", permanent: true },
       { source: "/2026-06-25-local-seo-canada-small-business-guide-2026", destination: "/services/seo", permanent: true },
       { source: "/2026-06-25-local-seo-canada-small-business-guide-2026/", destination: "/services/seo", permanent: true },
       { source: "/blog/local-seo-benefits-2021", destination: "/blog/how-does-local-seo-benefit-your-business-in-2023", permanent: true },

@@ -12,7 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           "/api/",
           "/*?s=",
-          "/detail/",
         ],
       },
       // Live retrieval agents: they fetch a page because a user asked a question,

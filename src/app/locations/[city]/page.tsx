@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
@@ -431,7 +432,8 @@ const cityMeta: Record<string, { title: string; description: string }> = {
 
 export function generateMetadata({ params }: { params: { city: string } }): Metadata {
   const cityData = getCityBySlug(params.city);
-  const cityName = cityData?.name ?? params.city;
+  if (!cityData) notFound();
+  const cityName = cityData.name;
   const custom = cityMeta[params.city];
   const title = custom?.title ?? `Web Design ${cityName} | Custom Sites That Rank | Canadian Web Designs`;
   const description = custom?.description ?? `Custom web design & SEO in ${cityName} — sites built to rank and convert. ${config.reviewCount}+ five-star reviews. Free quote: ${config.phone}.`;
@@ -448,8 +450,9 @@ export function generateMetadata({ params }: { params: { city: string } }): Meta
 
 export default function LocationPage({ params }: { params: { city: string } }) {
   const cityData = getCityBySlug(params.city);
-  const city = cityData?.name ?? params.city;
-  const province = cityData?.province ?? "ON";
+  if (!cityData) notFound();
+  const city = cityData.name;
+  const province = cityData.province;
   const content = cityContent[params.city];
   const primaryAddress = Object.values(config.addresses)[0];
 

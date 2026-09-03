@@ -131,6 +131,7 @@ export default function Footer() {
                 { href: "/privacy-policy", label: "Privacy Policy" },
                 { href: "/terms-and-conditions", label: "Terms & Conditions" },
                 { href: "/refund-policy", label: "Refund Policy" },
+                { href: "/sitemap", label: "Sitemap" },
               ].map(({ href, label }) => (
                 <Link
                   key={href}
