@@ -6,11 +6,11 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "ai-consultation")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "AI Consultation Canada | Chatbots & Automation | Canada Website Design" },
+  title: { absolute: "AI Consultation Canada | Chatbots & Automation | Canadian Web Designs" },
   description: "Future-proof your business with AI — custom chatbots, workflow automation & GPT integrations for Canadian SMBs. Free consultation.",
   alternates: { canonical: "/services/ai-consultation" },
   openGraph: {
-    title: "AI Consultation Canada | Chatbots & Automation | Canada Website Design",
+    title: "AI Consultation Canada | Chatbots & Automation | Canadian Web Designs",
     description: "AI chatbots, workflow automation & custom GPT integrations for Canadian SMBs — streamline operations and win more leads. Free session.",
     url: "https://canadianwebdesigns.ca/services/ai-consultation",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "AI Consultation Canada 2026 — Canadian Web Designs" }],

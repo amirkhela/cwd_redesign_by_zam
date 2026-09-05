@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design North York | Custom Websites That Rank | Canada Web Designs" },
+  title: { absolute: "Web Design North York | Custom Websites That Rank | Canadian Web Designs" },
   description:
     "North York's top-rated web design agency — Willowdale, Sheppard & Bayview Village specialists. Custom websites built to rank on Google. 200+ reviews.",
   alternates: { canonical: "/locations/north-york" },
   openGraph: {
-    title: "Web Design North York | Custom Websites That Rank | Canada Web Designs",
+    title: "Web Design North York | Custom Websites That Rank | Canadian Web Designs",
     description:
       "Top-rated web design & SEO in North York. 200+ five-star reviews. Custom websites built to rank across Willowdale, Sheppard & Bayview Village.",
     url: "https://canadianwebdesigns.ca/locations/north-york",

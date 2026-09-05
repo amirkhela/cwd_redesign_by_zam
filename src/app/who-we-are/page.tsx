@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Meet Our Team | 25+ Web & SEO Experts | Canada Web Designs" },
+  title: { absolute: "Meet Our Team | 25+ Web & SEO Experts | Canadian Web Designs" },
   description:
     "Meet the 25+ designers, developers & SEO specialists behind 500+ Canadian websites and 200+ five-star reviews. Building trust since 2014.",
   alternates: { canonical: "/who-we-are" },
   openGraph: {
-    title: "Meet Our Team | 25+ Web & SEO Experts | Canada Web Designs",
+    title: "Meet Our Team | 25+ Web & SEO Experts | Canadian Web Designs",
     description:
       "25+ designers, developers & SEO specialists behind 500+ websites and 200+ five-star reviews since 2014 — Canada's most trusted web design team.",
     url: "https://canadianwebdesigns.ca/who-we-are",

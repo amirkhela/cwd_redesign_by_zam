@@ -8,19 +8,19 @@ import PortfolioGrid from "@/components/PortfolioGrid";
 // v4
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Portfolio Canada | Real Results | Canadian Website Design" },
+  title: { absolute: "Web Design Portfolio Canada | Real Results | Canadian Web Designs" },
   description:
     "See 19+ custom Canadian websites for restaurants, clinics, contractors & retailers with real Google rankings and conversion data. Free quote.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
-    title: "Web Design Portfolio Canada | Real Results | Canadian Website Design",
+    title: "Web Design Portfolio Canada | Real Results | Canadian Web Designs",
     description: "See 19+ custom Canadian websites for restaurants, clinics, contractors & retailers with real Google rankings and conversion data.",
     url: "https://canadianwebdesigns.ca/portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design Portfolio Canada | Real Results | Canadian Website Design",
+    title: "Web Design Portfolio Canada | Real Results | Canadian Web Designs",
     description: "19+ custom Canadian websites with real Google rankings and conversion data.",
   },
 };

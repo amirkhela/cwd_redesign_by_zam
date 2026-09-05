@@ -337,7 +337,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Richmond Hill web design — Oak Ridges, Langstaff & Yonge St. Custom-built sites that rank and convert local searches. Free quote.`,
   },
   toronto: {
-    title: "Web Design Toronto | Custom Sites That Rank | Canadian Website Design",
+    title: "Web Design Toronto | Custom Sites That Rank | Canadian Web Designs",
     description: `Toronto web design agency — Yorkville, Etobicoke & Scarborough. Custom sites that rank, backed by 200+ five-star reviews. Free quote.`,
   },
   mississauga: {
@@ -361,7 +361,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Ottawa bilingual web design — Kanata, Glebe & ByWard Market. Custom EN/FR sites that rank, backed by 200+ five-star reviews. Free quote.`,
   },
   vaughan: {
-    title: "Web Design Vaughan | Custom Sites That Convert | Canada Website Design",
+    title: "Web Design Vaughan | Custom Sites That Convert | Canadian Web Designs",
     description: `Vaughan web design — Woodbridge, Maple & the VMC. Custom-built sites that rank and convert local searches, full SEO included. Free quote.`,
   },
   victoria: {
@@ -373,11 +373,11 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Kitchener-Waterloo web design — tech, manufacturing & healthcare specialists. Custom sites built to rank locally, fast. Free quote.`,
   },
   oshawa: {
-    title: "Web Design Oshawa | Durham Region Specialists | Canada Web Designs",
+    title: "Web Design Oshawa | Durham Region Specialists | Canadian Web Designs",
     description: `Oshawa & Durham Region web design — Whitby, Ajax & Pickering coverage. Custom sites built to rank locally. Free quote.`,
   },
   windsor: {
-    title: "Web Design Windsor Ontario | Local + Detroit Reach | Canada Website Design",
+    title: "Web Design Windsor Ontario | Local + Detroit Reach | Canadian Web Designs",
     description: `Windsor Ontario web design — downtown, Walkerville & South Windsor. Custom sites built to rank and capture cross-border traffic. Free quote.`,
   },
   calgary: {
@@ -385,15 +385,15 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Calgary web design — energy, real estate & construction specialists. Sites built to rank across Alberta. Free quote: (647) 689-6069.`,
   },
   saskatoon: {
-    title: "Web Design Saskatoon | Custom Sites That Rank | Canadian Website Design",
+    title: "Web Design Saskatoon | Custom Sites That Rank | Canadian Web Designs",
     description: `Saskatoon web design — agriculture, mining & healthcare specialists. Custom sites built to rank in a low-competition market. Free quote.`,
   },
   vancouver: {
-    title: "Vancouver Web Design | Custom Sites That Rank | Canada Web Designs",
+    title: "Vancouver Web Design | Custom Sites That Rank | Canadian Web Designs",
     description: `Vancouver web design — Yaletown, Kitsilano & Mount Pleasant. Custom sites that rank across Metro Vancouver, 200+ reviews. Free quote.`,
   },
   surrey: {
-    title: "Web Design Surrey BC | Custom Sites That Rank | Canada Website Design",
+    title: "Web Design Surrey BC | Custom Sites That Rank | Canadian Web Designs",
     description: `Surrey BC web design — Newton, Cloverdale & South Surrey. Custom sites built to rank across Metro Vancouver. Free quote.`,
   },
   burnaby: {
@@ -401,7 +401,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Burnaby web design — Metrotown, Brentwood & Lougheed. Custom sites built to rank across Metro Vancouver. Free quote.`,
   },
   "north-york": {
-    title: "Web Design North York | Yonge-Sheppard Experts | Canadian Website Design",
+    title: "Web Design North York | Yonge-Sheppard Experts | Canadian Web Designs",
     description: `North York web design — Yonge-Sheppard, Wilson & Bayview. Custom sites built to rank faster than downtown Toronto. Free quote.`,
   },
   hamilton: {
@@ -409,7 +409,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
     description: `Hamilton web design — Stoney Creek, Dundas & Westdale. Custom sites built to rank in one of Ontario's best-value markets. Free quote.`,
   },
   winnipeg: {
-    title: "Web Design Winnipeg | Manitoba Web Experts | Canada Website Design",
+    title: "Web Design Winnipeg | Manitoba Web Experts | Canadian Web Designs",
     description: `Winnipeg web design — Corydon, Exchange District & St. Vital. Custom sites built to rank in a low-competition market. Free quote.`,
   },
   barrie: {

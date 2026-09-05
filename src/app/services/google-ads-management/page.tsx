@@ -8,11 +8,11 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Website Design" },
+  title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Web Designs" },
   description: "Certified Google Ads management, no contracts — our experts cut wasted spend and lower your cost per lead. 200+ five-star reviews. Free audit.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
-    title: "Google Ads Management Canada | PPC That Converts | Canadian Website Design",
+    title: "Google Ads Management Canada | PPC That Converts | Canadian Web Designs",
     description: "Certified Google Ads management, no contracts — cut wasted spend and lower cost per lead. 200+ five-star reviews. Free audit.",
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],

@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Brampton | SEO Company & Services | Canada Website Design" },
+  title: { absolute: "SEO Brampton | SEO Company & Services | Canadian Web Designs" },
   description:
     "Brampton SEO that reaches page 1 faster than Toronto — Downtown, Bramalea & Castlemore specialists. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/brampton" },
   openGraph: {
-    title: "SEO Brampton | SEO Company & Services | Canada Website Design",
+    title: "SEO Brampton | SEO Company & Services | Canadian Web Designs",
     description:
       "Expert SEO services in Brampton, ON. Get your Brampton business to page 1 of Google. 200+ five-star reviews. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/brampton",

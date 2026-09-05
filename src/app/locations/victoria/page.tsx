@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Victoria BC Web Design | SEO & Custom Sites | Canada Website Design" },
+  title: { absolute: "Victoria BC Web Design | SEO & Custom Sites | Canadian Web Designs" },
   description:
     "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom websites built to rank on Google. 200+ reviews.",
   alternates: { canonical: "/locations/victoria" },
   openGraph: {
-    title: "Victoria BC Web Design | SEO & Custom Sites | Canada Website Design",
+    title: "Victoria BC Web Design | SEO & Custom Sites | Canadian Web Designs",
     description:
       "Top-rated web design & SEO in Victoria BC. 200+ five-star reviews. Custom websites built to rank on Google across Greater Victoria.",
     url: "https://canadianwebdesigns.ca/locations/victoria",
