@@ -78,6 +78,10 @@ const PAGES_FULL = [
   "/seo/surrey", "/seo/victoria", "/seo/ottawa",
   "/services/seo", "/services/google-ads-management", "/services/wordpress-website-design",
   "/services/wix-website-design", "/services/shopify-website-design", "/services/web-design-development",
+  // blog pages carry their own CollectionPage / BlogPosting schema and were the
+  // one family the 34-page list never covered -- which is exactly where four
+  // multi-line publisher stubs survived the first sweep.
+  "/blog/seo", "/blog/web-design", "/blog/digital-marketing",
 ];
 
 const UA = "Mozilla/5.0 (compatible; cwd-verify-seo/1.0)";
@@ -142,15 +146,37 @@ async function checkPage(path) {
   const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
   if (dupes.length) fail(where, `duplicate @id on one page: ${[...new Set(dupes)].join(", ")}`);
 
-  // --- provider references resolve, and are references rather than stubs ---
+  // --- entity references resolve, and are references rather than stubs ---
+  // BOTH provider and publisher. The eight `provider` stubs were fixed first and
+  // the WebSite node's `publisher` survived another day purely because this loop
+  // only knew one of the two spellings. Any new pointer key belongs in this list.
   for (const n of nodes) {
-    const p = n.provider;
-    if (!p) continue;
-    if (typeof p === "object" && !p["@id"]) {
-      fail(where, `provider is an inline stub (${JSON.stringify(p).slice(0, 80)}) — must be {"@id": "${ORG_ID}"}`);
-    } else if (p["@id"] && !ids.includes(p["@id"])) {
-      fail(where, `provider points at ${p["@id"]}, which is not declared on this page`);
+    for (const key of ["provider", "publisher", "isPartOf", "about", "parentOrganization"]) {
+      const ref = n[key];
+      if (!ref || typeof ref !== "object") continue;
+      if (!ref["@id"]) {
+        fail(where, `${key} is an inline stub (${JSON.stringify(ref).slice(0, 80)}) - must be an @id reference`);
+      } else if (!ids.includes(ref["@id"])) {
+        fail(where, `${key} points at ${ref["@id"]}, which is not declared on this page`);
+      }
     }
+  }
+
+  // --- the page says what it is, and which entity it is about ---
+  // Without this a crawler sees a company, a website and a breadcrumb trail with
+  // nothing joining any of them to the page it is actually reading.
+  const webPages = nodes.filter((n) => ["WebPage","AboutPage","ContactPage","CollectionPage","ProfilePage"].includes(String(n["@type"])));
+  if (webPages.length === 0) {
+    fail(where, "no WebPage node - the page does not declare what it is or which entity it is about");
+  } else if (webPages.length > 1) {
+    fail(where, `${webPages.length} WebPage nodes, want exactly 1`);
+  } else {
+    const wp = webPages[0];
+    if (!String(wp["@id"] || "").endsWith("#webpage")) {
+      fail(where, `WebPage @id is "${wp["@id"]}" - must carry a #webpage fragment so it cannot collide with the canonical or a Service @id`);
+    }
+    if (!wp.about || wp.about["@id"] !== ORG_ID) fail(where, `WebPage.about must reference ${ORG_ID}`);
+    if (!wp.isPartOf || !String((wp.isPartOf || {})["@id"] || "").endsWith("/#website")) fail(where, "WebPage.isPartOf must reference the WebSite node");
   }
 
   // --- the org node itself ---
@@ -158,6 +184,7 @@ async function checkPage(path) {
   if (localBusiness.length === 1) {
     if (!org) fail(where, `no node carries the canonical @id ${ORG_ID}`);
     else if (org.name !== BRAND) fail(where, `org name is "${org.name}", want "${BRAND}"`);
+    if (org && !String(org["@type"]).includes("Organization")) fail(where, `org @type is ${JSON.stringify(org["@type"])} - must include "Organization"`);
   }
 
   // --- title: the brand is spelled one way ---

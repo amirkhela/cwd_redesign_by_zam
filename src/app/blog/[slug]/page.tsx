@@ -63,13 +63,8 @@ export default async function BlogPostPage({ params }: Props) {
     dateModified: post.updated || post.date,
     ...(post.featuredImage ? { image: post.featuredImage } : {}),
     author: { "@type": "Person", name: post.author },
-    publisher: {
-      "@type": "Organization",
-      name: config.businessName,
-      url: `https://${config.domain}`,
-      logo: { "@type": "ImageObject", url: `https://${config.domain}/logos/logo.webp` },
-    },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `https://${config.domain}/blog/${post.slug}` },
+    publisher: { "@id": `https://${config.domain}/#organization` },
+    mainEntityOfPage: { "@id": `https://${config.domain}/blog/${post.slug}#webpage` },
   };
 
   const breadcrumbJsonLd = {

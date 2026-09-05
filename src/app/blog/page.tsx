@@ -66,13 +66,21 @@ export default async function BlogPage({ searchParams }: Props) {
     ? filteredPosts
     : filteredPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE);
 
+  // This page already declares itself a CollectionPage, so BreadcrumbSchema is
+  // told not to add a second WebPage node (emitWebPage={false}) -- two nodes
+  // describing one page is the ambiguity the entity work exists to remove.
+  // It carries the same #webpage @id and the same two references so it is
+  // indistinguishable to a crawler from the ones the component emits.
   const collectionPageSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Blog — Canadian Web Designs",
+    "@id": `https://${config.domain}/blog#webpage`,
+    name: "Blog - Canadian Web Designs",
     description: `Web design, SEO, and digital marketing tips from ${config.businessName}.`,
     url: `https://${config.domain}/blog`,
-    publisher: { "@type": "Organization", name: config.businessName },
+    isPartOf: { "@id": `https://${config.domain}/#website` },
+    about: { "@id": `https://${config.domain}/#organization` },
+    inLanguage: "en-CA",
     numberOfItems: allPosts.length,
   };
 
@@ -84,7 +92,7 @@ export default async function BlogPage({ searchParams }: Props) {
 
   return (
     <>
-      <BreadcrumbSchema items={[{ name: "Blog", href: "/blog" }]} />
+      <BreadcrumbSchema items={[{ name: "Blog", href: "/blog" }]} emitWebPage={false} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}

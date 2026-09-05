@@ -68,7 +68,11 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
+  // Organization first: it is the type Google's knowledge graph keys a COMPANY
+  // on, and an answer engine asked "who are Canadian Web Designs" is looking for
+  // an Organization, not a storefront. LocalBusiness and ProfessionalService stay
+  // because the address, hours and geo are real and belong to those types.
+  "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
   "@id": `https://${config.domain}/#organization`,
   name: config.businessName,
   url: `https://${config.domain}`,
@@ -175,9 +179,16 @@ const localBusinessSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  // A stable @id so the per-page WebPage nodes can say isPartOf THIS site
+  // rather than each inventing an anonymous one.
+  "@id": `https://${config.domain}/#website`,
   name: config.businessName,
   url: `https://${config.domain}`,
-  publisher: { "@type": "Organization", name: config.businessName },
+  // Reference, not a stub. An inline {"@type":"Organization", name} is a NEW
+  // anonymous node that inherits none of the address, rating, sameAs or
+  // areaServed the real one carries -- the same defect the eight `provider`
+  // stubs had, missed here because it is spelled `publisher`.
+  publisher: { "@id": `https://${config.domain}/#organization` },
   potentialAction: {
     "@type": "SearchAction",
     target: {

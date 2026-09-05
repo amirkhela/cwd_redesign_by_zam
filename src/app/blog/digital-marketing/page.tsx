@@ -24,13 +24,14 @@ const categorySchema = {
   "@type": "CollectionPage",
   name: "Digital Marketing Strategies for Canadian Companies — Canadian Web Designs Blog",
   description: "Digital marketing strategies, Google Ads tips, and social media guides for Canadian businesses. Expert advice from Canada's top digital marketing agency.",
+  // This page already declares a CollectionPage, so it carries the canonical
+  // #webpage @id and BreadcrumbSchema is told not to emit a second node.
+  "@id": `https://${config.domain}/blog/digital-marketing#webpage`,
   url: `https://${config.domain}/blog/digital-marketing`,
-  publisher: {
-    "@type": "Organization",
-    name: config.businessName,
-    url: `https://${config.domain}`,
-    logo: { "@type": "ImageObject", url: `https://${config.domain}/logos/logo.webp` },
-  },
+  isPartOf: { "@id": `https://${config.domain}/#website` },
+  about: { "@id": `https://${config.domain}/#organization` },
+  inLanguage: "en-CA",
+  publisher: { "@id": `https://${config.domain}/#organization` },
 };
 
 export default function DigitalMarketingCategoryPage() {
@@ -44,7 +45,7 @@ export default function DigitalMarketingCategoryPage() {
 
   return (
     <>
-      <BreadcrumbSchema items={[{ name: "Blog", href: "/blog" }, { name: "Digital Marketing", href: "/blog/digital-marketing" }]} />
+      <BreadcrumbSchema items={[{ name: "Blog", href: "/blog" }, { name: "Digital Marketing", href: "/blog/digital-marketing" }]} emitWebPage={false} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
 
       {/* Hero */}

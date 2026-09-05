@@ -24,13 +24,14 @@ const categorySchema = {
   "@type": "CollectionPage",
   name: "SEO Tips & Guides — Canadian Web Designs Blog",
   description: "Expert SEO tips, guides, and strategies for Canadian businesses. Learn local SEO, technical SEO, keyword research, and more.",
+  // This page already declares a CollectionPage, so it carries the canonical
+  // #webpage @id and BreadcrumbSchema is told not to emit a second node.
+  "@id": `https://${config.domain}/blog/seo#webpage`,
   url: `https://${config.domain}/blog/seo`,
-  publisher: {
-    "@type": "Organization",
-    name: config.businessName,
-    url: `https://${config.domain}`,
-    logo: { "@type": "ImageObject", url: `https://${config.domain}/logos/logo.webp` },
-  },
+  isPartOf: { "@id": `https://${config.domain}/#website` },
+  about: { "@id": `https://${config.domain}/#organization` },
+  inLanguage: "en-CA",
+  publisher: { "@id": `https://${config.domain}/#organization` },
 };
 
 export default function SeoCategoryPage() {
@@ -40,7 +41,7 @@ export default function SeoCategoryPage() {
 
   return (
     <>
-      <BreadcrumbSchema items={[{ name: "Blog", href: "/blog" }, { name: "SEO", href: "/blog/seo" }]} />
+      <BreadcrumbSchema items={[{ name: "Blog", href: "/blog" }, { name: "SEO", href: "/blog/seo" }]} emitWebPage={false} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
 
       {/* Hero */}

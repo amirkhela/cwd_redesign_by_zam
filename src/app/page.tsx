@@ -667,6 +667,30 @@ export default function HomePage() {
       </section>
 
       <BreadcrumbSchema items={[]} />
+      {/*
+        The homepage's own WebPage node.
+
+        It cannot come from BreadcrumbSchema like the other 39 pages: this page
+        passes items={[]} -- correctly, since "Home > Home" is not a trail -- so
+        the component has no crumb to key an @id on and deliberately emits
+        nothing. Without this the site's most important page would be the only
+        one that never says what it is or which entity it is about.
+      */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `https://${config.domain}/#webpage`,
+            url: `https://${config.domain}/`,
+            name: config.businessName,
+            isPartOf: { "@id": `https://${config.domain}/#website` },
+            about: { "@id": `https://${config.domain}/#organization` },
+            inLanguage: "en-CA",
+          }),
+        }}
+      />
       {/* LocalBusiness schema intentionally omitted here — the global schema in
           layout.tsx (@id = homepage) is the single source of truth for the
           business entity + aggregateRating. A second block here caused Google's

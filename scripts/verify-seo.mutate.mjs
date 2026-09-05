@@ -21,11 +21,17 @@ import { spawn } from "node:child_process";
 
 const ORG = "https://canadianwebdesigns.ca/#organization";
 const ld = (o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`;
-const org = (over = {}) => ({ "@context":"https://schema.org","@type":["LocalBusiness","ProfessionalService"],
+const org = (over = {}) => ({ "@context":"https://schema.org","@type":["Organization","LocalBusiness","ProfessionalService"],
   "@id":ORG, name:"Canadian Web Designs", aggregateRating:{"@type":"AggregateRating",ratingValue:"4.9",reviewCount:"200"},
   sameAs:["https://instagram.com/canadianwebdesigns"], ...over });
 const svc = (over = {}) => ({ "@context":"https://schema.org","@type":"Service",
   "@id":"https://canadianwebdesigns.ca/locations/x#service", name:"Web Design", provider:{"@id":ORG}, ...over });
+const SITE = "https://canadianwebdesigns.ca/#website";
+const site = () => ({ "@context":"https://schema.org","@type":"WebSite","@id":SITE,
+  name:"Canadian Web Designs", publisher:{"@id":ORG} });
+const wp = (over = {}) => ({ "@context":"https://schema.org","@type":"WebPage",
+  "@id":"https://canadianwebdesigns.ca/x#webpage", url:"https://canadianwebdesigns.ca/x",
+  name:"X", isPartOf:{"@id":SITE}, about:{"@id":ORG}, inLanguage:"en-CA", ...over });
 
 const page = (nodes, title="Web Design | Canadian Web Designs") =>
   `<!doctype html><html lang="en-CA"><head><title>${title}</title>${nodes.map(ld).join("")}</head><body>ok</body></html>`;
@@ -49,11 +55,19 @@ const MUTATIONS = {
   llms_claims_rating: { llms: GOOD_LLMS + "\nRated 4.9 stars by 200 reviews\n" },
   broken_jsonld:   { raw: `<!doctype html><html><head><title>T | Canadian Web Designs</title><script type="application/ld+json">{oops</script></head><body></body></html>` },
   page_500:        { status: 500 },
+  // --- checks added 2026-09-05 with the WebPage/entity-reference work ---
+  no_webpage_node: { noWebPage: true },
+  webpage_no_fragment: { wpOver: { "@id": "https://canadianwebdesigns.ca/x" } },
+  webpage_about_stub:  { wpOver: { about: { "@type": "Organization", name: "Canadian Web Designs" } } },
+  webpage_bad_about:   { wpOver: { about: { "@id": "https://canadianwebdesigns.ca/#nope" } } },
+  webpage_no_ispartof: { wpOver: { isPartOf: { "@id": "https://canadianwebdesigns.ca/#nope" } } },
+  org_missing_organization_type: { orgOver: { "@type": ["LocalBusiness", "ProfessionalService"] } },
 };
 
 let pass = 0, miss = [];
 for (const [name, m] of Object.entries(MUTATIONS)) {
-  const nodes = [org(m.orgOver || {}), svc(m.svcOver || {})];
+  const nodes = m.noWebPage ? [org(m.orgOver || {}), site(), svc(m.svcOver || {})]
+                            : [org(m.orgOver || {}), site(), svc(m.svcOver || {}), wp(m.wpOver || {})];
   if (m.extraNode) nodes.push(m.extraNode);
   const body = m.raw || page(nodes, m.title);
   const server = http.createServer((req, res) => {
