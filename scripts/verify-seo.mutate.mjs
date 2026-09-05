@@ -39,6 +39,7 @@ const page = (nodes, title="Web Design | Canadian Web Designs") =>
 const GOOD_ROBOTS = ["ChatGPT-User","OAI-SearchBot","Claude-User","Claude-SearchBot","PerplexityBot","Perplexity-User","Google-Extended"]
   .map(a=>`User-Agent: ${a}\nAllow: /\n`).join("\n") + "\nSitemap: https://canadianwebdesigns.ca/sitemap.xml\n";
 const GOOD_LLMS = "# Canadian Web Designs\n\n> agency\n\n## Services\n- a\n\n## Where we work\n- b\n";
+const GOOD_FULL = "# Canadian Web Designs - full content index\n\nArticles: 74\n\n## Guides\n\n### Web Design\n- [x](https://canadianwebdesigns.ca/blog/x) (2026-01-01)\n";
 
 const MUTATIONS = {
   baseline:        {},
@@ -53,6 +54,11 @@ const MUTATIONS = {
   llms_404:        { llms404: true },
   llms_is_html:    { llms: "<!doctype html><html><body>404</body></html>" },
   llms_claims_rating: { llms: GOOD_LLMS + "\nRated 4.9 stars by 200 reviews\n" },
+  llmsfull_404:           { full404: true },
+  llmsfull_is_html:       { full: "<!doctype html><html><body>404</body></html>" },
+  llmsfull_no_guides:     { full: "# X\n\nArticles: 74\n" },
+  llmsfull_no_count:      { full: "# X\n\n## Guides\n- a\n" },
+  llmsfull_claims_rating: { full: GOOD_FULL + "\nWe are top-rated\n" },
   broken_jsonld:   { raw: `<!doctype html><html><head><title>T | Canadian Web Designs</title><script type="application/ld+json">{oops</script></head><body></body></html>` },
   page_500:        { status: 500 },
   // --- checks added 2026-09-05 with the WebPage/entity-reference work ---
@@ -72,6 +78,10 @@ for (const [name, m] of Object.entries(MUTATIONS)) {
   const body = m.raw || page(nodes, m.title);
   const server = http.createServer((req, res) => {
     if (req.url === "/robots.txt") { res.writeHead(200,{"Content-Type":"text/plain"}); return res.end(m.robots ?? GOOD_ROBOTS); }
+    if (req.url === "/llms-full.txt") {
+      if (m.full404) { res.writeHead(404,{"Content-Type":"text/html"}); return res.end("<!doctype html><html>404</html>"); }
+      res.writeHead(200,{"Content-Type":"text/plain"}); return res.end(m.full ?? GOOD_FULL);
+    }
     if (req.url === "/llms.txt") {
       if (m.llms404) { res.writeHead(404,{"Content-Type":"text/html"}); return res.end("<!doctype html><html>404</html>"); }
       res.writeHead(200,{"Content-Type":"text/plain"}); return res.end(m.llms ?? GOOD_LLMS);

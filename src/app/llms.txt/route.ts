@@ -106,6 +106,9 @@ ${seoCities}
 ## Reference
 
 - [Blog](${base}/blog): guides on web design, SEO and digital marketing.
+- [Full article index](${base}/llms-full.txt): every guide with its date and
+  description. Kept out of this file on purpose -- this one is the short map,
+  that one is the catalogue.
 - [HTML sitemap](${base}/sitemap): every page, grouped.
 - [XML sitemap](${base}/sitemap.xml)
 - [Privacy policy](${base}/privacy-policy)

@@ -252,6 +252,20 @@ async function checkSiteWide() {
     // rule 5's neighbour: llms.txt must not invent a claim the site does not make
     if (/\b\d\.\d\s*star|\breview/i.test(llms.body)) fail("/llms.txt", "carries a rating/review claim — it must state no claim the pages do not");
   }
+
+  // llms-full.txt -- the article catalogue. Same rules as llms.txt: present,
+  // plain text, and claiming nothing the pages do not. It is derived from each
+  // post's own front matter, so a failure here means the derivation broke.
+  let full;
+  try { full = await get(`${BASE}/llms-full.txt`); }
+  catch (e) { return fail("/llms-full.txt", `unreachable - ${e.message}`); }
+  if (full.status !== 200) fail("/llms-full.txt", `HTTP ${full.status} - the article catalogue is missing`);
+  else {
+    if (/<!doctype|<html/i.test(full.body)) fail("/llms-full.txt", "served HTML, not text/plain (route missing -> 404 page)");
+    if (!full.body.includes("## Guides")) fail("/llms-full.txt", "missing the Guides section");
+    if (!/Articles: \d+/.test(full.body)) fail("/llms-full.txt", "does not state how many articles it lists");
+    if (/\d\.\d\s*star|top-rated/i.test(full.body)) fail("/llms-full.txt", "carries a rating claim - it must state no claim the pages do not");
+  }
 }
 
 async function checkSameAs(org) {
