@@ -135,7 +135,7 @@ between pages ("| Canadian Website Designs" vs "| Canada Web Designs" vs
 "| Canadian Web Designs"). Shortening and standardising it fixes most of the 39
 in one edit.
 
-### F. 20 images missing `alt` across 17 pages
+### F. ~~20 images missing `alt` across 17 pages~~ RETRACTED - see iteration 3
 
 Four of them on the home page. Small, mechanical, and alt text is read by both
 image search and the assistants.
@@ -288,3 +288,131 @@ Until then no DA/PA number is quoted, because none has been fetched. What is
 already known without it: 3.7M impressions over 18 months is not a visibility
 problem, it is a click problem, and DA is not the binding constraint on a 0.37%
 top-three CTR.
+
+
+---
+
+# Iteration 3 - 2026-09-05: why the clicks are missing
+
+Iteration 2 found positions 1-3 converting at 0.37%. This pass separated the two
+candidate explanations - "the top-3 queries are junk long-tail nobody clicks" vs
+"the snippet is broken" - and it is **neither**.
+
+## The control that settles it
+
+Same site, same title format, same 90-day window:
+
+| query | position | impressions | clicks | CTR |
+|---|---|---|---|---|
+| **canadian web designs** (brand) | 1.1 | 229 | **28** | **12.2%** |
+| web design companies canada | 1.6 | 942 | 1 | 0.11% |
+| web design companies in canada | 3.0 | 1,119 | **0** | 0.00% |
+| best web development | 2.5 | 1,067 | **0** | 0.00% |
+| web design companies | 12.0 | 1,959 | 1 | 0.05% |
+
+**The brand query converts at 12.2%, which is completely normal.** So the title,
+the description, the domain and the snippet all work fine - a user who is looking
+for this company finds it and clicks it. The commercial queries are not junk
+either: these are the highest-value head terms in the industry, 1,000+
+impressions each.
+
+Something is different about the SERP those commercial queries return, not about
+the site's entry on it.
+
+## The rest of the evidence points the same way
+
+**By country (90 days):**
+
+| country | impressions | clicks | CTR | avg pos |
+|---|---|---|---|---|
+| **Canada** | **378,295** | **208** | **0.055%** | 23.5 |
+| India | 2,275 | 77 | 3.39% | 18.6 |
+| Pakistan | 609 | 55 | **9.03%** | 8.6 |
+| USA | 17,909 | 33 | 0.18% | 17.3 |
+| Nigeria | 249 | 25 | **10.04%** | 6.1 |
+
+The home market is 93% of impressions and converts 60-180x worse than markets
+where the same pages rank at positions 6-9. Part of that is position (23.5 vs
+8.6), but not 60x worth.
+
+**By intent, positions <=5 only:**
+
+| query shape | queries | impressions | clicks | CTR |
+|---|---|---|---|---|
+| list-intent (companies / agencies / best / top) | 65 | 7,981 | 6 | **0.075%** |
+| everything else | 403 | 21,466 | 74 | **0.345%** |
+
+A 4.6x gap. A single agency's homepage cannot win a click on "best web design
+companies canada" however high it ranks, because the user wants a list.
+
+**And the impressions are real.** Daily volume over 90 days is smooth - min
+2,740, median 4,282, max 7,513, no spikes - and *growing*, 23,141 impressions in
+the week of 06-04 to 44,283 in the week of 08-27. This is not a rank-tracker
+artifact or a bot spike. It is genuine, rising, and converting at 0.12%.
+
+## The reading that fits all of it
+
+On the commercial-research queries, CWD's organic result is being **displaced
+below the answer**. In 2026 a SERP for "web design companies canada" is ads, an
+AI Overview, a local pack and listicles before the first organic link. GSC counts
+the impression and reports the organic rank; the user never gets that far, and
+the AI Overview has already answered them. Navigational queries have none of that
+furniture above them, which is exactly why the brand term still earns 12.2%.
+
+**This cannot be proven from GSC alone** - Google does not break AI Overviews out
+in `searchAppearance` (the only appearance types reported here are REVIEW_SNIPPET
+at 4,286 impressions and PRODUCT_SNIPPETS at 11). Confirming it needs a live SERP
+capture for the head terms from a Canadian IP. That is the next check, and it is
+worth doing before anyone spends money on rankings.
+
+**If it holds, it reframes the whole brief:** ranking 2nd has a low ceiling when
+the answer sits above position 1, and the work that pays is being *the cited
+source inside the answer* - entity consistency, schema, llms.txt, unambiguous
+first-paragraph answers. That is the axis iteration 1 was already on, which is
+reassuring, and it makes items A, B, C and D above more important, not less.
+
+## Second structural finding: the homepage answers everything
+
+Every single "web design companies *" query resolves to `/`:
+
+```
+1959im  1cl  pos 12.0   /  <- "web design companies"
+1388im  0cl  pos 16.4   /  <- "toronto web design companies"
+1119im  0cl  pos  3.0   /  <- "web design companies in canada"
+1039im  0cl  pos 15.6   /  <- "web design companies toronto"
+ 942im  1cl  pos  1.6   /  <- "web design companies canada"
+```
+
+`/web-design-company`, `/web-design-agency` and `/locations/toronto` all exist and
+Google is not choosing any of them. `/` took 73% of all site impressions. Worth a
+pass on internal linking and on whether those pages are differentiated enough to
+be picked - but note that fixing the URL alone does not fix the CTR if the
+displacement above is the real cause.
+
+## Domain / Page Authority: blocked, and the blocker is a bill
+
+The SE Ranking key decrypts correctly out of Mongo, and the API answers:
+
+```
+402 Payment Required
+"Insufficient funds, API key is temporarily disabled. Please make a payment
+ to enable you API key, or contact us at api@seranking.com"
+```
+
+So no DA/PA/backlink number this pass either, and **no number is invented here.**
+
+This is worth Amir's attention beyond this task: the portal's SEO engine uses
+that same key for keyword volumes, competitor data and backlinks
+(`src/lib/seo/seranking.ts`), so **CWD's client SEO tooling is running blind
+right now**, not just this audit. Google Search Console is unaffected - it is a
+different credential and it is working.
+
+## Retraction: audit item F was wrong
+
+Iteration 1 reported "20 images missing `alt` across 17 pages". That was a bug in
+my own audit regex, which required `alt="something"` and therefore counted
+`alt=""` as missing. Checked against the live homepage: 16 images, 4 without a
+non-empty alt, **all 4 are `alt=""`** - the correct, deliberate markup for a
+decorative background image - and **0 images are actually missing the
+attribute**. A source scan of every `.tsx` agrees: zero `<Image>`/`<img>` tags
+without an `alt` prop. There is nothing to fix; item F is struck.
