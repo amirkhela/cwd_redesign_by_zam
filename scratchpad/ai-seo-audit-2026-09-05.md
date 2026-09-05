@@ -837,3 +837,76 @@ answers a pricing question with no price, the "30-Day Average Launch" claim
 rendering on SEO and maintenance pages) or off-site (Clutch/DesignRush listings,
 which is the only lever that moves both clicks and Domain Authority). None of
 those is a code change, and none should be made without the owner.
+
+---
+
+# Iteration 12 - 2026-09-05: what GOOGLE says, not what I think
+
+Structure, vocabulary, property-domain and value validity have all been checked
+and are clean. Every one of those is still *my* judgement of what valid means.
+This asks the only authority that matters, through the Search Console URL
+Inspection API, which returns Google's own `richResultsResult` for a live URL.
+
+## The verdict
+
+Seven representative pages - home, a service, a location, an SEO city page, a
+blog post, the FAQ and the blog hub:
+
+```
+richResults verdict: PASS      on all seven
+  Breadcrumbs       1 item   clean
+  Review snippets   1-2 items clean
+index: PASS / "Submitted and indexed" on all seven
+```
+
+**Zero issues reported on anything.** That is Google confirming the markup it
+reads is structurally sound, which no amount of local validation can establish.
+
+## Two absences, and they mean different things
+
+**No FAQ rich result, and that is not a defect.** 126 pages carry `FAQPage`.
+Google restricted FAQ rich results to authoritative government and health sites
+in August 2023 and **deprecated them entirely on 7 May 2026**; Search Console API
+support ended in August 2026, which is why the inspection reports no FAQ type at
+all. So:
+
+- **Do not remove the FAQPage markup.** Google still parses it to understand the
+  page, and a machine-readable Q&A block is exactly what an answer engine wants -
+  which is the half of this brief that is not about SERP appearance.
+- **Do not spend effort improving it expecting stars.** That result no longer
+  exists for any site. Anyone who finds 126 FAQPage nodes and no rich result
+  should read this paragraph rather than "fix" it.
+
+**No Article rich result on the blog post - UNCONFIRMED, not failed.** That page
+was last crawled **2026-08-20**, and the fix that made `BlogPosting.image`
+absolute shipped today. 74 of 77 posts were ineligible until this morning
+because Google does not resolve a relative `image` and `image` is required. The
+inspection is reading a pre-fix crawl, so it cannot yet say whether the fix
+worked.
+
+**This is the one open verification in the whole audit.** Re-run the inspection
+on a blog post after Google recrawls - a week is a reasonable wait, and the
+sitemap was downloaded 2026-09-05 09:27 - and check whether `Articles` appears in
+`detectedItems`. If it does not, the cause is something the local validators
+still cannot see, and that is worth knowing.
+
+## What "Review snippets" being detected actually tells us
+
+It is the `aggregateRating`, and Google reports it **clean** on every page,
+including `/locations/toronto` and `/seo/brampton` where it shows **2 items** on
+pages that render no reviews at all.
+
+Read that carefully: the API reports **structural** validity, not **policy**
+eligibility. Google's own guidance disallows self-serving reviews - a business
+marking up a rating about itself - and those have not earned stars since 2019. A
+`PASS` here is not permission; it means the syntax parses. Audit item B stands
+exactly as written, and this is evidence for it rather than against it: the
+markup is being read on 78 pages that show no reviews.
+
+## Reproduce
+
+The inspection is not scripted into the repo on purpose - it costs a Search
+Console API quota unit per URL against a 2,000/day limit, and it needs the
+`GSC_CWD_REFRESH_TOKEN` that lives in the team portal's Vercel env, not here.
+Run it from `team.canadianwebdesigns.ca` with `searchconsole.urlInspection.index.inspect`
+and read `inspectionResult.richResultsResult.detectedItems`.
