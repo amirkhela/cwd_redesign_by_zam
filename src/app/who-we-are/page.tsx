@@ -259,7 +259,40 @@ export default function WhoWeArePage() {
                   {config.president?.split(" ").map((n) => n[0]).join("") ?? ""}
                 </span>
               </div>
-              <h3 className="text-gray-900 font-black text-2xl mb-1">{config.president}</h3>
+              {/* The founder's name, linked to his own site when the client
+                  config supplies one.
+
+                  WHY A LINK AND NOT JUST TEXT. This card is the one place on
+                  the site that is editorially ABOUT the person rather than the
+                  agency, so his name here is a citation and linking it is what
+                  a citation is for. It is deliberately the ONLY such link on
+                  the site: a site-wide footer link to an owner's personal
+                  domain, repeated across a network of domains one person
+                  controls, is a link-scheme footprint rather than a citation,
+                  and the difference is whether the surrounding page was already
+                  talking about him.
+
+                  `rel="me"` is the identity relation — "the page at the other
+                  end is the same person this card describes" — which is the
+                  claim actually being made. It does not stop the link being
+                  followed. No target="_blank": it is one name, not a resource
+                  the reader needs to keep this page open for.
+
+                  Falls back to the exact plain <h3> that shipped before when
+                  presidentUrl is unset, which is every other tenant. */}
+              <h3 className="text-gray-900 font-black text-2xl mb-1">
+                {config.presidentUrl ? (
+                  <a
+                    href={config.presidentUrl}
+                    rel="me"
+                    className="hover:text-[#00AADF] focus-visible:text-[#00AADF] underline decoration-transparent hover:decoration-inherit transition-colors"
+                  >
+                    {config.president}
+                  </a>
+                ) : (
+                  config.president
+                )}
+              </h3>
               <p className="text-[#00AADF] font-bold text-sm mb-4 tracking-widest uppercase">President & Founder</p>
               <div className="w-16 h-px mx-auto mb-4 border-t border-gray-200" />
               <p className="text-gray-600 text-sm leading-relaxed">

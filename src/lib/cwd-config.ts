@@ -5,6 +5,7 @@ export const cwdConfig: ClientConfig = {
   businessName: "Canadian Web Designs",
   industry: "web-design",
   president: "Amir Khela",
+  presidentUrl: "https://amirkhela.com",
   founded: 2014,
   teamSize: 25,
 

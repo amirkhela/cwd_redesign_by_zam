@@ -42,6 +42,19 @@ export interface ClientConfig {
   tagline?: string;
   industry: string;
   president?: string;
+  /**
+   * The president's own site, if they have one. Renders their name on
+   * /who-we-are as a link instead of plain text.
+   *
+   * OPTIONAL, AND THAT IS THE WHOLE POINT. This file is a MULTI-TENANT
+   * template — `getConfig()` selects a client config, so anything hardcoded
+   * into a page ships on every site built from it. A president link written
+   * straight into who-we-are/page.tsx would put one owner's personal domain in
+   * the founder card of every other client's site: wrong for them, and a
+   * genuine link-scheme footprint for him. A client that does not set this
+   * gets exactly the plain text that shipped before.
+   */
+  presidentUrl?: string;
   founded?: number;
   teamSize?: number;
 
