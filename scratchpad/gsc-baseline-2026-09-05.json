@@ -1,0 +1,149 @@
+{
+ "captured_for": "pre-deploy baseline, deploy ec9edc31",
+ "windows": {
+  "last28": {
+   "range": "2026-08-06..2026-09-02",
+   "clicks": 192,
+   "impressions": 155127,
+   "ctr": 0.1238,
+   "position": 25.94
+  },
+  "prev28": {
+   "range": "2026-07-09..2026-08-05",
+   "clicks": 152,
+   "impressions": 121874,
+   "ctr": 0.1247,
+   "position": 23.12
+  },
+  "last90": {
+   "range": "2026-06-04..2026-09-02",
+   "clicks": 491,
+   "impressions": 410020,
+   "ctr": 0.1198,
+   "position": 23.1
+  }
+ },
+ "bands": {
+  "1-3": {
+   "queries": 248,
+   "clicks": 27,
+   "impressions": 7274,
+   "ctr": 0.3712,
+   "position": 2.03
+  },
+  "3-10": {
+   "queries": 403,
+   "clicks": 18,
+   "impressions": 15397,
+   "ctr": 0.1169,
+   "position": 6.69
+  },
+  "10-20": {
+   "queries": 734,
+   "clicks": 23,
+   "impressions": 50761,
+   "ctr": 0.0453,
+   "position": 15.75
+  },
+  "20+": {
+   "queries": 2327,
+   "clicks": 11,
+   "impressions": 65425,
+   "ctr": 0.0168,
+   "position": 38.46
+  }
+ },
+ "top_pages": [
+  {
+   "page": "/",
+   "clicks": 160,
+   "impressions": 113974,
+   "position": 22.8
+  },
+  {
+   "page": "/careers",
+   "clicks": 4,
+   "impressions": 147,
+   "position": 14.1
+  },
+  {
+   "page": "/web-designers-near-me",
+   "clicks": 4,
+   "impressions": 3231,
+   "position": 18.9
+  },
+  {
+   "page": "/who-we-are",
+   "clicks": 4,
+   "impressions": 1072,
+   "position": 38.1
+  },
+  {
+   "page": "/services/web-design-development",
+   "clicks": 3,
+   "impressions": 2395,
+   "position": 46.1
+  },
+  {
+   "page": "/blog/kijiji-ads-marketing-strategy-for-local-businesses",
+   "clicks": 2,
+   "impressions": 933,
+   "position": 8.2
+  },
+  {
+   "page": "/contact",
+   "clicks": 2,
+   "impressions": 177,
+   "position": 19.4
+  },
+  {
+   "page": "/our-story",
+   "clicks": 2,
+   "impressions": 124,
+   "position": 19
+  },
+  {
+   "page": "/seo/ottawa",
+   "clicks": 2,
+   "impressions": 508,
+   "position": 41.7
+  },
+  {
+   "page": "/blog/construction-company-website-design",
+   "clicks": 1,
+   "impressions": 96,
+   "position": 13.4
+  },
+  {
+   "page": "/blog/how-does-local-seo-benefit-your-business-in-2023",
+   "clicks": 1,
+   "impressions": 84,
+   "position": 13.9
+  },
+  {
+   "page": "/blog/how-much-does-a-wordpress-website-cost",
+   "clicks": 1,
+   "impressions": 85,
+   "position": 6.4
+  },
+  {
+   "page": "/blog/how-to-get-more-google-reviews",
+   "clicks": 1,
+   "impressions": 26,
+   "position": 14
+  },
+  {
+   "page": "/blog/top-10-ai-tools-for-digital-marketing",
+   "clicks": 1,
+   "impressions": 147,
+   "position": 65.3
+  },
+  {
+   "page": "/blog/top-10-tips-for-boosting-seo-for-2023",
+   "clicks": 1,
+   "impressions": 3,
+   "position": 39
+  }
+ ],
+ "total_queries": 3712
+}
