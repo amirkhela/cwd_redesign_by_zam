@@ -299,5 +299,21 @@ export const cwdConfig: ClientConfig = {
   //   fid         1764590269626849918   <- the public Maps cid, used here
   // Picking the wrong one gives a URL that loads a blank pin, which is exactly
   // the kind of dead anchor the socialLinks note above exists to prevent.
-  entityProfiles: ["https://maps.google.com/?cid=1764590269626849918"],
+  //
+  // BRAMPTON, added 2026-09-05. VERIFIED THE SAME WAY, and the same trap applies:
+  //   business_id 2330856418080702014 <- dashboard account; loads a BLANK place
+  //                                      card centred on Mississauga (checked)
+  //   fid         3493474530954667891 <- the public Maps cid, used here
+  // Loaded headless with JS on: title "Canadian Web Designs - Google Maps",
+  // h1 "Canadian Web Designs", category "Website designer", Cherrycrest,
+  // Brampton, at 43.7647,-79.6706. Google's own place URL carries
+  // ftid 0x882b3dc75b79ea91:0x307b5093a16d6773, and 0x307b5093a16d6773 ==
+  // 3493474530954667891 -- a preimage of the fid, not a resemblance.
+  // A plain fetch cannot confirm either listing: Maps is JS-rendered, and the
+  // KNOWN-GOOD Toronto cid is equally invisible to curl. That control is why
+  // "a fetch found nothing" was never evidence against a cid.
+  entityProfiles: [
+    "https://maps.google.com/?cid=1764590269626849918",  // Toronto
+    "https://maps.google.com/?cid=3493474530954667891",  // Brampton
+  ],
 };
