@@ -131,7 +131,31 @@ const localBusinessSchema = {
   // earn star rich results and are a manual-action risk. The aggregateRating
   // above should be backed by the real reviews rendered on-page (GoogleReviews
   // component) and the Google Business Profile.
-  founder: { "@type": "Person", name: "Amir Khela" },
+  // The @id is what makes this founder the SAME person as the one on
+  // amirkhela.com, rather than a second man who happens to share the name.
+  //
+  // This node already said "Amir Khela" and had done for a long time, but a
+  // bare Person with only a `name` is unresolvable: nothing connects it to
+  // anything, so it adds a dangling entity instead of corroborating a real one.
+  // Meanwhile amirkhela.com publishes a Person at https://amirkhela.com/#person
+  // whose `sameAs` names this domain, and whose homepage catalogue carries
+  // Canadian Web Designs as a numbered entry. That was a one-way claim; six of
+  // the seven live venture domains said nothing about him at all when this was
+  // measured on 2026-09-05.
+  //
+  // An @id is an identifier, not a URL to fetch, so the string must match
+  // byte-for-byte the one amirkhela.com emits (generated there from
+  // src/lib/entity.ts). A trailing slash or an /about would not fail loudly —
+  // it would point at nothing while the markup still looked correct.
+  //
+  // `url` is included as well so a consumer that does not do @id joins still
+  // gets somewhere real to go.
+  founder: {
+    "@type": "Person",
+    "@id": "https://amirkhela.com/#person",
+    name: "Amir Khela",
+    url: "https://amirkhela.com/about",
+  },
   foundingDate: "2014",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 25 },
   sameAs: config.socialLinks.map((link) => link.href),
