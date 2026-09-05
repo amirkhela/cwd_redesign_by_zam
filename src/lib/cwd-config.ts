@@ -256,12 +256,26 @@ export const cwdConfig: ClientConfig = {
     { label: "Get In Touch", href: "/contact" },
   ],
 
+  // This array is the single source for BOTH the footer social icons (rendered on
+  // every page by Footer.tsx) and the schema.org `sameAs` entity anchors emitted in
+  // layout.tsx and locations/[city]/page.tsx.
+  //
+  // A `sameAs` URL that 404s is worse than no `sameAs` at all: Google and the AI
+  // answer engines use these to reconcile "Canadian Web Designs" into one entity,
+  // and a dead anchor is a failed reconciliation plus a broken outbound link in the
+  // footer of all 149 pages. Verified 2026-09-05 by fetching each URL:
+  //   instagram.com/canadianwebdesigns         200, active (posts daily since 2026-08-24)
+  //   linkedin.com/company/canadianwebdesigns  200, <title>Canadian Web Designs | LinkedIn
+  //   facebook.com/canadianwebdesigns          400                      <- removed
+  //   youtube.com/canadianwebdesigns           404                      <- removed
+  //   x.com/canadianwebdesigns                 404                      <- removed
+  //   amazon.com/author/canadianwebdesigns     404 "Page Not Found"     <- removed
+  //
+  // Do NOT add a profile back without fetching it first. If CWD opens a real
+  // YouTube/X/Facebook page later, add the URL that actually resolves - all four of
+  // the removed ones were a guessed vanity slug that never existed.
   socialLinks: [
-    { label: "Facebook", href: "https://facebook.com/canadianwebdesigns", icon: "facebook" },
     { label: "Instagram", href: "https://instagram.com/canadianwebdesigns", icon: "instagram" },
-    { label: "YouTube", href: "https://youtube.com/canadianwebdesigns", icon: "youtube" },
-    { label: "Twitter/X", href: "https://x.com/canadianwebdesigns", icon: "twitter" },
     { label: "LinkedIn", href: "https://linkedin.com/company/canadianwebdesigns", icon: "linkedin" },
-    { label: "Amazon", href: "https://amazon.com/author/canadianwebdesigns", icon: "amazon" },
   ],
 };
