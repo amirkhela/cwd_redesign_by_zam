@@ -761,3 +761,79 @@ with `anchors is not iterable` instead of reporting cleanly, because
 `checkSameAs` returns undefined on its failure paths - which is exactly the state
 a pre-deploy site is in. Exiting non-zero for the wrong reason and burying the
 finding under a stack trace is its own rule-4 violation.
+
+---
+
+# Iteration 10 - 2026-09-05: performance and delivery. Also clean.
+
+Measured against production after the `ec9edc31` deploy. Recording the NEGATIVE
+results, because "we checked and it is fine" is worth as much as a finding and
+stops the next person re-auditing the same ground.
+
+## Delivery
+
+| page | TTFB | HTML raw | brotli | edge cache |
+|---|---|---|---|---|
+| `/` | 0.32 s | 177 KB | **23 KB** | HIT |
+| `/web-design-company` | 0.28 s | 219 KB | **27 KB** | HIT |
+| `/locations/toronto` | 0.25 s | 231 KB | **30 KB** | HIT |
+| `/blog` | 0.56 s | 171 KB | 21 KB | MISS |
+
+The 177-231 KB raw HTML looks alarming and is not: it is the inlined RSC payload,
+and it compresses about 8:1. What actually crosses the wire is 21-30 KB.
+
+## Images are correctly optimised
+
+`next.config.mjs` sets `formats: ["image/avif", "image/webp"]` with a one-year
+`minimumCacheTTL`, and the optimizer honours it. Probed live on the hero JPEG:
+
+```
+Accept: image/avif,image/webp,image/*  ->  image/avif
+Accept: image/*                        ->  image/jpeg
+```
+
+Correct content negotiation. Nothing to fix.
+
+## Blog pagination is handled properly
+
+| URL | canonical | robots |
+|---|---|---|
+| `/blog` | `/blog` | index, follow |
+| `/blog?page=2` | `/blog` | **noindex, follow** |
+| `/blog?page=3` | `/blog` | **noindex, follow** |
+
+Canonicalised to the hub, `noindex` on the pages, none in the sitemap. No index
+bloat. Someone did this deliberately and correctly.
+
+## The one real observation, and why it was not "fixed"
+
+`/blog` is `private, no-cache, no-store` and misses the edge cache on every
+request, because `src/app/blog/page.tsx` takes `searchParams` (for `?page=` and
+`?q=`) - which opts the whole route out of static rendering in the App Router.
+Cost: 0.56 s TTFB against 0.28 s cached, plus a function invocation per crawl.
+
+Left alone. Making the hub static while keeping search and pagination dynamic
+means splitting the route, which is a refactor with real regression surface on a
+page that currently works, for maybe 0.28 s on one URL. That is not a small
+reversible diff, and the payoff does not justify it. Noted so the decision is
+visible rather than forgotten.
+
+## Where this leaves the audit
+
+Six technical dimensions have now been checked against production:
+
+| dimension | verdict |
+|---|---|
+| crawl / index | **clean** - 149/149 200, no redirect chains, 149/149 canonicals match |
+| internal linking | **clean** - zero orphans, money pages 149 inbound each |
+| performance / delivery | **clean** - 21-30 KB over the wire, AVIF, edge cached |
+| pagination | **clean** - noindex + canonical, no bloat |
+| entity / structured data | **fixed** - see iterations 1-8, locked by `verify-seo.mjs` |
+| answerability | 2 fixed (invalid `Offer`, `llms.txt` inclusions), 4 deferred as copy |
+
+**The technical SEO surface is essentially exhausted.** Everything still on the
+table is either content (the five-page cannibalisation cluster, the FAQ that
+answers a pricing question with no price, the "30-Day Average Launch" claim
+rendering on SEO and maintenance pages) or off-site (Clutch/DesignRush listings,
+which is the only lever that moves both clicks and Domain Authority). None of
+those is a code change, and none should be made without the owner.
