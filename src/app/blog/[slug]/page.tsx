@@ -64,7 +64,12 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: post.date,
     dateModified: post.updated || post.date,
-    ...(post.featuredImage ? { image: post.featuredImage } : {}),
+    // Absolute, and always present. Google requires `image` on Article/BlogPosting
+    // and requires it to be an absolute URL; a relative path is not resolved, so
+    // 74 of 77 posts were ineligible for an Article rich result. heroImage already
+    // carries the site-wide fallback, so the three posts with no featuredImage get
+    // a valid one rather than the property being dropped entirely.
+    image: `https://${config.domain}${heroImage}`,
     author: { "@type": "Person", name: post.author },
     publisher: { "@id": `https://${config.domain}/#organization` },
     mainEntityOfPage: { "@id": `https://${config.domain}/blog/${post.slug}#webpage` },

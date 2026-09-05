@@ -58,14 +58,41 @@ async function loadVocabulary() {
   const graph = (await (await get(VOCAB_URL)).json())["@graph"];
   const types = new Set();
   const props = new Set();
+  const domains = new Map();   // property -> Set(types it may appear on)
+  const parents = new Map();   // type -> Set(direct superclasses)
+  const nm = (x) => String((x && typeof x === "object" ? x["@id"] : x) ?? "").split(":").pop();
   for (const node of graph) {
     const t = JSON.stringify(node["@type"] ?? "");
-    const name = String(node["@id"] ?? "").split(":").pop();
+    const name = nm(node["@id"]);
     if (!name) continue;
-    if (t.includes("rdfs:Class")) types.add(name);
-    if (node["@type"] === "rdf:Property") props.add(name);
+    // ACCUMULATE, never overwrite. schema.org's graph lists some terms more than
+    // once -- Country appears twice, and only one of the two entries carries
+    // rdfs:subClassOf. A `.set()` here silently replaced Country's real ancestry
+    // with an empty set, so `name` (a Thing property) was reported invalid on
+    // Country and this checker produced a false positive on correct markup. That
+    // is the worst failure a validator can have: it sends someone to "fix" code
+    // that was right.
+    if (t.includes("rdfs:Class")) {
+      types.add(name);
+      const sc = node["rdfs:subClassOf"];
+      if (!parents.has(name)) parents.set(name, new Set());
+      for (const x of Array.isArray(sc) ? sc : sc ? [sc] : []) parents.get(name).add(nm(x));
+    }
+    if (node["@type"] === "rdf:Property") {
+      props.add(name);
+      const di = node["schema:domainIncludes"];
+      if (!domains.has(name)) domains.set(name, new Set());
+      for (const x of Array.isArray(di) ? di : di ? [di] : []) domains.get(name).add(nm(x));
+    }
   }
-  return { types, props };
+  // transitive ancestry, so a property allowed on CreativeWork is allowed on BlogPosting
+  const ancestors = new Map();
+  const anc = (t, seen = new Set()) => {
+    for (const p of parents.get(t) ?? []) if (!seen.has(p)) { seen.add(p); anc(p, seen); }
+    return seen;
+  };
+  for (const t of parents.keys()) ancestors.set(t, anc(t));
+  return { types, props, domains, ancestors };
 }
 
 function jsonLdNodes(html) {
@@ -104,6 +131,21 @@ function jsonLdNodes(html) {
 
   const badTypes = new Map();
   const badProps = new Map();
+  const badDomain = new Map();   // a real property on a type that does not accept it
+  const badValue = new Map();    // a real property with an unusable value
+
+  // Google resolves none of these relative: an Article `image` that is a bare path
+  // is simply not read, and `image` is REQUIRED for an Article rich result.
+  const URL_PROPS = new Set(["url", "image", "logo", "sameAs", "contentUrl", "hasMap", "mainEntityOfPage"]);
+  const DATE_PROPS = new Set(["datePublished", "dateModified", "startDate", "endDate", "foundingDate", "validFrom", "uploadDate"]);
+  const DAYS = new Set(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    .flatMap((d) => [d, `https://schema.org/${d}`]));
+
+  const allowedOn = (prop, ts) => {
+    const allowed = vocab.domains.get(prop);
+    if (!allowed || allowed.size === 0) return true;   // unknown property is the vocabulary check's job
+    return ts.some((t) => allowed.has(t) || [...(vocab.ancestors.get(t) ?? [])].some((a) => allowed.has(a)));
+  };
   const bump = (map, key, where) => {
     const e = map.get(key) || { n: 0, where: new Set() };
     e.n++; if (e.where.size < 3) e.where.add(where);
@@ -115,11 +157,32 @@ function jsonLdNodes(html) {
     for (const t of Array.isArray(ts) ? ts : [ts]) {
       if (typeof t === "string" && !vocab.types.has(t)) bump(badTypes, `${t} (at ${path})`, page);
     }
+    const tsList = (Array.isArray(ts) ? ts : [ts]).filter((x) => typeof x === "string");
     for (const [k, v] of Object.entries(node)) {
       if (JSONLD_KEYS.has(k)) continue;                            // rule 4
       if (!vocab.props.has(k)) bump(badProps, `${k} (on ${JSON.stringify(ts)} at ${path})`, page);
+      else if (tsList.length && !allowedOn(k, tsList)) {
+        bump(badDomain, `${k} on ${tsList.join("+")} (at ${path})`, page);
+      }
       for (const x of Array.isArray(v) ? v : [v]) {
-        if (x && typeof x === "object") walk(x, page, `${path}.${k}`);
+        if (typeof x !== "string") continue;
+        if (URL_PROPS.has(k) && !/^https?:\/\//.test(x)) bump(badValue, `${k} is not absolute: "${x.slice(0, 60)}"`, page);
+        if (DATE_PROPS.has(k) && !/^\d{4}(-\d{2}(-\d{2}([T ].*)?)?)?$/.test(x)) bump(badValue, `${k} is not an ISO date: "${x.slice(0, 40)}"`, page);
+        if (k === "dayOfWeek" && !DAYS.has(x)) bump(badValue, `invalid dayOfWeek: "${x}"`, page);
+        if (k === "availability" && !x.startsWith("https://schema.org/")) bump(badValue, `availability is not a schema.org enum: "${x.slice(0, 50)}"`, page);
+      }
+    }
+    if (node.ratingValue !== undefined) {
+      const rv = Number(node.ratingValue), best = Number(node.bestRating ?? 5), worst = Number(node.worstRating ?? 1);
+      if (!Number.isFinite(rv)) bump(badValue, `ratingValue is not numeric: ${node.ratingValue}`, page);
+      else if (rv < worst || rv > best) bump(badValue, `ratingValue ${rv} outside [${worst}, ${best}]`, page);
+    }
+    {
+      for (const [k, v] of Object.entries(node)) {
+        if (JSONLD_KEYS.has(k)) continue;
+        for (const x of Array.isArray(v) ? v : [v]) {
+          if (x && typeof x === "object") walk(x, page, `${path}.${k}`);
+        }
       }
     }
   };
@@ -153,8 +216,10 @@ function jsonLdNodes(html) {
   };
   report("@type values NOT in schema.org", badTypes);
   report("property names NOT in schema.org (Google silently ignores these)", badProps);
+  report("real properties on a TYPE that does not accept them (also silently ignored)", badDomain);
+  report("values Google cannot use (relative URLs, bad dates, bad enums, out-of-range ratings)", badValue);
 
-  const total = badTypes.size + badProps.size;
+  const total = badTypes.size + badProps.size + badDomain.size + badValue.size;
   if (total) {
     // rule 3 — name the problem, do not invent the replacement.
     console.error(`\nFAILED — ${total} invented term(s) across ${fetched} pages.`);

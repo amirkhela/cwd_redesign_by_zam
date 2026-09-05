@@ -81,7 +81,15 @@ export default async function BlogPage({ searchParams }: Props) {
     isPartOf: { "@id": `https://${config.domain}/#website` },
     about: { "@id": `https://${config.domain}/#organization` },
     inLanguage: "en-CA",
-    numberOfItems: allPosts.length,
+    // numberOfItems is an ItemList property; on a CollectionPage schema.org does
+    // not accept it and Google silently drops it. Expressed as a real ItemList so
+    // the count is actually conveyed instead of merely written down.
+    mainEntity: {
+      "@type": "ItemList",
+      "@id": `https://${config.domain}/blog#posts`,
+      name: "Blog posts",
+      numberOfItems: allPosts.length,
+    },
   };
 
   // page numbers to show (window of 5)
