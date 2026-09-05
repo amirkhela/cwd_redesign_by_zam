@@ -78,13 +78,17 @@ const faqSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/locations/surrey",
+  // A Service provided BY the one org, not a second LocalBusiness for the
+  // same company at the same address. See locations/[city]/page.tsx for the
+  // full reasoning; business-level facts (address, phone, email, hours,
+  // rating) live on the org node in layout.tsx and are inherited by @id.
+  "@type": "Service",
+  serviceType: "Web design and digital marketing",
+  "@id": "https://canadianwebdesigns.ca/locations/surrey#service",
+  provider: { "@id": `https://${config.domain}/#organization` },
   name: "Canadian Web Designs — Web Design Surrey BC & SEO",
   description: "Professional web design and SEO services for businesses in Surrey, BC. Custom websites that rank on Google and convert visitors into paying customers.",
   url: "https://canadianwebdesigns.ca/locations/surrey",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
   areaServed: [
     { "@type": "City", name: "Surrey", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
     { "@type": "Neighborhood", name: "Newton, Surrey BC" },
@@ -94,14 +98,6 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "Whalley, Surrey BC" },
     { "@type": "Neighborhood", name: "Fleetwood, Surrey BC" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
 };
 
 const services = [

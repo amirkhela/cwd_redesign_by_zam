@@ -454,7 +454,6 @@ export default function LocationPage({ params }: { params: { city: string } }) {
   const city = cityData.name;
   const province = cityData.province;
   const content = cityContent[params.city];
-  const primaryAddress = Object.values(config.addresses)[0];
 
   const defaultBlurb = `${city} businesses rely on us for custom websites, local SEO, and digital marketing that drives real leads. We've served clients across ${province} and all of Canada — and we know what it takes to rank locally and convert visitors into customers.`;
   const blurb = content?.blurb ?? defaultBlurb;
@@ -806,35 +805,33 @@ export default function LocationPage({ params }: { params: { city: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          "@id": `https://${config.domain}/locations/${params.city}`,
-          name: `${config.businessName} — ${city} Web Design`,
+          // A Service provided BY the one org, not a second LocalBusiness.
+          //
+          // This block used to emit ["LocalBusiness","ProfessionalService"] named
+          // "<brand> - <City> Web Design" carrying the TORONTO street address, its
+          // own @id and its own copy of the aggregateRating. That was wrong three
+          // ways on all 41 /locations/* and /seo/* pages: two LocalBusiness entities
+          // for one company (Google picks one arbitrarily), a claimed local presence
+          // at an address in a different city, and the rating repeated onto pages
+          // that render no reviews.
+          //
+          // The org node in layout.tsx already models both real locations properly -
+          // Toronto as the address and Brampton as a branchLocation at its own
+          // Cherrycrest address - and already lists every city in areaServed. So the
+          // honest statement for a city page is "the company over there serves this
+          // city", which is a Service with a provider reference.
+          //
+          // No aggregateRating here on purpose: Google rejects review ratings on
+          // @type Service ("Invalid object type for field"), the same note
+          // ServicePageTemplate.tsx already carries.
+          "@type": "Service",
+          "@id": `https://${config.domain}/locations/${params.city}#service`,
+          name: `Web Design in ${city}, ${province}`,
+          serviceType: "Web design and digital marketing",
           description: `Professional web design, SEO, and digital marketing for businesses in ${city}, ${province}`,
           url: `https://${config.domain}/locations/${params.city}`,
-          telephone: config.phone,
-          email: config.emails.sales,
+          provider: { "@id": `https://${config.domain}/#organization` },
           areaServed: { "@type": "City", name: city, containedInPlace: { "@type": "AdministrativeArea", name: province } },
-          address: primaryAddress ? {
-            "@type": "PostalAddress",
-            streetAddress: primaryAddress.street,
-            addressLocality: primaryAddress.city,
-            addressRegion: primaryAddress.province,
-            postalCode: primaryAddress.postalCode,
-            addressCountry: "CA",
-          } : undefined,
-          openingHoursSpecification: {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "08:00",
-            closes: "18:00",
-          },
-          priceRange: "$$",
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: String(config.rating),
-            reviewCount: String(config.reviewCount),
-          },
-          sameAs: [...config.socialLinks.map((link) => link.href), ...(config.entityProfiles ?? [])],
         }),
       }} />
 

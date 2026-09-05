@@ -66,13 +66,7 @@ const serviceSchema = {
   "@id": "https://canadianwebdesigns.ca/services/google-ads-management",
   name: "Google Ads Management Toronto",
   description: "Professional Google Ads management for Toronto and Canadian businesses. Campaign setup, keyword research, negative keyword management, conversion tracking, and monthly reporting.",
-  provider: {
-    "@type": "Organization",
-    name: "Canadian Web Designs",
-    url: "https://canadianwebdesigns.ca",
-    telephone: "(647) 689-6069",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
-  },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "North York" },

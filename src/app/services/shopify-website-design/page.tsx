@@ -66,13 +66,7 @@ const serviceSchema = {
   "@id": "https://canadianwebdesigns.ca/services/shopify-website-design",
   name: "Shopify Website Design & Development",
   description: "Shopify store design, Online Store 2.0 theme development, Shopify SEO, app integration, and platform migrations for Canadian merchants.",
-  provider: {
-    "@type": "Organization",
-    name: "Canadian Web Designs",
-    url: "https://canadianwebdesigns.ca",
-    telephone: "(647) 689-6069",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
-  },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "Mississauga" },

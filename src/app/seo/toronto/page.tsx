@@ -81,7 +81,7 @@ const serviceSchema = {
   name: "SEO Services Toronto",
   description:
     "Affordable SEO services for Toronto businesses. Rank on Google page 1, get more leads, and grow your business online.",
-  provider: { "@type": "LocalBusiness", name: config.businessName },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
     { "@type": "Neighborhood", name: "Downtown Toronto" },

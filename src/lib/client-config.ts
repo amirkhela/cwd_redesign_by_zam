@@ -98,6 +98,23 @@ export function getConfig(): ClientConfig {
   return activeConfig;
 }
 
+/**
+ * The ONE schema.org @id for the business entity.
+ *
+ * Every JSON-LD node that means "this company" must reference THIS id rather
+ * than repeating an inline {"@type":"Organization", name: ...} stub. Google and
+ * the AI answer engines merge nodes by @id; an inline stub is a NEW anonymous
+ * node, so eight stubs across the site read as eight partial companies instead
+ * of one, and none of them inherits the address, rating, sameAs or areaServed
+ * that the real node carries.
+ *
+ * The fragment matters: bare "https://canadianwebdesigns.ca" collides with the
+ * WebSite node and with the homepage WebPage, so all three compete for one id.
+ */
+export function orgId(): string {
+  return `https://${activeConfig.domain}/#organization`;
+}
+
 export function setConfig(config: ClientConfig): void {
   activeConfig = config;
 }

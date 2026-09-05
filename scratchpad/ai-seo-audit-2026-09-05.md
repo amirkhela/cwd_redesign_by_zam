@@ -586,3 +586,86 @@ the company says about itself across the whole site, which is Amir's call. The
 one-line version of the fix is `cwd-config.ts` lines 12-13. Worth noting the
 numbers will drift again: the honest long-term fix is reading them from the GBP
 rather than hardcoding, which `review_watch` is already authenticated to do.
+
+---
+
+# Iteration 6 - 2026-09-05: one company, one entity (audit item C)
+
+Item C: every `/locations/*` and `/seo/*` page emitted **two**
+`["LocalBusiness","ProfessionalService"]` nodes. Fixed, and the problem was
+larger than the audit said.
+
+## What was actually there
+
+On `/locations/brampton`, Google saw two businesses:
+
+```
+@id .../locations/brampton   name "Canadian Web Designs - Brampton Web Design"
+                             address 2967 Dundas St W, TORONTO
+                             aggregateRating 4.9 / 200
+@id https://canadianwebdesigns.ca   name "Canadian Web Designs"
+                             address 2967 Dundas St W, Toronto
+                             aggregateRating 4.9 / 200
+```
+
+Three things wrong at once, on 41 pages:
+
+1. **Two entities for one company.** Google merges nodes by `@id`; two different
+   ids for the same business at the same address means it picks one arbitrarily
+   and the other's signals are wasted.
+2. **A claimed local presence at the wrong address.** A LocalBusiness called
+   "- Brampton Web Design" carrying the *Toronto* street address asserts a place
+   that does not exist. The org node in `layout.tsx` already models this
+   correctly - Toronto as the address, Brampton as a `branchLocation` at its own
+   5 Cherrycrest Drive - so the per-city node also **contradicted** it.
+3. **The rating copied onto pages that render no reviews**, which is item B
+   again, 41 times over.
+
+And two more found while fixing it, neither in the original audit:
+
+4. **Every `provider` in the tree was an inline stub.** Eight of them -
+   `{"@type":"Organization", name:"Canadian Web Designs"}` - none referencing the
+   real node. An inline stub is a *new anonymous node*, so the site was declaring
+   about nine partial companies, none of which inherited the address, rating,
+   `sameAs`, `areaServed` or opening hours the real one carries. Four of those
+   stubs (`services/google-ads-management`, `shopify-`, `wix-`,
+   `wordpress-website-design`) carried a **third** copy of the aggregateRating.
+5. **A third email address.** `info@canadianwebdesigns.ca` on the `/seo/*` pages,
+   against `sales@` on `/locations/*` and `support@` on the org node. Left as-is -
+   it now only appears on the org node, which uses `support@`, so the other two
+   are simply no longer emitted.
+
+## The fix
+
+- **One canonical id**: `orgId()` in `client-config.ts` ->
+  `https://canadianwebdesigns.ca/#organization`. The fragment matters: the old
+  bare `https://canadianwebdesigns.ca` collided with the `WebSite` node and the
+  homepage `WebPage`, so three different things competed for one id.
+- **The org node keeps every business-level fact** - address, phone, hours,
+  rating, `sameAs`, `branchLocation`, `areaServed`.
+- **Every city page now emits a `Service`**, not a LocalBusiness:
+  `@id .../<page>#service`, `provider: {"@id": ".../#organization"}`, and its own
+  `areaServed` (the neighbourhood lists on the `/seo/*` pages are preserved -
+  they are genuinely useful and specific). Business-level keys are dropped from
+  it because they are inherited through the reference.
+- **All 8 `provider` stubs** replaced with `{"@id": ".../#organization"}`.
+- No `aggregateRating` on any `Service` node, on purpose: Google rejects review
+  ratings on `@type: Service` ("Invalid object type for field"), a note
+  `ServicePageTemplate.tsx` already carried.
+
+## Verified
+
+`npm run build` exit 0, then served the build and parsed the JSON-LD of **30
+pages** - homepage, 8 `/locations/*`, 8 `/seo/*`, 6 `/services/*`, and the static
+pages. Asserted on every one:
+
+- exactly **1** `LocalBusiness` node (was 2 on 41 pages)
+- exactly **1** node carrying `aggregateRating` (**30 / 30**; was up to 3)
+- **no duplicate `@id`** on a page
+- **no orphan `provider` reference** - every `@id` a provider points at is
+  declared on that page
+
+**0 failures.** The first run of this check caught `/seo/brampton` still at 2,
+because nine hand-written city pages sit outside the two dynamic routes - which
+is exactly why the verifier parses served HTML rather than trusting the source
+edit.

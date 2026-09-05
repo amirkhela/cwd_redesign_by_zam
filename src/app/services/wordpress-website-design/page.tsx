@@ -66,13 +66,7 @@ const serviceSchema = {
   "@id": "https://canadianwebdesigns.ca/services/wordpress-website-design",
   name: "WordPress Website Design & Development",
   description: "Custom WordPress website design and development for Canadian businesses: hand-coded themes, WooCommerce stores, speed optimization, security hardening, and migrations from Wix, Squarespace, and Shopify.",
-  provider: {
-    "@type": "Organization",
-    name: "Canadian Web Designs",
-    url: "https://canadianwebdesigns.ca",
-    telephone: "(647) 689-6069",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
-  },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "Mississauga" },

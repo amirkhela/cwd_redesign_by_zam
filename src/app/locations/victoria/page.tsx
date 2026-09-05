@@ -73,14 +73,18 @@ const faqSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/locations/victoria",
+  // A Service provided BY the one org, not a second LocalBusiness for the
+  // same company at the same address. See locations/[city]/page.tsx for the
+  // full reasoning; business-level facts (address, phone, email, hours,
+  // rating) live on the org node in layout.tsx and are inherited by @id.
+  "@type": "Service",
+  serviceType: "Web design and digital marketing",
+  "@id": "https://canadianwebdesigns.ca/locations/victoria#service",
+  provider: { "@id": `https://${config.domain}/#organization` },
   name: "Canadian Web Designs — SEO Victoria BC & Web Design",
   description:
     "Professional SEO services and web design for businesses in Victoria, BC. Rank on Google, get more leads, and grow your business online.",
   url: "https://canadianwebdesigns.ca/locations/victoria",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
   areaServed: [
     { "@type": "City", name: "Victoria", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
     { "@type": "Neighborhood", name: "Saanich, Victoria BC" },
@@ -90,18 +94,6 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "Colwood, Victoria BC" },
     { "@type": "Neighborhood", name: "Saanichton, Victoria BC" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: String(config.reviewCount),
-  },
 };
 
 const services = [
