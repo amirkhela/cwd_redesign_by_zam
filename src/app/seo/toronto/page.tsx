@@ -84,12 +84,12 @@ const serviceSchema = {
   provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
-    { "@type": "Neighborhood", name: "Downtown Toronto" },
-    { "@type": "Neighborhood", name: "North York" },
-    { "@type": "Neighborhood", name: "Scarborough" },
-    { "@type": "Neighborhood", name: "Etobicoke" },
-    { "@type": "Neighborhood", name: "East York" },
-    { "@type": "Neighborhood", name: "York" },
+    { "@type": "Place", name: "Downtown Toronto" },
+    { "@type": "Place", name: "North York" },
+    { "@type": "Place", name: "Scarborough" },
+    { "@type": "Place", name: "Etobicoke" },
+    { "@type": "Place", name: "East York" },
+    { "@type": "Place", name: "York" },
   ],
 };
 

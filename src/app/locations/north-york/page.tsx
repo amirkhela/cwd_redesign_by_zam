@@ -91,12 +91,12 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/locations/north-york",
   areaServed: [
     { "@type": "City", name: "North York", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
-    { "@type": "Neighborhood", name: "Willowdale, North York" },
-    { "@type": "Neighborhood", name: "Yonge-Sheppard, North York" },
-    { "@type": "Neighborhood", name: "Bayview Village, North York" },
-    { "@type": "Neighborhood", name: "Don Mills, North York" },
-    { "@type": "Neighborhood", name: "Jane and Finch, North York" },
-    { "@type": "Neighborhood", name: "Yonge-Eglinton, North York" },
+    { "@type": "Place", name: "Willowdale, North York" },
+    { "@type": "Place", name: "Yonge-Sheppard, North York" },
+    { "@type": "Place", name: "Bayview Village, North York" },
+    { "@type": "Place", name: "Don Mills, North York" },
+    { "@type": "Place", name: "Jane and Finch, North York" },
+    { "@type": "Place", name: "Yonge-Eglinton, North York" },
   ],
 };
 

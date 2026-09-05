@@ -66,6 +66,17 @@ const ALLOWED_TAGLINES = [
 // citation. The bulk TRAINING crawlers (GPTBot, CCBot, anthropic-ai, ClaudeBot)
 // are deliberately NOT checked: whether to block those is a business decision
 // about training data, and this file must not quietly turn it into a rule.
+// Terms that are NOT schema.org and were live on all 149 pages until 2026-09-05.
+// Google silently drops an invented property or node rather than reporting it, so
+// nothing else in this repo could see them -- verify-seo happily confirmed "one
+// LocalBusiness, no dangling references" on pages carrying both. Banned here
+// because the check costs nothing; scripts/validate-schema-vocab.mjs is the
+// periodic deeper sweep that finds the NEXT one.
+//   Neighborhood    -> not a type. 56 areaServed entries used it. Now Place.
+//   branchLocation  -> not a property. schema.org has branchOf, branchCode and
+//                      location. The whole Brampton node was ignored. Now location.
+const BANNED_TERMS = ["Neighborhood", "branchLocation"];
+
 const AI_AGENTS_ALLOWED = ["ChatGPT-User", "OAI-SearchBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended"];
 
 const PAGES_QUICK = ["/", "/who-we-are", "/contact", "/locations/toronto", "/locations/brampton", "/seo/toronto", "/seo/brampton", "/services/seo"];
@@ -136,6 +147,18 @@ async function checkPage(path) {
   if (r.status !== 200) return fail(where, `HTTP ${r.status}`);
   const html = r.body;
   const nodes = jsonLdNodes(html, where);
+
+  // Invented schema.org terms. Checked on the RAW JSON-LD text so a term nested
+  // at any depth, under any key, is caught -- the two found on 2026-09-05 were
+  // both nested (areaServed[].@type and a top-level property on the org node).
+  for (const term of BANNED_TERMS) {
+    for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
+      if (m[1].includes(`"${term}"`)) {
+        fail(where, `JSON-LD contains "${term}", which is not a schema.org term`);
+        break;
+      }
+    }
+  }
   if (nodes.length === 0) return fail(where, "no JSON-LD at all");
 
   // --- one company, one entity (rule 3: count, do not merely detect) ---

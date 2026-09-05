@@ -10,7 +10,8 @@
     "lint": "next lint",
     "verify:seo": "node scripts/verify-seo.mjs",
     "verify:seo:local": "node scripts/verify-seo.mjs http://127.0.0.1:3000",
-    "verify:seo:mutate": "node scripts/verify-seo.mutate.mjs"
+    "verify:seo:mutate": "node scripts/verify-seo.mutate.mjs",
+    "verify:schema-vocab": "node scripts/validate-schema-vocab.mjs"
   },
   "dependencies": {
     "googleapis": "^173.0.0",

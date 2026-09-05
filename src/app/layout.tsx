@@ -103,7 +103,12 @@ const localBusinessSchema = {
     latitude: 43.6532,
     longitude: -79.3832,
   },
-  branchLocation: {
+  // `location`, not `branchLocation`. schema.org has branchOf, branchCode and
+  // location -- there is no branchLocation, so this whole node was silently
+  // ignored on all 149 pages. Verified twice: absent from the schema.org
+  // vocabulary dump, and https://schema.org/branchLocation is a 404.
+  // A LocalBusiness is a Place, so it is a valid value for `location`.
+  location: {
     "@type": "LocalBusiness",
     name: "Canadian Web Designs — Brampton",
     address: {

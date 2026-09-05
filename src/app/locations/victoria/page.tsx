@@ -87,12 +87,12 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/locations/victoria",
   areaServed: [
     { "@type": "City", name: "Victoria", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
-    { "@type": "Neighborhood", name: "Saanich, Victoria BC" },
-    { "@type": "Neighborhood", name: "Oak Bay, Victoria BC" },
-    { "@type": "Neighborhood", name: "Esquimalt, Victoria BC" },
-    { "@type": "Neighborhood", name: "Langford, Victoria BC" },
-    { "@type": "Neighborhood", name: "Colwood, Victoria BC" },
-    { "@type": "Neighborhood", name: "Saanichton, Victoria BC" },
+    { "@type": "Place", name: "Saanich, Victoria BC" },
+    { "@type": "Place", name: "Oak Bay, Victoria BC" },
+    { "@type": "Place", name: "Esquimalt, Victoria BC" },
+    { "@type": "Place", name: "Langford, Victoria BC" },
+    { "@type": "Place", name: "Colwood, Victoria BC" },
+    { "@type": "Place", name: "Saanichton, Victoria BC" },
   ],
 };
 

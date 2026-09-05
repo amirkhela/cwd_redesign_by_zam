@@ -91,12 +91,12 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/seo/mississauga",
   areaServed: [
     { "@type": "City", name: "Mississauga", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
-    { "@type": "Neighborhood", name: "City Centre" },
-    { "@type": "Neighborhood", name: "Port Credit" },
-    { "@type": "Neighborhood", name: "Streetsville" },
-    { "@type": "Neighborhood", name: "Meadowvale" },
-    { "@type": "Neighborhood", name: "Erin Mills" },
-    { "@type": "Neighborhood", name: "Malton" },
+    { "@type": "Place", name: "City Centre" },
+    { "@type": "Place", name: "Port Credit" },
+    { "@type": "Place", name: "Streetsville" },
+    { "@type": "Place", name: "Meadowvale" },
+    { "@type": "Place", name: "Erin Mills" },
+    { "@type": "Place", name: "Malton" },
   ],
 };
 

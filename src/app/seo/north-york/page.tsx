@@ -82,10 +82,10 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/seo/north-york",
   areaServed: [
     { "@type": "City", name: "North York", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
-    { "@type": "Neighborhood", name: "Willowdale" },
-    { "@type": "Neighborhood", name: "Bayview Village" },
-    { "@type": "Neighborhood", name: "Don Mills" },
-    { "@type": "Neighborhood", name: "North York Centre" },
+    { "@type": "Place", name: "Willowdale" },
+    { "@type": "Place", name: "Bayview Village" },
+    { "@type": "Place", name: "Don Mills" },
+    { "@type": "Place", name: "North York Centre" },
   ],
 };
 

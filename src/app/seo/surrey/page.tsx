@@ -91,12 +91,12 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/seo/surrey",
   areaServed: [
     { "@type": "City", name: "Surrey", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
-    { "@type": "Neighborhood", name: "Newton" },
-    { "@type": "Neighborhood", name: "Guildford" },
-    { "@type": "Neighborhood", name: "Cloverdale" },
-    { "@type": "Neighborhood", name: "South Surrey" },
-    { "@type": "Neighborhood", name: "White Rock" },
-    { "@type": "Neighborhood", name: "Fleetwood" },
+    { "@type": "Place", name: "Newton" },
+    { "@type": "Place", name: "Guildford" },
+    { "@type": "Place", name: "Cloverdale" },
+    { "@type": "Place", name: "South Surrey" },
+    { "@type": "Place", name: "White Rock" },
+    { "@type": "Place", name: "Fleetwood" },
   ],
 };
 

@@ -91,11 +91,11 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/seo/burnaby",
   areaServed: [
     { "@type": "City", name: "Burnaby", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
-    { "@type": "Neighborhood", name: "Brentwood" },
-    { "@type": "Neighborhood", name: "Metrotown" },
-    { "@type": "Neighborhood", name: "Lougheed" },
-    { "@type": "Neighborhood", name: "Edmonds" },
-    { "@type": "Neighborhood", name: "Capitol Hill" },
+    { "@type": "Place", name: "Brentwood" },
+    { "@type": "Place", name: "Metrotown" },
+    { "@type": "Place", name: "Lougheed" },
+    { "@type": "Place", name: "Edmonds" },
+    { "@type": "Place", name: "Capitol Hill" },
   ],
 };
 

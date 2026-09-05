@@ -340,7 +340,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
     url: `https://canadianwebdesigns.ca/seo/${city}`,
     areaServed: [
       { "@type": "City", name: data.name, containedInPlace: { "@type": "AdministrativeArea", name: data.province } },
-      ...data.neighbourhoods.slice(0, 4).map((n) => ({ "@type": "Neighborhood", name: n })),
+      ...data.neighbourhoods.slice(0, 4).map((n) => ({ "@type": "Place", name: n })),
     ],
   };
 

@@ -84,11 +84,11 @@ const serviceSchema = {
   provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Victoria", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
-    { "@type": "Neighborhood", name: "Downtown Victoria" },
-    { "@type": "Neighborhood", name: "James Bay" },
-    { "@type": "Neighborhood", name: "Fairfield" },
-    { "@type": "Neighborhood", name: "Oak Bay" },
-    { "@type": "Neighborhood", name: "Saanich" },
+    { "@type": "Place", name: "Downtown Victoria" },
+    { "@type": "Place", name: "James Bay" },
+    { "@type": "Place", name: "Fairfield" },
+    { "@type": "Place", name: "Oak Bay" },
+    { "@type": "Place", name: "Saanich" },
   ],
 };
 

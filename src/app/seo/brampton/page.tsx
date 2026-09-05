@@ -91,11 +91,11 @@ const localBusinessSchema = {
   url: "https://canadianwebdesigns.ca/seo/brampton",
   areaServed: [
     { "@type": "City", name: "Brampton", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
-    { "@type": "Neighborhood", name: "Downtown Brampton" },
-    { "@type": "Neighborhood", name: "Bramalea" },
-    { "@type": "Neighborhood", name: "Castlemore" },
-    { "@type": "Neighborhood", name: "Heart Lake" },
-    { "@type": "Neighborhood", name: "Springdale" },
+    { "@type": "Place", name: "Downtown Brampton" },
+    { "@type": "Place", name: "Bramalea" },
+    { "@type": "Place", name: "Castlemore" },
+    { "@type": "Place", name: "Heart Lake" },
+    { "@type": "Place", name: "Springdale" },
   ],
 };
 
