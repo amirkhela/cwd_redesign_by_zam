@@ -44,8 +44,21 @@ export function GET() {
   const b = config.addresses.brampton;
   const salesEmail = config.emails.sales ?? config.emails.support;
 
+  // Render the concrete `features` list, not just the marketing tagline.
+  // An assistant asked "what does their SEO service include?" can then cite six
+  // real deliverables ("Local SEO and Google Business Profile", "Monthly
+  // reporting and analytics") instead of "Dominate search results and drive
+  // organic traffic", which is a slogan and answers nothing. The features
+  // already exist in cwd-config.ts and every service page renders them, so this
+  // states nothing new -- it just stops throwing the specifics away on the one
+  // surface built for machines.
   const services = config.services
-    .map((s) => `- [${s.title}](${base}/services/${s.slug}): ${s.tagline}`)
+    .map((s) => {
+      const inc = (s.features || []).length
+        ? `\n  Includes: ${(s.features || []).join("; ")}.`
+        : "";
+      return `- [${s.title}](${base}/services/${s.slug}): ${s.tagline}${inc}`;
+    })
     .join("\n");
 
   const cities = config.cities
