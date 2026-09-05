@@ -9,12 +9,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Website Maintenance Services Canada | Canada Website Design" },
+  title: { absolute: "Website Maintenance Services Canada | Canadian Web Designs" },
   description:
     "A website is hacked every 39 seconds — is yours protected? Expert maintenance: daily backups, 24/7 monitoring, malware removal & speed tuning.",
   alternates: { canonical: "/maintenance" },
   openGraph: {
-    title: "Website Maintenance Services Canada | Canada Website Design",
+    title: "Website Maintenance Services Canada | Canadian Web Designs",
     description:
       "A website is hacked every 39 seconds — keep yours secure with expert maintenance: daily backups, 24/7 monitoring, malware removal & speed tuning.",
     url: "https://canadianwebdesigns.ca/maintenance",

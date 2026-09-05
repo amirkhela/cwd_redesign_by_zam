@@ -6,11 +6,11 @@ import Link from "next/link";
 const service = getConfig().services.find((s) => s.slug === "social-media-optimization")!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Social Media Management Canada | Done-For-You | Canadian Website Design" },
+  title: { absolute: "Social Media Management Canada | Done-For-You | Canadian Web Designs" },
   description: "Turn followers into paying customers — done-for-you content, paid ads & growth strategy on Instagram, TikTok & LinkedIn. Free strategy call.",
   alternates: { canonical: "/services/social-media-optimization" },
   openGraph: {
-    title: "Social Media Management Canada | Done-For-You | Canadian Website Design",
+    title: "Social Media Management Canada | Done-For-You | Canadian Web Designs",
     description: "Turn followers into paying customers — done-for-you content, paid ads & growth strategy on Instagram, TikTok & LinkedIn. Free strategy call.",
     url: "https://canadianwebdesigns.ca/services/social-media-optimization",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Social Media Management Canada 2026 — Canadian Web Designs" }],

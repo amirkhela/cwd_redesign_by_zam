@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": `https://${config.domain}`,
+  "@id": `https://${config.domain}/#organization`,
   name: config.businessName,
   url: `https://${config.domain}`,
   logo: `https://${config.domain}/logos/logo.webp`,
@@ -158,7 +158,7 @@ const localBusinessSchema = {
   },
   foundingDate: "2014",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 25 },
-  sameAs: config.socialLinks.map((link) => link.href),
+  sameAs: [...config.socialLinks.map((link) => link.href), ...(config.entityProfiles ?? [])],
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "North York" },
@@ -192,7 +192,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Web Design & Digital Marketing Services",
-  provider: { "@type": "LocalBusiness", name: config.businessName },
+  provider: { "@id": `https://${config.domain}/#organization` },
   description: "Professional web design, SEO, graphic design, social media optimization, and AI consultation services for Canadian businesses.",
   areaServed: "Canada",
 };

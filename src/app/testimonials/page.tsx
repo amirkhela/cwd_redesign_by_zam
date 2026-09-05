@@ -171,28 +171,29 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: config.businessName,
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: config.rating,
-              reviewCount: config.reviewCount,
-              bestRating: 5,
-            },
-            review: testimonials.map((t) => ({
-              "@type": "Review",
-              reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
-              author: { "@type": "Organization", name: t.name },
-              reviewBody: t.text,
-            })),
-          }),
-        }}
-      />
+      {/*
+        No LocalBusiness + review[] block here any more.
+
+        This page used to emit a SECOND LocalBusiness node -- id-less, so it could
+        not merge with the org node in layout.tsx -- carrying its own copy of the
+        aggregateRating plus a hand-written review[] built from the testimonials
+        array. Two entities for one company on one page, which is the same defect
+        the /locations/* and /seo/* pages had.
+
+        The review[] half also contradicted a decision this repo had already
+        written down. layout.tsx says, above its own aggregateRating:
+
+          "No hardcoded review[] here. Google disallows self-serving reviews
+           (a business marking up reviews about itself) on LocalBusiness -- they
+           do not earn star rich results and are a manual-action risk."
+
+        That is exactly what this block was. The rule was right; this page had
+        simply missed it.
+
+        Nothing visible changed: the testimonials above still render. The company
+        rating is still published, once, on the org node that layout.tsx puts on
+        every page including this one.
+      */}
 
       <QuoteFormSection source="testimonials" mobileOnly />
     </>

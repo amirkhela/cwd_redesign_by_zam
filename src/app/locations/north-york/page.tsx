@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design North York | Custom Websites That Rank | Canada Web Designs" },
+  title: { absolute: "Web Design North York | Custom Websites That Rank | Canadian Web Designs" },
   description:
     "North York's top-rated web design agency — Willowdale, Sheppard & Bayview Village specialists. Custom websites built to rank on Google. 200+ reviews.",
   alternates: { canonical: "/locations/north-york" },
   openGraph: {
-    title: "Web Design North York | Custom Websites That Rank | Canada Web Designs",
+    title: "Web Design North York | Custom Websites That Rank | Canadian Web Designs",
     description:
       "Top-rated web design & SEO in North York. 200+ five-star reviews. Custom websites built to rank across Willowdale, Sheppard & Bayview Village.",
     url: "https://canadianwebdesigns.ca/locations/north-york",
@@ -78,14 +78,17 @@ const faqSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/locations/north-york",
+  // A Service provided BY the one org, not a second LocalBusiness for the
+  // same company at the same address. See locations/[city]/page.tsx for the
+  // full reasoning; business-level facts (address, phone, email, hours,
+  // rating) live on the org node in layout.tsx and are inherited by @id.
+  "@type": "Service",
+  serviceType: "Web design and digital marketing",
+  "@id": "https://canadianwebdesigns.ca/locations/north-york#service",
+  provider: { "@id": `https://${config.domain}/#organization` },
   name: "Canadian Web Designs — Web Design North York & SEO",
   description: "Professional web design and SEO services for businesses in North York, Toronto. Custom websites that rank on Google and convert visitors into customers.",
   url: "https://canadianwebdesigns.ca/locations/north-york",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
-  geo: { "@type": "GeoCoordinates", latitude: 43.7615, longitude: -79.4111 },
   areaServed: [
     { "@type": "City", name: "North York", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
     { "@type": "Neighborhood", name: "Willowdale, North York" },
@@ -95,14 +98,6 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "Jane and Finch, North York" },
     { "@type": "Neighborhood", name: "Yonge-Eglinton, North York" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
 };
 
 const services = [

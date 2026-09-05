@@ -8,11 +8,11 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Website Design" },
+  title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Web Designs" },
   description: "Certified Google Ads management, no contracts — our experts cut wasted spend and lower your cost per lead. 200+ five-star reviews. Free audit.",
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
-    title: "Google Ads Management Canada | PPC That Converts | Canadian Website Design",
+    title: "Google Ads Management Canada | PPC That Converts | Canadian Web Designs",
     description: "Certified Google Ads management, no contracts — cut wasted spend and lower cost per lead. 200+ five-star reviews. Free audit.",
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],
@@ -66,13 +66,7 @@ const serviceSchema = {
   "@id": "https://canadianwebdesigns.ca/services/google-ads-management",
   name: "Google Ads Management Toronto",
   description: "Professional Google Ads management for Toronto and Canadian businesses. Campaign setup, keyword research, negative keyword management, conversion tracking, and monthly reporting.",
-  provider: {
-    "@type": "Organization",
-    name: "Canadian Web Designs",
-    url: "https://canadianwebdesigns.ca",
-    telephone: "(647) 689-6069",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
-  },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "North York" },
@@ -84,7 +78,11 @@ const serviceSchema = {
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStock",
-    priceCurrency: "CAD",
+    // No priceCurrency here. schema.org Offer takes price and priceCurrency
+    // TOGETHER; a currency with no price announces a price and then withholds
+    // it, which Google reads as an incomplete Offer rather than a cheap one.
+    // These services are quoted, not listed, so availability is the only
+    // honest claim. Add BOTH fields back the day a real number is published.
   },
 };
 

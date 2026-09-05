@@ -7,7 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Tips & Guides for Canadian Businesses | Canada Web Designs" },
+  title: { absolute: "Web Design Tips & Guides for Canadian Businesses | Canadian Web Designs" },
   description: "Expert web design tips, trends & tutorials for Canadian businesses — responsive design, UX best practices, conversion rate optimization, and building websites that generate real customers.",
   alternates: { canonical: "/blog/web-design" },
   openGraph: {

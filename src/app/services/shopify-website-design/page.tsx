@@ -66,13 +66,7 @@ const serviceSchema = {
   "@id": "https://canadianwebdesigns.ca/services/shopify-website-design",
   name: "Shopify Website Design & Development",
   description: "Shopify store design, Online Store 2.0 theme development, Shopify SEO, app integration, and platform migrations for Canadian merchants.",
-  provider: {
-    "@type": "Organization",
-    name: "Canadian Web Designs",
-    url: "https://canadianwebdesigns.ca",
-    telephone: "(647) 689-6069",
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: String(config.reviewCount) },
-  },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "Mississauga" },
@@ -84,7 +78,11 @@ const serviceSchema = {
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStock",
-    priceCurrency: "CAD",
+    // No priceCurrency here. schema.org Offer takes price and priceCurrency
+    // TOGETHER; a currency with no price announces a price and then withholds
+    // it, which Google reads as an incomplete Offer rather than a cheap one.
+    // These services are quoted, not listed, so availability is the only
+    // honest claim. Add BOTH fields back the day a real number is published.
   },
 };
 

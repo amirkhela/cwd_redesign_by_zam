@@ -7,7 +7,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "verify:seo": "node scripts/verify-seo.mjs",
+    "verify:seo:local": "node scripts/verify-seo.mjs http://127.0.0.1:3000",
+    "verify:seo:mutate": "node scripts/verify-seo.mutate.mjs"
   },
   "dependencies": {
     "googleapis": "^173.0.0",

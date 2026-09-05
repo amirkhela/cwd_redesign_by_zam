@@ -256,12 +256,47 @@ export const cwdConfig: ClientConfig = {
     { label: "Get In Touch", href: "/contact" },
   ],
 
+  // This array is the single source for BOTH the footer social icons (rendered on
+  // every page by Footer.tsx) and the schema.org `sameAs` entity anchors emitted in
+  // layout.tsx and locations/[city]/page.tsx.
+  //
+  // A `sameAs` URL that 404s is worse than no `sameAs` at all: Google and the AI
+  // answer engines use these to reconcile "Canadian Web Designs" into one entity,
+  // and a dead anchor is a failed reconciliation plus a broken outbound link in the
+  // footer of all 149 pages. Verified 2026-09-05 by fetching each URL:
+  //   instagram.com/canadianwebdesigns         200, active (posts daily since 2026-08-24)
+  //   linkedin.com/company/canadianwebdesigns  200, <title>Canadian Web Designs | LinkedIn
+  //   facebook.com/canadianwebdesigns          400                      <- removed
+  //   youtube.com/canadianwebdesigns           404                      <- removed
+  //   x.com/canadianwebdesigns                 404                      <- removed
+  //   amazon.com/author/canadianwebdesigns     404 "Page Not Found"     <- removed
+  //
+  // Do NOT add a profile back without fetching it first. If CWD opens a real
+  // YouTube/X/Facebook page later, add the URL that actually resolves - all four of
+  // the removed ones were a guessed vanity slug that never existed.
   socialLinks: [
-    { label: "Facebook", href: "https://facebook.com/canadianwebdesigns", icon: "facebook" },
     { label: "Instagram", href: "https://instagram.com/canadianwebdesigns", icon: "instagram" },
-    { label: "YouTube", href: "https://youtube.com/canadianwebdesigns", icon: "youtube" },
-    { label: "Twitter/X", href: "https://x.com/canadianwebdesigns", icon: "twitter" },
     { label: "LinkedIn", href: "https://linkedin.com/company/canadianwebdesigns", icon: "linkedin" },
-    { label: "Amazon", href: "https://amazon.com/author/canadianwebdesigns", icon: "amazon" },
   ],
+
+  // schema.org `sameAs` anchors that are deliberately NOT social icons, so they
+  // reach the structured data without adding a footer button.
+  //
+  // The Google Business Profile is the strongest entity anchor a local business
+  // has -- it is how Google and the answer engines tie this domain to a real
+  // verified place -- and it was missing entirely.
+  //
+  // VERIFIED IN A BROWSER 2026-09-05, not guessed. It resolves to "Canadian Web
+  // Designs", 4.8 stars (194 reviews), 2967 Dundas St W #718, Toronto ON M6P 1Z2,
+  // (647) 689-6069, canadianwebdesigns.ca -- the same NAP this file already
+  // carries.
+  //
+  // THE NUMBER IN THE URL IS THE MAPS *cid*, WHICH IS NOT THE GBP DASHBOARD ID.
+  // BST_VID_MAKER/functions/review_watch/config.py holds both for this listing:
+  //   business_id 11804622250978858052  <- dashboard account; renders an EMPTY
+  //                                        place card on maps.google.com
+  //   fid         1764590269626849918   <- the public Maps cid, used here
+  // Picking the wrong one gives a URL that loads a blank pin, which is exactly
+  // the kind of dead anchor the socialLinks note above exists to prevent.
+  entityProfiles: ["https://maps.google.com/?cid=1764590269626849918"],
 };

@@ -10,12 +10,12 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "SEO Brampton | SEO Company & Services | Canada Website Design" },
+  title: { absolute: "SEO Brampton | SEO Company & Services | Canadian Web Designs" },
   description:
     "Brampton SEO that reaches page 1 faster than Toronto — Downtown, Bramalea & Castlemore specialists. 200+ reviews. Free audit — (647) 689-6069.",
   alternates: { canonical: "/seo/brampton" },
   openGraph: {
-    title: "SEO Brampton | SEO Company & Services | Canada Website Design",
+    title: "SEO Brampton | SEO Company & Services | Canadian Web Designs",
     description:
       "Expert SEO services in Brampton, ON. Get your Brampton business to page 1 of Google. 200+ five-star reviews. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/brampton",
@@ -77,14 +77,18 @@ const faqSchema = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  "@id": "https://canadianwebdesigns.ca/seo/brampton",
+  // A Service provided BY the one org, not a second LocalBusiness for the
+  // same company at the same address. See locations/[city]/page.tsx for the
+  // full reasoning; business-level facts (address, phone, email, hours,
+  // rating) live on the org node in layout.tsx and are inherited by @id.
+  "@type": "Service",
+  serviceType: "Web design and digital marketing",
+  "@id": "https://canadianwebdesigns.ca/seo/brampton#service",
+  provider: { "@id": `https://${config.domain}/#organization` },
   name: "Canadian Web Designs — SEO Brampton",
   description:
     "Expert SEO services for Brampton businesses. Rank on Google page 1, get more leads, and grow your business online.",
   url: "https://canadianwebdesigns.ca/seo/brampton",
-  telephone: "(647) 689-6069",
-  email: "info@canadianwebdesigns.ca",
   areaServed: [
     { "@type": "City", name: "Brampton", containedInPlace: { "@type": "AdministrativeArea", name: "ON" } },
     { "@type": "Neighborhood", name: "Downtown Brampton" },
@@ -93,18 +97,6 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "Heart Lake" },
     { "@type": "Neighborhood", name: "Springdale" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "08:00",
-    closes: "18:00",
-  },
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: String(config.reviewCount),
-  },
 };
 
 const services = [

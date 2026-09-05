@@ -81,7 +81,7 @@ const serviceSchema = {
   name: "SEO Services Victoria BC",
   description:
     "Expert SEO services for Victoria, BC businesses. Rank on Google page 1, get more leads, and grow your business online.",
-  provider: { "@type": "LocalBusiness", name: config.businessName },
+  provider: { "@id": `https://${config.domain}/#organization` },
   areaServed: [
     { "@type": "City", name: "Victoria", containedInPlace: { "@type": "AdministrativeArea", name: "BC" } },
     { "@type": "Neighborhood", name: "Downtown Victoria" },
