@@ -669,3 +669,95 @@ pages. Asserted on every one:
 because nine hand-written city pages sit outside the two dynamic routes - which
 is exactly why the verifier parses served HTML rather than trusting the source
 edit.
+
+---
+
+# Iteration 7 - 2026-09-05: a regression lock, and the page it immediately caught
+
+Six commits of schema and entity work were protected by nothing. Every defect
+fixed on this branch was invisible to `next build`, `tsc` and `next lint` - all
+three were green throughout. `scripts/verify-seo.mjs` is the check that is not.
+
+```
+npm run verify:seo              # against https://canadianwebdesigns.ca
+npm run verify:seo:local        # against a local `next start`
+npm run verify:seo:mutate       # prove the checks still bite
+```
+
+## What it asserts, on 34 pages
+
+- exactly **one** `LocalBusiness` node per page
+- exactly **one** node carrying `aggregateRating`
+- no duplicate `@id` on a page
+- every `provider` is an `@id` **reference**, not an inline stub, and resolves to
+  a node declared on that page
+- the org node carries the canonical `@id` and the right name
+- the title's brand suffix is the real brand, not one of the three dead variants
+  (taglines are allow-listed, so a real tagline is not a false positive)
+- **every `sameAs` URL is fetched** and answers < 400
+- `robots.txt` still explicitly allows the seven retrieval/search agents, and
+  still names a sitemap
+- `/llms.txt` is 200, is text rather than the HTML 404 page, opens with the brand,
+  and **carries no rating or review claim**
+
+It deliberately does **not** check the founding year, the rating value, the review
+count or title length. All four are open business questions; encoding today's
+answer would turn an undecided question into a rule nobody agreed to.
+
+## It found a page on its first run
+
+`/testimonials` was emitting a **second, id-less `LocalBusiness`** with its own
+`aggregateRating` and a hand-written `review[]` built from the testimonials array.
+It sat outside the 30-page sample used in iteration 6, so the earlier check
+missed it.
+
+The `review[]` half contradicted a decision this repo had already written down.
+`layout.tsx` says, directly above its own aggregateRating:
+
+> *"No hardcoded review[] here. Google disallows self-serving reviews (a business
+> marking up reviews about itself) on LocalBusiness - they don't earn star rich
+> results and are a manual-action risk."*
+
+That is exactly what the block was. The rule was already right; this page had
+simply missed it. Removed - **nothing visible changed**, the testimonials still
+render, and the company rating is still published once on the org node.
+
+## Mutation-tested, 14/14
+
+A verifier can pass forever because its regex never matched anything, and it
+looks identical to one that works. `scripts/verify-seo.mutate.mjs` serves
+deliberately broken HTML on a throwaway port and asserts the verifier goes RED
+for each defect - every one of which was actually live on this site in September
+2026 - and stays GREEN on the baseline:
+
+```
+ok  baseline                 ok  dead_sameas
+ok  two_localbusiness        ok  no_org_id
+ok  two_ratings              ok  robots_missing_searchbot
+ok  provider_stub            ok  llms_404
+ok  orphan_provider          ok  llms_is_html
+ok  brand_variant            ok  llms_claims_rating
+ok  broken_jsonld            ok  page_500
+```
+
+## It doubles as the deploy acceptance test
+
+Run against the **current live site** it fails cleanly and names precisely what
+this PR fixes:
+
+```
+/seo/brampton: 2 LocalBusiness nodes, want exactly 1
+/seo/brampton: title brand suffix is "Canada Website Design", want "Canadian Web Designs"
+/services/seo: provider is an inline stub ({"@type":"Organization",...})
+/robots.txt:   Claude-SearchBot is no longer explicitly allowed
+/llms.txt:     HTTP 404 - the AI site map is missing
+```
+
+So after somebody deploys this branch from the CWD Vercel account,
+`npm run verify:seo` going green **is** the confirmation that the deploy landed.
+
+One bug in the verifier itself was found by that live run and fixed: it crashed
+with `anchors is not iterable` instead of reporting cleanly, because
+`checkSameAs` returns undefined on its failure paths - which is exactly the state
+a pre-deploy site is in. Exiting non-zero for the wrong reason and burying the
+finding under a stack trace is its own rule-4 violation.
