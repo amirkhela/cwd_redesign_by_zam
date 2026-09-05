@@ -81,11 +81,26 @@ const PAGES_FULL = [
 ];
 
 const UA = "Mozilla/5.0 (compatible; cwd-verify-seo/1.0)";
+
+// Vercel preview deployments sit behind SSO (ssoProtection is
+// "all_except_custom_domains", so production is public and previews are not).
+// Setting VERCEL_AUTOMATION_BYPASS_SECRET lets this run as a PRE-deploy gate on
+// the preview URL rather than only as a post-deploy check on production —
+// catching a schema regression before it is promoted, not after.
+//   $env:VERCEL_AUTOMATION_BYPASS_SECRET="<secret>"
+//   node scripts/verify-seo.mjs https://cwd-<hash>-amirkhelas-projects.vercel.app
+// Generate/rotate the secret in Vercel → Project → Settings → Deployment Protection.
+const BYPASS = process.env.VERCEL_AUTOMATION_BYPASS_SECRET || "";
 const failures = [];
 const fail = (where, msg) => failures.push(`${where}: ${msg}`);
 
 async function get(url, timeoutMs = 30000) {
-  const res = await fetch(url, { headers: { "User-Agent": UA }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
+  // The bypass header is only ever sent to the site under test, never to the
+  // third-party sameAs URLs — leaking a deployment secret to instagram.com or
+  // maps.google.com would be a real disclosure, and it would do nothing useful.
+  const headers = { "User-Agent": UA };
+  if (BYPASS && url.startsWith(BASE)) headers["x-vercel-protection-bypass"] = BYPASS;
+  const res = await fetch(url, { headers, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
   return { status: res.status, body: await res.text() };
 }
 
