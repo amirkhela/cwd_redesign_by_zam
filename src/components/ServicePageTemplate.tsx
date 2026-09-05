@@ -318,6 +318,10 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
+            // Page-scoped @id so this service is one identifiable node rather than an
+            // anonymous one repeated per page. #service keeps it clear of the page's
+            // own #webpage node.
+            "@id": `https://${config.domain}/services/${service.slug}#service`,
             name: service.title,
             description: service.description,
             offers: {
@@ -328,7 +332,10 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
               // it, which Google reads as an incomplete Offer rather than a cheap one.
               // These services are quoted, not listed, so availability is the only
               // honest claim. Add BOTH fields back the day a real number is published.
-              seller: { "@type": "Organization", name: config.businessName },
+              // Reference, not a stub -- `seller` is the seventh key this same
+              // defect has hidden behind (provider, publisher, isPartOf, about,
+              // parentOrganization, mainEntityOfPage were the others).
+              seller: { "@id": `https://${config.domain}/#organization` },
             },
             // No aggregateRating here: Google rejects review ratings on @type
             // "Service" ("Invalid object type for field"). The business rating

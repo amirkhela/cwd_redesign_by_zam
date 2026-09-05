@@ -57,6 +57,9 @@ export default async function BlogPostPage({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    // Distinct from the page's #webpage node: the article is the CONTENT, the
+    // WebPage is the document that carries it. mainEntityOfPage links the two.
+    "@id": `https://${config.domain}/blog/${post.slug}#article`,
     headline: post.title,
     description: post.description,
     datePublished: post.date,
@@ -65,6 +68,25 @@ export default async function BlogPostPage({ params }: Props) {
     author: { "@type": "Person", name: post.author },
     publisher: { "@id": `https://${config.domain}/#organization` },
     mainEntityOfPage: { "@id": `https://${config.domain}/blog/${post.slug}#webpage` },
+  };
+
+  // The WebPage node BlogPosting.mainEntityOfPage points at.
+  //
+  // Blog posts are the one family that does not use BreadcrumbSchema -- they
+  // build their breadcrumb inline -- so they never received a WebPage node from
+  // it, and 74 of the sitemap's 149 URLs had none. That also left
+  // mainEntityOfPage referencing an @id that was not emitted anywhere, which is
+  // a dangling pointer: worse than the bare URL it replaced.
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `https://${config.domain}/blog/${post.slug}#webpage`,
+    url: `https://${config.domain}/blog/${post.slug}`,
+    name: post.title,
+    description: post.description,
+    isPartOf: { "@id": `https://${config.domain}/#website` },
+    about: { "@id": `https://${config.domain}/#organization` },
+    inLanguage: "en-CA",
   };
 
   const breadcrumbJsonLd = {
@@ -92,6 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
 

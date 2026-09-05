@@ -202,6 +202,9 @@ const websiteSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  // Sitewide node, so it needs a stable @id: without one this was 149 anonymous
+  // Service nodes across the site rather than one entity referenced from every page.
+  "@id": `https://${config.domain}/#services`,
   name: "Web Design & Digital Marketing Services",
   provider: { "@id": `https://${config.domain}/#organization` },
   description: "Professional web design, SEO, graphic design, social media optimization, and AI consultation services for Canadian businesses.",

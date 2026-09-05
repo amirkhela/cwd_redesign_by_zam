@@ -82,6 +82,9 @@ const PAGES_FULL = [
   // one family the 34-page list never covered -- which is exactly where four
   // multi-line publisher stubs survived the first sweep.
   "/blog/seo", "/blog/web-design", "/blog/digital-marketing",
+  // a real blog POST: the one page family that builds its breadcrumb inline and
+  // so never received a WebPage node from the component. 74 of 149 URLs.
+  "/blog/affordable-seo-services-for-small-businesses",
 ];
 
 const UA = "Mozilla/5.0 (compatible; cwd-verify-seo/1.0)";
@@ -151,7 +154,7 @@ async function checkPage(path) {
   // the WebSite node's `publisher` survived another day purely because this loop
   // only knew one of the two spellings. Any new pointer key belongs in this list.
   for (const n of nodes) {
-    for (const key of ["provider", "publisher", "isPartOf", "about", "parentOrganization"]) {
+    for (const key of ["provider", "publisher", "isPartOf", "about", "parentOrganization", "seller", "mainEntityOfPage"]) {
       const ref = n[key];
       if (!ref || typeof ref !== "object") continue;
       if (!ref["@id"]) {
