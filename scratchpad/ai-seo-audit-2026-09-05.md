@@ -416,3 +416,95 @@ non-empty alt, **all 4 are `alt=""`** - the correct, deliberate markup for a
 decorative background image - and **0 images are actually missing the
 attribute**. A source scan of every `.tsx` agrees: zero `<Image>`/`<img>` tags
 without an `alt` prop. There is nothing to fix; item F is struck.
+
+---
+
+# Iteration 4 - 2026-09-05: the SERP capture. My hypothesis was wrong.
+
+Iteration 3 proposed that CWD's organic results were being displaced below an AI
+Overview on commercial queries, and said the next step was a live SERP capture
+from a Canadian IP before anyone spent money on it. Done, three head terms,
+`gl=ca&hl=en`, real browser.
+
+**There was no AI Overview on any of them.** The hypothesis is refuted. What is
+actually happening is different, simpler, and more actionable.
+
+| query | GSC pos | AI Overview | CWD on page 1 | what owns the SERP |
+|---|---|---|---|---|
+| web design companies in canada | 3.0 | **none** | **yes - #1 organic** | 4 ads fill the fold; Clutch listicle at #3 |
+| best web development | 2.5 | **none** | **no** | frameworks, Reddit, YouTube, Udemy, web.dev + a local 3-pack |
+| web design toronto | 11.7 | **none** | no (page 2) | Kinex, Clutch, Parachute, 2 ads, Pixelcarve, Shift8, Upwork, Purrweb |
+
+## What the capture actually shows
+
+**1. CWD is genuinely #1 for its biggest head term - and it earns nothing.**
+For "web design companies in canada" (1,119 impressions, 0 clicks in 90 days)
+CWD is the FIRST organic result, with a clean snippet: *"Custom, high-converting
+websites that turn visitors into clients. Rated 5 stars by 200+ clients across
+Toronto, Vancouver and Canada. Free quote."* The ranking work is done. The click
+still does not happen.
+
+**2. Ads own the fold.** Above that #1 organic result sit **four sponsored
+results** - onlead.ca, Reddit Ads, Candybox Marketing, advertising.dvlce.ca -
+filling the entire first 744px of viewport. On desktop, which is 86% of this
+site's impressions, the first organic result is roughly 900px down. GSC counts
+that impression at position 1.
+
+**3. The intent mismatch is confirmed visually, and it is the big one.** The
+other results on that SERP are **Clutch's "Top Web Design Companies in Canada"**,
+DesignRush's "Top Toronto Web Design Companies | 2026", Purrweb's "Top Web Design
+Companies in Toronto (2026)" and Upwork's "Hire the Best Web Designers in
+Toronto". Somebody typing "web design **companies** in canada" wants a comparison
+list. A single agency's homepage cannot win that click from any position. This is
+exactly the 4.6x list-intent gap measured in iteration 3 (0.075% vs 0.345% CTR at
+positions <=5), now seen rather than inferred.
+
+**4. "best web development" is the wrong audience entirely.** That SERP is
+Next.js, React, Django, Ruby on Rails, a Reddit thread on frameworks, YouTube
+tier-lists, Udemy courses and web.dev. It is a developer query about frameworks,
+not a buyer query about agencies. Those 1,067 impressions are people who will
+never hire a Toronto agency. **Do not chase this term.** It is noise in the CTR
+average, not a failure.
+
+**5. There is a local 3-pack on "best web development" and CWD is not in it.**
+CS Web Solutions (4.9, 117 reviews), GrayCyan (4.9, 69) and CitrusStudio (4.9,
+27) - all Mississauga. CWD's Toronto Google Business Profile holds roughly 194
+reviews, far more than any of the three, and does not appear. A real local-SEO
+gap, separate from everything else here.
+
+## A correction to iteration 2, and it matters
+
+Iteration 2's headline was "positions 1-3 convert at 0.37%, a 30-80x shortfall".
+**That framing over-read the data.** GSC reported position 2.5 for "best web
+development", and the live SERP does not have CWD on page 1 at all. GSC position
+is averaged across SERP variants - personalisation, location, device, and every
+long-tail string that rolls up into the reported query - so a GSC "position 2.5"
+is not a promise that a Canadian user sees CWD second.
+
+The 12.2% brand-query CTR is still a valid control (the snippet works), and the
+list-intent gap is still real and now corroborated visually. But the specific
+"top-three results converting 30-80x below par" claim should not be relied on.
+Where GSC and a live SERP disagree, the SERP wins.
+
+## The one action that serves BOTH halves of the brief
+
+Every commercial SERP examined is won by a **directory or listicle** - Clutch,
+DesignRush, Purrweb, Upwork. CWD is in none of them: the Clutch Canada
+web-designers listing page (2.4 MB, fetched directly) contains **zero mentions of
+"Canadian Web Designs"**. Clutch and DesignRush profile URLs both answer 403 to a
+scripted fetch, so this is "not on the ranking listing page", not "provably has no
+profile anywhere" - worth confirming by hand.
+
+Getting listed and reviewed on those directories is the rare item that moves
+**both** things asked for:
+
+- **Clicks.** They are the results that win these queries. Being *inside* the
+  list beats ranking beside it.
+- **Domain Authority.** Clutch, DesignRush and Upwork are exactly the kind of
+  authoritative, topically-relevant referring domains DA models weigh. Real
+  editorial placement - the opposite of cross-linking the ~70 unrelated sites on
+  the same Vercel footprint, which would cost authority rather than build it.
+
+That is a business action, not a code change, so it is recorded here rather than
+done. It needs a human with the CWD Google/Clutch logins, and it is the highest
+expected-value item in this audit.
