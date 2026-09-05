@@ -278,4 +278,25 @@ export const cwdConfig: ClientConfig = {
     { label: "Instagram", href: "https://instagram.com/canadianwebdesigns", icon: "instagram" },
     { label: "LinkedIn", href: "https://linkedin.com/company/canadianwebdesigns", icon: "linkedin" },
   ],
+
+  // schema.org `sameAs` anchors that are deliberately NOT social icons, so they
+  // reach the structured data without adding a footer button.
+  //
+  // The Google Business Profile is the strongest entity anchor a local business
+  // has -- it is how Google and the answer engines tie this domain to a real
+  // verified place -- and it was missing entirely.
+  //
+  // VERIFIED IN A BROWSER 2026-09-05, not guessed. It resolves to "Canadian Web
+  // Designs", 4.8 stars (194 reviews), 2967 Dundas St W #718, Toronto ON M6P 1Z2,
+  // (647) 689-6069, canadianwebdesigns.ca -- the same NAP this file already
+  // carries.
+  //
+  // THE NUMBER IN THE URL IS THE MAPS *cid*, WHICH IS NOT THE GBP DASHBOARD ID.
+  // BST_VID_MAKER/functions/review_watch/config.py holds both for this listing:
+  //   business_id 11804622250978858052  <- dashboard account; renders an EMPTY
+  //                                        place card on maps.google.com
+  //   fid         1764590269626849918   <- the public Maps cid, used here
+  // Picking the wrong one gives a URL that loads a blank pin, which is exactly
+  // the kind of dead anchor the socialLinks note above exists to prevent.
+  entityProfiles: ["https://maps.google.com/?cid=1764590269626849918"],
 };

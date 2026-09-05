@@ -508,3 +508,81 @@ Getting listed and reviewed on those directories is the rare item that moves
 That is a business action, not a code change, so it is recorded here rather than
 done. It needs a human with the CWD Google/Clutch logins, and it is the highest
 expected-value item in this audit.
+
+---
+
+# Iteration 5 - 2026-09-05: the Google Business Profile, verified
+
+Item D said a GBP URL is the strongest entity anchor a local business has, that it
+was missing from `sameAs`, and that it must be verified in a browser before being
+added because a guessed profile URL is what created the four dead anchors in item
+1. Verified, and the caution was justified.
+
+## The cid I would have used was the wrong number
+
+`BST_VID_MAKER/functions/review_watch/config.py` carries two ids for this listing:
+
+```
+{"key": "cwd_toronto", "business_id": "11804622250978858052",
+                       "fid":         "1764590269626849918"}
+```
+
+Iteration 1 assumed `business_id` was the Maps cid and wrote it into the audit as
+"Toronto `cid=11804622250978858052`". **It is not.** Loaded in a browser,
+`maps.google.com/?cid=11804622250978858052` renders an **empty place card** with
+no name, no address and no reviews, on a map centred over Applewood Hills in
+Mississauga. It is the GBP *dashboard* account id, which is what `review_watch`
+reads through - not a public Maps entity.
+
+The public cid is the **`fid`**, confirmed by opening the real listing and reading
+its `ftid` out of the Maps URL: `0x882b357418472c65:0x187d158043381a7e`, whose
+second half is hex for **1764590269626849918** - the `fid` exactly.
+
+**Added, verified live:** `https://maps.google.com/?cid=1764590269626849918` ->
+"Canadian Web Designs", Website designer, 2967 Dundas St W #718, Toronto ON
+M6P 1Z2, (647) 689-6069, canadianwebdesigns.ca, open 24 hours, 7,105 views. Same
+NAP the config already carries, so the entity reconciles cleanly.
+
+## How it is wired
+
+A Google Maps URL is not a social icon, and `socialLinks` renders footer buttons.
+So `ClientConfig` gains an optional `entityProfiles?: string[]`, and both
+`sameAs` call sites (`layout.tsx`, `locations/[city]/page.tsx`) become
+`[...socialLinks, ...(entityProfiles ?? [])]`. Optional, so a client config
+without the field behaves exactly as before.
+
+Verified on a real build by serving it and parsing the JSON-LD of `/`,
+`/locations/brampton` and `/seo/toronto`: all three carry
+
+```
+sameAs: [instagram.com/canadianwebdesigns,
+         linkedin.com/company/canadianwebdesigns,
+         maps.google.com/?cid=1764590269626849918]
+```
+
+and **0 footer links to maps.google** on every one.
+
+## The site overstates its own rating, and now that is measured
+
+The live Google Business Profile shows **4.8 stars from 194 reviews**. The site
+says:
+
+| where | says | actual |
+|---|---|---|
+| `cwd-config.ts:12` `rating` -> schema `ratingValue` | **4.9** | 4.8 |
+| `cwd-config.ts:13` `reviewCount` -> schema `reviewCount` | **200** | 194 |
+| homepage meta description | "Rated **5 stars** by **200+** clients" | 4.8 / 194 |
+| ~25 more places sitewide | "**200+** five-star reviews" | 194, averaging 4.8 |
+
+This sharpens item B from a policy concern into a factual one. An
+`aggregateRating` in structured data is a machine-readable assertion, and Google
+requires it to match what the business actually has; "200+" asserts at least 200
+against a real 194, and "five-star" asserts 5.0 against a real 4.8. It is also on
+78 pages that render no reviews at all, which was already the item B problem.
+
+**Not changed here, deliberately.** `reviewCount` and `rating` feed visible
+marketing copy in 25+ places, not just the schema - changing them rewrites what
+the company says about itself across the whole site, which is Amir's call. The
+one-line version of the fix is `cwd-config.ts` lines 12-13. Worth noting the
+numbers will drift again: the honest long-term fix is reading them from the GBP
+rather than hardcoding, which `review_watch` is already authenticated to do.

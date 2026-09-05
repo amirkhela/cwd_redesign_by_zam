@@ -134,7 +134,7 @@ const localBusinessSchema = {
   founder: { "@type": "Person", name: "Amir Khela" },
   foundingDate: "2014",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 25 },
-  sameAs: config.socialLinks.map((link) => link.href),
+  sameAs: [...config.socialLinks.map((link) => link.href), ...(config.entityProfiles ?? [])],
   areaServed: [
     { "@type": "City", name: "Toronto" },
     { "@type": "City", name: "North York" },

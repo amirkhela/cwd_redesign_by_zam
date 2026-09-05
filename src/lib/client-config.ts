@@ -78,6 +78,10 @@ export interface ClientConfig {
   // Navigation
   navigation: ClientNavItem[];
   socialLinks: ClientSocialLink[];
+  // Extra schema.org `sameAs` anchors that are NOT social icons and must not
+  // render in the footer -- e.g. the Google Business Profile. Optional so a
+  // client config without it behaves exactly as before.
+  entityProfiles?: string[];
 
   // Meta
   specialRequests?: string;

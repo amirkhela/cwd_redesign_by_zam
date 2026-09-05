@@ -834,7 +834,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
             ratingValue: String(config.rating),
             reviewCount: String(config.reviewCount),
           },
-          sameAs: config.socialLinks.map((link) => link.href),
+          sameAs: [...config.socialLinks.map((link) => link.href), ...(config.entityProfiles ?? [])],
         }),
       }} />
 
