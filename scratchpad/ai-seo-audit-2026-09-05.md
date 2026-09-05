@@ -910,3 +910,53 @@ Console API quota unit per URL against a 2,000/day limit, and it needs the
 `GSC_CWD_REFRESH_TOKEN` that lives in the team portal's Vercel env, not here.
 Run it from `team.canadianwebdesigns.ca` with `searchconsole.urlInspection.index.inspect`
 and read `inspectionResult.richResultsResult.detectedItems`.
+
+---
+
+# Iteration 13 - 2026-09-05: the Brampton profile, and item D is now fully closed
+
+Item D said CWD has **two** Google Business Profiles. Iteration 5 verified and shipped
+only Toronto, and recorded the reason honestly: `maps.google.com/?cid=` is fully
+JS-rendered, a plain fetch returns ~207 KB with the business name nowhere in it, and
+the rule that stopped it - **verified or blank, never guessed** - is the rule that
+produced the four dead anchors this whole pass opened by deleting.
+
+That is now verified, so it has shipped. Loaded headless with JavaScript on:
+
+| cid | h1 | what it is |
+|---|---|---|
+| 1764590269626849918 | Canadian Web Designs, Dundas, Website designer | Toronto, the CONTROL |
+| **3493474530954667891** | **Canadian Web Designs, Cherrycrest, Website designer, 43.7647,-79.6706** | **Brampton - added** |
+| 2330856418080702014 | *blank place card, no name, map over Mississauga* | the Brampton DASHBOARD id - the trap |
+
+**It is a preimage, not a resemblance.** Google's own place URL for the Brampton
+listing carries `ftid 0x882b3dc75b79ea91:0x307b5093a16d6773`, and
+`0x307b5093a16d6773 == 3493474530954667891` - the `fid` in
+`review_watch/config.py` exactly. Same derivation that confirmed Toronto.
+
+**The control is the load-bearing part of the method.** curl cannot see the
+KNOWN-GOOD Toronto listing either. So "a fetch found nothing" was never evidence
+against a cid - only evidence that a plain fetch cannot answer the question. Any
+future check of a Maps cid has to run JavaScript, and has to run a cid that is
+already known good beside it, or it proves nothing in either direction.
+
+One file - `cwd-config.ts` `entityProfiles` - because `layout.tsx` spreads it into
+`sameAs` and, since iteration 6, the location and SEO city pages reference
+`#organization` by `@id` rather than emitting their own. So one array reaches all 149
+pages, and `entityProfiles` stays optional for every other tenant of this template.
+
+**Nothing visitor-facing moved.** These are entity anchors, not `socialLinks`: no
+footer button, no icon. Verified on production - 0 anchors to `maps.google` in the
+served HTML.
+
+Verified against production after the deploy (`5b9e87e`, READY 17:04):
+`verify-seo` **PASS on 38 pages with all 4 anchors fetched live**, and
+`validate-schema-vocab` **PASS on 149 pages**. Mutation test 25/25 pre-deploy.
+
+**The remaining audit items are unchanged and all seven are with the SEO team**, sent
+to `marketing@canadianwebdesigns.com` on 2026-09-05 with Zam and Amir copied: the
+Clutch/DesignRush listing, the 4.9/200-vs-4.8/194 rating claim, the five-page
+cannibalisation cluster, the unpaid SE Ranking key, the three copy items
+(`foundingDate` 2014, the `/faq` price answer, the "30-Day Average Launch" badge on
+`/services/seo` and `/services/website-maintenance`), the Article rich-result
+re-inspection in about a week, and the plan for turning existing rankings into clicks.
