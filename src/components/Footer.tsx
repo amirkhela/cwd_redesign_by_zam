@@ -70,6 +70,8 @@ export default function Footer() {
                 { href: "/portfolio", label: "Our Portfolio" },
                 { href: "/testimonials", label: "Testimonials" },
                 { href: "/reviews", label: "Google Reviews" },
+                { href: "/wix-alternative", label: "Wix Alternative" },
+                { href: "/squarespace-alternative", label: "Squarespace Alternative" },
                 { href: "/web-design-company", label: "Web Design Company" },
                 { href: "/web-design-agency", label: "Web Design Agency" },
                 { href: "/blog", label: "Blog" },

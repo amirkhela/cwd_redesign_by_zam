@@ -323,6 +323,7 @@ export default function WixWebsiteDesignPage() {
       {/* RELATED SERVICES */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500 mb-2">Not sure Wix is the right home for your business? Read our honest <Link href="/wix-alternative" className="text-[#00AADF] font-semibold hover:underline">Wix alternative</Link> comparison, sourced from Wix&apos;s own help pages.</p>
           <p className="text-center text-sm text-gray-500 mb-5">Explore our other platform and marketing services:</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/services/wordpress-website-design" className="px-4 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>WordPress Design ↗</Link>
