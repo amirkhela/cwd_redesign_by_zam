@@ -69,6 +69,7 @@ export default function Footer() {
                 { href: "/our-story", label: "Our Story" },
                 { href: "/portfolio", label: "Our Portfolio" },
                 { href: "/testimonials", label: "Testimonials" },
+                { href: "/reviews", label: "Google Reviews" },
                 { href: "/web-design-company", label: "Web Design Company" },
                 { href: "/web-design-agency", label: "Web Design Agency" },
                 { href: "/blog", label: "Blog" },

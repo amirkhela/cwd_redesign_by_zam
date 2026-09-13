@@ -96,6 +96,9 @@ const PAGES_FULL = [
   // a real blog POST: the one page family that builds its breadcrumb inline and
   // so never received a WebPage node from the component. 74 of 149 URLs.
   "/blog/affordable-seo-services-for-small-businesses",
+  // the bottom-of-funnel pages (src/content/compare). Each carries a breadcrumb
+  // WebPage node and one FAQPage and must add NO rating of its own.
+  "/reviews",
 ];
 
 const UA = "Mozilla/5.0 (compatible; cwd-verify-seo/1.0)";

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getConfig } from "@/lib/client-config";
 import { getAllPosts } from "@/lib/blog";
+import { COMPARISONS, INDUSTRIES, REVIEWS_PAGE } from "@/content/compare";
 
 const config = getConfig();
 const BASE_URL = `https://${config.domain}`;
@@ -53,6 +54,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/sitemap`, lastModified: now, changeFrequency: "weekly", priority: 0.3 },
   ];
 
+  // The bottom-of-funnel pages carry their own `reviewedOn`, moved only by a
+  // real re-check of every source on the page (see src/content/compare/types.ts),
+  // so it is the one honest lastModified they can have.
+  const moneyPages: MetadataRoute.Sitemap = [
+    REVIEWS_PAGE,
+    ...Object.values(COMPARISONS),
+    ...Object.values(INDUSTRIES),
+  ].map((page) => ({
+    url: `${BASE_URL}/${page.slug}`,
+    lastModified: new Date(page.reviewedOn),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   const servicePages: MetadataRoute.Sitemap = config.services.map((service) => ({
     url: `${BASE_URL}/services/${service.slug}`,
     lastModified: now,
@@ -84,5 +99,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticPages, ...servicePages, ...locationPages, ...seoCityPages, ...blogPosts];
+  return [...staticPages, ...moneyPages, ...servicePages, ...locationPages, ...seoCityPages, ...blogPosts];
 }
