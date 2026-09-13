@@ -80,3 +80,5 @@ faq:
 <h2>Get a dental website built to book patients</h2>
 
 <p>Whether it's a single-location practice or a group with multiple locations, we build dental websites around one goal: turning visitors into booked appointments. <strong><a href="/contact">Get a free, no-obligation quote today</a></strong> — we respond within one business day. Prefer to talk? Call <a href="tel:+16476896069">(647) 689-6069</a>.</p>
+
+<p><strong>Want the practical version?</strong> What we build into a dental website, and what it costs, is on our <a href="/web-design-for-dentists">web design for dentists</a> page.</p>

@@ -47,6 +47,9 @@ export default function Footer() {
                 { href: "/services/graphic-design", label: "Graphic Design" },
                 { href: "/services/website-maintenance", label: "Website Maintenance" },
                 { href: "/services/ai-consultation", label: "AI Consultation" },
+                { href: "/web-design-for-plumbers", label: "Web Design for Plumbers" },
+                { href: "/web-design-for-dentists", label: "Web Design for Dentists" },
+                { href: "/web-design-for-lawyers", label: "Web Design for Lawyers" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link

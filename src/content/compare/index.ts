@@ -7,6 +7,9 @@ import type { Comparison, IndustryPage, ReviewsPage } from "./types";
 import { REVIEWS_PAGE } from "./reviews";
 import { WIX_ALTERNATIVE } from "./wix-alternative";
 import { SQUARESPACE_ALTERNATIVE } from "./squarespace-alternative";
+import { WEB_DESIGN_FOR_PLUMBERS } from "./web-design-for-plumbers";
+import { WEB_DESIGN_FOR_DENTISTS } from "./web-design-for-dentists";
+import { WEB_DESIGN_FOR_LAWYERS } from "./web-design-for-lawyers";
 
 export type { Comparison, IndustryPage, ReviewsPage, CompareRow, Faq, QuotedReview, Source } from "./types";
 
@@ -15,6 +18,10 @@ export const COMPARISONS: Record<string, Comparison> = {
   [SQUARESPACE_ALTERNATIVE.slug]: SQUARESPACE_ALTERNATIVE,
 };
 
-export const INDUSTRIES: Record<string, IndustryPage> = {};
+export const INDUSTRIES: Record<string, IndustryPage> = {
+  [WEB_DESIGN_FOR_PLUMBERS.slug]: WEB_DESIGN_FOR_PLUMBERS,
+  [WEB_DESIGN_FOR_DENTISTS.slug]: WEB_DESIGN_FOR_DENTISTS,
+  [WEB_DESIGN_FOR_LAWYERS.slug]: WEB_DESIGN_FOR_LAWYERS,
+};
 
 export { REVIEWS_PAGE };

@@ -72,3 +72,5 @@ faq:
 <h2>Getting started</h2>
 
 <p>If your current site is a single-page brochure with a contact form buried at the bottom, the fastest wins usually come from restructuring into dedicated service and location pages and fixing the click-to-call visibility — before touching anything else. From there, ongoing local SEO (Google Business Profile management, citations, and review generation) is what turns a good website into a consistent source of booked jobs. We build plumbing and trades websites with all of this baked in from the first draft — <a href="/services/web-design-development">see our web design services</a> or <a href="/services/seo">our local SEO services</a> to get a free, no-obligation quote scoped to your service area.</p>
+
+<p><strong>Ready to have it built?</strong> See what we build into a plumbing website, and what it costs, on our <a href="/web-design-for-plumbers">web design for plumbers</a> page.</p>

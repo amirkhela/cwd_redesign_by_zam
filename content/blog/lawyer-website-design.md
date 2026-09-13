@@ -72,3 +72,5 @@ faq:
 <h2>The bottom line</h2>
 
 <p>A law firm website's job is to convert a stressed, trust-seeking visitor into a booked consultation — and that means leading with credibility, structuring content around what clients actually search, making the next step obvious, and respecting the advertising rules specific to legal marketing. Firms that get this right consistently out-convert competitors with objectively "nicer" looking sites that skip these fundamentals. If you're evaluating your firm's current site or planning a new one, our <a href="/services/web-design-development">web design</a> and <a href="/services/seo">local SEO</a> teams can walk through what a rebuild or optimization pass would actually involve — <a href="/contact">get in touch</a> for a free consultation.</p>
+
+<p><strong>Ready to have it built?</strong> What we build into a law firm website, and what it costs, is on our <a href="/web-design-for-lawyers">web design for lawyers</a> page.</p>
