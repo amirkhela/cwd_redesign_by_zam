@@ -14,12 +14,16 @@ export default function QuoteFormSection({
   title,
   subtitle,
   mobileOnly = false,
+  showReviews = true,
 }: {
   source: string;
   title?: React.ReactNode;
   subtitle?: string;
   /** Render only below lg — used on pages whose hero already shows the form on desktop. */
   mobileOnly?: boolean;
+  /** The Google rating and review count beside the phone number. /reviews turns it off: that page
+   *  quotes the reviews and leaves the score and the count to Google (content/compare/reviews.ts). */
+  showReviews?: boolean;
 }) {
   return (
     <section
@@ -90,12 +94,14 @@ export default function QuoteFormSection({
               </a>
             </div>
 
-            <div className="flex items-center gap-3">
-              <StarRating rating={config.rating ?? 5} size="md" />
-              <span className="text-white/50 text-sm">
-                {reviewCountPlus(config.reviewCount)} Reviews on Google
-              </span>
-            </div>
+            {showReviews && (
+              <div className="flex items-center gap-3">
+                <StarRating rating={config.rating ?? 5} size="md" />
+                <span className="text-white/50 text-sm">
+                  {reviewCountPlus(config.reviewCount)} Reviews on Google
+                </span>
+              </div>
+            )}
           </div>
 
           {/* RIGHT: Quote Form */}

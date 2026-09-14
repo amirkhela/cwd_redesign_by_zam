@@ -167,7 +167,7 @@ export default function ReviewsPage() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <QuoteFormSection source="reviews" />
+      <QuoteFormSection source="reviews" showReviews={false} />
     </>
   );
 }
