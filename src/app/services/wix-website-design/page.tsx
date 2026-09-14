@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 import QuoteFormSection from "@/components/QuoteFormSection";
@@ -141,7 +141,7 @@ export default function WixWebsiteDesignPage() {
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">Wix Studio Experts — {config.reviewCount}+ Five-Star Reviews</span>
+              <span className="text-white/80 text-sm font-medium tracking-wide">Wix Studio Experts — {reviewCountPlus(config.reviewCount)} Google Reviews</span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", lineHeight: 1.05 }}>
               Wix Website Design{" "}<span className="gradient-text-animated">&amp; Redesign Canada</span>
@@ -197,7 +197,7 @@ export default function WixWebsiteDesignPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: "4.3%", label: "Of All Websites Run on Wix" }, { value: "#3", label: "Most-Used Platform on the Web" }, { value: "200+", label: "Five-Star Reviews" }, { value: "2 Paths", label: "Build on Wix — or Migrate Off It" }].map((s) => (
+              {[{ value: "4.3%", label: "Of All Websites Run on Wix" }, { value: "#3", label: "Most-Used Platform on the Web" }, { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "2 Paths", label: "Build on Wix — or Migrate Off It" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>

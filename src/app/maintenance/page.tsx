@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -171,7 +171,7 @@ export default function MaintenancePage() {
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Canada-Wide — {config.reviewCount}+ Five-Star Reviews
+                Canada-Wide — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="font-black text-white mb-5"

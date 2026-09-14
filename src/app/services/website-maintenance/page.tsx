@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services/website-maintenance" },
   openGraph: {
     title: "Website Maintenance Canada | Secure & Updated | Canadian Web Designs",
-    description: "Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. 200+ reviews. No lock-in. Free audit.",
+    description: `Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. ${reviewCountPlus(getConfig().reviewCount)} reviews. No lock-in. Free audit.`,
     url: "https://canadianwebdesigns.ca/services/website-maintenance",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada 2026 — Canadian Web Designs" }],
   },

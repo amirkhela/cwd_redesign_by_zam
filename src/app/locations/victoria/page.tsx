@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -12,12 +12,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Victoria BC Web Design | SEO & Custom Sites | Canadian Web Designs" },
   description:
-    "Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom websites built to rank on Google. 200+ reviews.",
+    `Victoria BC's top-rated web design & SEO agency — Oak Bay, Langford & James Bay specialists. Custom websites built to rank on Google. ${reviewCountPlus(config.reviewCount)} reviews.`,
   alternates: { canonical: "/locations/victoria" },
   openGraph: {
     title: "Victoria BC Web Design | SEO & Custom Sites | Canadian Web Designs",
     description:
-      "Top-rated web design & SEO in Victoria BC. 200+ five-star reviews. Custom websites built to rank on Google across Greater Victoria.",
+      `Top-rated web design & SEO in Victoria BC. ${reviewCountPlus(config.reviewCount)} Google reviews. Custom websites built to rank on Google across Greater Victoria.`,
     url: "https://canadianwebdesigns.ca/locations/victoria",
     images: [
       {
@@ -185,7 +185,7 @@ export default function VictoriaPage() {
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Victoria, BC — {config.reviewCount}+ Five-Star Reviews
+                Victoria, BC — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5"
@@ -214,7 +214,7 @@ export default function VictoriaPage() {
 
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
               {[
-                { label: "200+ Google Reviews" },
+                { label: `${reviewCountPlus(config.reviewCount)} Google Reviews` },
                 { label: "Victoria SEO Difficulty as Low as 8" },
                 { label: "Results or We Keep Working" },
               ].map((t) => (
@@ -273,7 +273,7 @@ export default function VictoriaPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "200+", label: "Five-Star Reviews" },
+                { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "Diff 8", label: "Victoria SEO Difficulty" },
                 { value: "30–60", label: "Days to First Rankings" },
                 { value: "100%", label: "Results Guaranteed" },

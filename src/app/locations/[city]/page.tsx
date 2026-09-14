@@ -4,7 +4,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -17,7 +17,7 @@ const cityContent: Record<string, {
   faq: { q: string; a: string }[];
 }> = {
   toronto: {
-    blurb: `Toronto is Canada's most competitive digital market — with over 3 million people and hundreds of thousands of businesses all fighting for the same Google searches. A generic website won't cut it here. Canadian Web Designs builds custom, conversion-focused websites for Toronto businesses that are engineered to rank, load fast, and turn visitors into paying customers. From Etobicoke to Scarborough, from Yorkville boutiques to North York clinics, we understand the Toronto market deeply. Our local SEO strategies are tailored to Toronto's neighbourhoods and business verticals — so you're not just getting traffic, you're getting the right traffic. With ${config.reviewCount}+ five-star reviews and clients across every major Toronto industry, we're the agency that Toronto businesses trust to grow online.`,
+    blurb: `Toronto is Canada's most competitive digital market — with over 3 million people and hundreds of thousands of businesses all fighting for the same Google searches. A generic website won't cut it here. Canadian Web Designs builds custom, conversion-focused websites for Toronto businesses that are engineered to rank, load fast, and turn visitors into paying customers. From Etobicoke to Scarborough, from Yorkville boutiques to North York clinics, we understand the Toronto market deeply. Our local SEO strategies are tailored to Toronto's neighbourhoods and business verticals — so you're not just getting traffic, you're getting the right traffic. With ${reviewCountPlus(config.reviewCount)} Google reviews and clients across every major Toronto industry, we're the agency that Toronto businesses trust to grow online.`,
     facts: ["Canada's largest city — most competitive SEO market in the country", "3M+ residents and hundreds of thousands of SMBs all competing on Google", "Google local pack and map listings are critical for Toronto service businesses", "Mobile-first searches dominate — 70%+ of Toronto searches happen on smartphones"],
     industries: ["Healthcare & Clinics", "Law Firms", "Real Estate", "Restaurants & Hospitality", "Contractors & Trades", "Retail & eCommerce"],
     faq: [
@@ -338,11 +338,11 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   },
   toronto: {
     title: "Web Design Toronto | Custom Sites That Rank | Canadian Web Designs",
-    description: `Toronto web design agency — Yorkville, Etobicoke & Scarborough. Custom sites that rank, backed by 200+ five-star reviews. Free quote.`,
+    description: `Toronto web design agency — Yorkville, Etobicoke & Scarborough. Custom sites that rank, backed by ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
   },
   mississauga: {
     title: "Web Design Mississauga | Canadian Web Designs",
-    description: `Mississauga web design & web designer services — Square One, Port Credit, Erin Mills. 200+ five-star reviews. Free quote.`,
+    description: `Mississauga web design & web designer services — Square One, Port Credit, Erin Mills. ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
   },
   edmonton: {
     title: "Web Design Edmonton | Sites That Rank | Canadian Web Designs",
@@ -358,7 +358,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   },
   ottawa: {
     title: "Web Design Ottawa | Bilingual EN/FR | Canadian Web Designs",
-    description: `Ottawa bilingual web design — Kanata, Glebe & ByWard Market. Custom EN/FR sites that rank, backed by 200+ five-star reviews. Free quote.`,
+    description: `Ottawa bilingual web design — Kanata, Glebe & ByWard Market. Custom EN/FR sites that rank, backed by ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
   },
   vaughan: {
     title: "Web Design Vaughan | Custom Sites That Convert | Canadian Web Designs",
@@ -390,7 +390,7 @@ const cityMeta: Record<string, { title: string; description: string }> = {
   },
   vancouver: {
     title: "Vancouver Web Design | Custom Sites That Rank | Canadian Web Designs",
-    description: `Vancouver web design — Yaletown, Kitsilano & Mount Pleasant. Custom sites that rank across Metro Vancouver, 200+ reviews. Free quote.`,
+    description: `Vancouver web design — Yaletown, Kitsilano & Mount Pleasant. Custom sites that rank across Metro Vancouver, ${reviewCountPlus(config.reviewCount)} reviews. Free quote.`,
   },
   surrey: {
     title: "Web Design Surrey BC | Custom Sites That Rank | Canadian Web Designs",
@@ -436,7 +436,7 @@ export function generateMetadata({ params }: { params: { city: string } }): Meta
   const cityName = cityData.name;
   const custom = cityMeta[params.city];
   const title = custom?.title ?? `Web Design ${cityName} | Custom Sites That Rank | Canadian Web Designs`;
-  const description = custom?.description ?? `Custom web design & SEO in ${cityName} — sites built to rank and convert. ${config.reviewCount}+ five-star reviews. Free quote: ${config.phone}.`;
+  const description = custom?.description ?? `Custom web design & SEO in ${cityName} — sites built to rank and convert. ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote: ${config.phone}.`;
   const url = `https://${config.domain}/locations/${params.city}`;
   return {
     title: { absolute: title },
@@ -508,7 +508,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">{city}, {province} — {config.reviewCount}+ Five-Star Reviews</span>
+              <span className="text-white/80 text-sm font-medium tracking-wide">{city}, {province} — {reviewCountPlus(config.reviewCount)} Google Reviews</span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", lineHeight: 1.05 }}>
               Web Design in{" "}<span className="gradient-text-animated">{city}</span>
@@ -567,7 +567,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-3 gap-6 text-center">
-              {[{ value: `${config.reviewCount}+`, label: "Five-Star Reviews" }, { value: `${config.cities.length}+`, label: "Cities Served" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
+              {[{ value: `${reviewCountPlus(config.reviewCount)}`, label: "Google Reviews" }, { value: `${config.cities.length}+`, label: "Cities Served" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
                 <div key={s.label}>
                   <p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p>
                   <p className="text-gray-500 text-sm">{s.label}</p>

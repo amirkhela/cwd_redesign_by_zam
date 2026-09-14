@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -11,12 +11,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Mobile Web Design Toronto | Fast Responsive Sites | Canadian Web Designs" },
   description:
-    "73% of Toronto searches are on mobile — is your site ready? We build responsive sites that load under 2s and ace Core Web Vitals. 200+ reviews.",
+    `73% of Toronto searches are on mobile — is your site ready? We build responsive sites that load under 2s and ace Core Web Vitals. ${reviewCountPlus(config.reviewCount)} reviews.`,
   alternates: { canonical: "/mobile-web-design-in-toronto" },
   openGraph: {
     title: "Mobile Web Design Toronto | Fast Responsive Sites | Canadian Web Designs",
     description:
-      "Mobile-first web design for Toronto — responsive sites loading under 2s with A+ Core Web Vitals. 200+ five-star reviews. Free mobile audit.",
+      `Mobile-first web design for Toronto — responsive sites loading under 2s with A+ Core Web Vitals. ${reviewCountPlus(config.reviewCount)} Google reviews. Free mobile audit.`,
     url: "https://canadianwebdesigns.ca/mobile-web-design-in-toronto",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Mobile Web Design Toronto" }],
   },
@@ -125,7 +125,7 @@ export default function MobileWebDesignTorontoPage() {
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Toronto — {config.reviewCount}+ Five-Star Reviews
+                Toronto — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="font-black text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", lineHeight: 1.05 }}>
@@ -151,7 +151,7 @@ export default function MobileWebDesignTorontoPage() {
               </Link>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["Custom Websites", "Mobile-First by Default", "Core Web Vitals Certified", `${config.reviewCount}+ Reviews`].map((t) => (
+              {["Custom Websites", "Mobile-First by Default", "Core Web Vitals Certified", `${reviewCountPlus(config.reviewCount)} Reviews`].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

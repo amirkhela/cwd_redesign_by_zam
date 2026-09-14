@@ -54,7 +54,7 @@ featuredImage: "/blog/posts/web-design-company.png"
 </ul>
 
 <h2 class="wp-block-heading" id="h-why-cwd">Why Canadian Web Designs</h2>
-<p>We're a <a href="/web-designers-near-me">local web design team</a> serving 24+ cities across Canada, with 200+ five-star reviews and web design packages starting at $299. Compare our <a href="/portfolio">portfolio</a> and <a href="/testimonials">client testimonials</a> against anyone else on your shortlist — we build custom, SEO-optimized, mobile-first sites, and we're upfront about scope and pricing before you commit to anything.</p>
+<p>We're a <a href="/web-designers-near-me">local web design team</a> serving 24+ cities across Canada, with 190+ Google reviews and web design packages starting at $299. Compare our <a href="/portfolio">portfolio</a> and <a href="/testimonials">client testimonials</a> against anyone else on your shortlist — we build custom, SEO-optimized, mobile-first sites, and we're upfront about scope and pricing before you commit to anything.</p>
 
 <h3 class="wp-block-heading">Get a Straight Answer on Scope and Price</h3>
 <p><strong><a href="/contact">Get a free quote today</a></strong> — no pressure, just straight answers about scope, timeline, and price.</p>

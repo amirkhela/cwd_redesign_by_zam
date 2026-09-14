@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
   openGraph: {
     title: "Web Design & SEO FAQs Canada | Canadian Web Designs",
-    description: "Honest, no-fluff answers on web design & SEO — pricing, timelines, and what's included, from a Canadian agency with 200+ five-star reviews.",
+    description: `Honest, no-fluff answers on web design & SEO — pricing, timelines, and what's included, from a Canadian agency with ${reviewCountPlus(config.reviewCount)} Google reviews.`,
     url: "https://canadianwebdesigns.ca/faq",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Web Design & SEO FAQs Canada | Canadian Web Designs",
-    description: "Honest answers on web design & SEO pricing, timelines & scope — from a Canadian agency with 200+ reviews.",
+    description: `Honest answers on web design & SEO pricing, timelines & scope — from a Canadian agency with ${reviewCountPlus(config.reviewCount)} reviews.`,
   },
 };
 
@@ -43,7 +43,7 @@ const faqs = [
   { q: "Do you build websites on WordPress?", a: "Yes — we work with WordPress, as well as custom Next.js builds and other modern platforms. We recommend the stack that best fits your budget, goals, and technical requirements." },
   { q: "Can you integrate a booking system into my website?", a: "Absolutely. We integrate booking systems, appointment schedulers, and reservation tools into websites for healthcare, hospitality, professional services, and other industries." },
   { q: "Do you offer bilingual (English/French) websites?", a: "Yes — we can build bilingual websites with English and French content. All our sites include proper hreflang tags and language signals for Canadian bilingual SEO." },
-  { q: "What makes Canadian Web Designs different from other agencies?", a: "We're 100% Canadian-owned, with a 25+ person team and 200+ five-star reviews. We offer no hidden fees, no long-term lock-in contracts, and direct access to your project manager throughout the entire process." },
+  { q: "What makes Canadian Web Designs different from other agencies?", a: `We're 100% Canadian-owned, with a 25+ person team and ${reviewCountPlus(config.reviewCount)} Google reviews. We offer no hidden fees, no long-term lock-in contracts, and direct access to your project manager throughout the entire process.` },
   { q: "How many clients have you worked with?", a: "We've completed 500+ projects since 2014, serving businesses across 24+ cities in Canada — from solo entrepreneurs to established companies in healthcare, real estate, trades, and retail." },
 ];
 

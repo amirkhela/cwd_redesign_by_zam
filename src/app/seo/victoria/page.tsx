@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -12,7 +12,7 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "SEO Victoria, BC | SEO Company | Canadian Web Designs" },
   description:
-    "Victoria BC SEO — lower keyword difficulty than Vancouver, same buyer intent. Downtown, Oak Bay & Saanich. 200+ reviews. Free audit — (647) 689-6069.",
+    `Victoria BC SEO — lower keyword difficulty than Vancouver, same buyer intent. Downtown, Oak Bay & Saanich. ${reviewCountPlus(config.reviewCount)} reviews. Free audit — (647) 689-6069.`,
   alternates: { canonical: "/seo/victoria" },
   openGraph: {
     title: "SEO Victoria, BC | SEO Company | Canadian Web Designs",
@@ -61,7 +61,7 @@ const faq = [
   },
   {
     q: "How is CWD different from a local Victoria SEO agency?",
-    a: "Two key advantages: scale and track record. We've ranked businesses in every major Canadian city — which means our Victoria strategies are informed by what actually works across competitive markets, not just Victoria. We also have 200+ verifiable five-star Google reviews from clients across Canada. We're based in Canada (not offshore), which means everything is communicated in real-time during business hours, and we understand the Canadian search landscape at a national level.",
+    a: `Two key advantages: scale and track record. We've ranked businesses in every major Canadian city — which means our Victoria strategies are informed by what actually works across competitive markets, not just Victoria. We also have ${reviewCountPlus(config.reviewCount)} Google reviews from clients across Canada. We're based in Canada (not offshore), which means everything is communicated in real-time during business hours, and we understand the Canadian search landscape at a national level.`,
   },
 ];
 
@@ -182,7 +182,7 @@ export default function SeoVictoriaPage() {
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Victoria, BC — {config.reviewCount}+ Five-Star Reviews
+                Victoria, BC — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5"
@@ -209,7 +209,7 @@ export default function SeoVictoriaPage() {
               </Link>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["200+ Google Reviews", "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
+              {[`${reviewCountPlus(config.reviewCount)} Google Reviews`, "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -265,7 +265,7 @@ export default function SeoVictoriaPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "200+", label: "Five-Star Reviews" },
+                { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "480/mo", label: "'SEO Victoria' Search Volume" },
                 { value: "Diff 15–19", label: "Victoria Keyword Difficulty" },
                 { value: "4–8 Wk", label: "Avg. to First Page Results" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import StarRating from "@/components/StarRating";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -15,11 +15,11 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Design Canada | Custom Websites | Canadian Web Designs" },
   description:
-    `Custom, high-converting websites that turn visitors into clients. Rated 5 stars by ${config.reviewCount}+ clients across Toronto, Vancouver & Canada. Free quote.`,
+    `Custom, high-converting websites that turn visitors into clients. Rated ${config.rating} stars on Google from ${reviewCountPlus(config.reviewCount)} reviews across Toronto, Vancouver & Canada. Free quote.`,
   alternates: { canonical: "/" },
   openGraph: {
     title: "Web Design Canada | Custom Websites | Canadian Web Designs",
-    description: `Custom, high-converting websites trusted by ${config.reviewCount}+ five-star clients across Canada. Get your free quote today.`,
+    description: `Custom, high-converting websites rated ${config.rating} stars from ${reviewCountPlus(config.reviewCount)} Google reviews across Canada. Get your free quote today.`,
     url: `https://${config.domain}`,
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
   },
@@ -191,7 +191,7 @@ export default function HomePage() {
 
               <p className="hero-fade-up-2 text-lg text-white leading-relaxed max-w-lg mb-10">
                 The web design agency Canada trusts for results.{" "}
-                <span className="font-semibold">{config.reviewCount}+ five-star reviews</span>{" "}
+                <span className="font-semibold">{reviewCountPlus(config.reviewCount)} Google reviews</span>{" "}
                 across {config.cities.length} cities nationwide since {config.founded}.
               </p>
 
@@ -213,9 +213,9 @@ export default function HomePage() {
               </div>
 
               <div className="hero-fade-up-4 flex items-center gap-3">
-                <StarRating rating={5} size="md" />
+                <StarRating rating={config.rating ?? 5} size="md" />
                 <span className="text-white/50 text-sm">
-                  {config.reviewCount}+ Five Star Reviews on Google
+                  {reviewCountPlus(config.reviewCount)} Reviews on Google
                 </span>
               </div>
             </div>
@@ -537,9 +537,9 @@ export default function HomePage() {
             </span>
             <h2 className="text-4xl lg:text-5xl font-black text-dark mb-4">What Our Clients Say</h2>
             <div className="flex items-center justify-center gap-3">
-              <StarRating rating={5} size="lg" />
+              <StarRating rating={config.rating ?? 5} size="lg" />
               <span className="text-dark-light ml-1">
-                {config.rating}/5 from {config.reviewCount}+ verified reviews
+                {config.rating}/5 from {reviewCountPlus(config.reviewCount)} Google reviews
               </span>
             </div>
           </div>

@@ -131,3 +131,10 @@ export function orgId(): string {
 export function setConfig(config: ClientConfig): void {
   activeConfig = config;
 }
+
+/** A count shown with a "+" must never exceed the real one, so it rounds down, never up. */
+export function reviewCountPlus(count?: number): string {
+  if (!count || count < 1) return "";
+  if (count < 10) return String(Math.floor(count));
+  return `${Math.floor(count / 10) * 10}+`;
+}

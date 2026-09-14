@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 
 const config = getConfig();
 
@@ -28,7 +28,7 @@ export default function ServiceAreasSection() {
           <span className="gradient-text-animated">Across Canada</span>
         </h2>
         <p className="text-white/50 text-sm mb-8 max-w-xl mx-auto">
-          From coast to coast — {config.cities.length} cities and counting, backed by {config.reviewCount}+ five-star reviews.
+          From coast to coast — {config.cities.length} cities and counting, backed by {reviewCountPlus(config.reviewCount)} Google reviews.
         </p>
 
         <div className="flex flex-wrap justify-center gap-2">

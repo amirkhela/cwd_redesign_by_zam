@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -12,12 +12,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Design Burnaby | Sites That Rank | Canadian Web Designs" },
   description:
-    "Burnaby's top-rated web design agency — Metrotown, Brentwood & Lougheed specialists. Custom websites built to rank on Google. 200+ reviews.",
+    `Burnaby's top-rated web design agency — Metrotown, Brentwood & Lougheed specialists. Custom websites built to rank on Google. ${reviewCountPlus(config.reviewCount)} reviews.`,
   alternates: { canonical: "/locations/burnaby" },
   openGraph: {
     title: "Web Design Burnaby | Sites That Rank | Canadian Web Designs",
     description:
-      "Top-rated web design & SEO in Burnaby BC. 200+ five-star reviews. Custom websites serving Metrotown, Brentwood & Lougheed, built to rank on Google.",
+      `Top-rated web design & SEO in Burnaby BC. ${reviewCountPlus(config.reviewCount)} Google reviews. Custom websites serving Metrotown, Brentwood & Lougheed, built to rank on Google.`,
     url: "https://canadianwebdesigns.ca/locations/burnaby",
     images: [
       {
@@ -179,7 +179,7 @@ export default function BurnabyPage() {
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Burnaby, BC — {config.reviewCount}+ Five-Star Reviews
+                Burnaby, BC — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1
@@ -211,7 +211,7 @@ export default function BurnabyPage() {
             {/* Trust row */}
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
               {[
-                { label: "200+ Google Reviews", icon: "M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" },
+                { label: `${reviewCountPlus(config.reviewCount)} Google Reviews`, icon: "M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" },
                 { label: "Results or We Keep Working", icon: "M4.5 12.75l6 6 9-13.5" },
                 { label: "Burnaby SEO Specialists", icon: "M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" },
               ].map((t) => (
@@ -279,7 +279,7 @@ export default function BurnabyPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "200+", label: "Five-Star Reviews" },
+                { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "30–60", label: "Days to First Results" },
                 { value: "Diff 12", label: "Burnaby SEO Difficulty" },
                 { value: "100%", label: "Results Guaranteed" },

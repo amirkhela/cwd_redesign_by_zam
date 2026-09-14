@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Image from "next/image";
 import type { ClientService } from "@/lib/client-config";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -115,7 +115,7 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
                 <h3 className="text-gray-900 font-black text-xl mb-6">Why Choose Us?</h3>
                 <div className="space-y-5">
                   {[
-                    { icon: "★", label: `${config.reviewCount}+ Five-Star Reviews` },
+                    { icon: "★", label: `${reviewCountPlus(config.reviewCount)} Google Reviews` },
                     { icon: "✓", label: "Results Guaranteed" },
                     { icon: "⚡", label: "30-Day Average Launch" },
                     { icon: "⊕", label: `${config.cities.length}+ Cities Served` },

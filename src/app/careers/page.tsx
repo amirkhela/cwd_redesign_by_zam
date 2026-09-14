@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const config = getConfig();
@@ -118,7 +118,7 @@ export default function CareersPage() {
               {
                 icon: "🏆",
                 title: "Top-Rated Team",
-                body: `${config.reviewCount}+ five-star reviews. We hold ourselves to a high standard — and we celebrate wins together.`,
+                body: `${reviewCountPlus(config.reviewCount)} Google reviews. We hold ourselves to a high standard — and we celebrate wins together.`,
               },
             ].map((item) => (
               <div key={item.title} className="bg-light rounded-2xl p-8 text-center">

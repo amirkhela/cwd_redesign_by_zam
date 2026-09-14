@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const config = getConfig();
@@ -163,7 +163,7 @@ export default function EcommerceTorontoPage() {
             </h1>
             <p className="text-lg text-white/70 mb-8">
               We build custom online stores for Toronto businesses that show up on Google and turn visitors into buyers.
-              {config.reviewCount}+ five-star reviews. No templates. No guesswork.
+              {reviewCountPlus(config.reviewCount)} Google reviews. No templates. No guesswork.
             </p>
             <div className="flex flex-wrap gap-4 mb-10">
               <a
@@ -186,7 +186,7 @@ export default function EcommerceTorontoPage() {
               {[
                 { label: "Stores Launched", value: "80+" },
                 { label: "Avg. Traffic Increase", value: "3.4×" },
-                { label: "Five-Star Reviews", value: `${config.reviewCount}+` },
+                { label: "Google Reviews", value: `${reviewCountPlus(config.reviewCount)}` },
                 { label: "Years in Business", value: "10+" },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/10 rounded-2xl p-4 text-center">

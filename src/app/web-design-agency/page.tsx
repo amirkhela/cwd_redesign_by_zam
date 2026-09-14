@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -158,7 +158,7 @@ export default function WebDesignAgencyPage() {
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Full-Service Digital Agency — {config.reviewCount}+ Five-Star Reviews
+                Full-Service Digital Agency — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="font-black text-white mb-5"
@@ -186,7 +186,7 @@ export default function WebDesignAgencyPage() {
               </Link>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["Everything In-House", "Strategy-Led", "Dedicated Team", `${config.reviewCount}+ Reviews`].map((t) => (
+              {["Everything In-House", "Strategy-Led", "Dedicated Team", `${reviewCountPlus(config.reviewCount)} Reviews`].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -234,7 +234,7 @@ export default function WebDesignAgencyPage() {
                 Strategy comes first. Before a single page is designed, we map your goals, your
                 competitors, and the search and social behaviour of your customers. Every decision
                 after that — layout, copy, keywords, ad targeting — ladders back to that strategy.
-                With {config.reviewCount}+ verified five-star reviews, we&apos;re the agency Canadian
+                With {reviewCountPlus(config.reviewCount)} Google reviews, we&apos;re the agency Canadian
                 businesses trust for measurable, long-term growth. Prefer to read about the studio
                 behind the work? See our{" "}
                 <Link href="/web-design-company" className="text-[#00AADF] font-semibold hover:underline">web design company</Link> page.
@@ -242,7 +242,7 @@ export default function WebDesignAgencyPage() {
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {[
-                  { value: `${config.reviewCount}+`, label: "Five-star reviews" },
+                  { value: `${reviewCountPlus(config.reviewCount)}`, label: "Google reviews" },
                   { value: "6+", label: "Services in-house" },
                   { value: "1", label: "Dedicated team" },
                   { value: "2016", label: "Serving Canada since" },

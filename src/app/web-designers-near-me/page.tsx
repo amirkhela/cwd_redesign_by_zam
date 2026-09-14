@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -11,7 +11,7 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Designers Near Me | Custom Website Design | Canadian Web Designs" },
   description:
-    "Top-rated web designers serving Toronto, Vancouver, Calgary, Mississauga & 20+ Canadian cities. Custom sites with SEO included. 200+ five-star reviews.",
+    `Top-rated web designers serving Toronto, Vancouver, Calgary, Mississauga & 20+ Canadian cities. Custom sites with SEO included. ${reviewCountPlus(config.reviewCount)} Google reviews.`,
   alternates: { canonical: "/web-designers-near-me" },
   openGraph: {
     title: "Web Designers Near Me | Custom Website Design | Canadian Web Designs",
@@ -148,7 +148,7 @@ export default function WebDesignersNearMePage() {
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Serving 20+ Canadian Cities — {config.reviewCount}+ Five-Star Reviews
+                Serving 20+ Canadian Cities — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="font-black text-white mb-5"
@@ -176,7 +176,7 @@ export default function WebDesignersNearMePage() {
               </Link>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["Custom Websites", "SEO Included", "No Lock-In Contracts", `${config.reviewCount}+ Reviews`].map((t) => (
+              {["Custom Websites", "SEO Included", "No Lock-In Contracts", `${reviewCountPlus(config.reviewCount)} Reviews`].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -220,7 +220,7 @@ export default function WebDesignersNearMePage() {
                 web design — it&apos;s local SEO baked into every page from day one.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                With {config.reviewCount}+ verified five-star reviews from clients in Toronto,
+                With {reviewCountPlus(config.reviewCount)} Google reviews from clients in Toronto,
                 Mississauga, Brampton, Vancouver, Calgary, and 15+ other cities, we&apos;re the Canadian
                 web design agency that businesses across the country trust to get results — not just
                 a good-looking website that doesn&apos;t rank.
@@ -228,7 +228,7 @@ export default function WebDesignersNearMePage() {
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {[
-                  { value: `${config.reviewCount}+`, label: "Five-star reviews" },
+                  { value: `${reviewCountPlus(config.reviewCount)}`, label: "Google reviews" },
                   { value: "20+", label: "Canadian cities" },
                   { value: "3–4wk", label: "Avg. launch time" },
                   { value: "2026", label: "Serving Canada since 2016" },
@@ -248,7 +248,7 @@ export default function WebDesignersNearMePage() {
                   {[
                     "SEO-optimized from day one — not an add-on",
                     "City-specific keyword research for your local market",
-                    "200+ verified Canadian client reviews",
+                    `${reviewCountPlus(config.reviewCount)} Google reviews`,
                     "Transparent pricing — no hidden fees",
                     "No lock-in contracts — cancel anytime",
                     "Websites built to rank AND convert",

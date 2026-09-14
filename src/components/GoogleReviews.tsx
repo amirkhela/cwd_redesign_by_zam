@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import { REVIEWS } from "@/lib/google-reviews";
 
 const config = getConfig();
@@ -157,11 +157,11 @@ export default function GoogleReviews() {
             </span>
           </div>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14 }}>
-            <span style={{ fontSize: 48, fontWeight: 800, color: "#202124", lineHeight: 1 }}>4.9</span>
+            <span style={{ fontSize: 48, fontWeight: 800, color: "#202124", lineHeight: 1 }}>{config.rating}</span>
             <div style={{ textAlign: "left" }}>
               <Stars size={24} />
               <p style={{ margin: "5px 0 0", fontSize: 13, color: "#70757a" }}>
-                Based on {config.reviewCount}+ reviews
+                Based on {reviewCountPlus(config.reviewCount)} reviews
               </p>
             </div>
           </div>

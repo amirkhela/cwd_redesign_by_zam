@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import PortfolioGrid from "@/components/PortfolioGrid";
+import { getConfig } from "@/lib/client-config";
 // v4
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "19+",  label: "Live Projects" },
   { value: "300%", label: "Avg Traffic Growth" },
-  { value: "5★",   label: "Client Satisfaction" },
+  { value: `${getConfig().rating}★`, label: "Google Rating" },
   { value: "30d",  label: "Avg Launch Time" },
 ];
 

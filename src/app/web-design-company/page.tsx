@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -11,12 +11,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Web Design Company Canada | Custom Sites | Canadian Web Designs" },
   description:
-    "Canada's trusted web design company — a 25+ person in-house team, 500+ sites built, 200+ five-star reviews. Custom sites with SEO. Free quote.",
+    `Canada's trusted web design company — a 25+ person in-house team, 500+ sites built, ${reviewCountPlus(config.reviewCount)} Google reviews. Custom sites with SEO. Free quote.`,
   alternates: { canonical: "/web-design-company" },
   openGraph: {
     title: "Web Design Company Canada | Custom Sites | Canadian Web Designs",
     description:
-      "Canada's trusted web design company — a 25+ person in-house team, 500+ websites built, 200+ five-star reviews. Custom sites with SEO included.",
+      `Canada's trusted web design company — a 25+ person in-house team, 500+ websites built, ${reviewCountPlus(config.reviewCount)} Google reviews. Custom sites with SEO included.`,
     url: "https://canadianwebdesigns.ca/web-design-company",
   },
 };
@@ -30,7 +30,7 @@ const faqSchema = {
       name: "What makes a good web design company?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A good web design company has a real, verifiable track record — a portfolio of live client sites, hundreds of genuine reviews, and a team you can actually reach. Look for an in-house staff rather than subcontractors, a documented process from discovery to launch, SEO built into every build, and no long lock-in contracts. Canadian Web Designs has operated since 2016 with a 25+ person in-house team, 500+ websites delivered, and 200+ verified five-star reviews.",
+        text: `A good web design company has a real, verifiable track record — a portfolio of live client sites, hundreds of genuine reviews, and a team you can actually reach. Look for an in-house staff rather than subcontractors, a documented process from discovery to launch, SEO built into every build, and no long lock-in contracts. Canadian Web Designs has operated since 2016 with a 25+ person in-house team, 500+ websites delivered, and ${reviewCountPlus(config.reviewCount)} Google reviews.`,
       },
     },
     {
@@ -83,7 +83,7 @@ const lookFor = [
   },
   {
     title: "Genuine, independent reviews",
-    desc: "Testimonials on a company's own site are easy to fake. Look for reviews you can verify. We hold 200+ five-star reviews from real Canadian businesses.",
+    desc: `Testimonials on a company's own site are easy to fake. Look for reviews you can verify. We have ${reviewCountPlus(config.reviewCount)} Google reviews anyone can read.`,
   },
   {
     title: "An in-house team, not subcontractors",
@@ -152,7 +152,7 @@ export default function WebDesignCompanyPage() {
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Canadian-Owned Since 2016 — {config.reviewCount}+ Five-Star Reviews
+                Canadian-Owned Since 2016 — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="font-black text-white mb-5"
@@ -180,7 +180,7 @@ export default function WebDesignCompanyPage() {
               </Link>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
-              {["25+ In-House Team", "500+ Sites Built", "No Work Outsourced", `${config.reviewCount}+ Reviews`].map((t) => (
+              {["25+ In-House Team", "500+ Sites Built", "No Work Outsourced", `${reviewCountPlus(config.reviewCount)} Reviews`].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -228,8 +228,8 @@ export default function WebDesignCompanyPage() {
                 site ranks on Google.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Over 500 businesses have trusted us with their web presence, and we hold {config.reviewCount}+
-                verified five-star reviews to show for it. Whether you need a{" "}
+                Over 500 businesses have trusted us with their web presence, and we hold {reviewCountPlus(config.reviewCount)}{" "}
+                Google reviews to show for it. Whether you need a{" "}
                 <Link href="/services/web-design-development" className="text-[#00AADF] font-semibold hover:underline">custom website designed and developed</Link>{" "}
                 from scratch, are comparing us against{" "}
                 <Link href="/web-designers-near-me" className="text-[#00AADF] font-semibold hover:underline">local web designers near you</Link>,
@@ -242,7 +242,7 @@ export default function WebDesignCompanyPage() {
                 {[
                   { value: "25+", label: "In-house team members" },
                   { value: "500+", label: "Websites delivered" },
-                  { value: `${config.reviewCount}+`, label: "Five-star reviews" },
+                  { value: `${reviewCountPlus(config.reviewCount)}`, label: "Google reviews" },
                   { value: "2016", label: "Serving Canada since" },
                 ].map((s) => (
                   <div key={s.label} className="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
@@ -261,7 +261,7 @@ export default function WebDesignCompanyPage() {
                     "25+ person in-house team — no subcontractors",
                     "Canadian-owned and operated since 2016",
                     "500+ websites built and launched",
-                    "200+ verified five-star reviews",
+                    `${reviewCountPlus(config.reviewCount)} Google reviews`,
                     "No work outsourced overseas",
                     "Dedicated account manager on every project",
                     "Transparent process — you always know the status",
@@ -369,7 +369,7 @@ export default function WebDesignCompanyPage() {
                   "Team continuity — your project never depends on one person",
                   "Ongoing maintenance, hosting, and support after launch",
                   "Depth across every discipline your site needs",
-                  "200+ verifiable reviews and 500+ live client sites",
+                  `${reviewCountPlus(config.reviewCount)} Google reviews and 500+ live client sites`,
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-white shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

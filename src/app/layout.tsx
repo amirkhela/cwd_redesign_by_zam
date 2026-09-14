@@ -4,7 +4,7 @@ import Script from "next/script";
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import HreflangTags from "@/components/HreflangTags";
 import ConditionalSchemas from "@/components/ConditionalSchemas";
 import "./globals.css";
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     template: `%s | ${config.businessName}`,
   },
   description:
-    `Canada's trusted web design agency — ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Free quote — (647) 689-6069.`,
+    `Canada's trusted web design agency — ${reviewCountPlus(config.reviewCount)} Google reviews across ${config.cities.length}+ cities. Custom websites, SEO & digital marketing. Free quote — (647) 689-6069.`,
   authors: [{ name: config.businessName }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_CA",
     siteName: config.businessName,
-    title: `Web Design Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    title: `Web Design Canada | ${reviewCountPlus(config.reviewCount)} Reviews | Canadian Web Designs`,
     description:
-      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
+      `Canada's top-rated web design agency. ${reviewCountPlus(config.reviewCount)} Google reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
     url: `https://${config.domain}`,
     images: [
       {
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@canadianwebdesigns",
     creator: "@canadianwebdesigns",
-    title: `Web Design Canada | ${config.reviewCount}+ Reviews | Canadian Web Designs`,
+    title: `Web Design Canada | ${reviewCountPlus(config.reviewCount)} Reviews | Canadian Web Designs`,
     description:
-      `Canada's top-rated web design agency. ${config.reviewCount}+ five-star reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
+      `Canada's top-rated web design agency. ${reviewCountPlus(config.reviewCount)} Google reviews across ${config.cities.length}+ cities. Custom websites, web design services & local SEO. Free quote today.`,
     images: ["/images/hero-leading-web-design.jpg"],
   },
   robots: {
@@ -130,7 +130,7 @@ const localBusinessSchema = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
+    ratingValue: String(config.rating),
     reviewCount: String(config.reviewCount),
     bestRating: "5",
     worstRating: "1",

@@ -4,7 +4,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -299,11 +299,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   if (!data) return {};
   return {
     title: { absolute: `SEO ${data.name} | SEO Company & Services | Canadian Web Designs` },
-    description: `Rank page 1 in ${data.name} in 60–90 days — local SEO, GBP optimization & citation building. ${config.reviewCount}+ five-star reviews. Free audit: (647) 689-6069.`,
+    description: `Rank page 1 in ${data.name} in 60–90 days — local SEO, GBP optimization & citation building. ${reviewCountPlus(config.reviewCount)} Google reviews. Free audit: (647) 689-6069.`,
     alternates: { canonical: `/seo/${city}` },
     openGraph: {
       title: `SEO ${data.name} | SEO Company & Services | Canadian Web Designs`,
-      description: `${data.name} SEO that ranks — local keyword strategy, GBP optimization & citation building. ${config.reviewCount}+ reviews. Free audit: (647) 689-6069.`,
+      description: `${data.name} SEO that ranks — local keyword strategy, GBP optimization & citation building. ${reviewCountPlus(config.reviewCount)} reviews. Free audit: (647) 689-6069.`,
       url: `https://canadianwebdesigns.ca/seo/${city}`,
       images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: `SEO ${data.name} — Canadian Web Designs` }],
     },
@@ -370,7 +370,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">{data.name}, {data.province} — {config.reviewCount}+ Five-Star Reviews</span>
+              <span className="text-white/80 text-sm font-medium tracking-wide">{data.name}, {data.province} — {reviewCountPlus(config.reviewCount)} Google Reviews</span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", lineHeight: 1.05 }}>
               {data.name}{" "}<span className="gradient-text-animated">SEO Services</span>
@@ -394,7 +394,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
               </Link>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {[`${config.reviewCount}+ Google Reviews`, "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
+              {[`${reviewCountPlus(config.reviewCount)} Google Reviews`, "Custom-Quoted Packages", "No Lock-In Contracts"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -434,7 +434,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "200+", label: "Five-Star Reviews" },
+                { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: data.population, label: `${data.name} Population` },
                 { value: data.difficulty, label: "Keyword Difficulty" },
                 { value: "60–120", label: "Days to Page 1" },

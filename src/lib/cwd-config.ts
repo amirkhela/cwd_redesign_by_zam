@@ -10,8 +10,12 @@ export const cwdConfig: ClientConfig = {
   teamSize: 25,
 
   // Reputation
-  rating: 4.9,
-  reviewCount: 200,
+  // Read off the public Toronto Google listing (Maps cid 1764590269626849918) on
+  // 2026-09-14: 4.8 stars, 194 reviews, 177 of them five-star. The Brampton
+  // listing (cid 3493474530954667891) has no reviews. Visible copy rounds the
+  // count DOWN via reviewCountPlus() (194 -> "190+"), never up.
+  rating: 4.8,
+  reviewCount: 194,
 
   // Contact
   phone: "647-689-6069",

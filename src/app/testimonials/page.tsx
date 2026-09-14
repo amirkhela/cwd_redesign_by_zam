@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import StarRating from "@/components/StarRating";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
@@ -11,19 +11,19 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "200+ Five-Star Reviews | Client Results | Canadian Web Designs" },
-  description: `Read ${config.reviewCount}+ verified five-star Google reviews from real ${config.businessName} clients — 300% traffic growth, page 1 rankings, and doubled leads for restaurants, clinics, contractors & e-commerce stores across Canada. See what results look like.`,
+  title: { absolute: `${reviewCountPlus(config.reviewCount)} Google Reviews | Client Results | Canadian Web Designs` },
+  description: `Read ${reviewCountPlus(config.reviewCount)} Google reviews from real ${config.businessName} clients — 300% traffic growth, page 1 rankings, and doubled leads for restaurants, clinics, contractors & e-commerce stores across Canada. See what results look like.`,
   alternates: { canonical: "/testimonials" },
   openGraph: {
-    title: "200+ Five-Star Reviews | Real Client Results Across Canada | Canadian Web Designs",
-    description: `Read ${config.reviewCount}+ verified five-star Google reviews from real ${config.businessName} clients — traffic growth, page 1 rankings, and more leads across Canada.`,
+    title: `${reviewCountPlus(config.reviewCount)} Google Reviews | Real Client Results Across Canada | Canadian Web Designs`,
+    description: `Read ${reviewCountPlus(config.reviewCount)} Google reviews from real ${config.businessName} clients — traffic growth, page 1 rankings, and more leads across Canada.`,
     url: "https://canadianwebdesigns.ca/testimonials",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "200+ Five-Star Reviews | Canadian Web Designs",
-    description: `${config.reviewCount}+ verified five-star reviews from real clients across Canada.`,
+    title: `${reviewCountPlus(config.reviewCount)} Google Reviews | Canadian Web Designs`,
+    description: `${reviewCountPlus(config.reviewCount)} Google reviews from real clients across Canada.`,
   },
 };
 
@@ -68,7 +68,7 @@ export default function TestimonialsPage() {
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">{config.reviewCount}+ Verified Reviews</span>
+              <span className="text-white/80 text-sm font-medium tracking-wide">{reviewCountPlus(config.reviewCount)} Google Reviews</span>
             </div>
             <h1
               className="hero-fade-up-1 font-black text-white mb-5"
@@ -78,8 +78,8 @@ export default function TestimonialsPage() {
               <span className="gradient-text-animated">Real Results</span>
             </h1>
             <div className="hero-fade-up-2 flex items-center gap-3 mb-4">
-              <StarRating rating={5} size="lg" />
-              <span className="text-white/70 font-semibold">{config.rating ?? 5}/5 — {config.reviewCount}+ reviews</span>
+              <StarRating rating={config.rating ?? 5} size="lg" />
+              <span className="text-white/70 font-semibold">{config.rating ?? 5}/5 — {reviewCountPlus(config.reviewCount)} reviews</span>
             </div>
             <p className="hero-fade-up-3 text-xl text-white/60 leading-relaxed">
               Don&apos;t take our word for it. See what Canadian business owners say about working with us.
@@ -111,7 +111,7 @@ export default function TestimonialsPage() {
           {/* Stats row */}
           <div className="grid grid-cols-3 gap-4 mb-14 reveal">
             {[
-              { value: `${config.reviewCount}+`, label: "Five-Star Reviews" },
+              { value: `${reviewCountPlus(config.reviewCount)}`, label: "Google Reviews" },
               { value: String(config.rating ?? 5), label: "Average Rating" },
               { value: `${config.cities.length}+`, label: "Cities Served" },
             ].map((s) => (

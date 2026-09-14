@@ -1,6 +1,6 @@
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import StarRating from "@/components/StarRating";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 
 const config = getConfig();
 
@@ -91,9 +91,9 @@ export default function QuoteFormSection({
             </div>
 
             <div className="flex items-center gap-3">
-              <StarRating rating={5} size="md" />
+              <StarRating rating={config.rating ?? 5} size="md" />
               <span className="text-white/50 text-sm">
-                {config.reviewCount}+ Five Star Reviews on Google
+                {reviewCountPlus(config.reviewCount)} Reviews on Google
               </span>
             </div>
           </div>

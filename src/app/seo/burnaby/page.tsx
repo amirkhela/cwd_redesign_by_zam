@@ -3,7 +3,7 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 
@@ -12,7 +12,7 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "SEO Burnaby BC | SEO Services | Canadian Web Designs" },
   description:
-    "Burnaby SEO — difficulty as low as 12 means page 1 in 30–60 days. Brentwood, Metrotown & Lougheed. 200+ reviews. Free audit — (647) 689-6069.",
+    `Burnaby SEO — difficulty as low as 12 means page 1 in 30–60 days. Brentwood, Metrotown & Lougheed. ${reviewCountPlus(config.reviewCount)} reviews. Free audit — (647) 689-6069.`,
   alternates: { canonical: "/seo/burnaby" },
   openGraph: {
     title: "SEO Burnaby BC | SEO Services | Canadian Web Designs",
@@ -189,7 +189,7 @@ export default function SeoByurnabyPage() {
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Burnaby, BC — {config.reviewCount}+ Five-Star Reviews
+                Burnaby, BC — {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5"
@@ -216,7 +216,7 @@ export default function SeoByurnabyPage() {
               </Link>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["200+ Google Reviews", "Positions 1-10 in 30–60 Days", "Burnaby SEO Diff: 12"].map((t) => (
+              {[`${reviewCountPlus(config.reviewCount)} Google Reviews`, "Positions 1-10 in 30–60 Days", "Burnaby SEO Diff: 12"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -272,7 +272,7 @@ export default function SeoByurnabyPage() {
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
               {[
-                { value: "200+", label: "Five-Star Reviews" },
+                { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "Diff 12", label: "Burnaby Keyword Difficulty" },
                 { value: "30–60", label: "Days to First Results" },
                 { value: "100%", label: "Results Guaranteed" },

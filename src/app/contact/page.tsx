@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import ContactForm from "@/components/ContactForm";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
@@ -10,12 +10,12 @@ const config = getConfig();
 export const metadata: Metadata = {
   title: { absolute: "Contact Canadian Web Designs | Free Web Design Quote in Canada" },
   description:
-    "Get a free, no-obligation web design or SEO quote — most clients hear back within 2 hours. Canada's top-rated agency. 200+ five-star reviews. Call (647) 689-6069 or fill out the form. 24+ cities.",
+    `Get a free, no-obligation web design or SEO quote — most clients hear back within 2 hours. Canada's top-rated agency. ${reviewCountPlus(config.reviewCount)} Google reviews. Call (647) 689-6069 or fill out the form. 24+ cities.`,
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Canadian Web Designs | Free Web Design Quote in Canada",
     description:
-      "Get a free web design or SEO quote from Canada's top-rated agency — most clients hear back within 2 hours. 200+ reviews. No commitment. Call (647) 689-6069 or send the form.",
+      `Get a free web design or SEO quote from Canada's top-rated agency — most clients hear back within 2 hours. ${reviewCountPlus(config.reviewCount)} reviews. No commitment. Call (647) 689-6069 or send the form.`,
     url: "https://canadianwebdesigns.ca/contact",
     images: [{ url: "/images/contact-right.png", width: 1200, height: 630, alt: "Contact Canadian Web Designs" }],
   },
@@ -175,7 +175,7 @@ export default function ContactPage() {
               >
                 <p className="text-[#00AADF] font-bold text-sm mb-3">Why businesses trust us:</p>
                 <div className="space-y-2">
-                  {["No long-term contracts", "Free initial consultation", "Results guaranteed", `${config.reviewCount}+ five-star reviews`].map((t) => (
+                  {["No long-term contracts", "Free initial consultation", "Results guaranteed", `${reviewCountPlus(config.reviewCount)} Google reviews`].map((t) => (
                     <div key={t} className="flex items-center gap-2">
                       <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

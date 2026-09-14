@@ -4,7 +4,7 @@ slug: "why-canadian-web-designs-is-the-go-to-web-design-company-for-your-digital
 date: "2024-08-20"
 updated: "2026-07-23"
 author: "Amir Khela"
-description: "200+ five-star reviews, websites from $299, and SEO baked into every build — why Canadian businesses choose CWD as their web design partner."
+description: "190+ Google reviews, websites from $299, and SEO baked into every build — why Canadian businesses choose CWD as their web design partner."
 keywords: ["why canadian web designs is the go to web design company for your digital success","Web Design"]
 category: "Web Design"
 featuredImage: "/blog/posts/canadian-web-designs-team.jpg"
@@ -68,5 +68,5 @@ featuredImage: "/blog/posts/canadian-web-designs-team.jpg"
 
 <p>If you’re looking to create a website that not only looks great but also drives results, <a href="/contact">Canadian Web Designs</a> is the company in <a href="https://maps.app.goo.gl/rwxf9sjTnyvNcHBQ7">Ontario</a> you can trust. From concept to launch and beyond, they provide the solutions and support you need to succeed in the digital world.</p>
 <h3 class="wp-block-heading">See the Difference for Yourself</h3>
-<p>Claims are easy — proof is better. Browse our <a href="/portfolio">portfolio of Canadian websites</a>, read our <a href="/testimonials">200+ five-star reviews</a>, and explore the services behind the results: <a href="/services/web-design-development">web design &amp; development</a>, <a href="/services/seo">SEO</a>, and <a href="/services/website-maintenance">ongoing website maintenance</a>.</p>
+<p>Claims are easy — proof is better. Browse our <a href="/portfolio">portfolio of Canadian websites</a>, read our <a href="/reviews">190+ Google reviews</a>, and explore the services behind the results: <a href="/services/web-design-development">web design &amp; development</a>, <a href="/services/seo">SEO</a>, and <a href="/services/website-maintenance">ongoing website maintenance</a>.</p>
 <p><strong><a href="/contact">Start with a free quote</a></strong> — most clients hear back within hours.</p>

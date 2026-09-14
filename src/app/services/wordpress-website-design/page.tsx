@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getConfig } from "@/lib/client-config";
+import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
 import QuoteFormSection from "@/components/QuoteFormSection";
@@ -9,11 +9,11 @@ const config = getConfig();
 
 export const metadata: Metadata = {
   title: { absolute: "WordPress Website Design Canada | Custom WordPress Experts" },
-  description: "Custom WordPress website design & development — hand-coded themes, no bloated page builders, speed and SEO built in. 200+ five-star reviews. From $299.",
+  description: `Custom WordPress website design & development — hand-coded themes, no bloated page builders, speed and SEO built in. ${reviewCountPlus(config.reviewCount)} Google reviews. From $299.`,
   alternates: { canonical: "/services/wordpress-website-design" },
   openGraph: {
     title: "WordPress Website Design Canada | Custom WordPress Experts",
-    description: "Custom WordPress website design & development — hand-coded themes, no bloated page builders, speed and SEO built in. 200+ five-star reviews. From $299.",
+    description: `Custom WordPress website design & development — hand-coded themes, no bloated page builders, speed and SEO built in. ${reviewCountPlus(config.reviewCount)} Google reviews. From $299.`,
     url: "https://canadianwebdesigns.ca/services/wordpress-website-design",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "WordPress website design and development in Canada — Canadian Web Designs" }],
   },
@@ -142,7 +142,7 @@ export default function WordPressWebsiteDesignPage() {
           <div className="max-w-2xl">
             <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
               <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">WordPress Experts — {config.reviewCount}+ Five-Star Reviews</span>
+              <span className="text-white/80 text-sm font-medium tracking-wide">WordPress Experts — {reviewCountPlus(config.reviewCount)} Google Reviews</span>
             </div>
             <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", lineHeight: 1.05 }}>
               WordPress Website Design{" "}<span className="gradient-text-animated">&amp; Development Canada</span>
@@ -198,7 +198,7 @@ export default function WordPressWebsiteDesignPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: "41.5%", label: "Of All Websites Run WordPress" }, { value: "$299", label: "WordPress Sites From" }, { value: "200+", label: "Five-Star Reviews" }, { value: "$99/mo", label: "Maintenance Plans From" }].map((s) => (
+              {[{ value: "41.5%", label: "Of All Websites Run WordPress" }, { value: "$299", label: "WordPress Sites From" }, { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "$99/mo", label: "Maintenance Plans From" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>
