@@ -8,6 +8,12 @@ import type { IndustryPage } from "./types";
  * law society beyond "we follow your provincial rules", no invented outcomes,
  * and the FAQs are this page's own -- the blog's `faq:` frontmatter stays on
  * the blog.
+ *
+ * CHECKED 2026-09-14. Client sites are not hosted in Canada or in the client's
+ * own name, the $299 tier is not the custom-design tier on every page that
+ * prices it, local SEO set-up is sold as a plan, and there is no bilingual site
+ * in the portfolio to point to -- so the copy says "can build", and "as your
+ * firm understands them" now sits in the intro as well as the FAQ.
  */
 export const WEB_DESIGN_FOR_LAWYERS: IndustryPage = {
   kind: "industry",
@@ -16,9 +22,9 @@ export const WEB_DESIGN_FOR_LAWYERS: IndustryPage = {
   h1: "Web design for lawyers: a website built to win the consultation",
   metaTitle: "Web Design for Lawyers Canada | Law Firm Websites That Convert | Canadian Web Designs",
   metaDescription:
-    "Law firm website design for Canadian lawyers: a page per practice area, lawyer profiles that build trust, a clear next step on every page, your Google reviews on show, and local SEO from day one.",
+    "Law firm website design for Canadian lawyers: a page per practice area, lawyer profiles that build trust, a clear next step on every page, reviews where your rules permit them, and local SEO.",
   intro:
-    "Someone looking for a lawyer is usually comparing three or four firms in other tabs, under stress, deciding who to trust with something that matters. We build law firm websites that make that decision easy: a page for each practice area, lawyer profiles with real photos and real credentials, a clear next step on every page, and your Google reviews where a client can see them. We write to your province's advertising rules and you approve every word. Built and hosted in your name, in Canada, from $299.",
+    "Someone looking for a lawyer is usually comparing three or four firms in other tabs, under stress, deciding who to trust with something that matters. We build law firm websites that make that decision easy: a page for each practice area, lawyer profiles with real photos and real credentials, a clear next step on every page, and, where your provincial rules permit it, your Google reviews where a client can see them. We write to your province's advertising rules as your firm understands them, and you approve every word. Websites start at $299.",
   painPoints: [
     {
       title: "A generic hero and nothing specific",
@@ -58,8 +64,8 @@ export const WEB_DESIGN_FOR_LAWYERS: IndustryPage = {
       href: "/reviews",
     },
     {
-      title: "Local SEO from day one",
-      body: "Google Business Profile set-up, structured data for a legal practice, Search Console, and consistent name, address and phone across the directories clients use.",
+      title: "Local SEO",
+      body: "With a local SEO plan: Google Business Profile set-up, structured data for a legal practice, and consistent name, address and phone across the directories clients use.",
       href: "/services/seo",
     },
     {
@@ -85,12 +91,12 @@ export const WEB_DESIGN_FOR_LAWYERS: IndustryPage = {
     },
     {
       q: "Can you build a bilingual English and French site?",
-      a: "Yes. We build bilingual sites with each language on its own URLs, so both versions can be found on their own searches and each page has a matching page in the other language.",
+      a: "Yes. We can build a bilingual site with each language on its own URLs, so both versions can be found on their own searches and each page has a matching page in the other language.",
     },
     {
       q: "What does a law firm website cost, and who owns it?",
-      a: "Custom websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours; we host it in your name and you can take it anywhere.",
+      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours, and you can move the site to another host at any time.",
     },
   ],
-  reviewedOn: "2026-09-13",
+  reviewedOn: "2026-09-14",
 };

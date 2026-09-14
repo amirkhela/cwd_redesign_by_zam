@@ -6,7 +6,7 @@ import LastReviewed from "@/components/LastReviewed";
 import { REVIEWS_PAGE as data } from "@/content/compare";
 
 /**
- * /reviews -- the ten Google reviews, verbatim.
+ * /reviews -- the Google reviews, verbatim (nine since the 2026-09-14 re-check).
  *
  * Schema on this page is the breadcrumb (which carries the WebPage node) and
  * one FAQPage. Nothing else: the site-wide LocalBusiness in layout.tsx already
@@ -159,9 +159,7 @@ export default function ReviewsPage() {
             ))}
           </div>
           <p className="text-center text-gray-500 text-sm mt-8 max-w-2xl mx-auto">
-            Looking for the wider set of client stories? See our{" "}
-            <Link href="/testimonials" className="text-[#00AADF] font-semibold hover:underline">testimonials</Link>
-            {" "}and{" "}
+            Want to see the work these clients describe? See our{" "}
             <Link href="/portfolio" className="text-[#00AADF] font-semibold hover:underline">portfolio</Link>.
           </p>
         </div>

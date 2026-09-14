@@ -7,6 +7,11 @@ import type { IndustryPage } from "./types";
  * Rules that bind this copy: no invented results ("300% more calls"), no
  * customer or job numbers, and the FAQs are this page's own -- the blog's
  * `faq:` frontmatter stays on the blog so one FAQPage never sits on two URLs.
+ *
+ * CHECKED 2026-09-14. Client sites are not hosted in Canada or in the client's
+ * own name, the $299 tier is not the custom-design tier on every page that
+ * prices it, and Google Business Profile set-up and citations are sold as a
+ * local SEO plan -- so the copy no longer says any of those.
  */
 export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
   kind: "industry",
@@ -15,9 +20,9 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
   h1: "Web design for plumbers: a website built to get the phone ringing",
   metaTitle: "Web Design for Plumbers Canada | Click-to-Call Plumbing Websites | Canadian Web Designs",
   metaDescription:
-    "Plumber website design for Canadian plumbing companies: click-to-call on every page, a page per service and per service area, your Google reviews on show, and local SEO from day one.",
+    "Plumber website design for Canadian plumbing companies: click-to-call on every page, a page per service and per service area, your Google reviews on show, and local SEO.",
   intro:
-    "A plumbing customer is often standing in water when they search. They are on a phone, they want a number they can tap, and they will call whoever makes that easiest. We build plumbing websites around that moment: one tap to call, a page for every service you offer and every area you cover, and your real Google reviews where a nervous homeowner can see them. Built and hosted in your name, in Canada, from $299.",
+    "A plumbing customer is often standing in water when they search. They are on a phone, they want a number they can tap, and they will call whoever makes that easiest. We build plumbing websites around that moment: one tap to call, a page for every service you offer and every area you cover, and your real Google reviews where a nervous homeowner can see them. Websites start at $299.",
   painPoints: [
     {
       title: "The phone number is buried",
@@ -58,8 +63,8 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
       href: "/reviews",
     },
     {
-      title: "Local SEO from day one",
-      body: "Google Business Profile set-up, structured data for a local service business, Search Console, and citations that keep your name, address and phone consistent everywhere.",
+      title: "Local SEO",
+      body: "With a local SEO plan: Google Business Profile set-up, structured data for a local service business, and citations that keep your name, address and phone consistent everywhere.",
       href: "/services/seo",
     },
     {
@@ -89,8 +94,8 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
     },
     {
       q: "What does a plumber website cost, and who owns it?",
-      a: "Custom websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours; we host it in your name and you can take it anywhere.",
+      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours, and you can move the site to another host at any time.",
     },
   ],
-  reviewedOn: "2026-09-13",
+  reviewedOn: "2026-09-14",
 };

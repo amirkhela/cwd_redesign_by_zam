@@ -7,6 +7,13 @@ import type { IndustryPage } from "./types";
  * Rules that bind this copy: no medical claims of any kind, no patient
  * numbers, no invented results, and the FAQs are this page's own -- the
  * blog's `faq:` frontmatter stays on the blog.
+ *
+ * CHECKED 2026-09-14, and four claims came out. Client sites are not hosted in
+ * Canada or in the client's own name; the $299 tier is not the custom-design
+ * tier on every page that prices it; Google Business Profile set-up and
+ * citations are sold as local SEO, not built into every site; and dental
+ * regulators restrict testimonials in advertising, so reviews are offered only
+ * where the practice's regulator permits them.
  */
 export const WEB_DESIGN_FOR_DENTISTS: IndustryPage = {
   kind: "industry",
@@ -15,13 +22,13 @@ export const WEB_DESIGN_FOR_DENTISTS: IndustryPage = {
   h1: "Web design for dentists: a website built to book appointments",
   metaTitle: "Web Design for Dentists Canada | Dental Websites That Book | Canadian Web Designs",
   metaDescription:
-    "Dental website design for Canadian practices: an appointment request on every page, a page per treatment, real photos of your office, your Google reviews on show, and local SEO from day one.",
+    "Dental website design for Canadian practices: an appointment request on every page, a page per treatment, real photos of your office, reviews where your regulator permits them, and local SEO.",
   intro:
-    "A new patient lands on a dental website with a specific question: do you take my insurance, can I book without phoning, and can I trust you. We build dental websites that answer all three before they close the tab: an appointment request on every page, a clear page for each treatment, real photos of the practice and team, and your Google reviews where a nervous patient can see them. Built and hosted in your name, in Canada, from $299.",
+    "A new patient lands on a dental website with a specific question: do you take my insurance, can I book without phoning, and can I trust you. We build dental websites that answer all three before they close the tab: an appointment request on every page, a clear page for each treatment, real photos of the practice and team, and, where your dental regulator permits it, your Google reviews where a nervous patient can see them. Websites start at $299.",
   painPoints: [
     {
       title: "Booking means phoning during office hours",
-      body: "Many patients look for a dentist in the evening. If the only way to book is a phone number that rings through to voicemail, that patient books with the practice that offered a form.",
+      body: "Some patients look for a dentist in the evening. If the only way to book is a phone number that rings through to voicemail, that patient books with the practice that offered a form.",
     },
     {
       title: "Stock photos instead of your practice",
@@ -44,7 +51,7 @@ export const WEB_DESIGN_FOR_DENTISTS: IndustryPage = {
     },
     {
       title: "A page for every treatment",
-      body: "Hygiene, restorative, cosmetic, orthodontic, emergency and children's dentistry each get their own page, written plainly and structured for how patients search.",
+      body: "Hygiene, restorative, cosmetic, orthodontic, emergency and children's dentistry each get their own page, written plainly, structured for how patients search, and clear about whether the treating dentist is a general dentist or a specialist.",
       href: "/services/web-design-development",
     },
     {
@@ -52,13 +59,13 @@ export const WEB_DESIGN_FOR_DENTISTS: IndustryPage = {
       body: "We plan the shot list with you: the entrance, the reception, a treatment room, the team. The site then shows a patient the place they will actually walk into.",
     },
     {
-      title: "Your Google reviews on the site",
-      body: "Real reviews, shown with the reviewer's name and a link back to your Google listing, so the proof is verifiable rather than pasted in.",
+      title: "Your Google reviews, where permitted",
+      body: "Where your dental regulator permits testimonials, real reviews shown with the reviewer's name and a link back to your Google listing. Where it does not, we leave them off.",
       href: "/reviews",
     },
     {
-      title: "Local SEO from day one",
-      body: "Google Business Profile set-up, structured data for a dental practice, Search Console, and consistent name, address and phone across the directories patients use.",
+      title: "Local SEO",
+      body: "With a local SEO plan: Google Business Profile set-up, structured data for a dental practice, and consistent name, address and phone across the directories patients use.",
       href: "/services/seo",
     },
     {
@@ -88,8 +95,8 @@ export const WEB_DESIGN_FOR_DENTISTS: IndustryPage = {
     },
     {
       q: "What does a dental website cost, and who owns it?",
-      a: "Custom websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours; we host it in your name and you can take it anywhere.",
+      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours, and you can move the site to another host at any time.",
     },
   ],
-  reviewedOn: "2026-09-13",
+  reviewedOn: "2026-09-14",
 };

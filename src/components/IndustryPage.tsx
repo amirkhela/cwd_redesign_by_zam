@@ -169,7 +169,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
             ))}
           </div>
           <div className="max-w-3xl mx-auto mt-8">
-            <LastReviewed reviewedOn={data.reviewedOn} note="Every claim on this page was re-checked on this date." />
+            <LastReviewed reviewedOn={data.reviewedOn} note="This page's own copy was last reviewed on this date." />
           </div>
         </div>
       </section>

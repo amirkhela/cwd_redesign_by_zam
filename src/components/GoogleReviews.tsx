@@ -103,10 +103,9 @@ function ReviewCard({ review, colorIdx }: { review: typeof REVIEWS[0]; colorIdx:
         <GoogleIcon size={20} />
       </div>
 
-      {/* Stars + time */}
+      {/* Stars */}
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
         <Stars size={15} />
-        <span style={{ fontSize: 12, color: "#70757a" }}>{review.time}</span>
       </div>
 
       {/* Review text */}
