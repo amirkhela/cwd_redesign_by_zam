@@ -51,7 +51,6 @@ const projects: Project[] = [
   { name: "EL Afrek Lounge",              url: "el-afriklounge.com",                category: "Food & Beverage", localImage: "/portfolio/el-afrek-lounge.jpg" },
   { name: "Kozak Food",                   url: "kozakfood.com",                     category: "Food & Beverage", localImage: "/portfolio/kozak-food.png" },
   { name: "Sufra Nuts",                   url: "sufranuts.com",                     category: "Food & Beverage", localImage: "/portfolio/sufra-nuts.png" },
-  { name: "Tealicious Tea Boutique",      url: "tealiciousteabouteaque.com",        category: "Food & Beverage" },
   { name: "AMX Kitchens",                 url: "amxkitchens.com",                   category: "Food & Beverage", localImage: "/portfolio/amx-kitchens.png" },
 
   // ── Transportation & Logistics ─────────────────────────

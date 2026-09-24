@@ -33,7 +33,6 @@ const SITES = [
   { name: "serenity-saffron",            url: "https://serenitysaffron.com" },
   { name: "kozak-food",                  url: "https://kozakfood.com" },
   { name: "sufra-nuts",                  url: "https://sufranuts.com" },
-  { name: "tealicious-tea",              url: "https://tealiciousteabouteaque.com" },
   { name: "amx-kitchens",               url: "https://amxkitchens.com" },
   { name: "taxi-halifax-airport",        url: "https://taxihalifaxairport.com" },
   { name: "transnet-canada",             url: "https://transnetcanada.ca" },
