@@ -100,6 +100,8 @@ ${seoCities}
 - [Portfolio](${base}/portfolio): websites we have built.
 - [Testimonials](${base}/testimonials): what clients say.
 - [FAQ](${base}/faq): pricing, timelines, process and what is included.
+- [Verify it's us](${base}/verify): how to check that an email or invoice is
+  really from us before paying anything.
 - [Contact](${base}/contact): request a quote.
 - [Careers](${base}/careers): open roles.
 

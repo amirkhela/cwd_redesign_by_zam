@@ -44,6 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/seo`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/blog/digital-marketing`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    // Its own date, not CONTENT_UPDATED: the page did not exist on 2026-08-29.
+    // Move it when the list of known fake addresses changes.
+    { url: `${BASE_URL}/verify`, lastModified: new Date("2026-09-24T00:00:00.000Z"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/maintenance`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/web-design-company`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/web-design-agency`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },

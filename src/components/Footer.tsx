@@ -79,6 +79,7 @@ export default function Footer() {
                 { href: "/web-design-agency", label: "Web Design Agency" },
                 { href: "/blog", label: "Blog" },
                 { href: "/faq", label: "FAQ" },
+                { href: "/verify", label: "Verify It's Us" },
                 { href: "/contact", label: "Get In Touch" },
               ].map(({ href, label }) => (
                 <li key={href}>
@@ -125,6 +126,28 @@ export default function Footer() {
             </ul>
           </div>
 
+        </div>
+
+        {/* Payment safety -- scammers email clients as Amir; /verify explains the check */}
+        <div className="border-t border-white/10 py-3">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-x-6 gap-y-1 text-[0.8rem] text-gray-300">
+            <p className="flex items-start gap-2.5 pt-2 sm:pt-0">
+              <svg className="w-4 h-4 text-[#00AADF] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+              <span className="sm:text-balance">
+                <span className="text-white font-semibold">Payment safety:</span> we only take payment through
+                QuickBooks invoices or <span className="whitespace-nowrap">Interac e-Transfer</span> to CANADIAN WEBSITE DESIGNS INC. Amir never emails clients
+                asking for payment.
+              </span>
+            </p>
+            <Link
+              href="/verify"
+              className="text-[#00AADF] font-semibold hover:text-white transition-colors duration-200 min-h-[44px] pl-[26px] sm:pl-0 inline-flex items-center shrink-0 whitespace-nowrap"
+            >
+              How to verify us &rarr;
+            </Link>
+          </div>
         </div>
 
         {/* Bottom bar */}

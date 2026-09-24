@@ -21,6 +21,7 @@ const mainPages = [
   { href: "/portfolio", label: "Portfolio" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/faq", label: "FAQ" },
+  { href: "/verify", label: "Verify It's Us" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
