@@ -38,7 +38,6 @@ const projects: Project[] = [
   // ── Health & Wellness ──────────────────────────────────
   { name: "Rejuvenation by Dale",         url: "rejuvenationbydale.ca",             category: "Health & Wellness", localImage: "/portfolio/rejuvenation-by-dale.jpg" },
   { name: "Oshawa Ultrasound",            url: "oshawaimaging.ca",                  category: "Health & Wellness", localImage: "/portfolio/oshawa-ultrasound.jpg" },
-  { name: "TCM Wellness",                 url: "tcmwellness.ca",                    category: "Health & Wellness", localImage: "/portfolio/tcm-wellness.jpg" },
   { name: "Fade Central",                 url: "fadecentral.ca",                    category: "Health & Wellness", localImage: "/portfolio/fade-central.jpg" },
   { name: "Esmas Essiac Tea",             url: "esmasessiac.ca",                    category: "Health & Wellness", localImage: "/portfolio/esmas-essiac-tea.jpg" },
   { name: "Accelicare",                   url: "accelicare.com",                    category: "Health & Wellness", localImage: "/portfolio/accelicare.png" },
