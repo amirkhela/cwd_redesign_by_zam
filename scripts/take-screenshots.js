@@ -10,8 +10,6 @@ const OUT_DIR = path.resolve(__dirname, "../public/portfolio");
 const SITES = [
   { name: "mclaren-masonry",             url: "https://mclarenmasonry.ca" },
   { name: "heavy-iron-plant",            url: "https://heavyironplant.com" },
-  { name: "emergency-plumbing-toronto",  url: "https://emergencyplumbingtoronto.com" },
-  { name: "emergency-plumbing-markham",  url: "https://emergencyplumbingmarkham.com" },
   { name: "north-5-contracting",         url: "https://north5contracting.ca" },
   { name: "amac-stucco",                 url: "https://amacstucco.ca" },
   { name: "d-squared-construction",      url: "https://dsquaredconstruction.ca" },

@@ -15,8 +15,6 @@ const projects: Project[] = [
   { name: "Gator Dumpster Services",      url: "gatordumpsterservices.com",         category: "Construction & Trades", localImage: "/portfolio/gator-dumpster.jpg" },
   { name: "McLaren Masonry",              url: "mclarenmasonry.ca",                 category: "Construction & Trades" },
   { name: "Heavy Iron Plant",             url: "heavyironplant.com",                category: "Construction & Trades", localImage: "/portfolio/heavy-iron-plant.png" },
-  { name: "Emergency Plumbing Toronto",   url: "emergencyplumbingtoronto.com",      category: "Construction & Trades", localImage: "/portfolio/emergency-plumbing-toronto.png" },
-  { name: "Emergency Plumbing Markham",   url: "emergencyplumbingmarkham.com",      category: "Construction & Trades", localImage: "/portfolio/emergency-plumbing-markham.png" },
   { name: "North 5 Contracting",          url: "north5contracting.ca",              category: "Construction & Trades", localImage: "/portfolio/north-5-contracting.png" },
   { name: "AMAC Stucco",                  url: "amacstucco.ca",                     category: "Construction & Trades", localImage: "/portfolio/amac-stucco.png" },
   { name: "D Squared Construction",       url: "dsquaredconstruction.ca",           category: "Construction & Trades", localImage: "/portfolio/d-squared-construction.png" },
