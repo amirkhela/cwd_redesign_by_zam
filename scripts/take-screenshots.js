@@ -42,7 +42,6 @@ const SITES = [
   { name: "instrumentum-group",          url: "https://instrumentumgroup.com" },
   { name: "shahgaldi-research-group",    url: "https://shahgaldiresearchgroup.ca" },
   { name: "fos-consulting",              url: "https://fosconsulting.ca" },
-  { name: "toren-associates",            url: "https://torenassociates.com" },
   { name: "hi-rise-financial",           url: "https://hirise-fp.com" },
   { name: "mr-bailiff-inc",             url: "https://mrbailiffinc.ca" },
   { name: "canada-tenant",              url: "https://canadatenant.ca" },

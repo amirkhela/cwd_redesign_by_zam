@@ -67,7 +67,6 @@ const projects: Project[] = [
   { name: "Instrumentum Group",           url: "instrumentumgroup.com",             category: "Business & Professional" },
   { name: "Shahgaldi Research Group",     url: "shahgaldiresearchgroup.ca",         category: "Business & Professional", localImage: "/portfolio/shahgaldi-research-group.png" },
   { name: "FOS Consulting",               url: "fosconsulting.ca",                  category: "Business & Professional", localImage: "/portfolio/fos-consulting.png" },
-  { name: "Toren Associates",             url: "torenassociates.com",               category: "Business & Professional", localImage: "/portfolio/toren-associates.png" },
   { name: "Hi-Rise Financial",            url: "hirise-fp.com",                     category: "Business & Professional", localImage: "/portfolio/hi-rise-financial.png" },
   { name: "Mr Bailiff Inc",               url: "mrbailiffinc.ca",                   category: "Business & Professional", localImage: "/portfolio/mr-bailiff-inc.png" },
   { name: "Canada Tenant",                url: "canadatenant.ca",                   category: "Business & Professional", localImage: "/portfolio/canada-tenant.png" },
