@@ -114,7 +114,7 @@ const portfolio = [
   { src: "/portfolio/fade-central.webp",          name: "Fade Central",              tag: "Web Design" },
   { src: "/portfolio/swj-modern-creations.webp",  name: "SWJ Modern Creations",      tag: "Web Design" },
   { src: "/portfolio/el-afrek-lounge.webp",       name: "EL Afrek Lounge",           tag: "Web Design" },
-  { src: "/portfolio/sierra-college.webp",        name: "Sierra College of Business", tag: "Web Design" },
+  { src: "/portfolio/heavy-iron-plant.png",      name: "Heavy Iron Plant",          tag: "Web Design" },
   { src: "/portfolio/sonia-aimy.webp",            name: "Sonia Aimy",                tag: "Web Design" },
 ];
 

@@ -28,7 +28,6 @@ const projects: Project[] = [
   { name: "Remove My Walls",              url: "removemywalls.ca",                  category: "Construction & Trades", localImage: "/portfolio/remove-my-walls.jpg" },
 
   // ── Home Services ──────────────────────────────────────
-  { name: "Ewowzers Cleaning",            url: "ewowzerscleaning.com",              category: "Home Services", localImage: "/portfolio/ewowzers-cleaning.webp" },
   { name: "Springview Window Cleaning",   url: "springviewwindowcleaning.com",      category: "Home Services", localImage: "/portfolio/springview-window-cleaning.png" },
   { name: "Homestone",                    url: "homestone.ca",                      category: "Home Services", localImage: "/portfolio/homestone.png" },
   { name: "Bird Sitting Brampton",        url: "birdsittingbrampton.ca",            category: "Home Services", localImage: "/portfolio/bird-sitting-brampton.png" },
@@ -39,12 +38,10 @@ const projects: Project[] = [
   { name: "Oshawa Ultrasound",            url: "oshawaimaging.ca",                  category: "Health & Wellness", localImage: "/portfolio/oshawa-ultrasound.webp" },
   { name: "Fade Central",                 url: "fadecentral.ca",                    category: "Health & Wellness", localImage: "/portfolio/fade-central.webp" },
   { name: "Esmas Essiac Tea",             url: "esmasessiac.ca",                    category: "Health & Wellness", localImage: "/portfolio/esmas-essiac-tea.webp" },
-  { name: "Accelicare",                   url: "accelicare.com",                    category: "Health & Wellness", localImage: "/portfolio/accelicare.png" },
   { name: "Cloud Pharmacy",               url: "cloudpharmacy.ca",                  category: "Health & Wellness", localImage: "/portfolio/cloud-pharmacy.jpg" },
   { name: "MedTech DIY",                  url: "medtechdiy.ca",                     category: "Health & Wellness", localImage: "/portfolio/medtech-diy.png" },
   { name: "Timely Cares",                 url: "timelycares.com",                   category: "Health & Wellness", localImage: "/portfolio/timely-cares.png" },
   { name: "Gently Touch Spa",             url: "gentlytouchspa.ca",                 category: "Health & Wellness", localImage: "/portfolio/gently-touch-spa.png" },
-  { name: "Serenity Saffron",             url: "serenitysaffron.com",               category: "Health & Wellness", localImage: "/portfolio/serenity-saffron.png" },
 
   // ── Food & Beverage ────────────────────────────────────
   { name: "EL Afrek Lounge",              url: "el-afriklounge.com",                category: "Food & Beverage", localImage: "/portfolio/el-afrek-lounge.webp" },
@@ -86,18 +83,15 @@ const projects: Project[] = [
   { name: "Sima Flower Designer",         url: "simaflowerdesigner.com",            category: "Events & Entertainment", localImage: "/portfolio/sima-flower-designer.png" },
 
   // ── Education & Non-Profit ─────────────────────────────
-  { name: "Sierra College of Business",   url: "sierracollegesl-edu.org",           category: "Education & Non-Profit", localImage: "/portfolio/sierra-college.webp" },
   { name: "Audio Book Fanatic",           url: "audiobookfanatic.net",              category: "Education & Non-Profit", localImage: "/portfolio/audio-book-fanatic.webp" },
   { name: "Social Global Studies",        url: "socialglobalstudies.com",           category: "Education & Non-Profit", localImage: "/portfolio/social-global-studies.png" },
   { name: "KAPMI Academy",                url: "kapmiacademy.com",                  category: "Education & Non-Profit" },
   { name: "Girl Impact",                  url: "girlimpact.ca",                     category: "Education & Non-Profit", localImage: "/portfolio/girl-impact.png" },
-  { name: "Jin Pin Sen",                  url: "jinpinsen.com",                     category: "Education & Non-Profit", localImage: "/portfolio/jin-pin-sen.png" },
 
   // ── Arts & Creative ────────────────────────────────────
   { name: "Kristina Blinova",             url: "photographicpoetry.ca",             category: "Arts & Creative", localImage: "/portfolio/kristina-blinova.webp" },
   { name: "Sonia Aimy",                   url: "soniaaimy.com",                     category: "Arts & Creative", localImage: "/portfolio/sonia-aimy.webp" },
   { name: "The Art of Ronnie Simon",      url: "theartofronniesimon.ca",            category: "Arts & Creative", localImage: "/portfolio/art-of-ronnie-simon.png" },
-  { name: "Victoria Shuter",              url: "victoriashuter.com",                category: "Arts & Creative", localImage: "/portfolio/victoria-shuter.png" },
 ];
 
 const CATEGORIES = [
