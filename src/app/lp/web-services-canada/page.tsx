@@ -85,7 +85,7 @@ const cities = [
 ];
 
 const featuredProjects = [
-  { name: "Cloud Pharmacy",       url: "cloudpharmacy.ca",      img: "/portfolio/cloud-pharmacy.png",       category: "Health & Wellness" },
+  { name: "Cloud Pharmacy",       url: "cloudpharmacy.ca",      img: "/portfolio/cloud-pharmacy.jpg",       category: "Health & Wellness" },
   { name: "Evolve Media Group",   url: "evolvemediagroup.ca",   img: "/portfolio/evolve-media-group.webp",   category: "Business & Professional" },
   { name: "Palazzo Talenti",      url: "palazzotalenti.ca",     img: "/portfolio/palazzo-talenti.png",      category: "Events & Entertainment" },
   { name: "Remove My Walls",      url: "removemywalls.ca",      img: "/portfolio/remove-my-walls.jpg",      category: "Construction & Trades" },
