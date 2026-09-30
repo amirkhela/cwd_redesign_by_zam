@@ -77,7 +77,6 @@ featuredImage: "/blog/posts/web-development-hosting-tips.jpg"
 <li><strong>Minimalistic Design:</strong> Less is more when it comes to creating an elegant, user-friendly interface.</li>
 </ol>
 
-<figure class="wp-block-image"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdC2FTAMlCUNgcT8FvdW6wKaH9MR8NszzVBL8T_TncATYCb2RLnQsqgYAG6j4guAa-XyYCGTt9YsdqGkzTDhjEx8ViuJqNQsbVqYMTzGGaX8lqUYL5iRDjAS-ZPHpiWEP6bAq1wLw?key=zruPOQT0bI5APinnRv5-igxL" alt="web hosting"/></figure>
 
 <h4 class="wp-block-heading">Canadian Web Designs: Your Partner for Success</h4>
 

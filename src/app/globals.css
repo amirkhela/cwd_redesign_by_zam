@@ -410,3 +410,9 @@ html { scroll-behavior: smooth; }
   font-size: 0.875rem;
   margin-top: 0.5rem;
 }
+
+/* Mobile: keep wide blog tables and long code inside the column */
+.blog-content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.blog-content code { overflow-wrap: anywhere; word-break: break-word; }
+.blog-content pre { overflow-x: auto; max-width: 100%; }
+.blog-content pre code { overflow-wrap: normal; word-break: normal; }

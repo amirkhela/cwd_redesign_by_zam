@@ -39,7 +39,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
   }
 
   const field =
-    "w-full px-4 py-3 rounded-xl text-sm text-white placeholder-white/40 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
+    "w-full px-4 py-3 rounded-xl text-base sm:text-sm text-white placeholder-white/40 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
   const fieldStyle = {
     background: "rgba(255,255,255,0.08)",
     border: "1px solid rgba(255,255,255,0.15)",

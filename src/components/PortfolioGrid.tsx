@@ -12,7 +12,7 @@ type Project = {
 // Only live, reachable sites
 const projects: Project[] = [
   // ── Construction & Trades ─────────────────────────────
-  { name: "Gator Dumpster Services",      url: "gatordumpsterservices.com",         category: "Construction & Trades", localImage: "/portfolio/gator-dumpster.jpg" },
+  { name: "Gator Dumpster Services",      url: "gatordumpsterservices.com",         category: "Construction & Trades", localImage: "/portfolio/gator-dumpster.webp" },
   { name: "McLaren Masonry",              url: "mclarenmasonry.ca",                 category: "Construction & Trades" },
   { name: "Heavy Iron Plant",             url: "heavyironplant.com",                category: "Construction & Trades", localImage: "/portfolio/heavy-iron-plant.png" },
   { name: "North 5 Contracting",          url: "north5contracting.ca",              category: "Construction & Trades", localImage: "/portfolio/north-5-contracting.png" },
@@ -28,7 +28,7 @@ const projects: Project[] = [
   { name: "Remove My Walls",              url: "removemywalls.ca",                  category: "Construction & Trades", localImage: "/portfolio/remove-my-walls.jpg" },
 
   // ── Home Services ──────────────────────────────────────
-  { name: "Ewowzers Cleaning",            url: "ewowzerscleaning.com",              category: "Home Services", localImage: "/portfolio/ewowzers-cleaning.jpg" },
+  { name: "Ewowzers Cleaning",            url: "ewowzerscleaning.com",              category: "Home Services", localImage: "/portfolio/ewowzers-cleaning.webp" },
   { name: "Springview Window Cleaning",   url: "springviewwindowcleaning.com",      category: "Home Services", localImage: "/portfolio/springview-window-cleaning.png" },
   { name: "Nicagon Cleaning Services",    url: "nicagoncleaningservices.ca",        category: "Home Services", localImage: "/portfolio/nicagon-cleaning-services.png" },
   { name: "Homestone",                    url: "homestone.ca",                      category: "Home Services", localImage: "/portfolio/homestone.png" },
@@ -36,10 +36,10 @@ const projects: Project[] = [
   { name: "Speed Boards",                 url: "speedboards.ca",                    category: "Home Services", localImage: "/portfolio/speed-boards.png" },
 
   // ── Health & Wellness ──────────────────────────────────
-  { name: "Rejuvenation by Dale",         url: "rejuvenationbydale.ca",             category: "Health & Wellness", localImage: "/portfolio/rejuvenation-by-dale.jpg" },
-  { name: "Oshawa Ultrasound",            url: "oshawaimaging.ca",                  category: "Health & Wellness", localImage: "/portfolio/oshawa-ultrasound.jpg" },
-  { name: "Fade Central",                 url: "fadecentral.ca",                    category: "Health & Wellness", localImage: "/portfolio/fade-central.jpg" },
-  { name: "Esmas Essiac Tea",             url: "esmasessiac.ca",                    category: "Health & Wellness", localImage: "/portfolio/esmas-essiac-tea.jpg" },
+  { name: "Rejuvenation by Dale",         url: "rejuvenationbydale.ca",             category: "Health & Wellness", localImage: "/portfolio/rejuvenation-by-dale.webp" },
+  { name: "Oshawa Ultrasound",            url: "oshawaimaging.ca",                  category: "Health & Wellness", localImage: "/portfolio/oshawa-ultrasound.webp" },
+  { name: "Fade Central",                 url: "fadecentral.ca",                    category: "Health & Wellness", localImage: "/portfolio/fade-central.webp" },
+  { name: "Esmas Essiac Tea",             url: "esmasessiac.ca",                    category: "Health & Wellness", localImage: "/portfolio/esmas-essiac-tea.webp" },
   { name: "Accelicare",                   url: "accelicare.com",                    category: "Health & Wellness", localImage: "/portfolio/accelicare.png" },
   { name: "Cloud Pharmacy",               url: "cloudpharmacy.ca",                  category: "Health & Wellness", localImage: "/portfolio/cloud-pharmacy.png" },
   { name: "MedTech DIY",                  url: "medtechdiy.ca",                     category: "Health & Wellness", localImage: "/portfolio/medtech-diy.png" },
@@ -48,7 +48,7 @@ const projects: Project[] = [
   { name: "Serenity Saffron",             url: "serenitysaffron.com",               category: "Health & Wellness", localImage: "/portfolio/serenity-saffron.png" },
 
   // ── Food & Beverage ────────────────────────────────────
-  { name: "EL Afrek Lounge",              url: "el-afriklounge.com",                category: "Food & Beverage", localImage: "/portfolio/el-afrek-lounge.jpg" },
+  { name: "EL Afrek Lounge",              url: "el-afriklounge.com",                category: "Food & Beverage", localImage: "/portfolio/el-afrek-lounge.webp" },
   { name: "Kozak Food",                   url: "kozakfood.com",                     category: "Food & Beverage", localImage: "/portfolio/kozak-food.png" },
   { name: "Sufra Nuts",                   url: "sufranuts.com",                     category: "Food & Beverage", localImage: "/portfolio/sufra-nuts.png" },
   { name: "AMX Kitchens",                 url: "amxkitchens.com",                   category: "Food & Beverage", localImage: "/portfolio/amx-kitchens.png" },
@@ -60,9 +60,9 @@ const projects: Project[] = [
   { name: "Worldwide White Glove",        url: "worldwidewhiteglove.ca",            category: "Transportation", localImage: "/portfolio/worldwide-white-glove.png" },
 
   // ── Business & Professional ────────────────────────────
-  { name: "MOS Solutions",                url: "mossolutions.ca",                   category: "Business & Professional", localImage: "/portfolio/mos-solutions.jpg" },
-  { name: "Evolve Media Group",           url: "evolvemediagroup.ca",               category: "Business & Professional", localImage: "/portfolio/evolve-media-group.jpg" },
-  { name: "SWJ Modern Creations",         url: "swjmoderncreations.ca",             category: "Business & Professional", localImage: "/portfolio/swj-modern-creations.jpg" },
+  { name: "MOS Solutions",                url: "mossolutions.ca",                   category: "Business & Professional", localImage: "/portfolio/mos-solutions.webp" },
+  { name: "Evolve Media Group",           url: "evolvemediagroup.ca",               category: "Business & Professional", localImage: "/portfolio/evolve-media-group.webp" },
+  { name: "SWJ Modern Creations",         url: "swjmoderncreations.ca",             category: "Business & Professional", localImage: "/portfolio/swj-modern-creations.webp" },
   { name: "LHC Group",                    url: "lhcgroup.ca",                       category: "Business & Professional", localImage: "/portfolio/lhc-group.png" },
   { name: "Instrumentum Group",           url: "instrumentumgroup.com",             category: "Business & Professional" },
   { name: "Shahgaldi Research Group",     url: "shahgaldiresearchgroup.ca",         category: "Business & Professional", localImage: "/portfolio/shahgaldi-research-group.png" },
@@ -80,23 +80,23 @@ const projects: Project[] = [
   { name: "Vape Central",                 url: "vapecentral.ca",                    category: "Business & Professional", localImage: "/portfolio/vape-central.png" },
 
   // ── Events & Entertainment ─────────────────────────────
-  { name: "Supre Events",                 url: "supreevents.com",                   category: "Events & Entertainment", localImage: "/portfolio/supre-events.jpg" },
+  { name: "Supre Events",                 url: "supreevents.com",                   category: "Events & Entertainment", localImage: "/portfolio/supre-events.webp" },
   { name: "Tresolz",                      url: "tresolz.com",                       category: "Events & Entertainment", localImage: "/portfolio/tresolz.png" },
   { name: "Rebirth Con",                  url: "rebirthcon.com",                    category: "Events & Entertainment", localImage: "/portfolio/rebirth-con.png" },
   { name: "Palazzo Talenti",              url: "palazzotalenti.ca",                 category: "Events & Entertainment", localImage: "/portfolio/palazzo-talenti.png" },
   { name: "Sima Flower Designer",         url: "simaflowerdesigner.com",            category: "Events & Entertainment", localImage: "/portfolio/sima-flower-designer.png" },
 
   // ── Education & Non-Profit ─────────────────────────────
-  { name: "Sierra College of Business",   url: "sierracollegesl-edu.org",           category: "Education & Non-Profit", localImage: "/portfolio/sierra-college.jpg" },
-  { name: "Audio Book Fanatic",           url: "audiobookfanatic.net",              category: "Education & Non-Profit", localImage: "/portfolio/audio-book-fanatic.jpg" },
+  { name: "Sierra College of Business",   url: "sierracollegesl-edu.org",           category: "Education & Non-Profit", localImage: "/portfolio/sierra-college.webp" },
+  { name: "Audio Book Fanatic",           url: "audiobookfanatic.net",              category: "Education & Non-Profit", localImage: "/portfolio/audio-book-fanatic.webp" },
   { name: "Social Global Studies",        url: "socialglobalstudies.com",           category: "Education & Non-Profit", localImage: "/portfolio/social-global-studies.png" },
   { name: "KAPMI Academy",                url: "kapmiacademy.com",                  category: "Education & Non-Profit" },
   { name: "Girl Impact",                  url: "girlimpact.ca",                     category: "Education & Non-Profit" },
   { name: "Jin Pin Sen",                  url: "jinpinsen.com",                     category: "Education & Non-Profit", localImage: "/portfolio/jin-pin-sen.png" },
 
   // ── Arts & Creative ────────────────────────────────────
-  { name: "Kristina Blinova",             url: "photographicpoetry.ca",             category: "Arts & Creative", localImage: "/portfolio/kristina-blinova.jpg" },
-  { name: "Sonia Aimy",                   url: "soniaaimy.com",                     category: "Arts & Creative", localImage: "/portfolio/sonia-aimy.jpg" },
+  { name: "Kristina Blinova",             url: "photographicpoetry.ca",             category: "Arts & Creative", localImage: "/portfolio/kristina-blinova.webp" },
+  { name: "Sonia Aimy",                   url: "soniaaimy.com",                     category: "Arts & Creative", localImage: "/portfolio/sonia-aimy.webp" },
   { name: "The Art of Ronnie Simon",      url: "theartofronniesimon.ca",            category: "Arts & Creative", localImage: "/portfolio/art-of-ronnie-simon.png" },
   { name: "Victoria Shuter",              url: "victoriashuter.com",                category: "Arts & Creative", localImage: "/portfolio/victoria-shuter.png" },
 ];
@@ -173,7 +173,7 @@ function CardImage({ project }: { project: Project }) {
         alt={`${project.name} website designed by Canadian Web Designs`}
         onError={() => setErrored(true)}
         onLoad={() => setLoaded(true)}
-        loading="eager"
+        loading="lazy"
         decoding="async"
         style={{
           position: "absolute",
@@ -209,7 +209,7 @@ export default function PortfolioGrid() {
       />
 
       <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="flex gap-10 items-start">
+        <div className="flex flex-col lg:flex-row gap-0 lg:gap-10 items-stretch lg:items-start">
 
           {/* ── Sidebar (desktop) ── */}
           <aside className="hidden lg:flex flex-col w-64 shrink-0 sticky top-24 gap-1">

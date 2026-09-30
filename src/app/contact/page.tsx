@@ -76,11 +76,11 @@ export default function ContactPage() {
           style={{ backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[3fr_2fr] gap-10 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-16">
 
             {/* Form */}
             <div className="reveal">
-              <div className="bg-white rounded-2xl p-8 lg:p-10 border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
+              <div className="bg-white rounded-2xl p-5 sm:p-8 lg:p-10 border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
                 <h2 className="text-2xl font-black text-gray-900 mb-2">Send Us a Message</h2>
                 <p className="text-gray-500 text-sm mb-8">We reply within 24 hours, usually much sooner.</p>
                 <ContactForm />
@@ -93,7 +93,7 @@ export default function ContactPage() {
               {/* Phone */}
               <a
                 href={`tel:${config.phone}`}
-                className="group bg-white rounded-2xl p-6 flex items-center gap-5 block border border-gray-100 hover:border-[#00AADF]/30 hover:shadow-lg transition-all duration-300"
+                className="group bg-white rounded-2xl p-5 sm:p-6 flex items-center gap-4 sm:gap-5 block border border-gray-100 hover:border-[#00AADF]/30 hover:shadow-lg transition-all duration-300"
                 style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}
               >
                 <div
@@ -104,7 +104,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-gray-400 text-xs uppercase tracking-widest mb-0.5">Call Us</p>
                   <p className="text-gray-900 font-bold text-lg group-hover:text-[#00AADF] transition-colors duration-200">{config.phone}</p>
                 </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
               {config.emails.sales && (
                 <a
                   href={`mailto:${config.emails.sales}`}
-                  className="group bg-white rounded-2xl p-6 flex items-center gap-5 block border border-gray-100 hover:border-[#00AADF]/30 hover:shadow-lg transition-all duration-300"
+                  className="group bg-white rounded-2xl p-5 sm:p-6 flex items-center gap-4 sm:gap-5 block border border-gray-100 hover:border-[#00AADF]/30 hover:shadow-lg transition-all duration-300"
                   style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}
                 >
                   <div
@@ -125,9 +125,9 @@ export default function ContactPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-gray-400 text-xs uppercase tracking-widest mb-0.5">Email Us</p>
-                    <p className="text-gray-900 font-bold group-hover:text-[#00AADF] transition-colors duration-200">{config.emails.sales}</p>
+                    <p className="text-gray-900 font-bold break-all group-hover:text-[#00AADF] transition-colors duration-200">{config.emails.sales}</p>
                   </div>
                 </a>
               )}
@@ -142,7 +142,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-gray-400 text-xs uppercase tracking-widest mb-0.5">Business Hours</p>
                   <p className="text-gray-900 font-bold">{config.businessHours}</p>
                 </div>

@@ -46,7 +46,7 @@ export default function PortfolioPage() {
         style={{ background: "linear-gradient(135deg, #010C1E 0%, #052140 55%, #010D22 100%)" }}
       >
         {/* Background image */}
-        <Image src="/portfolio/evolve-media-group.jpg" alt="" fill className="object-cover object-center" priority />
+        <Image src="/portfolio/evolve-media-group.webp" alt="" fill className="object-cover object-center" priority />
         <div className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.94) 0%, rgba(1,12,30,0.85) 50%, rgba(1,12,30,0.78) 100%)" }} />
 

@@ -86,15 +86,15 @@ const cities = [
 
 const featuredProjects = [
   { name: "Cloud Pharmacy",       url: "cloudpharmacy.ca",      img: "/portfolio/cloud-pharmacy.png",       category: "Health & Wellness" },
-  { name: "Evolve Media Group",   url: "evolvemediagroup.ca",   img: "/portfolio/evolve-media-group.jpg",   category: "Business & Professional" },
+  { name: "Evolve Media Group",   url: "evolvemediagroup.ca",   img: "/portfolio/evolve-media-group.webp",   category: "Business & Professional" },
   { name: "Palazzo Talenti",      url: "palazzotalenti.ca",     img: "/portfolio/palazzo-talenti.png",      category: "Events & Entertainment" },
   { name: "Remove My Walls",      url: "removemywalls.ca",      img: "/portfolio/remove-my-walls.jpg",      category: "Construction & Trades" },
-  { name: "Rejuvenation by Dale", url: "rejuvenationbydale.ca", img: "/portfolio/rejuvenation-by-dale.jpg", category: "Health & Wellness" },
-  { name: "MOS Solutions",        url: "mossolutions.ca",       img: "/portfolio/mos-solutions.jpg",        category: "Business & Professional" },
+  { name: "Rejuvenation by Dale", url: "rejuvenationbydale.ca", img: "/portfolio/rejuvenation-by-dale.webp", category: "Health & Wellness" },
+  { name: "MOS Solutions",        url: "mossolutions.ca",       img: "/portfolio/mos-solutions.webp",        category: "Business & Professional" },
 ];
 
 const field =
-  "w-full px-4 py-3 rounded-xl text-sm text-gray-800 placeholder-gray-400 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
+  "w-full px-4 py-3 rounded-xl text-base sm:text-sm text-gray-800 placeholder-gray-400 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
 const fieldStyle = { background: "#fff", border: "1px solid #e2e8f0" };
 
 function fireConversion() {
