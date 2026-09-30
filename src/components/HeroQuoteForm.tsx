@@ -109,6 +109,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
             <input
               type="text"
               placeholder="First Name *"
+              aria-label="First name"
               required
               value={form.firstName}
               onChange={set("firstName")}
@@ -118,6 +119,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
             <input
               type="text"
               placeholder="Last Name *"
+              aria-label="Last name"
               required
               value={form.lastName}
               onChange={set("lastName")}
@@ -130,6 +132,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
           <input
             type="email"
             placeholder="Email Address *"
+            aria-label="Email address"
             required
             value={form.email}
             onChange={set("email")}
@@ -141,6 +144,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
           <input
             type="tel"
             placeholder="Phone Number"
+            aria-label="Phone number"
             value={form.phone}
             onChange={set("phone")}
             className={field}
@@ -149,6 +153,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
 
           {/* Row 4: Service */}
           <select
+            aria-label="Service you need"
             value={form.service}
             onChange={set("service")}
             className={field}
