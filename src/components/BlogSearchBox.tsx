@@ -34,6 +34,7 @@ export default function BlogSearchBox({ initialQ }: { initialQ: string }) {
       </div>
       <input
         type="search"
+        aria-label="Search articles"
         value={value}
         onChange={handleChange}
         placeholder="Search articles by title, topic, or category..."

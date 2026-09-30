@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -146,6 +146,9 @@ function LpForm({ heading = "Get Your Project Started" }: { heading?: string }) 
     }
   }
 
+  const uid = useId();
+  const labelCls = "block text-[11px] font-semibold text-gray-500 mb-1 pl-1";
+
   return (
     <form
       onSubmit={submit}
@@ -166,23 +169,35 @@ function LpForm({ heading = "Get Your Project Started" }: { heading?: string }) 
       </div>
 
       <div className="space-y-3">
-        <input type="text" placeholder="Your Full Name *" required value={form.name} onChange={set("name")} className={field} style={fieldStyle} />
-        <input type="email" placeholder="Email Address *" required value={form.email} onChange={set("email")} className={field} style={fieldStyle} />
-        <input type="tel" placeholder="Phone Number" value={form.phone} onChange={set("phone")} className={field} style={fieldStyle} />
-        <select value={form.service} onChange={set("service")} className={field} style={{ ...fieldStyle, color: form.service ? "#1a202c" : "#9ca3af" }}>
-          <option value="">Select a Service</option>
-          <option value="Web Design & Development">Web Design &amp; Development</option>
-          <option value="Custom Website Development">Custom Website Development</option>
-          <option value="Shopify Website Design">Shopify Website Design</option>
-          <option value="WordPress Website Design">WordPress Website Design</option>
-          <option value="SEO Services">SEO Services</option>
-          <option value="Website Maintenance">Website Maintenance</option>
-          <option value="Graphic Design & Branding">Graphic Design &amp; Branding</option>
-          <option value="Google Ads / PPC Management">Google Ads / PPC Management</option>
-          <option value="Social Media Marketing">Social Media Marketing</option>
-          <option value="AI Consultation">AI Consultation</option>
-          <option value="Other / Not Sure">Other / Not Sure</option>
-        </select>
+        <div>
+          <label htmlFor={`${uid}-name`} className={labelCls}>Full name *</label>
+          <input id={`${uid}-name`} type="text" placeholder="e.g. John Smith" required value={form.name} onChange={set("name")} className={field} style={fieldStyle} />
+        </div>
+        <div>
+          <label htmlFor={`${uid}-email`} className={labelCls}>Email *</label>
+          <input id={`${uid}-email`} type="email" placeholder="you@company.com" required value={form.email} onChange={set("email")} className={field} style={fieldStyle} />
+        </div>
+        <div>
+          <label htmlFor={`${uid}-phone`} className={labelCls}>Phone</label>
+          <input id={`${uid}-phone`} type="tel" placeholder="(647) 555-0123" value={form.phone} onChange={set("phone")} className={field} style={fieldStyle} />
+        </div>
+        <div>
+          <label htmlFor={`${uid}-service`} className={labelCls}>Service</label>
+          <select id={`${uid}-service`} value={form.service} onChange={set("service")} className={field} style={{ ...fieldStyle, color: form.service ? "#1a202c" : "#9ca3af" }}>
+            <option value="">Select a Service</option>
+            <option value="Web Design & Development">Web Design &amp; Development</option>
+            <option value="Custom Website Development">Custom Website Development</option>
+            <option value="Shopify Website Design">Shopify Website Design</option>
+            <option value="WordPress Website Design">WordPress Website Design</option>
+            <option value="SEO Services">SEO Services</option>
+            <option value="Website Maintenance">Website Maintenance</option>
+            <option value="Graphic Design & Branding">Graphic Design &amp; Branding</option>
+            <option value="Google Ads / PPC Management">Google Ads / PPC Management</option>
+            <option value="Social Media Marketing">Social Media Marketing</option>
+            <option value="AI Consultation">AI Consultation</option>
+            <option value="Other / Not Sure">Other / Not Sure</option>
+          </select>
+        </div>
 
         <button
           type="submit"
