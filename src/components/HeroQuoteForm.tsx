@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 
 export default function HeroQuoteForm({ source = "homepage" }: { source?: string }) {
+  const uid = useId();
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", service: "" });
 
@@ -40,6 +41,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
 
   const field =
     "w-full px-4 py-3 rounded-xl text-base sm:text-sm text-white placeholder-white/40 outline-none transition-all duration-200 focus:ring-2 focus:ring-sky-400";
+  const labelCls = "block text-[11px] font-semibold text-white/60 mb-1 pl-1";
   const fieldStyle = {
     background: "rgba(255,255,255,0.08)",
     border: "1px solid rgba(255,255,255,0.15)",
@@ -106,70 +108,85 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
         <div className="space-y-3">
           {/* Row 1: First + Last name */}
           <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label htmlFor={`${uid}-firstName`} className={labelCls}>First name *</label>
+              <input
+                id={`${uid}-firstName`}
+                type="text"
+                placeholder="e.g. John"
+                required
+                value={form.firstName}
+                onChange={set("firstName")}
+                className={field}
+                style={fieldStyle}
+              />
+            </div>
+            <div>
+              <label htmlFor={`${uid}-lastName`} className={labelCls}>Last name *</label>
+              <input
+                id={`${uid}-lastName`}
+                type="text"
+                placeholder="e.g. Smith"
+                required
+                value={form.lastName}
+                onChange={set("lastName")}
+                className={field}
+                style={fieldStyle}
+              />
+            </div>
+          </div>
+
+          {/* Row 2: Email */}
+          <div>
+            <label htmlFor={`${uid}-email`} className={labelCls}>Email *</label>
             <input
-              type="text"
-              placeholder="First Name *"
-              aria-label="First name"
+              id={`${uid}-email`}
+              type="email"
+              placeholder="you@company.com"
               required
-              value={form.firstName}
-              onChange={set("firstName")}
-              className={field}
-              style={fieldStyle}
-            />
-            <input
-              type="text"
-              placeholder="Last Name *"
-              aria-label="Last name"
-              required
-              value={form.lastName}
-              onChange={set("lastName")}
+              value={form.email}
+              onChange={set("email")}
               className={field}
               style={fieldStyle}
             />
           </div>
 
-          {/* Row 2: Email */}
-          <input
-            type="email"
-            placeholder="Email Address *"
-            aria-label="Email address"
-            required
-            value={form.email}
-            onChange={set("email")}
-            className={field}
-            style={fieldStyle}
-          />
-
           {/* Row 3: Phone */}
-          <input
-            type="tel"
-            placeholder="Phone Number"
-            aria-label="Phone number"
-            value={form.phone}
-            onChange={set("phone")}
-            className={field}
-            style={fieldStyle}
-          />
+          <div>
+            <label htmlFor={`${uid}-phone`} className={labelCls}>Phone</label>
+            <input
+              id={`${uid}-phone`}
+              type="tel"
+              placeholder="(647) 555-0123"
+              value={form.phone}
+              onChange={set("phone")}
+              className={field}
+              style={fieldStyle}
+            />
+          </div>
 
           {/* Row 4: Service */}
-          <select
-            aria-label="Service you need"
-            value={form.service}
-            onChange={set("service")}
-            className={field}
-            style={{
-              ...fieldStyle,
-              color: form.service ? "#fff" : "rgba(255,255,255,0.4)",
-            }}
-          >
-            <option value="" style={{ background: "#0a1628" }}>Select a Service</option>
-            <option value="Web Design & Development" style={{ background: "#0a1628" }}>Web Design & Development</option>
-            <option value="SEO" style={{ background: "#0a1628" }}>SEO</option>
-            <option value="Graphic Design" style={{ background: "#0a1628" }}>Graphic Design</option>
-            <option value="Social Media" style={{ background: "#0a1628" }}>Social Media</option>
-            <option value="Website Maintenance" style={{ background: "#0a1628" }}>Website Maintenance</option>
-            <option value="AI Consultation" style={{ background: "#0a1628" }}>AI Consultation</option>
-          </select>
+          <div>
+            <label htmlFor={`${uid}-service`} className={labelCls}>Service</label>
+            <select
+              id={`${uid}-service`}
+              value={form.service}
+              onChange={set("service")}
+              className={field}
+              style={{
+                ...fieldStyle,
+                color: form.service ? "#fff" : "rgba(255,255,255,0.4)",
+              }}
+            >
+              <option value="" style={{ background: "#0a1628" }}>Select a Service</option>
+              <option value="Web Design & Development" style={{ background: "#0a1628" }}>Web Design & Development</option>
+              <option value="SEO" style={{ background: "#0a1628" }}>SEO</option>
+              <option value="Graphic Design" style={{ background: "#0a1628" }}>Graphic Design</option>
+              <option value="Social Media" style={{ background: "#0a1628" }}>Social Media</option>
+              <option value="Website Maintenance" style={{ background: "#0a1628" }}>Website Maintenance</option>
+              <option value="AI Consultation" style={{ background: "#0a1628" }}>AI Consultation</option>
+            </select>
+          </div>
 
           {/* Submit */}
           <button
