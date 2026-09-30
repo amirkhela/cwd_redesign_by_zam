@@ -75,7 +75,7 @@ const projects: Project[] = [
   { name: "Vibe Lube",                    url: "vibelube.com",                      category: "Business & Professional", localImage: "/portfolio/vibe-lube.png" },
   { name: "Royal Crown Plywood",          url: "royalcrownplywood.com",             category: "Business & Professional", localImage: "/portfolio/royal-crown-plywood.png" },
   { name: "Walopus",                      url: "walopus.com",                       category: "Business & Professional", localImage: "/portfolio/walopus.png" },
-  { name: "Kratom Delivery Canada",       url: "kratomdeliverycanada.ca",           category: "Business & Professional", localImage: "/portfolio/kratom-delivery-canada.png" },
+  { name: "Kratom Delivery Canada",       url: "kratomdeliverycanada.ca",           category: "Business & Professional", localImage: "/portfolio/kratom-delivery-canada.jpg" },
   { name: "Vape Central",                 url: "vapecentral.ca",                    category: "Business & Professional", localImage: "/portfolio/vape-central.png" },
 
   // ── Events & Entertainment ─────────────────────────────
