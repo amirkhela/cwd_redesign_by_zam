@@ -39,6 +39,7 @@ const projects: Project[] = [
   { name: "Fade Central",                 url: "fadecentral.ca",                    category: "Health & Wellness", localImage: "/portfolio/fade-central.webp" },
   { name: "Esmas Essiac Tea",             url: "esmasessiac.ca",                    category: "Health & Wellness", localImage: "/portfolio/esmas-essiac-tea.webp" },
   { name: "Cloud Pharmacy",               url: "cloudpharmacy.ca",                  category: "Health & Wellness", localImage: "/portfolio/cloud-pharmacy.jpg" },
+  { name: "NarcCount",                    url: "narccount.ca",                      category: "Health & Wellness", localImage: "/portfolio/narccount.png" },
   { name: "MedTech DIY",                  url: "medtechdiy.ca",                     category: "Health & Wellness", localImage: "/portfolio/medtech-diy.png" },
   { name: "Timely Cares",                 url: "timelycares.com",                   category: "Health & Wellness", localImage: "/portfolio/timely-cares.png" },
   { name: "Gently Touch Spa",             url: "gentlytouchspa.ca",                 category: "Health & Wellness", localImage: "/portfolio/gently-touch-spa.png" },
