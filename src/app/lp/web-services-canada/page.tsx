@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import GoogleReviews from "@/components/GoogleReviews";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
+import { trackLead } from "@/lib/analytics";
 
 const config = getConfig();
 
@@ -139,7 +140,7 @@ function LpForm({ heading = "Get Your Project Started" }: { heading?: string }) 
       });
       if (!res.ok) throw new Error();
       const data = await res.json();
-      if (data.success) { fireConversion(); router.push("/lp/web-services-canada/thank-you"); }
+      if (data.success) { fireConversion(); trackLead("google-ads-lp"); router.push("/lp/web-services-canada/thank-you"); }
       else setStatus("error");
     } catch {
       setStatus("error");

@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import Script from "next/script";
 import { getConfig } from "@/lib/client-config";
+import { trackLead } from "@/lib/analytics";
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
 
@@ -75,6 +76,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
+        trackLead("contact-page");
         setSubmitted(true);
       } else {
         setError(true);

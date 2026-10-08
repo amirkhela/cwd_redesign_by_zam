@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { trackLead } from "@/lib/analytics";
 
 export default function HeroQuoteForm({ source = "homepage" }: { source?: string }) {
   const uid = useId();
@@ -33,6 +34,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
       });
       if (!res.ok) throw new Error("HTTP " + res.status);
       const data = await res.json();
+      if (data.success) trackLead(source);
       setStatus(data.success ? "done" : "error");
     } catch {
       setStatus("error");

@@ -4,6 +4,7 @@ import Script from "next/script";
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import LeadClickTracker from "@/components/LeadClickTracker";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import HreflangTags from "@/components/HreflangTags";
 import ConditionalSchemas from "@/components/ConditionalSchemas";
@@ -100,8 +101,10 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 43.6532,
-    longitude: -79.3832,
+    // The Toronto Google listing's own pin (cid 1764590269626849918, read
+    // 9 Oct 2026) -- 2967 Dundas St W. Was 43.6532,-79.3832 = City Hall.
+    latitude: 43.6652713,
+    longitude: -79.4680813,
   },
   // `location`, not `branchLocation`. schema.org has branchOf, branchCode and
   // location -- there is no branchLocation, so this whole node was silently
@@ -234,6 +237,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen flex flex-col bg-white text-dark antialiased font-sans">
         <GoogleAnalytics />
+        <LeadClickTracker />
         <SiteShell
           awards={
             <section className="py-10 border-t border-gray-100" style={{ background: "#ffffff" }}>

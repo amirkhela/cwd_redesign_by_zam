@@ -31,11 +31,14 @@ export default function robots(): MetadataRoute.Robots {
       // goes and reads the page to cite it) -- the same role ChatGPT-User plays.
       { userAgent: "Perplexity-User", allow: "/" },
       { userAgent: "Google-Extended", allow: "/" },
-      // Bulk training crawlers stay blocked.
-      { userAgent: "GPTBot",       disallow: ["/"] },
-      { userAgent: "CCBot",        disallow: ["/"] },
-      { userAgent: "anthropic-ai", disallow: ["/"] },
-      { userAgent: "ClaudeBot",    disallow: ["/"] },
+      // Training crawlers: allowed since Oct 2026 (owner's decision). They are what
+      // puts the brand into the models' own knowledge, which answers "who builds
+      // websites in Toronto?" when no live search runs. Nothing here is paid or
+      // private. A named group replaces "*" for that bot, so the /api/ and ?s=
+      // exclusions are repeated. "anthropic-ai" was a retired token and was dropped.
+      { userAgent: "GPTBot",    allow: "/", disallow: ["/api/", "/*?s="] },
+      { userAgent: "ClaudeBot", allow: "/", disallow: ["/api/", "/*?s="] },
+      { userAgent: "CCBot",     allow: "/", disallow: ["/api/", "/*?s="] },
     ],
     sitemap: `https://${config.domain}/sitemap.xml`,
   };

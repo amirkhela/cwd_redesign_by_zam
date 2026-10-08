@@ -108,6 +108,9 @@ ${seoCities}
 ## Reference
 
 - [Blog](${base}/blog): guides on web design, SEO and digital marketing.
+- [AODA website compliance](${base}/blog/aoda-website-compliance): who in
+  Ontario must meet WCAG 2.0 Level AA, what it covers, the 2026 reporting
+  deadline and the penalties, from the regulation itself.
 - [Full article index](${base}/llms-full.txt): every guide with its date and
   description. Kept out of this file on purpose -- this one is the short map,
   that one is the catalogue.
