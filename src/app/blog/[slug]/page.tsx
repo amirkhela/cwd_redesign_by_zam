@@ -51,7 +51,31 @@ export default async function BlogPostPage({ params }: Props) {
   // equity consolidates and Google drops the duplicate.
   if (slug !== post.slug) permanentRedirect(`/blog/${post.slug}`);
 
-  const recentPosts = getAllPosts().filter((p) => p.slug !== post.slug).slice(0, 5);
+  const allPosts = getAllPosts();
+  const recentPosts = allPosts.filter((p) => p.slug !== post.slug).slice(0, 5);
+  // Related articles: the two posts before and the two after this one in its
+  // category (date order, wrapping round). The sidebar only ever links the 5
+  // newest posts, so older posts were reachable from little more than their
+  // category page -- GSC showed them "discovered, not indexed" or folded into
+  // another site's canonical. Neighbours give every post 4+ inbound links.
+  const sameCat = allPosts.filter((p) => p.category === post.category);
+  const cat = (post.category || "").toLowerCase();
+  const categoryHub = cat.includes("seo") ? "/blog/seo"
+    : /web design|web development|website/.test(cat) ? "/blog/web-design"
+    : /marketing|social media|google ads|ppc/.test(cat) ? "/blog/digital-marketing"
+    : null;
+  const at = sameCat.findIndex((p) => p.slug === post.slug);
+  const skip = new Set([post.slug, ...recentPosts.map((p) => p.slug)]);
+  const relatedPosts: typeof allPosts = [];
+  for (let step = 1; step < sameCat.length && relatedPosts.length < 4; step++) {
+    for (const i of [at - step, at + step]) {
+      const cand = sameCat[((i % sameCat.length) + sameCat.length) % sameCat.length];
+      if (cand && !skip.has(cand.slug) && relatedPosts.length < 4) {
+        relatedPosts.push(cand);
+        skip.add(cand.slug);
+      }
+    }
+  }
   const heroImage = post.featuredImage || "/blog/web-design-company.png";
 
   const jsonLd = {
@@ -159,13 +183,23 @@ export default async function BlogPostPage({ params }: Props) {
             </ol>
           </nav>
 
-          {/* Category */}
-          <span
-            className="inline-flex items-center text-xs font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-4"
-            style={{ background: "rgba(0,170,223,0.2)", color: "#33C2E8", border: "1px solid rgba(0,170,223,0.3)" }}
-          >
-            {post.category}
-          </span>
+          {/* Category -- links to its hub where there is one (same matching as
+              the hub pages), so the three hubs are reachable from every post. */}
+          {categoryHub ? (
+            <Link href={categoryHub}
+              className="inline-flex items-center text-xs font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-4 hover:brightness-125 transition"
+              style={{ background: "rgba(0,170,223,0.2)", color: "#33C2E8", border: "1px solid rgba(0,170,223,0.3)" }}
+            >
+              {post.category}
+            </Link>
+          ) : (
+            <span
+              className="inline-flex items-center text-xs font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-4"
+              style={{ background: "rgba(0,170,223,0.2)", color: "#33C2E8", border: "1px solid rgba(0,170,223,0.3)" }}
+            >
+              {post.category}
+            </span>
+          )}
 
           {/* Title */}
           <h1
@@ -224,6 +258,23 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="text-xs font-bold tracking-[0.15em] uppercase text-gray-400 mb-4">Share this article</p>
               <ShareButtons title={post.title} slug={post.slug} />
             </div>
+
+            {relatedPosts.length > 0 && (
+              <div className="mt-10 pt-8 border-t border-gray-200">
+                <p className="text-xs font-bold tracking-[0.15em] uppercase text-gray-400 mb-4">Related articles</p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {relatedPosts.map((rp) => (
+                    <li key={rp.slug}>
+                      <Link href={`/blog/${rp.slug}`}
+                        className="block h-full rounded-xl px-4 py-3 text-sm font-semibold text-dark hover:text-primary hover:bg-gray-50 transition-colors leading-snug"
+                        style={{ border: "1px solid #f0f0f0" }}>
+                        {rp.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Back */}
             <div className="mt-8 pt-6 border-t border-gray-100">
