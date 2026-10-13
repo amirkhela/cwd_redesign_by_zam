@@ -414,8 +414,8 @@ export default function SeoMississaugaPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter SEO", price: "$250/mo", desc: "4 blogs + 10 citations a month" },
-                  { name: "Growth SEO", price: "$399/mo", desc: "6 articles + 20 citations a month" },
+                  { name: "Starter SEO", price: "$250/mo", desc: "4 blogs a month + 10 citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "6 articles a month + 20 citations" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
@@ -477,7 +477,7 @@ export default function SeoMississaugaPage() {
                 price: "$250",
                 period: "/mo",
                 desc: "For Mississauga small businesses starting their SEO journey — clinics, trades, restaurants, retail, professional services.",
-                features: ["Local keyword research", "On-page optimization (up to 5 pages)", "4 blog posts per month", "10 local citations per month", "Monthly ranking report", "Free technical audit"],
+                features: ["Local keyword research", "On-page optimization (up to 5 pages)", "4 blog posts per month", "10 local citation submissions", "Monthly ranking report", "Free technical audit"],
                 cta: "Start Ranking",
                 highlight: false,
               },
@@ -486,7 +486,7 @@ export default function SeoMississaugaPage() {
                 price: "$399",
                 period: "/mo",
                 desc: "The complete Mississauga SEO package for businesses ready to dominate multiple keyword clusters across neighbourhoods.",
-                features: ["Full keyword strategy (50+ targets)", "On-page optimization (unlimited pages)", "6 articles per month", "20 local citations per month", "Link building with Canadian publications", "Weekly ranking updates", "Dedicated account manager"],
+                features: ["Full keyword strategy (50+ targets)", "On-page optimization (unlimited pages)", "6 articles per month", "20 local citation submissions", "Link building with Canadian publications", "Weekly ranking updates", "Dedicated account manager"],
                 cta: "Get Growth Plan",
                 highlight: true,
               },

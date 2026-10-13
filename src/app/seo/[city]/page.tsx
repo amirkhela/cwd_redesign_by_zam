@@ -482,8 +482,8 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
               <div className="bg-white rounded-2xl p-7 border border-gray-100 mb-5" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
                 <h3 className="text-gray-900 font-black text-xl mb-5">Pricing</h3>
                 {[
-                  { name: "Starter SEO", price: "$250/mo", desc: "4 blogs + 10 citations a month" },
-                  { name: "Growth SEO", price: "$399/mo", desc: "6 articles + 20 citations a month" },
+                  { name: "Starter SEO", price: "$250/mo", desc: "4 blogs a month + 10 citations" },
+                  { name: "Growth SEO", price: "$399/mo", desc: "6 articles a month + 20 citations" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (
                   <div key={pkg.name} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
