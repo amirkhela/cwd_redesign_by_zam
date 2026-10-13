@@ -663,10 +663,10 @@ export default function LocationPage({ params }: { params: { city: string } }) {
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
               <p className="text-sm font-bold tracking-widest uppercase mb-3 text-blue-100">Growth</p>
               <p className="text-4xl font-black mb-1">$599</p>
-              <p className="text-blue-200 text-sm mb-1">Ongoing SEO available</p>
-              <p className="text-blue-200 text-xs mb-6">One-time build + monthly retainer</p>
+              <p className="text-blue-200 text-sm mb-1">Complete SEO setup included</p>
+              <p className="text-blue-200 text-xs mb-6">One-time build, no monthly fees</p>
               <ul className="space-y-3 text-sm text-blue-50">
-                {["Up to 12 pages", "Custom UI/UX design", "Full on-page & technical SEO", "Local SEO + Google Business Profile", "Monthly rank tracking & reporting", "Ongoing content updates"].map(f => (
+                {["Up to 12 pages", "Custom UI/UX design", "Meta titles & descriptions on every page", "Schema markup", "XML sitemap + Google indexing request", "Technical SEO & speed setup"].map(f => (
                   <li key={f} className="flex items-center gap-2"><span className="text-yellow-300 font-bold">✓</span>{f}</li>
                 ))}
               </ul>

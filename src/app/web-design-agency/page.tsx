@@ -453,12 +453,12 @@ export default function WebDesignAgencyPage() {
                 highlight: false,
               },
               {
-                name: "Growth Partnership",
+                name: "Growth",
                 price: "$599",
                 period: "",
-                desc: "Your website plus the channels that grow it — SEO, Google Ads and social, managed as one connected strategy.",
-                features: ["Everything in Website Project", "Ongoing SEO & content", "Google Ads / PPC management", "Social media marketing", "Branding & graphic design", "Monthly reporting & strategy calls"],
-                cta: "Become a Partner",
+                desc: "A larger custom website with complete one-time SEO setup, so Google can find and index every page. No monthly fees.",
+                features: ["Everything in Website Project", "Up to 12 pages", "Meta titles & descriptions on every page", "Schema markup", "XML sitemap + Google indexing request", "Technical SEO & speed setup"],
+                cta: "Start Growing",
                 highlight: true,
               },
               {

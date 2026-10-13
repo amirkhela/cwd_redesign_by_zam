@@ -475,9 +475,9 @@ export default function BurnabyPage() {
               {
                 name: "Growth",
                 price: "$599",
-                period: "Ongoing SEO available",
-                desc: "The complete package for Burnaby businesses ready to dominate local search results.",
-                features: ["10–15 page custom website", "Burnaby-specific SEO strategy", "Google Business Profile optimization", "Local citation building (50+ sites)", "Monthly ranking reports", "Dedicated account manager"],
+                period: "Complete SEO setup included",
+                desc: "A full custom website for Burnaby businesses, with complete one-time SEO setup built in. No monthly fees.",
+                features: ["10–15 page custom website", "Custom UI/UX design", "Meta titles & descriptions on every page", "Schema markup", "XML sitemap + Google indexing request", "Technical SEO & speed setup"],
                 cta: "Get Growth Plan",
                 highlight: true,
               },
