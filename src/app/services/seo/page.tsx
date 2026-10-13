@@ -66,14 +66,14 @@ const faqSchema = {
 
 const localSeoContent = {
   cities: [
-    { name: "Toronto", url: "/locations/toronto" },
-    { name: "Brampton", url: "/locations/brampton" },
-    { name: "Mississauga", url: "/locations/mississauga" },
-    { name: "North York", url: "/locations/north-york" },
-    { name: "Calgary", url: "/locations/calgary" },
-    { name: "Vancouver", url: "/locations/vancouver" },
-    { name: "Ottawa", url: "/locations/ottawa" },
-    { name: "Hamilton", url: "/locations/hamilton" },
+    { name: "Toronto", url: "/seo/toronto" },
+    { name: "Brampton", url: "/seo/brampton" },
+    { name: "Mississauga", url: "/seo/mississauga" },
+    { name: "North York", url: "/seo/north-york" },
+    { name: "Calgary", url: "/seo/calgary" },
+    { name: "Vancouver", url: "/seo/vancouver" },
+    { name: "Ottawa", url: "/seo/ottawa" },
+    { name: "Edmonton", url: "/seo/edmonton" },
   ],
 };
 
