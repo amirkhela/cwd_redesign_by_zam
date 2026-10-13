@@ -653,7 +653,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
               <p className="text-4xl font-black text-gray-900 mb-1">$299</p>
               <p className="text-gray-400 text-sm mb-6">One-time investment</p>
               <ul className="space-y-3 text-sm text-gray-600">
-                {["Up to 5 pages", "Mobile-responsive design", "On-page SEO basics", "Contact form", "Google Analytics setup", "3-week delivery"].map(f => (
+                {["2–3 pages", "Mobile-responsive design", "On-page SEO basics", "Contact form", "Google Analytics setup", "3-week delivery"].map(f => (
                   <li key={f} className="flex items-center gap-2"><span className="text-[#00AADF] font-bold">✓</span>{f}</li>
                 ))}
               </ul>

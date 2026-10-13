@@ -321,7 +321,7 @@ export default function NorthYorkPage() {
                 price: "$299",
                 period: "one-time",
                 desc: "Perfect for North York small businesses launching or refreshing their digital presence.",
-                features: ["5-page custom website", "Mobile-first responsive design", "On-page SEO foundation", "Google Analytics + Search Console", "Contact form + click-to-call", "30 days post-launch support"],
+                features: ["2–3 page custom website", "Mobile-first responsive design", "On-page SEO foundation", "Google Analytics + Search Console", "Contact form + click-to-call", "30 days post-launch support"],
                 cta: "Get Started",
                 highlight: false,
               },

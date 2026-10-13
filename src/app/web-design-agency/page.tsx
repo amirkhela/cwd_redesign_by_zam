@@ -448,7 +448,7 @@ export default function WebDesignAgencyPage() {
                 price: "$299",
                 period: "",
                 desc: "A strategy-led custom website, designed and built by our in-house team — the perfect foundation for growth.",
-                features: ["Custom design & development", "On-page SEO baked in", "Copywriting & content", "Mobile & speed optimized", "Analytics & Search Console setup", "Launch support"],
+                features: ["2–3 page custom website", "On-page SEO baked in", "Copywriting & content", "Mobile & speed optimized", "Analytics & Search Console setup", "Launch support"],
                 cta: "Start a Project",
                 highlight: false,
               },
