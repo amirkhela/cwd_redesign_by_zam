@@ -34,7 +34,7 @@ export const REVIEWS_PAGE: ReviewsPage = {
   reviews: REVIEWS.map((r): QuotedReview => ({
     author: r.name,
     text: r.text,
-    source: { platform: "google", url: "https://maps.google.com/?cid=1764590269626849918", checkedOn: "2026-09-14" },
+    source: { platform: "google", url: "https://maps.google.com/?cid=1764590269626849918", checkedOn: "2026-10-14" },
     context: "web-design",
   })),
   faqs: [
@@ -55,5 +55,5 @@ export const REVIEWS_PAGE: ReviewsPage = {
       a: "Open our Google listing from the link on this page and choose Write a review. If something went wrong with your project, we would rather hear it directly first, but we will never ask you to soften what you write.",
     },
   ],
-  reviewedOn: "2026-09-14",
+  reviewedOn: "2026-10-14",
 };
