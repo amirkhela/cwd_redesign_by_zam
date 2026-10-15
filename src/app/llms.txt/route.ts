@@ -1,4 +1,5 @@
 import { getConfig } from "@/lib/client-config";
+import { COMPARISONS } from "@/content/compare";
 
 /**
  * /llms.txt -- a plain-text map of this site for AI answer engines.
@@ -69,6 +70,12 @@ export function GET() {
     .map((c) => `- [SEO in ${c.name}, ${c.province}](${base}/seo/${c.slug})`)
     .join("\n");
 
+  // Rule 1 holds: each line is the comparison page's own h1, from the same data
+  // file the page renders. Nothing is summarised here.
+  const comparisons = Object.values(COMPARISONS)
+    .map((c) => `- [${c.h1}](${base}/${c.slug})`)
+    .join("\n");
+
   const text = `# ${config.businessName}
 
 > A Canadian web design and digital marketing agency. We build and maintain
@@ -92,6 +99,13 @@ ${cities}
 ## Local SEO by city
 
 ${seoCities}
+
+## Comparisons
+
+Side-by-side pages. Every claim about another company links to that
+company's own page.
+
+${comparisons}
 
 ## About the company
 

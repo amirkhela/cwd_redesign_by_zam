@@ -99,6 +99,7 @@ const PAGES_FULL = [
   // the bottom-of-funnel pages (src/content/compare). Each carries a breadcrumb
   // WebPage node and one FAQPage and must add NO rating of its own.
   "/reviews", "/wix-alternative", "/squarespace-alternative",
+  "/godaddy-website-builder-alternative", "/agency-vs-freelancer",
   "/web-design-for-plumbers", "/web-design-for-dentists", "/web-design-for-lawyers",
 ];
 

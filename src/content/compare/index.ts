@@ -7,6 +7,8 @@ import type { Comparison, IndustryPage, ReviewsPage } from "./types";
 import { REVIEWS_PAGE } from "./reviews";
 import { WIX_ALTERNATIVE } from "./wix-alternative";
 import { SQUARESPACE_ALTERNATIVE } from "./squarespace-alternative";
+import { GODADDY_WEBSITE_BUILDER_ALTERNATIVE } from "./godaddy-website-builder-alternative";
+import { AGENCY_VS_FREELANCER } from "./agency-vs-freelancer";
 import { WEB_DESIGN_FOR_PLUMBERS } from "./web-design-for-plumbers";
 import { WEB_DESIGN_FOR_DENTISTS } from "./web-design-for-dentists";
 import { WEB_DESIGN_FOR_LAWYERS } from "./web-design-for-lawyers";
@@ -16,6 +18,8 @@ export type { Comparison, IndustryPage, ReviewsPage, CompareRow, Faq, QuotedRevi
 export const COMPARISONS: Record<string, Comparison> = {
   [WIX_ALTERNATIVE.slug]: WIX_ALTERNATIVE,
   [SQUARESPACE_ALTERNATIVE.slug]: SQUARESPACE_ALTERNATIVE,
+  [GODADDY_WEBSITE_BUILDER_ALTERNATIVE.slug]: GODADDY_WEBSITE_BUILDER_ALTERNATIVE,
+  [AGENCY_VS_FREELANCER.slug]: AGENCY_VS_FREELANCER,
 };
 
 export const INDUSTRIES: Record<string, IndustryPage> = {

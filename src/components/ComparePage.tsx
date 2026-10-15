@@ -19,14 +19,32 @@ import type { Comparison } from "@/content/compare/types";
  * date the cross-repo refresh job last re-fetched each source.
  *
  * Judged at 390px: the three-column table becomes stacked cards below `md`.
+ *
+ * The optional props below (2026-10-15) are passed by the PAGE, not the data
+ * file, for the same reason narccount's ComparePage takes `verdict` that way:
+ * the data files are read by regex in another repository and keep their exact
+ * shape. A page that passes none of them renders byte-for-byte as before.
  */
 export default function ComparePage({
   data,
   stayOn,
+  verdict,
+  sourceNote,
+  reasonsEyebrow = "Why Switch",
+  faqHeading,
 }: {
   data: Comparison;
   /** "Prefer to stay on X? We build on it too" -- the honest row's link. */
   stayOn?: { label: string; href: string };
+  /** "Choose us if / stay if / don't switch yet if", shown ABOVE the table. Every
+   *  card must hold for a reader who stays put -- a verdict that only ever says
+   *  "us" is an ad, and the page's whole value is that it is not one. */
+  verdict?: { title: string; points: string[] }[];
+  /** Replaces "Rows marked source quote X's own help pages." when the sources are
+   *  not (only) help pages. */
+  sourceNote?: string;
+  reasonsEyebrow?: string;
+  faqHeading?: string;
 }) {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -38,13 +56,15 @@ export default function ComparePage({
     })),
   };
 
+  const navLabel = (c: Comparison) => c.navLabel ?? `${c.themLabel} alternative`;
+
   const related = (data.related ?? [])
     .map((slug) => COMPARISONS[slug])
     .filter((c): c is Comparison => Boolean(c));
 
   return (
     <>
-      <BreadcrumbSchema items={[{ name: `${data.themLabel} alternative`, href: `/${data.slug}` }]} description={data.metaDescription} />
+      <BreadcrumbSchema items={[{ name: navLabel(data), href: `/${data.slug}` }]} description={data.metaDescription} />
 
       {/* ─── HERO ─── */}
       <section
@@ -86,6 +106,34 @@ export default function ComparePage({
         </div>
       </section>
 
+      {/* ─── VERDICT ─── */}
+      {verdict && verdict.length > 0 && (
+        <section className="pt-16 pb-4 bg-white" aria-labelledby="compare-verdict">
+          <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">The Verdict</span>
+              <h2 id="compare-verdict" className="text-3xl font-black text-gray-900">The short answer</h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {verdict.map((v, i) => (
+                <div
+                  key={v.title}
+                  className={`rounded-2xl p-7 border ${i === 0 ? "border-[#00AADF]/40" : "border-gray-100 bg-gray-50"}`}
+                  style={i === 0 ? { background: "rgba(0,170,223,0.06)", boxShadow: "0 2px 16px rgba(0,170,223,0.12)" } : { boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}
+                >
+                  <h3 className="text-gray-900 font-black text-lg mb-3">{v.title}</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-600 text-sm leading-relaxed">
+                    {v.points.map((p) => (
+                      <li key={p}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ─── COMPARISON TABLE ─── */}
       <section className="py-16 bg-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -93,8 +141,12 @@ export default function ComparePage({
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Side By Side</span>
             <h2 className="text-3xl font-black text-gray-900">{data.usLabel} vs {data.themLabel}</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-sm">
-              Rows marked <span className="font-semibold text-gray-700">source</span> quote {data.themLabel}&apos;s own help pages.
-              Rows without one make no claim about {data.themLabel} at all.
+              {sourceNote ?? (
+                <>
+                  Rows marked <span className="font-semibold text-gray-700">source</span> quote {data.themLabel}&apos;s own help pages.
+                  Rows without one make no claim about {data.themLabel} at all.
+                </>
+              )}
             </p>
           </div>
 
@@ -170,7 +222,7 @@ export default function ComparePage({
       <section className="py-16" style={{ background: "#f8fafc" }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Why Switch</span>
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">{reasonsEyebrow}</span>
             <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Three reasons businesses choose {data.usLabel}</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -192,7 +244,7 @@ export default function ComparePage({
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">FAQs</span>
-            <h2 className="text-3xl font-black text-gray-900">{data.themLabel} alternative — common questions</h2>
+            <h2 className="text-3xl font-black text-gray-900">{faqHeading ?? `${data.themLabel} alternative — common questions`}</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-4">
             {data.faqs.map((f) => (
@@ -233,7 +285,7 @@ export default function ComparePage({
               <div className="flex flex-wrap gap-3">
                 {related.map((c) => (
                   <Link key={c.slug} href={`/${c.slug}`} className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
-                    {c.themLabel} alternative
+                    {navLabel(c)}
                   </Link>
                 ))}
               </div>

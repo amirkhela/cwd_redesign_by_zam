@@ -33,6 +33,9 @@ export type Comparison = {
   slug: string;
   usLabel: string;
   themLabel: string;
+  /** Breadcrumb and "More comparisons" chip text. Absent = `${themLabel} alternative`,
+   *  which is right for a product page and wrong for /agency-vs-freelancer. */
+  navLabel?: string;
   h1: string;
   metaTitle: string;
   metaDescription: string;

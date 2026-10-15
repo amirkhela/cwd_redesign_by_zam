@@ -106,5 +106,5 @@ export const WIX_ALTERNATIVE: Comparison = {
     { label: "Wix Help Center: Removing the Wix Banner Ad and Favicon", url: "https://support.wix.com/en/article/removing-the-wix-banner-ad-and-favicon", checkedOn: "2026-10-15" },
     { label: "Wix Help Center: Transferring a Premium Site to Another Wix Account", url: "https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account", checkedOn: "2026-10-15" },
   ],
-  related: ["squarespace-alternative"],
+  related: ["squarespace-alternative", "godaddy-website-builder-alternative", "agency-vs-freelancer"],
 };

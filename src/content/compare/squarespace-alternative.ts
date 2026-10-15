@@ -105,5 +105,5 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     { label: "Squarespace Help Center: Add custom code to your site", url: "https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-CSS", checkedOn: "2026-10-15" },
     { label: "Squarespace Help Center: Change the site owner", url: "https://support.squarespace.com/hc/en-us/articles/206537197-Changing-site-ownership", checkedOn: "2026-10-15" },
   ],
-  related: ["wix-alternative"],
+  related: ["wix-alternative", "godaddy-website-builder-alternative", "agency-vs-freelancer"],
 };
