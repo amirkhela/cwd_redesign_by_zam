@@ -26,20 +26,20 @@ export const WIX_ALTERNATIVE: Comparison = {
       us: "On hosting you choose, under your own account. You hold the files and the database, and you can move them to any host at any time.",
       them: "Wix's help page on exporting says that, because Wix is a SaaS solution, your site must run on Wix's servers.",
       win: true,
-      source: { label: "Wix Help Center: Exporting or Embedding Your Wix Site Elsewhere", url: "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere", checkedOn: "2026-09-13" },
+      source: { label: "Wix Help Center: Exporting or Embedding Your Wix Site Elsewhere", url: "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere", checkedOn: "2026-10-15" },
     },
     {
       feature: "Someone else's branding on your site",
       us: "None. No banner, no badge, no third-party favicon, on any plan, ever.",
       them: "Wix's help page says a free site includes a Wix banner ad at the top and a Wix favicon in the browser tab, and that removing them requires upgrading to a Premium plan that includes those features.",
       win: true,
-      source: { label: "Wix Help Center: Removing the Wix Banner Ad and Favicon", url: "https://support.wix.com/en/article/removing-the-wix-banner-ad-and-favicon", checkedOn: "2026-09-13" },
+      source: { label: "Wix Help Center: Removing the Wix Banner Ad and Favicon", url: "https://support.wix.com/en/article/removing-the-wix-banner-ad-and-favicon", checkedOn: "2026-10-15" },
     },
     {
       feature: "Handing the site over when you sell the business",
       us: "The site is an asset like any other: you hand over the code, the hosting login and the domain. Nothing about it is tied to our account.",
       them: "Wix's help page says you can transfer ownership of a premium site to another Wix account, and lists things that cannot be transferred with it, such as Wix Payments accounts.",
-      source: { label: "Wix Help Center: Transferring a Premium Site to Another Wix Account", url: "https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account", checkedOn: "2026-09-13" },
+      source: { label: "Wix Help Center: Transferring a Premium Site to Another Wix Account", url: "https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account", checkedOn: "2026-10-15" },
     },
     {
       feature: "Who does the work",
@@ -100,11 +100,11 @@ export const WIX_ALTERNATIVE: Comparison = {
   ],
   disclaimer:
     "Wix is a trademark of Wix.com Ltd. Canadian Web Designs is not affiliated with, endorsed by or sponsored by Wix.com Ltd. Statements about Wix on this page are drawn from Wix's own public help pages, linked below, and were last re-checked on the date shown. If a linked page has changed, the row it supports is out of date, not the other way round.",
-  reviewedOn: "2026-09-13",
+  reviewedOn: "2026-10-15",
   sources: [
-    { label: "Wix Help Center: Exporting or Embedding Your Wix Site Elsewhere", url: "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere", checkedOn: "2026-09-13" },
-    { label: "Wix Help Center: Removing the Wix Banner Ad and Favicon", url: "https://support.wix.com/en/article/removing-the-wix-banner-ad-and-favicon", checkedOn: "2026-09-13" },
-    { label: "Wix Help Center: Transferring a Premium Site to Another Wix Account", url: "https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account", checkedOn: "2026-09-13" },
+    { label: "Wix Help Center: Exporting or Embedding Your Wix Site Elsewhere", url: "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere", checkedOn: "2026-10-15" },
+    { label: "Wix Help Center: Removing the Wix Banner Ad and Favicon", url: "https://support.wix.com/en/article/removing-the-wix-banner-ad-and-favicon", checkedOn: "2026-10-15" },
+    { label: "Wix Help Center: Transferring a Premium Site to Another Wix Account", url: "https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account", checkedOn: "2026-10-15" },
   ],
   related: ["squarespace-alternative"],
 };

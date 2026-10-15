@@ -23,26 +23,26 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
       us: "You hold the code, the content and the database. Move to any host, hand it to any developer, at any time.",
       them: "Squarespace's help page says you can export certain content into an .xml file, and that store pages, custom CSS, style settings and several other page types are not included in the export.",
       win: true,
-      source: { label: "Squarespace Help Center: Exporting your site", url: "https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site", checkedOn: "2026-09-13" },
+      source: { label: "Squarespace Help Center: Exporting your site", url: "https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site", checkedOn: "2026-10-15" },
     },
     {
       feature: "Custom code",
       us: "Custom code is how we build. Anything your business needs that a template does not do, we write, and we support it after launch.",
       them: "Squarespace's help page says code injection is available in the Core, Plus, Advanced and some legacy plans, and that custom code modifications fall outside the scope of its support.",
       win: true,
-      source: { label: "Squarespace Help Center: Using code injection", url: "https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection", checkedOn: "2026-09-13" },
+      source: { label: "Squarespace Help Center: Using code injection", url: "https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection", checkedOn: "2026-10-15" },
     },
     {
       feature: "Custom CSS",
       us: "Every line of the stylesheet is ours to change, and changing it is part of the job.",
       them: "Squarespace's help page says the CSS editor is available on all plans, and that adding code to your site is an advanced modification that falls outside the scope of Squarespace support.",
-      source: { label: "Squarespace Help Center: Add custom code to your site", url: "https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-CSS", checkedOn: "2026-09-13" },
+      source: { label: "Squarespace Help Center: Add custom code to your site", url: "https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-CSS", checkedOn: "2026-10-15" },
     },
     {
       feature: "Handing the site over when you sell the business",
       us: "The site is an asset like any other: you hand over the code, the hosting login and the domain. Nothing about it depends on our account.",
       them: "Squarespace's help page says only the current site owner can transfer ownership, and that the new owner must first be invited as a contributor and accept.",
-      source: { label: "Squarespace Help Center: Change the site owner", url: "https://support.squarespace.com/hc/en-us/articles/206537197-Changing-site-ownership", checkedOn: "2026-09-13" },
+      source: { label: "Squarespace Help Center: Change the site owner", url: "https://support.squarespace.com/hc/en-us/articles/206537197-Changing-site-ownership", checkedOn: "2026-10-15" },
     },
     {
       feature: "Who does the work",
@@ -98,12 +98,12 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
   ],
   disclaimer:
     "Squarespace is a trademark of Squarespace, Inc. Canadian Web Designs is not affiliated with, endorsed by or sponsored by Squarespace, Inc. Statements about Squarespace on this page are drawn from Squarespace's own public help pages, linked below, and were last re-checked on the date shown. If a linked page has changed, the row it supports is out of date, not the other way round.",
-  reviewedOn: "2026-09-13",
+  reviewedOn: "2026-10-15",
   sources: [
-    { label: "Squarespace Help Center: Exporting your site", url: "https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site", checkedOn: "2026-09-13" },
-    { label: "Squarespace Help Center: Using code injection", url: "https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection", checkedOn: "2026-09-13" },
-    { label: "Squarespace Help Center: Add custom code to your site", url: "https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-CSS", checkedOn: "2026-09-13" },
-    { label: "Squarespace Help Center: Change the site owner", url: "https://support.squarespace.com/hc/en-us/articles/206537197-Changing-site-ownership", checkedOn: "2026-09-13" },
+    { label: "Squarespace Help Center: Exporting your site", url: "https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site", checkedOn: "2026-10-15" },
+    { label: "Squarespace Help Center: Using code injection", url: "https://support.squarespace.com/hc/en-us/articles/205815908-Using-code-injection", checkedOn: "2026-10-15" },
+    { label: "Squarespace Help Center: Add custom code to your site", url: "https://support.squarespace.com/hc/en-us/articles/205815928-Adding-custom-CSS", checkedOn: "2026-10-15" },
+    { label: "Squarespace Help Center: Change the site owner", url: "https://support.squarespace.com/hc/en-us/articles/206537197-Changing-site-ownership", checkedOn: "2026-10-15" },
   ],
   related: ["wix-alternative"],
 };
