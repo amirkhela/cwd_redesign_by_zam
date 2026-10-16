@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "Can you build a web app instead of a mobile app?",
-    a: "Yes. For tools used mostly on a computer, such as dashboards, portals and booking systems, a web app or progressive web app (PWA) is often the better choice. See our custom web portal package on the website packages page.",
+    a: "Yes. For tools used mostly on a computer, such as dashboards, portals and booking systems, a web app or progressive web app (PWA) is often the better choice. See our Custom Web Application package on the website packages page.",
   },
   {
     q: "Who owns the app and source code?",

@@ -10,14 +10,14 @@ import { getConfig, reviewCountPlus } from "@/lib/client-config";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Website Design Packages Canada | From $129 | Canadian Web Designs" },
+  title: { absolute: "Website Design Packages Canada | From $299 | Canadian Web Designs" },
   description:
-    "Affordable website design packages in Canada from $129. Small business websites, WordPress sites, Shopify + WooCommerce stores and custom portals. Flat prices, free quote.",
+    "Affordable website design packages in Canada from $299. Small business websites, WordPress sites, Shopify + WooCommerce stores and custom portals. Flat prices, free quote.",
   alternates: { canonical: "/web-design-packages" },
   openGraph: {
-    title: "Website Design Packages Canada | From $129 | Canadian Web Designs",
+    title: "Website Design Packages Canada | From $299 | Canadian Web Designs",
     description:
-      "Small business website packages from $129, ecommerce websites from $899 and custom web portals. Mobile responsive, SEO friendly, built by a Canadian team.",
+      "Small business website packages from $299, ecommerce websites from $899 and custom web applications (Next.js, Laravel). Mobile responsive, SEO friendly, built by a Canadian team.",
     url: "https://canadianwebdesigns.ca/web-design-packages",
   },
 };
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does a website cost in Canada?",
-    a: "With Canadian Web Designs a small business website starts at $129 for up to 3 pages. A 7 page WordPress website is $449, a 15 page professional website with booking and payments is $699, ecommerce stores start at $899 and custom web portals start at $3,499. Prices are one-time, in Canadian dollars, plus HST.",
+    a: "With Canadian Web Designs a small business website starts at $299 for up to 3 pages. A 7 page WordPress website is $449, a 15 page professional website with booking and payments is $699, ecommerce stores start at $899 and custom web applications (Next.js, Laravel) start at $3,499. Prices are one-time, in Canadian dollars, plus HST.",
   },
   {
     q: "Which website package is right for my business?",
@@ -69,7 +69,7 @@ const serviceSchema = {
   "@id": `https://${config.domain}/web-design-packages#service`,
   name: "Website Design Packages",
   serviceType: "Web design",
-  description: "Affordable website design packages for Canadian businesses: small business websites, WordPress websites, ecommerce stores and custom web portals.",
+  description: "Affordable website design packages for Canadian businesses: small business websites, WordPress websites, ecommerce stores and custom web applications (Next.js, Laravel).",
   areaServed: { "@type": "Country", name: "Canada" },
   provider: { "@id": `https://${config.domain}/#organization` },
   hasOfferCatalog: offerCatalog("Website Design Packages", WEBSITE_PACKAGES),
@@ -107,11 +107,11 @@ export default function WebDesignPackagesPage() {
               </div>
               <h1 className="font-black text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", lineHeight: 1.05 }}>
                 Website Design Packages{" "}
-                <span className="gradient-text-animated">From $129</span>
+                <span className="gradient-text-animated">From $299</span>
               </h1>
               <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
                 Affordable web design for Canadian small businesses. Pick a package for a business website,
-                a WordPress site, a Shopify or WooCommerce online store, or a custom web portal. One flat price,
+                a WordPress site, a Shopify or WooCommerce online store, or a custom web application. One flat price,
                 built by our in-house team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
