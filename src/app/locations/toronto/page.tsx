@@ -4,6 +4,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import WebDesignPackages from "@/components/WebDesignPackages";
 import GoogleReviews from "@/components/GoogleReviews";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 
@@ -361,55 +362,7 @@ export default function TorontoPage() {
       </section>
 
       {/* ─── PRICING ─── */}
-      <section className="py-16" style={{ background: "#f8fafc" }}>
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12 reveal">
-            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Pricing</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Toronto Web Design Packages</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto text-base">Transparent, flat-rate pricing — no hidden fees. Every package is mobile-first and SEO-optimized from day one.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
-              <p className="text-sm font-bold text-[#00AADF] tracking-widest uppercase mb-3">Starter</p>
-              <p className="text-4xl font-black text-gray-900 mb-1">$299</p>
-              <p className="text-gray-400 text-sm mb-6">One-time investment</p>
-              <ul className="space-y-3 text-sm text-gray-600">
-                {["2–3 pages", "Mobile-responsive design", "On-page SEO basics", "Contact form", "Google Analytics setup", "3-week delivery"].map((f) => (
-                  <li key={f} className="flex items-center gap-2"><span className="text-[#00AADF] font-bold">✓</span>{f}</li>
-                ))}
-              </ul>
-              <Link href="/contact" className="block mt-8 text-center py-3 rounded-xl border-2 border-[#00AADF] text-[#00AADF] font-bold text-sm hover:bg-[#00AADF] hover:text-white transition-all duration-200">Get Started</Link>
-            </div>
-            <div className="rounded-2xl p-8 reveal text-white relative" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)", boxShadow: "0 8px 32px rgba(0,170,223,0.35)" }}>
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
-              <p className="text-sm font-bold tracking-widest uppercase mb-3 text-blue-100">Growth</p>
-              <p className="text-4xl font-black mb-1">$599</p>
-              <p className="text-blue-200 text-sm mb-1">Complete SEO setup included</p>
-              <p className="text-blue-200 text-xs mb-6">One-time build, no monthly fees</p>
-              <ul className="space-y-3 text-sm text-blue-50">
-                {["Up to 12 pages", "Custom UI/UX design", "Meta titles & descriptions on every page", "Schema markup", "XML sitemap + Google indexing request", "Technical SEO & speed setup"].map((f) => (
-                  <li key={f} className="flex items-center gap-2"><span className="text-yellow-300 font-bold">✓</span>{f}</li>
-                ))}
-              </ul>
-              <Link href="/contact" className="block mt-8 text-center py-3 rounded-xl bg-white text-[#003B6F] font-black text-sm hover:bg-blue-50 transition-all duration-200">Start Growing</Link>
-            </div>
-            <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
-              <p className="text-sm font-bold text-[#00AADF] tracking-widest uppercase mb-3">Enterprise</p>
-              <p className="text-4xl font-black text-gray-900 mb-1">Custom</p>
-              <p className="text-gray-400 text-sm mb-6">Scoped to your goals</p>
-              <ul className="space-y-3 text-sm text-gray-600">
-                {["Unlimited pages", "E-commerce / booking systems", "Multi-location SEO strategy", "Custom integrations & APIs", "Dedicated account manager", "SLA-backed support"].map((f) => (
-                  <li key={f} className="flex items-center gap-2"><span className="text-[#00AADF] font-bold">✓</span>{f}</li>
-                ))}
-              </ul>
-              <Link href="/contact" className="block mt-8 text-center py-3 rounded-xl border-2 border-[#00AADF] text-[#00AADF] font-bold text-sm hover:bg-[#00AADF] hover:text-white transition-all duration-200">Let&apos;s Talk</Link>
-            </div>
-          </div>
-          <p className="text-center text-gray-500 text-sm mt-8">
-            Already have a Toronto site? Monthly <Link href="/services/website-maintenance" className="text-[#00AADF] font-semibold hover:underline">website maintenance</Link> plans start from $99/mo — updates, backups, uptime monitoring, and priority support.
-          </p>
-        </div>
-      </section>
+      <WebDesignPackages city="Toronto" />
 
       {/* ─── CTA ─── */}
       <section className="py-16 bg-white">

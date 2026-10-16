@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import WebDesignPackages from "@/components/WebDesignPackages";
 import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
@@ -435,6 +436,9 @@ export default function VictoriaPage() {
           </div>
         </div>
       </section>
+
+      {/* ─── PRICING ─── */}
+      <WebDesignPackages city="Victoria" />
 
       {/* ─── FAQ ─── */}
       <section className="py-14" style={{ background: "#f8fafc" }}>
