@@ -275,6 +275,14 @@ export const cwdConfig: ClientConfig = {
       ],
     },
     { label: "Our Portfolio", href: "/portfolio" },
+    {
+      label: "Pricing",
+      href: "/web-design-packages",
+      children: [
+        { label: "Web Design Packages", href: "/web-design-packages" },
+        { label: "SEO Packages", href: "/seo-packages" },
+      ],
+    },
     { label: "Get In Touch", href: "/contact" },
   ],
 

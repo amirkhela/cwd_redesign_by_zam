@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/seo`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     // Its own date: the page did not exist on 2026-08-29.
     { url: `${BASE_URL}/web-design-packages`, lastModified: new Date("2026-10-16T00:00:00.000Z"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/seo-packages`, lastModified: new Date("2026-10-17T00:00:00.000Z"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/sitemap`, lastModified: now, changeFrequency: "weekly", priority: 0.3 },
   ];
 
