@@ -1,4 +1,20 @@
-﻿/** @type {import('next').NextConfig} */
+﻿// Every fixed-path redirect also answers for its trailing-slash form, so old
+// WordPress URLs ("/post/") reach the final page in a single hop.
+function withSlashTwins(rules) {
+  const have = new Set(rules.map((r) => r.source));
+  const out = [];
+  for (const r of rules) {
+    out.push(r);
+    const twin = r.source + "/";
+    if (r.source !== "/" && !r.source.endsWith("/") && !/[*+?(]/.test(r.source) && !have.has(twin)) {
+      out.push({ ...r, source: twin });
+      have.add(twin);
+    }
+  }
+  return out;
+}
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
@@ -8,6 +24,9 @@ const nextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  // middleware.ts strips trailing slashes itself, so a legacy "/old-post/" URL
+  // redirects straight to its final page in one hop instead of two.
+  skipTrailingSlashRedirect: true,
   async headers() {
     return [
       {
@@ -33,7 +52,7 @@ const nextConfig = {
     },
   },
   async redirects() {
-    return [
+    return withSlashTwins([
       // Canonical host: www -> apex. Both were serving 200, duplicating every page.
       {
         source: "/:path*",
@@ -878,7 +897,7 @@ const nextConfig = {
       { source: "/blog/how-to-create-a-high-converting-landing-page", destination: "/blog/what-is-a-landing-page", permanent: true },
       { source: "/how-to-create-a-high-converting-landing-page", destination: "/blog/what-is-a-landing-page", permanent: true },
       { source: "/how-to-create-a-high-converting-landing-page/", destination: "/blog/what-is-a-landing-page", permanent: true },
-    ];
+    ]);
   },
 };
 

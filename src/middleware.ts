@@ -98,26 +98,46 @@ export function middleware(request: NextRequest) {
     return res;
   }
 
+  // 3. Trailing slash. next.config.mjs sets skipTrailingSlashRedirect, so the
+  //    slash is removed here, in the same hop as any legacy redirect: an old
+  //    "/post/" URL that AI answers still cite goes straight to /blog/post
+  //    instead of "/post" first and /blog/post second. The raw URL is read
+  //    because request.nextUrl normalises the trailing slash away.
+  const rawPath = new URL(request.url).pathname;
+  if (rawPath.length > 1 && rawPath.endsWith("/")) {
+    const stripped = rawPath.replace(/\/+$/, "") || "/";
+    const parts = stripped.split("/").filter(Boolean);
+    let target = stripped;
+    if (parts.length === 1) {
+      const s = parts[0];
+      if (PAGE_REDIRECTS[s]) target = PAGE_REDIRECTS[s];
+      else if (!KNOWN_ROUTES.has(s) && BLOG_SLUGS.has(s)) target = `/blog/${s}`;
+    }
+    const url = new URL(request.url);
+    url.pathname = target;
+    return NextResponse.redirect(url, target === stripped ? 308 : 301);
+  }
+
   // Only process root-level paths (single segment, no nested slashes).
   const segments = pathname.split("/").filter(Boolean);
   if (segments.length !== 1) return NextResponse.next();
 
   const slug = segments[0];
 
-  // 3. Explicit page redirects.
+  // 4. Explicit page redirects.
   if (PAGE_REDIRECTS[slug]) {
     const url = request.nextUrl.clone();
     url.pathname = PAGE_REDIRECTS[slug];
     return NextResponse.redirect(url, 301);
   }
 
-  // 4. Known routes / files / Next internals pass through untouched
+  // 5. Known routes / files / Next internals pass through untouched
   //    (city slugs, /about, service aliases etc. are handled by next.config.mjs).
   if (KNOWN_ROUTES.has(slug) || slug.startsWith("_next") || slug.includes(".")) {
     return NextResponse.next();
   }
 
-  // 5. Old WordPress root-level blog slug → 301 to /blog/:slug (recover rankings).
+  // 6. Old WordPress root-level blog slug → 301 to /blog/:slug (recover rankings).
   //    Gated on the real blog-slug set so only genuine posts redirect; everything
   //    else falls through to next.config redirects or a proper 404.
   if (BLOG_SLUGS.has(slug)) {
