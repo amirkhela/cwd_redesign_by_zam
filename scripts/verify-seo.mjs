@@ -273,6 +273,21 @@ async function checkSiteWide() {
   }
 }
 
+// Platforms that answer every non-browser request with a bot wall, so a fetch
+// cannot tell a live profile from a dead one. The fetch still runs (rule 2): only
+// the wall status listed here is accepted, and only for a profile that was opened
+// in a real browser first (2026-10-18). A 404 or 410 from any of them still fails.
+// facebook.com/canadianwebdesigns was dropped on 2026-09-05 for its 400, but the
+// page is real: Facebook sends 400 to every scripted request.
+const BOT_WALL = {
+  "www.facebook.com": [400],
+  "www.yelp.ca": [403],
+  "clutch.co": [403],
+  "www.trustpilot.com": [403],
+  "www.yellowpages.ca": [403],
+  "www.designrush.com": [403],
+};
+
 async function checkSameAs(org) {
   if (!org) return fail("sameAs", "no org node was found to read sameAs from");
   const list = org.sameAs || [];
@@ -282,6 +297,7 @@ async function checkSameAs(org) {
     let status;
     try { status = (await get(url, 25000)).status; }
     catch (e) { fail("sameAs", `${url} — request failed (${e.message})`); continue; }
+    if (status >= 400 && (BOT_WALL[new URL(url).host] || []).includes(status)) continue;
     if (status >= 400) fail("sameAs", `${url} answers HTTP ${status} — a dead entity anchor`);
   }
   return list;

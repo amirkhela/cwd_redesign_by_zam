@@ -296,7 +296,8 @@ export const cwdConfig: ClientConfig = {
   // footer of all 149 pages. Verified 2026-09-05 by fetching each URL:
   //   instagram.com/canadianwebdesigns         200, active (posts daily since 2026-08-24)
   //   linkedin.com/company/canadianwebdesigns  200, <title>Canadian Web Designs | LinkedIn
-  //   facebook.com/canadianwebdesigns          400                      <- removed
+  //   facebook.com/canadianwebdesigns          400                      <- removed (2026-10-18: the page
+  //     is real, Facebook sends 400 to every script; it is now in entityProfiles)
   //   youtube.com/canadianwebdesigns           404                      <- removed
   //   x.com/canadianwebdesigns                 404                      <- removed
   //   amazon.com/author/canadianwebdesigns     404 "Page Not Found"     <- removed
@@ -344,5 +345,18 @@ export const cwdConfig: ClientConfig = {
   entityProfiles: [
     "https://maps.google.com/?cid=1764590269626849918",  // Toronto
     "https://maps.google.com/?cid=3493474530954667891",  // Brampton
+    // Review and directory profiles Google.ca shows for the brand, added
+    // 2026-10-18. Each opened in Chrome first (most block curl with a bot wall):
+    // Facebook page, Trustpilot 4.7 from 32 reviews, Clutch Toronto profile
+    // (5.0, 4 reviews), DesignRush, YellowPages.ca. The Yelp.ca URL is the one
+    // Google links for this business; Yelp blocks automated browsers. Left out on
+    // purpose: the duplicate Clutch profile canadian-web-designs-1-0, Birdeye and
+    // Glassdoor.
+    "https://www.facebook.com/canadianwebdesigns",
+    "https://www.yelp.ca/biz/canadian-web-designs-toronto-3",
+    "https://clutch.co/profile/canadian-web-designs-0",
+    "https://www.trustpilot.com/review/canadianwebdesigns.ca",
+    "https://www.yellowpages.ca/bus/Ontario/Toronto/Canadian-Web-Designs/102247707.html",
+    "https://www.designrush.com/agency/profile/canadian-web-designs",
   ],
 };
