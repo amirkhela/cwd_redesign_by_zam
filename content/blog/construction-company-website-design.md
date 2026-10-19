@@ -70,3 +70,5 @@ faq:
 <p>It's also worth auditing how the site performs on the searches that actually drive leads — not just your company name, but service + city combinations a prospective client would realistically type into Google. A site that looks good but doesn't show up for "kitchen renovation [city]" or "electrical contractor [city]" is losing leads to competitors who invested in that visibility, regardless of whose portfolio is stronger.</p>
 
 <p>Custom web design for construction and contracting companies starts from $299, with ongoing maintenance plans available from $99/month for updates, security, and performance monitoring. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on what your construction company's website needs.</p>
+
+<p><strong>Ready to have it built?</strong> What we build into a contractor or construction company website, and what it costs, is on our <a href="/web-design-for-contractors">web design for contractors</a> page.</p>

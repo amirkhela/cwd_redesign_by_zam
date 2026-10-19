@@ -82,3 +82,5 @@ faq:
 <h2>Get a restaurant website built to convert</h2>
 
 <p>We build restaurant websites — menu pages, online ordering integrations, reservation systems, and the local SEO that gets them found — as part of our <a href="/services/web-design-development">web design services</a>, with custom builds starting from $299. <strong><a href="/contact">Get a free, no-obligation consultation today</a></strong> — we respond within one business day. Prefer to talk? Call <a href="tel:+16476896069">(647) 689-6069</a>.</p>
+
+<p><strong>Ready to have it built?</strong> What we build into a restaurant website, and what it costs, is on our <a href="/web-design-for-restaurants">web design for restaurants</a> page.</p>

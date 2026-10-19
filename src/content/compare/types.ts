@@ -74,6 +74,11 @@ export type IndustryPage = {
   kind: "industry";
   slug: string;
   audience: string;
+  /** "What we build into a ___ website". Absent = audience minus a trailing s,
+   *  which is right for "Dentists" and wrong for "Salons & Spas". */
+  audienceSingular?: string;
+  /** One line for the /industries hub card. */
+  hubBlurb?: string;
   h1: string;
   metaTitle: string;
   metaDescription: string;

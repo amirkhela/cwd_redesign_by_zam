@@ -19,6 +19,7 @@ export const WEB_DESIGN_FOR_DENTISTS: IndustryPage = {
   kind: "industry",
   slug: "web-design-for-dentists",
   audience: "Dentists",
+  hubBlurb: "Appointment requests, a page per treatment and local SEO for dental practices.",
   h1: "Web design for dentists: a website built to book appointments",
   metaTitle: "Web Design for Dentists Canada | Dental Websites That Book | Canadian Web Designs",
   metaDescription:

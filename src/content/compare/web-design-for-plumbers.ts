@@ -17,6 +17,7 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
   kind: "industry",
   slug: "web-design-for-plumbers",
   audience: "Plumbers",
+  hubBlurb: "Click-to-call, emergency service pages and service-area pages for plumbing companies.",
   h1: "Web design for plumbers: a website built to get the phone ringing",
   metaTitle: "Web Design for Plumbers Canada | Click-to-Call Plumbing Websites | Canadian Web Designs",
   metaDescription:

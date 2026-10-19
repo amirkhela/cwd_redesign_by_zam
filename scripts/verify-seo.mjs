@@ -101,6 +101,11 @@ const PAGES_FULL = [
   "/reviews", "/wix-alternative", "/squarespace-alternative",
   "/godaddy-website-builder-alternative", "/agency-vs-freelancer",
   "/web-design-for-plumbers", "/web-design-for-dentists", "/web-design-for-lawyers",
+  "/web-design-for-contractors", "/web-design-for-restaurants", "/web-design-for-roofers",
+  "/web-design-for-medical-clinics", "/web-design-for-pharmacies", "/web-design-for-realtors",
+  "/web-design-for-nonprofits", "/web-design-for-salons",
+  // the industry hub: a breadcrumb CollectionPage node and nothing else.
+  "/industries",
 ];
 
 const UA = "Mozilla/5.0 (compatible; cwd-verify-seo/1.0)";

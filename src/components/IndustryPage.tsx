@@ -4,6 +4,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import GoogleReviews from "@/components/GoogleReviews";
 import LastReviewed from "@/components/LastReviewed";
 import type { IndustryPage as IndustryData } from "@/content/compare/types";
+import { INDUSTRIES } from "@/content/compare";
 
 /**
  * Renders one "web design for <industry>" page from its data file.
@@ -15,6 +16,10 @@ import type { IndustryPage as IndustryData } from "@/content/compare/types";
  * patient or case numbers; those rules live in each data file's docstring.
  */
 export default function IndustryPage({ data }: { data: IndustryData }) {
+  const singular = data.audienceSingular ?? data.audience.toLowerCase().replace(/s$/, "");
+  // Every industry page links every other one, so a crawler that lands on any
+  // of them reaches the rest in one hop and the hub in one more.
+  const others = Object.values(INDUSTRIES).filter((p) => p.slug !== data.slug);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -29,7 +34,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
     <>
       <BreadcrumbSchema
         items={[
-          { name: "Services", href: "/services/web-design-development" },
+          { name: "Industries", href: "/industries" },
           { name: `Web Design for ${data.audience}`, href: `/${data.slug}` },
         ]}
         description={data.metaDescription}
@@ -104,7 +109,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">What You Get</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">What we build into a {data.audience.toLowerCase().replace(/s$/, "")} website</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">What we build into a {singular} website</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {data.whatYouGet.map((w) => {
@@ -158,7 +163,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">FAQs</span>
-            <h2 className="text-3xl font-black text-gray-900">Web design for {data.audience.toLowerCase()} — common questions</h2>
+            <h2 className="text-3xl font-black text-gray-900">Web design for {data.audience.toLowerCase()}: common questions</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-4">
             {data.faqs.map((f) => (
@@ -170,6 +175,26 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
           </div>
           <div className="max-w-3xl mx-auto mt-8">
             <LastReviewed reviewedOn={data.reviewedOn} note="This page's own copy was last reviewed on this date." />
+          </div>
+        </div>
+      </section>
+
+      {/* ─── OTHER INDUSTRIES ─── */}
+      <section className="py-14 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Other Industries</span>
+            <h2 className="text-3xl font-black text-gray-900">Websites we build for other industries</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {others.map((p) => (
+              <Link key={p.slug} href={`/${p.slug}`} className="px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF] hover:text-[#00AADF] transition-all duration-200">
+                Web design for {p.audience.toLowerCase()}
+              </Link>
+            ))}
+            <Link href="/industries" className="px-4 py-2.5 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">
+              All industries we serve
+            </Link>
           </div>
         </div>
       </section>

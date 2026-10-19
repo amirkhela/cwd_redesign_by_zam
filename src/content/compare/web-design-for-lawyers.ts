@@ -19,6 +19,7 @@ export const WEB_DESIGN_FOR_LAWYERS: IndustryPage = {
   kind: "industry",
   slug: "web-design-for-lawyers",
   audience: "Lawyers",
+  hubBlurb: "Practice-area pages, consultation requests and local SEO for law firms.",
   h1: "Web design for lawyers: a website built to win the consultation",
   metaTitle: "Web Design for Lawyers Canada | Law Firm Websites That Convert | Canadian Web Designs",
   metaDescription:

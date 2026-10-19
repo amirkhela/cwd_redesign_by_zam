@@ -4,6 +4,7 @@ import { getConfig } from "@/lib/client-config";
 import { getAllPosts } from "@/lib/blog";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { SEO_CITIES } from "../sitemap";
+import { INDUSTRIES } from "@/content/compare";
 
 const config = getConfig();
 
@@ -36,9 +37,8 @@ const landingPages = [
   { href: "/ecommerce-website-design-toronto", label: "eCommerce Website Design Toronto" },
   { href: "/web-design-packages", label: "Web Design Packages" },
   { href: "/seo-packages", label: "SEO Packages" },
-  { href: "/web-design-for-plumbers", label: "Web Design for Plumbers" },
-  { href: "/web-design-for-dentists", label: "Web Design for Dentists" },
-  { href: "/web-design-for-lawyers", label: "Web Design for Lawyers" },
+  { href: "/industries", label: "Industries We Serve" },
+  ...Object.values(INDUSTRIES).map((p) => ({ href: `/${p.slug}`, label: `Web Design for ${p.audience}` })),
 ];
 
 const blogCategories = [

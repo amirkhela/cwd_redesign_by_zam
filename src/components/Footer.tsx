@@ -52,6 +52,7 @@ export default function Footer() {
                 { href: "/web-design-for-plumbers", label: "Web Design for Plumbers" },
                 { href: "/web-design-for-dentists", label: "Web Design for Dentists" },
                 { href: "/web-design-for-lawyers", label: "Web Design for Lawyers" },
+                { href: "/industries", label: "All Industries We Serve" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link
