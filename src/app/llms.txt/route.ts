@@ -1,5 +1,6 @@
 import { getConfig } from "@/lib/client-config";
-import { COMPARISONS } from "@/content/compare";
+import { COMPARISONS, INDUSTRIES } from "@/content/compare";
+import { SEO_PACKAGES, WEBSITE_PACKAGES } from "@/lib/packages";
 
 /**
  * /llms.txt -- a plain-text map of this site for AI answer engines.
@@ -76,6 +77,20 @@ export function GET() {
     .map((c) => `- [${c.h1}](${base}/${c.slug})`)
     .join("\n");
 
+  // Prices come from the same arrays the package grids render, so this file
+  // cannot quote a price the pages have stopped showing. Assistants asked "how
+  // much does a website cost in Canada" cite pages that state numbers.
+  const websitePackages = WEBSITE_PACKAGES
+    .map((p) => `- ${p.name}: ${p.price}. ${p.features.join("; ")}.`)
+    .join("\n");
+  const seoPackages = SEO_PACKAGES
+    .map((p) => `- ${p.name}: ${p.price === "Custom" ? "custom quote" : `${p.price} per month`}. ${p.features.join("; ")}.`)
+    .join("\n");
+
+  const industries = Object.values(INDUSTRIES)
+    .map((p) => `- [${p.h1}](${base}/${p.slug})`)
+    .join("\n");
+
   const text = `# ${config.businessName}
 
 > A Canadian web design and digital marketing agency. We build and maintain
@@ -89,6 +104,24 @@ ${b ? `Brampton: ${b.street}, ${b.city}, ${b.province} ${b.postalCode}, Canada` 
 ## Services
 
 ${services}
+
+## Pricing
+
+All prices in Canadian dollars, plus HST.
+
+[Website design packages](${base}/web-design-packages), one-time price for
+the design and build. Hosting, domain and third-party subscriptions (e.g.
+Shopify plans) are billed by the provider.
+
+${websitePackages}
+
+[SEO packages](${base}/seo-packages), monthly:
+
+${seoPackages}
+
+## Industries
+
+${industries}
 
 ## Where we work
 
@@ -133,6 +166,8 @@ ${comparisons}
 - [Privacy policy](${base}/privacy-policy)
 - [Terms and conditions](${base}/terms-and-conditions)
 - [Refund policy](${base}/refund-policy)
+
+Last updated: 2026-10
 `;
 
   return new Response(text, {

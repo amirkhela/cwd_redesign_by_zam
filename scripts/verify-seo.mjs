@@ -255,7 +255,11 @@ async function checkSiteWide() {
       if (!llms.body.includes(must)) fail("/llms.txt", `missing section "${must}"`);
     }
     // rule 5's neighbour: llms.txt must not invent a claim the site does not make
-    if (/\b\d\.\d\s*star|\breview/i.test(llms.body)) fail("/llms.txt", "carries a rating/review claim — it must state no claim the pages do not");
+    // "Product reviews" is a Pro Ecommerce feature (a reviews widget on the
+    // client's store), rendered from WEBSITE_PACKAGES. It is not a claim about
+    // CWD, so it is the one phrase taken out before the check.
+    const llmsClaims = llms.body.replace(/Product reviews/g, "");
+    if (/\b\d\.\d\s*star|\breview/i.test(llmsClaims)) fail("/llms.txt", "carries a rating/review claim — it must state no claim the pages do not");
   }
 
   // llms-full.txt -- the article catalogue. Same rules as llms.txt: present,

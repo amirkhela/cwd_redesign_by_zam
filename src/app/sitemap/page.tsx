@@ -34,6 +34,11 @@ const landingPages = [
   { href: "/web-designers-near-me", label: "Web Designers Near Me" },
   { href: "/mobile-web-design-in-toronto", label: "Mobile Web Design in Toronto" },
   { href: "/ecommerce-website-design-toronto", label: "eCommerce Website Design Toronto" },
+  { href: "/web-design-packages", label: "Web Design Packages" },
+  { href: "/seo-packages", label: "SEO Packages" },
+  { href: "/web-design-for-plumbers", label: "Web Design for Plumbers" },
+  { href: "/web-design-for-dentists", label: "Web Design for Dentists" },
+  { href: "/web-design-for-lawyers", label: "Web Design for Lawyers" },
 ];
 
 const blogCategories = [

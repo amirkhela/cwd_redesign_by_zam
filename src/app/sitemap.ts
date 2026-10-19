@@ -81,9 +81,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  // Their own date: the package grid went onto every location page on
+  // 2026-10-16 (ebe8324). Move it only when these pages change again.
   const locationPages: MetadataRoute.Sitemap = config.cities.map((city) => ({
     url: `${BASE_URL}/locations/${city.slug}`,
-    lastModified: now,
+    lastModified: new Date("2026-10-16T00:00:00.000Z"),
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }));

@@ -3,7 +3,8 @@ import Link from "next/link";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-import PricingCards, { type PricingPlan } from "@/components/PricingCards";
+import PricingCards from "@/components/PricingCards";
+import { SEO_PACKAGES } from "@/lib/packages";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 
 const config = getConfig();
@@ -19,55 +20,6 @@ export const metadata: Metadata = {
     url: "https://canadianwebdesigns.ca/seo-packages",
   },
 };
-
-// Same packages and numbers as the /seo/<city> pages; keep them in step.
-const SEO_PACKAGES: PricingPlan[] = [
-  {
-    name: "Starter SEO",
-    price: "$250",
-    note: "Per month, CAD + HST",
-    desc: "For small businesses ready to start ranking.",
-    features: [
-      "Local keyword research",
-      "On-page SEO (up to 5 pages)",
-      "4 blog posts per month",
-      "10 local citations",
-      "Free technical audit",
-      "Monthly ranking report",
-    ],
-  },
-  {
-    name: "Growth SEO",
-    price: "$399",
-    note: "Per month, CAD + HST",
-    badge: "Most Popular",
-    highlight: true,
-    desc: "The complete package to lead your category.",
-    features: [
-      "50+ target keywords",
-      "On-page SEO (unlimited pages)",
-      "6 articles per month",
-      "20 local citations",
-      "Link building",
-      "Weekly ranking updates",
-      "Dedicated account manager",
-    ],
-  },
-  {
-    name: "Enterprise SEO",
-    price: "Custom",
-    note: "Scoped to your goals",
-    desc: "Multi-location and ecommerce SEO.",
-    features: [
-      "Multi-location strategy",
-      "Ecommerce SEO",
-      "Full content program",
-      "Google Ads integration",
-      "Conversion tracking",
-      "Monthly strategy call",
-    ],
-  },
-];
 
 const faqs = [
   {
