@@ -89,3 +89,8 @@ export type IndustryPage = {
   faqs: Faq[];
   reviewedOn: string;
 };
+
+/** An audience for use mid-sentence: plain words lowercased, acronyms such as
+ *  "HVAC" and "SaaS" kept as written ("SaaS & Startups" -> "SaaS & startups"). */
+export const audienceInSentence = (audience: string) =>
+  audience.replace(/\b[A-Z][a-z]+\b/g, (w) => w.toLowerCase());

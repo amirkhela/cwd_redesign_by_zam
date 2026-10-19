@@ -4,7 +4,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import GoogleReviews from "@/components/GoogleReviews";
 import LastReviewed from "@/components/LastReviewed";
 import type { IndustryPage as IndustryData } from "@/content/compare/types";
-import { INDUSTRIES } from "@/content/compare";
+import { INDUSTRIES, audienceInSentence } from "@/content/compare";
 
 /**
  * Renders one "web design for <industry>" page from its data file.
@@ -16,7 +16,7 @@ import { INDUSTRIES } from "@/content/compare";
  * patient or case numbers; those rules live in each data file's docstring.
  */
 export default function IndustryPage({ data }: { data: IndustryData }) {
-  const singular = data.audienceSingular ?? data.audience.toLowerCase().replace(/s$/, "");
+  const singular = data.audienceSingular ?? audienceInSentence(data.audience).replace(/s$/, "");
   // Every industry page links every other one, so a crawler that lands on any
   // of them reaches the rest in one hop and the hub in one more.
   const others = Object.values(INDUSTRIES).filter((p) => p.slug !== data.slug);
@@ -88,7 +88,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">The Problem</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Why most {data.audience.toLowerCase()} websites do not bring in work</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Why most {audienceInSentence(data.audience)} websites do not bring in work</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {data.painPoints.map((p, i) => (
@@ -163,7 +163,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">FAQs</span>
-            <h2 className="text-3xl font-black text-gray-900">Web design for {data.audience.toLowerCase()}: common questions</h2>
+            <h2 className="text-3xl font-black text-gray-900">Web design for {audienceInSentence(data.audience)}: common questions</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-4">
             {data.faqs.map((f) => (
@@ -189,7 +189,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
           <div className="flex flex-wrap justify-center gap-3">
             {others.map((p) => (
               <Link key={p.slug} href={`/${p.slug}`} className="px-4 py-2.5 rounded-xl text-sm font-semibold text-gray-700 border border-gray-200 hover:border-[#00AADF] hover:text-[#00AADF] transition-all duration-200">
-                Web design for {p.audience.toLowerCase()}
+                Web design for {audienceInSentence(p.audience)}
               </Link>
             ))}
             <Link href="/industries" className="px-4 py-2.5 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">

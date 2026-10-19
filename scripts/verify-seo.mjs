@@ -104,6 +104,9 @@ const PAGES_FULL = [
   "/web-design-for-contractors", "/web-design-for-restaurants", "/web-design-for-roofers",
   "/web-design-for-medical-clinics", "/web-design-for-pharmacies", "/web-design-for-realtors",
   "/web-design-for-nonprofits", "/web-design-for-salons",
+  "/web-design-for-hvac", "/web-design-for-therapists", "/web-design-for-gyms",
+  "/web-design-for-cleaning-companies", "/web-design-for-movers", "/web-design-for-saas",
+  "/web-design-for-manufacturers",
   // the industry hub: a breadcrumb CollectionPage node and nothing else.
   "/industries",
 ];

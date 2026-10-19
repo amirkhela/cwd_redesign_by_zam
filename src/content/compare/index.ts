@@ -20,7 +20,15 @@ import { WEB_DESIGN_FOR_PHARMACIES } from "./web-design-for-pharmacies";
 import { WEB_DESIGN_FOR_REALTORS } from "./web-design-for-realtors";
 import { WEB_DESIGN_FOR_NONPROFITS } from "./web-design-for-nonprofits";
 import { WEB_DESIGN_FOR_SALONS } from "./web-design-for-salons";
+import { WEB_DESIGN_FOR_HVAC } from "./web-design-for-hvac";
+import { WEB_DESIGN_FOR_THERAPISTS } from "./web-design-for-therapists";
+import { WEB_DESIGN_FOR_GYMS } from "./web-design-for-gyms";
+import { WEB_DESIGN_FOR_CLEANING_COMPANIES } from "./web-design-for-cleaning-companies";
+import { WEB_DESIGN_FOR_MOVERS } from "./web-design-for-movers";
+import { WEB_DESIGN_FOR_SAAS } from "./web-design-for-saas";
+import { WEB_DESIGN_FOR_MANUFACTURERS } from "./web-design-for-manufacturers";
 
+export { audienceInSentence } from "./types";
 export type { Comparison, IndustryPage, ReviewsPage, CompareRow, Faq, QuotedReview, Source } from "./types";
 
 export const COMPARISONS: Record<string, Comparison> = {
@@ -42,6 +50,13 @@ export const INDUSTRIES: Record<string, IndustryPage> = {
   [WEB_DESIGN_FOR_REALTORS.slug]: WEB_DESIGN_FOR_REALTORS,
   [WEB_DESIGN_FOR_NONPROFITS.slug]: WEB_DESIGN_FOR_NONPROFITS,
   [WEB_DESIGN_FOR_SALONS.slug]: WEB_DESIGN_FOR_SALONS,
+  [WEB_DESIGN_FOR_HVAC.slug]: WEB_DESIGN_FOR_HVAC,
+  [WEB_DESIGN_FOR_THERAPISTS.slug]: WEB_DESIGN_FOR_THERAPISTS,
+  [WEB_DESIGN_FOR_GYMS.slug]: WEB_DESIGN_FOR_GYMS,
+  [WEB_DESIGN_FOR_CLEANING_COMPANIES.slug]: WEB_DESIGN_FOR_CLEANING_COMPANIES,
+  [WEB_DESIGN_FOR_MOVERS.slug]: WEB_DESIGN_FOR_MOVERS,
+  [WEB_DESIGN_FOR_SAAS.slug]: WEB_DESIGN_FOR_SAAS,
+  [WEB_DESIGN_FOR_MANUFACTURERS.slug]: WEB_DESIGN_FOR_MANUFACTURERS,
 };
 
 export { REVIEWS_PAGE };

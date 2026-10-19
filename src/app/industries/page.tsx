@@ -3,7 +3,7 @@ import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import GoogleReviews from "@/components/GoogleReviews";
-import { INDUSTRIES } from "@/content/compare";
+import { INDUSTRIES, audienceInSentence } from "@/content/compare";
 
 /**
  * /industries -- the hub for every "web design for <industry>" page.
@@ -15,7 +15,7 @@ import { INDUSTRIES } from "@/content/compare";
 const BASE = "https://canadianwebdesigns.ca";
 const TITLE = "Industries We Serve | Canadian Web Designs";
 const DESCRIPTION =
-  "Websites and SEO built for your industry: contractors, roofers, plumbers, restaurants, clinics, pharmacies, dentists, lawyers, realtors and salons.";
+  "Websites and SEO built for your industry: contractors, HVAC, restaurants, clinics, pharmacies, dentists, lawyers, realtors, gyms, salons, SaaS and more.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -81,7 +81,7 @@ export default function IndustriesPage() {
                 style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}
               >
                 <h3 className="text-gray-900 font-black text-lg mb-3 group-hover:text-[#00AADF] transition-colors">
-                  Web design for {p.audience.toLowerCase()}
+                  Web design for {audienceInSentence(p.audience)}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{p.hubBlurb ?? p.metaDescription}</p>
               </Link>
