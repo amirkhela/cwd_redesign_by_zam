@@ -27,6 +27,37 @@ const replyTransporter = process.env.DEV_SMTP_PASS
   : transporter;
 const REPLY_FROM = process.env.DEV_SMTP_PASS ? DEV_EMAIL : process.env.SMTP_USER;
 
+// Form mail goes out through Resend (a send-only key, it cannot read any inbox) when RESEND_API_KEY is set.
+// If Resend refuses (e.g. the domain is not verified yet) the SMTP transporter is used instead.
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
+const RESEND_FROM = process.env.RESEND_FROM || "forms@mail.canadianwebdesigns.ca";
+
+type FormMail = { to: string; replyTo?: string; subject: string; text: string; html?: string };
+
+async function sendFormMail(name: string, mail: FormMail, smtp: nodemailer.Transporter, smtpFrom: string | undefined) {
+  if (RESEND_API_KEY) {
+    try {
+      const res = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${RESEND_API_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from: `${name} <${RESEND_FROM}>`,
+          to: mail.to.split(",").map((s) => s.trim()),
+          reply_to: mail.replyTo,
+          subject: mail.subject,
+          text: mail.text,
+          html: mail.html,
+        }),
+      });
+      if (res.ok) return;
+      console.error("Resend send failed, falling back to SMTP:", res.status, await res.text());
+    } catch (err) {
+      console.error("Resend send error, falling back to SMTP:", err);
+    }
+  }
+  await smtp.sendMail({ from: `"${name}" <${smtpFrom}>`, ...mail });
+}
+
 async function generateAiReply(firstName: string, service: string, message: string): Promise<string> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return "";
@@ -115,13 +146,12 @@ ${message}
 
   // 2. Send internal notification email
   try {
-    await transporter.sendMail({
-      from: `"CWD Website" <${process.env.SMTP_USER}>`,
+    await sendFormMail("CWD Website", {
       to: "dev@canadianwebdesigns.com, sales.canadianwebdesigns@gmail.com",
       replyTo: email,
       subject: source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${firstName} ${lastName}` : `New Contact Form: ${firstName} ${lastName}`,
       text: internalEmailBody,
-    });
+    }, transporter, process.env.SMTP_USER);
   } catch (err) {
     console.error("Failed to send internal email:", err);
     return NextResponse.json({ error: "Failed to send message" }, { status: 500 });
@@ -132,8 +162,7 @@ ${message}
     const aiBody = await generateAiReply(firstName, service || "", message);
     if (aiBody) {
       try {
-        await replyTransporter.sendMail({
-          from: `"Canadian Web Designs" <${REPLY_FROM}>`,
+        await sendFormMail("Canadian Web Designs", {
           to: email,
           replyTo: DEV_EMAIL,
           subject: `We received your request, ${firstName} | Canadian Web Designs`,
@@ -147,7 +176,7 @@ ${message}
               Canadian Web Designs &bull; <a href="https://canadianwebdesigns.ca">canadianwebdesigns.ca</a> &bull; 647-689-6069
             </p>
           </div>`,
-        });
+        }, replyTransporter, REPLY_FROM);
       } catch (err) { console.error("Failed to send AI auto-reply:", err); }
     }
   }
