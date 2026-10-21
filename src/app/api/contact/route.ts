@@ -15,6 +15,18 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Lead auto-replies go out as dev@ once DEV_SMTP_PASS (dev@ Gmail app password) is set; until then they use SMTP_USER
+const DEV_EMAIL = "dev@canadianwebdesigns.com";
+const replyTransporter = process.env.DEV_SMTP_PASS
+  ? nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: { user: DEV_EMAIL, pass: process.env.DEV_SMTP_PASS },
+    })
+  : transporter;
+const REPLY_FROM = process.env.DEV_SMTP_PASS ? DEV_EMAIL : process.env.SMTP_USER;
+
 async function generateAiReply(firstName: string, service: string, message: string): Promise<string> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return "";
@@ -120,10 +132,10 @@ ${message}
     const aiBody = await generateAiReply(firstName, service || "", message);
     if (aiBody) {
       try {
-        await transporter.sendMail({
-          from: `"Canadian Web Designs" <${process.env.SMTP_USER}>`,
+        await replyTransporter.sendMail({
+          from: `"Canadian Web Designs" <${REPLY_FROM}>`,
           to: email,
-          replyTo: "sales.canadianwebdesigns@gmail.com",
+          replyTo: DEV_EMAIL,
           subject: `We received your request, ${firstName} | Canadian Web Designs`,
           text: aiBody + "\n\n---\nCanadian Web Designs | canadianwebdesigns.ca | 647-689-6069",
           html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:24px;">
