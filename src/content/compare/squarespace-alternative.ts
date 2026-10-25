@@ -5,6 +5,9 @@ import type { Comparison } from "./types";
  * website. Same rules as wix-alternative.ts: every statement about Squarespace
  * comes from a support.squarespace.com article linked in `sources`, no prices
  * are quoted for Squarespace, and nothing claims it is "bad for SEO".
+ * Since 2026-10-25 (bug #1778) our own rows also follow the industry pages:
+ * no hosting in the client's own name, and Google Business Profile set-up
+ * comes with a local SEO plan.
  */
 export const SQUARESPACE_ALTERNATIVE: Comparison = {
   kind: "compare",
@@ -40,7 +43,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     },
     {
       feature: "Handing the site over when you sell the business",
-      us: "The site is an asset like any other: you hand over the code, the hosting login and the domain. Nothing about it depends on our account.",
+      us: "The site is an asset like any other: the code, the content and the domain are yours, and you can move the site to another host at any time.",
       them: "Squarespace's help page says only the current site owner can transfer ownership, and that the new owner must first be invited as a contributor and accept.",
       source: { label: "Squarespace Help Center: Change the site owner", url: "https://support.squarespace.com/hc/en-us/articles/206537197-Changing-site-ownership", checkedOn: "2026-10-15" },
     },
@@ -51,7 +54,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     },
     {
       feature: "Search engine set-up",
-      us: "Title tags, structured data, sitemap, Search Console and Google Business Profile set-up are part of every build, not an add-on.",
+      us: "On-page SEO is built into every site. Google Business Profile set-up, structured data and citations come with a local SEO plan.",
       them: "Any platform can rank when the SEO work is actually done. The question is who does that work and whether it is included.",
     },
     {
@@ -63,7 +66,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
   reasons: [
     {
       title: "You own it outright",
-      body: "When the project is done, the site is yours in every sense: the code, the content, the hosting account and the domain. You can hire any developer, change hosts or take it in-house, and nothing stops working because a subscription lapsed.",
+      body: "When the project is done, the site is yours in every sense: the code, the content and the domain. You can hire any developer, change hosts or take it in-house, and nothing stops working because a subscription lapsed.",
     },
     {
       title: "Custom work is the job, not an exception",
@@ -71,7 +74,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     },
     {
       title: "Built for Canadian search",
-      body: "We serve businesses across Canada and build for the searches they win: city and neighbourhood pages, Google Business Profile set-up, and content written in Canadian English for Canadian customers. Most of our builds run on WordPress, which we also maintain.",
+      body: "We serve businesses across Canada and build for the searches they win: city and neighbourhood pages, Google Business Profile set-up with a local SEO plan, and content written in Canadian English for Canadian customers. Most of our builds run on WordPress, which we also maintain.",
     },
   ],
   faqs: [
@@ -85,7 +88,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     },
     {
       q: "What do you build on instead?",
-      a: "Most often WordPress, on hosting in your name, because it is open-source, widely supported and easy for any developer to take over. Where a business needs something WordPress does not do well, we build custom. Our Squarespace vs WordPress guide walks through the trade-offs in more detail.",
+      a: "Most often WordPress, because it is open-source, widely supported and easy for any developer to take over. Where a business needs something WordPress does not do well, we build custom. Our Squarespace vs WordPress guide walks through the trade-offs in more detail.",
     },
     {
       q: "Can I keep my domain name?",
