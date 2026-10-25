@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getConfig } from "@/lib/client-config";
+
+const config = getConfig();
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -104,8 +107,8 @@ export default function NotFound() {
 
         <p className="text-white/25 text-sm">
           Need help? Call us at{" "}
-          <a href="tel:+16479002507" className="text-white/50 hover:text-white transition-colors underline underline-offset-2">
-            +1 (647) 900-2507
+          <a href={`tel:${config.phone}`} className="text-white/50 hover:text-white transition-colors underline underline-offset-2">
+            {config.phone}
           </a>
         </p>
       </div>
