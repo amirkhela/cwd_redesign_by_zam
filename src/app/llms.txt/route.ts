@@ -1,6 +1,6 @@
 import { getConfig } from "@/lib/client-config";
 import { COMPARISONS, INDUSTRIES } from "@/content/compare";
-import { SEO_PACKAGES, WEBSITE_PACKAGES } from "@/lib/packages";
+import { GOOGLE_ADS_PLAN, SEO_PACKAGES, WEBSITE_PACKAGES } from "@/lib/packages";
 
 /**
  * /llms.txt -- a plain-text map of this site for AI answer engines.
@@ -118,6 +118,11 @@ ${websitePackages}
 [SEO packages](${base}/seo-packages), monthly:
 
 ${seoPackages}
+
+[Google Ads management](${base}/services/google-ads-management), monthly.
+Ad spend is billed directly by Google, separate from our fee:
+
+- ${GOOGLE_ADS_PLAN.name}: ${GOOGLE_ADS_PLAN.price} per ad account per month. ${GOOGLE_ADS_PLAN.features.join("; ")}.
 
 ## Industries
 

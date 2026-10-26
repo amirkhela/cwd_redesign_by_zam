@@ -149,3 +149,23 @@ export const SEO_PACKAGES: PricingPlan[] = [
     ],
   },
 ];
+
+// Google Ads management: one flat fee per ad account, per month. Read by
+// /services/google-ads-management (card + Service schema) and /llms.txt.
+// The Business Profile product lists the same number; change both together.
+export const GOOGLE_ADS_PLAN = {
+  name: "Google Ads Management",
+  price: "$75",
+  priceValue: 75,
+  note: "Per ad account, per month, CAD + HST",
+  desc: "One flat fee for each Google Ads account we manage, whatever your ad budget.",
+  features: [
+    "Keyword research",
+    "Ad copywriting",
+    "Negative keyword management",
+    "Bid optimization",
+    "Conversion tracking setup",
+    "Monthly performance report",
+    "You own the account, always",
+  ],
+};

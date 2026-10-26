@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
+import { GOOGLE_ADS_PLAN } from "@/lib/packages";
 
 const config = getConfig();
 
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does Google Ads management cost in Toronto?",
-    a: "Our Google Ads management is a flat monthly fee — no percentage-of-spend markup. Your ad budget goes entirely to Google, and our fee covers full campaign management: keyword research, ad copywriting, negative keyword expansion, bid optimization, conversion tracking, and monthly reporting. Ad spend is billed separately by Google, and we'll recommend a realistic minimum budget for Toronto campaigns based on your industry and competition.",
+    a: "Our Google Ads management is $75 per ad account per month (CAD plus HST), a flat fee with no percentage-of-spend markup. Your ad budget goes entirely to Google, and our fee covers full campaign management: keyword research, ad copywriting, negative keyword expansion, bid optimization, conversion tracking, and monthly reporting. Ad spend is billed separately by Google, and we'll recommend a realistic minimum budget for Toronto campaigns based on your industry and competition.",
   },
   {
     q: "How quickly will I see results from Google Ads?",
@@ -78,11 +79,15 @@ const serviceSchema = {
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStock",
-    // No priceCurrency here. schema.org Offer takes price and priceCurrency
-    // TOGETHER; a currency with no price announces a price and then withholds
-    // it, which Google reads as an incomplete Offer rather than a cheap one.
-    // These services are quoted, not listed, so availability is the only
-    // honest claim. Add BOTH fields back the day a real number is published.
+    // The published price, so price and priceCurrency go in TOGETHER.
+    price: String(GOOGLE_ADS_PLAN.priceValue),
+    priceCurrency: "CAD",
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price: GOOGLE_ADS_PLAN.priceValue,
+      priceCurrency: "CAD",
+      unitText: "per ad account per month",
+    },
   },
 };
 
@@ -312,39 +317,19 @@ export default function GoogleAdsManagementPage() {
           <div className="text-center mb-12 reveal">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Transparent Pricing</span>
             <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Google Ads Management Pricing</h2>
-            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">Flat monthly management fees — your ad spend goes entirely to Google, not to us. No percentage-of-spend markups.</p>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">One flat fee per ad account, every month. Your ad spend goes entirely to Google, not to us, with no percentage-of-spend markup.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid max-w-md mx-auto gap-6 mb-8">
             {[
               {
-                name: "Starter",
-                price: "$150",
-                period: "monthly management",
-                adSpend: "Recommended ad spend scaled to your goals",
-                desc: "For small and medium Toronto businesses running their first Google Ads campaigns.",
-                features: ["1 campaign, up to 5 ad groups", "Search ads setup + copywriting", "Negative keyword management", "Conversion tracking setup", "Monthly performance report", "You own the account — always"],
+                name: GOOGLE_ADS_PLAN.name,
+                price: GOOGLE_ADS_PLAN.price,
+                period: GOOGLE_ADS_PLAN.note,
+                adSpend: "Ad spend is billed directly by Google",
+                desc: GOOGLE_ADS_PLAN.desc,
+                features: GOOGLE_ADS_PLAN.features,
                 cta: "Get Started",
-                highlight: false,
-              },
-              {
-                name: "Growth",
-                price: "$350",
-                period: "monthly management",
-                adSpend: "Recommended ad spend scaled to your goals",
-                desc: "For established Toronto businesses scaling campaigns across multiple services or locations.",
-                features: ["Up to 3 campaigns, 15 ad groups", "Search + Shopping or Remarketing", "Weekly Search Terms review", "A/B ad copy testing", "Competitor landscape analysis", "Bi-weekly strategy calls"],
-                cta: "Get Growth Plan",
                 highlight: true,
-              },
-              {
-                name: "Enterprise",
-                price: "Custom",
-                period: "monthly management",
-                adSpend: "Higher ad spend for multi-location scale",
-                desc: "For multi-location businesses, e-commerce stores, or agencies needing white-label management.",
-                features: ["Unlimited campaigns and ad groups", "All campaign types (Search, Shopping, PMax, LSA)", "Dedicated account manager", "Custom reporting dashboard", "Landing page optimization included", "Priority support + SLA"],
-                cta: "Get a Custom Quote",
-                highlight: false,
               },
             ].map((plan) => (
               <div key={plan.name} className={`rounded-2xl p-8 reveal border transition-all duration-300 ${plan.highlight ? "border-[#00AADF]" : "border-gray-100 bg-white"}`} style={plan.highlight ? { background: "linear-gradient(135deg, #003B6F, #00AADF)", boxShadow: "0 8px 40px rgba(0,170,223,0.3)" } : { boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
@@ -368,7 +353,7 @@ export default function GoogleAdsManagementPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-400 text-sm">All plans are month-to-month. Ad spend is billed directly by Google — separate from our management fee.</p>
+          <p className="text-center text-gray-400 text-sm">Month-to-month, no contract. Ad spend is billed directly by Google, separate from our management fee.</p>
         </div>
       </section>
 
