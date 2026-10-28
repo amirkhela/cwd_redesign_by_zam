@@ -1,0 +1,49 @@
+{
+  "_why": "Hand-written search titles and meta descriptions (Amir approved the work on 2026-10-28: 'C3 ok lets do it'). Google showed these ten pages 416,023 times in the 90 days to 2026-10-26 for 588 clicks (0.14%). Each title was written from the Search Console queries that page is actually shown for, using only claims the page itself makes, the prices in src/lib/packages.ts, and the Google rating read live that day (4.8 stars, 196 reviews, shown rounded down as 190+). Changing one before the +28-day CTR re-check (BST_VID_MAKER functions/cwd_ctr_recheck.py, on or after 2026-11-26) means the before/after comparison measures someone else's change.",
+  "_howToUnlock": "Delete the page's entry here AND its row under canadianwebdesigns in BST_VID_MAKER data/seo_engine/locks.json. Do that only if you want that page's title rewritten by someone or something else.",
+  "_lockedOn": "2026-10-28",
+  "_check": "node scripts/verify-title-locks.mjs [base-url]  (npm run verify:title-locks)",
+  "_numbers": "The rating (4.8) and the review count (190+, 20+) are written as they render today. The checker normalises them, so a new review or a config update never fails the lock; any other change does.",
+  "pages": {
+    "/": {
+      "title": "Web Design Company Toronto & Canada | 4.8★ (190+ Reviews)",
+      "description": "Custom, mobile-friendly websites that bring Toronto and Canadian businesses more calls and leads. Rated 4.8★ from 190+ Google reviews. Free quote."
+    },
+    "/seo/mississauga": {
+      "title": "Local SEO Mississauga | SEO Company From $250/Month",
+      "description": "Local SEO and Google Business Profile work for Mississauga businesses in Port Credit, Meadowvale and Erin Mills. Plans from $250/month. Free SEO audit."
+    },
+    "/web-designers-near-me": {
+      "title": "Web Designers Near Me | Custom Web Design From $299",
+      "description": "Custom web design for local businesses in Toronto, Mississauga, Vancouver, Calgary and 20+ Canadian cities. SEO included, no lock-in. 4.8★ on Google."
+    },
+    "/services/web-design-development": {
+      "title": "Custom Web Design & Development In Canada | 4.8★ Rated",
+      "description": "Custom websites for Canadian businesses, no templates: fast, mobile-friendly and SEO-ready. Rated 4.8★ from 190+ Google reviews. Free quote."
+    },
+    "/services/google-ads-management": {
+      "title": "Google Ads (AdWords) Management | $75/Month Per Ad Account",
+      "description": "Google Ads management for Canadian businesses at a flat $75 per ad account per month. No % of spend markup, no contract, you own the account. Free audit."
+    },
+    "/services/seo": {
+      "title": "Affordable SEO Services In Canada | Local & National SEO",
+      "description": "SEO for Canadian small businesses: audits, technical fixes, local SEO and Google Business Profile, content and link building. Plans from $250/month."
+    },
+    "/seo/victoria": {
+      "title": "SEO Agency Victoria BC | Local SEO From $250/Month",
+      "description": "Local SEO and Google Business Profile work for Victoria businesses in Downtown, Saanich and Oak Bay. From $250/month, no lock-in. Free SEO audit."
+    },
+    "/blog/kijiji-ads-marketing-strategy-for-local-businesses": {
+      "title": "How To Advertise On Kijiji: Ads That Bring Local Leads",
+      "description": "A step-by-step guide to Kijiji ads for local and home-service businesses: what to write, which cities to target, and what paid Top Ad upgrades cost."
+    },
+    "/seo/burnaby": {
+      "title": "Burnaby SEO Company | 4.8★ Rated, Plans From $250/Month",
+      "description": "Local SEO and Google Business Profile work for Burnaby businesses in Metrotown, Brentwood and Lougheed. Plans from $250/month. Free SEO audit."
+    },
+    "/services/website-maintenance": {
+      "title": "Website Maintenance Services Canada | Month-To-Month Plans",
+      "description": "Website maintenance for WordPress, Shopify, Webflow and custom sites: security updates, backups and uptime monitoring. Month-to-month, no setup fees."
+    }
+  }
+}

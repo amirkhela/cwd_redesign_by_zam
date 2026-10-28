@@ -8,12 +8,17 @@ import { GOOGLE_ADS_PLAN } from "@/lib/packages";
 
 const config = getConfig();
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (adwords management / adwords campaign management / google ads agency canada). The price
+// is GOOGLE_ADS_PLAN's, so it moves with the card. Locked in scripts/title-locks.json.
+const PAGE_TITLE = `Google Ads (AdWords) Management | ${GOOGLE_ADS_PLAN.price}/Month Per Ad Account`;
+
 export const metadata: Metadata = {
-  title: { absolute: "Google Ads Management Canada | PPC That Converts | Canadian Web Designs" },
-  description: `Certified Google Ads management, no contracts — our experts cut wasted spend and lower your cost per lead. ${reviewCountPlus(config.reviewCount)} Google reviews. Free audit.`,
+  title: { absolute: PAGE_TITLE },
+  description: `Google Ads management for Canadian businesses at a flat ${GOOGLE_ADS_PLAN.price} per ad account per month. No % of spend markup, no contract, you own the account. Free audit.`,
   alternates: { canonical: "/services/google-ads-management" },
   openGraph: {
-    title: "Google Ads Management Canada | PPC That Converts | Canadian Web Designs",
+    title: PAGE_TITLE,
     description: `Certified Google Ads management, no contracts — cut wasted spend and lower cost per lead. ${reviewCountPlus(config.reviewCount)} Google reviews. Free audit.`,
     url: "https://canadianwebdesigns.ca/services/google-ads-management",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Google Ads Management Canada 2026 — Canadian Web Designs" }],

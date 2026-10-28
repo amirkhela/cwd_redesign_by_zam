@@ -5,12 +5,15 @@ import Link from "next/link";
 
 const service = getConfig().services.find((s) => s.slug === "website-maintenance")!;
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (website maintenance / web design and maintenance), using only what the page itself
+// offers. Locked in scripts/title-locks.json.
 export const metadata: Metadata = {
-  title: { absolute: "Website Maintenance Canada | Secure & Updated | Canadian Web Designs" },
-  description: "Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal, speed & Core Web Vitals tuning. No lock-in. Free audit.",
+  title: { absolute: "Website Maintenance Services Canada | Month-To-Month Plans" },
+  description: "Website maintenance for WordPress, Shopify, Webflow and custom sites: security updates, backups and uptime monitoring. Month-to-month, no setup fees.",
   alternates: { canonical: "/services/website-maintenance" },
   openGraph: {
-    title: "Website Maintenance Canada | Secure & Updated | Canadian Web Designs",
+    title: "Website Maintenance Services Canada | Month-To-Month Plans",
     description: `Expert website maintenance — daily backups, 24/7 uptime monitoring, malware removal & Core Web Vitals tuning. ${reviewCountPlus(getConfig().reviewCount)} reviews. No lock-in. Free audit.`,
     url: "https://canadianwebdesigns.ca/services/website-maintenance",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Website Maintenance Canada 2026 — Canadian Web Designs" }],

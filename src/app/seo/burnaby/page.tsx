@@ -9,13 +9,18 @@ import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (seo burnaby / burnaby seo / burnaby seo company, all at positions 7-12). Locked in
+// scripts/title-locks.json.
+const PAGE_TITLE = `Burnaby SEO Company | ${config.rating}★ Rated, Plans From $250/Month`;
+
 export const metadata: Metadata = {
-  title: { absolute: "SEO Burnaby BC | SEO Services | Canadian Web Designs" },
+  title: { absolute: PAGE_TITLE },
   description:
-    `Burnaby SEO — difficulty as low as 12 means page 1 in 30–60 days. Brentwood, Metrotown & Lougheed. ${reviewCountPlus(config.reviewCount)} reviews. Free audit — (647) 689-6069.`,
+    "Local SEO and Google Business Profile work for Burnaby businesses in Metrotown, Brentwood and Lougheed. Plans from $250/month. Free SEO audit.",
   alternates: { canonical: "/seo/burnaby" },
   openGraph: {
-    title: "SEO Burnaby BC | SEO Services | Canadian Web Designs",
+    title: PAGE_TITLE,
     description:
       "Top-rated SEO in Burnaby, BC — rank page 1, win leads, grow your business. Keyword difficulty as low as 12. Free audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/burnaby",

@@ -8,13 +8,16 @@ import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (custom web design / web design near me / custom website design). $299 is the AI WebSuite
+// price this page shows. Locked in scripts/title-locks.json.
 export const metadata: Metadata = {
-  title: { absolute: "Web Designers Near Me | Custom Website Design | Canadian Web Designs" },
+  title: { absolute: "Web Designers Near Me | Custom Web Design From $299" },
   description:
-    `Top-rated web designers serving Toronto, Vancouver, Calgary, Mississauga & 20+ Canadian cities. Custom sites with SEO included. ${reviewCountPlus(config.reviewCount)} Google reviews.`,
+    `Custom web design for local businesses in Toronto, Mississauga, Vancouver, Calgary and 20+ Canadian cities. SEO included, no lock-in. ${config.rating}★ on Google.`,
   alternates: { canonical: "/web-designers-near-me" },
   openGraph: {
-    title: "Web Designers Near Me | Custom Website Design | Canadian Web Designs",
+    title: "Web Designers Near Me | Custom Web Design From $299",
     description:
       "Looking for web designers near you? We serve 20+ Canadian cities from Toronto to Vancouver — custom sites with SEO included. Free quote: (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/web-designers-near-me",

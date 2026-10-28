@@ -9,13 +9,15 @@ import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (local seo mississauga / local seo agency mississauga). Locked in scripts/title-locks.json.
 export const metadata: Metadata = {
-  title: { absolute: "SEO Mississauga | SEO Services | Canadian Web Designs" },
+  title: { absolute: "Local SEO Mississauga | SEO Company From $250/Month" },
   description:
-    `Mississauga SEO for Square One, Port Credit & Erin Mills — lower keyword difficulty than Toronto. ${reviewCountPlus(config.reviewCount)} reviews. Free audit — (647) 689-6069.`,
+    "Local SEO and Google Business Profile work for Mississauga businesses in Port Credit, Meadowvale and Erin Mills. Plans from $250/month. Free SEO audit.",
   alternates: { canonical: "/seo/mississauga" },
   openGraph: {
-    title: "SEO Mississauga | SEO Services | Canadian Web Designs",
+    title: "Local SEO Mississauga | SEO Company From $250/Month",
     description:
       `Expert SEO for Mississauga, ON — rank page 1 and win leads from Square One, Port Credit & Erin Mills. ${reviewCountPlus(config.reviewCount)} reviews. Free audit — (647) 689-6069.`,
     url: "https://canadianwebdesigns.ca/seo/mississauga",

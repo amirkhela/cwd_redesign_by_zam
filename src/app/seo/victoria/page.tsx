@@ -9,13 +9,16 @@ import GoogleReviews from "@/components/GoogleReviews";
 
 const config = getConfig();
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (seo agency victoria / seo company victoria / local seo victoria). Locked in
+// scripts/title-locks.json.
 export const metadata: Metadata = {
-  title: { absolute: "SEO Victoria, BC | SEO Company | Canadian Web Designs" },
+  title: { absolute: "SEO Agency Victoria BC | Local SEO From $250/Month" },
   description:
-    `Victoria BC SEO — lower keyword difficulty than Vancouver, same buyer intent. Downtown, Oak Bay & Saanich. ${reviewCountPlus(config.reviewCount)} reviews. Free audit — (647) 689-6069.`,
+    "Local SEO and Google Business Profile work for Victoria businesses in Downtown, Saanich and Oak Bay. From $250/month, no lock-in. Free SEO audit.",
   alternates: { canonical: "/seo/victoria" },
   openGraph: {
-    title: "SEO Victoria, BC | SEO Company | Canadian Web Designs",
+    title: "SEO Agency Victoria BC | Local SEO From $250/Month",
     description:
       "Expert SEO services in Victoria, BC — rank page 1, grow your business, and win more leads from search. Free SEO audit — (647) 689-6069.",
     url: "https://canadianwebdesigns.ca/seo/victoria",

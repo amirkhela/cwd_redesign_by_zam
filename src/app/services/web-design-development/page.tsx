@@ -5,12 +5,17 @@ import Link from "next/link";
 
 const service = getConfig().services.find((s) => s.slug === "web-design-development")!;
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (canada web design / canadian web design / canada website design). Locked in
+// scripts/title-locks.json.
+const PAGE_TITLE = `Custom Web Design & Development In Canada | ${getConfig().rating}★ Rated`;
+
 export const metadata: Metadata = {
-  title: { absolute: "Web Design & Development Company | Canadian Web Designs" },
-  description: `Custom, hand-coded web design — no templates, SEO built in, designed to convert visitors into clients. Rated ${getConfig().rating} stars from ${reviewCountPlus(getConfig().reviewCount)} Google reviews. Free quote.`,
+  title: { absolute: PAGE_TITLE },
+  description: `Custom websites for Canadian businesses, no templates: fast, mobile-friendly and SEO-ready. Rated ${getConfig().rating}★ from ${reviewCountPlus(getConfig().reviewCount)} Google reviews. Free quote.`,
   alternates: { canonical: "/services/web-design-development" },
   openGraph: {
-    title: "Web Design & Development Company | Canadian Web Designs",
+    title: PAGE_TITLE,
     description: `Custom websites — no templates, SEO built in, built to convert. Serving Toronto, Vancouver, Calgary & all of Canada. ${reviewCountPlus(getConfig().reviewCount)} Google reviews.`,
     url: "https://canadianwebdesigns.ca/services/web-design-development",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],

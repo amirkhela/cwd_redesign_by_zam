@@ -12,13 +12,18 @@ const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel
 
 const config = getConfig();
 
+// Search title + snippet, rewritten 2026-10-28 from the queries this page is shown for in
+// Search Console (web design company / web design toronto / web design canada). Locked in
+// scripts/title-locks.json; the CTR before and after is measured at +28 days.
+const PAGE_TITLE = `Web Design Company Toronto & Canada | ${config.rating}★ (${reviewCountPlus(config.reviewCount)} Reviews)`;
+
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Canada | Custom Websites | Canadian Web Designs" },
+  title: { absolute: PAGE_TITLE },
   description:
-    `Custom, high-converting websites that turn visitors into clients. Rated ${config.rating} stars on Google from ${reviewCountPlus(config.reviewCount)} reviews across Toronto, Vancouver & Canada. Free quote.`,
+    `Custom, mobile-friendly websites that bring Toronto and Canadian businesses more calls and leads. Rated ${config.rating}★ from ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design Canada | Custom Websites | Canadian Web Designs",
+    title: PAGE_TITLE,
     description: `Custom, high-converting websites rated ${config.rating} stars from ${reviewCountPlus(config.reviewCount)} Google reviews across Canada. Get your free quote today.`,
     url: `https://${config.domain}`,
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],

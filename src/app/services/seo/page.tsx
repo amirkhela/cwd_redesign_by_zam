@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
+import { SEO_PACKAGES } from "@/lib/packages";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import Link from "next/link";
 
 const service = getConfig().services.find((s) => s.slug === "seo")!;
 
+// Search title + snippet rewritten 2026-10-28 from this page's Search Console queries
+// (affordable seo services in canada / canadian seo services). The price is the Starter
+// plan on /seo-packages (SEO_PACKAGES). Locked in scripts/title-locks.json.
+const PAGE_TITLE = "Affordable SEO Services In Canada | Local & National SEO";
+
 export const metadata: Metadata = {
-  title: { absolute: "SEO Services Canada | Local & National SEO | Canadian Web Designs" },
-  description: `Grow your organic traffic with Canada's trusted SEO team — technical audits, local targeting, content & link building. ${reviewCountPlus(getConfig().reviewCount)} Google reviews. Free SEO audit.`,
+  title: { absolute: PAGE_TITLE },
+  description: `SEO for Canadian small businesses: audits, technical fixes, local SEO and Google Business Profile, content and link building. Plans from ${SEO_PACKAGES[0].price}/month.`,
   alternates: { canonical: "/services/seo" },
   openGraph: {
-    title: "SEO Services Canada | Local & National SEO | Canadian Web Designs",
+    title: PAGE_TITLE,
     description: `Climb Google and grow organic traffic with local & national SEO — audits, content & link building. ${reviewCountPlus(getConfig().reviewCount)} Google reviews. Free SEO audit.`,
     url: "https://canadianwebdesigns.ca/services/seo",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "SEO Services Canada 2026 — Canadian Web Designs" }],
