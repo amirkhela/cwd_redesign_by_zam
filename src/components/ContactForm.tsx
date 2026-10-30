@@ -1,11 +1,9 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import Script from "next/script";
 import { getConfig } from "@/lib/client-config";
 import { trackLead } from "@/lib/analytics";
-
-const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
+import { getRecaptchaToken, loadRecaptcha } from "@/lib/recaptcha";
 
 const config = getConfig();
 const services = [...config.services.map((s) => s.title), "Other"];
@@ -13,38 +11,6 @@ const services = [...config.services.map((s) => s.title), "Other"];
 const inputClass =
   "w-full px-4 py-3 min-h-[44px] rounded-xl outline-none transition-all duration-200 text-gray-900 placeholder:text-gray-400 font-medium"
   + " bg-gray-50 border border-gray-200 focus:border-[#00AADF] focus:bg-white focus:ring-2 focus:ring-[#00AADF]/20";
-
-async function getRecaptchaToken(siteKey: string): Promise<string> {
-  try {
-    const gc = (window as any).grecaptcha;
-    if (!gc) return "";
-    return await new Promise<string>((resolve) => {
-      try {
-        const run = () => {
-          try {
-            const result = gc.execute(siteKey, { action: "contact" });
-            if (result && typeof result.then === "function") {
-              result.then((token: string) => resolve(token)).catch(() => resolve(""));
-            } else {
-              resolve("");
-            }
-          } catch {
-            resolve("");
-          }
-        };
-        if (typeof gc.ready === "function") {
-          gc.ready(run);
-        } else {
-          run();
-        }
-      } catch {
-        resolve("");
-      }
-    });
-  } catch {
-    return "";
-  }
-}
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -60,11 +26,7 @@ export default function ContactForm() {
     const form = e.currentTarget;
 
     try {
-      let recaptchaToken = "";
-      if (RECAPTCHA_SITE_KEY && typeof window !== "undefined") {
-        recaptchaToken = await getRecaptchaToken(RECAPTCHA_SITE_KEY);
-      }
-
+      const recaptchaToken = await getRecaptchaToken();
 
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
@@ -76,7 +38,8 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        trackLead("contact-page");
+        const result = await response.json().catch(() => ({}));
+        if (result.counted !== false) trackLead("contact-page");
         setSubmitted(true);
       } else {
         setError(true);
@@ -104,13 +67,7 @@ export default function ContactForm() {
 
   return (
     <>
-      {RECAPTCHA_SITE_KEY && (
-        <Script
-          src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
-          strategy="afterInteractive"
-        />
-      )}
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} onFocus={() => { loadRecaptcha(); }} className="space-y-5">
         {/* Honeypot — hidden from real users, bots fill it out */}
         <input
           type="text"

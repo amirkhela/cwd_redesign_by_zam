@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import { trackLead } from "@/lib/analytics";
+import { getRecaptchaToken, loadRecaptcha } from "@/lib/recaptcha";
 
 export default function HeroQuoteForm({ source = "homepage" }: { source?: string }) {
   const uid = useId();
@@ -12,11 +13,13 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
       setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  async function submit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (status === "sending") return;
+    const hp = (e.currentTarget.elements.namedItem("_hp") as HTMLInputElement | null)?.value || "";
     setStatus("sending");
     try {
+      const recaptchaToken = await getRecaptchaToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -28,13 +31,13 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
           service: form.service,
           message: `Quick quote request from: ${source}.\n\nService: ${form.service || "General Inquiry"}`,
           source,
-          recaptchaToken: "",
-          _hp: "",
+          recaptchaToken,
+          _hp: hp,
         }),
       });
       if (!res.ok) throw new Error("HTTP " + res.status);
       const data = await res.json();
-      if (data.success) trackLead(source);
+      if (data.success && data.counted !== false) trackLead(source);
       setStatus(data.success ? "done" : "error");
     } catch {
       setStatus("error");
@@ -78,6 +81,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
     <>
       <form
         onSubmit={submit}
+        onFocus={() => { loadRecaptcha(); }}
         className="rounded-2xl p-6"
         style={{
           background: "rgba(0,10,28,0.95)",

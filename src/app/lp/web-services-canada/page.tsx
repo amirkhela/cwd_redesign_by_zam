@@ -7,6 +7,7 @@ import Image from "next/image";
 import GoogleReviews from "@/components/GoogleReviews";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import { trackLead } from "@/lib/analytics";
+import { getRecaptchaToken, loadRecaptcha } from "@/lib/recaptcha";
 
 const config = getConfig();
 
@@ -116,11 +117,13 @@ function LpForm({ heading = "Get Your Project Started" }: { heading?: string }) 
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
       setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  async function submit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (status === "sending") return;
+    const hp = (e.currentTarget.elements.namedItem("_hp") as HTMLInputElement | null)?.value || "";
     setStatus("sending");
     try {
+      const recaptchaToken = await getRecaptchaToken();
       const [firstName, ...rest] = form.name.trim().split(" ");
       const lastName = rest.join(" ") || "-";
       const res = await fetch("/api/contact", {
@@ -134,13 +137,16 @@ function LpForm({ heading = "Get Your Project Started" }: { heading?: string }) 
           service: form.service,
           message: `Google Ads landing page lead.\nService: ${form.service || "General"}`,
           source: "google-ads-lp",
-          recaptchaToken: "",
-          _hp: "",
+          recaptchaToken,
+          _hp: hp,
         }),
       });
       if (!res.ok) throw new Error();
       const data = await res.json();
-      if (data.success) { fireConversion(); trackLead("google-ads-lp"); router.push("/lp/web-services-canada/thank-you"); }
+      if (data.success) {
+        if (data.counted !== false) { fireConversion(); trackLead("google-ads-lp"); }
+        router.push("/lp/web-services-canada/thank-you");
+      }
       else setStatus("error");
     } catch {
       setStatus("error");
@@ -153,6 +159,7 @@ function LpForm({ heading = "Get Your Project Started" }: { heading?: string }) 
   return (
     <form
       onSubmit={submit}
+      onFocus={() => { loadRecaptcha(); }}
       className="rounded-2xl p-6"
       style={{ background: "#fff", border: "1px solid #e2e8f0", boxShadow: "0 20px 60px rgba(0,0,0,0.12)" }}
     >

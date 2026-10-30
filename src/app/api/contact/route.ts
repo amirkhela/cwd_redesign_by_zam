@@ -93,30 +93,50 @@ async function sendSms(to: string, body: string): Promise<void> {
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  const { firstName, lastName, email, phone, service, message, recaptchaToken, source } = body;
+  const { firstName, lastName, email, phone, service, message, recaptchaToken, source, _hp } = body;
 
   if (!firstName || !lastName || !email || !message) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
-  // reCAPTCHA — non-blocking for the internal email, but a failed check skips the auto-reply
+  // Bots are dropped silently: they get the normal success answer (so they don't retry),
+  // but no email, no Sheet row, no auto-reply, and counted:false so the form skips the GA4/Ads lead.
+  const dropBot = (reason: string) => {
+    console.warn(`Contact form bot dropped (${reason}):`, email, source || "contact");
+    return NextResponse.json({ success: true, counted: false });
+  };
+  if (_hp) return dropBot("honeypot");
+
+  // reCAPTCHA: a confident fail is dropped. A missing token (blocked script, or a direct POST)
+  // still reaches the inbox, marked [Unverified], with no auto-reply and no lead count.
+  // If the check itself breaks (bad secret, Google down) the lead goes through as normal.
   let looksLikeBot = /https?:\/\/|www\./i.test(message);
-  if (RECAPTCHA_SECRET_KEY && recaptchaToken) {
-    try {
-      const verifyResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: `secret=${RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
-      });
-      const verifyData = await verifyResponse.json();
-      if (!verifyData.success || verifyData.score < 0.3) {
-        console.warn("reCAPTCHA low score (non-blocking):", JSON.stringify(verifyData));
-        looksLikeBot = true;
+  let unverified = false;
+  if (RECAPTCHA_SECRET_KEY) {
+    if (!recaptchaToken) {
+      unverified = true;
+    } else {
+      try {
+        const verifyResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams({ secret: RECAPTCHA_SECRET_KEY, response: recaptchaToken }).toString(),
+        });
+        const verifyData = await verifyResponse.json();
+        const codes: string[] = verifyData["error-codes"] || [];
+        if (verifyData.success && typeof verifyData.score === "number" && verifyData.score < 0.3) {
+          return dropBot(`reCAPTCHA score ${verifyData.score}`);
+        }
+        if (!verifyData.success && codes.some((c) => c === "invalid-input-response" || c === "timeout-or-duplicate")) {
+          return dropBot(`reCAPTCHA ${codes.join(",")}`);
+        }
+        if (!verifyData.success) console.warn("reCAPTCHA check failed, lead let through:", JSON.stringify(verifyData));
+      } catch (err) {
+        console.warn("reCAPTCHA check error, lead let through:", err);
       }
-    } catch (err) {
-      console.warn("reCAPTCHA check error (non-blocking):", err);
     }
   }
+  if (unverified) looksLikeBot = true;
 
   const timestamp = new Date().toLocaleString("en-CA", { timeZone: "America/Toronto" });
 
@@ -149,7 +169,7 @@ ${message}
     await sendFormMail("CWD Website", {
       to: "dev@canadianwebdesigns.com, sales.canadianwebdesigns@gmail.com",
       replyTo: email,
-      subject: source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${firstName} ${lastName}` : `New Contact Form: ${firstName} ${lastName}`,
+      subject: (unverified ? "[Unverified] " : "") + (source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${firstName} ${lastName}` : `New Contact Form: ${firstName} ${lastName}`),
       text: internalEmailBody,
     }, transporter, process.env.SMTP_USER);
   } catch (err) {
@@ -190,5 +210,5 @@ ${message}
     sendSms(phone, `Hi ${firstName}! Thanks for reaching out to Canadian Web Designs. We received your message and will get back to you within 24 hours. Questions? Call us: 647-689-6069`).catch(() => {});
   }
 
-  return NextResponse.json({ success: true });
+  return NextResponse.json({ success: true, counted: !unverified });
 }
