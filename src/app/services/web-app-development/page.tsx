@@ -135,7 +135,7 @@ const appTypes = [
 
 const process = [
   { step: "01", title: "Discovery & Scope", desc: "We map who uses the app, what each user type needs to do and which systems it has to connect to. You get a written scope with every feature and a quote before any code is written." },
-  { step: "02", title: "Design & Prototype", desc: "Screens are designed and linked into a clickable prototype, so you and your users can try the flow before it is built. Changes here cost minutes, not weeks." },
+  { step: "02", title: "Web Application Design", desc: "Screens are designed and linked into a clickable prototype, so you and your users can try the flow before it is built. Changes here cost minutes, not weeks." },
   { step: "03", title: "Build & Test", desc: "We build in short stages and show you working features as they are finished. Logins, roles, payments and integrations are tested with real scenarios before launch." },
   { step: "04", title: "Launch & Support", desc: "We deploy the app and hand it over. The first 90 days of support are included, and you receive the full source code." },
 ];
@@ -199,7 +199,7 @@ export default function WebAppDevelopmentPage() {
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12 reveal">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">What We Build</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Web Applications for Canadian Businesses</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Custom Web App Development for Canadian Businesses</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-base">If your customers or your team need to log in and get something done, it is a web app. These are the ones we build most.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -272,8 +272,8 @@ export default function WebAppDevelopmentPage() {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12 reveal">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Our Process</span>
-            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">How We Build Web Applications</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto text-base">A written scope up front, a prototype you can click through, and working features shown as they are finished.</p>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Our Web App Development Process</h2>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto text-base">As a Canadian web application development company, we work from a written scope, a prototype you can click through, and working features shown as they are finished.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {process.map((p, i) => (
