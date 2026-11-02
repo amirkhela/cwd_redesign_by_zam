@@ -20,6 +20,9 @@ type CityData = {
   neighbourhoods: string[];
   industries: string[];
   faq: { q: string; a: string }[];
+  /** Optional per-city title/description, written from the queries the page already ranks for. */
+  metaTitle?: string;
+  metaDescription?: string;
 };
 
 const cities: Record<string, CityData> = {
@@ -75,6 +78,9 @@ const cities: Record<string, CityData> = {
   },
   ottawa: {
     name: "Ottawa",
+    // GSC: ranks 3-6 for "search engine optimization (company) ottawa" (Oct 2026)
+    metaTitle: "Search Engine Optimization Ottawa | SEO Plans From $250",
+    metaDescription: "SEO for Ottawa businesses: local keyword research, Google Business Profile work and citations for Kanata, Barrhaven and Orleans. Plans from $250/month.",
     province: "ON",
     blurb: "Ottawa is Canada's capital and one of its most economically stable cities — home to the federal government, a world-class technology sector (Shopify, Kinaxis, Nokia), Carleton University, the University of Ottawa, and a diverse service economy. With 1M+ residents across the National Capital Region, Ottawa businesses compete in a bilingual, highly educated market where Google search is the dominant discovery channel. Ottawa keyword difficulty is actually one of the more accessible among major Canadian capitals — 'seo company ottawa' draws close to 600 monthly searches at a difficulty of just 17, well below Toronto and Calgary equivalents.",
     population: "1,000,000+",
@@ -297,13 +303,14 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city } = await params;
   const data = cities[city];
   if (!data) return {};
+  const title = data.metaTitle ?? `SEO ${data.name} | SEO Company & Services | Canadian Web Designs`;
   return {
-    title: { absolute: `SEO ${data.name} | SEO Company & Services | Canadian Web Designs` },
-    description: `Rank page 1 in ${data.name} in 60–90 days — local SEO, GBP optimization & citation building. ${reviewCountPlus(config.reviewCount)} Google reviews. Free audit: (647) 689-6069.`,
+    title: { absolute: title },
+    description: data.metaDescription ?? `Rank page 1 in ${data.name} in 60–90 days — local SEO, GBP optimization & citation building. ${reviewCountPlus(config.reviewCount)} Google reviews. Free audit: (647) 689-6069.`,
     alternates: { canonical: `/seo/${city}` },
     openGraph: {
-      title: `SEO ${data.name} | SEO Company & Services | Canadian Web Designs`,
-      description: `${data.name} SEO that ranks — local keyword strategy, GBP optimization & citation building. ${reviewCountPlus(config.reviewCount)} reviews. Free audit: (647) 689-6069.`,
+      title,
+      description: data.metaDescription ?? `${data.name} SEO that ranks — local keyword strategy, GBP optimization & citation building. ${reviewCountPlus(config.reviewCount)} reviews. Free audit: (647) 689-6069.`,
       url: `https://canadianwebdesigns.ca/seo/${city}`,
       images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: `SEO ${data.name} — Canadian Web Designs` }],
     },
