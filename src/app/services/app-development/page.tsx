@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     q: "Can you build a web app instead of a mobile app?",
-    a: "Yes. For tools used mostly on a computer, such as dashboards, portals and booking systems, a web app or progressive web app (PWA) is often the better choice. See our Custom Web Application package on the website packages page.",
+    a: "Yes. For tools used mostly on a computer, such as dashboards, portals and booking systems, a web app or progressive web app (PWA) is often the better choice. See our web application development page.",
   },
   {
     q: "Who owns the app and source code?",
@@ -167,6 +167,8 @@ export default function AppDevelopmentPage() {
             ))}
           </div>
           <p className="text-center text-sm text-gray-500 mt-10">
+            Need a browser-based portal, dashboard or booking system instead? See{" "}
+            <Link href="/services/web-app-development" className="font-bold text-[#00AADF] hover:underline">web application development</Link>.
             Need a website to go with your app? See our{" "}
             <Link href="/web-design-packages" className="font-bold text-[#00AADF] hover:underline">website design packages</Link>.
           </p>

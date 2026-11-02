@@ -40,6 +40,7 @@ export default function Footer() {
                 { href: "/services/wordpress-website-design", label: "WordPress Website Design" },
                 { href: "/services/shopify-website-design", label: "Shopify Website Design" },
                 { href: "/services/wix-website-design", label: "Wix Website Design" },
+                { href: "/services/web-app-development", label: "Web App Development" },
                 { href: "/services/seo", label: "SEO Services" },
                 { href: "/seo", label: "Local SEO by City" },
                 { href: "/services/google-ads-management", label: "Google Ads Management" },

@@ -137,6 +137,21 @@ export const cwdConfig: ClientConfig = {
       ],
     },
     {
+      slug: "web-app-development",
+      title: "Web App Development",
+      tagline: "Custom web applications: portals, booking systems, dashboards and SaaS",
+      description:
+        "We design and build custom web applications for Canadian businesses: client portals, booking and scheduling systems, dashboards, CRMs, learning platforms and SaaS products on Next.js, React, Laravel or Node.js. You own the source code. From $3,499.",
+      features: [
+        "Client portals, booking systems, CRMs and LMS platforms",
+        "User dashboard and admin panel",
+        "Secure logins and user roles",
+        "Payments and subscriptions",
+        "API and third-party integrations",
+        "Full source code ownership, 90 days free support",
+      ],
+    },
+    {
       slug: "ai-consultation",
       title: "AI Consultation",
       tagline: "Leverage artificial intelligence for business growth",
