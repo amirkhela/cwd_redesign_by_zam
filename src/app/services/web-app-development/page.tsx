@@ -240,7 +240,7 @@ export default function WebAppDevelopmentPage() {
             <div className="reveal delay-2">
               <div className="bg-white rounded-2xl p-7 border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-2">{WEB_APP_PLAN.name}</p>
-                <p className="text-4xl font-black text-gray-900 mb-1">{PRICE}<span className="text-base font-semibold text-gray-500"> + HST, from</span></p>
+                <p className="text-4xl font-black text-gray-900 mb-1"><span className="text-base font-semibold text-gray-500">From </span>{PRICE}<span className="text-base font-semibold text-gray-500"> + HST</span></p>
                 <p className="text-gray-500 text-sm mb-5">{WEB_APP_PLAN.desc}</p>
                 <div className="space-y-3">
                   {WEB_APP_PLAN.features.map((f) => (
