@@ -76,7 +76,7 @@ faq:
 
 <h2>Ecommerce</h2>
 
-<p>Wix Stores works for a small shop with a few dozen products. For a larger catalogue, custom shipping rules or wholesale pricing, WooCommerce on WordPress gives you more room. If you are weighing a dedicated store platform instead, our <a href="/services/shopify-website-design">Shopify website design</a> page explains when Shopify is the better fit.</p>
+<p>Wix Stores works for a small shop with a few dozen products. For a larger catalogue, custom shipping rules or wholesale pricing, WooCommerce on WordPress gives you more room. If you are weighing a dedicated store platform instead, our <a href="/services/shopify-website-design">Shopify website design</a> page explains when Shopify is the better fit, and <a href="/blog/shopify-vs-woocommerce">Shopify vs WooCommerce</a> compares the two side by side.</p>
 
 <h2>Moving from Wix to WordPress</h2>
 
