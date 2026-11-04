@@ -47,6 +47,7 @@ const KNOWN_FAKE_ADDRESSES = [
   "amir.canadianwebdesigns@gmail.com",
   "amir.canadianwebdesigs@gmail.com",
   "sale.canadianwebdesigns.ca@gmail.com",
+  "amirkhela.canadianwebdesigns.ca@gmail.com",
 ];
 
 // config.phone is the one source for the number; it is stored as 647-689-6069
