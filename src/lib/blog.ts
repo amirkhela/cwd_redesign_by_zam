@@ -6,6 +6,9 @@ import html from "remark-html";
 
 export interface BlogPost {
   title: string;
+  // Optional <title> tag override (Google result / browser tab). The on-page
+  // H1 keeps using `title`.
+  seoTitle?: string;
   slug: string;
   date: string;
   author: string;
@@ -137,6 +140,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   return {
     slug: canonicalSlug(fileName, data),
     title: data.title,
+    seoTitle: typeof data.seoTitle === "string" && data.seoTitle.trim() ? data.seoTitle.trim() : undefined,
     date: data.date,
     author: (data.author && data.author !== "Canadian Web Designs") ? data.author : "Amir Khela",
     description: data.description,

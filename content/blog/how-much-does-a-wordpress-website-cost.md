@@ -1,5 +1,6 @@
 ---
 title: "How Much Does a WordPress Website Cost in Canada?"
+seoTitle: "WordPress Website Cost in Canada: Pricing Breakdown"
 slug: "how-much-does-a-wordpress-website-cost"
 date: "2026-05-29"
 updated: "2026-07-22"
