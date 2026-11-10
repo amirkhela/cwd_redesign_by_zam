@@ -5,8 +5,131 @@ import Link from "next/link";
 import Image from "next/image";
 import { getConfig, type ClientNavItem } from "@/lib/client-config";
 import LanguageToggle from "./LanguageToggle";
+import { megaMenu, type MegaPanel } from "@/lib/mega-menu";
 
 const config = getConfig();
+
+const MEGA_BG = "#0c1d29";
+const MEGA_HEADING = "#33C2E8";
+
+function MegaIcon({ name }: { name: MegaPanel["promo"]["icon"] }) {
+  const common = {
+    className: "w-[90px] h-auto",
+    viewBox: "0 0 120 90",
+    fill: "none",
+    stroke: MEGA_HEADING,
+    strokeWidth: 2.5,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true,
+  };
+  if (name === "star") {
+    return (
+      <svg {...common}>
+        <path d="M60 8l8 16 18 3-13 12 3 18-16-8-16 8 3-18-13-12 18-3z" />
+        <path d="M30 70h60M40 82h40" />
+      </svg>
+    );
+  }
+  if (name === "tag") {
+    return (
+      <svg {...common}>
+        <path d="M20 20h40l40 40-30 22-50-42z" />
+        <circle cx="36" cy="34" r="6" />
+        <path d="M60 50l14 14M52 58l14 14" />
+      </svg>
+    );
+  }
+  return (
+    <svg {...common}>
+      <rect x="10" y="10" width="100" height="64" rx="6" />
+      <path d="M10 24h100" />
+      <circle cx="20" cy="17" r="1.5" />
+      <circle cx="27" cy="17" r="1.5" />
+      <circle cx="34" cy="17" r="1.5" />
+      <path d="M24 36h40M24 46h28M24 56h34" />
+      <path d="M78 40l14 30 5-11 11-5z" fill={MEGA_BG} />
+    </svg>
+  );
+}
+
+function MegaDropdown({ item, panel }: { item: ClientNavItem; panel: MegaPanel }) {
+  // Hide right after a link click so the panel doesn't stay open over the
+  // next page while the cursor is still on it; hover re-arms it.
+  const [hidden, setHidden] = useState(false);
+  const wide = panel.size === "wide";
+  return (
+    <div className="group flex items-center h-full" onMouseLeave={() => setHidden(false)}>
+      <Link
+        href={item.href}
+        className="flex items-center gap-1 text-sm font-semibold text-dark hover:text-primary group-hover:text-primary transition-colors duration-200 relative py-1"
+      >
+        {item.label}
+        <svg
+          className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+        </svg>
+        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full" />
+      </Link>
+      <div className={`absolute left-0 right-0 top-full pt-1.5 px-4 lg:px-8 z-50 hidden ${hidden ? "" : "group-hover:block"}`}>
+        <div
+          className={`mx-auto grid overflow-hidden rounded-2xl ${wide ? "max-w-[1248px] grid-cols-[minmax(0,1fr)_250px]" : "max-w-[820px] grid-cols-[minmax(0,1fr)_280px]"}`}
+          style={{ background: MEGA_BG, boxShadow: "0 30px 60px rgba(8,25,38,0.35)" }}
+        >
+          <div className={`grid gap-7 px-8 pt-7 pb-8 ${wide ? "grid-cols-4" : "grid-cols-2"}`}>
+            {panel.columns.map((col) => (
+              <div key={col.heading} className="min-w-0">
+                <p className="mb-2.5 text-[17px] font-extrabold tracking-tight" style={{ color: MEGA_HEADING }}>
+                  {col.href ? (
+                    <Link href={col.href} onClick={() => setHidden(true)} className="hover:underline underline-offset-4">
+                      {col.heading}
+                    </Link>
+                  ) : (
+                    col.heading
+                  )}
+                </p>
+                <ul>
+                  {col.links.map((l) => (
+                    <li key={l.href + l.label} className="border-b border-white/10 last:border-0">
+                      <Link
+                        href={l.href}
+                        onClick={() => setHidden(true)}
+                        className={`block py-2 text-sm transition-all duration-150 hover:pl-1.5 hover:text-white ${l.all ? "font-semibold" : ""}`}
+                        style={{ color: l.all ? MEGA_HEADING : "#dbe9f0" }}
+                      >
+                        {l.label}
+                        {l.all ? " →" : ""}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div
+            className="flex flex-col items-center justify-center gap-3.5 border-l border-white/10 px-7 py-7 text-center"
+            style={{ background: `linear-gradient(160deg, #12293a, ${MEGA_BG})` }}
+          >
+            <MegaIcon name={panel.promo.icon} />
+            <p className="text-[17px] font-extrabold leading-tight text-white text-balance">{panel.promo.text}</p>
+            <Link
+              href={panel.promo.cta.href}
+              onClick={() => setHidden(true)}
+              className="inline-flex items-center gap-1.5 rounded-btn px-3.5 py-[7px] text-[12.5px] font-semibold text-white transition-colors duration-200 bg-primary hover:bg-primary-dark"
+            >
+              {panel.promo.cta.label}
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function DesktopDropdown({ item }: { item: ClientNavItem }) {
   const [openSub, setOpenSub] = useState<string | null>(null);
@@ -109,7 +232,32 @@ function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  {expandedItem === item.label && (
+                  {expandedItem === item.label && megaMenu[item.label] && (
+                    <div className="bg-primary-50/60 px-4 py-3">
+                      <div className="rounded-xl px-5 py-2" style={{ background: MEGA_BG }}>
+                        {megaMenu[item.label].columns.map((col) => (
+                          <div key={col.heading}>
+                            <p className="mt-3 mb-1 text-sm font-bold" style={{ color: MEGA_HEADING }}>
+                              {col.heading}
+                            </p>
+                            {col.links.map((l) => (
+                              <Link
+                                key={l.href + l.label}
+                                href={l.href}
+                                onClick={onClose}
+                                className={`block py-2.5 text-sm border-b border-white/10 last:border-0 ${l.all ? "font-semibold" : ""}`}
+                                style={{ color: l.all ? MEGA_HEADING : "#dbe9f0" }}
+                              >
+                                {l.label}
+                                {l.all ? " →" : ""}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {expandedItem === item.label && !megaMenu[item.label] && (
                     <div className="bg-primary-50/60">
                       {item.children.map((child) =>
                         child.children ? (
@@ -234,9 +382,11 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+        <nav className="hidden lg:flex items-center gap-8 self-stretch" aria-label="Main navigation">
           {config.navigation.map((item) =>
-            item.children ? (
+            item.children && megaMenu[item.label] ? (
+              <MegaDropdown key={item.href} item={item} panel={megaMenu[item.label]} />
+            ) : item.children ? (
               <DesktopDropdown key={item.href} item={item} />
             ) : (
               <Link
