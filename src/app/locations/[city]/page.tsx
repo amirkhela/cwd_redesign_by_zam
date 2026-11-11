@@ -331,8 +331,9 @@ function getCityBySlug(slug: string) {
 // Cities with their own src/app/locations/<slug>/page.tsx. Prerendering them here
 // too writes a second output for the same path, and the build kept serving this
 // template instead of the dedicated page (seen live for toronto + surrey, 11 Nov 2026).
-// burnaby also has its own file but is left here on purpose: its live, ranking
-// title comes from this template; moving it is a separate decision.
+// burnaby's own page.tsx was removed (11 Nov 2026): its live, ranking page has
+// always been this template ("Metrotown Specialists"), so it stays here.
+// Adding a new <slug>/page.tsx? Add the slug to this set too.
 const OWN_PAGE_CITIES = new Set(["toronto", "surrey", "north-york", "vancouver", "victoria"]);
 
 export function generateStaticParams() {
