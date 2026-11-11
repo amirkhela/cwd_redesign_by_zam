@@ -2,7 +2,7 @@
 title: "Local SEO Checklist: 12 Steps for Small Businesses"
 slug: "local-seo-checklist-for-small-businesses"
 date: "2026-07-25"
-updated: "2026-07-25"
+updated: "2026-11-11"
 author: "Amir Khela"
 description: "A practical local SEO checklist for small businesses — Google Business Profile, citations, reviews, on-page signals and the steps that actually move local rankings."
 keywords: ["local seo checklist", "local seo small business", "local seo for small business", "local search optimization"]
@@ -42,6 +42,8 @@ faq:
 <h2>5. Add location-specific pages if you serve multiple areas</h2>
 
 <p>A business serving several cities or neighbourhoods needs more than a single generic "service area" mention on the homepage — dedicated, genuinely useful pages for each city or region give Google specific content to rank for location-based searches, and give visitors the confidence that you actually serve their area rather than just being technically within driving distance.</p>
+
+<p>This matters most for trades that drive to the job. A roofer, plumber or HVAC company usually covers a whole region, and a page per service area is how it shows up in the towns it works in every week. We cover how that looks for each trade on our pages for <a href="/web-design-for-roofers">roofing websites</a>, <a href="/web-design-for-plumbers">plumbing websites</a>, <a href="/web-design-for-hvac">HVAC websites</a> and <a href="/web-design-for-contractors">contractor websites</a>.</p>
 
 <h2>6. Optimize on-page content for local intent</h2>
 

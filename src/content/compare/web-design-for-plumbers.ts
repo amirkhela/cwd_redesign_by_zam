@@ -23,7 +23,7 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
   metaDescription:
     "Plumber website design for Canadian plumbing companies: click-to-call on every page, a page per service and per service area, your Google reviews on show, and local SEO.",
   intro:
-    "A plumbing customer is often standing in water when they search. They are on a phone, they want a number they can tap, and they will call whoever makes that easiest. We build plumbing websites around that moment: one tap to call, a page for every service you offer and every area you cover, and your real Google reviews where a nervous homeowner can see them. Websites start at $299.",
+    "A plumbing customer is often standing in water when they search. They are on a phone, they want a number they can tap, and they will call whoever makes that easiest. We build plumbing websites around that moment: one tap to call, a page for every service you offer and every area you cover, and your real Google reviews where a nervous homeowner can see them. That is what our plumbing website services cover, and websites start at $299.",
   painPoints: [
     {
       title: "The phone number is buried",
@@ -82,6 +82,10 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
   ],
   faqs: [
     {
+      q: "What do your plumbing website services include?",
+      a: "The design and build of the site, click-to-call on every page, a short quote form, a page for each service and each area you cover, your Google reviews on the site and on-page SEO from day one. Maintenance and a local SEO plan can be added monthly. As a plumbing website company we work with plumbers across Canada.",
+    },
+    {
       q: "How quickly can a plumbing website be built?",
       a: "A typical plumbing site with a home page, a page per core service and a page per main service area is usually live within a few weeks of receiving your content and photos. Emergency-call sites are deliberately simple, which keeps the build short. We agree a schedule in writing before starting.",
     },
@@ -98,5 +102,5 @@ export const WEB_DESIGN_FOR_PLUMBERS: IndustryPage = {
       a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain are yours, and you can move the site to another host at any time.",
     },
   ],
-  reviewedOn: "2026-09-14",
+  reviewedOn: "2026-11-11",
 };

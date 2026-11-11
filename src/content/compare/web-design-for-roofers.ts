@@ -22,7 +22,7 @@ export const WEB_DESIGN_FOR_ROOFERS: IndustryPage = {
   metaDescription:
     "Roofing websites and roofing SEO in Canada: click-to-call for leaks, before and after galleries, inspection requests and service-area pages. From $299.",
   intro:
-    "Roofing customers come in two moods. One has water coming through the ceiling and wants someone on the phone now. The other is planning a replacement and is comparing three quotes. We build roofing websites for both: a call button that is always on screen, a fast inspection request, a gallery of finished roofs, and a page for every area you cover so you show up when people search for a roofer near them. Websites start at $299.",
+    "Roofing customers come in two moods. One has water coming through the ceiling and wants someone on the phone now. The other is planning a replacement and is comparing three quotes. Our roofing web design services are built for both: a call button that is always on screen, a fast inspection request, a gallery of finished roofs, and a page for every area you cover so you show up when people search for a roofer near them. Websites start at $299.",
   painPoints: [
     {
       title: "A leak call that goes to someone else",
@@ -84,6 +84,10 @@ export const WEB_DESIGN_FOR_ROOFERS: IndustryPage = {
       a: "Yes. Our portfolio includes Awash Roofing along with a wide range of construction and trades companies, such as Awash Construction, McLaren Masonry and North 5 Contracting.",
     },
     {
+      q: "What do your roofing web design services include?",
+      a: "The design and build of the site, click-to-call with a clear leak or emergency line, a free inspection request form, a before and after gallery you can add to yourself, a page for each service and each area you cover, and on-page SEO from day one. Roofing SEO and maintenance can be added as monthly plans.",
+    },
+    {
       q: "What does roofing SEO include?",
       a: "Our SEO plans start at $250 a month and cover your Google Business Profile, service and area pages, review requests, directory listings, technical fixes and a monthly report. The goal is more calls and inspection requests from your own service area.",
     },
@@ -100,5 +104,5 @@ export const WEB_DESIGN_FOR_ROOFERS: IndustryPage = {
       a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the photos and the domain are yours, and you can move the site to another host at any time.",
     },
   ],
-  reviewedOn: "2026-10-19",
+  reviewedOn: "2026-11-11",
 };
