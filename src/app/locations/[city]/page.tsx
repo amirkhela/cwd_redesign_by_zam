@@ -328,8 +328,17 @@ function getCityBySlug(slug: string) {
   return config.cities.find((c) => c.slug === slug);
 }
 
+// Cities with their own src/app/locations/<slug>/page.tsx. Prerendering them here
+// too writes a second output for the same path, and the build kept serving this
+// template instead of the dedicated page (seen live for toronto + surrey, 11 Nov 2026).
+// burnaby also has its own file but is left here on purpose: its live, ranking
+// title comes from this template; moving it is a separate decision.
+const OWN_PAGE_CITIES = new Set(["toronto", "surrey", "north-york", "vancouver", "victoria"]);
+
 export function generateStaticParams() {
-  return config.cities.map((c) => ({ city: c.slug }));
+  return config.cities
+    .filter((c) => !OWN_PAGE_CITIES.has(c.slug))
+    .map((c) => ({ city: c.slug }));
 }
 
 const cityMeta: Record<string, { title: string; description: string }> = {
