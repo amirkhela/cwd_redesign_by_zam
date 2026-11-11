@@ -98,7 +98,9 @@ export const megaMenu: Record<string, MegaPanel> = {
       },
       {
         heading: "Locations",
+        href: "/web-design-company",
         links: [
+          { label: "Web Design Company Canada", href: "/web-design-company" },
           { label: "Toronto", href: "/locations/toronto" },
           { label: "Mississauga", href: "/locations/mississauga" },
           { label: "Brampton", href: "/locations/brampton" },

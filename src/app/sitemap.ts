@@ -85,9 +85,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Their own date: the package grid went onto every location page on
   // 2026-10-16 (ebe8324). Move it only when these pages change again.
+  // Pages rewritten since then carry their own date here.
+  const locationRewritten: Record<string, string> = {
+    toronto: "2026-11-10", // web design services + GTA focus, SEO intent moved to /seo/toronto
+    surrey: "2026-11-10", // SEO sections moved out to /seo/surrey
+  };
   const locationPages: MetadataRoute.Sitemap = config.cities.map((city) => ({
     url: `${BASE_URL}/locations/${city.slug}`,
-    lastModified: new Date("2026-10-16T00:00:00.000Z"),
+    lastModified: new Date(`${locationRewritten[city.slug] ?? "2026-10-16"}T00:00:00.000Z`),
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }));

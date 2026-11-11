@@ -81,7 +81,7 @@ export default function Footer() {
                 { href: "/squarespace-alternative", label: "Squarespace Alternative" },
                 { href: "/godaddy-website-builder-alternative", label: "GoDaddy Builder Alternative" },
                 { href: "/agency-vs-freelancer", label: "Agency vs Freelancer" },
-                { href: "/web-design-company", label: "Web Design Company" },
+                { href: "/web-design-company", label: "Web Design Company Canada" },
                 { href: "/web-design-agency", label: "Web Design Agency" },
                 { href: "/blog", label: "Blog" },
                 { href: "/faq", label: "FAQ" },

@@ -11,21 +11,21 @@ import { getConfig, reviewCountPlus } from "@/lib/client-config";
 const config = getConfig();
 
 export const metadata: Metadata = {
-  title: { absolute: "Web Design Toronto | Sites That Rank | Canadian Web Designs" },
+  title: { absolute: "Web Design Services Toronto & GTA | Canadian Web Designs" },
   description:
-    `Toronto's top-rated web design agency — ${reviewCountPlus(config.reviewCount)} Google reviews. Custom websites built to rank & convert, serving Etobicoke, Scarborough & the GTA.`,
+    "Web design services for Toronto neighbourhoods and the GTA: Downtown, North York, Scarborough and Etobicoke. Custom, mobile-first sites from $299 CAD. Free quote.",
   alternates: { canonical: "/locations/toronto" },
   openGraph: {
-    title: "Web Design Toronto | Sites That Rank | Canadian Web Designs",
+    title: "Web Design Services Toronto & GTA | Canadian Web Designs",
     description:
-      `Toronto's top-rated web design agency. ${reviewCountPlus(config.reviewCount)} Google reviews. Custom websites that rank on Google & win customers across the GTA.`,
+      "Web design services for Toronto neighbourhoods and the GTA. Custom, mobile-first websites from $299 CAD. Free quote.",
     url: "https://canadianwebdesigns.ca/locations/toronto",
     images: [
       {
         url: "/images/hero-leading-web-design.jpg",
         width: 1200,
         height: 630,
-        alt: "Web Design Toronto — Canadian Web Designs",
+        alt: "Web design services in Toronto, Canadian Web Designs",
       },
     ],
   },
@@ -33,48 +33,32 @@ export const metadata: Metadata = {
 
 const faq = [
   {
-    q: "How much does web design cost in Toronto?",
-    a: "Cost depends on the scope — the number of pages, features, and level of customization. We provide free, no-obligation quotes tailored to your specific goals. Every project includes mobile optimization, on-page SEO, and Google Analytics setup.",
+    q: "How much do web design services cost in Toronto?",
+    a: "Our packages start at $299 for a basic 3-page site, $449 for a WordPress site you can edit yourself and $699 for a 15-page site with booking and payments. Online stores start at $899. All prices are in Canadian dollars plus HST, and every site includes mobile optimization, on-page SEO basics and Google Analytics setup.",
   },
   {
-    q: "How long does it take to rank on Google in Toronto?",
-    a: "Toronto is Canada's most competitive SEO market. For high-volume keywords like 'web design toronto' or 'lawyer toronto', expect 4–8 months of consistent SEO to reach page 1. For location-specific searches ('web design north york', 'dentist etobicoke'), you can often see page 1 movement within 6–12 weeks. We provide monthly ranking reports so you always know where you stand.",
+    q: "How long does a Toronto website take to build?",
+    a: "A standard business website usually takes 3 to 4 weeks from the first call to launch. Online stores and sites with booking or custom features usually take 5 to 8 weeks. We agree on the timeline before we start.",
   },
   {
     q: "Do you work with small businesses in Toronto?",
-    a: "The majority of our Toronto clients are small and medium businesses — trades, clinics, law firms, restaurants, and professional services. Every project is fully custom (no templates) and includes mobile optimization, local SEO setup, and 30 days of post-launch support. We've built websites for hundreds of Toronto SMBs across every major neighbourhood and industry.",
+    a: "Most of our Toronto clients are small and medium businesses: trades, clinics, law firms, restaurants and professional services. Every site is custom (no templates) and includes 30 days of support after launch.",
   },
   {
-    q: "Can you help my Toronto business show up in Google Maps?",
-    a: "Yes — Google Business Profile (Maps) optimization is included in all our Toronto SEO packages. We optimize your listing, write keyword-rich descriptions, build local citations across Canadian directories, add photos and service areas, and help generate authentic 5-star reviews. Appearing in Toronto's Google local pack (the map results at the top of the page) is one of the highest-ROI moves a local business can make.",
-  },
-  {
-    q: "What makes Canadian Web Designs different from other Toronto web agencies?",
-    a: `Three things: results, transparency, and communication. Unlike agencies that hand you off to a junior account manager, you work directly with your developer throughout the project. We show you real ranking data, not vanity metrics. And we back every website with a results guarantee — if you don't see movement within our agreed timeline, we keep working at no charge. With ${reviewCountPlus(config.reviewCount)} Google reviews, our track record speaks for itself.`,
+    q: "Which parts of Toronto and the GTA do you serve?",
+    a: "All of them. We build websites for businesses Downtown, in Midtown, the Annex, Leslieville, Liberty Village, Scarborough, Etobicoke and East York, and across the GTA. North York, Mississauga, Brampton, Vaughan and Richmond Hill each have their own page on our site.",
   },
   {
     q: "Do you build e-commerce websites for Toronto businesses?",
-    a: "Yes — e-commerce is one of our fastest-growing Toronto specialties. We build Shopify, WooCommerce, and custom e-commerce sites for Toronto retailers, food brands, and product-based businesses. Every e-commerce site includes product SEO, speed optimization, payment gateway integration, and mobile-first design. Our Toronto e-commerce clients typically see 30–50% higher conversion rates than their previous sites.",
+    a: "Yes. We build Shopify and WooCommerce stores for Toronto retailers, food brands and product businesses, with payments, shipping, HST and local pickup set up. See our Toronto e-commerce web design page for details.",
   },
   {
-    q: "What is the best web design agency in Toronto?",
-    a: `Canadian Web Designs is consistently ranked as one of Toronto's top web design agencies based on Google reviews, client results, and search performance. With ${reviewCountPlus(config.reviewCount)} Google reviews, a proven track record of ranking Toronto businesses on Google page 1, and fully custom (no-template) websites, we stand out from the hundreds of Toronto agencies that use cookie-cutter approaches. See our portfolio and reviews at canadianwebdesigns.ca.`,
+    q: "Can you redesign my Toronto website without losing my Google rankings?",
+    a: "Yes. Before launch we map every old page to its new address and set up redirects, keep the titles and content that already rank, and check the new site in Google Search Console after it goes live.",
   },
   {
-    q: "How much does a web design company in Toronto charge?",
-    a: "Toronto web design costs vary widely — from budget template builders to enterprise custom development. For a professional, custom, SEO-optimized website from a reputable Toronto agency, pricing depends on your project scope. Canadian Web Designs offers flat-rate pricing with no surprises — we provide a tailored quote after a free consultation.",
-  },
-  {
-    q: "Do you work with Toronto tech startups and SaaS companies?",
-    a: "Yes — tech is one of our fastest-growing Toronto verticals. We build SaaS marketing sites, product landing pages, and investor-ready web presences for Toronto startups from pre-seed through Series B. We understand what Toronto's tech ecosystem needs: fast, modern, and built to convert high-intent B2B visitors.",
-  },
-  {
-    q: "How do I find a reliable web design company in Toronto?",
-    a: `Look for three things: verifiable reviews, real portfolio case studies with measurable results, and transparent pricing. Avoid agencies that can't show you ranking data for their own clients. Canadian Web Designs has ${reviewCountPlus(config.reviewCount)} Google reviews, a public portfolio at canadianwebdesigns.ca/portfolio, transparent flat-rate pricing, and a results guarantee — if you don't see movement, we keep working at no charge.`,
-  },
-  {
-    q: "What should I expect from a Toronto web design agency?",
-    a: "A professional Toronto web design agency should deliver a mobile-first, SEO-optimized website with clear timelines, transparent pricing, and ongoing communication. You should receive Google Analytics setup, on-page SEO, and at least 30 days of post-launch support. Red flags include templates passed off as custom work, no pricing on their own site, and lack of Google reviews. Canadian Web Designs is fully custom, fully transparent, and has 11+ years of Toronto-specific results to back it up.",
+    q: "Do you also do SEO for Toronto businesses?",
+    a: "Every website we build has on-page SEO basics included. For ongoing work such as Google Business Profile, local citations and monthly ranking reports, see our Toronto SEO service page.",
   },
 ];
 
@@ -123,7 +107,7 @@ export default function TorontoPage() {
       >
         <Image
           src="/blog/web-design-company.png"
-          alt="Web design Toronto — Canadian Web Designs agency"
+          alt="Web design services in Toronto"
           fill
           className="object-cover object-center"
           priority
@@ -154,7 +138,7 @@ export default function TorontoPage() {
                 style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
               />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Toronto, ON — {reviewCountPlus(config.reviewCount)} Google Reviews
+                Toronto, ON · {reviewCountPlus(config.reviewCount)} Google Reviews
               </span>
             </div>
 
@@ -162,12 +146,12 @@ export default function TorontoPage() {
               className="hero-fade-up-1 font-black text-white mb-5"
               style={{ fontSize: "clamp(2rem, 4.5vw, 3.2rem)", lineHeight: 1.05 }}
             >
-              Web Design Agency Toronto —{" "}
-              <span className="gradient-text-animated">Built to Rank. Built to Convert.</span>
+              Web Design Services in Toronto{" "}
+              <span className="gradient-text-animated">and Across the GTA</span>
             </h1>
 
             <p className="hero-fade-up-2 text-xl text-white/65 leading-relaxed mb-4 max-w-2xl">
-              Toronto&apos;s most-trusted web design agency since 2014. Custom websites that rank on Google, load in under 2 seconds, and turn visitors into paying customers.
+              Custom websites for Toronto businesses, from the Financial District and Liberty Village to Scarborough and Etobicoke. Fast, mobile-first and built around how your customers search.
             </p>
             <p className="hero-fade-up-2 text-base text-white/50 leading-relaxed mb-8 max-w-2xl">
               Serving Downtown Toronto, North York, Scarborough, Etobicoke, and the entire GTA.
@@ -194,7 +178,7 @@ export default function TorontoPage() {
                 { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "500+", label: "Toronto Websites Built" },
                 { value: "11", label: "Years Serving Toronto" },
-                { value: "100%", label: "Results Guaranteed" },
+                { value: "$299", label: "Packages From (CAD)" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-2xl font-black text-white">{s.value}</p>
@@ -228,21 +212,22 @@ export default function TorontoPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Toronto is Canada&apos;s most competitive digital market — and the gap between a page-1 website and a page-3 website is the difference between a thriving business and an invisible one. With over 3 million people, hundreds of thousands of SMBs, and some of the highest commercial intent search volumes in North America, the Toronto market rewards businesses that invest in professional web design and local SEO.
+                  Toronto is Canada&apos;s most competitive market for local businesses. With close to 3 million residents and a huge number of small businesses, customers have plenty of choice, and a slow or dated website sends them straight to the next result.
                 </p>
                 <p>
-                  The average Toronto consumer Googles before they buy, book, or call. Whether they&apos;re searching for a contractor in Etobicoke, a clinic in North York, or a restaurant in the Distillery District — the businesses on page 1 capture 90%+ of that traffic. Position 1 alone captures 27–34% of all clicks. If your Toronto website isn&apos;t on page 1, you&apos;re invisible to the customers who are ready to spend money right now.
+                  Most Toronto customers search before they buy, book or call, usually on a phone and usually for something nearby: a contractor in Etobicoke, a clinic in North York, a restaurant in the Distillery District. The website they land on has a few seconds to show it&apos;s the right business and make the next step easy.
                 </p>
                 <p>
-                  Canadian Web Designs has been building high-performance websites for Toronto businesses since 2014. We&apos;ve worked with healthcare clinics on Yonge Street, law firms in the Financial District, contractors in Etobicoke, restaurants in Leslieville, and retailers across the GTA. We know Toronto — the neighbourhoods, the competition, the search patterns — and we build websites specifically engineered to win here.
+                  Canadian Web Designs has been building high-performance websites for Toronto businesses since 2014. We&apos;ve worked with healthcare clinics on Yonge Street, law firms in the Financial District, contractors in Etobicoke, restaurants in Leslieville, and retailers across the GTA. We know the neighbourhoods and the competition, and we build each site for the part of the city its customers come from.
                 </p>
                 <p>
-                  Every Toronto website we build is mobile-first (70%+ of Toronto searches happen on smartphones), loads in under 2 seconds, and is optimized for the exact keywords your ideal customers are searching. We don&apos;t use templates. We don&apos;t outsource. And we back every project with a results guarantee.
+                  Every Toronto website we build is mobile-first, fast, and written around the services and areas your customers actually search for. We don&apos;t use templates and we don&apos;t outsource.
                 </p>
                 <p>
-                  Looking to grow beyond web design? We offer comprehensive{" "}
-                  <Link href="/services/seo" className="text-[#00AADF] font-semibold hover:underline">SEO services in Toronto</Link>{" "}
-                  to drive sustained organic traffic, and{" "}
+                  Want to know more about us? Start with our{" "}
+                  <Link href="/" className="text-[#00AADF] font-semibold hover:underline">Toronto web design company</Link>{" "}
+                  homepage. For ongoing rankings work there&apos;s our{" "}
+                  <Link href="/seo/toronto" className="text-[#00AADF] font-semibold hover:underline">Toronto SEO service</Link>, and{" "}
                   <Link href="/ecommerce-website-design-toronto" className="text-[#00AADF] font-semibold hover:underline">ecommerce website design</Link>{" "}
                   for Toronto retailers ready to sell online at scale.
                 </p>
@@ -255,27 +240,27 @@ export default function TorontoPage() {
                 {
                   icon: "📍",
                   title: "Deep Toronto Market Knowledge",
-                  body: "We know the difference between a Yorkville boutique's SEO needs and a Scarborough contractor's. Our local strategies are calibrated for Toronto's neighbourhoods, not generic Canada-wide campaigns.",
+                  body: "A Yorkville boutique and a Scarborough contractor need very different websites. We design for your neighbourhood and your customers, not a generic Canada-wide template.",
                 },
                 {
                   icon: "⚡",
                   title: "Sites That Load Under 2 Seconds",
-                  body: "Google's ranking algorithm prioritizes fast sites — and Toronto mobile users bounce in under 3 seconds on slow pages. Every site we build passes Core Web Vitals with a 90+ PageSpeed score.",
+                  body: "Toronto customers on their phones leave slow pages quickly, and Google favours fast sites. Every site we build passes Core Web Vitals with a 90+ PageSpeed score.",
                 },
                 {
-                  icon: "📈",
-                  title: "Rank on Google in 60–90 Days",
-                  body: "Our Toronto SEO process targets quick-win keywords while building long-term authority. Most clients see measurable ranking movement within 60–90 days of launch.",
+                  icon: "📍",
+                  title: "Pages for the Areas You Serve",
+                  body: "If you serve several parts of the city, we build a page for each one, so a customer in Leslieville or Etobicoke finds the page that speaks to them.",
                 },
                 {
                   icon: "🤝",
                   title: "You Talk to Your Developer Directly",
-                  body: "No account managers, no ticket systems, no runaround. You have direct access to the person building your site throughout the project — a rarity in the Toronto agency world.",
+                  body: "No account managers, no ticket systems, no runaround. You have direct access to the person building your site throughout the project.",
                 },
                 {
                   icon: "🔒",
-                  title: "Results Guarantee — Or We Keep Working",
-                  body: "If your Toronto website doesn't perform within the agreed timeline, we keep optimizing at no charge. We don't just build sites and disappear.",
+                  title: "No Lock-In Contracts",
+                  body: "You own your website and your domain. Maintenance is month-to-month, and we don't build sites and disappear.",
                 },
               ].map((item) => (
                 <div
@@ -301,40 +286,40 @@ export default function TorontoPage() {
           <div className="text-center mb-12 reveal">
             <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Our Toronto Services</span>
             <h2 className="text-3xl lg:text-4xl font-black text-gray-900">
-              Everything Your Toronto Business Needs to Dominate Online
+              Web Design Services for Toronto Businesses
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
-                title: "Web Design & Development Toronto",
-                desc: "Custom, conversion-focused websites built for Toronto's competitive market. Mobile-first, fast-loading, and rank-ready from launch day.",
+                title: "Custom Web Design Toronto",
+                desc: "Custom, mobile-first websites for Toronto businesses, designed around the calls, bookings and quote requests you want.",
                 href: "/services/web-design-development",
-              },
-              {
-                title: "Toronto Local SEO",
-                desc: "Rank on the first page of Google for 'web design toronto' and your target keywords. Google Maps, local citations, and content strategy included.",
-                href: "/services/seo",
-              },
-              {
-                title: "Google Ads Management Toronto",
-                desc: "Drive immediate leads from high-intent Toronto searches. We build, manage, and optimize campaigns that generate real revenue — not just clicks.",
-                href: "/contact",
               },
               {
                 title: "E-Commerce Websites Toronto",
-                desc: "Shopify and WooCommerce stores built for Toronto retailers. Product SEO, payment gateway integration, and mobile-first UX out of the box.",
-                href: "/services/web-design-development",
+                desc: "Shopify and WooCommerce stores for Toronto retailers, with payments, shipping, HST and local pickup set up.",
+                href: "/ecommerce-website-design-toronto",
+              },
+              {
+                title: "WordPress Websites",
+                desc: "A WordPress site you can update yourself, with training at handover so your team can add pages and posts.",
+                href: "/services/wordpress-website-design",
+              },
+              {
+                title: "Shopify Stores",
+                desc: "Shopify setup and custom themes for Toronto brands that want a store they can run without a developer.",
+                href: "/services/shopify-website-design",
+              },
+              {
+                title: "Web Apps & Portals",
+                desc: "Client portals, booking systems and custom tools for Toronto businesses that have outgrown a standard website.",
+                href: "/services/web-app-development",
               },
               {
                 title: "Website Maintenance Toronto",
-                desc: "Keep your Toronto site secure, fast, and up-to-date with monthly maintenance plans. Updates, backups, uptime monitoring, and priority support.",
+                desc: "Monthly updates, backups, security checks and small content changes, so your Toronto site stays fast after launch.",
                 href: "/services/website-maintenance",
-              },
-              {
-                title: "Digital Marketing Toronto",
-                desc: "Full-service digital marketing for Toronto businesses — social media, content, email, and paid advertising all managed under one roof.",
-                href: "/services/social-media-optimization",
               },
             ].map((s, i) => (
               <Link
@@ -372,7 +357,7 @@ export default function TorontoPage() {
             Ready to Grow Your Toronto Business Online?
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto mb-8">
-            Every project is custom-scoped — no templates, no guesswork. Tell us about your Toronto business and we&apos;ll send you a free, no-obligation quote within 24 hours.
+            Every project is custom-scoped, with no templates and no guesswork. Tell us about your Toronto business and we&apos;ll send you a free, no-obligation quote within 24 hours.
           </p>
           <Link
             href="/contact"
@@ -396,22 +381,22 @@ export default function TorontoPage() {
                 Local Expertise
               </span>
               <h2 className="text-3xl font-black text-gray-900 mb-6 leading-tight">
-                We Know Every Toronto Neighbourhood — and How to Rank In It
+                Websites Built for Your Part of Toronto
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed text-sm">
                 <p>
-                  Generic web design agencies build generic websites. We build Toronto-specific websites that are engineered for the exact neighbourhood your customers are searching from. A Yorkville law firm needs different keyword strategy than a Scarborough contractor — and we know the difference.
+                  A Yorkville law firm, a Leslieville café and a Scarborough contractor have very different customers. We build each website around who those customers are, what they search for and what they need to see before they call.
                 </p>
                 <p>
-                  Our Toronto SEO work goes neighbourhood-deep: we optimize for &quot;web design north york&quot;, &quot;dentist etobicoke&quot;, &quot;contractor scarborough&quot; — the hyper-local searches with high buyer intent and lower competition than broad Toronto terms. These are the keywords that bring in real customers, not just traffic.
+                  That often means pages for the specific areas you serve, such as &quot;dentist Etobicoke&quot; or &quot;contractor Scarborough&quot;, with real photos, directions and opening hours. These local details are what turn a visitor from down the street into a customer.
                 </p>
                 <p>
-                  We&apos;ve served clients in every major Toronto neighbourhood. Whether you&apos;re on the Danforth, in the Financial District, or in Parkdale — we know your local market and we know how to win it. See real client feedback on our{" "}
+                  We&apos;ve built websites for businesses on the Danforth, in the Financial District, in Parkdale and across the city. See real client feedback on our{" "}
                   <Link href="/testimonials" className="text-[#00AADF] font-semibold hover:underline">testimonials page</Link>, or read our{" "}
                   <Link href="/blog/your-guide-to-choosing-a-web-design-company-in-toronto-and-the-gta" className="text-[#00AADF] font-semibold hover:underline">guide to choosing a Toronto web design company</Link>{" "}
                   and{" "}
                   <Link href="/blog/local-seo-checklist-for-small-businesses" className="text-[#00AADF] font-semibold hover:underline">local SEO checklist</Link>{" "}
-                  for more on how we approach local rankings.
+                  for more on getting found locally.
                 </p>
               </div>
               <Link
@@ -419,7 +404,7 @@ export default function TorontoPage() {
                 className="inline-flex items-center gap-2 mt-6 px-6 py-3 rounded-xl text-white font-bold text-sm transition-all duration-300 hover:opacity-90"
                 style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}
               >
-                Get a Free Toronto SEO Analysis
+                Get a Free Toronto Quote
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -539,11 +524,11 @@ export default function TorontoPage() {
             className="font-black text-white mb-6 reveal"
             style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.1 }}
           >
-            Ready to Rank #1 in Toronto?{" "}
+            Ready for a Better Toronto Website?{" "}
             <span className="gradient-text-animated">Let&apos;s Talk.</span>
           </h2>
           <p className="text-lg text-white/60 max-w-xl mx-auto mb-10 reveal delay-1">
-            Free consultation, no commitment. We&apos;ll audit your current website and show you exactly how to reach page 1 for your Toronto keywords.
+            Free consultation, no commitment. We&apos;ll look at your current website and show you what we&apos;d build for your Toronto business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center reveal delay-2">
             <Link
@@ -567,7 +552,7 @@ export default function TorontoPage() {
             </a>
           </div>
           <div className="flex flex-wrap justify-center gap-8 mt-10 reveal delay-3">
-            {["No long-term contracts", "Free initial audit", "Results guaranteed"].map((t) => (
+            {["No long-term contracts", "Free initial review", "Prices in CAD"].map((t) => (
               <span key={t} className="text-white/40 text-sm flex items-center gap-2">
                 <span className="text-[#00AADF]">✓</span> {t}
               </span>
