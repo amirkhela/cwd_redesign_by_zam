@@ -36,7 +36,7 @@ export default function MobileCallBar({ quoteHref = "/contact" }: { quoteHref?: 
         </a>
       </div>
       {/* Keeps the end of the footer clear of the bar on phones */}
-      <div className="lg:hidden h-20" aria-hidden="true" />
+      <div className="lg:hidden h-20 bg-dark" aria-hidden="true" />
     </>
   );
 }
