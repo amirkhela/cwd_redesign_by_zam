@@ -2,11 +2,11 @@ import { getConfig } from "@/lib/client-config";
 
 const config = getConfig();
 
-// Phone-only bar pinned to the bottom of the homepage: one tap to call, one tap
-// to the quote form in the hero (#quote). tel: clicks are counted by
-// LeadClickTracker like every other phone link. Hidden from lg up, where the
-// hero form and header phone are always in view.
-export default function MobileCallBar() {
+// Phone-only bar pinned to the bottom of every page (SiteShell; not /contact or
+// /lp): one tap to call, one tap to a quote form (#quote in the homepage hero,
+// /contact elsewhere). tel: clicks are counted by LeadClickTracker like every
+// other phone link. Hidden from lg up, where the header phone is always in view.
+export default function MobileCallBar({ quoteHref = "/contact" }: { quoteHref?: string }) {
   return (
     <>
       <div
@@ -28,7 +28,7 @@ export default function MobileCallBar() {
           Call Now
         </a>
         <a
-          href="#quote"
+          href={quoteHref}
           className="flex items-center justify-center min-h-[48px] rounded-xl text-white font-bold text-sm"
           style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)" }}
         >

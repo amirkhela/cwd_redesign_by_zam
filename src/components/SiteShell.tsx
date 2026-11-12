@@ -21,7 +21,7 @@ export default function SiteShell({ children, awards }: { children: React.ReactN
       {awards}
       {pathname !== "/contact" && <ServiceAreasSection />}
       <Footer />
-      {pathname === "/" && <MobileCallBar />}
+      {pathname !== "/contact" && <MobileCallBar quoteHref={pathname === "/" ? "#quote" : "/contact"} />}
     </>
   );
 }

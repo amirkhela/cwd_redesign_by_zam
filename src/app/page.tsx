@@ -722,7 +722,7 @@ export default function HomePage() {
 
           {/* Trust micro-signals */}
           <div className="flex flex-wrap justify-center gap-8 mt-12 reveal delay-4">
-            {["No long-term contracts", "Free initial consultation", "Results guaranteed"].map((t) => (
+            {["No long-term contracts", "Free initial consultation", "Fixed, upfront pricing"].map((t) => (
               <span key={t} className="text-white/40 text-sm flex items-center gap-2">
                 <span className="text-accent">✓</span> {t}
               </span>
