@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
+import { WEBSITE_PACKAGES } from "@/lib/packages";
 
 const config = getConfig();
 
@@ -362,8 +363,9 @@ export default function WebDesignersNearMePage() {
               },
               {
                 name: "Custom WordPress",
-                price: "$599",
-                period: "",
+                // Same product as the "Startup Website" package; read from the ladder so it can't drift again.
+                price: WEBSITE_PACKAGES.find((p) => p.name === "Startup Website")?.price ?? "$449",
+                period: "Up to 7 pages, one-time",
                 desc: "Full custom WordPress website — designed, built, and SEO-optimized for your local market.",
                 features: ["Custom design (no templates)", "On-page SEO for your city", "Google Analytics setup", "Contact forms + integrations", "Mobile & speed optimized", "3 rounds of revisions"],
                 cta: "Get a Quote",
