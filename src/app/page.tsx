@@ -6,6 +6,7 @@ import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import StarRating from "@/components/StarRating";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import { WEBSITE_PACKAGES } from "@/lib/packages";
 
 const GoogleReviews = dynamic(() => import("@/components/GoogleReviews"), { ssr: false });
 const ClientLogoCarousel = dynamic(() => import("@/components/ClientLogoCarousel"), { ssr: false });
@@ -113,6 +114,17 @@ const testimonials = [
     location: "Mississauga, ON",
   },
 ];
+
+// Price strip: the first three website packages plus the store and web-app
+// starting prices, read from the same ladder as /web-design-packages.
+const pkg = (name: string) => WEBSITE_PACKAGES.find((p) => p.name === name);
+const priceStrip = [
+  pkg("Basic Website"),
+  pkg("Startup Website"),
+  pkg("Professional Website"),
+].filter((p): p is NonNullable<typeof p> => Boolean(p));
+const storeFrom = pkg("Startup Ecommerce")?.price;
+const webAppFrom = pkg("Custom Web Application")?.price;
 
 const portfolio = [
   { src: "/portfolio/evolve-media-group.webp",   name: "Evolve Media Group",        tag: "Web Design" },
@@ -225,15 +237,15 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* RIGHT: Quote Form */}
-            <div className="relative hidden lg:block">
+            {/* RIGHT: Quote Form (under the buttons on phones; #quote is the mobile call bar's target) */}
+            <div id="quote" className="relative scroll-mt-24">
               <HeroQuoteForm />
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-white/30">
           <span className="text-xs tracking-[0.25em] uppercase">Scroll</span>
           <svg className="w-5 h-5 animate-scroll-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -242,6 +254,54 @@ export default function HomePage() {
       </section>
 
       <GoogleReviews />
+
+      {/* =============================================
+          PRICE STRIP: real package prices, links to the full list
+          ============================================= */}
+      <section className="py-14 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="inline-block text-accent text-sm font-bold tracking-[0.2em] uppercase mb-3">
+              Website Packages
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-black text-dark">
+              Flat Prices, One-Time Fee
+            </h2>
+            <p className="text-dark-light mt-3">
+              One-time prices in CAD, plus HST. Hosting and domain are separate.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {priceStrip.map((p) => (
+              <Link
+                key={p.name}
+                href="/web-design-packages"
+                className="group block rounded-2xl border p-6 text-center transition-all duration-200 hover:shadow-md"
+                style={{
+                  borderColor: p.highlight ? "#00AADF" : "#e5e7eb",
+                  background: p.highlight ? "rgba(0,170,223,0.05)" : "#fff",
+                }}
+              >
+                {p.badge && (
+                  <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-accent mb-1">
+                    {p.badge}
+                  </span>
+                )}
+                <h3 className="font-bold text-dark text-base">{p.name}</h3>
+                <p className="text-4xl font-black text-dark my-2">{p.price}</p>
+                <p className="text-sm text-dark-light">{p.desc}</p>
+              </Link>
+            ))}
+          </div>
+          <p className="text-center text-sm text-dark-light mt-6">
+            {storeFrom && <>Online stores from {storeFrom}. </>}
+            {webAppFrom && <>Custom web applications from {webAppFrom}. </>}
+            <Link href="/web-design-packages" className="font-semibold text-primary hover:underline">
+              Compare all packages
+            </Link>
+          </p>
+        </div>
+      </section>
 
       {/* =============================================
           SERVICES — Dark section
