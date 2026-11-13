@@ -23,6 +23,8 @@ type CityData = {
   /** Optional per-city title/description, written from the queries the page already ranks for. */
   metaTitle?: string;
   metaDescription?: string;
+  /** Optional city-only sections (rendered after "Why ... Hyper-Local SEO") so the page isn't just the shared template. */
+  localSections?: { heading: string; paragraphs: string[]; bullets?: string[] }[];
 };
 
 const cities: Record<string, CityData> = {
@@ -96,34 +98,78 @@ const cities: Record<string, CityData> = {
   },
   barrie: {
     name: "Barrie",
+    // Portal draft 6ad4f12e766ecd918514e475 (approved). GSC 28d: barrie seo pos 17, seo barrie 14.9, local seo barrie 10.9.
+    metaTitle: "Barrie SEO Services | Local SEO for Barrie & Simcoe County | Canadian Web Designs",
+    metaDescription: "Barrie SEO from $250 a month: Google Business Profile, map pack and local pages for Barrie, Innisfil, Orillia and Simcoe County. Month to month. Free audit.",
     province: "ON",
-    blurb: "Barrie is one of Ontario's fastest-growing cities — from 135,000 to 160,000+ in recent years, with rapid residential expansion pushing that number higher every year. Located at the southern tip of Georgian Bay and less than 90 minutes from Toronto, Barrie attracts businesses serving both local residents and the GTA cottage country corridor. Healthcare (Royal Victoria Regional Health Centre), trades, construction, retail, and professional services dominate the local economy. Barrie keyword difficulty is genuinely low — 'seo barrie' draws 210 monthly searches at a difficulty of just 24, and 'seo services barrie' runs as low as 12 — making it one of Ontario's most achievable SEO markets before the city's growth increases competition.",
+    blurb: "Barrie is one of Ontario's fastest-growing cities — from 135,000 to 160,000+ in recent years, with rapid residential expansion pushing that number higher every year. Located at the southern tip of Georgian Bay and less than 90 minutes from Toronto, Barrie attracts businesses serving both local residents and the GTA cottage country corridor. Healthcare (Royal Victoria Regional Health Centre), trades, construction, retail, and professional services dominate the local economy. Barrie keyword difficulty is low: 'barrie seo' and 'seo barrie' each draw about 110 searches a month in Canada, with difficulty scores between 8 and 26, which makes Barrie one of Ontario's more achievable SEO markets.",
     population: "160,000+",
     difficulty: "Low",
-    volume: "210+",
-    neighbourhoods: ["Downtown Barrie", "Allandale", "Painswick", "Holly", "Ardagh Bluffs", "Innisfil", "Angus", "Essa"],
+    volume: "110+",
+    neighbourhoods: ["Downtown Barrie", "Allandale", "Painswick", "Holly", "Ardagh Bluffs", "Innisfil", "Orillia", "Midhurst", "Angus"],
     industries: ["Contractors & Construction", "Healthcare & Clinics", "Retail & Restaurants", "Professional Services", "Real Estate & Mortgage", "Tourism & Recreation"],
+    localSections: [
+      {
+        heading: "How Barrie customers search",
+        paragraphs: [
+          "Barrie searches split two ways. Some people type the city: 'plumber barrie', 'dentist barrie'. Many others search from, or for, the towns around it: Innisfil, Orillia, Midhurst, Angus and the rest of Simcoe County. Google treats each of those as its own place, so a business whose website only says 'Barrie' is often missing from searches made 20 minutes up or down Highway 400.",
+          "The fix is a useful page for each town you actually serve: your real service area, the jobs you do there and how to reach you. A copied page with the town name swapped does not work; Google filters those out.",
+        ],
+      },
+      {
+        heading: "What a Barrie SEO plan includes",
+        paragraphs: ["Both plans are month to month, in Canadian dollars plus HST. Multi-location and ecommerce SEO is quoted separately."],
+        bullets: [
+          "Starter SEO, $250 a month: local keyword research for Barrie and the towns you serve, on-page SEO on up to 5 pages, 4 blog posts a month, 10 local citations, a free technical audit and a monthly ranking report.",
+          "Growth SEO, $399 a month: 50+ target keywords, on-page SEO on every page, 6 articles a month, 20 local citations, link building, weekly ranking updates and a dedicated account manager.",
+        ],
+      },
+    ],
     faq: [
-      { q: "Is Barrie a good market for SEO investment?", a: "Barrie is one of Ontario's best-value SEO markets — 'seo barrie' has a difficulty score of just 24 with 210 monthly searches, and 'seo services barrie' is even easier at difficulty 12. Most category + city combinations are still wide open for businesses that invest in local SEO now, before the city's growth drives competition up." },
-      { q: "Do you serve surrounding areas like Innisfil and Angus?", a: "Yes — we build location-specific strategies for Barrie and the surrounding South Georgian Bay corridor: Innisfil, Angus, Essa, Cookstown, and Collingwood. Cottage country and rural searches have distinct keyword patterns worth targeting separately from Barrie proper." },
-      { q: "How quickly does Barrie SEO produce results?", a: "Given the low keyword difficulty, most Barrie businesses see page 1 movement in 30–60 days for category + city searches. Barrie is one of the fastest-moving SEO markets we work in — competition is minimal and even basic optimization produces visible ranking improvements quickly." },
+      { q: "How much does SEO cost in Barrie?", a: "Our plans are $250 a month (Starter SEO) or $399 a month (Growth SEO), plus HST, month to month. Multi-location and ecommerce SEO is quoted separately after a free audit." },
+      { q: "How long does Barrie SEO take to show results?", a: "Low-competition local searches often start to move within a few months, with steadier gains over 6 to 12 months. Nobody can honestly promise a ranking or a date, so we report what has moved every month." },
+      { q: "Do I need a Barrie address to show up in the Google map pack?", a: "The map pack leans heavily on how close a business is to the person searching, so a verified address in or near Barrie helps most. Without one you can still rank in the regular results with strong Barrie pages, reviews and citations. Never use a fake address; Google suspends those listings." },
+      { q: "I travel to my customers. Can a service-area business rank in Barrie?", a: "Yes. A Google Business Profile can hide your address and list the towns you serve instead. Pair that with a page for each main town, such as Barrie, Innisfil and Orillia, and reviews that mention the work you did there." },
     ],
   },
   vaughan: {
     name: "Vaughan",
+    // Portal draft 6ad4f12e766ecd918514e476 (approved). GSC 28d: seo vaughan pos 14.4, vaughan seo 18.4, google maps seo vaughan 26.
+    metaTitle: "SEO Vaughan | Local SEO & Google Maps SEO | Canadian Web Designs",
+    metaDescription: "SEO for Vaughan businesses in Woodbridge, Maple, Concord and Thornhill: Google Maps ranking, local pages and on-page fixes from $250 a month.",
     province: "ON",
-    blurb: "Vaughan is York Region's fastest-growing municipality — home to 340,000+ residents, Vaughan Mills (one of Canada's largest shopping centres), Canada's Wonderland, major business parks, and a large and affluent Italian-Canadian community. Vaughan's economy spans retail, professional services, construction, healthcare, and technology. Like other GTA cities, Vaughan businesses compete in Toronto's massive search pool by default — without Vaughan-specific SEO, Google ranks them well below businesses that have built city-specific content, citations, and GBP signals. 'Seo vaughan' draws 210 monthly searches at a difficulty of just 25, and 'website design vaughan' / 'web design vaughan' each see 140 searches at difficulty 19–25 — genuinely achievable numbers for a GTA municipality this size.",
+    blurb: "Vaughan is York Region's fastest-growing municipality — home to 340,000+ residents, Vaughan Mills (one of Canada's largest shopping centres), Canada's Wonderland, major business parks, and a large and affluent Italian-Canadian community. Vaughan's economy spans retail, professional services, construction, healthcare, and technology. Like other GTA cities, Vaughan businesses compete in Toronto's massive search pool by default — without Vaughan-specific SEO, Google ranks them well below businesses that have built city-specific content, citations, and GBP signals. 'Seo vaughan' draws about 170 searches a month in Canada at a difficulty of 26, achievable numbers for a GTA municipality this size.",
     population: "340,000+",
     difficulty: "Low-Med",
-    volume: "210+",
+    volume: "170+",
     neighbourhoods: ["Woodbridge", "Maple", "Concord", "Thornhill", "Kleinburg", "Vellore", "Patterson", "Islington-Jane"],
     industries: ["Retail & Shopping", "Construction & Trades", "Professional Services", "Healthcare & Clinics", "Real Estate & Mortgage", "Restaurants & Hospitality"],
+    localSections: [
+      {
+        heading: "Google Maps SEO in Vaughan",
+        paragraphs: [
+          "When someone in Vaughan searches 'accountant near me' or 'renovations vaughan', the first thing they usually see is a map with three businesses. Google says it chooses them on relevance, distance and prominence. In practice that comes down to four things:",
+        ],
+        bullets: [
+          "Your primary category. It is the strongest relevance signal; 'kitchen remodeler' and 'general contractor' show for different searches.",
+          "Distance from the searcher. You can't move, which is why the other three matter so much.",
+          "Reviews: how many, how recent, and whether customers mention the service and the area.",
+          "A complete profile: services, hours, photos, service area, and a website link that goes to a page about Vaughan, not only your homepage.",
+        ],
+      },
+      {
+        heading: "Serving Woodbridge, Maple, Concord, Kleinburg and Thornhill",
+        paragraphs: [
+          "Many Vaughan customers search by their community, not by 'Vaughan'. Woodbridge, Maple, Concord, Kleinburg and the Vaughan side of Thornhill each have their own searches, and Thornhill is split between Vaughan and Markham, which confuses both Google and customers.",
+          "We name the communities you actually serve on your website, in your Google Business Profile service area and in your directory listings, so you can show up for 'woodbridge' and 'maple' searches as well as 'vaughan' ones.",
+        ],
+      },
+    ],
     faq: [
-      { q: "Why does a Vaughan business need local SEO instead of Toronto SEO?", a: "Vaughan-specific searches like 'seo vaughan' (210 monthly searches, difficulty 25) have far less competition than Toronto equivalents (difficulty 65) — yet they capture buyers who are specifically looking for Vaughan businesses. Targeting both Vaughan and Toronto terms gives you two keyword clusters to rank for instead of competing only in the most crowded pool." },
-      { q: "Do you serve Woodbridge, Maple, and Thornhill?", a: "Yes — all major Vaughan neighbourhoods: Woodbridge, Maple, Concord, Thornhill, Kleinburg, Vellore, and Patterson. Neighbourhood targeting captures long-tail searches from buyers who identify with a specific area." },
-      { q: "How long does Vaughan SEO take to produce results?", a: "Most Vaughan businesses see page 1 movement for neighbourhood-specific and category + city searches within 60–90 days. Broad Vaughan terms take 3–4 months with consistent optimization." },
-      { q: "Should a Vaughan business target SEO or web design keywords first?", a: "'Seo vaughan' is the easier starting point at difficulty 25 with 210 monthly searches. 'Website design vaughan' and 'web design vaughan' carry similar volume (140 searches each) at comparable difficulty (19–25), so businesses selling web design services can lead with either cluster — we typically sequence both into the same content calendar." },
-      { q: "Is there enough search volume in Vaughan to justify ongoing SEO investment?", a: "Yes — combined SEO and web-design searches for Vaughan total 490+ monthly searches across our tracked terms, and Vaughan's moderate difficulty (19–25) means a properly optimized GBP and city-specific content can realistically compete for most of that volume within two to three quarters." },
+      { q: "How much does SEO cost in Vaughan?", a: "Our plans are $250 a month (Starter SEO) or $399 a month (Growth SEO), plus HST, month to month. Multi-location and ecommerce SEO is quoted separately after a free audit." },
+      { q: "What is Google Maps SEO?", a: "It is the work of getting your Google Business Profile into the map results for searches near you: the right categories, a complete profile, steady reviews and the same business details on every directory that lists you." },
+      { q: "Can I rank in Woodbridge or Maple if my office is elsewhere in Vaughan?", a: "In the regular search results, yes, with a useful page about the community you serve there. In the map pack, distance matters a lot, so you will show most often for searches close to your address." },
+      { q: "How long does Vaughan SEO take?", a: "Community and long-tail searches often start to move within a few months; broader terms like 'seo vaughan' take longer. Nobody can honestly promise a ranking or a date, so we report what has moved every month." },
     ],
   },
   windsor: {
@@ -509,6 +555,32 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
           </div>
         </div>
       </section>
+
+      {/* ─── CITY-ONLY SECTIONS (where a city has them) ─── */}
+      {data.localSections && data.localSections.length > 0 && (
+        <section className="py-14 bg-white">
+          <div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
+            {data.localSections.map((s) => (
+              <div key={s.heading} className="reveal">
+                <h2 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4" style={{ lineHeight: 1.2 }}>{s.heading}</h2>
+                {s.paragraphs.map((p, i) => (
+                  <p key={i} className="text-gray-600 text-base leading-relaxed mb-4">{p}</p>
+                ))}
+                {s.bullets && (
+                  <ul className="space-y-3 mt-2">
+                    {s.bullets.map((b, i) => (
+                      <li key={i} className="flex gap-3 text-gray-600 text-base leading-relaxed">
+                        <span className="w-2 h-2 rounded-full flex-shrink-0 mt-2.5" style={{ background: "#00AADF" }} />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ─── FAQ ─── */}
       <section className="py-14 bg-white">
