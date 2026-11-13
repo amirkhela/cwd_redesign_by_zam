@@ -57,7 +57,7 @@ const faq = [
   },
   {
     q: "How is Canadian Web Designs different from other Toronto SEO agencies?",
-    a: `Three differences: we focus on rankings that drive revenue (not just impressions), we're transparent about what we're doing and why, and we back our work with a results guarantee. With ${reviewCountPlus(config.reviewCount)} Google reviews and clients across every major Toronto neighbourhood and industry, our track record is publicly verifiable. We don't lock you into long contracts — we earn your business month after month.`,
+    a: `Three differences: we focus on rankings that drive revenue (not just impressions), we're transparent about what we're doing and why, and you get a ranking report every month. With ${reviewCountPlus(config.reviewCount)} Google reviews and clients across every major Toronto neighbourhood and industry, our track record is publicly verifiable. We don't lock you into long contracts — we earn your business month after month.`,
   },
   {
     q: "Do you work with Toronto businesses in competitive industries like law and healthcare?",
@@ -270,7 +270,7 @@ export default function SeoTorontoPage() {
                 { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "60–90", label: "Days to Page 1" },
                 { value: "300%+", label: "Avg Traffic Growth" },
-                { value: "100%", label: "Results Guaranteed" },
+                { value: `${config.founded ?? 2014}`, label: "In Business Since" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p>

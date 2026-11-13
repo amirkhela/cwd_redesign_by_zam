@@ -144,7 +144,7 @@ export default function NorthYorkPage() {
               Web Design North York &amp;{" "}<span className="gradient-text-animated">Local SEO</span>
             </h1>
             <p className="hero-fade-up-2 text-xl text-white/60 leading-relaxed mb-8">
-              Hyper-local websites and SEO for North York businesses. Rank in Willowdale, Sheppard, Bayview Village, and beyond. Results guaranteed.
+              Hyper-local websites and SEO for North York businesses. Rank in Willowdale, Sheppard, Bayview Village, and beyond. Fixed, upfront pricing.
             </p>
             <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4">
               <a href={`tel:${config.phone}`}
@@ -200,7 +200,7 @@ export default function NorthYorkPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "Diff 9", label: "North York SEO Difficulty" }, { value: "30–45", label: "Days to First Rankings" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
+              {[{ value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "Diff 9", label: "North York SEO Difficulty" }, { value: "30–45", label: "Days to First Rankings" }, { value: `${config.founded ?? 2014}`, label: "In Business Since" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>

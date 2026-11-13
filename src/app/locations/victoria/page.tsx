@@ -196,7 +196,7 @@ export default function VictoriaPage() {
             </h1>
             <p className="hero-fade-up-2 text-xl text-white/60 leading-relaxed mb-8">
               Rank on the first page of Google in Victoria. Get more calls, bookings, and
-              leads from Greater Victoria. Results guaranteed — no long-term contracts.
+              leads from Greater Victoria. Fixed, upfront pricing and no long-term contracts.
             </p>
             <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4">
               <a href={`tel:${config.phone}`}
@@ -277,7 +277,7 @@ export default function VictoriaPage() {
                 { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "Diff 8", label: "Victoria SEO Difficulty" },
                 { value: "30–60", label: "Days to First Rankings" },
-                { value: "100%", label: "Results Guaranteed" },
+                { value: `${config.founded ?? 2014}`, label: "In Business Since" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p>

@@ -67,7 +67,7 @@ const faq = [
   },
   {
     q: "What makes Canadian Web Designs the best web design company in Vancouver?",
-    a: `We combine Vancouver market expertise, proven local SEO results, and ${reviewCountPlus(config.reviewCount)} Google reviews to deliver websites that actually rank and convert. Unlike most Vancouver web agencies that use templates, we build every site from scratch — custom to your brand, industry, and Metro Vancouver audience. Our results guarantee means we keep working at no extra charge if your site doesn't perform within the agreed timeline.`,
+    a: `We combine Vancouver market expertise, proven local SEO results, and ${reviewCountPlus(config.reviewCount)} Google reviews to deliver websites that actually rank and convert. Unlike most Vancouver web agencies that use templates, we build every site from scratch — custom to your brand, industry, and Metro Vancouver audience. Prices are fixed and quoted upfront, with no hidden fees.`,
   },
   {
     q: "Do you offer affordable web design for Vancouver small businesses?",
@@ -132,7 +132,7 @@ export default function VancouverPage() {
               Web Design Vancouver &amp;{" "}<span className="gradient-text-animated">SEO That Ranks</span>
             </h1>
             <p className="hero-fade-up-2 text-xl text-white/60 leading-relaxed mb-8">
-              Custom websites built to rank on Google and convert Vancouver visitors into paying customers. No contracts. Results guaranteed.
+              Custom websites built to rank on Google and convert Vancouver visitors into paying customers. No contracts. Fixed, upfront pricing.
             </p>
             <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4">
               <a href={`tel:${config.phone}`}
@@ -188,7 +188,7 @@ export default function VancouverPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "2.5M+", label: "Metro Vancouver Consumers" }, { value: "90–180", label: "Days to Page 1 Rankings" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
+              {[{ value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "2.5M+", label: "Metro Vancouver Consumers" }, { value: "90–180", label: "Days to Page 1 Rankings" }, { value: `${config.founded ?? 2014}`, label: "In Business Since" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>

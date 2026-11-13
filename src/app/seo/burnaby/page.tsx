@@ -280,7 +280,7 @@ export default function SeoByurnabyPage() {
                 { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" },
                 { value: "Diff 12", label: "Burnaby Keyword Difficulty" },
                 { value: "30–60", label: "Days to First Results" },
-                { value: "100%", label: "Results Guaranteed" },
+                { value: `${config.founded ?? 2014}`, label: "In Business Since" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p>

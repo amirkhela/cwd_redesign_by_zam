@@ -175,7 +175,7 @@ export default function ContactPage() {
               >
                 <p className="text-[#00AADF] font-bold text-sm mb-3">Why businesses trust us:</p>
                 <div className="space-y-2">
-                  {["No long-term contracts", "Free initial consultation", "Results guaranteed", `${reviewCountPlus(config.reviewCount)} Google reviews`].map((t) => (
+                  {["No long-term contracts", "Free initial consultation", "Fixed, upfront pricing", `${reviewCountPlus(config.reviewCount)} Google reviews`].map((t) => (
                     <div key={t} className="flex items-center gap-2">
                       <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

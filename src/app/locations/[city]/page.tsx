@@ -525,7 +525,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
               Web Design in{" "}<span className="gradient-text-animated">{city}</span>
             </h1>
             <p className="hero-fade-up-2 text-xl text-white/60 leading-relaxed mb-8">
-              Custom websites, local SEO & digital marketing for {city} businesses. Results guaranteed — or we keep working until you see them.
+              Custom websites, local SEO & digital marketing for {city} businesses. Fixed, upfront pricing and no long-term contracts.
             </p>
             <div className="hero-fade-up-3 flex flex-col sm:flex-row gap-4">
               <a href={`tel:${config.phone}`}
@@ -578,7 +578,7 @@ export default function LocationPage({ params }: { params: { city: string } }) {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-3 gap-6 text-center">
-              {[{ value: `${reviewCountPlus(config.reviewCount)}`, label: "Google Reviews" }, { value: `${config.cities.length}+`, label: "Cities Served" }, { value: "100%", label: "Results Guaranteed" }].map((s) => (
+              {[{ value: `${reviewCountPlus(config.reviewCount)}`, label: "Google Reviews" }, { value: `${config.cities.length}+`, label: "Cities Served" }, { value: `${config.founded ?? 2014}`, label: "In Business Since" }].map((s) => (
                 <div key={s.label}>
                   <p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p>
                   <p className="text-gray-500 text-sm">{s.label}</p>
