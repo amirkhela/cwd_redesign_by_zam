@@ -1,11 +1,11 @@
 ---
 title: "How Much Does a WordPress Website Cost in Canada?"
-seoTitle: "WordPress Website Cost in Canada: Pricing Breakdown"
+seoTitle: "WordPress Website Cost in Canada: What to Budget"
 slug: "how-much-does-a-wordpress-website-cost"
 date: "2026-05-29"
 updated: "2026-07-22"
 author: "Amir Khela"
-description: "What a WordPress website really costs in Canada — domain, hosting, themes, plugins and design broken down, plus what to budget for a site that ranks. From $299."
+description: "See what a WordPress website costs in Canada: domain, hosting, themes, plugins and design, from DIY to agency-built. Professional sites start at $299."
 keywords: ["how much does a wordpress website cost", "wordpress website cost canada", "how much does a website cost in canada", "wordpress development cost", "custom wordpress website price", "website design cost canada"]
 category: "Web Design"
 featuredImage: "/blog/posts/wordpress-website-cost-canada.jpg"
