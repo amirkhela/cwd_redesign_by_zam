@@ -334,7 +334,7 @@ function getCityBySlug(slug: string) {
 // burnaby's own page.tsx was removed (11 Nov 2026): its live, ranking page has
 // always been this template ("Metrotown Specialists"), so it stays here.
 // Adding a new <slug>/page.tsx? Add the slug to this set too.
-const OWN_PAGE_CITIES = new Set(["toronto", "surrey", "north-york", "vancouver", "victoria"]);
+const OWN_PAGE_CITIES = new Set(["toronto", "surrey", "north-york", "vancouver", "victoria", "brampton"]);
 
 export function generateStaticParams() {
   return config.cities
