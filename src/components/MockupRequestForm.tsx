@@ -20,6 +20,7 @@ export default function MockupRequestForm({ source = "free-website-mockup" }: { 
     business: "",
     website: "",
     industry: "",
+    services: "",
     goals: "",
   });
 
@@ -48,6 +49,7 @@ export default function MockupRequestForm({ source = "free-website-mockup" }: { 
           message:
             `Free website mockup + quote request.\n\n` +
             `Industry: ${form.industry || "Not given"}\n\n` +
+            `Services they offer:\n${form.services || "Not given"}\n\n` +
             `What the new site should do:\n${form.goals || "Not given"}`,
           source,
           recaptchaToken,
@@ -154,6 +156,19 @@ export default function MockupRequestForm({ source = "free-website-mockup" }: { 
         <div>
           <label htmlFor={`${uid}-website`} className={labelCls}>Current website (if you have one)</label>
           <input id={`${uid}-website`} type="text" inputMode="url" placeholder="yourbusiness.ca" value={form.website} onChange={set("website")} className={field} style={fieldStyle} />
+        </div>
+
+        <div>
+          <label htmlFor={`${uid}-services`} className={labelCls}>Your services</label>
+          <input
+            id={`${uid}-services`}
+            type="text"
+            placeholder="e.g. Drain cleaning, water heaters, emergency repairs"
+            value={form.services}
+            onChange={set("services")}
+            className={field}
+            style={fieldStyle}
+          />
         </div>
 
         <div>
