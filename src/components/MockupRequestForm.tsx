@@ -13,8 +13,7 @@ export default function MockupRequestForm({ source = "free-website-mockup" }: { 
   const uid = useId();
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     phone: "",
     business: "",
@@ -33,14 +32,19 @@ export default function MockupRequestForm({ source = "free-website-mockup" }: { 
     if (status === "sending") return;
     const hp = (e.currentTarget.elements.namedItem("_hp") as HTMLInputElement | null)?.value || "";
     setStatus("sending");
+    // One "Full name" box; the API still takes first/last, so split on the first space.
+    const name = form.fullName.trim().replace(/\s+/g, " ");
+    const space = name.indexOf(" ");
+    const firstName = space === -1 ? name : name.slice(0, space);
+    const lastName = space === -1 ? "" : name.slice(space + 1);
     try {
       const recaptchaToken = await getRecaptchaToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          firstName: form.firstName,
-          lastName: form.lastName,
+          firstName,
+          lastName,
           email: form.email,
           phone: form.phone,
           service: "Free Website Mockup",
@@ -120,42 +124,37 @@ export default function MockupRequestForm({ source = "free-website-mockup" }: { 
       </div>
 
       <div className="space-y-3">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label htmlFor={`${uid}-firstName`} className={labelCls}>First name *</label>
-            <input id={`${uid}-firstName`} type="text" placeholder="e.g. John" required value={form.firstName} onChange={set("firstName")} className={field} style={fieldStyle} />
+            <label htmlFor={`${uid}-fullName`} className={labelCls}>Full name *</label>
+            <input id={`${uid}-fullName`} type="text" autoComplete="name" placeholder="e.g. John Smith" required value={form.fullName} onChange={set("fullName")} className={field} style={fieldStyle} />
           </div>
           <div>
-            <label htmlFor={`${uid}-lastName`} className={labelCls}>Last name *</label>
-            <input id={`${uid}-lastName`} type="text" placeholder="e.g. Smith" required value={form.lastName} onChange={set("lastName")} className={field} style={fieldStyle} />
+            <label htmlFor={`${uid}-email`} className={labelCls}>Email address *</label>
+            <input id={`${uid}-email`} type="email" autoComplete="email" placeholder="you@company.com" required value={form.email} onChange={set("email")} className={field} style={fieldStyle} />
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label htmlFor={`${uid}-email`} className={labelCls}>Email *</label>
-            <input id={`${uid}-email`} type="email" placeholder="you@company.com" required value={form.email} onChange={set("email")} className={field} style={fieldStyle} />
-          </div>
           <div>
             <label htmlFor={`${uid}-phone`} className={labelCls}>Phone</label>
-            <input id={`${uid}-phone`} type="tel" placeholder="(647) 555-0123" value={form.phone} onChange={set("phone")} className={field} style={fieldStyle} />
+            <input id={`${uid}-phone`} type="tel" autoComplete="tel" placeholder="(647) 555-0123" value={form.phone} onChange={set("phone")} className={field} style={fieldStyle} />
+          </div>
+          <div>
+            <label htmlFor={`${uid}-business`} className={labelCls}>Business name *</label>
+            <input id={`${uid}-business`} type="text" autoComplete="organization" placeholder="e.g. Smith Plumbing" required value={form.business} onChange={set("business")} className={field} style={fieldStyle} />
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label htmlFor={`${uid}-business`} className={labelCls}>Business name *</label>
-            <input id={`${uid}-business`} type="text" placeholder="e.g. Smith Plumbing" required value={form.business} onChange={set("business")} className={field} style={fieldStyle} />
-          </div>
           <div>
             <label htmlFor={`${uid}-industry`} className={labelCls}>Industry</label>
             <input id={`${uid}-industry`} type="text" placeholder="e.g. Plumbing, dental, law" value={form.industry} onChange={set("industry")} className={field} style={fieldStyle} />
           </div>
-        </div>
-
-        <div>
-          <label htmlFor={`${uid}-website`} className={labelCls}>Current website (if you have one)</label>
-          <input id={`${uid}-website`} type="text" inputMode="url" placeholder="yourbusiness.ca" value={form.website} onChange={set("website")} className={field} style={fieldStyle} />
+          <div>
+            <label htmlFor={`${uid}-website`} className={labelCls}>Current website (if any)</label>
+            <input id={`${uid}-website`} type="text" inputMode="url" placeholder="yourbusiness.ca" value={form.website} onChange={set("website")} className={field} style={fieldStyle} />
+          </div>
         </div>
 
         <div>

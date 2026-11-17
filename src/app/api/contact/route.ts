@@ -100,7 +100,9 @@ export async function POST(request: NextRequest) {
   const website = typeof body.website === "string" ? body.website.trim().slice(0, 300) : "";
   const isMockup = source === "free-website-mockup" || service === "Free Website Mockup";
 
-  if (!firstName || !lastName || !email || !message) {
+  // lastName is optional: the free-mockup form sends one "Full name" field.
+  const fullName = `${firstName || ""} ${lastName || ""}`.trim();
+  if (!firstName || !email || !message) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
@@ -148,7 +150,7 @@ export async function POST(request: NextRequest) {
   // 1. Log to Google Sheet first
   appendSheetRow(SHEET_ID, [
     timestamp,
-    `${firstName} ${lastName}`,
+    `${fullName}`,
     email,
     phone || "",
     service || "",
@@ -162,7 +164,7 @@ export async function POST(request: NextRequest) {
 New Contact Form Submission
 ===========================
 
-Name:    ${firstName} ${lastName}
+Name:    ${fullName}
 Email:   ${email}
 Phone:   ${phone || "Not provided"}
 Service: ${service || "Not specified"}${business ? `\nBusiness: ${business}` : ""}${website ? `\nWebsite: ${website}` : ""}${isMockup ? "\n\n>> FREE MOCKUP REQUESTED: send a free mockup with the quote." : ""}
@@ -176,7 +178,7 @@ ${message}
     await sendFormMail("CWD Website", {
       to: "dev@canadianwebdesigns.com, sales.canadianwebdesigns@gmail.com",
       replyTo: email,
-      subject: (unverified ? "[Unverified] " : "") + (isMockup ? `🎨 FREE MOCKUP REQUEST: ${firstName} ${lastName}${business ? ` (${business})` : ""}` : source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${firstName} ${lastName}` : `New Contact Form: ${firstName} ${lastName}`),
+      subject: (unverified ? "[Unverified] " : "") + (isMockup ? `🎨 FREE MOCKUP REQUEST: ${fullName}${business ? ` (${business})` : ""}` : source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${fullName}` : `New Contact Form: ${fullName}`),
       text: internalEmailBody,
     }, transporter, process.env.SMTP_USER);
   } catch (err) {
@@ -211,7 +213,7 @@ ${message}
   // 4. SMS notifications (fire-and-forget)
   const smsOwnerTo = process.env.TWILIO_NOTIFY_PHONE;
   if (smsOwnerTo) {
-    sendSms(smsOwnerTo, `🔔 New CWD Lead: ${firstName} ${lastName} | ${service || "General"} | ${email} | ${phone || "no phone"}`).catch(() => {});
+    sendSms(smsOwnerTo, `🔔 New CWD Lead: ${fullName} | ${service || "General"} | ${email} | ${phone || "no phone"}`).catch(() => {});
   }
   if (phone && process.env.TWILIO_SMS_LEAD_REPLY === "true") {
     sendSms(phone, `Hi ${firstName}! Thanks for reaching out to Canadian Web Designs. We received your message and will get back to you within 24 hours. Questions? Call us: 647-689-6069`).catch(() => {});
