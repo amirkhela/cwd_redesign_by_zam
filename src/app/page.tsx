@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import StarRating from "@/components/StarRating";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
+import MockupHeroOffer from "@/components/MockupHeroOffer";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { WEBSITE_PACKAGES } from "@/lib/packages";
 
@@ -189,16 +190,7 @@ export default function HomePage() {
 
             {/* LEFT: Text */}
             <div>
-              {/* Trust badge */}
-              <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-8">
-                <span
-                  className="w-2 h-2 rounded-full"
-                  style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
-                />
-                <span className="text-white/80 text-sm font-medium tracking-wide">
-                  Toronto&rsquo;s Top-Rated Web Design Agency &middot; Serving All of Canada
-                </span>
-              </div>
+              <MockupHeroOffer variant="gradient" className="hero-fade-up !mt-0 !mb-8" />
 
               <h1 className="hero-fade-up-1 font-black text-white leading-tight mb-6"
                 style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", lineHeight: 1.05 }}>

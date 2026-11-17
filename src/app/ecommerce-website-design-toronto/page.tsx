@@ -1,3 +1,4 @@
+import MockupHeroOffer from "@/components/MockupHeroOffer";
 import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
@@ -158,6 +159,8 @@ export default function EcommerceTorontoPage() {
             <span className="inline-block bg-primary/20 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
               Toronto Ecommerce Experts
             </span>
+            <MockupHeroOffer className="!mt-0 !mb-6" />
+
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
               Ecommerce Website Design Toronto — Built to Rank. Built to Sell.
             </h1>

@@ -1,5 +1,6 @@
 "use client";
 
+import MockupHeroOffer from "@/components/MockupHeroOffer";
 import { useId, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -271,10 +272,7 @@ export default function LandingPage() {
 
             {/* LEFT */}
             <div>
-              <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-8">
-                <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-                <span className="text-white/80 text-sm font-medium tracking-wide">Canada&rsquo;s Most Trusted Web Agency</span>
-              </div>
+              <MockupHeroOffer className="!mt-0 !mb-6" />
 
               <h1 className="hero-fade-up-1 font-black text-white leading-tight mb-6" style={{ fontSize: "clamp(2.4rem, 5.5vw, 4rem)", lineHeight: 1.05 }}>
                 Web Design &amp; Digital Marketing<br />

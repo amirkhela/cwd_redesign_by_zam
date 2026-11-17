@@ -1,3 +1,4 @@
+import MockupHeroOffer from "@/components/MockupHeroOffer";
 import type { Metadata } from "next";
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -42,10 +43,8 @@ export default function IndustriesPage() {
           style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
-              <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">Industries We Serve</span>
-            </div>
+            <MockupHeroOffer className="!mt-0 !mb-6" />
+
             <h1 className="font-black text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", lineHeight: 1.05 }}>
               Websites built for your industry
             </h1>

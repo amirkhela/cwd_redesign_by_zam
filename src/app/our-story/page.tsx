@@ -1,3 +1,4 @@
+import MockupHeroOffer from "@/components/MockupHeroOffer";
 import type { Metadata } from "next";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
@@ -104,10 +105,8 @@ export default function OurStoryPage() {
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           <div className="max-w-2xl">
-            <div className="hero-fade-up inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass mb-6">
-              <span className="w-2 h-2 rounded-full" style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }} />
-              <span className="text-white/80 text-sm font-medium tracking-wide">Est. {config.founded} — Canada&apos;s Trusted Agency</span>
-            </div>
+            <MockupHeroOffer className="!mt-0 !mb-6" />
+
             <h1
               className="hero-fade-up-1 font-black text-white mb-5"
               style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", lineHeight: 1.05 }}
