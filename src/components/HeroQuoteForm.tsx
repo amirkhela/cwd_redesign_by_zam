@@ -7,7 +7,7 @@ import { getRecaptchaToken, loadRecaptcha } from "@/lib/recaptcha";
 export default function HeroQuoteForm({ source = "homepage" }: { source?: string }) {
   const uid = useId();
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
-  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", service: "" });
+  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", business: "", service: "" });
 
   const set = (k: keyof typeof form) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
@@ -29,7 +29,11 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
           email: form.email,
           phone: form.phone,
           service: form.service,
-          message: `Quick quote request from: ${source}.\n\nService: ${form.service || "General Inquiry"}`,
+          // A website address goes in `website` (never `message`, where a link reads as spam).
+          ...(/\.[a-z]{2,}/i.test(form.business) && !/\s/.test(form.business.trim())
+            ? { website: form.business }
+            : { business: form.business }),
+          message: `Quick quote + free mockup request from: ${source}.\n\nService: ${form.service || "General Inquiry"}`,
           source,
           recaptchaToken,
           _hp: hp,
@@ -71,7 +75,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
         </div>
         <h3 className="text-white font-black text-xl mb-2">We Got Your Request!</h3>
         <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-          Our team will reach out within 24 hours with a custom quote.
+          Our team will reach out within 24 hours with your free quote, plus a free mockup for website projects.
         </p>
       </div>
     );
@@ -104,11 +108,11 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
           <div className="flex items-center gap-2 mb-2">
             <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#00AADF" }} />
             <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "#00AADF" }}>
-              Free Quote
+              Free Mockup + Free Quote
             </span>
           </div>
-          <h2 className="text-white font-black text-lg leading-tight">Get Your Project Started</h2>
-          <p className="text-white/45 text-xs mt-1">No obligation ✌ Reply within 24 hrs</p>
+          <h2 className="text-white font-black text-lg leading-tight">See Your New Website Free</h2>
+          <p className="text-white/45 text-xs mt-1">Free mockup with your quote ✌ No obligation</p>
         </div>
 
         <div className="space-y-3">
@@ -171,7 +175,21 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
             />
           </div>
 
-          {/* Row 4: Service */}
+          {/* Row 4: Business or current website (for the free mockup) */}
+          <div>
+            <label htmlFor={`${uid}-business`} className={labelCls}>Business name or current website</label>
+            <input
+              id={`${uid}-business`}
+              type="text"
+              placeholder="e.g. Smith Plumbing or smithplumbing.ca"
+              value={form.business}
+              onChange={set("business")}
+              className={field}
+              style={fieldStyle}
+            />
+          </div>
+
+          {/* Row 5: Service */}
           <div>
             <label htmlFor={`${uid}-service`} className={labelCls}>Service</label>
             <select
@@ -207,7 +225,7 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
               cursor: status === "sending" ? "not-allowed" : "pointer",
             }}
           >
-            {status === "sending" ? "Sending…" : "Get My Free Quote 🎯"}
+            {status === "sending" ? "Sending…" : "Get My Free Mockup & Quote 🎯"}
           </button>
 
           {status === "error" && (
@@ -218,6 +236,11 @@ export default function HeroQuoteForm({ source = "homepage" }: { source?: string
         </div>
 
         <p className="text-white/25 text-xs text-center mt-4">🔒 Secure & confidential. No spam.</p>
+        <p className="text-center mt-2">
+          <a href="/free-website-mockup" className="text-xs font-semibold hover:underline" style={{ color: "#00AADF" }}>
+            How the free website mockup works →
+          </a>
+        </p>
       </form>
     </>
   );

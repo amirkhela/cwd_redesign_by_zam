@@ -61,7 +61,7 @@ export default function QuoteFormSection({
                 style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
               />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Free Quote &middot; Reply Within 24 Hours
+                Free Mockup + Free Quote &middot; Reply Within 24 Hours
               </span>
             </div>
 
@@ -79,7 +79,7 @@ export default function QuoteFormSection({
 
             <p className="text-lg text-white/70 leading-relaxed max-w-lg mb-8">
               {subtitle ??
-                "Tell us about your project and get a free, no-obligation quote — most clients hear back within 24 hours."}
+                "Tell us about your project and get a free quote plus a free mockup of your new homepage. No cost, no obligation, and most clients hear back within 24 hours."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

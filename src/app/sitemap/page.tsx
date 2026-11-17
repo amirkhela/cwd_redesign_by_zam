@@ -37,6 +37,7 @@ const landingPages = [
   { href: "/ecommerce-website-design-toronto", label: "eCommerce Website Design Toronto" },
   { href: "/web-design-packages", label: "Web Design Packages" },
   { href: "/seo-packages", label: "SEO Packages" },
+  { href: "/free-website-mockup", label: "Free Website Mockup" },
   { href: "/industries", label: "Industries We Serve" },
   ...Object.values(INDUSTRIES).map((p) => ({ href: `/${p.slug}`, label: `Web Design for ${p.audience}` })),
 ];

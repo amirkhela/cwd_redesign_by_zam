@@ -126,6 +126,7 @@ export const megaMenu: Record<string, MegaPanel> = {
           { label: "Web Design Packages", href: "/web-design-packages" },
           { label: "SEO Packages", href: "/seo-packages" },
           { label: "Maintenance Plans", href: "/maintenance" },
+          { label: "Free Website Mockup", href: "/free-website-mockup" },
         ],
       },
       {
@@ -140,8 +141,8 @@ export const megaMenu: Record<string, MegaPanel> = {
     ],
     promo: {
       icon: "tag",
-      text: "Not sure which package fits?",
-      cta: { label: "Ask Us", href: "/contact" },
+      text: "See your new site free, before you pay",
+      cta: { label: "Get a Free Mockup", href: "/free-website-mockup" },
     },
   },
 };
