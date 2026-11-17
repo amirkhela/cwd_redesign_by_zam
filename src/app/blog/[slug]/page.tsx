@@ -1,3 +1,4 @@
+import MockupHeroOffer from "@/components/MockupHeroOffer";
 import type { Metadata } from "next";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
@@ -202,6 +203,8 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           {/* Title */}
+          <MockupHeroOffer className="!mt-0 !mb-6" />
+
           <h1
             className="hero-fade-up-1 font-black text-white mb-5 max-w-3xl"
             style={{ fontSize: "clamp(1.65rem, 3.8vw, 2.6rem)", lineHeight: 1.1 }}
