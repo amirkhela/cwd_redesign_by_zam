@@ -54,6 +54,12 @@ const KNOWN_FAKE_ADDRESSES = [
   "info.relacion.com@gmail.com",
 ];
 
+// Phone numbers printed in the scammers' email signatures (the 11th and 12th
+// fakes both signed off with "M: 800 555-0299"). Shown as plain text, never as a
+// tel: link -- the page must not help anyone dial the scammer. Add new ones as
+// they appear, written the way the signature printed them.
+const KNOWN_FAKE_PHONES = ["800 555-0299"];
+
 // config.phone is the one source for the number; it is stored as 647-689-6069
 // and shown the way a person reads it aloud.
 const PHONE_DIGITS = config.phone.replace(/\D/g, "");
@@ -238,6 +244,35 @@ export default function VerifyPage() {
               </li>
             ))}
           </ul>
+
+          <h3 className="mt-10 mb-4 text-xl md:text-2xl font-black text-gray-900">Fake phone numbers we know about</h3>
+          <ul className="space-y-3">
+            {KNOWN_FAKE_PHONES.map((phone) => (
+              <li
+                key={phone}
+                className="flex items-center gap-3 rounded-xl px-4 py-3"
+                style={{ background: "#FEF2F2", border: "1px solid #FECACA" }}
+              >
+                <svg className="w-5 h-5 shrink-0 text-[#B91C1C]" {...iconProps}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="font-mono text-[15px] text-gray-900 whitespace-nowrap">{phone}</span>
+              </li>
+            ))}
+          </ul>
+          <div
+            className="mt-3 flex items-center gap-3 rounded-xl px-4 py-3"
+            style={{ background: "#F0FDF4", border: "1px solid #BBF7D0" }}
+          >
+            <svg className="w-5 h-5 shrink-0 text-[#15803D]" {...iconProps}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p className="text-gray-900 text-[15px] leading-snug">
+              Our only phone number is{" "}
+              <a href={PHONE_HREF} className="font-bold underline underline-offset-2 whitespace-nowrap py-3">{PHONE_DISPLAY}</a>
+            </p>
+          </div>
+
           <p className="mt-5 text-gray-700 text-[17px] leading-relaxed">
             New ones may appear. They copy our signature and our real addresses into their emails, so a familiar
             signature proves nothing.
