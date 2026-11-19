@@ -91,6 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locationRewritten: Record<string, string> = {
     toronto: "2026-11-10", // web design services + GTA focus, SEO intent moved to /seo/toronto
     surrey: "2026-11-10", // SEO sections moved out to /seo/surrey
+    calgary: "2026-11-19", // own page: remote process, Alberta GST, areas, no template copy
   };
   const locationPages: MetadataRoute.Sitemap = config.cities.map((city) => ({
     url: `${BASE_URL}/locations/${city.slug}`,
