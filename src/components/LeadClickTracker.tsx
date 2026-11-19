@@ -15,6 +15,8 @@ export default function LeadClickTracker() {
         trackEvent("phone_click", { link_url: href, page_path: window.location.pathname });
       } else if (href.startsWith("mailto:")) {
         trackEvent("email_click", { link_url: href, page_path: window.location.pathname });
+      } else if (href.startsWith("https://wa.me/")) {
+        trackEvent("whatsapp_click", { link_url: href.split("?")[0], page_path: window.location.pathname });
       }
     }
     document.addEventListener("click", onClick, true);
