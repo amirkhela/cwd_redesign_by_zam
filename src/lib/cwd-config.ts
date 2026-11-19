@@ -1,4 +1,5 @@
 import type { ClientConfig } from "./client-config";
+import googleRating from "./google-rating.json";
 
 export const cwdConfig: ClientConfig = {
   // Business Identity
@@ -10,12 +11,16 @@ export const cwdConfig: ClientConfig = {
   teamSize: 25,
 
   // Reputation
-  // Read off the public Toronto Google listing (Maps cid 1764590269626849918) on
-  // 2026-09-14: 4.8 stars, 194 reviews, 177 of them five-star. The Brampton
-  // listing (cid 3493474530954667891) has no reviews. Visible copy rounds the
-  // count DOWN via reviewCountPlus() (194 -> "190+"), never up.
-  rating: 4.8,
-  reviewCount: 194,
+  // The Toronto Google listing (Maps cid 1764590269626849918), kept current by
+  // itself: BST_VID_MAKER's daily 09:40 review read rewrites ./google-rating.json
+  // when the count or the stars change (functions/review_watch/publish_cwd.py,
+  // suggestion 1795112530081, 2026-11-19), and the push redeploys this site.
+  // Do not type numbers here. It said 194 (a 2026-09-14 reading) while Google
+  // showed 199. The Brampton listing (cid 3493474530954667891) has no reviews.
+  // Visible copy rounds the count DOWN via reviewCountPlus() (199 -> "190+"),
+  // never up. The same file is served at /google-rating.json for narccount.ca.
+  rating: googleRating.rating,
+  reviewCount: googleRating.reviewCount,
 
   // Contact
   phone: "647-689-6069",

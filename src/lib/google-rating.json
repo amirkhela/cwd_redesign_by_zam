@@ -1,0 +1,10 @@
+{
+  "_about": "Canadian Web Designs' Google rating, as Google shows it on the Toronto listing. Rewritten by BST_VID_MAKER functions/review_watch/publish_cwd.py after its daily 09:40 read, only when a number changes. Do not edit by hand. Read by cwd-config.ts and served at /google-rating.json for narccount.ca.",
+  "listing": "Canadian Web Designs",
+  "city": "Toronto",
+  "cid": "1764590269626849918",
+  "url": "https://maps.google.com/?cid=1764590269626849918",
+  "rating": 4.8,
+  "reviewCount": 199,
+  "readOn": "2026-11-19"
+}
