@@ -72,6 +72,7 @@ export const WEB_DESIGN_FOR_PHARMACIES: IndustryPage = {
     },
   ],
   proofLinks: [
+    { label: "Pharmacy SEO: the Cloud Pharmacy case study", href: "/pharmacy-seo" },
     { label: "Cloud Pharmacy and other health sites in our portfolio", href: "/portfolio" },
     { label: "Web design for medical clinics", href: "/web-design-for-medical-clinics" },
     { label: "Read: AODA website compliance in Ontario", href: "/blog/aoda-website-compliance" },
