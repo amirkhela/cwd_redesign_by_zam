@@ -4,6 +4,7 @@ slug: "construction-company-website-design"
 date: "2026-07-27"
 updated: "2026-07-27"
 author: "Amir Khela"
+seoTitle: "Contractor Website Design That Turns Visitors Into Leads"
 description: "What a construction company website needs to turn visitors into estimate requests — portfolio structure, trust signals, service pages, and SEO basics."
 keywords: ["construction company website design", "contractor website design", "electrical contractor website"]
 category: "Web Design"
