@@ -3,17 +3,16 @@ import { getConfig } from "@/lib/client-config";
 const config = getConfig();
 
 // Floating call bubble, bottom-LEFT, mirroring WhatsAppButton on the right.
-// On phones with MobileCallBar (hasCallBar) it is hidden, because the bar
-// already has "Call Now"; from lg up the bar is gone so it shows in the corner
-// with the number. tel: clicks are counted as phone_click by LeadClickTracker.
+// On phones it sits above MobileCallBar (hasCallBar), like WhatsApp on the
+// right; from lg up the bar is gone so it drops to the corner with the number. tel: clicks are counted as phone_click by LeadClickTracker.
 export default function CallButton({ hasCallBar }: { hasCallBar: boolean }) {
   return (
     <a
       href={`tel:${config.phone}`}
       aria-label={`Call us at ${config.phone}`}
       title={`Call us at ${config.phone}`}
-      className={`group fixed left-4 z-40 items-center gap-2 rounded-full text-white font-bold text-sm shadow-lg transition-transform duration-200 hover:scale-105 lg:left-6 lg:bottom-6 lg:flex ${
-        hasCallBar ? "hidden" : "flex bottom-[calc(1rem+env(safe-area-inset-bottom))]"
+      className={`group fixed left-4 z-40 flex items-center gap-2 rounded-full text-white font-bold text-sm shadow-lg transition-transform duration-200 hover:scale-105 lg:left-6 lg:bottom-6 ${
+        hasCallBar ? "bottom-[calc(5.25rem+env(safe-area-inset-bottom))]" : "bottom-[calc(1rem+env(safe-area-inset-bottom))]"
       }`}
       style={{ background: "#00AADF", boxShadow: "0 6px 24px rgba(0,170,223,0.45)" }}
     >
