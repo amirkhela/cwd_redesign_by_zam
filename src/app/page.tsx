@@ -17,18 +17,18 @@ const config = getConfig();
 // Search title + snippet, rewritten 2026-10-28 from the queries this page is shown for in
 // Search Console (web design company / web design toronto / web design canada). Locked in
 // scripts/title-locks.json; the CTR before and after is measured at +28 days.
-const PAGE_TITLE = `Web Design Company Toronto & Canada | ${config.rating}? (${reviewCountPlus(config.reviewCount)} Reviews)`;
+const PAGE_TITLE = `Web Design Company Toronto & Canada | ${config.rating}★ (${reviewCountPlus(config.reviewCount)} Reviews)`;
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },
   description:
-    `Custom, mobile-friendly websites that bring Toronto and Canadian businesses more calls and leads. Rated ${config.rating}? from ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
+    `Custom, mobile-friendly websites that bring Toronto and Canadian businesses more calls and leads. Rated ${config.rating}★ from ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
   alternates: { canonical: "/" },
   openGraph: {
     title: PAGE_TITLE,
     description: `Custom, high-converting websites rated ${config.rating} stars from ${reviewCountPlus(config.reviewCount)} Google reviews across Canada. Get your free quote today.`,
     url: `https://${config.domain}`,
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 - Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
   },
 };
 
@@ -110,7 +110,7 @@ const marketingServices = [
   },
   {
     title: "SEO",
-    description: "Dominate search results and drive a flood of organic traffic to your business - sustainably.",
+    description: "Dominate search results and drive a flood of organic traffic to your business — sustainably.",
     href: "/services/seo",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -140,7 +140,7 @@ const marketingServices = [
   },
   {
     title: "Website Maintenance",
-    description: "Keep your website secure, fast, and perfectly tuned - so you never miss a beat or a lead.",
+    description: "Keep your website secure, fast, and perfectly tuned — so you never miss a beat or a lead.",
     href: "/services/website-maintenance",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -205,7 +205,7 @@ export default function HomePage() {
   return (
     <>
       {/* =============================================
-          HERO - Dark, Animated
+          HERO — Dark, Animated
           ============================================= */}
       <section
         className="relative overflow-hidden flex items-center"
@@ -223,13 +223,13 @@ export default function HomePage() {
           className="object-cover object-center"
           priority
         />
-        {/* Dark overlay - left darker for readability, right lighter to show image */}
+        {/* Dark overlay — left darker for readability, right lighter to show image */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.82) 0%, rgba(1,12,30,0.55) 45%, rgba(1,12,30,0.30) 100%)" }}
         />
 
-        {/* Ambient glow - CSS gradients replace blur-filter orbs for better paint performance */}
+        {/* Ambient glow — CSS gradients replace blur-filter orbs for better paint performance */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -361,7 +361,7 @@ export default function HomePage() {
       </section>
 
       {/* =============================================
-          SERVICES - Dark section
+          SERVICES — Dark section
           ============================================= */}
       <section
         className="relative overflow-hidden py-section-y cv-auto"
@@ -369,7 +369,7 @@ export default function HomePage() {
       >
         <Image src="/blog/web-design-company.png" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "rgba(8,18,31,0.75)" }} />
-        {/* Ambient glow via CSS gradients - no filter:blur overhead */}
+        {/* Ambient glow via CSS gradients — no filter:blur overhead */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -390,7 +390,7 @@ export default function HomePage() {
               Full-Service Digital Solutions
             </h2>
             <p className="text-lg text-white/50 max-w-xl mx-auto">
-              Everything you need to dominate your market online - under one roof.
+              Everything you need to dominate your market online — under one roof.
             </p>
           </div>
 
@@ -438,7 +438,7 @@ export default function HomePage() {
       </section>
 
       {/* =============================================
-          PROCESS - How We Work
+          PROCESS — How We Work
           ============================================= */}
       <section className="py-section-y bg-white cv-auto">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -464,19 +464,19 @@ export default function HomePage() {
                 num: "01",
                 title: "Discovery",
                 desc: "We deep-dive into your business, goals, and competition to craft a winning digital strategy tailored to you.",
-                emoji: "??",
+                emoji: "🔍",
               },
               {
                 num: "02",
                 title: "Design & Build",
-                desc: "Our team creates a stunning, custom solution - pixel-perfect design meets rock-solid development.",
-                emoji: "??",
+                desc: "Our team creates a stunning, custom solution — pixel-perfect design meets rock-solid development.",
+                emoji: "🎨",
               },
               {
                 num: "03",
                 title: "Launch & Grow",
-                desc: "We go live, then keep optimizing - tracking performance and driving continuous, compounding growth.",
-                emoji: "??",
+                desc: "We go live, then keep optimizing — tracking performance and driving continuous, compounding growth.",
+                emoji: "🚀",
               },
             ].map((step, i) => (
               <div
@@ -504,7 +504,7 @@ export default function HomePage() {
 
 
       {/* =============================================
-          WHY CHOOSE US - Content-rich SEO section
+          WHY CHOOSE US — Content-rich SEO section
           ============================================= */}
       <section className="py-section-y bg-white cv-auto">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -518,16 +518,16 @@ export default function HomePage() {
               </h2>
               <div className="prose prose-gray max-w-none text-gray-600 space-y-4 leading-relaxed">
                 <p>
-                  Since 2014, Canadian Web Designs has been the web design company Canada&apos;s small and medium businesses rely on to build a powerful online presence. From Toronto to Vancouver, Brampton to Calgary, our team of 25+ designers, developers, and marketers delivers websites that don&apos;t just look great - they drive real revenue.
+                  Since 2014, Canadian Web Designs has been the web design company Canada&apos;s small and medium businesses rely on to build a powerful online presence. From Toronto to Vancouver, Brampton to Calgary, our team of 25+ designers, developers, and marketers delivers websites that don&apos;t just look great — they drive real revenue.
                 </p>
                 <p>
                   We believe every Canadian business deserves a professional website at an affordable price. That&apos;s why we offer transparent, flat-rate pricing with no hidden fees and no long-term contracts. Whether you need a brand-new website, an SEO overhaul, or a complete digital marketing strategy, we have a solution that fits your budget and your market.
                 </p>
                 <p>
-                  As a full-service web design agency, Canada-wide, our process starts with understanding your business goals, your industry, and your customers. We then craft a custom website strategy built around converting visitors into leads - not just a pretty design. Every website we build is mobile-first, fast-loading, and optimized for search engines from day one.
+                  As a full-service web design agency, Canada-wide, our process starts with understanding your business goals, your industry, and your customers. We then craft a custom website strategy built around converting visitors into leads — not just a pretty design. Every website we build is mobile-first, fast-loading, and optimized for search engines from day one.
                 </p>
                 <p>
-                  Beyond web design, we offer a full suite of digital marketing services: search engine optimization (SEO), Google Ads management, social media marketing, graphic design, and AI-powered business consultation. We&apos;re your one-stop shop for digital growth - so you never have to juggle multiple vendors again.
+                  Beyond web design, we offer a full suite of digital marketing services: search engine optimization (SEO), Google Ads management, social media marketing, graphic design, and AI-powered business consultation. We&apos;re your one-stop shop for digital growth — so you never have to juggle multiple vendors again.
                 </p>
               </div>
             </div>
@@ -537,28 +537,28 @@ export default function HomePage() {
               {[
                 {
                   title: "Canadian-Owned & Operated",
-                  body: "We&apos;re proudly Canadian. Our team understands the Canadian market, bilingual considerations, and local SEO - giving your business an edge over international agencies.",
-                  icon: "??",
+                  body: "We&apos;re proudly Canadian. Our team understands the Canadian market, bilingual considerations, and local SEO — giving your business an edge over international agencies.",
+                  icon: "🍁",
                 },
                 {
                   title: "Results-Focused Development",
-                  body: "Every design decision is rooted in conversion rate optimization. We build websites that turn visitors into paying customers - backed by data, not guesswork.",
-                  icon: "??",
+                  body: "Every design decision is rooted in conversion rate optimization. We build websites that turn visitors into paying customers — backed by data, not guesswork.",
+                  icon: "📈",
                 },
                 {
                   title: "Dedicated Support",
                   body: "You get a real person, not a ticket system. Our clients have direct access to their project manager throughout the build and beyond.",
-                  icon: "??",
+                  icon: "🤝",
                 },
                 {
                   title: "No Lock-In Contracts",
-                  body: "We earn your business every month. Our affordable monthly maintenance and marketing plans are flexible - cancel any time if we&apos;re not delivering.",
-                  icon: "??",
+                  body: "We earn your business every month. Our affordable monthly maintenance and marketing plans are flexible — cancel any time if we&apos;re not delivering.",
+                  icon: "🔓",
                 },
                 {
                   title: "End-to-End Digital Solutions",
-                  body: "From your first Google impression to the moment a visitor fills out your contact form, we optimize every step. SEO, ads, social media, and web design - all under one roof.",
-                  icon: "?",
+                  body: "From your first Google impression to the moment a visitor fills out your contact form, we optimize every step. SEO, ads, social media, and web design — all under one roof.",
+                  icon: "⚡",
                 },
               ].map((item, i) => (
                 <div
@@ -580,7 +580,7 @@ export default function HomePage() {
       </section>
 
       {/* =============================================
-          PORTFOLIO PREVIEW - Dark section
+          PORTFOLIO PREVIEW — Dark section
           ============================================= */}
       <section
         className="py-section-y relative overflow-hidden cv-auto"
@@ -727,7 +727,7 @@ export default function HomePage() {
       <ClientLogoCarousel />
 
       {/* =============================================
-          CTA - Dark with animated orbs
+          CTA — Dark with animated orbs
           ============================================= */}
       <section
         className="relative py-14 overflow-hidden"
@@ -791,7 +791,7 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-8 mt-12 reveal delay-4">
             {["No long-term contracts", "Free initial consultation", "Fixed, upfront pricing"].map((t) => (
               <span key={t} className="text-white/40 text-sm flex items-center gap-2">
-                <span className="text-accent">?</span> {t}
+                <span className="text-accent">✓</span> {t}
               </span>
             ))}
           </div>
@@ -823,7 +823,7 @@ export default function HomePage() {
           }),
         }}
       />
-      {/* LocalBusiness schema intentionally omitted here - the global schema in
+      {/* LocalBusiness schema intentionally omitted here — the global schema in
           layout.tsx (@id = homepage) is the single source of truth for the
           business entity + aggregateRating. A second block here caused Google's
           "Review has multiple aggregate ratings" error (4.9 vs 5.0 on one @id). */}

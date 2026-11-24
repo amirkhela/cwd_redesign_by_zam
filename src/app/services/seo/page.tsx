@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
-import { SEO_PACKAGES } from "@/lib/packages";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import Link from "next/link";
 
@@ -13,7 +12,9 @@ const PAGE_TITLE = "Affordable SEO Services In Canada | Local & National SEO";
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },
-  description: `SEO for Canadian small businesses: audits, technical fixes, local SEO and Google Business Profile, content and link building. Plans from ${SEO_PACKAGES[0].price}/month.`,
+  // "$250" = Starter SEO on a 12-month plan ($299 month to month since 25 Nov 2026).
+  // Kept literal: this description is locked in scripts/title-locks.json.
+  description: `SEO for Canadian small businesses: audits, technical fixes, local SEO and Google Business Profile, content and link building. Plans from $250/month.`,
   alternates: { canonical: "/services/seo" },
   openGraph: {
     title: PAGE_TITLE,
