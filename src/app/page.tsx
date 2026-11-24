@@ -17,22 +17,24 @@ const config = getConfig();
 // Search title + snippet, rewritten 2026-10-28 from the queries this page is shown for in
 // Search Console (web design company / web design toronto / web design canada). Locked in
 // scripts/title-locks.json; the CTR before and after is measured at +28 days.
-const PAGE_TITLE = `Web Design Company Toronto & Canada | ${config.rating}★ (${reviewCountPlus(config.reviewCount)} Reviews)`;
+const PAGE_TITLE = `Web Design Company Toronto & Canada | ${config.rating}? (${reviewCountPlus(config.reviewCount)} Reviews)`;
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },
   description:
-    `Custom, mobile-friendly websites that bring Toronto and Canadian businesses more calls and leads. Rated ${config.rating}★ from ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
+    `Custom, mobile-friendly websites that bring Toronto and Canadian businesses more calls and leads. Rated ${config.rating}? from ${reviewCountPlus(config.reviewCount)} Google reviews. Free quote.`,
   alternates: { canonical: "/" },
   openGraph: {
     title: PAGE_TITLE,
     description: `Custom, high-converting websites rated ${config.rating} stars from ${reviewCountPlus(config.reviewCount)} Google reviews across Canada. Get your free quote today.`,
     url: `https://${config.domain}`,
-    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 — Canadian Web Designs" }],
+    images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Web Design Canada 2026 - Canadian Web Designs" }],
   },
 };
 
-const services = [
+// Every /services/* page gets a card here (in-body links with descriptive anchors, not only
+// the menu/footer). Grouped so the 12 cards read as two sets of 6. Added 2026-11-25.
+const devServices = [
   {
     title: "Web Design & Development",
     description: "Custom, high-converting websites that look stunning on every device and drive real business growth.",
@@ -43,6 +45,59 @@ const services = [
       </svg>
     ),
   },
+  {
+    title: "WordPress Website Design",
+    description: "Custom WordPress sites with hand-coded themes, no bloated page builders, and speed and SEO built in.",
+    href: "/services/wordpress-website-design",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "Shopify Website Design",
+    description: "Shopify stores built to sell: custom design, Online Store 2.0 themes, Shopify SEO and migrations.",
+    href: "/services/shopify-website-design",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Wix Website Design",
+    description: "Professional Wix Studio sites, redesigns of DIY Wix sites, and proper Wix SEO setup.",
+    href: "/services/wix-website-design",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25zM13.5 16.875h6.75m-3.375-3.375v6.75" />
+      </svg>
+    ),
+  },
+  {
+    title: "Web App Development",
+    description: "Custom web applications: client portals, booking systems, dashboards and SaaS built on modern stacks.",
+    href: "/services/web-app-development",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25A1.5 1.5 0 015.25 3.75h13.5a1.5 1.5 0 011.5 1.5v13.5a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V5.25zM3.75 8.25h16.5M9 8.25v12" />
+      </svg>
+    ),
+  },
+  {
+    title: "Mobile App Development",
+    description: "iOS, Android and cross-platform apps with Flutter or React Native, plus the admin panels behind them.",
+    href: "/services/app-development",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+      </svg>
+    ),
+  },
+];
+
+const marketingServices = [
   {
     title: "Graphic Design",
     description: "Professional branding, logos, and marketing materials that make your business impossible to ignore.",
@@ -55,11 +110,21 @@ const services = [
   },
   {
     title: "SEO",
-    description: "Dominate search results and drive a flood of organic traffic to your business — sustainably.",
+    description: "Dominate search results and drive a flood of organic traffic to your business - sustainably.",
     href: "/services/seo",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "Google Ads Management",
+    description: "Google Ads run for leads, not clicks, at a flat monthly fee per account, with no contract and no % of spend.",
+    href: "/services/google-ads-management",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
       </svg>
     ),
   },
@@ -75,7 +140,7 @@ const services = [
   },
   {
     title: "Website Maintenance",
-    description: "Keep your website secure, fast, and perfectly tuned — so you never miss a beat or a lead.",
+    description: "Keep your website secure, fast, and perfectly tuned - so you never miss a beat or a lead.",
     href: "/services/website-maintenance",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -140,7 +205,7 @@ export default function HomePage() {
   return (
     <>
       {/* =============================================
-          HERO — Dark, Animated
+          HERO - Dark, Animated
           ============================================= */}
       <section
         className="relative overflow-hidden flex items-center"
@@ -158,13 +223,13 @@ export default function HomePage() {
           className="object-cover object-center"
           priority
         />
-        {/* Dark overlay — left darker for readability, right lighter to show image */}
+        {/* Dark overlay - left darker for readability, right lighter to show image */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: "linear-gradient(105deg, rgba(1,12,30,0.82) 0%, rgba(1,12,30,0.55) 45%, rgba(1,12,30,0.30) 100%)" }}
         />
 
-        {/* Ambient glow — CSS gradients replace blur-filter orbs for better paint performance */}
+        {/* Ambient glow - CSS gradients replace blur-filter orbs for better paint performance */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -296,7 +361,7 @@ export default function HomePage() {
       </section>
 
       {/* =============================================
-          SERVICES — Dark section
+          SERVICES - Dark section
           ============================================= */}
       <section
         className="relative overflow-hidden py-section-y cv-auto"
@@ -304,7 +369,7 @@ export default function HomePage() {
       >
         <Image src="/blog/web-design-company.png" alt="" fill sizes="100vw" className="object-cover object-center pointer-events-none" style={{ opacity: 0.28 }} />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "rgba(8,18,31,0.75)" }} />
-        {/* Ambient glow via CSS gradients — no filter:blur overhead */}
+        {/* Ambient glow via CSS gradients - no filter:blur overhead */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -325,13 +390,21 @@ export default function HomePage() {
               Full-Service Digital Solutions
             </h2>
             <p className="text-lg text-white/50 max-w-xl mx-auto">
-              Everything you need to dominate your market online — under one roof.
+              Everything you need to dominate your market online - under one roof.
             </p>
           </div>
 
-          {/* Grid */}
+          {/* Two groups of 6 cards: build, then grow */}
+          {[
+            { label: "Website Design & Development", items: devServices },
+            { label: "Digital Marketing & Growth", items: marketingServices },
+          ].map((group, g) => (
+          <div key={group.label} className={g === 0 ? "" : "mt-14"}>
+          <h3 className="text-center text-sm font-bold tracking-[0.2em] uppercase text-white/70 mb-6 reveal">
+            {group.label}
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((service, i) => (
+            {group.items.map((service, i) => (
               <Link
                 key={service.href}
                 href={service.href}
@@ -344,9 +417,9 @@ export default function HomePage() {
                 >
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-200">
+                <h4 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-200">
                   {service.title}
-                </h3>
+                </h4>
                 <p className="text-white/50 text-sm leading-relaxed mb-6">
                   {service.description}
                 </p>
@@ -359,11 +432,13 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          </div>
+          ))}
         </div>
       </section>
 
       {/* =============================================
-          PROCESS — How We Work
+          PROCESS - How We Work
           ============================================= */}
       <section className="py-section-y bg-white cv-auto">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -389,19 +464,19 @@ export default function HomePage() {
                 num: "01",
                 title: "Discovery",
                 desc: "We deep-dive into your business, goals, and competition to craft a winning digital strategy tailored to you.",
-                emoji: "🔍",
+                emoji: "??",
               },
               {
                 num: "02",
                 title: "Design & Build",
-                desc: "Our team creates a stunning, custom solution — pixel-perfect design meets rock-solid development.",
-                emoji: "🎨",
+                desc: "Our team creates a stunning, custom solution - pixel-perfect design meets rock-solid development.",
+                emoji: "??",
               },
               {
                 num: "03",
                 title: "Launch & Grow",
-                desc: "We go live, then keep optimizing — tracking performance and driving continuous, compounding growth.",
-                emoji: "🚀",
+                desc: "We go live, then keep optimizing - tracking performance and driving continuous, compounding growth.",
+                emoji: "??",
               },
             ].map((step, i) => (
               <div
@@ -429,7 +504,7 @@ export default function HomePage() {
 
 
       {/* =============================================
-          WHY CHOOSE US — Content-rich SEO section
+          WHY CHOOSE US - Content-rich SEO section
           ============================================= */}
       <section className="py-section-y bg-white cv-auto">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -443,16 +518,16 @@ export default function HomePage() {
               </h2>
               <div className="prose prose-gray max-w-none text-gray-600 space-y-4 leading-relaxed">
                 <p>
-                  Since 2014, Canadian Web Designs has been the web design company Canada&apos;s small and medium businesses rely on to build a powerful online presence. From Toronto to Vancouver, Brampton to Calgary, our team of 25+ designers, developers, and marketers delivers websites that don&apos;t just look great — they drive real revenue.
+                  Since 2014, Canadian Web Designs has been the web design company Canada&apos;s small and medium businesses rely on to build a powerful online presence. From Toronto to Vancouver, Brampton to Calgary, our team of 25+ designers, developers, and marketers delivers websites that don&apos;t just look great - they drive real revenue.
                 </p>
                 <p>
                   We believe every Canadian business deserves a professional website at an affordable price. That&apos;s why we offer transparent, flat-rate pricing with no hidden fees and no long-term contracts. Whether you need a brand-new website, an SEO overhaul, or a complete digital marketing strategy, we have a solution that fits your budget and your market.
                 </p>
                 <p>
-                  As a full-service web design agency, Canada-wide, our process starts with understanding your business goals, your industry, and your customers. We then craft a custom website strategy built around converting visitors into leads — not just a pretty design. Every website we build is mobile-first, fast-loading, and optimized for search engines from day one.
+                  As a full-service web design agency, Canada-wide, our process starts with understanding your business goals, your industry, and your customers. We then craft a custom website strategy built around converting visitors into leads - not just a pretty design. Every website we build is mobile-first, fast-loading, and optimized for search engines from day one.
                 </p>
                 <p>
-                  Beyond web design, we offer a full suite of digital marketing services: search engine optimization (SEO), Google Ads management, social media marketing, graphic design, and AI-powered business consultation. We&apos;re your one-stop shop for digital growth — so you never have to juggle multiple vendors again.
+                  Beyond web design, we offer a full suite of digital marketing services: search engine optimization (SEO), Google Ads management, social media marketing, graphic design, and AI-powered business consultation. We&apos;re your one-stop shop for digital growth - so you never have to juggle multiple vendors again.
                 </p>
               </div>
             </div>
@@ -462,28 +537,28 @@ export default function HomePage() {
               {[
                 {
                   title: "Canadian-Owned & Operated",
-                  body: "We&apos;re proudly Canadian. Our team understands the Canadian market, bilingual considerations, and local SEO — giving your business an edge over international agencies.",
-                  icon: "🍁",
+                  body: "We&apos;re proudly Canadian. Our team understands the Canadian market, bilingual considerations, and local SEO - giving your business an edge over international agencies.",
+                  icon: "??",
                 },
                 {
                   title: "Results-Focused Development",
-                  body: "Every design decision is rooted in conversion rate optimization. We build websites that turn visitors into paying customers — backed by data, not guesswork.",
-                  icon: "📈",
+                  body: "Every design decision is rooted in conversion rate optimization. We build websites that turn visitors into paying customers - backed by data, not guesswork.",
+                  icon: "??",
                 },
                 {
                   title: "Dedicated Support",
                   body: "You get a real person, not a ticket system. Our clients have direct access to their project manager throughout the build and beyond.",
-                  icon: "🤝",
+                  icon: "??",
                 },
                 {
                   title: "No Lock-In Contracts",
-                  body: "We earn your business every month. Our affordable monthly maintenance and marketing plans are flexible — cancel any time if we&apos;re not delivering.",
-                  icon: "🔓",
+                  body: "We earn your business every month. Our affordable monthly maintenance and marketing plans are flexible - cancel any time if we&apos;re not delivering.",
+                  icon: "??",
                 },
                 {
                   title: "End-to-End Digital Solutions",
-                  body: "From your first Google impression to the moment a visitor fills out your contact form, we optimize every step. SEO, ads, social media, and web design — all under one roof.",
-                  icon: "⚡",
+                  body: "From your first Google impression to the moment a visitor fills out your contact form, we optimize every step. SEO, ads, social media, and web design - all under one roof.",
+                  icon: "?",
                 },
               ].map((item, i) => (
                 <div
@@ -505,7 +580,7 @@ export default function HomePage() {
       </section>
 
       {/* =============================================
-          PORTFOLIO PREVIEW — Dark section
+          PORTFOLIO PREVIEW - Dark section
           ============================================= */}
       <section
         className="py-section-y relative overflow-hidden cv-auto"
@@ -652,7 +727,7 @@ export default function HomePage() {
       <ClientLogoCarousel />
 
       {/* =============================================
-          CTA — Dark with animated orbs
+          CTA - Dark with animated orbs
           ============================================= */}
       <section
         className="relative py-14 overflow-hidden"
@@ -716,7 +791,7 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-8 mt-12 reveal delay-4">
             {["No long-term contracts", "Free initial consultation", "Fixed, upfront pricing"].map((t) => (
               <span key={t} className="text-white/40 text-sm flex items-center gap-2">
-                <span className="text-accent">✓</span> {t}
+                <span className="text-accent">?</span> {t}
               </span>
             ))}
           </div>
@@ -748,7 +823,7 @@ export default function HomePage() {
           }),
         }}
       />
-      {/* LocalBusiness schema intentionally omitted here — the global schema in
+      {/* LocalBusiness schema intentionally omitted here - the global schema in
           layout.tsx (@id = homepage) is the single source of truth for the
           business entity + aggregateRating. A second block here caused Google's
           "Review has multiple aggregate ratings" error (4.9 vs 5.0 on one @id). */}
