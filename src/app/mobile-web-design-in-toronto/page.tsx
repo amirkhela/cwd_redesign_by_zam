@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
+import { WEBSITE_PACKAGES } from "@/lib/packages";
 
 const config = getConfig();
 
@@ -293,18 +294,19 @@ export default function MobileWebDesignTorontoPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                name: "AI WebSuite",
-                price: "$299",
-                period: "",
-                desc: "Mobile-optimized AI-powered website. Fully managed, hosted, and updated monthly.",
-                features: ["Responsive on all devices", "Core Web Vitals compliant", "Click-to-call integration", "SEO-optimized from day one", "Hosting & SSL included", "Monthly content updates"],
+                // Prices read from the one ladder in src/lib/packages.ts (25 Nov 2026).
+                name: "Basic Website",
+                price: WEBSITE_PACKAGES.find((p) => p.name === "Basic Website")?.price ?? "$299",
+                period: "Up to 3 pages, one-time",
+                desc: "A mobile-optimized small business website, built fast.",
+                features: ["Responsive on all devices", "Core Web Vitals compliant", "Click-to-call integration", "Basic on-page SEO", "Free SSL setup", "Add a logo + hosting: Complete from $599"],
                 cta: "Get Started",
                 highlight: false,
               },
               {
                 name: "Custom WordPress",
-                price: "$599",
-                period: "",
+                price: WEBSITE_PACKAGES.find((p) => p.name === "Startup Website")?.price ?? "$449",
+                period: "Up to 7 pages, one-time",
                 desc: "Full custom responsive WordPress site — mobile-first design, SEO-optimized for Toronto.",
                 features: ["Mobile-first responsive design", "Core Web Vitals certified", "Touch-optimized navigation", "Click-to-call + lead forms", "On-page SEO for Toronto", "3 rounds of revisions"],
                 cta: "Get a Quote",

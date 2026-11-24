@@ -15,7 +15,7 @@ faq:
   - q: "What is involved in the web design process?"
     a: "The typical stages are initial consultation and discovery, planning and strategy, design concepts and revisions, content integration, development and testing, launch, and post-launch support. A collaborative agency keeps you involved at every stage rather than disappearing until delivery."
   - q: "Do web design companies offer maintenance after launch?"
-    a: "The good ones do. Ongoing maintenance covers security patches, updates, content changes, and technical support — ask about maintenance packages before signing, because a site with no post-launch care degrades quickly. Ours start at $99/month."
+    a: "The good ones do. Ongoing maintenance covers security patches, updates, content changes, and technical support — ask about maintenance packages before signing, because a site with no post-launch care degrades quickly. Ours start at $25/month."
 featuredImage: "/blog/posts/choosing-web-design-company-toronto.jpg"
 ---
 

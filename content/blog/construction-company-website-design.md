@@ -13,7 +13,7 @@ faq:
   - q: "What does a construction company website need to include?"
     a: "At minimum: a project portfolio organized by service type, individual service pages for each trade or offering, licensing/insurance information, a clear way to request a quote, and real client testimonials or before/after photos. Contact information and a phone number should be visible on every page."
   - q: "How much does a construction company website cost?"
-    a: "Pricing depends on scope — number of service pages, portfolio size, and whether you need a quote-request form or full e-commerce for materials. Custom web design starts from $299, with ongoing maintenance available from $99/month."
+    a: "Pricing depends on scope — number of service pages, portfolio size, and whether you need a quote-request form or full e-commerce for materials. Custom web design starts from $299, with ongoing maintenance available from $25/month."
   - q: "Should contractors show pricing on their website?"
     a: "Most contractors don't publish exact project pricing since costs vary by scope, materials, and site conditions — but showing a starting price range or 'get a free estimate' path reduces friction. What matters more is showing enough project examples and process detail that a visitor trusts you enough to request a quote."
   - q: "Do construction websites need to be mobile-friendly?"
@@ -70,6 +70,6 @@ faq:
 
 <p>It's also worth auditing how the site performs on the searches that actually drive leads — not just your company name, but service + city combinations a prospective client would realistically type into Google. A site that looks good but doesn't show up for "kitchen renovation [city]" or "electrical contractor [city]" is losing leads to competitors who invested in that visibility, regardless of whose portfolio is stronger.</p>
 
-<p>Custom web design for construction and contracting companies starts from $299, with ongoing maintenance plans available from $99/month for updates, security, and performance monitoring. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on what your construction company's website needs.</p>
+<p>Custom web design for construction and contracting companies starts from $299, with ongoing maintenance plans available from $25/month for updates, security, and performance monitoring. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on what your construction company's website needs.</p>
 
 <p><strong>Ready to have it built?</strong> What we build into a contractor or construction company website, and what it costs, is on our <a href="/web-design-for-contractors">web design for contractors</a> page.</p>

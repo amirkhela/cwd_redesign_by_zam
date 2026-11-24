@@ -15,7 +15,7 @@ faq:
   - q: "How long does it take to develop a website?"
     a: "A basic website can be ready in a few weeks; larger, more intricate projects can take a few months. A clear scope and prepared content are the two biggest factors in keeping a timeline short."
   - q: "What is involved in website maintenance?"
-    a: "Regular software and plugin updates, security monitoring, content updates, performance optimization, and backups. Ongoing maintenance is what keeps a site secure and fast after launch — our plans start at $99/month."
+    a: "Regular software and plugin updates, security monitoring, content updates, performance optimization, and backups. Ongoing maintenance is what keeps a site secure and fast after launch — our plans start at $25/month."
 featuredImage: "/blog/posts/Web-Development-Promotion-Instagram-Post-2-1.png"
 ---
 

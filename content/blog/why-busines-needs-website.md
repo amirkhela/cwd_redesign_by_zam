@@ -13,7 +13,7 @@ faq:
   - q: "What does a business website actually do for sales?"
     a: "It sells while you're closed — answering questions, showing products and pricing, collecting leads, and taking orders 24/7. It also widens your reach beyond foot traffic and word of mouth to anyone searching for what you offer."
   - q: "How much does a business website cost?"
-    a: "Our web design packages start at $299, with ongoing maintenance from $99/month. Cost scales with the number of pages, custom functionality, and whether you need e-commerce."
+    a: "Our web design packages start at $299, with ongoing maintenance from $25/month. Cost scales with the number of pages, custom functionality, and whether you need e-commerce."
   - q: "What makes a business website credible?"
     a: "Real testimonials and reviews, a clear description of your services and service area, professional design, up-to-date content, and working contact details. Customers research online before buying — a stale or broken site actively costs you trust."
 featuredImage: "/blog/posts/5-Reasons-Having-a-Website-for-Your-Business-is-a-Good-Idea.png"

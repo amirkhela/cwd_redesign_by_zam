@@ -15,7 +15,7 @@ faq:
   - q: "Can I build a WordPress website for free?"
     a: "You can on WordPress.com's free plan, but you're limited to a wordpress.com subdomain, minimal customization, and forced ads. For a business site you'll want your own domain and self-hosted WordPress, which is where real costs (and control) begin."
   - q: "What's the monthly cost of running a WordPress website?"
-    a: "Ongoing costs are mostly hosting ($5–$30/mo for most small businesses) plus optional maintenance. Canadian Web Designs' managed maintenance plans start at $99/mo and cover updates, backups, security and speed."
+    a: "Ongoing costs are mostly hosting ($5–$30/mo for most small businesses) plus optional maintenance. Canadian Web Designs' managed maintenance plans start at $25/mo and cover updates, backups, security and speed."
   - q: "Is WordPress cheaper than hiring an agency to build a custom site?"
     a: "DIY WordPress is cheaper upfront but costs you time and usually converts worse. A professionally built site starts at $299 and is designed to rank and turn visitors into leads — which is what actually pays for a website."
 ---
@@ -30,7 +30,7 @@ faq:
 <li><strong>DIY WordPress:</strong> ~$60–$300/year (domain + hosting + premium theme), plus your time.</li>
 <li><strong>Freelancer build:</strong> ~$500–$3,000 one-time, quality and reliability vary widely.</li>
 <li><strong>Agency-built custom site:</strong> from <strong>$299</strong> at Canadian Web Designs — designed, SEO-ready and built to convert.</li>
-<li><strong>Ongoing:</strong> hosting from ~$5/mo; optional managed maintenance from <a href="/services/website-maintenance">$99/mo</a>.</li>
+<li><strong>Ongoing:</strong> hosting from ~$5/mo; optional managed maintenance from <a href="/services/website-maintenance">$25/mo</a>.</li>
 </ul>
 
 <h2>The core costs of a WordPress website</h2>
@@ -62,7 +62,7 @@ faq:
 <ul>
 <li><strong>Content &amp; copywriting</strong> — professional text, images and structure that rank and persuade.</li>
 <li><strong><a href="/services/seo">SEO</a></strong> — ongoing optimization so customers actually find you (typically $100–$1,000+/month depending on competitiveness).</li>
-<li><strong><a href="/services/website-maintenance">Maintenance &amp; security</a></strong> — updates, backups and monitoring from $99/month so your site stays fast and safe.</li>
+<li><strong><a href="/services/website-maintenance">Maintenance &amp; security</a></strong> — updates, backups and monitoring from $25/month so your site stays fast and safe.</li>
 <li><strong>Custom development</strong> — bespoke features, booking systems or integrations beyond off-the-shelf plugins.</li>
 </ul>
 
@@ -72,7 +72,7 @@ faq:
 
 <h2>What Canadian Web Designs charges</h2>
 
-<p>We build <a href="/services/web-design-development">custom WordPress websites</a> for businesses across <a href="/locations/toronto">Toronto</a>, the GTA and all of Canada, with transparent flat-rate pricing <strong>from $299</strong> — no percentage markups and no surprise fees. Every build includes mobile-first design, on-page SEO and analytics setup, and optional <a href="/services/website-maintenance">maintenance plans from $99/month</a> keep your site fast and secure after launch.</p>
+<p>We build <a href="/services/web-design-development">custom WordPress websites</a> for businesses across <a href="/locations/toronto">Toronto</a>, the GTA and all of Canada, with transparent flat-rate pricing <strong>from $299</strong> — no percentage markups and no surprise fees. Every build includes mobile-first design, on-page SEO and analytics setup, and optional <a href="/services/website-maintenance">maintenance plans from $25/month</a> keep your site fast and secure after launch.</p>
 
 <h2>Government funding for Canadian businesses going digital</h2>
 
@@ -93,7 +93,7 @@ faq:
 <p>You can on WordPress.com's free plan, but you're limited to a wordpress.com subdomain, minimal customization and forced ads. For a business site you'll want your own domain and self-hosted WordPress — which is where the real costs (and real control) begin.</p>
 
 <h3>What's the monthly cost of running a WordPress website?</h3>
-<p>Ongoing costs are mostly hosting ($5–$30/month for most small businesses) plus optional maintenance. Our managed <a href="/services/website-maintenance">maintenance plans</a> start at $99/month and cover updates, backups, security and speed.</p>
+<p>Ongoing costs are mostly hosting ($5–$30/month for most small businesses) plus optional maintenance. Our managed <a href="/services/website-maintenance">maintenance plans</a> start at $25/month and cover updates, backups, security and speed.</p>
 
 <h3>Is WordPress cheaper than hiring an agency?</h3>
 <p>DIY WordPress is cheaper upfront but costs you time and usually converts worse. A professionally built site starts at $299 and is designed to rank and turn visitors into leads — which is what actually pays for a website.</p>

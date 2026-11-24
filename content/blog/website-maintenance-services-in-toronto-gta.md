@@ -17,7 +17,7 @@ faq:
   - q: "Is website maintenance included in web hosting?"
     a: "Generally no. Hosting providers maintain the server, but website-specific tasks — CMS, theme, and plugin updates, broken link fixes, content management — are distinct services that hosting doesn't cover."
   - q: "How much does website maintenance cost?"
-    a: "Our maintenance plans start at $99/month, covering updates, backups, and security monitoring. Cost scales with site size, e-commerce functionality, and how much content management and support you need."
+    a: "Our maintenance plans start at $25/month, covering updates, backups, and security monitoring. Cost scales with site size, e-commerce functionality, and how much content management and support you need."
 featuredImage: "/blog/posts/website-maintenance-services-toronto.png"
 ---
 

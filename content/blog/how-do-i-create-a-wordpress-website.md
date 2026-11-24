@@ -15,7 +15,7 @@ faq:
   - q: "Do I need hosting for a WordPress website?"
     a: "For self-hosted WordPress (WordPress.org), yes — you need a hosting account and a domain name. WordPress.com offers hosting bundled in in exchange for less control over customization and, on lower tiers, your own domain."
   - q: "How much does a WordPress website cost?"
-    a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $99/month covering updates, backups, and security. Cost scales up from there based on page count, custom functionality, and whether e-commerce is involved."
+    a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $25/month covering updates, backups, and security. Cost scales up from there based on page count, custom functionality, and whether e-commerce is involved."
 featuredImage: "/blog/posts/create-wordpress-website-beginners.jpg"
 ---
 
@@ -51,7 +51,7 @@ featuredImage: "/blog/posts/create-wordpress-website-beginners.jpg"
 <ul class="wp-block-list">
 <li><strong>Free tier:</strong> usable for a personal blog with a subdomain (yoursite.wordpress.com), but too limited for a real business presence.</li>
 <li><strong>Self-hosted (WordPress.org):</strong> you pay for hosting and a domain separately — typically a modest monthly hosting fee plus a yearly domain registration.</li>
-<li><strong>Professionally built:</strong> our WordPress builds start at <strong>$299</strong> for design and development, with maintenance plans from <strong>$99/month</strong> covering updates, backups, and security — cost scales up with page count and custom functionality.</li>
+<li><strong>Professionally built:</strong> our WordPress builds start at <strong>$299</strong> for design and development, with maintenance plans from <strong>$25/month</strong> covering updates, backups, and security — cost scales up with page count and custom functionality.</li>
 </ul>
 
 <h2 class="wp-block-heading" id="h-what-to-learn-first">What You Should Know Before Starting</h2>

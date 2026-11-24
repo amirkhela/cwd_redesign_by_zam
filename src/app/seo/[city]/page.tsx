@@ -121,13 +121,13 @@ const cities: Record<string, CityData> = {
         heading: "What a Barrie SEO plan includes",
         paragraphs: ["Both plans are month to month, in Canadian dollars plus HST. Multi-location and ecommerce SEO is quoted separately."],
         bullets: [
-          "Starter SEO, $250 a month: local keyword research for Barrie and the towns you serve, on-page SEO on up to 5 pages, 4 blog posts a month, 10 local citations, a free technical audit and a monthly ranking report.",
+          "Starter SEO, $299 a month ($250 a month on a 12-month plan): local keyword research for Barrie and the towns you serve, on-page SEO on up to 5 pages, 4 blog posts a month, 10 local citations, a free technical audit and a monthly ranking report.",
           "Growth SEO, $399 a month: 50+ target keywords, on-page SEO on every page, 6 articles a month, 20 local citations, link building, weekly ranking updates and a dedicated account manager.",
         ],
       },
     ],
     faq: [
-      { q: "How much does SEO cost in Barrie?", a: "Our plans are $250 a month (Starter SEO) or $399 a month (Growth SEO), plus HST, month to month. Multi-location and ecommerce SEO is quoted separately after a free audit." },
+      { q: "How much does SEO cost in Barrie?", a: "Our plans are $299 a month (Starter SEO) or $399 a month (Growth SEO), plus HST, month to month. Starter SEO is $250 a month on a 12-month plan. Multi-location and ecommerce SEO is quoted separately after a free audit." },
       { q: "How long does Barrie SEO take to show results?", a: "Low-competition local searches often start to move within a few months, with steadier gains over 6 to 12 months. Nobody can honestly promise a ranking or a date, so we report what has moved every month." },
       { q: "Do I need a Barrie address to show up in the Google map pack?", a: "The map pack leans heavily on how close a business is to the person searching, so a verified address in or near Barrie helps most. Without one you can still rank in the regular results with strong Barrie pages, reviews and citations. Never use a fake address; Google suspends those listings." },
       { q: "I travel to my customers. Can a service-area business rank in Barrie?", a: "Yes. A Google Business Profile can hide your address and list the towns you serve instead. Pair that with a page for each main town, such as Barrie, Innisfil and Orillia, and reviews that mention the work you did there." },
@@ -167,7 +167,7 @@ const cities: Record<string, CityData> = {
       },
     ],
     faq: [
-      { q: "How much does SEO cost in Vaughan?", a: "Our plans are $250 a month (Starter SEO) or $399 a month (Growth SEO), plus HST, month to month. Multi-location and ecommerce SEO is quoted separately after a free audit." },
+      { q: "How much does SEO cost in Vaughan?", a: "Our plans are $299 a month (Starter SEO) or $399 a month (Growth SEO), plus HST, month to month. Starter SEO is $250 a month on a 12-month plan. Multi-location and ecommerce SEO is quoted separately after a free audit." },
       { q: "What is Google Maps SEO?", a: "It is the work of getting your Google Business Profile into the map results for searches near you: the right categories, a complete profile, steady reviews and the same business details on every directory that lists you." },
       { q: "Can I rank in Woodbridge or Maple if my office is elsewhere in Vaughan?", a: "In the regular search results, yes, with a useful page about the community you serve there. In the map pack, distance matters a lot, so you will show most often for searches close to your address." },
       { q: "How long does Vaughan SEO take?", a: "Community and long-tail searches often start to move within a few months; broader terms like 'seo vaughan' take longer. Nobody can honestly promise a ranking or a date, so we report what has moved every month." },
@@ -534,7 +534,7 @@ export default async function SeoCityPage({ params }: { params: Promise<{ city: 
               <div className="bg-white rounded-2xl p-7 border border-gray-100 mb-5" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
                 <h3 className="text-gray-900 font-black text-xl mb-5">Pricing</h3>
                 {[
-                  { name: "Starter SEO", price: "$250/mo", desc: "4 blogs a month + 10 citations" },
+                  { name: "Starter SEO", price: "$299/mo", desc: "4 blogs a month + 10 citations ($250/mo on a 12-month plan)" },
                   { name: "Growth SEO", price: "$399/mo", desc: "6 articles a month + 20 citations" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (

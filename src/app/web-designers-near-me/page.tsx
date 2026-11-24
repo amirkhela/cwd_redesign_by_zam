@@ -350,11 +350,13 @@ export default function WebDesignersNearMePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                name: "AI WebSuite",
-                price: "$299",
-                period: "",
-                desc: "For small businesses that need a professional online presence fast. AI-powered, fully managed.",
-                features: ["AI-built professional website", "Hosting & SSL included", "Monthly content updates", "SEO-optimized from day one", "Mobile-first design", "No setup fee"],
+                // Was "AI WebSuite" with hosting + monthly updates at $299, which the
+                // 25 Nov ladder sells separately (Hosting $199/yr, care from $25/mo).
+                name: "Basic Website",
+                price: WEBSITE_PACKAGES.find((p) => p.name === "Basic Website")?.price ?? "$299",
+                period: "Up to 3 pages, one-time",
+                desc: "For small businesses that need a professional online presence fast.",
+                features: ["Up to 3 pages, custom layout", "Mobile responsive", "Contact form", "Basic on-page SEO", "Free SSL setup", "Add a logo + hosting: Complete from $599"],
                 cta: "Get Started",
                 highlight: false,
               },

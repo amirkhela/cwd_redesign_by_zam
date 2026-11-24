@@ -64,13 +64,13 @@ export const AGENCY_VS_FREELANCER: Comparison = {
     },
     {
       feature: "After launch",
-      us: "Maintenance plans from $99 a month cover updates, daily backups and uptime monitoring. We also maintain sites built by other developers.",
+      us: "Maintenance plans from $25 a month cover updates, daily backups and uptime monitoring. We also maintain sites built by other developers.",
       them: "It depends on the person. Before you hire, ask who will update the site a year from now and what that costs.",
       win: true,
     },
     {
       feature: "Price",
-      us: "$299 for a 2–3 page website and $599 for up to 12 pages, quoted in full before work begins.",
+      us: "$299 for up to 3 pages, $449 for up to 7 pages and $699 for up to 15 pages, quoted in full before work begins.",
       them: "Fiverr's help page says freelancers set their own Gig or hourly prices, so compare written quotes for the same scope.",
       source: { label: "Fiverr Help Center: Price upfront", url: "https://help.fiverr.com/hc/en-us/articles/44500911930129-Price-upfront-Clear-and-predictable-pricing", checkedOn: "2026-10-15" },
     },
@@ -86,7 +86,7 @@ export const AGENCY_VS_FREELANCER: Comparison = {
     },
     {
       title: "Still here after launch",
-      body: "A website needs updates, backups and the odd change for years. Maintenance plans start at $99 a month, from the team that built the site.",
+      body: "A website needs updates, backups and the odd change for years. Maintenance plans start at $25 a month, from the team that built the site.",
     },
   ],
   faqs: [
@@ -108,7 +108,7 @@ export const AGENCY_VS_FREELANCER: Comparison = {
     },
     {
       q: "What does Canadian Web Designs charge?",
-      a: "$299 for a 2–3 page website and $599 for up to 12 pages, quoted in full before work begins. Maintenance plans start at $99 a month.",
+      a: "$299 for up to 3 pages, $449 for up to 7 pages and $699 for up to 15 pages, quoted in full before work begins. Maintenance plans start at $25 a month.",
     },
   ],
   disclaimer:

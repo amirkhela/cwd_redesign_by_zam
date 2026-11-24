@@ -5,20 +5,23 @@ import HeroQuoteForm from "@/components/HeroQuoteForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import PricingCards, { offerCatalog } from "@/components/PricingCards";
-import { WEBSITE_PACKAGES } from "@/lib/packages";
+import { WEBSITE_PACKAGES, COMPLETE_PACKAGES, HOSTING_PLAN, WEBSITE_SEO_BUNDLES, SEO_TERMS } from "@/lib/packages";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 
 const config = getConfig();
 
+// Title targets the queries Search Console shows this page and the homepage for
+// (website design packages toronto, web design packages, website packages,
+// business website packages). Rewritten 2026-11-25 with the Complete packages.
 export const metadata: Metadata = {
-  title: { absolute: "Website Design Packages Canada | From $299 | Canadian Web Designs" },
+  title: { absolute: "Website Design Packages Toronto & Canada | From $299" },
   description:
-    "Affordable website design packages in Canada from $299. Small business websites, WordPress sites, Shopify + WooCommerce stores and custom portals. Flat prices, free quote.",
+    "Website design packages from $299. Complete packages with a logo, hosting and domain from $599. WordPress sites, online stores and custom builds. Flat prices + HST.",
   alternates: { canonical: "/web-design-packages" },
   openGraph: {
-    title: "Website Design Packages Canada | From $299 | Canadian Web Designs",
+    title: "Website Design Packages Toronto & Canada | From $299",
     description:
-      "Small business website packages from $299, ecommerce websites from $899 and custom web applications (Next.js, Laravel). Mobile responsive, SEO friendly, built by a Canadian team.",
+      "Complete website packages with logo, brand kit, hosting and domain from $599, website-only packages from $299 and ecommerce stores from $899. Built by a Canadian team.",
     url: "https://canadianwebdesigns.ca/web-design-packages",
   },
 };
@@ -26,15 +29,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does a website cost in Canada?",
-    a: "With Canadian Web Designs a small business website starts at $299 for up to 3 pages. A 7 page WordPress website is $449, a 15 page professional website with booking and payments is $699, ecommerce stores start at $899 and custom web applications (Next.js, Laravel) start at $3,499. Prices are one-time, in Canadian dollars, plus HST.",
+    a: "With Canadian Web Designs a small business website starts at $299 for up to 3 pages. A 7 page WordPress website is $449, a 15 page professional website with booking and payments is $699, ecommerce stores start at $899 and custom web applications (Next.js, Laravel) start at $3,499. Complete packages that add a logo or brand kit plus the first year of hosting and a domain are $599, $999 and $1,499, and $1,299 for an online store. Prices are one-time, in Canadian dollars, plus HST.",
+  },
+  {
+    q: "What is included in a Complete package?",
+    a: "A Complete package is a website, a logo or brand kit, the first year of hosting, SSL and a domain, business email accounts and a Google Business Profile setup, for one price. It costs less than buying the website, the logo package and a year of hosting separately, and the saving is shown on each card.",
   },
   {
     q: "Which website package is right for my business?",
-    a: "Most service businesses (trades, clinics, consultants, salons, law and accounting firms) pick the Professional Website because it includes online booking, payments, a blog and a full SEO setup. If you only need a simple online presence, start with the Basic or Startup package. If you sell products, choose Startup Ecommerce for up to 75 products or Pro Ecommerce for an unlimited catalogue.",
+    a: "Most service businesses (trades, clinics, consultants, salons, law and accounting firms) pick Business Complete because it includes a 15 page website with booking and payments, a brand kit, hosting and a Google Business Profile setup. If you already have a logo and hosting, choose a website-only package. If you sell products, choose Store Complete, Startup Ecommerce for up to 75 products or Pro Ecommerce for an unlimited catalogue.",
   },
   {
     q: "Are there monthly fees?",
-    a: "No. Every package is a one-time price for the design and build. Hosting, domain names and paid plugins or Shopify plans are billed by those providers. If you want us to look after updates, backups and security after launch, our website maintenance plans are optional.",
+    a: `No. Every package is a one-time price. Complete packages include the first year of hosting and a domain; from year two our Hosting Plan is ${HOSTING_PLAN.price} a year (${HOSTING_PLAN.storePrice} a year for online stores), plus HST, or you can move the website to any host. Website-only packages do not include hosting or a domain. Maintenance plans from $25 a month and SEO plans are optional.`,
+  },
+  {
+    q: "Who owns the website and the domain?",
+    a: "You do. We register the domain in your business name, and the website, content and logo files are yours once the project is paid in full. Licensed themes, plugins, fonts and stock photos stay under their own licences.",
+  },
+  {
+    q: "Can I add SEO to my website package?",
+    a: "Yes. Business Complete with Starter SEO is $1,799 for 3 months, $2,499 for 6 months and $3,699 for 12 months, plus HST, which is less than buying them separately. SEO is sold on the work we do each month. No one can guarantee a #1 ranking on Google, and most local businesses see movement in 3 to 6 months.",
   },
   {
     q: "How long does it take to build my website?",
@@ -73,7 +88,7 @@ const serviceSchema = {
   description: "Affordable website design packages for Canadian businesses: small business websites, WordPress websites, ecommerce stores and custom web applications (Next.js, Laravel).",
   areaServed: { "@type": "Country", name: "Canada" },
   provider: { "@id": `https://${config.domain}/#organization` },
-  hasOfferCatalog: offerCatalog("Website Design Packages", WEBSITE_PACKAGES),
+  hasOfferCatalog: offerCatalog("Website Design Packages", [...COMPLETE_PACKAGES, ...WEBSITE_PACKAGES]),
 };
 
 const included = [
@@ -103,13 +118,13 @@ export default function WebDesignPackagesPage() {
               <MockupHeroOffer className="!mt-0 !mb-6" />
 
               <h1 className="font-black text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", lineHeight: 1.05 }}>
-                Website Design Packages{" "}
+                Website Design Packages in Toronto &amp; Canada{" "}
                 <span className="gradient-text-animated">From $299</span>
               </h1>
               <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
-                Affordable web design for Canadian small businesses. Pick a package for a business website,
-                a WordPress site, a Shopify or WooCommerce online store, or a custom web application. One flat price,
-                built by our in-house team.
+                Get your website, logo, hosting and domain in one Complete package from $599, or choose a
+                website-only package from $299. WordPress sites, Shopify or WooCommerce stores and custom web
+                applications, built by our in-house team for one flat price.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#packages"
@@ -130,20 +145,74 @@ export default function WebDesignPackagesPage() {
         </div>
       </section>
 
-      {/* ─── PACKAGES ─── */}
+      {/* ─── COMPLETE PACKAGES ─── */}
       <section id="packages" className="py-16" style={{ background: "#f8fafc" }}>
+        <div className="max-w-[1320px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Complete Packages</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Website, Logo, Hosting and Domain in One Price</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+              Everything a small business needs to launch online: a custom website, a logo or brand kit, the first
+              year of hosting and a domain, business email and a Google Business Profile setup.
+            </p>
+          </div>
+          <PricingCards plans={COMPLETE_PACKAGES} cols={4} />
+          <p className="text-center text-xs text-gray-400 mt-8 max-w-3xl mx-auto">
+            Prices are one-time, in Canadian dollars, plus HST. Each package includes the first year of hosting, SSL and a
+            domain registered in your name. From year two the Hosting Plan is {HOSTING_PLAN.price} a year ({HOSTING_PLAN.storePrice} a
+            year for online stores), plus HST, or you can move to any host. Savings compare the package with buying the same
+            website package, logo or brand package and one year of hosting separately at the prices on this site.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── WEBSITE ONLY ─── */}
+      <section id="website-only" className="py-16 bg-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12 reveal">
-            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Pricing</span>
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Website Only</span>
             <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Affordable Web Design Pricing for Every Business</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-              From a small business website to a full ecommerce store. Every package includes custom design,
-              mobile responsive pages, SEO basics and complete deployment.
+              Already have a logo and hosting? From a small business website to a full ecommerce store. Every package includes
+              custom design, mobile responsive pages, SEO basics and complete deployment.
             </p>
           </div>
           <PricingCards plans={WEBSITE_PACKAGES} />
           <p className="text-center text-xs text-gray-400 mt-8">
-            Prices are one-time, in Canadian dollars, plus HST. Hosting, domain and third-party subscriptions (e.g. Shopify plans) are billed by the provider.
+            Prices are one-time, in Canadian dollars, plus HST. Website-only packages do not include hosting or a domain; add our
+            Hosting Plan for {HOSTING_PLAN.price} a year or use your own. Third-party subscriptions (e.g. Shopify plans) are billed by the provider.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── WEBSITE + SEO ─── */}
+      <section id="website-seo" className="py-16" style={{ background: "#f8fafc" }}>
+        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-10 reveal">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Website + SEO</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900">Website and SEO Packages</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+              Business Complete with our Starter SEO plan for 3, 6 or 12 months, in one price. SEO is sold on the work we do
+              each month: articles, citations, on-page fixes and reporting. No one can guarantee a #1 ranking on Google.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {WEBSITE_SEO_BUNDLES.map((b, i) => (
+              <div key={b.name} className={`rounded-2xl p-7 border reveal ${i === 2 ? "border-[#00AADF] bg-white" : "border-gray-100 bg-white"}`} style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+                <h3 className="text-sm font-bold tracking-widest uppercase text-[#00AADF] mb-2">{SEO_TERMS[i].name}</h3>
+                <p className="text-gray-900 font-bold mb-3">{b.name}</p>
+                <p className="text-4xl font-black text-gray-900">{b.price}</p>
+                <p className="text-xs text-gray-400 mb-3">One price, CAD + HST</p>
+                <p className="inline-block text-xs font-bold px-2.5 py-1 rounded-full mb-4 bg-emerald-50 text-emerald-700">{b.save} vs buying separately</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{SEO_TERMS[i].goal}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-8">
+            See every SEO plan and term on our{" "}
+            <Link href="/seo-packages" className="font-bold text-[#00AADF] hover:underline">SEO packages page</Link>. Need a logo only?
+            See our <Link href="/services/graphic-design" className="font-bold text-[#00AADF] hover:underline">logo and branding packages</Link>, and keep
+            your site updated with <Link href="/maintenance" className="font-bold text-[#00AADF] hover:underline">maintenance from $25 a month</Link>.
           </p>
         </div>
       </section>

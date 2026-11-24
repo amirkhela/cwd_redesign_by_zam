@@ -15,7 +15,7 @@ faq:
   - q: "When should you NOT choose WordPress?"
     a: "Skip WordPress if you need a very simple one-page site with zero ongoing maintenance, or if nobody on your team is willing to handle (or pay someone to handle) plugin and core updates. An unmaintained WordPress site is a security risk — the CMS itself isn't the problem, neglect is."
   - q: "How much does a WordPress website cost in Canada?"
-    a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $99/month covering updates, backups and security monitoring. Cost scales with the number of pages, custom functionality, and whether e-commerce (WooCommerce) is involved."
+    a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $25/month covering updates, backups and security monitoring. Cost scales with the number of pages, custom functionality, and whether e-commerce (WooCommerce) is involved."
 featuredImage: "/blog/posts/Wordpress.jpg"
 ---
 

@@ -11,7 +11,7 @@ faq:
   - q: "Why hire a local website developer instead of an overseas team?"
     a: "A local team can meet in person, understands your local market and customer base, and can respond fast when something needs fixing. Communication overhead is one of the biggest hidden costs of working with a distant or overseas team — a quick call or in-person meeting solves in minutes what an email thread takes days to resolve."
   - q: "How much does a WordPress website cost in Canada?"
-    a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $99/month. Cost scales from there based on the number of pages, custom functionality, and whether e-commerce is involved — a larger, custom-built site naturally costs more than a simple informational one."
+    a: "Our WordPress builds start at $299 for design and development, with maintenance plans from $25/month. Cost scales from there based on the number of pages, custom functionality, and whether e-commerce is involved — a larger, custom-built site naturally costs more than a simple informational one."
   - q: "Do Canadian websites need to meet specific accessibility or privacy laws?"
     a: "Yes. Ontario businesses need to consider AODA (Accessibility for Ontarians with Disabilities Act) accessibility requirements, and any business collecting customer data needs to follow PIPEDA (Personal Information Protection and Electronic Documents Act). A developer unfamiliar with Canadian requirements can leave you exposed to compliance issues later."
   - q: "What should I check before hiring a web design company?"
@@ -35,7 +35,7 @@ featuredImage: "/blog/posts/website-developers-near-me.jpg"
 <p>A qualified <a href="/services/web-design-development">web design team</a> builds sites suited to your specific business, not a generic template — responsive, user-friendly, and performing well across devices. Good design is more than visual polish; it includes the back-end development that keeps the site running smoothly under real traffic.</p>
 
 <h3 class="wp-block-heading" id="h-pricing">What a WordPress Website Actually Costs</h3>
-<p>Pricing depends on complexity. Our WordPress builds start at <strong>$299</strong> for a straightforward business site, with cost scaling up based on custom functionality, page count, and whether e-commerce is involved. Ongoing maintenance — updates, backups, and security monitoring — runs from <strong>$99/month</strong>. A developer quoting a fixed price with no scope discussion is usually a red flag either way.</p>
+<p>Pricing depends on complexity. Our WordPress builds start at <strong>$299</strong> for a straightforward business site, with cost scaling up based on custom functionality, page count, and whether e-commerce is involved. Ongoing maintenance — updates, backups, and security monitoring — runs from <strong>$25/month</strong>. A developer quoting a fixed price with no scope discussion is usually a red flag either way.</p>
 
 <h3 class="wp-block-heading" id="h-smo">Social Media Optimization</h3>
 <p>A capable local developer offers <a href="/services/social-media-optimization">social media optimization</a> alongside the site build — structuring content so it's easy to share and cross-promote, which extends your reach beyond people who find the site directly through search.</p>

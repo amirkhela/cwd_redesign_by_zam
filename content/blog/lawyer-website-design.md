@@ -14,7 +14,7 @@ faq:
   - q: "Should each practice area have its own page?"
     a: "Yes. A single generic 'practice areas' page buries what each visitor is actually searching for. Separate pages for family law, personal injury, real estate, or whatever a firm practices let you speak directly to that visitor's situation and give Google a specific page to rank for each search."
   - q: "How much does a law firm website cost?"
-    a: "Custom law firm websites start at $299 with Canadian Web Designs, scaling with the number of practice-area pages, attorney bios, and content depth. Ongoing maintenance — updates, backups, security and speed monitoring — starts at $99/month."
+    a: "Custom law firm websites start at $299 with Canadian Web Designs, scaling with the number of practice-area pages, attorney bios, and content depth. Ongoing maintenance — updates, backups, security and speed monitoring — starts at $25/month."
   - q: "Does a law firm website need local SEO?"
     a: "Almost always. Most people search '[practice area] lawyer near me' or '[practice area] lawyer + city' rather than a specific firm name, so a site without local SEO — city-specific content, an optimized Google Business Profile, consistent citations — will be invisible to exactly the clients closest to the office."
   - q: "Can a law firm website include client testimonials or case results?"

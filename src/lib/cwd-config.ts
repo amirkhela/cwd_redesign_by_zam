@@ -198,7 +198,7 @@ export const cwdConfig: ClientConfig = {
         "Speed optimization for Core Web Vitals",
         "Security hardening and malware cleanup",
         "Migrations from Wix, Squarespace, and Shopify",
-        "Ongoing WordPress maintenance from $99/month",
+        "Ongoing WordPress maintenance from $25/month",
       ],
     },
     {

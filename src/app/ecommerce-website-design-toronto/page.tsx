@@ -5,6 +5,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import { WEBSITE_PACKAGES } from "@/lib/packages";
 
 const config = getConfig();
 
@@ -51,31 +52,32 @@ const features = [
 
 const pricing = [
   {
+    // Store prices read from the one ladder in src/lib/packages.ts (were $499 / $999 until 25 Nov 2026).
     name: "Starter Store",
-    price: "$499",
-    note: "",
+    price: WEBSITE_PACKAGES.find((p) => p.name === "Startup Ecommerce")?.price ?? "$899",
+    note: "One-time, CAD + HST",
     items: [
-      "Up to 50 products",
+      "Up to 75 products",
       "Shopify or WooCommerce",
       "Mobile-first responsive design",
-      "Payment gateway setup",
-      "Basic on-page SEO",
-      "Google Analytics integration",
+      "Stripe, PayPal or Square setup",
+      "Shipping + GST/HST setup",
+      "Product page SEO",
     ],
     cta: "Get Started",
     highlight: false,
   },
   {
     name: "Growth Store",
-    price: "$999",
-    note: "",
+    price: WEBSITE_PACKAGES.find((p) => p.name === "Pro Ecommerce")?.price ?? "$1,699",
+    note: "One-time, CAD + HST",
     items: [
-      "Up to 250 products",
-      "Custom design + CRO",
-      "Product schema & Google Shopping",
-      "Advanced SEO setup",
-      "Email marketing integration",
-      "3 months post-launch support",
+      "Unlimited products",
+      "Custom ecommerce design",
+      "Inventory + order management",
+      "Abandoned cart emails",
+      "Google Merchant Center feed",
+      "60 days free support",
     ],
     cta: "Most Popular",
     highlight: true,

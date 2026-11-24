@@ -18,7 +18,7 @@ faq:
   - q: "Should an electrician website have separate pages for each service?"
     a: "Yes, for any service with real search volume — panel upgrades, EV charger installation, lighting, generator hookups, and emergency service are all searched separately. Separate, focused pages let each one rank for its specific keyword instead of competing against a single generic 'services' page."
   - q: "How much does a website cost for an electrical contractor?"
-    a: "Custom web design starts from $299, with ongoing maintenance available from $99/month. Pricing depends on the number of service and location pages you need and whether you want an ongoing SEO program layered on top."
+    a: "Custom web design starts from $299, with ongoing maintenance available from $25/month. Pricing depends on the number of service and location pages you need and whether you want an ongoing SEO program layered on top."
 ---
 
 <p>Search "electrician near me" in any Canadian city and the businesses on page one aren't necessarily the most skilled — they're the ones whose websites are built around how people actually search for electrical work. For a trade where a large share of jobs start as an urgent, same-day problem, that gap between "good electrician" and "electrician with a website that converts" is often the difference between a full schedule and a quiet phone.</p>

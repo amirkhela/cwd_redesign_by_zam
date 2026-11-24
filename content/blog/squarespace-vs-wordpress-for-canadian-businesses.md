@@ -71,4 +71,4 @@ faq:
 
 <p>Both platforms can produce a genuinely good website — the deciding factor is almost always which one matches how much day-to-day control a business wants versus how much it wants handled for it. If you're not sure which fits your situation, that's a conversation worth having before committing to either one, since a wrong platform choice is expensive to unwind later.</p>
 
-<p>Canadian Web Designs builds on both platforms (and fully custom stacks where either is too limiting), with pricing that starts from $299 and ongoing maintenance plans from $99/month. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on which platform actually fits your business.</p>
+<p>Canadian Web Designs builds on both platforms (and fully custom stacks where either is too limiting), with pricing that starts from $299 and ongoing maintenance plans from $25/month. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on which platform actually fits your business.</p>

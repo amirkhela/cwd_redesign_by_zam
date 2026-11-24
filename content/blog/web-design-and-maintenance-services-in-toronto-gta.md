@@ -4,20 +4,20 @@ slug: "web-design-and-maintenance-services-in-toronto-gta"
 date: "2026-05-29"
 updated: "2026-07-23"
 author: "Amir Khela"
-description: "Custom web design and monthly maintenance for Toronto & GTA businesses — sites built to rank and convert, kept fast and secure after launch. From $299, plans from $99/mo."
+description: "Custom web design and monthly maintenance for Toronto & GTA businesses — sites built to rank and convert, kept fast and secure after launch. From $299, plans from $25/mo."
 keywords: ["web design and maintenance toronto", "web design toronto gta", "website maintenance toronto", "toronto web design services", "gta web design"]
 category: "Web Design"
 faq:
   - q: "How much does web design cost in Toronto?"
     a: "Custom sites at Canadian Web Designs start at $299 with flat-rate pricing — no templates, SEO built in. Final cost depends on pages and features."
   - q: "Do I need a maintenance plan after my site launches?"
-    a: "Yes, if you want it to keep performing. Maintenance covers updates, backups, security and speed. Our plans start at $99/month with no lock-in."
+    a: "Yes, if you want it to keep performing. Maintenance covers updates, backups, security and speed. Our plans start at $25/month with no lock-in."
   - q: "Do you only serve Toronto and the GTA?"
     a: "We're based in Toronto and Brampton but work with businesses across Canada remotely. Local clients simply get the added benefit of GTA-specific market knowledge."
 featuredImage: "/blog/posts/website-maintenance-costs-toronto.jpg"
 ---
 
-<p><strong>Quick answer:</strong> a website is two commitments, not one — the build, and keeping it working afterward. At Canadian Web Designs, custom sites start at <strong>$299</strong> and maintenance plans start at <strong>$99/month</strong> with no lock-in contract. This page covers what each includes, and how to choose a Toronto-area partner for both.</p>
+<p><strong>Quick answer:</strong> a website is two commitments, not one — the build, and keeping it working afterward. At Canadian Web Designs, custom sites start at <strong>$299</strong> and maintenance plans start at <strong>$25/month</strong> with no lock-in contract. This page covers what each includes, and how to choose a Toronto-area partner for both.</p>
 
 <p>Your website is usually a customer's first contact with your business. A well-designed, fast, regularly maintained site doesn't just look good — it performs, converts, and builds trust. A neglected one quietly loses you leads for months before anyone notices.</p>
 
@@ -43,7 +43,7 @@ featuredImage: "/blog/posts/website-maintenance-costs-toronto.jpg"
 
 <h3 class="wp-block-heading">Website maintenance you can count on</h3>
 
-<p>Even the best sites need care. Our <a href="/services/website-maintenance"><strong>maintenance plans</strong></a> start at $99/month and include:</p>
+<p>Even the best sites need care. Our <a href="/services/website-maintenance"><strong>maintenance plans</strong></a> start at $25/month and include:</p>
 
 <ul class="wp-block-list">
 <li>Security monitoring and patching</li>
@@ -93,7 +93,7 @@ featuredImage: "/blog/posts/website-maintenance-costs-toronto.jpg"
 
 <h3 class="wp-block-heading">Do I need a maintenance plan after my site launches?</h3>
 
-<p>Yes, if you want it to keep performing. Maintenance covers updates, backups, security and speed. Our plans start at $99/month with no lock-in — and our breakdown of <a href="/blog/how-much-does-website-maintenance-really-cost">what website maintenance really costs</a> explains what's behind that number.</p>
+<p>Yes, if you want it to keep performing. Maintenance covers updates, backups, security and speed. Our plans start at $25/month with no lock-in — and our breakdown of <a href="/blog/how-much-does-website-maintenance-really-cost">what website maintenance really costs</a> explains what's behind that number.</p>
 
 <h3 class="wp-block-heading">Do you only serve Toronto and the GTA?</h3>
 
@@ -117,7 +117,7 @@ featuredImage: "/blog/posts/website-maintenance-costs-toronto.jpg"
 
 <h2 class="wp-block-heading">Ready to Elevate Your Website?</h2>
 
-<p>Whether you're building your first site or replacing one that's stopped earning its keep, we can help — design from $299, maintenance from $99/month.</p>
+<p>Whether you're building your first site or replacing one that's stopped earning its keep, we can help — design from $299, maintenance from $25/month.</p>
 
 <p><strong>Call us:</strong> <a href="tel:647-689-6069">647-689-6069</a><br>
 <strong><a href="/contact">Or request a free quote</a></strong> — we'll scope it honestly, including whether you need us at all.</p>

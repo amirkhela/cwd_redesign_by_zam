@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import PricingCards from "@/components/PricingCards";
+import { MAINTENANCE_PLANS } from "@/lib/packages";
 import Link from "next/link";
 
 const service = getConfig().services.find((s) => s.slug === "website-maintenance")!;
@@ -27,12 +29,12 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "What does a website maintenance plan include?",
-      acceptedAnswer: { "@type": "Answer", text: "Our maintenance plans include regular software and plugin updates, daily backups, uptime monitoring, security scanning, performance optimization, and monthly reporting. We handle everything so you can focus on your business." },
+      acceptedAnswer: { "@type": "Answer", text: "Every plan includes software and plugin updates, off-site backups, uptime monitoring and security scanning. Standard Care adds daily backups, content updates, malware removal and monthly reporting, and Pro Care adds a staging site, more content time and priority support." },
     },
     {
       "@type": "Question",
       name: "How much does website maintenance cost in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Cost depends on your site's size, platform, and the level of support you need. We offer flexible month-to-month plans with no long-term contracts — contact us for a free quote." },
+      acceptedAnswer: { "@type": "Answer", text: "Our plans are $25, $50 or $75 a month, plus HST, month to month with no long-term contract and no setup fee. Hosting is not included; add our Hosting Plan for $199 a year or keep your current host. High-traffic and multi-site plans are quoted." },
     },
     {
       "@type": "Question",
@@ -59,6 +61,23 @@ export default function ServicePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePageTemplate service={service} />
+
+      {/* ── Plans ── */}
+      <section id="maintenance-plans" className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Maintenance Plans</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">Website Maintenance Plans From $25 a Month</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+              Flat monthly prices for WordPress, Shopify, Webflow and custom sites. Month to month, no setup fees.
+            </p>
+          </div>
+          <PricingCards plans={MAINTENANCE_PLANS} />
+          <p className="text-center text-xs text-gray-400 mt-6">
+            Prices in Canadian dollars, plus HST. Hosting is not included: add our Hosting Plan for $199/year or keep your current host. High-traffic and multi-site plans are quoted.
+          </p>
+        </div>
+      </section>
 
       {/* ── Why Maintenance Matters ── */}
       <section className="py-20 bg-gray-50 border-t border-gray-100">

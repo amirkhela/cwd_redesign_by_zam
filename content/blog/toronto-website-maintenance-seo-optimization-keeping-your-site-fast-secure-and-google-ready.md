@@ -4,7 +4,7 @@ slug: "toronto-website-maintenance-seo-optimization-keeping-your-site-fast-secur
 date: "2025-11-18"
 updated: "2026-07-23"
 author: "Amir Khela"
-description: "Why ongoing site care drives Google rankings — backups, Core Web Vitals, security patches and speed tuning for Toronto businesses, from $99/month."
+description: "Why ongoing site care drives Google rankings — backups, Core Web Vitals, security patches and speed tuning for Toronto businesses, from $25/month."
 keywords: ["toronto website maintenance", "website maintenance seo", "website maintenance toronto", "website security toronto", "core web vitals toronto"]
 category: "Web Design"
 featuredImage: "/blog/posts/toronto-website-maintenance-seo.png"
@@ -166,5 +166,5 @@ featuredImage: "/blog/posts/toronto-website-maintenance-seo.png"
 
 <p>???? <strong>Contact us today to learn more about our Website Maintenance &amp; SEO packages — and start giving your website the care it deserves.</strong></p>
 <h3 class="wp-block-heading">Keep Your Toronto Website Fast, Secure, and Ranking</h3>
-<p>Maintenance isn't optional — it's the difference between a site that compounds in value and one that quietly decays. Our <a href="/services/website-maintenance">website maintenance plans from $99/month</a> cover updates, backups, security monitoring, and speed checks, and pair naturally with <a href="/services/seo">ongoing SEO</a>. Serving <a href="/locations/toronto">Toronto</a> and businesses Canada-wide — learn why backups matter in our guide to <a href="/services/website-maintenance">regular website backups</a>.</p>
+<p>Maintenance isn't optional — it's the difference between a site that compounds in value and one that quietly decays. Our <a href="/services/website-maintenance">website maintenance plans from $25/month</a> cover updates, backups, security monitoring, and speed checks, and pair naturally with <a href="/services/seo">ongoing SEO</a>. Serving <a href="/locations/toronto">Toronto</a> and businesses Canada-wide — learn why backups matter in our guide to <a href="/services/website-maintenance">regular website backups</a>.</p>
 <p><strong><a href="/contact">Get a free maintenance assessment</a></strong> — find out what your site needs.</p>

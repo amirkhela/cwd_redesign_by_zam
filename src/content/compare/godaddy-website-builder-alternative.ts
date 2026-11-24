@@ -70,13 +70,13 @@ export const GODADDY_WEBSITE_BUILDER_ALTERNATIVE: Comparison = {
     },
     {
       feature: "Help when you need it",
-      us: "You talk to the team that built your site. Maintenance plans from $99 a month cover updates, daily backups and uptime monitoring.",
+      us: "You talk to the team that built your site. Maintenance plans from $25 a month cover updates, daily backups and uptime monitoring.",
       them: "GoDaddy's page says it offers 24/7 expert support by phone and chat, and a professional design service for people who would rather have experts build the site.",
       source: { label: "GoDaddy: Website Builder (Canada)", url: "https://www.godaddy.com/en-ca/websites/website-builder", checkedOn: "2026-10-15" },
     },
     {
       feature: "Price",
-      us: "$299 for a 2–3 page website and $599 for up to 12 pages, quoted in full before we start.",
+      us: "$299 for up to 3 pages, $449 for up to 7 pages and $699 for up to 15 pages, quoted in full before we start.",
       them: "Not listed here. GoDaddy shows its plan prices in Canadian dollars on its own pricing page; check there for the current price.",
     },
   ],
@@ -113,7 +113,7 @@ export const GODADDY_WEBSITE_BUILDER_ALTERNATIVE: Comparison = {
     },
     {
       q: "What does a website from Canadian Web Designs cost?",
-      a: "$299 for a 2–3 page website and $599 for up to 12 pages, quoted in full before work begins. Maintenance plans start at $99 a month. We do not quote GoDaddy's prices here because the plan prices on its pricing page can change; check godaddy.com for the current Canadian price.",
+      a: "$299 for up to 3 pages, $449 for up to 7 pages and $699 for up to 15 pages, quoted in full before work begins. Maintenance plans start at $25 a month. We do not quote GoDaddy's prices here because the plan prices on its pricing page can change; check godaddy.com for the current Canadian price.",
     },
   ],
   disclaimer:

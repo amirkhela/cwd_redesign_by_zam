@@ -1,17 +1,24 @@
 import type { Metadata } from "next";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import PricingCards, { offerCatalog } from "@/components/PricingCards";
+import { BRANDING_PACKAGES, DESIGN_ITEMS } from "@/lib/packages";
 import Link from "next/link";
 
 const service = getConfig().services.find((s) => s.slug === "graphic-design")!;
+const config = getConfig();
 
+// Title rewritten 2026-11-25 for the logo searches that convert (SE Ranking, Canada:
+// logo design toronto 210/mo KD 9, logo design near me 260, logo designer toronto 90,
+// branding toronto 210). "branding packages" itself is ~10/mo, so it is a page label,
+// not the title target.
 export const metadata: Metadata = {
-  title: { absolute: "Graphic Design Canada | Logos & Branding | Canadian Web Designs" },
-  description: "Build a brand that gets remembered — custom logos, full identity packages, print & digital. Trusted by 500+ Canadian businesses. Free quote.",
+  title: { absolute: "Logo Design Toronto & Branding Packages | From $299" },
+  description: "Logo design from $299, Brand Starter kits for $599 and full brand identity for $999. Business cards, flyers, menus and social kits too. Free quote.",
   alternates: { canonical: "/services/graphic-design" },
   openGraph: {
-    title: "Graphic Design Canada | Logos & Branding | Canadian Web Designs",
-    description: `Custom logos, full brand identity packages & print. 72-hr rush available. 500+ Canadian businesses served. ${reviewCountPlus(getConfig().reviewCount)} Google reviews. Free quote.`,
+    title: "Logo Design Toronto & Branding Packages | From $299",
+    description: `Custom logos from $299, brand kits from $599 and full brand identity for $999, plus business cards, flyers and social kits. ${reviewCountPlus(getConfig().reviewCount)} Google reviews. Free quote.`,
     url: "https://canadianwebdesigns.ca/services/graphic-design",
     images: [{ url: "/images/hero-leading-web-design.jpg", width: 1200, height: 630, alt: "Graphic Design Canada 2026 — Canadian Web Designs" }],
   },
@@ -24,12 +31,17 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "How much does logo design cost in Canada?",
-      acceptedAnswer: { "@type": "Answer", text: "Cost depends on the scope — a standalone logo vs. a full brand identity package are very different engagements. Contact us for a free quote and we'll scope the right package for your business." },
+      acceptedAnswer: { "@type": "Answer", text: "Our Logo Design package is $299, the Brand Starter kit (logo suite, colours, fonts, brand board and social images) is $599, and a full Brand Identity with a brand guide, business card, letterhead and social kit is $999. Prices are one-time, in Canadian dollars, plus HST. If you buy a logo and upgrade to a brand package within 60 days, the $299 is credited." },
     },
     {
       "@type": "Question",
       name: "How many revisions are included in graphic design packages?",
-      acceptedAnswer: { "@type": "Answer", text: "All packages include at least 2 rounds of revisions. Our Business and Brand packages include unlimited revisions until you are completely satisfied. We work collaboratively to ensure the final design is exactly what you envisioned." },
+      acceptedAnswer: { "@type": "Answer", text: "Logo Design includes 2 rounds of revisions, Brand Starter includes 3 and Brand Identity includes 4. Extra rounds are $59 each. We work collaboratively so the final design is exactly what you envisioned." },
+    },
+    {
+      "@type": "Question",
+      name: "Can I get a logo, website and hosting together?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Our Complete website packages include a logo or brand kit, a custom website, the first year of hosting and a domain for one price: $599, $999 or $1,499, and $1,299 for an online store, plus HST. Each one costs less than buying the parts separately." },
     },
     {
       "@type": "Question",
@@ -49,9 +61,20 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "Do you design menus, brochures, and print materials?",
-      acceptedAnswer: { "@type": "Answer", text: "Yes. Beyond logos, we design restaurant menus, brochures, business cards, flyers, trade-show banners, and social media graphics. All print materials are delivered press-ready at 300 DPI with correct bleed and margins." },
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Business cards are $79, flyers $99 (double-sided $149), letterhead $59, restaurant menus $149, tri-fold brochures $199 and a social media kit $199, plus HST. We also design trade-show banners and other print on quote. All print materials are delivered press-ready at 300 DPI with correct bleed and margins." },
     },
   ],
+};
+
+const brandingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `https://${config.domain}/services/graphic-design#branding`,
+  name: "Logo Design and Branding Packages",
+  serviceType: "Graphic design",
+  areaServed: { "@type": "Country", name: "Canada" },
+  provider: { "@id": `https://${config.domain}/#organization` },
+  hasOfferCatalog: offerCatalog("Logo and Branding Packages", BRANDING_PACKAGES),
 };
 
 const process = [
@@ -65,7 +88,50 @@ export default function ServicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandingSchema) }} />
       <ServicePageTemplate service={service} />
+
+      {/* ── Branding packages first, single items underneath ── */}
+      <section id="branding-packages" className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-4">Logo &amp; Branding Packages</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">Logo Design and Branding Packages in Toronto</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+              A logo on its own is a start. A brand kit makes your website, social media, cards and signs look like one business.
+              Pick the package that fits, with flat prices and no surprises.
+            </p>
+          </div>
+          <PricingCards plans={BRANDING_PACKAGES} />
+          <p className="text-center text-xs text-gray-400 mt-6">One-time prices in Canadian dollars, plus HST. Rebrands and multi-location identities are quoted.</p>
+
+          <div className="grid lg:grid-cols-2 gap-8 mt-14">
+            <div className="rounded-2xl border border-gray-100 p-8" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
+              <h3 className="text-xl font-black text-gray-900 mb-2">Single Design Items</h3>
+              <p className="text-gray-500 text-sm mb-5">Need just one piece? Every item is also sold on its own.</p>
+              <ul className="divide-y divide-gray-100">
+                {DESIGN_ITEMS.map((item) => (
+                  <li key={item.name} className="flex justify-between py-2.5 text-sm">
+                    <span className="text-gray-700">{item.name}</span>
+                    <span className="font-bold text-gray-900">{item.price}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-gray-400 mt-4">One-time, CAD + HST.</p>
+            </div>
+            <div className="rounded-2xl p-8 flex flex-col justify-center" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>
+              <h3 className="text-2xl font-black text-white mb-3">Logo + Website + Hosting in One Price</h3>
+              <p className="text-white/85 leading-relaxed mb-6">
+                Our Complete packages bundle your logo or brand kit with a custom website, the first year of hosting, a domain and
+                business email, from $599 + HST. Each one costs less than buying the parts separately.
+              </p>
+              <Link href="/web-design-packages#packages" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-white text-[#003B6F] font-bold text-sm hover:bg-white/90 self-start">
+                See Complete Website Packages
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── Process + Pricing Section ── */}
       <section className="py-20 bg-gray-50 border-t border-gray-100">
@@ -98,7 +164,7 @@ export default function ServicePage() {
           {/* CTA */}
           <div className="text-center mb-14">
             <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-3">Ready to Elevate Your Brand?</h3>
-            <p className="text-gray-500 max-w-xl mx-auto mb-8">Whether you need a logo, a full brand identity, or marketing materials — we&apos;ll scope the right package for your goals. Get a free quote with no obligation.</p>
+            <p className="text-gray-500 max-w-xl mx-auto mb-8">Whether you need a logo, a full brand identity, or marketing materials, pick a package above or ask us to recommend one. Free quote, no obligation.</p>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold rounded-xl text-base transition-all duration-200 hover:opacity-90"

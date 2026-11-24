@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
+import { MAINTENANCE_PLANS } from "@/lib/packages";
 
 const config = getConfig();
 
@@ -30,7 +31,7 @@ const faq = [
   },
   {
     q: "How much does website maintenance cost in Canada?",
-    a: "Pricing depends on the level of support your site needs — from essential updates, backups, and monitoring to full-service maintenance with content updates, SEO monitoring, and priority support. All plans are month-to-month with no long-term contracts, and we provide a tailored quote after a free consultation.",
+    a: "Our plans are $25 a month (Basic Care: updates, weekly backups, uptime monitoring and a monthly security scan), $50 a month (Standard Care: adds daily backups, 1 hour of content updates and malware removal) and $75 a month (Pro Care: adds a staging site, 2 hours of updates, store support and priority support), plus HST. All plans are month to month with no long-term contract. Hosting is not included; add our Hosting Plan for $199 a year or keep your current host. High-traffic and multi-site plans are quoted.",
   },
   {
     q: "Do you maintain websites you didn't build?",
@@ -60,58 +61,17 @@ const faqSchema = {
   })),
 };
 
-const plans = [
-  {
-    name: "Essential",
-    price: "$99/mo",
-    period: "",
-    desc: "For small business sites that need to stay secure and online.",
-    features: [
-      "WordPress core + plugin + theme updates",
-      "Daily off-site backups (30-day retention)",
-      "24/7 uptime monitoring",
-      "Monthly security scan",
-      "Monthly performance report",
-      "Email support",
-    ],
-    cta: "Get Started",
-    highlight: false,
-  },
-  {
-    name: "Professional",
-    price: "$199/mo",
-    period: "",
-    desc: "For growing businesses that need faster response and content updates.",
-    features: [
-      "Everything in Essential",
-      "Staging environment for safe updates",
-      "2 hours/month content updates",
-      "Core Web Vitals monitoring",
-      "Priority email + phone support",
-      "Quarterly SEO health check",
-      "Malware removal included",
-    ],
-    cta: "Get Professional",
-    highlight: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    desc: "For high-traffic sites, WooCommerce stores, and multi-location businesses.",
-    features: [
-      "Everything in Professional",
-      "5 hours/month content + development",
-      "Weekly backups + instant restore",
-      "WooCommerce & eCommerce support",
-      "Google Analytics + Search Console review",
-      "Dedicated account manager",
-      "SLA: 4-hour response time",
-    ],
-    cta: "Get Enterprise",
-    highlight: false,
-  },
-];
+// Prices live in src/lib/packages.ts (MAINTENANCE_PLANS), shared with
+// /services/website-maintenance. $25 / $50 / $75 set by Zam 2026-11-25.
+const plans = MAINTENANCE_PLANS.map((p) => ({
+  name: p.name,
+  price: `${p.price}/mo`,
+  period: "CAD + HST, month to month",
+  desc: p.desc,
+  features: p.features,
+  cta: "Get Started",
+  highlight: !!p.highlight,
+}));
 
 const included = [
   {
@@ -354,7 +314,7 @@ export default function MaintenancePage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-400 text-sm">All plans include a free site audit. Month-to-month — no setup fees, no lock-in.</p>
+          <p className="text-center text-gray-400 text-sm">All plans include a free site audit. Month-to-month, no setup fees, no lock-in. Hosting is not included: add our Hosting Plan for $199/year + HST or keep your current host. High-traffic and multi-site plans are quoted.</p>
         </div>
       </section>
 

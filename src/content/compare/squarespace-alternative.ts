@@ -59,7 +59,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     },
     {
       feature: "Price",
-      us: "Custom websites from $299, quoted in full before we start, with no percentage mark-ups. Maintenance plans from $99 a month.",
+      us: "Custom websites from $299, quoted in full before we start, with no percentage mark-ups. Maintenance plans from $25 a month.",
       them: "Not listed here. Squarespace's pricing is shown by region on squarespace.com; check there for current pricing in Canadian dollars.",
     },
   ],
@@ -96,7 +96,7 @@ export const SQUARESPACE_ALTERNATIVE: Comparison = {
     },
     {
       q: "What does a custom website cost compared with Squarespace?",
-      a: "Our custom websites start at $299, quoted in full before work begins, and maintenance plans start at $99 a month. We do not quote Squarespace's prices here because their pricing pages are shown by region and change over time; check squarespace.com for current Canadian pricing and compare it against a written quote from us.",
+      a: "Our custom websites start at $299, quoted in full before work begins, and maintenance plans start at $25 a month. We do not quote Squarespace's prices here because their pricing pages are shown by region and change over time; check squarespace.com for current Canadian pricing and compare it against a written quote from us.",
     },
   ],
   disclaimer:

@@ -103,7 +103,7 @@ const faqs = [
   },
   {
     q: "How much does pharmacy SEO cost?",
-    a: "Plans start at $250 a month for Starter SEO and $399 a month for Growth SEO, plus HST. There is no lock-in contract.",
+    a: "Starter SEO is $299 a month, or $250 a month on a 12-month plan, and Growth SEO is $399 a month, plus HST. Month to month there is no lock-in contract.",
   },
   {
     q: "How long until we see results?",

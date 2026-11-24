@@ -94,7 +94,7 @@ export const WEB_DESIGN_FOR_GYMS: IndustryPage = {
     },
     {
       q: "What does a gym website cost, and who owns it?",
-      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the photos and the domain are yours, and you can move the site to another host at any time.",
+      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $25 a month. The site, the photos and the domain are yours, and you can move the site to another host at any time.",
     },
   ],
   reviewedOn: "2026-10-19",

@@ -14,7 +14,7 @@ faq:
   - q: "Should a dental website have online booking built in?"
     a: "Yes — even a simple 'Request an Appointment' form that syncs to your front desk removes the single biggest friction point: having to call during business hours. Practices that add online booking typically see more after-hours and new-patient bookings simply because the option exists."
   - q: "How much does a professional dental website cost?"
-    a: "Custom dental websites start at $299 with Canadian Web Designs, scaling with the number of service pages, booking integration, and content. Ongoing maintenance — updates, backups, security and speed monitoring — starts at $99/month."
+    a: "Custom dental websites start at $299 with Canadian Web Designs, scaling with the number of service pages, booking integration, and content. Ongoing maintenance — updates, backups, security and speed monitoring — starts at $25/month."
   - q: "Does a dental website need local SEO too?"
     a: "Almost always. Most patients search '[service] near me' or '[service] + city' rather than a specific practice name, so a site built without local SEO — city-specific content, a Google Business Profile, local citations — will be invisible to exactly the patients closest to the practice."
 ---
@@ -71,7 +71,7 @@ faq:
 
 <h2>What this costs</h2>
 
-<p>A custom dental website built around booking, service-specific pages, and local SEO <a href="/services/web-design-development">starts at $299</a> with Canadian Web Designs — flat-rate, no percentage markups. Ongoing <a href="/services/website-maintenance">maintenance plans start at $99/month</a> and keep the site fast, secure, and up to date after launch. Every build includes mobile-first design and on-page SEO from day one, not as an afterthought.</p>
+<p>A custom dental website built around booking, service-specific pages, and local SEO <a href="/services/web-design-development">starts at $299</a> with Canadian Web Designs — flat-rate, no percentage markups. Ongoing <a href="/services/website-maintenance">maintenance plans start at $25/month</a> and keep the site fast, secure, and up to date after launch. Every build includes mobile-first design and on-page SEO from day one, not as an afterthought.</p>
 
 <h2>What a redesign should preserve</h2>
 

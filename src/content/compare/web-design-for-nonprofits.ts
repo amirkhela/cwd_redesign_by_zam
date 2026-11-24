@@ -97,7 +97,7 @@ export const WEB_DESIGN_FOR_NONPROFITS: IndustryPage = {
     },
     {
       q: "What does a non-profit website cost, and who owns it?",
-      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. The site, the content and the domain belong to your organization.",
+      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $25 a month. The site, the content and the domain belong to your organization.",
     },
   ],
   reviewedOn: "2026-10-19",

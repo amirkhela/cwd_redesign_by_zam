@@ -320,7 +320,7 @@ export default function SeoNorthYorkPage() {
               <div className="bg-white rounded-2xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
                 <p className="text-xs font-bold text-[#00AADF] uppercase tracking-widest mb-3">Pricing</p>
                 {[
-                  { name: "Starter SEO", price: "$250/mo", desc: "4 blogs a month + 10 citations" },
+                  { name: "Starter SEO", price: "$299/mo", desc: "4 blogs a month + 10 citations ($250/mo on a 12-month plan)" },
                   { name: "Growth SEO", price: "$399/mo", desc: "6 articles a month + 20 citations" },
                   { name: "Enterprise", price: "Custom", desc: "Multi-location + e-commerce" },
                 ].map((pkg) => (

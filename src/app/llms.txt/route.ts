@@ -1,6 +1,6 @@
 import { getConfig } from "@/lib/client-config";
 import { COMPARISONS, INDUSTRIES } from "@/content/compare";
-import { GOOGLE_ADS_PLAN, SEO_PACKAGES, WEBSITE_PACKAGES } from "@/lib/packages";
+import { GOOGLE_ADS_PLAN, SEO_PACKAGES, WEBSITE_PACKAGES, COMPLETE_PACKAGES, BRANDING_PACKAGES, MAINTENANCE_PLANS, HOSTING_PLAN, WEBSITE_SEO_BUNDLES } from "@/lib/packages";
 
 /**
  * /llms.txt -- a plain-text map of this site for AI answer engines.
@@ -84,8 +84,18 @@ export function GET() {
     .map((p) => `- ${p.name}: ${p.price}. ${p.features.join("; ")}.`)
     .join("\n");
   const seoPackages = SEO_PACKAGES
-    .map((p) => `- ${p.name}: ${p.price === "Custom" ? "custom quote" : `${p.price} per month`}. ${p.features.join("; ")}.`)
+    .map((p) => `- ${p.name}: ${p.price === "Custom" ? "custom quote" : `${p.price} per month (${p.note})`}. ${p.features.join("; ")}.`)
     .join("\n");
+  const completePackages = COMPLETE_PACKAGES
+    .map((p) => `- ${p.name}: ${p.price}${p.save ? ` (${p.save})` : ""}. ${p.features.join("; ")}.`)
+    .join("\n");
+  const brandingPackages = BRANDING_PACKAGES
+    .map((p) => `- ${p.name}: ${p.price}. ${p.features.join("; ")}.`)
+    .join("\n");
+  const maintenancePlans = MAINTENANCE_PLANS
+    .map((p) => `- ${p.name}: ${p.price} per month. ${p.features.join("; ")}.`)
+    .join("\n");
+  const websiteSeo = WEBSITE_SEO_BUNDLES.map((b) => `- ${b.name}: ${b.price} (${b.save} vs separately).`).join("\n");
 
   const industries = Object.values(INDUSTRIES)
     .map((p) => `- [${p.h1}](${base}/${p.slug})`)
@@ -109,15 +119,33 @@ ${services}
 
 All prices in Canadian dollars, plus HST.
 
-[Website design packages](${base}/web-design-packages), one-time price for
-the design and build. Hosting, domain and third-party subscriptions (e.g.
-Shopify plans) are billed by the provider.
+[Complete website packages](${base}/web-design-packages), one-time price for a
+website, a logo or brand kit, the first year of hosting, SSL and a domain. From
+year two the ${HOSTING_PLAN.name} is ${HOSTING_PLAN.price} per year (${HOSTING_PLAN.storePrice} for online stores):
+
+${completePackages}
+
+[Website-only packages](${base}/web-design-packages#website-only), one-time
+price for the design and build. Hosting, domain and third-party subscriptions
+(e.g. Shopify plans) are not included:
 
 ${websitePackages}
 
-[SEO packages](${base}/seo-packages), monthly:
+[Website + SEO packages](${base}/web-design-packages#website-seo):
+
+${websiteSeo}
+
+[Logo and branding packages](${base}/services/graphic-design), one-time:
+
+${brandingPackages}
+
+[SEO packages](${base}/seo-packages), monthly, or prepaid for 6 or 12 months:
 
 ${seoPackages}
+
+[Website maintenance plans](${base}/maintenance), monthly, hosting not included:
+
+${maintenancePlans}
 
 [Google Ads management](${base}/services/google-ads-management), monthly.
 Ad spend is billed directly by Google, separate from our fee:

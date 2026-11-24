@@ -9,7 +9,7 @@ keywords: ["website design toronto", "web design company toronto gta", "canadian
 category: "Web Design"
 faq:
   - q: "How much does a website design cost in Toronto?"
-    a: "Cost depends on complexity — a basic informational site costs far less than a large e-commerce build with custom functionality. Our web design projects start at $299, with ongoing maintenance plans from $99/month."
+    a: "Cost depends on complexity — a basic informational site costs far less than a large e-commerce build with custom functionality. Our web design projects start at $299, with ongoing maintenance plans from $25/month."
   - q: "How long does it take to build a website?"
     a: "A simple site can launch in 4-6 weeks; a complex project with custom development can take a few months. We set a realistic timeline upfront and provide regular updates through the build."
   - q: "Do you offer website maintenance and support after launch?"

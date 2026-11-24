@@ -43,7 +43,7 @@ const faq = [
   },
   {
     q: "Do you maintain WordPress websites after launch?",
-    a: "Yes — our WordPress maintenance plans start at $99/month and cover core, theme, and plugin updates, daily backups, security monitoring, uptime monitoring, and content changes. Outdated plugins are the number-one way WordPress sites get hacked, so keeping the stack current isn't optional — it's the difference between a site that quietly works for years and one that becomes an emergency.",
+    a: "Yes — our WordPress maintenance plans start at $25/month and cover core, theme, and plugin updates, daily backups, security monitoring, uptime monitoring, and content changes. Outdated plugins are the number-one way WordPress sites get hacked, so keeping the stack current isn't optional — it's the difference between a site that quietly works for years and one that becomes an emergency.",
   },
   {
     q: "Can you fix or redesign my existing WordPress site?",
@@ -125,7 +125,7 @@ const process = [
   { step: "01", title: "Discovery & Architecture", desc: "We map your services, your customers, and the searches you need to win, then plan the sitemap and page structure around them. Every page gets a defined keyword focus before a single pixel is designed — structure is where WordPress SEO is won or lost." },
   { step: "02", title: "Design & Custom Build", desc: "Your theme is designed for your brand and hand-built on the native block editor. Editable sections use custom fields, so you can update content without breaking layouts — and without a page builder loading its entire library on every visit." },
   { step: "03", title: "Content, SEO & QA", desc: "Page titles, meta descriptions, heading hierarchy, schema markup, image compression, and internal linking — done during the build, not bolted on after. Then a full QA pass: forms, mobile breakpoints, Core Web Vitals, and 301 redirects from any old URLs." },
-  { step: "04", title: "Launch & Maintain", desc: "We launch, submit your sitemap to Google Search Console, and monitor the first weeks of crawl data. Maintenance plans from $99/month keep core, theme, and plugins updated with daily backups — the unglamorous work that keeps WordPress sites alive." },
+  { step: "04", title: "Launch & Maintain", desc: "We launch, submit your sitemap to Google Search Console, and monitor the first weeks of crawl data. Maintenance plans from $25/month keep core, theme, and plugins updated with daily backups — the unglamorous work that keeps WordPress sites alive." },
 ];
 
 export default function WordPressWebsiteDesignPage() {
@@ -164,7 +164,7 @@ export default function WordPressWebsiteDesignPage() {
               </Link>
             </div>
             <div className="hero-fade-up-3 flex flex-wrap gap-5 mt-8">
-              {["Custom Themes — No Builder Bloat", "You Own Everything", "Maintenance From $99/mo"].map((t) => (
+              {["Custom Themes — No Builder Bloat", "You Own Everything", "Maintenance From $25/mo"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <svg className="w-4 h-4 text-[#00AADF] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                   {t}
@@ -197,7 +197,7 @@ export default function WordPressWebsiteDesignPage() {
           </div>
           <div className="bg-white rounded-2xl p-8 reveal border border-gray-100" style={{ boxShadow: "0 2px 24px rgba(0,0,0,0.07)" }}>
             <div className="grid sm:grid-cols-4 gap-6 text-center">
-              {[{ value: "41.5%", label: "Of All Websites Run WordPress" }, { value: "$299", label: "WordPress Sites From" }, { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "$99/mo", label: "Maintenance Plans From" }].map((s) => (
+              {[{ value: "41.5%", label: "Of All Websites Run WordPress" }, { value: "$299", label: "WordPress Sites From" }, { value: reviewCountPlus(config.reviewCount), label: "Google Reviews" }, { value: "$25/mo", label: "Maintenance Plans From" }].map((s) => (
                 <div key={s.label}><p className="text-3xl font-black text-gray-900 mb-1">{s.value}</p><p className="text-gray-500 text-sm">{s.label}</p></div>
               ))}
             </div>

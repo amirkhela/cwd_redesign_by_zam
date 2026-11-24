@@ -97,7 +97,7 @@ export const WEB_DESIGN_FOR_REALTORS: IndustryPage = {
     },
     {
       q: "What does a realtor website cost?",
-      a: "Websites start at $299 with a written quote before work begins, maintenance plans start at $99 a month, and SEO plans start at $250 a month. A listings feed may add to the quote depending on the provider.",
+      a: "Websites start at $299 with a written quote before work begins, maintenance plans start at $25 a month, and SEO plans start at $250 a month. A listings feed may add to the quote depending on the provider.",
     },
   ],
   reviewedOn: "2026-10-19",

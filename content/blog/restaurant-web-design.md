@@ -14,7 +14,7 @@ faq:
   - q: "Should a restaurant menu be a PDF or a real web page?"
     a: "A real web page — a PDF menu is invisible to Google (nothing to index), often unreadable on mobile without pinch-zooming, and slower to update. An HTML menu page lets each dish appear in search results, loads instantly on a phone, and can be updated in minutes when prices or items change."
   - q: "How much does a restaurant website cost?"
-    a: "Custom restaurant websites start from $299 at Canadian Web Designs, scaling up with online ordering integrations, multi-location support, and photography needs. Ongoing maintenance (menu updates, security, hosting) starts from $99/month."
+    a: "Custom restaurant websites start from $299 at Canadian Web Designs, scaling up with online ordering integrations, multi-location support, and photography needs. Ongoing maintenance (menu updates and security) starts from $25/month, and hosting is $199/year."
   - q: "Does a restaurant website need online ordering built in?"
     a: "It depends on the business — some restaurants route all ordering through third-party apps (which take a commission per order), while others integrate ordering directly into their own site to keep the full margin and the customer's contact details. A website built to support direct ordering, even if a restaurant starts with just phone or third-party ordering, saves a costly rebuild later."
   - q: "How important is mobile speed for a restaurant site?"

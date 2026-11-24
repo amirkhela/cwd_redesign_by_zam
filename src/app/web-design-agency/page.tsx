@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import GoogleReviews from "@/components/GoogleReviews";
+import { WEBSITE_PACKAGES } from "@/lib/packages";
 
 const config = getConfig();
 
@@ -442,19 +443,20 @@ export default function WebDesignAgencyPage() {
             {[
               {
                 name: "Website Project",
-                price: "$299",
-                period: "",
+                price: WEBSITE_PACKAGES.find((p) => p.name === "Basic Website")?.price ?? "$299",
+                period: "Up to 3 pages, one-time",
                 desc: "A strategy-led custom website, designed and built by our in-house team — the perfect foundation for growth.",
                 features: ["2–3 page custom website", "On-page SEO baked in", "Copywriting & content", "Mobile & speed optimized", "Analytics & Search Console setup", "Launch support"],
                 cta: "Start a Project",
                 highlight: false,
               },
               {
+                // Was $599 / 12 pages; now the Professional Website from the one ladder (25 Nov 2026).
                 name: "Growth",
-                price: "$599",
-                period: "",
-                desc: "A larger custom website with complete one-time SEO setup, so Google can find and index every page. No monthly fees.",
-                features: ["Everything in Website Project", "Up to 12 pages", "Meta titles & descriptions on every page", "Schema markup", "XML sitemap + Google indexing request", "Technical SEO & speed setup"],
+                price: WEBSITE_PACKAGES.find((p) => p.name === "Professional Website")?.price ?? "$699",
+                period: "Up to 15 pages, one-time",
+                desc: "A larger custom website with booking, payments and a complete one-time SEO setup, so Google can find and index every page.",
+                features: ["Everything in Website Project", "Up to 15 pages", "Online booking + payments", "Meta titles & descriptions on every page", "Schema markup + XML sitemap", "Google indexing request"],
                 cta: "Start Growing",
                 highlight: true,
               },

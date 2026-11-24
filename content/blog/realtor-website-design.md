@@ -14,7 +14,7 @@ faq:
   - q: "Should a real estate agent have neighbourhood-specific pages?"
     a: "Yes — this is one of the highest-leverage things a realtor site can do. A dedicated page for each neighbourhood or community you serve (market overview, average price ranges you're licensed to discuss, local amenities, school catchments) captures searches like '[neighbourhood] homes for sale' that a single generic listings page never will."
   - q: "How much does a real estate agent website cost?"
-    a: "Custom realtor websites start from $299, scaling with the number of neighbourhood pages, IDX/MLS integration complexity, and content depth. Ongoing maintenance — updates, backups, security and speed monitoring — starts from $99/month."
+    a: "Custom realtor websites start from $299, scaling with the number of neighbourhood pages, IDX/MLS integration complexity, and content depth. Ongoing maintenance — updates, backups, security and speed monitoring — starts from $25/month."
   - q: "What should a realtor's website homepage lead with?"
     a: "A clear choice between buying and selling, a way to search listings immediately, and a visible path to contact you — not a generic bio-first layout. Visitors usually know which of the two paths they're on before they land on your site, and the homepage should route them there in one click, not three."
   - q: "Do realtor websites need blog content?"
@@ -71,6 +71,6 @@ faq:
 
 <p>If you're evaluating whether your current realtor website is doing its job, start with the basics: does it route buyers and sellers to the right path immediately? Does it have real neighbourhood-level content, not just a generic city-wide listings search? And does it make requesting a showing, a valuation, or a call effortless rather than an afterthought? Most underperforming realtor sites are missing at least two of these three.</p>
 
-<p>Custom web design for realtors and real estate teams starts from $299, with ongoing maintenance plans available from $99/month for updates, security, and performance monitoring. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on what your real estate website needs.</p>
+<p>Custom web design for realtors and real estate teams starts from $299, with ongoing maintenance plans available from $25/month for updates, security, and performance monitoring. <a href="/services/web-design-development">See our full web design services</a> or <a href="/contact">get in touch</a> for a free consultation on what your real estate website needs.</p>
 
 <p><strong>Ready to have it built?</strong> What we build into a realtor website, and what it costs, is on our <a href="/web-design-for-realtors">web design for realtors</a> page.</p>

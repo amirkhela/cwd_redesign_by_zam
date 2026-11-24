@@ -4,7 +4,7 @@ slug: "how-much-does-website-maintenance-really-cost"
 date: "2023-11-16"
 updated: "2026-07-22"
 author: "Amir Khela"
-description: "What does website maintenance really cost in Canada? A clear breakdown of hosting, updates, security and design — plus what to budget. Managed plans from $99/mo."
+description: "What does website maintenance really cost in Canada? A clear breakdown of hosting, updates, security and design — plus what to budget. Managed plans from $25/mo."
 keywords: ["how much does website maintenance cost", "website maintenance cost canada", "website maintenance pricing", "website upkeep cost", "monthly website maintenance", "website maintenance services"]
 category: "Web Design"
 featuredImage: "/blog/posts/website-maintenance-cost.jpg"
@@ -16,10 +16,10 @@ faq:
   - q: "How often should a website be maintained?"
     a: "Maintenance is ongoing: security and backups should run continuously, plugin/core updates monthly, and a fuller performance and content review every quarter."
   - q: "How much does professional website maintenance cost in Canada?"
-    a: "DIY costs are mostly hosting ($5–$30/mo). Freelance and agency plans range from about $50 to $500+/mo depending on scope. Canadian Web Designs' managed maintenance plans start at $99/month and cover updates, backups, security, monitoring and speed."
+    a: "DIY costs are mostly hosting ($5–$30/mo). Freelance and agency plans range from about $50 to $500+/mo depending on scope. Canadian Web Designs' managed maintenance plans start at $25/month and cover updates, backups, security, monitoring and speed."
 ---
 
-<p>Your website is your storefront — and like a storefront, it needs upkeep to keep working. The honest answer to "how much does website maintenance cost?" is that it ranges from a few dollars a month for hosting alone to $500+/month for a full-service plan. For most Canadian small businesses, professional managed maintenance starts at <strong><a href="/services/website-maintenance">$99/month</a></strong>.</p>
+<p>Your website is your storefront — and like a storefront, it needs upkeep to keep working. The honest answer to "how much does website maintenance cost?" is that it ranges from a few dollars a month for hosting alone to $500+/month for a full-service plan. For most Canadian small businesses, professional managed maintenance starts at <strong><a href="/services/website-maintenance">$25/month</a></strong>.</p>
 
 <p>Below is a clear breakdown of what you're actually paying for, so you can budget accurately and understand why skipping maintenance almost always costs more in the end.</p>
 
@@ -68,7 +68,7 @@ faq:
 
 <h2>What Canadian Web Designs charges</h2>
 
-<p>We keep your site fast, secure and up to date so you don't have to think about it. Our managed <a href="/services/website-maintenance">website maintenance plans start at $99/month</a> and cover core and plugin updates, backups, security monitoring, uptime checks and speed — with no long-term contract. Building a new site first? See our guide to <a href="/blog/how-much-does-a-wordpress-website-cost">what a WordPress website costs</a>.</p>
+<p>We keep your site fast, secure and up to date so you don't have to think about it. Our managed <a href="/services/website-maintenance">website maintenance plans start at $25/month</a> and cover core and plugin updates, backups, security monitoring, uptime checks and speed — with no long-term contract. Building a new site first? See our guide to <a href="/blog/how-much-does-a-wordpress-website-cost">what a WordPress website costs</a>.</p>
 
 <h2>Frequently asked questions</h2>
 
@@ -86,4 +86,4 @@ faq:
 
 <h2>Keep your site running its best</h2>
 
-<p>Website maintenance is a small, predictable investment that protects a much larger one. <strong><a href="/contact">Get a free maintenance quote</a></strong> and we'll recommend the right plan — starting at $99/month, no lock-in. Prefer to talk? Call <a href="tel:+16476896069">(647) 689-6069</a>.</p>
+<p>Website maintenance is a small, predictable investment that protects a much larger one. <strong><a href="/contact">Get a free maintenance quote</a></strong> and we'll recommend the right plan — starting at $25/month, no lock-in. Prefer to talk? Call <a href="tel:+16476896069">(647) 689-6069</a>.</p>

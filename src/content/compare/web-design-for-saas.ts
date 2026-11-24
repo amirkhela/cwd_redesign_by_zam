@@ -95,7 +95,7 @@ export const WEB_DESIGN_FOR_SAAS: IndustryPage = {
     },
     {
       q: "What does a SaaS website cost, and who owns it?",
-      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $99 a month. Most SaaS sites sit in our larger packages because of the number of pages. The site, the code and the domain are yours.",
+      a: "Websites start at $299 with a written quote before work begins, and maintenance plans start at $25 a month. Most SaaS sites sit in our larger packages because of the number of pages. The site, the code and the domain are yours.",
     },
   ],
   reviewedOn: "2026-10-19",

@@ -11,14 +11,16 @@ export interface PricingPlan {
   features: string[];
   badge?: string;
   highlight?: boolean;
+  /** "Save $X vs buying separately" — only for real sums of items sold separately. */
+  save?: string;
 }
 
 // Package grid shared by /web-design-packages and /services/app-development.
 // Each card ends with the same two actions as the rest of the site: call, or
 // start a quote on /contact.
-export default function PricingCards({ plans }: { plans: PricingPlan[] }) {
+export default function PricingCards({ plans, cols = 3 }: { plans: PricingPlan[]; cols?: 3 | 4 }) {
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className={`grid sm:grid-cols-2 ${cols === 4 ? "lg:grid-cols-4 gap-5" : "lg:grid-cols-3 gap-6"}`}>
       {plans.map((plan) => (
         <div key={plan.name}
           className={`relative flex flex-col rounded-2xl p-7 sm:p-8 reveal border transition-all duration-300 ${plan.highlight ? "border-[#00AADF]" : "border-gray-100 bg-white hover:border-[#00AADF]/30 hover:shadow-lg"}`}
@@ -30,7 +32,10 @@ export default function PricingCards({ plans }: { plans: PricingPlan[] }) {
           )}
           <h3 className={`text-sm font-bold tracking-widest uppercase mb-2 ${plan.highlight ? "text-white/80" : "text-[#00AADF]"}`}>{plan.name}</h3>
           <p className={`text-4xl font-black mb-0.5 ${plan.highlight ? "text-white" : "text-gray-900"}`}>{plan.price}</p>
-          <p className={`text-xs mb-4 ${plan.highlight ? "text-white/60" : "text-gray-400"}`}>{plan.note ?? "One-time, CAD + HST"}</p>
+          <p className={`text-xs ${plan.save ? "mb-2" : "mb-4"} ${plan.highlight ? "text-white/60" : "text-gray-400"}`}>{plan.note ?? "One-time, CAD + HST"}</p>
+          {plan.save && (
+            <p className={`inline-block self-start text-xs font-bold px-2.5 py-1 rounded-full mb-4 ${plan.highlight ? "bg-white/15 text-white" : "bg-emerald-50 text-emerald-700"}`}>{plan.save}</p>
+          )}
           <p className={`text-sm leading-relaxed mb-6 ${plan.highlight ? "text-white/85" : "text-gray-600"}`}>{plan.desc}</p>
           <ul className="space-y-2.5 mb-8">
             {plan.features.map((f) => (
