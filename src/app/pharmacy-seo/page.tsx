@@ -190,6 +190,40 @@ export default function PharmacySeoPage() {
             by the pharmacy&apos;s own team; our job is making sure people searching can find them.
           </p>
 
+          {/* ChatGPT screen recording (from cloudpharmacy.ca media library, 2025), compressed to 720p, no audio. */}
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-center mb-14">
+            <div className="reveal">
+              <video
+                className="w-full h-auto rounded-2xl shadow-lg border border-gray-100"
+                src="/videos/chatgpt-cloud-pharmacy.mp4"
+                poster="/videos/chatgpt-cloud-pharmacy-poster.jpg"
+                width={1280}
+                height={720}
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                preload="metadata"
+                aria-label="Screen recording: ChatGPT is asked for the number one pharmacy in Toronto and recommends Cloud Pharmacy"
+              />
+            </div>
+            <div className="reveal">
+              <span className="inline-block text-[#00AADF] text-sm font-bold tracking-[0.2em] uppercase mb-3">Watch it happen</span>
+              <h3 className="text-2xl font-black text-gray-900 mb-4">Ask ChatGPT for the number one pharmacy in Toronto</h3>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                More patients now ask ChatGPT before they ask Google. In this recording, ChatGPT is asked &quot;What is the
+                number one pharmacy in Toronto?&quot; and it names Cloud Pharmacy among the top-rated independent
+                pharmacies, with its address, rating and services.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AI tools can only recommend a pharmacy they understand. Clear service pages, structured data and a strong
+                Google listing are how Cloud Pharmacy gets named, and they are the same steps we take for every pharmacy
+                we work with.
+              </p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="reveal">
               <Image src="/portfolio/cloud-pharmacy.jpg" alt="Cloud Pharmacy website" width={1440} height={900}
