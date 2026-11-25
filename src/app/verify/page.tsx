@@ -52,6 +52,7 @@ const KNOWN_FAKE_ADDRESSES = [
   "contact.canadianwebdesigns.ca@gmail.com",
   "support.canadianwebdesigns.ca@gmail.com",
   "info.relacion.com@gmail.com",
+  "contact.canadianwebdesign.ca@gmail.com",
 ];
 
 // Phone numbers printed in the scammers' email signatures (the 11th and 12th
