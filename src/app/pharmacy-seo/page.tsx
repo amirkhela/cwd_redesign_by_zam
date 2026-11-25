@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import HeroQuoteForm from "@/components/HeroQuoteForm";
+import SeoAuditForm from "@/components/SeoAuditForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import PricingCards from "@/components/PricingCards";
@@ -159,7 +159,7 @@ export default function PharmacySeoPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <HeroQuoteForm source="pharmacy-seo" />
+              <SeoAuditForm source="pharmacy-seo" />
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default function PharmacySeoPage() {
       </section>
 
       <div id="quote">
-        <QuoteFormSection source="pharmacy-seo" />
+        <QuoteFormSection source="pharmacy-seo" offer="seo-audit" />
       </div>
     </>
   );

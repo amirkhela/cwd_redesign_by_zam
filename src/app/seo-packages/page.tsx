@@ -1,7 +1,7 @@
-import MockupHeroOffer from "@/components/MockupHeroOffer";
+import SeoAuditHeroOffer from "@/components/SeoAuditHeroOffer";
 import type { Metadata } from "next";
 import Link from "next/link";
-import HeroQuoteForm from "@/components/HeroQuoteForm";
+import SeoAuditForm from "@/components/SeoAuditForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import PricingCards from "@/components/PricingCards";
@@ -70,7 +70,7 @@ export default function SeoPackagesPage() {
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
             <div className="max-w-3xl">
-              <MockupHeroOffer className="!mt-0 !mb-6" />
+              <SeoAuditHeroOffer className="!mt-0 !mb-6" />
 
               <h1 className="font-black text-white mb-5" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", lineHeight: 1.05 }}>
                 SEO Packages in Toronto &amp; Canada{" "}
@@ -93,7 +93,7 @@ export default function SeoPackagesPage() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <HeroQuoteForm source="seo-packages" />
+              <SeoAuditForm source="seo-packages" />
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function SeoPackagesPage() {
         </div>
       </section>
 
-      <QuoteFormSection source="seo-packages" />
+      <QuoteFormSection source="seo-packages" offer="seo-audit" />
     </>
   );
 }

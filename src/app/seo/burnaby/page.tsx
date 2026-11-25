@@ -1,6 +1,6 @@
-import MockupHeroOffer from "@/components/MockupHeroOffer";
+import SeoAuditHeroOffer from "@/components/SeoAuditHeroOffer";
 import type { Metadata } from "next";
-import HeroQuoteForm from "@/components/HeroQuoteForm";
+import SeoAuditForm from "@/components/SeoAuditForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Link from "next/link";
 import Image from "next/image";
@@ -192,7 +192,7 @@ export default function SeoByurnabyPage() {
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           <div className="max-w-2xl">
-            <MockupHeroOffer className="!mt-0 !mb-6" />
+            <SeoAuditHeroOffer className="!mt-0 !mb-6" />
 
             <h1 className="hero-fade-up-1 font-black text-white mb-5"
               style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", lineHeight: 1.05 }}>
@@ -231,7 +231,7 @@ export default function SeoByurnabyPage() {
 
             {/* RIGHT: Quote Form */}
             <div className="relative hidden lg:block">
-              <HeroQuoteForm source="seo-burnaby" />
+              <SeoAuditForm source="seo-burnaby" />
             </div>
           </div>
         </div>
@@ -551,7 +551,7 @@ export default function SeoByurnabyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
-      <QuoteFormSection source="seo-burnaby" mobileOnly />
+      <QuoteFormSection source="seo-burnaby" offer="seo-audit" mobileOnly />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import MockupHeroOffer from "@/components/MockupHeroOffer";
+import SeoAuditHeroOffer from "@/components/SeoAuditHeroOffer";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
@@ -57,7 +57,7 @@ export default function SeoCategoryPage() {
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
-            <MockupHeroOffer className="!mt-0 !mb-6" />
+            <SeoAuditHeroOffer className="!mt-0 !mb-6" />
 
             <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", lineHeight: 1.05 }}>
               SEO Tips &amp; Guides for{" "}<span className="gradient-text-animated">Canadian Businesses</span>

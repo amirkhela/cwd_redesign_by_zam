@@ -1,4 +1,4 @@
-import MockupHeroOffer from "@/components/MockupHeroOffer";
+import SeoAuditHeroOffer from "@/components/SeoAuditHeroOffer";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
@@ -61,7 +61,7 @@ export default function SeoHubPage() {
 
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
-            <MockupHeroOffer className="!mt-0 !mb-6" />
+            <SeoAuditHeroOffer className="!mt-0 !mb-6" />
 
             <h1 className="hero-fade-up-1 font-black text-white mb-5" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", lineHeight: 1.05 }}>
               SEO Services{" "}<span className="gradient-text-animated">Across Canada</span>
@@ -168,7 +168,7 @@ export default function SeoHubPage() {
         </div>
       </section>
 
-      <QuoteFormSection source="seo-hub" />
+      <QuoteFormSection source="seo-hub" offer="seo-audit" />
     </>
   );
 }

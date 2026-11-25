@@ -1,4 +1,5 @@
 import HeroQuoteForm from "@/components/HeroQuoteForm";
+import SeoAuditForm from "@/components/SeoAuditForm";
 import StarRating from "@/components/StarRating";
 import { getConfig, reviewCountPlus } from "@/lib/client-config";
 
@@ -15,6 +16,7 @@ export default function QuoteFormSection({
   subtitle,
   mobileOnly = false,
   showReviews = true,
+  offer = "mockup",
 }: {
   source: string;
   title?: React.ReactNode;
@@ -24,7 +26,10 @@ export default function QuoteFormSection({
   /** The Google rating and review count beside the phone number. /reviews turns it off: that page
    *  quotes the reviews and leaves the score and the count to Google (content/compare/reviews.ts). */
   showReviews?: boolean;
+  /** "seo-audit" on SEO pages: free SEO audit form + wording instead of the free mockup + quote. */
+  offer?: "mockup" | "seo-audit";
 }) {
+  const isAudit = offer === "seo-audit";
   return (
     <section
       className={`relative overflow-hidden py-20 ${mobileOnly ? "lg:hidden" : ""}`}
@@ -61,7 +66,7 @@ export default function QuoteFormSection({
                 style={{ background: "#00AADF", boxShadow: "0 0 8px rgba(0,170,223,0.8)" }}
               />
               <span className="text-white/80 text-sm font-medium tracking-wide">
-                Free Mockup + Free Quote &middot; Reply Within 24 Hours
+                {isAudit ? "Free SEO Audit Report" : "Free Mockup + Free Quote"} &middot; Reply Within 24 Hours
               </span>
             </div>
 
@@ -69,17 +74,24 @@ export default function QuoteFormSection({
               className="font-black text-white leading-tight mb-6"
               style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.4rem)", lineHeight: 1.08 }}
             >
-              {title ?? (
+              {title ?? (isAudit ? (
+                <>
+                  Find Out Why You&rsquo;re{" "}
+                  <span className="gradient-text-animated">Not Ranking on Google</span>
+                </>
+              ) : (
                 <>
                   Let&rsquo;s Build Something{" "}
                   <span className="gradient-text-animated">Great Together</span>
                 </>
-              )}
+              ))}
             </h2>
 
             <p className="text-lg text-white/70 leading-relaxed max-w-lg mb-8">
               {subtitle ??
-                "Tell us about your project and get a free quote plus a free mockup of your new homepage. No cost, no obligation, and most clients hear back within 24 hours."}
+                (isAudit
+                  ? "Send us your website and we will check your Google rankings, your Google Business Profile and what is holding your site back, then send you a free SEO audit report with a clear list of fixes. No cost, no obligation."
+                  : "Tell us about your project and get a free quote plus a free mockup of your new homepage. No cost, no obligation, and most clients hear back within 24 hours.")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -106,7 +118,7 @@ export default function QuoteFormSection({
 
           {/* RIGHT: Quote Form */}
           <div className="relative">
-            <HeroQuoteForm source={source} />
+            {isAudit ? <SeoAuditForm source={source} /> : <HeroQuoteForm source={source} />}
           </div>
         </div>
       </div>

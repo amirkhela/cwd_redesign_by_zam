@@ -1,6 +1,8 @@
 import MockupHeroOffer from "@/components/MockupHeroOffer";
+import SeoAuditHeroOffer from "@/components/SeoAuditHeroOffer";
 import Link from "next/link";
 import HeroQuoteForm from "@/components/HeroQuoteForm";
+import SeoAuditForm from "@/components/SeoAuditForm";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import Image from "next/image";
 import type { ClientService } from "@/lib/client-config";
@@ -11,6 +13,8 @@ import GoogleReviews from "@/components/GoogleReviews";
 const config = getConfig();
 
 export default function ServicePageTemplate({ service }: { service: ClientService }) {
+  // SEO pages offer a free SEO audit instead of the free website mockup.
+  const isSeo = service.slug === "seo";
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Services", href: "/services/web-design-development" }, { name: service.title, href: `/services/${service.slug}` }]} />
@@ -42,7 +46,7 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
         <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           <div className="max-w-3xl">
-            <MockupHeroOffer className="!mt-0 !mb-6" />
+            {isSeo ? <SeoAuditHeroOffer className="!mt-0 !mb-6" /> : <MockupHeroOffer className="!mt-0 !mb-6" />}
 
             <h1
               className="hero-fade-up-1 font-black text-white mb-5"
@@ -75,7 +79,7 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
 
             {/* RIGHT: Quote Form */}
             <div className="relative hidden lg:block">
-              <HeroQuoteForm source={`service-${service.title}`} />
+              {isSeo ? <SeoAuditForm source={`service-${service.title}`} /> : <HeroQuoteForm source={`service-${service.title}`} />}
             </div>
           </div>
         </div>
@@ -342,7 +346,7 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
         }}
       />
 
-      <QuoteFormSection source={`service-${service.title}`} mobileOnly />
+      <QuoteFormSection source={`service-${service.title}`} mobileOnly offer={isSeo ? "seo-audit" : "mockup"} />
     </>
   );
 }

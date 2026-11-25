@@ -99,6 +99,8 @@ export async function POST(request: NextRequest) {
   const business = typeof body.business === "string" ? body.business.trim().slice(0, 200) : "";
   const website = typeof body.website === "string" ? body.website.trim().slice(0, 300) : "";
   const isMockup = source === "free-website-mockup" || service === "Free Website Mockup";
+  // Sent by SeoAuditForm on every SEO page and /free-seo-audit.
+  const isAudit = service === "Free SEO Audit";
 
   // lastName is optional: the free-mockup form sends one "Full name" field.
   const fullName = `${firstName || ""} ${lastName || ""}`.trim();
@@ -167,7 +169,7 @@ New Contact Form Submission
 Name:    ${fullName}
 Email:   ${email}
 Phone:   ${phone || "Not provided"}
-Service: ${service || "Not specified"}${business ? `\nBusiness: ${business}` : ""}${website ? `\nWebsite: ${website}` : ""}${isMockup ? "\n\n>> FREE MOCKUP REQUESTED: send a free mockup with the quote." : ""}
+Service: ${service || "Not specified"}${business ? `\nBusiness: ${business}` : ""}${website ? `\nWebsite: ${website}` : ""}${isMockup ? "\n\n>> FREE MOCKUP REQUESTED: send a free mockup with the quote." : ""}${isAudit ? "\n\n>> FREE SEO AUDIT REQUESTED: check the website + Google listing and send the free SEO audit report." : ""}
 
 Message:
 ${message}
@@ -178,7 +180,7 @@ ${message}
     await sendFormMail("CWD Website", {
       to: "dev@canadianwebdesigns.com, sales.canadianwebdesigns@gmail.com",
       replyTo: email,
-      subject: (unverified ? "[Unverified] " : "") + (isMockup ? `🎨 FREE MOCKUP REQUEST: ${fullName}${business ? ` (${business})` : ""}` : source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${fullName}` : `New Contact Form: ${fullName}`),
+      subject: (unverified ? "[Unverified] " : "") + (isMockup ? `🎨 FREE MOCKUP REQUEST: ${fullName}${business ? ` (${business})` : ""}` : isAudit ? `🔍 FREE SEO AUDIT REQUEST: ${fullName}${website ? ` (${website})` : ""}` : source === "homepage" ? "New Message from home page" : source === "google-ads-lp" ? `🎯 ADS LEAD: ${fullName}` : `New Contact Form: ${fullName}`),
       text: internalEmailBody,
     }, transporter, process.env.SMTP_USER);
   } catch (err) {
