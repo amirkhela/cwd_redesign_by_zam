@@ -87,7 +87,7 @@ const cities = [
   { name: "Brampton", slug: "brampton", province: "ON" },
   { name: "North York", slug: "north-york", province: "ON" },
   { name: "Vaughan", slug: "vaughan", province: "ON" },
-  { name: "Markham", slug: "markham", province: "ON" },
+  { name: "Richmond Hill", slug: "richmond-hill", province: "ON" },
   { name: "Vancouver", slug: "vancouver", province: "BC" },
   { name: "Burnaby", slug: "burnaby", province: "BC" },
   { name: "Surrey", slug: "surrey", province: "BC" },

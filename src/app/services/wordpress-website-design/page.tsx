@@ -231,7 +231,7 @@ export default function WordPressWebsiteDesignPage() {
               <h3 className="text-xl font-black text-gray-900 mb-4">Popular WordPress Resources on Our Site</h3>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  { label: "How Much Does a WordPress Website Cost?", href: "/how-much-does-a-wordpress-website-cost" },
+                  { label: "How Much Does a WordPress Website Cost?", href: "/blog/how-much-does-a-wordpress-website-cost" },
                   { label: "10 Reasons to Choose WordPress as Your CMS", href: "/blog/10-reasons-to-choose-wordpress-as-your-cms" },
                   { label: "How Do I Create a WordPress Website?", href: "/blog/how-do-i-create-a-wordpress-website" },
                   { label: "WordPress Maintenance Plans", href: "/maintenance" },

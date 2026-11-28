@@ -182,40 +182,40 @@ export default function ServicePageTemplate({ service }: { service: ClientServic
       {(() => {
         const relatedMap: Record<string, { title: string; slug: string }[]> = {
           "web-design-development": [
-            { title: "Custom Web Design vs. Website Templates: Which Is Right?", slug: "custom-web-design-vs-website-templates-which-is-right-for-your-business" },
-            { title: "How a Professional Website Design Company Can Transform Your Business", slug: "how-a-professional-website-design-company-can-transform-your-business-online" },
+            { title: "Custom Web Design in Canada: Tips and Guides", slug: "custom-web-design-canada-tips-and-guides" },
+            { title: "How Long Does It Take to Build a Website?", slug: "how-long-does-it-take-to-build-a-website" },
             { title: "5 Essential Web Design Trends from Canada to Upgrade Your Website", slug: "5-essential-web-design-trends-from-canada-to-upgrade-your-website" },
-            { title: "Mastering Web Design Fundamentals", slug: "mastering-web-design-fundamentals" },
+            { title: "How to Redesign a Website Without Losing SEO", slug: "website-redesign-without-losing-seo" },
           ],
           "seo": [
-            { title: "Affordable SEO Services for Small Businesses", slug: "affordable-seo-services-for-small-businesses" },
+            { title: "How Much Does SEO Cost in Canada?", slug: "seo-cost-canada" },
             { title: "How Does Local SEO Benefit Your Business?", slug: "how-does-local-seo-benefit-your-business-in-2023" },
             { title: "Black Hat SEO vs. White Hat SEO: What You Need to Know", slug: "black-hat-seo-vs-white-hat-seo" },
             { title: "Top 10 Tips for Boosting SEO in 2024", slug: "top-10-tips-for-boosting-seo-for-2023" },
           ],
           "graphic-design": [
             { title: "Elevating Your Brand: The Essential Role of Canadian Graphic Design", slug: "elevating-your-brand-the-essential-role-of-canadian-graphic-design" },
-            { title: "Banner Design Services: How to Stand Out", slug: "banner-design-services" },
+            { title: "How Much Does Graphic Design Cost in Toronto?", slug: "how-much-does-graphic-design-cost-in-toronto" },
             { title: "The Power of Infographics in Marketing", slug: "infographics" },
-            { title: "Best Graphic Design Service in Canada", slug: "best-graphic-design-service-canada" },
+            { title: "Best Print Advertisement Design Services", slug: "best-print-advertisement-design-services" },
           ],
           "social-media-optimization": [
-            { title: "Tips and Tricks for Effective Social Media Optimization in 2024", slug: "tips-and-tricks-for-effective-social-media-optimization-in-2023" },
-            { title: "Strategic Social Media Marketing for Canadian Businesses", slug: "strategic-social-media-marketing-for-canadian-web-designs" },
             { title: "Social Proof Marketing in Social Media", slug: "social-proof-marketing-in-social-media" },
-            { title: "ChatGPT's Impact on Digital Marketing", slug: "chatgpts-impact-on-digital-marketing" },
+            { title: "How to Get More Google Reviews", slug: "how-to-get-more-google-reviews" },
+            { title: "Kijiji Ads Marketing Strategy for Local Businesses", slug: "kijiji-ads-marketing-strategy-for-local-businesses" },
+            { title: "Top 10 AI Tools for Digital Marketing", slug: "top-10-ai-tools-for-digital-marketing" },
           ],
           "website-maintenance": [
-            { title: "The Importance of Regular Website Backups", slug: "importance-of-regular-website-backups" },
+            { title: "WordPress Security Checklist", slug: "wordpress-security-checklist" },
             { title: "How Much Does Website Maintenance Really Cost?", slug: "how-much-does-website-maintenance-really-cost" },
-            { title: "Website Maintenance: Keep Your Website Secure, Fast, and Updated", slug: "website-maintenance-keep-your-website-secure-fast-and-updated" },
+            { title: "WordPress Speed Optimization", slug: "wordpress-speed-optimization" },
             { title: "Toronto Website Maintenance & SEO: Keeping Your Site Google-Ready", slug: "toronto-website-maintenance-seo-optimization-keeping-your-site-fast-secure-and-google-ready" },
           ],
           "ai-consultation": [
-            { title: "5 Best Strategies for Incorporating ChatGPT Into Your Business", slug: "5-best-strategies-for-incorporating-chatgpt-into-your-business" },
-            { title: "What Is the Importance of AI Automation?", slug: "what-is-the-importance-of-ai-automation" },
+            { title: "How to Get Recommended by AI Search", slug: "get-recommended-by-ai-search" },
+            { title: "Marketing Automation Software Overview", slug: "marketing-automation-software-overview" },
             { title: "Top 10 AI Tools for Digital Marketing", slug: "top-10-ai-tools-for-digital-marketing" },
-            { title: "ChatGPT's Impact on Digital Marketing", slug: "chatgpts-impact-on-digital-marketing" },
+            { title: "Schema Markup for Local Businesses", slug: "schema-markup-for-local-businesses" },
           ],
         };
         const posts = relatedMap[service.slug];

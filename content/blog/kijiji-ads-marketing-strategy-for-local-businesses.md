@@ -81,7 +81,7 @@ featuredImage: "/blog/posts/kijiji-ads-marketing-strategy.jpg"
 </div>
 </div>
 
-<p>These are a lot of Kijiji ads! If there are this many<a href="https://canadianwebdesigns.ca/who-we-are/"> people advertising</a>, it shows that there is money to be made here and who would not aim to capitalize on it?</p>
+<p>These are a lot of Kijiji ads! If there are this many<a href="/who-we-are"> people advertising</a>, it shows that there is money to be made here and who would not aim to capitalize on it?</p>
 
 <h2 class="wp-block-heading" id="h-place-ad-on-kijiji-why-advertise-on-kijiji">Place ad on Kijiji: <strong>Why advertise on Kijiji?</strong></h2>
 
@@ -125,7 +125,7 @@ featuredImage: "/blog/posts/kijiji-ads-marketing-strategy.jpg"
 
 <h3 class="wp-block-heading" id="h-2-talk-about-your-services"><strong>2. Talk about your services</strong></h3>
 
-<p>&nbsp;List out all the benefits of everything you do in bullet form to keep it straight to the point and capture all the <a href="https://canadianwebdesigns.ca/black-hat-seo-vs-white-hat-seo/">search </a>terms from Kijiji’s search engine. If your ad title says home renovations, but the prospect searches are for kitchen remodeling, you can still be in search because it’s written in your Kijiji ad description.</p>
+<p>&nbsp;List out all the benefits of everything you do in bullet form to keep it straight to the point and capture all the <a href="/blog/black-hat-seo-vs-white-hat-seo">search </a>terms from Kijiji’s search engine. If your ad title says home renovations, but the prospect searches are for kitchen remodeling, you can still be in search because it’s written in your Kijiji ad description.</p>
 
 <h3 class="wp-block-heading" id="h-3-list-down-your-target-cities"><strong>3. List down your target cities</strong></h3>
 
@@ -135,7 +135,7 @@ featuredImage: "/blog/posts/kijiji-ads-marketing-strategy.jpg"
 
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<p>● <a href="https://canadianwebdesigns.ca/seo/toronto/">Toronto</a></p>
+<p>● <a href="/seo/toronto">Toronto</a></p>
 
 <p>● North York</p>
 
@@ -151,7 +151,7 @@ featuredImage: "/blog/posts/kijiji-ads-marketing-strategy.jpg"
 
 <p>● The rest of GTA</p>
 
-<p>● <a href="https://canadianwebdesigns.ca/seo/vancouver/">Vancouver</a></p>
+<p>● <a href="/seo/vancouver">Vancouver</a></p>
 </div>
 </div>
 
@@ -241,5 +241,5 @@ featuredImage: "/blog/posts/kijiji-ads-marketing-strategy.jpg"
 
 <h2 class="wp-block-heading" id="h-partner-with-canadian-web-designs-with-your-kijiji-ads-marketing-now"><strong>Partner with Canadian Web Designs with your Kijiji Ads Marketing Now!</strong></h2>
 
-<p>Level up your digital footprint to expand your brand awareness on online platforms. Together with your <a href="https://canadianwebdesigns.ca/minimalist-website-design/">amazing website </a>and marketing strategies, nothing stops you now. Talk with our professional Kijiji Ads Specialist and discuss your concept or strategist. Call Canadian Web Designs at 647-689-6069 or email us at&nbsp;<a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to get your free quote. You can also visit the website contact page to&nbsp;<a href="https://canadianwebdesigns.ca/get-in-touch/">leave a message.</a> </p>
+<p>Level up your digital footprint to expand your brand awareness on online platforms. Together with your <a href="/blog/minimalist-website-design">amazing website </a>and marketing strategies, nothing stops you now. Talk with our professional Kijiji Ads Specialist and discuss your concept or strategist. Call Canadian Web Designs at 647-689-6069 or email us at&nbsp;<a href="mailto:sales@canadianwebdesigns.ca">sales@canadianwebdesigns.ca</a> to get your free quote. You can also visit the website contact page to&nbsp;<a href="/contact">leave a message.</a> </p>
 

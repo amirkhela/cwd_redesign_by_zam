@@ -23,7 +23,7 @@ featuredImage: "/blog/posts/minimalist-website-design.jpg"
 
 <p>You've heard the phrase "less is more," and when it comes to web design, that couldn't be more true. <strong>Minimalist web design</strong> is all about using minimal elements to create maximum impact for your business.</p>
 
-<p>As a web development company, we've seen firsthand how this approach can produce incredible results. At its core, <a href="https://canadianwebdesigns.ca/minimalist-website-design/">minimalist design </a>strips away the unnecessary, allowing your content to become the main focus. It's about guiding your visitors' attention to the most important information without any distractions.</p>
+<p>As a web development company, we've seen firsthand how this approach can produce incredible results. At its core, <a href="/blog/minimalist-website-design">minimalist design </a>strips away the unnecessary, allowing your content to become the main focus. It's about guiding your visitors' attention to the most important information without any distractions.</p>
 
 <p>While this clean, simple style is popular today, it's a stark contrast to the early days of the internet, which were often cluttered and overwhelming. By embracing minimalism, you're not just following a trend; you're creating a clearer, more effective experience for your customers.</p>
 
@@ -55,7 +55,7 @@ featuredImage: "/blog/posts/minimalist-website-design.jpg"
 <li>Secondary navigation menus</li>
 </ul>
 
-<p>It is important in minimalist design to cut out any unnecessary elements or to merge sections into a simple layout. Another technique is to actually divide the content into separate pages which give each element of content more emphasis. <a href="https://maps.app.goo.gl/nNsvaA3trNyu7nzm8">Canadian Website Designs</a> will help you with that!&nbsp;<br>Minimalist web designs should have a lack of color, texture, lines, content, everything. However, be mindful of being too bare, then the website just becomes boring. The main point is to make one central thing the most important focal point of your website. Canadian Website Designs achieves minimalist <a href="https://canadianwebdesigns.ca/website-design-development/">web designs</a> for all of our clients that desire it.&nbsp;<br></p>
+<p>It is important in minimalist design to cut out any unnecessary elements or to merge sections into a simple layout. Another technique is to actually divide the content into separate pages which give each element of content more emphasis. <a href="https://maps.app.goo.gl/nNsvaA3trNyu7nzm8">Canadian Website Designs</a> will help you with that!&nbsp;<br>Minimalist web designs should have a lack of color, texture, lines, content, everything. However, be mindful of being too bare, then the website just becomes boring. The main point is to make one central thing the most important focal point of your website. Canadian Website Designs achieves minimalist <a href="/services/web-design-development">web designs</a> for all of our clients that desire it.&nbsp;<br></p>
 
 <h3 class="wp-block-heading" id="h-understanding-minimalist-website-design">Understanding Minimalist Website Design</h3>
 
@@ -129,7 +129,7 @@ featuredImage: "/blog/posts/minimalist-website-design.jpg"
 
 <h4 class="wp-block-heading" id="h-2-how-does-minimalist-design-impact-seo"><strong>2. How does minimalist design impact SEO?</strong></h4>
 
-<p>Minimalist website design can improve <a href="https://canadianwebdesigns.ca/search-engine-optimization/">SEO</a> through faster page loading times, improved mobile compatibility, and a better user experience - all of which are factors in search engine rankings.</p>
+<p>Minimalist website design can improve <a href="/services/seo">SEO</a> through faster page loading times, improved mobile compatibility, and a better user experience - all of which are factors in search engine rankings.</p>
 
 <h4 class="wp-block-heading" id="h-3-can-minimalist-design-work-for-any-website"><strong>3. Can minimalist design work for any website?</strong></h4>
 

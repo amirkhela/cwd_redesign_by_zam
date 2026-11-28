@@ -181,19 +181,19 @@ export default function ServicePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {[
                 {
-                  title: "Web Design Services Canada: What to Look For, What to Pay, and Who to Trust",
-                  desc: "A no-fluff guide to hiring a web design agency in Canada — pricing, what's included, and how to avoid agencies that overpromise.",
-                  href: "/blog/web-design-services-canada-complete-guide",
+                  title: "How to Choose a Web Design Company for Your Business",
+                  desc: "What to check before you hire: portfolio, process, pricing, ownership of your site and who looks after it after launch.",
+                  href: "/blog/choose-a-web-design-company-for-your-business",
                 },
                 {
-                  title: "How Long Does It Take to Build a Website in Canada?",
+                  title: "How Long Does It Take to Build a Website?",
                   desc: "Realistic 2026 timelines by project type — and the specific client-side factors that slow builds down the most.",
-                  href: "/blog/how-long-does-it-take-to-build-a-website-canada",
+                  href: "/blog/how-long-does-it-take-to-build-a-website",
                 },
                 {
-                  title: "Affordable Web Design Canada: A Small Business Guide",
-                  desc: "How to get a professional, SEO-ready website without overpaying — and what \"affordable\" actually means in 2026.",
-                  href: "/blog/affordable-web-design-canada-small-business-guide",
+                  title: "How Much Does a WordPress Website Cost in Canada?",
+                  desc: "A clear pricing breakdown: build, hosting, plugins, maintenance and what pushes a project up or down.",
+                  href: "/blog/how-much-does-a-wordpress-website-cost",
                 },
               ].map((post) => (
                 <Link key={post.href} href={post.href} className="group block bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:border-[#00AADF]/40 hover:shadow-md transition-all duration-200">

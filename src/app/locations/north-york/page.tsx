@@ -364,7 +364,7 @@ export default function NorthYorkPage() {
           <p className="text-center text-sm text-gray-500 mb-5">Also serving across the GTA and all of Canada:</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/locations/toronto" className="px-4 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200" style={{ background: "linear-gradient(135deg, #003B6F, #00AADF)" }}>Web Design Toronto ↗</Link>
-            {[{ name: "Mississauga", slug: "mississauga" }, { name: "Brampton", slug: "brampton" }, { name: "Vaughan", slug: "vaughan" }, { name: "Richmond Hill", slug: "richmond-hill" }, { name: "Markham", slug: "markham" }, { name: "Burnaby", slug: "burnaby" }].map((c) => (
+            {[{ name: "Mississauga", slug: "mississauga" }, { name: "Brampton", slug: "brampton" }, { name: "Vaughan", slug: "vaughan" }, { name: "Richmond Hill", slug: "richmond-hill" }, { name: "Barrie", slug: "barrie" }, { name: "Burnaby", slug: "burnaby" }].map((c) => (
               <Link key={c.slug} href={`/locations/${c.slug}`} className="px-4 py-2 rounded-xl text-sm font-semibold text-[#00AADF] border border-[#00AADF]/30 hover:bg-[#00AADF] hover:text-white transition-all duration-200">{c.name}</Link>
             ))}
           </div>

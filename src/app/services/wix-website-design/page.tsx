@@ -231,7 +231,7 @@ export default function WixWebsiteDesignPage() {
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
                   { label: "WordPress Website Design", href: "/services/wordpress-website-design" },
-                  { label: "How Much Does a Website Cost in Canada?", href: "/how-much-does-a-wordpress-website-cost" },
+                  { label: "How Much Does a Website Cost in Canada?", href: "/blog/how-much-does-a-wordpress-website-cost" },
                   { label: "Ultimate Guide to Website Builders", href: "/blog/ultimate-guide-to-the-best-website-builders" },
                   { label: "Our Web Design Portfolio", href: "/portfolio" },
                 ].map((r) => (
